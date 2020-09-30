@@ -4,8 +4,17 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
- 
+
 /* your custom css */
+
+.fixedHeaderContainer header img {
+  height: 22px;
+}
+
+.fixedHeaderContainer a {
+  align-items: flex-end;
+  height: 27px;
+}
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
