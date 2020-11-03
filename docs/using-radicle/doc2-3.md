@@ -1,6 +1,6 @@
 ---
-id: doc2-3
-title: Viewing and pulling changes
+id: adding-remotes
+title: Adding remotes and pulling changes
 ---
 
 This is a link to [another document.](doc3.md)  

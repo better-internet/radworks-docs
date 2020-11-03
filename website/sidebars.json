@@ -2,15 +2,13 @@
   "docs": {
     "Introduction": [
       "doc1",
-      "getting-started/installation",
-      "getting-started/create-identity",
-      "getting-started/start-a-project",
-      "getting-started/connect-to-network"
+      "getting-started/getting-started"
     ],
     "Collaborating with Radicle": [
-      "using-radicle/doc2-1",
-      "using-radicle/doc2-2",
-      "using-radicle/doc2-3"
+      "using-radicle/creating-projects",
+      "using-radicle/pushing-code",
+      "using-radicle/adding-remotes",
+      "using-radicle/creating-a-seed-node"
     ],
     "Understanding Radicle": [
       "understanding-radicle/why-radicle",

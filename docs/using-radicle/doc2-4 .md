@@ -1,6 +1,6 @@
 ---
-id: doc2-2
-title: Pushing and pulling code
+id: creating-a-seed-node
+title: Starting a seed node
 ---
 
 This is a link to [another document.](doc3.md)  

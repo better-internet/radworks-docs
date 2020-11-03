@@ -1,29 +1,51 @@
 ---
-id: installation
+id: getting-started
 title: Getting Started
 sidebar_label: Getting Started
 ---
 
-Check the [documentation](https://docusaurus.io) for how to use Docusaurus.
+## Installation & Download
 
-## Lorem
+The Radicle network can be accessed via Upstream, a desktop client. To download the app, click [here](https://buildkite.com/monadic/radicle-upstream/builds/6098). While Upstream is currently the only client for using Radicle, it won't be the only one. Upstream development is public by default and completely open source. You can follow along development on [radicle.community](radicle.community)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.
+## Creating an identity
 
-## Mauris In Code
+To create an identity on the Radicle network, you can use the Upstream app. The app will create a unique peer identity, or a peerID, for you that's paired to the computer you installed it on. This peerID is how others can discover you on the Radicle network. 
 
-```
-Mauris vestibulum ullamcorper nibh, ut semper purus pulvinar ut. Donec volutpat orci sit amet mauris malesuada, non pulvinar augue aliquam. Vestibulum ultricies at urna ut suscipit. Morbi iaculis, erat at imperdiet semper, ipsum nulla sodales erat, eget tincidunt justo dui quis justo. Pellentesque dictum bibendum diam at aliquet. Sed pulvinar, dolor quis finibus ornare, eros odio facilisis erat, eu rhoncus nunc dui sed ex. Nunc gravida dui massa, sed ornare arcu tincidunt sit amet. Maecenas efficitur sapien neque, a laoreet libero feugiat ut.
-```
+[insert pic of identity]
 
-## Nulla
+The app will also prompt you to create a passphrase. This passphrase *isn't* a private key — it is a password for accessing the Upstream app. It will also be required when pushing code from your local machine to the Radicle network via your rad remote. 
 
-Nulla facilisi. Maecenas sodales nec purus eget posuere. Sed sapien quam, pretium a risus in, porttitor dapibus erat. Sed sit amet fringilla ipsum, eget iaculis augue. Integer sollicitudin tortor quis ultricies aliquam. Suspendisse fringilla nunc in tellus cursus, at placerat tellus scelerisque. Sed tempus elit a sollicitudin rhoncus. Nulla facilisi. Morbi nec dolor dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras et aliquet lectus. Pellentesque sit amet eros nisi. Quisque ac sapien in sapien congue accumsan. Nullam in posuere ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin lacinia leo a nibh fringilla pharetra.
+## Configuring your system
 
-## Orci
+To push code to the Radicle network via the Upstream client, you first have to add the radicle remote helper to your shell configuration.
 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin venenatis lectus dui, vel ultrices ante bibendum hendrerit. Aenean egestas feugiat dui id hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur in tellus laoreet, eleifend nunc id, viverra leo. Proin vulputate non dolor vel vulputate. Curabitur pretium lobortis felis, sit amet finibus lorem suscipit ut. Sed non mollis risus. Duis sagittis, mi in euismod tincidunt, nunc mauris vestibulum urna, at euismod est elit quis erat. Phasellus accumsan vitae neque eu placerat. In elementum arcu nec tellus imperdiet, eget maximus nulla sodales. Curabitur eu sapien eget nisl sodales fermentum.
+- Add ` export PATH="$HOME/.radicle/bin:$PATH" ` to your shell configuration
+- Restart your shell
+- Check that you've done everything correctly by running `git-remote-rad` in your shell. You should receive something along the lines of:
 
-## Phasellus
+'''
+~ git-remote-rad
+thread 'main' panicked at 'index out of bounds: the len is 0 but the index is 0', /Users/buildkite/buildkite-cache/cargo/git/checkouts/radicle-link-009c17032bc5eda9/577e994/git-helpers/src/remote_helper.rs:42:9
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace`
+'''
 
-Phasellus pulvinar ex id commodo imperdiet. Praesent odio nibh, sollicitudin sit amet faucibus id, placerat at metus. Donec vitae eros vitae tortor hendrerit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque vitae purus dolor. Duis suscipit ac nulla et finibus. Phasellus ac sem sed dui dictum gravida. Phasellus eleifend vestibulum facilisis. Integer pharetra nec enim vitae mattis. Duis auctor, lectus quis condimentum bibendum, nunc dolor aliquam massa, id bibendum orci velit quis magna. Ut volutpat nulla nunc, sed interdum magna condimentum non. Sed urna metus, scelerisque vitae consectetur a, feugiat quis magna. Donec dignissim ornare nisl, eget tempor risus malesuada quis.
+To push to the Radicle network, you can use the command `git push rad`.
+
+## Joining a seed node
+
+Seed nodes are "always-on" nodes running on public IPs that serve data to any connected peers. By joining a seed node, it automatically tracks you and shares your data across it's network of other connected users. This increases the availability of your data throughout the network, while making it easier to find other's data as well. We recommend joining the official Radicle seed node to bootstrap your connectivity. 
+
+1. Navigate to *Settings*. There, under the *Network* header, you'll find your seed list. 
+2. Add the seed address to the input box and submit by pressing `RETURN`
+
+    `hybh5cb7spafgs7skjg6qkssts3uxht31zskpgs4ypdzrnaq7ye83k@seedling.radicle.xyz:12345`
+
+3. Check that you're connected by hovering over your Connection icon in your Homebar. 
+
+Recent activity and connected peers on the Radicle network can be viewed at http://seedling.radicle.xyz/. 
+
+
+To learn how to use Radicle, head over to the [Collaborating on Radicle](using-radicle/doc2.md) section
+
+
