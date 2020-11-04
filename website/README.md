@@ -24,6 +24,12 @@ $ yarn
 $ yarn start
 ```
 
+3. Publish to GH Pages
+
+```sh
+$ yarn publish-gh-pages
+```
+
 ## Directory Structure
 
 Your project file structure should look something like this
