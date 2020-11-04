@@ -5,16 +5,17 @@
       "getting-started/getting-started"
     ],
     "Collaborating with Radicle": [
-      "using-radicle/creating-projects",
-      "using-radicle/pushing-code",
-      "using-radicle/adding-remotes",
-      "using-radicle/creating-a-seed-node"
+      "using-radicle/creating-and-sharing-projects",
+      "using-radicle/pushing-and-pulling-changes",
+      "using-radicle/running-a-seed-node",
+      "using-radicle/troubleshooting"
     ],
     "Understanding Radicle": [
       "understanding-radicle/why-radicle",
       "understanding-radicle/how-it-works",
-      "understanding-radicle/glossary"
+      "understanding-radicle/glossary",
+      "understanding-radicle/faq"
     ],
-    "Building on Radicle": ["building-on-radicle/doc5"]
+    "Building on Radicle": ["building-on-radicle/documentation"]
   }
 }

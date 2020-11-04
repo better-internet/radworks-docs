@@ -30,4 +30,3 @@ Radicle was designed to be a robust, functional, and secure alternative for code
 
 The easiest way to use Radicle is with Upstream, a desktop client developed by the founding team of the Radicle project. With Upstream, you can create an identity, host your code, and collaborate with others on the Radicle network. Head over to [Getting Started](getting-started/doc1-1.md) for a walkthrough on how to download Upstream and becomee a part of the Radicle network.
 
-If you're looking to design your own code collaboration experience or hack on Radicle, head over to our technical documentation to get started.

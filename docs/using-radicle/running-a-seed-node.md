@@ -1,9 +1,7 @@
 ---
-id: pushing-code
-title: Pushing and pulling code
+id: running-a-seed-node
+title: Running a seed node
 ---
-
-In Radicle, 
 
 This is a link to [another document.](doc3.md)  
 This is a link to an [external page.](http://www.example.com)

@@ -10,7 +10,7 @@ The Radicle network can be accessed via Upstream, a desktop client. To download 
 
 ## Creating an identity
 
-To create an identity on the Radicle network, you can use the Upstream app. The app will create a unique peer identity, or a peerID, for you that's paired to the computer you installed it on. This peerID is how others can discover you on the Radicle network. 
+To create an identity on the Radicle network, you can use the Upstream app. The app will create a unique peer identity — known as a [**peerID**](understanding-radicle/glossary.md/#peerID) — for you that's paired to the computer you installed it on. For now, this peerID is how others can discover you on the Radicle network. Later on, you will be able to pair multiple peerIDs under one user handle, enabling support and consistency across multiple devices.
 
 [insert pic of identity]
 
@@ -22,15 +22,14 @@ To push code to the Radicle network via the Upstream client, you first have to a
 
 - Add ` export PATH="$HOME/.radicle/bin:$PATH" ` to your shell configuration
 - Restart your shell
-- Check that you've done everything correctly by running `git-remote-rad` in your shell. You should receive something along the lines of:
+- Check that the remote helper is available in your path by running:
 
-'''
-~ git-remote-rad
-thread 'main' panicked at 'index out of bounds: the len is 0 but the index is 0', /Users/buildkite/buildkite-cache/cargo/git/checkouts/radicle-link-009c17032bc5eda9/577e994/git-helpers/src/remote_helper.rs:42:9
-note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace`
-'''
+```
+$ which git-remote-rad
+<home path>/.radicle/bin/git-remote-rad
+```
 
-To push to the Radicle network, you can use the command `git push rad`.
+With the remote helper installed, you will be able to [push](using-radicle/doc2-1.md) to the Radicle network.
 
 ## Joining a seed node
 

@@ -9,7 +9,7 @@ Code collaboration platforms, or "forges", started building on top of Git: they 
 
 Radicle was designed to provide this same functionality while retaining Git’s peer-to-peer nature, building on what made distributed version control so powerful in the first place.
 
-# Git gossips well
+## Git gossips well
 
 The earliest version of Radicle adopted a generalized approach to replication—it wasn’t tailored to replicating collaboration artifacts or source code and as we discovered, was ill-suited to the demands of real-world code collaboration.
 
@@ -21,7 +21,7 @@ On the other hand, the current iteration is specifically designed for this use c
 
 In order to keep Git's efficiency when it comes to data replication, while offering global decentralized repository storage, we chose to design Radicle as a peer-to-peer networking layer on top of Git's smart transfer protocol. Radicle would take care of discovering peers, offloading the actual data transfer to Git.
 
-# radicle-link
+## radicle-link
 
 Radicle Link is a peer-to-peer protocol with a generic distributed version control backend. It aims to be general enough to be used on top of systems such as pijul or mercurial, though it's initial implementation is focused on supporting Git.
 
@@ -35,23 +35,23 @@ The owner of the repository thus becomes the founder of the project and signs th
 
 In addition to the repository, a Radicle project includes the identities of all its maintainers: peers with designated rights over the project's identity. Initially, the only maintainer is the founder. By adding other maintainers to the project metadata, additional layers of trust can be introduced around the project. Any update to the project metadata must be signed by a quorum of maintainers, providing a cryptographically secure way to manage project state & metadata, for example in the case of transferring ownership. The history of the metadata file is backed by the underlying DVCS, and is verified upon replication, ensuring it was't tampered with.
 
-## Replication and validation
+### Replication and validation
 
 To ensure data integrity and authenticity in the peer-to-peer network, we adopt an algorithm similar to the root file update process from The Update Framework (TUF). In this process, peers can fetch and verify the project metadata before replicating the latest changesets and revisions. This is important, since it effectively allows data to be served by any peer, in a secure manner. The physical location from which project data is fetched becomes irrelevant to the user.
 
-## Tracking and discovery
+### Tracking and discovery
 
 When a project is published to the network the specific repository or source tree becomes identifiable by the maintainer of this tree. This allows repositories to be addressed by a shareable URL, which is then resolved to a physical location on the network, for the purpose of replication. This URL has the following form:
 
-rad://<project-id>/<maintainer-id>
+`rad://<project-id>/<maintainer-id>`
 
 Peers decide what data to replicate through the tracking of projects. Tracking a project signals interest, and means to impliestracking its maintainers, therefore replicating the data within their social graphs. In the context of a project, maintainers of a repository may choose to track the repositories of other owners (this is called a remote in Git terminology: a named reference to a remote repository). If the remote repository is found to track other remotes, the tracking repository shall also transitively track those, up to a configurable N degrees out.
 
-## Availability
+### Availability
 
 To improve data availability, participants in the network can choose to act as seeds. This is similar in concept to a pub in Secure Scuttlebutt: seeds are "always-on" nodes that automatically track discovered projects, thereby increasing the availability of these projects on the network. Since seeds may track a large number of repositories for a given project, replicating a project from a seed will greatly increase the connectedness of the tracking graph. Tracking a seed will also increase the number of paths leading back to the original upstream, ensuring that contributions can flow back up to the project maintainers even if they come from participants not within the set of tracked repositories of the maintainer.
 
-## Offline and local-first
+### Offline and local-first
 
 With the introduction of hosted platforms came new ‘enhanced’ workflows like pull requests, issue tracking, and code reviews. These workflows were unique because they were non-Git native but still tied to source code through rich user interfaces and features. As a result, they have further defined the common developer experience by making collaboration more than just code—the social interactions captured in issues, code reviews and discussions are just as important as the source code itself. However, they've also locked-in developers to the platforms that host these workflows and their artifacts. If you lost access to your GitHub account you'd have access to your source code, but wouldn't have access to any of your issues, reviews, or pull requests. Even worse, access to valuable conversations could be completely lost.
 
