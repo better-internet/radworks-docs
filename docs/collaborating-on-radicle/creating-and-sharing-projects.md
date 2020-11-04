@@ -11,7 +11,7 @@ Creating a project is as easy as creating a repository in git. In the Upstream c
 
 ## Sharing a project
 
-While you will be able to search for projects directly on Radicle using the projectID, the only way to currently do so is to add another user as a remote to your project. For instructions on how to do this, head to [pushing & pulling changes](using-radicle/doc2-1.md)
+While you will be able to search for projects directly on Radicle using the projectID, the only way to currently do so is to add another user as a remote to your project. For instructions on how to do this, head to [pushing & pulling changes](collaborating-on-radicle/doc2-1.md)
 
 
 
