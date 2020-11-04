@@ -1,6 +1,6 @@
 ---
-id: doc2-3
-title: Viewing and pulling changes
+id: running-a-seed-node
+title: Running a seed node
 ---
 
 This is a link to [another document.](doc3.md)  

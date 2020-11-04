@@ -1,22 +1,21 @@
 {
   "docs": {
     "Introduction": [
-      "doc1",
-      "getting-started/installation",
-      "getting-started/create-identity",
-      "getting-started/start-a-project",
-      "getting-started/connect-to-network"
+      "what-is-radicle",
+      "getting-started/getting-started"
     ],
-    "Collaborating with Radicle": [
-      "using-radicle/doc2-1",
-      "using-radicle/doc2-2",
-      "using-radicle/doc2-3"
+    "Collaborating on Radicle": [
+      "collaborating-on-radicle/creating-and-sharing-projects",
+      "collaborating-on-radicle/pushing-and-pulling-changes",
+      "collaborating-on-radicle/running-a-seed-node",
+      "collaborating-on-radicle/troubleshooting"
     ],
     "Understanding Radicle": [
       "understanding-radicle/why-radicle",
       "understanding-radicle/how-it-works",
-      "understanding-radicle/glossary"
+      "understanding-radicle/glossary",
+      "understanding-radicle/faq"
     ],
-    "Building on Radicle": ["building-on-radicle/doc5"]
+    "Building on Radicle": ["building-on-radicle/documentation"]
   }
 }

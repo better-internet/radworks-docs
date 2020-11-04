@@ -1,7 +1,9 @@
 ---
-id: glossary
-title: Glossary
+id: troubleshooting
+title: Troubleshooting
 ---
+
+[for error codes, we can use same formatting as glossary]
 
 ## branch
 A parallel version of a [repository](#repository) that consists of changesets. A branch is separate from the default branch, allowing one to work freely without disrupting the "live" version of a [repository](#repository). Once changes are made, a branch can be merged back into the default branch to publish changes.
