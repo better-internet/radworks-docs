@@ -27,7 +27,7 @@ $ yarn start
 3. Publish to GH Pages
 
 ```sh
-$ yarn publish-gh-pages
+$ yarn deploy
 ```
 
 ## Directory Structure
