@@ -33,12 +33,12 @@ With the remote helper installed, you will be able to [push](collaborating-on-ra
 
 ## Joining a seed node
 
-Seed nodes are "always-on" nodes running on public IPs that serve data to any connected peers. By joining a seed node, it automatically tracks you and shares your data across it's network of other connected users. This increases the availability of your data throughout the network, while making it easier to find other's data as well. We recommend joining the official Radicle seed node to bootstrap your connectivity.
+Seed nodes are "always-on" nodes running on public IPs that serve data to any connected peers. By joining a seed node, it automatically tracks you and shares your data across its network of other connected users. This increases the availability of your data throughout the network, while making it easier to find other's data as well. Upstream is preconfigured with an official Radicle seed node to bootstrap your connectivity. If you have removed the default seed node, you can always re-add it later by following these steps:
 
 1. Navigate to *Settings*. There, under the *Network* header, you'll find your seed list.
-2. Add the seed address to the input box and submit by pressing `RETURN`
+2. Paste the seed address into to the input box and submit by pressing `RETURN`.
 
-    `hybh5cb7spafgs7skjg6qkssts3uxht31zskpgs4ypdzrnaq7ye83k@seedling.radicle.xyz:12345`
+    `hynewpywqj6x4mxgj7sojhue3erucyexiyhobxx4du9w66hxhbfqbw@seedling.radicle.xyz:12345`
 
 3. Check that you're connected by hovering over your Connection icon in your Homebar.
 
@@ -46,5 +46,3 @@ Recent activity and connected peers on the Radicle network can be viewed at http
 
 
 To learn how to use Radicle, head over to the [Collaborating on Radicle](collaborating-on-radicle/creating-and-sharing-projects.md) section
-
-
