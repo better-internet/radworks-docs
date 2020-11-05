@@ -3,7 +3,7 @@ id: pushing-and-pulling-changes
 title: Pushing and pulling changes
 ---
 
-## Pushing changes to a project
+## Committing and pushing code
 
 To push code to Radicle, you first need to make sure your shell is configured correctly by following the instructions in the [Getting Started](getting-started/doc1-1.md) section. 
 
@@ -19,11 +19,11 @@ It can be pushed to Radicle with:
 
 `git push rad <branch name>`
 
-## Finding & cloning a project
+## Finding & cloning projects
 
 ### Following projects
 
-To clone a complete copy of another user's project to your machine, you must first find it on the Radicle network. To find a project, you need it's [**projectID**](understanding-radicle/glossary.md/#project-id). This can be found under in the project page under the [project name](understanding-radicle/glossary.md/#project-name), or in a seed node UI. 
+To contribute to another user's project to your machine, you must first find it on the Radicle network. To find a project, you need it's [**projectID**](understanding-radicle/glossary.md/#project-id). This can be found under in the project page under the [project name](understanding-radicle/glossary.md/#project-name), or in a seed node UI. 
 
 [insert picture of projectID in seednode UI and in project page]
 
@@ -35,11 +35,11 @@ Once found, copy the projectID into the Upstream search bar. If the project exis
 
 To clone a working copy of a followed project to your computer, you can use the [**Checkout**](understanding-radicle/glossary.md/#checkout) option within the Upstream client. This will clone the project to a specified location on your local machine and initialize a Git repository.
 
-Checking out a project will create a new remote for that project. You can view this remote in the peer switcher.
+Commiting and publishing changes to this working copy will create a new [remote](understanding-radicle/glossary.md/#remote) for that project that is uniquely linked to your peerID. You can view this remote in the peer switcher.
 
 [insert picture of peer switcher]
 
-It will also add the project to your **My Projects** tab.
+Once a remote is created for a project, it will also add the project to your **My Projects** tab. 
 
 ## Getting changes from a project 
 
@@ -47,6 +47,8 @@ It will also add the project to your **My Projects** tab.
 To view and pull changes from another user's version of your project, you must first **add their remote**. To do this, you must add their **peerID** to your list of remotes. 
 
 [insert gif of adding peerID to manage remotes modal]
+
+Adding a user's remote is basically adding their version of your project to your machine. Once added, you'll be able to fetch changes from their version and apply them to your working copy. Read more about [how remotes work on Radicle](understanding-radicle/faq.md).
 
 You can view all remotes of a project with the command:
 
