@@ -1,6 +1,6 @@
 ---
 id: running-a-seed-node
-title: Running a seed Node
+title: Running a seed node
 ---
 
 To improve data availability, participants in the network can choose to act as
