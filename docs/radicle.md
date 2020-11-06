@@ -22,9 +22,15 @@ For more on Radicle Link, check out the [Understanding Radicle](understanding-ra
 
 While GitHub and other platforms offer an easy and standard way to collaborate on code, their centrally-hosted approach has surfaced numerous platform and security risks. Despite relying on the open protocols of Git, these platforms are vulnerable to censorship as well as capitalist ends, which are often misaligned with the goals of free and open source software.
 
-As the status quo for code collaboration, these platforms host the largest repositories of open source development made up of not just code, but issues, pull requests, reviews, and comments. These parts of the code collaboration process exist solely within these platforms, along with the largest social network for developers in the world.
+As the status quo for code collaboration, these platforms host the largest repositories of open source development made up of not just code, but issues, pull requests, reviews, and comments. These parts of the code collaboration process exist solely within these platforms, along with the largest social network for developers in the world. 
 
-Radicle was designed to be a robust, functional, and secure alternative for code collaboration that anyone in the world can use, however they want, whenever they want. The goal is to provide everything that a centrally-hosted platform does without relying on intermediaries or third parties. Radicle is also a free and open source project that anyone can build on and contribute to.
+Radicle was designed to be a robust, functional, and secure alternative for code collaboration that anyone in the world can use, however they want, whenever they want.
+
+[Read more about our vision of decentralized code collaboration.](understanding-radicle/why-radicle.md)
+
+The goal is to provide everything that a centrally-hosted platform does without relying on intermediaries or third parties. With this in mind, Radicle's peer-to-peer approach presents a new model for code collaboration in which the idea of a single canonical upstream is replaced by bazaar-style development. 
+
+[Read more about the Radicle collaboration model](understanding-radicle/faq.md)
 
 ## How do I use Radicle?
 
