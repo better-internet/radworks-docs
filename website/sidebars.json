@@ -4,11 +4,11 @@
       "what-is-radicle",
       "getting-started/getting-started"
     ],
-    "Collaborating on Radicle": [
-      "collaborating-on-radicle/creating-and-sharing-projects",
-      "collaborating-on-radicle/pushing-and-pulling-changes",
-      "collaborating-on-radicle/running-a-seed-node",
-      "collaborating-on-radicle/troubleshooting"
+    "Using Radicle": [
+      "using-radicle/creating-and-sharing-projects",
+      "using-radicle/pushing-and-pulling-changes",
+      "using-radicle/running-a-seed-node",
+      "using-radicle/troubleshooting"
     ],
     "Understanding Radicle": [
       "understanding-radicle/why-radicle",
