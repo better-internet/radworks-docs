@@ -4,7 +4,6 @@
     "start": "docusaurus-start",
     "build": "docusaurus-build",
     "deploy": "docusaurus-publish",
-    "publish-gh-pages": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
     "rename-version": "docusaurus-rename-version"
