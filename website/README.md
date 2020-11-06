@@ -23,13 +23,10 @@ $ yarn
 $ yarn start
 ```
 
-3. Publish to GH Pages
+3. Deploy to GH Pages
 
 ```sh
-$ GIT_USER=<ENTER_YOUR_GITHUB-USER_HERE> \
-  CURRENT_BRANCH=master \
-  USE_SSH=true \
-  yarn deploy
+$ ./deploy.sh
 ```
 
 # Editing Content
