@@ -7,7 +7,7 @@ title: Pushing and pulling changes
 
 To push code to Radicle, you first need to make sure your shell is configured correctly by following the instructions in the [Getting Started](getting-started/doc1-1.md) section.
 
-After the Radicle remote helper is configured, pushing to Radicle is as simple as pushing to any other platform. After changes are added and commited, they can be pushed to the Radicle remote via `git push rad`. For help using Git, please refer to [relevant documentation](https://docs.github.com/en/free-pro-team@latest/github/using-git).
+After the Radicle remote helper is configured, pushing to Radicle is as simple as pushing to any other platform. After changes are added and commited, they can be pushed to the Radicle remote via `git push rad`. For help using Git, please refer to [relevant documentation](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup).
 
 It's important to note that once changes are pushed to the Radicle remote, they are published to the Radicle network and are available to anybody who is connected to you in the network.
 
