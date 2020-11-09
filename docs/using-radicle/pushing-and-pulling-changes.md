@@ -39,7 +39,7 @@ Commiting and publishing changes to this working copy will create a new [remote]
 
 [insert picture of peer switcher]
 
-Once a remote is created for a project, it will also move the project to your **My Projects** tab.
+Once a remote is created for a project, it will also move the project to your **Projects** tab.
 
 ## Getting changes from a project
 
@@ -63,4 +63,4 @@ After a remote has been added, any changes can be fetched with:
 
 `git fetch <remote>`
 
-Where `<remote>` is of the following form: `remotes/<display name>@<peerID>/<branch>` and can be looked up by inspecting the output of `git branch -a`. Remotes returned by `git branch -a` match the remotes found in the "Manage remotes" modal.
+Where `<remote>` is of the following form: `<display name>@<peerID>/<branch>` and can be looked up by inspecting the output of `git branch -a`. Remotes returned by `git branch -a` match the remotes found in the "Manage remotes" modal.

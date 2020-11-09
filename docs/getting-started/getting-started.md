@@ -32,7 +32,7 @@ The app will also prompt you to create a passphrase. This passphrase *isn't* a p
 
 ## Configuring your system
 
-To push code to the Radicle network via the Upstream client, you first have to add the [Radicle git remote helper](understanding-radicle/faq.md) to your shell configuration.
+To publish code to the Radicle network via the Upstream client, you first have to add the [Radicle git remote helper](understanding-radicle/faq.md) to your shell configuration.
 
 - Add `export PATH="$HOME/.radicle/bin:$PATH"` to your shell configuration
 - Restart your shell
