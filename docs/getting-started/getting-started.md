@@ -6,7 +6,7 @@ sidebar_label: Getting Started
 
 ## Installation & Download
 
-The Radicle network can be accessed via Upstream, a desktop client. To download the app, click [here](https://buildkite.com/monadic/radicle-upstream/builds/6098). While Upstream is currently the only client for using Radicle, it won't be the only one. Upstream development is public by default and completely open source. You can follow along development on [radicle.community](https://radicle.community)
+The Radicle network can be installed and accessed via Upstream, a desktop client. To download the app, click [here](https://buildkite.com/monadic/radicle-upstream/builds/6098). While Upstream is currently the only client for using Radicle, it won't be the only one. Upstream development is public by default and completely open source. You can follow along development on [radicle.community](https://radicle.community)
 
 <details>
     <summary><b> DISCLAIMER 🌱 </b></summary>
@@ -24,11 +24,11 @@ The Radicle network can be accessed via Upstream, a desktop client. To download 
 
 ## Creating an identity
 
-To create an identity on the Radicle network, you can use the Upstream app. The app will create a unique peer identity — known as a [**peerID**](understanding-radicle/glossary.md/#peerid) — for you that's paired to the computer you installed it on. For now, this peerID is how others can discover you on the Radicle network. Later on, you will be able to pair multiple peerIDs under one user handle, enabling support and consistency across multiple devices.
+To create an identity on the Radicle network, you can use the Upstream app. The app will generate a unique identifier — known as a [**Device ID**](understanding-radicle/glossary.md/#peerid) — that's paired to the computer you've installed Radicle on. For now, this Device ID is the only way other users can find and collaborate with you. Later on, you will be able to manage multiple Device IDs under one user handle, enabling support and consistency across multiple devices.
 
 [insert pic of identity]
 
-The app will also prompt you to create a passphrase. This passphrase *isn't* a private key — it is a password for accessing the Upstream app. It will also be required when pushing code from your local machine to the Radicle network via your rad remote.
+The app will also prompt you to create a passphrase. This passphrase *isn't* a private key — it is a password decrypting your keypair to access and publish to the Upstream app. You will also be prompted for this passphrase when pushing code from your local machine to the Radicle network via your command line.
 
 ## Configuring your system
 
@@ -43,7 +43,7 @@ $ which git-remote-rad
 <home path>/.radicle/bin/git-remote-rad
 ```
 
-With the remote helper installed, you will be able to [push changes](using-radicle/pushing-and-pulling-changes.md#pushing-changes-to-a-project) to the Radicle network.
+With the remote helper installed, you will be able to [push changes](using-radicle/pushing-and-pulling-changes.md#pushing-changes-to-a-project) to your [Radicle installation](understanding-radicle/how-it-works.md), which will be published by the Upstream client.
 
 ## Joining a seed node
 

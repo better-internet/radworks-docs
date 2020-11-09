@@ -9,7 +9,7 @@ To push code to Radicle, you first need to make sure your shell is configured co
 
 After the Radicle remote helper is configured, pushing to Radicle is as simple as pushing to any other platform. After changes are added and commited, they can be pushed to the Radicle remote via `git push rad`. For help using Git, please refer to [relevant documentation](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup).
 
-It's important to note that once changes are pushed to the Radicle remote, they are published to the Radicle network and are available to anybody who is connected to you in the network.
+It's important to note that once changes are pushed to your Radicle remote, they are published to the Radicle network and will be publically available to anybody you are connected with. Updates are only published to the network if the Upstream client is running. 
 
 Radicle projects also support [branches](understanding-radicle/glossary.md/#branch). A new branch can be made by following common Git commands.
 
@@ -23,11 +23,11 @@ It can be pushed to Radicle with:
 
 ### Following projects
 
-To contribute to another user's project, you must first find it on the Radicle network. To find a project, you need its [**projectID**](understanding-radicle/glossary.md/#project-id). This can be found in the project page under the [project name](understanding-radicle/glossary.md/#project-name), or in a seed node UI.
+To contribute to another user's project, you must first find it on the Radicle network. To find a project, you need its [**Radicle ID**](understanding-radicle/glossary.md/#project-id). This can be found in the project page under the [project name](understanding-radicle/glossary.md/#project-name), or in a seed node UI.
 
-[insert picture of projectID in seednode UI and in project page]
+[insert picture of Radicle ID in seednode UI and in project page]
 
-Once found, copy the projectID into the Upstream search bar. Following the project will replicate it to your local machine once it's found in your network of connected peers.
+Once found, copy the Radicle ID into the Upstream search bar. Following the project will replicate it to your local machine once it's found in your network of connected peers.
 
 [insert picture of projectID & search bar]
 
@@ -44,11 +44,11 @@ Once a remote is created for a project, it will also move the project to your **
 ## Getting changes from a project
 
 ### Adding remotes
-To view and pull changes from another user's version of your project, you must first **add their remote**. To do this, you must add their **peerID** to your list of remotes.
+To view and pull changes from another user's version of your project, you must first **add their remote**. To do this, you must add their **Device ID** to the list of remotes that you follow.
 
-[insert gif of adding peerID to manage remotes modal]
+[insert gif of adding Device ID to manage remotes modal]
 
-Adding a user's remote is basically adding their version of your project to your machine. Once added, you'll be able to fetch changes from their version and apply them to your working copy. Read more about [how remotes work on Radicle](understanding-radicle/faq.md).
+Adding and following a user's remote is basically adding their version of your project to your machine. To get changes from a new remote you must fetch them from a connected peer that has replicated the remote's changes. Once fetched, you'll be able to pull changes from their version and apply them to your working copy. Read more about [how remotes work on Radicle](understanding-radicle/faq.md).
 
 You can view all remotes of a project with the command:
 
@@ -63,4 +63,4 @@ After a remote has been added, any changes can be fetched with:
 
 `git fetch <remote>`
 
-Where `<remote>` is of the following form: `<display name>@<peerID>/<branch>` and can be looked up by inspecting the output of `git branch -a`. Remotes returned by `git branch -a` match the remotes found in the "Manage remotes" modal.
+Where `<remote>` is of the following form: `<display name>@<deviceID>/<branch>` and can be looked up by inspecting the output of `git branch -a`. Remotes returned by `git branch -a` match the remotes found in the "Manage remotes" modal.
