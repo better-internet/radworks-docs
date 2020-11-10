@@ -63,4 +63,4 @@ After a remote has been added, any changes can be fetched with:
 
 `git fetch <remote>`
 
-Where `<remote>` is of the following form: `<display name>@<deviceID>/<branch>` and can be looked up by inspecting the output of `git branch -a`. Remotes returned by `git branch -a` match the remotes found in the "Manage remotes" modal.
+Where `<remote>` is of the following form: `<display name>@<Device ID>/<branch>` and can be looked up by inspecting the output of `git branch -a`. Remotes returned by `git branch -a` match the remotes found in the "Manage remotes" modal.
