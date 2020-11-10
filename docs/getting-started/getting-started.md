@@ -47,7 +47,7 @@ With the remote helper installed, you will be able to [push changes](using-radic
 
 ## Joining a seed node
 
-Seed nodes are "always-on" nodes running on public IPs that serve data to any connected peers. By joining a seed node, it automatically tracks you and shares your data across its network of other connected users. This increases the availability of your data throughout the network, while making it easier to find other's data as well. Upstream is preconfigured with an official Radicle seed node to bootstrap your connectivity. If you have removed the default seed node, you can always re-add it later by following these steps:
+Seed nodes are "always-on" nodes running on public IP addresses that serve data to any connected peers. By joining a seed node, it automatically tracks you and shares your data across its network of other connected users. This increases the availability of your data throughout the network, while making it easier to find other's data as well. Upstream is preconfigured with an official Radicle seed node to bootstrap your connectivity. If you have removed the default seed node, you can always re-add it later by following these steps:
 
 1. Navigate to *Settings*. There, under the *Network* header, you'll find your seed list.
 2. Paste the seed address into to the input box and submit by pressing `RETURN`.
