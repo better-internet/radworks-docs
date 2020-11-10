@@ -4,7 +4,7 @@ title: What is Radicle?
 sidebar_label: What is Radicle?
 ---
 
-Radicle is an open-source stack for code collaboration 🌱. Built on Git, it enables developers to collaborate on code without relying on intermediaries. It's a robust, functional, and secure alternative to centralized code collaboration platforms.
+Radicle is an open-source stack for code collaboration 🌱. It enables developers to collaborate on code without relying on intermediaries. It's a robust, functional, and secure alternative to centralized code collaboration platforms.
 
 Read more about the vision for decentralized code collaboration [here](understanding-radicle/why-radicle.md).
 
