@@ -17,10 +17,9 @@ At the moment, [projects can only be created through the Upstream client](unders
 
 ## Sharing projects
 
-Projects can be shared with their Radicle. The Radicle ID can be copied from the project page.
+Projects can be shared with their Radicle ID. The Radicle ID can be copied from the project page.
 
 Copy and pasting a project's Radicle ID into your search bar will find it on the network for you. Following a project will replicate it to your local machine, making it available to all of your connected peers. To learn more about following & replication, [click here](understanding-radicle/how-it-works.md).
-
 
 
 
