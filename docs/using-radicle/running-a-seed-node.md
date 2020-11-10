@@ -36,12 +36,12 @@ to allow incomming connections for the following ports:
   - `UDP:12345`  - for peer data exchange
   - `TCP:80`     - for the seed node UI
 
-For this exampple let's assume that we have the public IP address `1.2.3.4` at
+For this example, let's assume that we have the public IP address `1.2.3.4` at
 our disposal and that our router is set up to forward the ports UDP:12345 and
 TCP:80 to the machine where the seed node will be running.
 
 While not strictly necessary, it's nice to have a domain name set up for the
-public IP address as well. For our example we'll use this record:
+public IP address as well. For this example, we'll use this record:
 `myseed.myorg.com. A 1.2.3.4`.
 
 Now you're ready to start the seed node. Let's configure it to listen to ports
