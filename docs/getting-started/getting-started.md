@@ -28,7 +28,7 @@ To create an identity on the Radicle network, you can use the Upstream app. The 
 
 [insert pic of identity]
 
-The app will also prompt you to create a passphrase. This passphrase *isn't* a private key — it is a password decrypting your keypair to access and publish to the Upstream app. You will also be prompted for this passphrase when pushing code from your local machine to the Radicle network via your command line.
+The app will also prompt you to create a passphrase. This passphrase *isn't* a private key — it is a password decrypting your keypair to access and publish to the Upstream app. You will also be prompted for this passphrase when pushing and fetching code from your local machine to the Radicle network via your command line.
 
 ## Configuring your system
 
