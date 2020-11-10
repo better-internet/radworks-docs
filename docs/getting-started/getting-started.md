@@ -6,7 +6,7 @@ sidebar_label: Getting Started
 
 ## Installation & Download
 
-The Radicle network can be installed and accessed via Upstream, a desktop client. To download the app, click [here](https://buildkite.com/monadic/radicle-upstream/builds/6098). While Upstream is currently the only client for using Radicle, it won't be the only one. Upstream development is public by default and completely open source. You can follow along development on [radicle.community](https://radicle.community)
+The Radicle network can be accessed via Upstream, a desktop client. To download the app, click [here](https://buildkite.com/monadic/radicle-upstream/builds/6098). While Upstream is currently the only client for using Radicle, it won't be the only one. Upstream development is public by default and completely open source. You can follow along development on [radicle.community](https://radicle.community)
 
 <details>
     <summary><b> DISCLAIMER 🌱 </b></summary>

@@ -7,11 +7,11 @@ In Radicle, local Git repositories are published and shared as [projects](unders
 
 [insert picture of Radicle ID under project handle]
 
-In Radicle, a project also includes the identities of all its [maintainers](understanding-radicle/glossary.md/#maintainer): peers with designated rights over the project's metadata. To read more about how projects are replicated across the Radicle network, head to our [Understanding Radicle](understanding-radicle/how-it-works.md) section.
+A project also includes the identities of all its [maintainers](understanding-radicle/glossary.md/#maintainer): peers with designated rights over the project's metadata. To read more about how projects are replicated across the Radicle network, head to our [Understanding Radicle](understanding-radicle/how-it-works.md) section.
 
 ## Creating projects
 
-Creating a project is as easy as initializing a repository in Git. In the Upstream client, you can create a project from scratch or from an existing repository. If creating from scratch, the client will create a new Git repository in the location you choose. If creating from an existing repository, Radicle will initialize your repository as a project and publish it to the Radicle netowrk.
+Creating a project is as easy as initializing a repository in Git. In the Upstream client, you can create a project from scratch or from an existing repository. If creating from scratch, the client will create a new Git repository in the location you choose. If creating from an existing repository, Upstream will initialize your repository as a project and publish it to the Radicle network.
 
 At the moment, [projects can only be created through the Upstream client](understanding-radicle/faq.md).
 
