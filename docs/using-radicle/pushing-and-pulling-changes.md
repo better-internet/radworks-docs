@@ -48,7 +48,10 @@ To view and pull changes from another user's version of your project, you must f
 
 [insert gif of adding Device ID to manage remotes modal]
 
-Adding and following a user's remote is basically adding their version of your project to your machine. To get changes from a new remote you must fetch them from a connected peer that has replicated the remote's changes. Once fetched, you'll be able to pull changes from their version and apply them to your working copy. Read more about [how remotes work on Radicle](understanding-radicle/faq.md).
+Adding a peer's remote means that you wish to track their changes to your project. It's important to note that these changes may not instantly appear. We rely on the connectedness of the network to ensure that we hear about the changes from a peer we follow. Assuming that the network of peers also track the peer you are looking for, you will get their changes:
+
+1. On application startup, where your peer will ask for any new changes from all the peers you follow. For more information on following, [click here](understanding-radicle/how-it-works.md/#following).
+2. Whenever your peer receives a gossip message about the peer you wish to follow.  For more information on gossip, [click here](understanding-radicle/how-it-works.md/#gossip).
 
 You can view all remotes of a project with the command:
 
