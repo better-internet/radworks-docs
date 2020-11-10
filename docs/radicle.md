@@ -10,7 +10,7 @@ Read more about the vision for decentralized code collaboration [here](understan
 
 ## How it works
 
-Radicle is built on open protocols — not platforms. It was designed to provide similar functionality tocentralized code collaboration platforms, or "forges", while retaining Git’s peer-to-peer nature, building on what made distributed version control so powerful in the first place.
+Radicle is built on open protocols — not platforms. It was designed to provide similar functionality to centralized code collaboration platforms, or "forges", while retaining Git’s peer-to-peer nature, building on what made distributed version control so powerful in the first place.
 
 The network is powered by a peer-to-peer replication protocol built on Git, called Radicle Link. Radicle Link extends Git with peer-to-peer network discovery by disseminating data via a process called gossip. That is, participants in the network share and spread data they are "interested" in by keeping redundant copies locally and sharing, otherwise known as "replicating", their local data with selected peers. By leveraging Git's smart transfer protocol, Radicle Link keeps Git's efficiency when it comes to data replication while offering global decentralized repository storage through the peer-to-peer networking layer.
 
@@ -43,4 +43,3 @@ If you have already interacted with other decentralized social networks, this mo
 ## How do I use Radicle?
 
 The easiest way to use Radicle is with Upstream, a desktop client developed by the founding team of the Radicle project. With Upstream, you can create an identity, host your code, and collaborate with others on the Radicle network. Head over to [Getting Started](getting-started/getting-started.md) for a walkthrough on how to download Upstream and becomee a part of the Radicle network.
-
