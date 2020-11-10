@@ -12,7 +12,7 @@ The Radicle network can be accessed via Upstream, a desktop client. To download 
     <summary><b> DISCLAIMER 🌱 </b></summary>
     <br>
         <p><em>
-            As the Software is of experimental nature and deployed for testing purposes in a testnet environment only, you acknowledge that this Beta Version of the Software is likely to contain bugs, defects, or errors (including any bug, defect, or error relating to or resulting from the display, manipulation, processing, storage, transmission, or use of data) that may materially and adversely affects the use, functionality, or performance of Radicle or any product or system containing or used in conjunction with Radicle.
+            As the Software is of experimental nature and deployed for testing purposes in a testnet environment only, you acknowledge that this Beta Version of the Software is likely to contain bugs, defects, or errors (including any bug, defect, or error relating to or resulting from the display, manipulation, processing, storage, transmission, or use of data) that may materially and adversely affect the use, functionality, or performance of Radicle or any product or system containing or used in conjunction with Radicle.
         </p>
         <p>
             You are aware and acknowledge that your processing, development, exchange, storage sharing, provision of, collaboration to or other involvement in Content on or via Radicle takes place in a testnet environment for testing purposes only. You acknowledge and agree that you have no claim to integrity and consistency regarding any Content whatsoever. You acknowledge and agree to the risk of total and irretrievable loss of Content throughout and after the Beta phase. You acknowledge and agree that any Content will most likely and without prior notice be irretrievably deleted upon completion of the testing phase. You acknowledge and agree that you are solely responsible for secure storage (e.g. backup copies) of Content and that the Foundation shall not be responsible and liable under any circumstance for any loss or corruption of Content.
@@ -24,17 +24,17 @@ The Radicle network can be accessed via Upstream, a desktop client. To download 
 
 ## Creating an identity
 
-To create an identity on the Radicle network, you can use the Upstream app. The app will create a unique peer identity — known as a [**peerID**](understanding-radicle/glossary.md/#peerid) — for you that's paired to the computer you installed it on. For now, this peerID is how others can discover you on the Radicle network. Later on, you will be able to pair multiple peerIDs under one user handle, enabling support and consistency across multiple devices.
+To create an identity on the Radicle network, you can use the Upstream app. The app will generate a unique identifier — known as a [**Device ID**](understanding-radicle/glossary.md/#peerid) — that's paired to the computer you've installed Radicle on. For now, this Device ID is the only way other users can find and collaborate with you. Later on, you will be able to manage multiple Device IDs under one user handle, enabling support and consistency across multiple devices.
 
 [insert pic of identity]
 
-The app will also prompt you to create a passphrase. This passphrase *isn't* a private key — it is a password for accessing the Upstream app. It will also be required when pushing code from your local machine to the Radicle network via your rad remote.
+The app will also prompt you to create a passphrase. This passphrase *isn't* a private key — it is a password decrypting your keypair to access and publish to the Upstream app. You will also be prompted for this passphrase when pushing and fetching code from your local machine to the Radicle network via your command line.
 
 ## Configuring your system
 
-To push code to the Radicle network via the Upstream client, you first have to add the pRadicle git remote helper](understanding-radicle/faq.md) to your shell configuration.
+To publish code to the Radicle network via the Upstream client, you first have to add the [Radicle git remote helper](understanding-radicle/faq.md) to your shell configuration.
 
-- Add ` export PATH="$HOME/.radicle/bin:$PATH" ` to your shell configuration
+- Add `export PATH="$HOME/.radicle/bin:$PATH"` to your shell configuration
 - Restart your shell
 - Check that the remote helper is available in your path by running:
 
@@ -43,7 +43,7 @@ $ which git-remote-rad
 <home path>/.radicle/bin/git-remote-rad
 ```
 
-With the remote helper installed, you will be able to [push](using-radicle/pushing-and-pulling-changes.md#pushing-changes-to-a-project) to the Radicle network. 
+With the remote helper installed, you will be able to [push changes](using-radicle/pushing-and-pulling-changes.md#pushing-changes-to-a-project) to your [Radicle installation](understanding-radicle/how-it-works.md), which will be published by the Upstream client.
 
 ## Joining a seed node
 
