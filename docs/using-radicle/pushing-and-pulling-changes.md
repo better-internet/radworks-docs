@@ -9,7 +9,7 @@ To push code to Radicle, you first need to make sure your shell is configured co
 
 After the Radicle remote helper is configured, pushing to Radicle is as simple as pushing to any other platform. After changes are added and commited, they can be pushed to the Radicle remote via `git push rad`. For help using Git, please refer to [relevant documentation](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup).
 
-It's important to note that once changes are pushed to your Radicle remote, they are published to the Radicle network and will be publically available to anybody you are connected with. Updates are only published to the network if the Upstream client is running. 
+It's important to note that once changes are pushed to your Radicle remote, they are published to the Radicle network and will be publicly available to anybody you are connected with. Updates are only published to the network if the Upstream client is running. 
 
 Radicle projects also support [branches](understanding-radicle/glossary.md/#branch). A new branch can be made by following common Git commands.
 
