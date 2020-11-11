@@ -17,8 +17,7 @@ machine first:
 Next, clone and set up the `radicle-bins` repository:
 
     git clone https://github.com/radicle-dev/radicle-bins.git
-    cd radicle-bins
-    cd seed
+    cd radicle-bins/seed
 
 Install UI depependencies and build the UI:
 
