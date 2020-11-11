@@ -25,11 +25,11 @@ It can be pushed to Radicle with:
 
 To contribute to another user's project, you must first find it on the Radicle network. To find a project, you need its [**Radicle ID**](understanding-radicle/glossary.md/#project-id). This can be found in the project page under the [project name](understanding-radicle/glossary.md/#project-name), or in a seed node UI.
 
-[insert picture of Radicle ID in seednode UI and in project page]
+![Identity](/img/radicle-id-seed-node.png)
 
 Once found, copy the Radicle ID into the Upstream search bar. Following the project will replicate it to your local machine once it's found in your network of connected peers.
 
-[insert picture of projectID & search bar]
+![Search bar](/img/search-bar.png)
 
 ### Cloning projects
 
@@ -37,7 +37,7 @@ To clone a working copy of a followed project to your computer, you can use the 
 
 Commiting and publishing changes to this working copy will create a new [remote](understanding-radicle/glossary.md/#remote) for that project which is uniquely linked to your peerID. You can view this remote in the peer switcher.
 
-[insert picture of peer switcher]
+![Peer switcher](/img/peer-switcher.png)
 
 Once a remote is created for a project, it will also move the project to your **Projects** tab.
 
@@ -46,7 +46,9 @@ Once a remote is created for a project, it will also move the project to your **
 ### Adding remotes
 To view and pull changes from another user's version of your project, you must first **add their remote**. To do this, you must add their **Device ID** to the list of remotes that you follow.
 
-[insert gif of adding Device ID to manage remotes modal]
+<video width="100%" height="100%" playsinline autoplay muted loop>
+  <source src="/img/add-remote.mp4" type="video/mp4">
+<video>
 
 Adding a peer's remote means that you wish to track their changes to your project. It's important to note that these changes may not instantly appear. We rely on the connectedness of the network to ensure that we hear about the changes from a peer we follow. Assuming that the network of peers also track the peer you are looking for, you will get their changes:
 

@@ -26,7 +26,7 @@ The Radicle network can be accessed via Upstream, a desktop client. To download 
 
 To create an identity on the Radicle network, you can use the Upstream app. The app will generate a unique identifier — known as a [**Device ID**](understanding-radicle/glossary.md/#peerid) — that's paired to the computer you've installed Radicle on. For now, this Device ID is the only way other users can find and collaborate with you. Later on, you will be able to manage multiple Device IDs under one user handle, enabling support and consistency across multiple devices.
 
-[insert pic of identity]
+![Identity](/img/identity.png)
 
 The app will also prompt you to create a passphrase. This passphrase *isn't* a private key — it is a password decrypting your keypair to access and publish to the Upstream app. You will also be prompted for this passphrase when pushing and fetching code from your local machine to the Radicle network via your command line.
 
