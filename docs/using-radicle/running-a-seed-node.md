@@ -18,7 +18,6 @@ Next, clone and set up the `radicle-bins` repository:
 
     git clone https://github.com/radicle-dev/radicle-bins.git
     cd radicle-bins
-    git submodule update --init --recursive
     cd seed
 
 Install UI depependencies and build the UI:
