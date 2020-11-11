@@ -2,14 +2,14 @@
 
 This website was created with [Docusaurus](https://docusaurus.io/).
 
-# What's In This Document
+## What's In This Document
 
 - [Get Started](#get-started)
 - [Editing Content](#editing-content)
 - [Adding Content](#adding-content)
 - [Full Documentation](#full-documentation)
 
-# Get Started
+## Get Started
 
 1. Make sure all the dependencies for the website are installed:
 
@@ -35,9 +35,9 @@ $ GIT_USER=<ENTER_YOUR_GITHUB-USER_HERE> \
   yarn deploy
 ```
 
-# Editing Content
+## Editing Content
 
-## Editing an existing docs page
+### Editing an existing docs page
 
 Edit docs by navigating to `docs/` and editing the corresponding document:
 
@@ -54,7 +54,7 @@ Edit me...
 
 For more information about docs, click [here](https://docusaurus.io/docs/en/navigation)
 
-## Editing an existing blog post
+### Editing an existing blog post
 
 Edit blog posts by navigating to `website/blog` and editing the corresponding post:
 
@@ -71,9 +71,9 @@ Edit me...
 
 For more information about blog posts, click [here](https://docusaurus.io/docs/en/adding-blog)
 
-# Adding Content
+## Adding Content
 
-## Adding a new docs page to an existing sidebar
+### Adding a new docs page to an existing sidebar
 
 1. Create the doc as a new markdown file in `/docs`, example `docs/newly-created-doc.md`:
 
@@ -105,6 +105,6 @@ My new content here..
 For more information about adding new docs, click [here](https://docusaurus.io/docs/en/navigation)
 
 
-# Full Documentation
+## Full Documentation
 
 Full documentation can be found on the [website](https://docusaurus.io/).
