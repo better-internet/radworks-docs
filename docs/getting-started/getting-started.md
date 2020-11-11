@@ -45,7 +45,7 @@ $ which git-remote-rad
 
 With the remote helper installed, you will be able to [push changes](using-radicle/pushing-and-pulling-changes.md#pushing-changes-to-a-project) to your [Radicle installation](understanding-radicle/how-it-works.md), which will be published by the Upstream client.
 
-## Joining a seed node
+## Adding a seed node to Upstream
 
 Seed nodes are "always-on" nodes running on public IP addresses that serve data to any connected peers. By joining a seed node, it automatically tracks you and shares your data across its network of other connected users. This increases the availability of your data throughout the network, while making it easier to find other's data as well. Upstream is preconfigured with an official Radicle seed node to bootstrap your connectivity. If you have removed the default seed node, you can always re-add it later by following these steps:
 

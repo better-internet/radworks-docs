@@ -86,7 +86,7 @@ name. In our example the address is:
 
     hybecxsmx5t11emgg9mqkggihp5d7rd66tyuubaruiyym5f458fs1s@myseed.myorg.com:12345
 
-Have a look at the [Joining a seed node](getting-started/getting-started.md#joining-a-seed-node)
+Have a look at the [Adding a seed node to Upstream](getting-started/getting-started.md#adding-a-seed-node-to-upstream)
 section for more information on how to set up the new seed node in Upstream.
 
 [seed]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
