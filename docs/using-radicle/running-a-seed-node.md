@@ -23,9 +23,15 @@ Install UI depependencies and build the UI:
 
     (cd seed/ui && yarn && yarn build)
 
-Then you'll have to generate a private key:
+First let's set up a directory where the seed can store its data. This is
+important in case you are running an Upstream client on the same machine. The
+default path for both Upstream and the seed node would otherwise be the same
+and could result in unexpected behaviour.
 
     mkdir -p ~/.radicle-seed
+
+Then you'll have to generate a private key:
+
     cargo run -p radicle-keyutil -- --filename ~/.radicle-seed/secret.key
 
 In order for users to connect to the seed node from the internet, you'll have
@@ -53,8 +59,9 @@ Now you're ready to start the seed node. Let's configure it to listen on ports
       --public-addr "seed.my.org:12345" \
       < ~/.radicle-seed/secret.key
 
-We supplied the `--public-addr` option so the UI can show the seed address,
-more on that below.
+**Note:** we configured the seed to use `~/.radicle-seed` as its data directory
+with the `--root` option. The `--public-addr` option is needed so the UI can
+show the seed address, more on that below.
 
 <details>
   <summary>This is what you'll see in the terminal when starting the seed node:</summary>
