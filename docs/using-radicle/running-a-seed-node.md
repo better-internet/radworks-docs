@@ -4,15 +4,15 @@ title: Running a seed node
 ---
 
 To improve data availability, participants in the network can choose to act as
-seeds. This is similar in concept to a pub in [Secure Scuttlebutt][ssb]: seeds are
+seeds. This is similar in concept to a pub in [Secure Scuttlebutt][ss]: seeds are
 always-on nodes that automatically track discovered projects, thereby
 increasing the availability of these projects on the network.
 
 To build and run a seed node, you'll have to install some prerequisites on your
 machine first:
 
-  - [Rust toolchain][rust]
-  - [yarn][yarn]
+  - [Rust toolchain][ru]
+  - [yarn][ya]
 
 Next, clone and set up the `radicle-bins` repository:
 
@@ -85,7 +85,7 @@ show the seed address, more on that below.
 
 Now point your browser http://seed.my.org. This is the seed node dashboard.
 
-![Seed node UI](/img/seed-node-ui.png)
+![Seed node UI][sn]
 
 For Upstream clients to connect to your new seed, you'll need to share the
 seed address. This address can be found in the UI under the name of the
@@ -93,11 +93,14 @@ seed. In our example the address is:
 
     hyy5s7ysg96fqa91gbe7h38yddh4mkokft7y4htt8szt9e17sxoe3h@seed.my.org:12345
 
-Have a look at the [Adding a seed node to Upstream](getting-started/getting-started.md#adding-a-seed-node-to-upstream)
+Have a look at the [Adding a seed node to Upstream][ad]
 section for more information on how to set up the new seed in Upstream.
 
 
-[ssb]: https://scuttlebutt.nz
-[seed]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
-[rust]: https://www.rust-lang.org/tools/install
-[yarn]: https://yarnpkg.com/getting-started/install
+[ad]: getting-started/getting-started.md#adding-a-seed-node-to-upstream
+
+[sn]: /img/seed-node-ui.png
+
+[ru]: https://www.rust-lang.org/tools/install
+[ss]: https://scuttlebutt.nz
+[ya]: https://yarnpkg.com/getting-started/install
