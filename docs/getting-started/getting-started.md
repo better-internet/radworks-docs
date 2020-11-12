@@ -6,7 +6,7 @@ sidebar_label: Getting Started
 
 ## Installation & Download
 
-The Radicle network can be accessed via Upstream, a desktop client. To download the app, click [here][bk]. While Upstream is currently the only client for using Radicle, it won't be the only one. Upstream development is public by default and completely open source. You can follow along development on [radicle.community][co]
+The Radicle network can be accessed via Upstream, a desktop client. To download the app, click [here][bk]. While Upstream is currently the only client for using Radicle, it won't be the only one. Upstream development is public by default and completely open source. You can follow along development on [radicle.community][co].
 
 <details>
   <summary><b>DISCLAIMER 🌱</b></summary>
@@ -19,7 +19,7 @@ The Radicle network can be accessed via Upstream, a desktop client. To download 
       You are aware and acknowledge that your processing, development, exchange, storage sharing, provision of, collaboration to or other involvement in Content on or via Radicle takes place in a testnet environment for testing purposes only. You acknowledge and agree that you have no claim to integrity and consistency regarding any Content whatsoever. You acknowledge and agree to the risk of total and irretrievable loss of Content throughout and after the Beta phase. You acknowledge and agree that any Content will most likely and without prior notice be irretrievably deleted upon completion of the testing phase. You acknowledge and agree that you are solely responsible for secure storage (e.g. backup copies) of Content and that the Foundation shall not be responsible and liable under any circumstance for any loss or corruption of Content.
     </p>
     <p>
-      Read the rest of our Terms of Services [here][te]
+      Read the rest of our Terms of Services [here][te].
     </p>
   </em>
 </details>
@@ -60,7 +60,7 @@ Seed nodes are "always-on" nodes running on public IP addresses that serve data 
 
 Recent activity and connected peers on the Radicle network can be viewed at http://seedling.radicle.xyz/.
 
-To learn how to use Radicle, head over to the [Collaborating on Radicle][cr] section
+To learn how to use Radicle, head over to the [Collaborating on Radicle][cr] section.
 
 [^1]: Seed nodes can be configured to either track and share all data across the network, or to propagate only a specific set of peers or projects. Please refer to your seed operator for details. If you're running your own seed, have a look at the [Running a seed node][sn] section and the [seed node documentation][sd].
 
