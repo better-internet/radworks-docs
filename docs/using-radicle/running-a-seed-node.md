@@ -17,11 +17,11 @@ machine first:
 Next, clone and set up the `radicle-bins` repository:
 
     git clone https://github.com/radicle-dev/radicle-bins.git
-    cd radicle-bins/seed
+    cd radicle-bins
 
 Install UI depependencies and build the UI:
 
-    (cd ui && yarn && yarn build)
+    (cd seed/ui && yarn && yarn build)
 
 Then you'll have to generate a private key:
 
@@ -45,7 +45,7 @@ public IP address as well. For this example, we'll use this record:
 Now you're ready to start the seed node. Let's configure it to listen on ports
 12345 and 80 on all interfaces, the private key is supplied via `STDIN`:
 
-    cargo run --bin radicle-seed-node -- \
+    cargo run -p radicle-seed-node --release -- \
       --root ~/.radicle-seed \
       --peer-listen 0.0.0.0:12345 \
       --http-listen 0.0.0.0:80 \
@@ -59,14 +59,14 @@ more on that below.
 <details>
   <summary>This is what you'll see in the terminal when starting the seed node:</summary>
 
-    $ cargo run --bin radicle-seed-node -- \
+    $ cargo run -p radicle-seed-node --release -- \
       --root ~/.radicle-seed \
       --peer-listen 0.0.0.0:12345 \
       --http-listen 0.0.0.0:80 \
       --name "seedling" \
       --public-addr "myseed.my.org:12345" \
       < ~/.radicle-seed/secret.key
-        Finished dev [unoptimized + debuginfo] target(s) in 0.39s
+        Finished dev [optimized] target(s) in 0.39s
          Running `/Users/rudolfs/work/radicle-bins/target/debug/radicle-seed-node --root /Users/rudolfs/.radicle-seed --peer-listen '0.0.0.0:12345' --http-listen '0.0.0.0:80' --name seedling --public-addr 'myseed.myorg.com:12345'`
     Nov 10 16:48:11.006  INFO radicle_seed: Initializing tracker to track everything..
     Nov 10 16:48:11.006  INFO Protocol::run{local.id=hybecxsmx5t11emgg9mqkggihp5d7rd66tyuubaruiyym5f458fs1s local.addr=0.0.0.0:12345}: librad::net::protocol: Listening
