@@ -16,7 +16,7 @@ In a world where nearly all software relies on open source code, maintaining the
 
 Radicle was conceived as an alternative. Its goal is to eliminate intermediaries and create a peer-to-peer ecosystem that is robust, functional, and secure. There must be an intentional shift in narrative to prioritize the adoption of decentralized alternatives for code collaboration that abide by the principles of free and open source software.
 
-    "At the core of the open source ethos is the idea of liberty. Open source is about inverting power structures and creating access and opportunities for everyone." — GitHub employees' letter to GitHub 
+    "At the core of the open source ethos is the idea of liberty. Open source is about inverting power structures and creating access and opportunities for everyone." — GitHub employees' letter to GitHub
 
 ### Exploring alternatives
 
@@ -33,16 +33,16 @@ As we set out to build an alternative, we started by thinking about the values t
 1. It must prioritize user freedom
     In the words of the free software movement:
 
-        […] users have the freedom to run, copy, distribute, study, change and improve the software. Thus, "free software" is a matter of liberty, not price. 
+        […] users have the freedom to run, copy, distribute, study, change and improve the software. Thus, "free software" is a matter of liberty, not price.
 
 2. It must be accessible and uncensorable
-    Anyone should have the freedom to use the software to collaborate with others. No single party should be able to ban users from accessing the system, or content from being shared. It must be auditable and transparent. In addition, users should have the freedom to control their interactions and the content they see on an individual basis. 
+    Anyone should have the freedom to use the software to collaborate with others. No single party should be able to ban users from accessing the system, or content from being shared. It must be auditable and transparent. In addition, users should have the freedom to control their interactions and the content they see on an individual basis.
 3. It must be user-friendly
-    The software must be easy to use and not expect tremendous change in behavior from the user. Responsiveness and functionality must meet the standards established by current platforms. 
+    The software must be easy to use and not expect tremendous change in behavior from the user. Responsiveness and functionality must meet the standards established by current platforms.
 4. It must be offline-first
-    It must not require internet connectivity, DNS or online portals to function. There must be no single point of failure and it must be always available. 
+    It must not require internet connectivity, DNS or online portals to function. There must be no single point of failure and it must be always available.
 5. It must not compromise on security
-    Trust in a third party or intermediary must not be required for use. Every artefact of the system must be attested with cryptographic signatures, and verified. 
+    Trust in a third party or intermediary must not be required for use. Every artefact of the system must be attested with cryptographic signatures, and verified.
 
 Let’s look at hosting platforms like GitHub or GitLab in the context of this framework: they succeed by being user-friendly and accessible, but since they are centrally controlled, they are censorable, and do not prioritize user freedoms. If we look at self-hosted solutions like Gitea, Phabricator or Gogs, they are free, uncensorable, and user-friendly, however, they are not easily accessible due to gate-keeping and isolated environments: users across Phabricator deployments cannot interact with each other. This is the case for all currently available self-hosted solutions we've looked at. They also present single points of failure and require internet connectivity for most interactions with the system.
 
@@ -80,4 +80,4 @@ The story of the big code hosting platforms coincides with the general shift of 
 
 Radicle's approach is meant to return to the protocol-first philosophy by focusing on building code collaboration primitives instead of user experiences, and to reject data collection and siloing by intermediaries. This is reflected in the decision to build on and extend git. Having it as the nexus of replication builds on its strengths and decentralized nature. Having issues, pull requests, comments, and reviews locally gives developers the tools to manage and design their workflows without locking them into a new "experience". Despite any front-end interface that will be built (😉), Radicle exists foremost as an open protocol — not a platform.
 
-To complement the eventually-consistent peer-to-peer replication layer, a global registry that holds canonical project metadata is also desirable. This can provide functionality that is difficult to address at the gossip level, such as globally unique human-readable identifiers, as well as giving the ability for projects to anchor important information about their project in an immutable and totally-ordered way—for example, the latest repository head. This can alleviate weaknesses at the replication layer which is unable to prove to the user that the information shown is the latest available. In essence, the registry can provide users with the trusted, auditable and shared view of the network that is otherwise lacking, delivering the same connected "social" layer that attracted developers to platforms like GitHub. Designing such a system as an open protocol is challenging, and requires a consensus-based approach which we will discuss in more depth in the future. 
+To complement the eventually-consistent peer-to-peer replication layer, a global registry that holds canonical project metadata is also desirable. This can provide functionality that is difficult to address at the gossip level, such as globally unique human-readable identifiers, as well as giving the ability for projects to anchor important information about their project in an immutable and totally-ordered way—for example, the latest repository head. This can alleviate weaknesses at the replication layer which is unable to prove to the user that the information shown is the latest available. In essence, the registry can provide users with the trusted, auditable and shared view of the network that is otherwise lacking, delivering the same connected "social" layer that attracted developers to platforms like GitHub. Designing such a system as an open protocol is challenging, and requires a consensus-based approach which we will discuss in more depth in the future.

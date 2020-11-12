@@ -60,4 +60,3 @@ With Radicle, central servers are unnecessary for ensuring the discoverability a
 Having Git as the nexus of replication builds on its strengths and decentralized nature. Having issues, pull requests, comments, and reviews locally gives developers the tools to manage and design their workflows as they see fit. By existing as an open source protocol instead of a platform, Radicle gives developers the freedom to collaborate without reliance on third parties.
 
 You can follow the development of Radicle Link in the #development category of our radicle.community forum or sign up to our mailing list.
-
