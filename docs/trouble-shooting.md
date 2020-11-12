@@ -158,6 +158,6 @@ possible — checking first that it's not already reported by another user.
 
 [community]: https://radicle.community/
 [github-issues]: https://github.com/radicle-dev/radicle-upstream/issues
-[monorepo]: TODO(finto): Link to our monorepo explanation
 [radicle-surf]: https://github.com/radicle-dev/radicle-surf
+[monorepo]: TODO(finto): Link to our monorepo explanation
 [device-id]: TODO(finto): link to device id
