@@ -65,7 +65,8 @@ The Cathedral and the Bazaar describes two approaches to free software developme
 Peer-to-peer networking makes it far easier for developers and maintainers to develop not just a shared, but a trusted representation of project state grounded in actual source code and secure peer identities. With peer replication, patches become more comprehensive because they are tied to local issues, comments, and reviews connected to the development process. With more comprehensive patches, bazaar-style development can retain its flexibility while supporting more sophisticated workflows. This is why Radicle replaces the idea of a single canonical upstream with a peer-to-peer model familiar to the open source hackers of the 90s and early 2000s. It makes bazaar-style development easier and better.
 
 This potential is what caused Radicle to settle on a gossip-based "social overlay" built on distributed version control systems that is free and always available without the hassle of self-hosting or trusting companies with user data.
-Git gossips well
+
+### Git gossips well
 
 The next design decision came as a result of our experimentation with decentralized storage. After building the first version of Radicle on IPFS, we ran into performance and functionality issues. A more detailed analysis can be found here, but the major realization was that replicating git repos peer-to-peer on the storage layer left us no choice but losing the packfile protocol, one of the things that makes git fast. This approach would make source code a second-class citizen—making it impractical to store repositories with large histories.
 
