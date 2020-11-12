@@ -11,7 +11,8 @@ The Radicle network can be accessed via Upstream, a desktop client. To download 
 <details>
     <summary><b> DISCLAIMER 🌱 </b></summary>
     <br>
-        <p><em>
+    <em>
+        <p>
             As the Software is of experimental nature and deployed for testing purposes in a testnet environment only, you acknowledge that this Beta Version of the Software is likely to contain bugs, defects, or errors (including any bug, defect, or error relating to or resulting from the display, manipulation, processing, storage, transmission, or use of data) that may materially and adversely affect the use, functionality, or performance of Radicle or any product or system containing or used in conjunction with Radicle.
         </p>
         <p>
@@ -19,7 +20,8 @@ The Radicle network can be accessed via Upstream, a desktop client. To download 
         </p>
         <p>
             Read the rest of our Terms of Services [here][te]
-        </p></em>
+        </p>
+    </em>
 </details>
 
 ## Creating an identity
