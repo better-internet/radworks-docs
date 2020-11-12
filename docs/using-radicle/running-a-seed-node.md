@@ -66,12 +66,12 @@ more on that below.
       --name "seedling" \
       --public-addr "seed.my.org:12345" \
       < ~/.radicle-seed/secret.key
-        Finished dev [optimized] target(s) in 0.39s
-         Running `/Users/rudolfs/work/radicle-bins/target/debug/radicle-seed-node --root /Users/rudolfs/.radicle-seed --peer-listen '0.0.0.0:12345' --http-listen '0.0.0.0:80' --name seedling --public-addr 'seed.my.org:12345'`
-    Nov 10 16:48:11.006  INFO radicle_seed: Initializing tracker to track everything..
-    Nov 10 16:48:11.006  INFO Protocol::run{local.id=hybecxsmx5t11emgg9mqkggihp5d7rd66tyuubaruiyym5f458fs1s local.addr=0.0.0.0:12345}: librad::net::protocol: Listening
-    Nov 10 16:48:11.011  INFO Server::run{addr=V4(0.0.0.0:80)}: warp::server: listening on http://0.0.0.0:80
-    Nov 10 16:48:11.012  INFO radicle_seed_node::frontend: Listening(V4(0.0.0.0:12345))
+        Finished release [optimized] target(s) in 0.19s
+         Running `target/release/radicle-seed-node --root /Users/rudolfs/.radicle-seed --peer-listen '0.0.0.0:12345' --http-listen '0.0.0.0:80' --name seedling --public-addr 'seed.my.org:12345'`
+    Nov 12 10:48:03.758  INFO radicle_seed: Initializing tracker to track everything..
+    Nov 12 10:48:03.758  INFO Protocol::run{local.id=hyy5s7ysg96fqa91gbe7h38yddh4mkokft7y4htt8szt9e17sxoe3h local.addr=0.0.0.0:12345}: librad::net::protocol: Listening
+    Nov 12 10:48:03.760  INFO Server::run{addr=0.0.0.0:80}: warp::server: listening on http://0.0.0.0:80
+    Nov 12 10:48:03.760  INFO radicle_seed_node::frontend: Listening(0.0.0.0:12345)
 </details>
 
 Now point your browser http://seed.my.org. This is the seed node dashboard.
