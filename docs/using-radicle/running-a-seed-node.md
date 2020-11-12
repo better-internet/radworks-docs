@@ -4,7 +4,7 @@ title: Running a seed node
 ---
 
 To improve data availability, participants in the network can choose to act as
-seeds. This is similar in concept to a pub in Secure Scuttlebutt: seeds are
+seeds. This is similar in concept to a pub in [Secure Scuttlebutt][ssb]: seeds are
 always-on nodes that automatically track discovered projects, thereby
 increasing the availability of these projects on the network.
 
@@ -42,7 +42,7 @@ While not strictly necessary, it's nice to have a domain name set up for the
 public IP address as well. For this example, we'll use this record:
 `myseed.myorg.com. A 1.2.3.4`.
 
-Now you're ready to start the seed node. Let's configure it to listen to ports
+Now you're ready to start the seed node. Let's configure it to listen on ports
 12345 and 80 on all interfaces, the private key is supplied via `STDIN`:
 
     cargo run --bin radicle-seed-node -- \
@@ -53,8 +53,8 @@ Now you're ready to start the seed node. Let's configure it to listen to ports
       --public-addr "myseed.myorg.com:12345" \
       < ~/.radicle-seed/secret.key
 
-We supplied the `--public-addr` option so the UI can generate a shareable seed
-node address, more on that below.
+We supplied the `--public-addr` option so the UI can show the seed address,
+more on that below.
 
 <details>
   <summary>This is what you'll see in the terminal when starting the seed node:</summary>
@@ -78,15 +78,16 @@ Now point your browser http://127.0.0.1. This is the seed node dashboard.
 
 ![Seed node UI](/img/seed-node-ui.png)
 
-For Upstream clients to connect to your new seed node, you'll need a shareable
-seed node address. This address can be found in the UI under the seed node
-name. In our example the address is:
+For Upstream clients to connect to your new seed, you'll need to share the
+seed address. This address can be found in the UI under the name of the
+seed. In our example the address is:
 
     hybecxsmx5t11emgg9mqkggihp5d7rd66tyuubaruiyym5f458fs1s@myseed.myorg.com:12345
 
 Have a look at the [Adding a seed node to Upstream](getting-started/getting-started.md#adding-a-seed-node-to-upstream)
-section for more information on how to set up the new seed node in Upstream.
+section for more information on how to set up the new seed in Upstream.
 
+[ssb][https://scuttlebutt.nz/]
 [seed]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
 [rust]: https://www.rust-lang.org/tools/install
 [yarn]: https://yarnpkg.com/getting-started/install
