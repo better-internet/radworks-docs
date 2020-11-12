@@ -20,7 +20,7 @@ For more on Radicle Link, check out the [Understanding Radicle](understanding-ra
 
 ## How is Radicle different from GitHub?
 
-When coming to Radicle from a centralized code collaboration network like Github or Gitlab, you might notice that Radicle priotizes different concerns. Concretely:
+When coming to Radicle from a centralized code collaboration platform like Github or Gitlab, you might notice that Radicle priotizes different concerns. Concretely:
 
 1. users being in control of their identity
 2. users being in control of their content
