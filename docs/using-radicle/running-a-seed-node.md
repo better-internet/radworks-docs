@@ -4,8 +4,8 @@ title: Running a seed node
 ---
 
 To improve data availability, participants in the network can choose to act as
-seeds. This is similar in concept to a pub in [Secure Scuttlebutt][ss]: seeds are
-always-on nodes that automatically track discovered projects, thereby
+seeds. This is similar in concept to a pub in [Secure Scuttlebutt][ss]: seeds
+are always-on nodes that automatically track discovered projects, thereby
 increasing the availability of these projects on the network.
 
 To build and run a seed node, you'll have to install some prerequisites on your
@@ -65,7 +65,9 @@ with the `--root` option. The `--public-addr` option is needed so the UI can
 show the seed address, more on that below.
 
 <details>
-  <summary>This is what you'll see in the terminal when starting the seed node:</summary>
+  <summary>
+    This is what you'll see in the terminal when starting the seed node:
+  </summary>
 
     $ cargo run -p radicle-seed-node --release -- \
       --root ~/.radicle-seed \
@@ -87,14 +89,14 @@ Now point your browser http://seed.my.org. This is the seed node dashboard.
 
 ![Seed node UI][sn]
 
-For Upstream clients to connect to your new seed, you'll need to share the
-seed address. This address can be found in the UI under the name of the
-seed. In our example the address is:
+For Upstream clients to connect to your new seed, you'll need to share the seed
+address. This address can be found in the UI under the name of the seed. In our
+example the address is:
 
     hyy5s7ysg96fqa91gbe7h38yddh4mkokft7y4htt8szt9e17sxoe3h@seed.my.org:12345
 
-Have a look at the [Adding a seed node to Upstream][ad]
-section for more information on how to set up the new seed in Upstream.
+Have a look at the [Adding a seed node to Upstream][ad] section for more
+information on how to set up the new seed in Upstream.
 
 
 [ad]: getting-started/getting-started.md#adding-a-seed-node-to-upstream
