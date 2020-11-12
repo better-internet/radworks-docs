@@ -40,7 +40,7 @@ TCP:80 to the machine where the seed node will be running.
 
 While not strictly necessary, it's nice to have a domain name set up for the
 public IP address as well. For this example, we'll use this record:
-`myseed.myorg.com. A 1.2.3.4`.
+`seed.my.org. A 1.2.3.4`.
 
 Now you're ready to start the seed node. Let's configure it to listen on ports
 12345 and 80 on all interfaces, the private key is supplied via `STDIN`:
@@ -50,7 +50,7 @@ Now you're ready to start the seed node. Let's configure it to listen on ports
       --peer-listen 0.0.0.0:12345 \
       --http-listen 0.0.0.0:80 \
       --name "seedling" \
-      --public-addr "myseed.myorg.com:12345" \
+      --public-addr "seed.my.org:12345" \
       < ~/.radicle-seed/secret.key
 
 We supplied the `--public-addr` option so the UI can show the seed address,
@@ -64,7 +64,7 @@ more on that below.
       --peer-listen 0.0.0.0:12345 \
       --http-listen 0.0.0.0:80 \
       --name "seedling" \
-      --public-addr "myseed.myorg.com:12345" \
+      --public-addr "myseed.my.org:12345" \
       < ~/.radicle-seed/secret.key
         Finished dev [unoptimized + debuginfo] target(s) in 0.39s
          Running `/Users/rudolfs/work/radicle-bins/target/debug/radicle-seed-node --root /Users/rudolfs/.radicle-seed --peer-listen '0.0.0.0:12345' --http-listen '0.0.0.0:80' --name seedling --public-addr 'myseed.myorg.com:12345'`
@@ -74,7 +74,7 @@ more on that below.
     Nov 10 16:48:11.012  INFO radicle_seed_node::frontend: Listening(V4(0.0.0.0:12345))
 </details>
 
-Now point your browser http://127.0.0.1. This is the seed node dashboard.
+Now point your browser http://seed.my.org. This is the seed node dashboard.
 
 ![Seed node UI](/img/seed-node-ui.png)
 
@@ -82,7 +82,7 @@ For Upstream clients to connect to your new seed, you'll need to share the
 seed address. This address can be found in the UI under the name of the
 seed. In our example the address is:
 
-    hybecxsmx5t11emgg9mqkggihp5d7rd66tyuubaruiyym5f458fs1s@myseed.myorg.com:12345
+    hybecxsmx5t11emgg9mqkggihp5d7rd66tyuubaruiyym5f458fs1s@seed.my.org:12345
 
 Have a look at the [Adding a seed node to Upstream](getting-started/getting-started.md#adding-a-seed-node-to-upstream)
 section for more information on how to set up the new seed in Upstream.
