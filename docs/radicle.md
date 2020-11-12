@@ -26,7 +26,7 @@ When coming to Radicle from a centralized code collaboration platform like Githu
 2. users being in control of their content
 3. users being in control of their social interactions
 
-These concerns lead to a model for collaboration that might be familiar to the free and open source hackers of the 90s and early 2000s, that is radically different to the one presented by the web 2.0 platforms.
+These concerns support a model for collaboration that might be familiar to the free and open-source hackers of the 90s and early 2000s — one that is radically different from the prevailing 'Web 2.0' platform approach.
 
 The radicle-link protocol distinguishes between two types of identities: personal and project. The first describes an actor in the system, while the second describes a (software) project on which one or more actors collaborate. In radicle:
 
