@@ -30,7 +30,7 @@ These concerns support a model for collaboration that might be familiar to the f
 
 The radicle-link protocol distinguishes between two types of identities: user and project. The first describes an actor in the system, while the second describes a (software) repository within which one or more actors collaborate. In Radicle:
 
-1. peers follow other peers.
+1. Peers follow other peers.
 2. Peers track projects they are interested in.
 3. peers gossip about projects. This means tracking and replicating objects from the peers they follow, about the projects they are interested in.
 
