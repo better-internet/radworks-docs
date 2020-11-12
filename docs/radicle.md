@@ -32,7 +32,7 @@ The radicle-link protocol distinguishes between two types of identities: user an
 
 1. Peers follow other peers.
 2. Peers track projects they are interested in.
-3. peers gossip about projects. This means tracking and replicating objects from the peers they follow, about the projects they are interested in.
+3. Peers gossip about projects. This means replicating updates from the peers they follow and the projects they are interested in.
 
 It's this "trusted" social graph of peers and projects that becomes the foundation for collaboration within Radicle.
 
