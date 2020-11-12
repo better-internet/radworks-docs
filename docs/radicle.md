@@ -28,7 +28,7 @@ When coming to Radicle from a centralized code collaboration platform like Githu
 
 These concerns support a model for collaboration that might be familiar to the free and open-source hackers of the 90s and early 2000s — one that is radically different from the prevailing 'Web 2.0' platform approach.
 
-The radicle-link protocol distinguishes between two types of identities: personal and project. The first describes an actor in the system, while the second describes a (software) project on which one or more actors collaborate. In radicle:
+The radicle-link protocol distinguishes between two types of identities: user and project. The first describes an actor in the system, while the second describes a (software) repository within which one or more actors collaborate. In Radicle:
 
 1. peers follow other peers.
 2. peers track projects they are interested in.
