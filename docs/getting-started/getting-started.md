@@ -9,7 +9,7 @@ sidebar_label: Getting Started
 The Radicle network can be accessed via Upstream, a desktop client. To download the app, click [here][bk]. While Upstream is currently the only client for using Radicle, it won't be the only one. Upstream development is public by default and completely open source. You can follow along development on [radicle.community][co]
 
 <details>
-  <summary><b> DISCLAIMER 🌱 </b></summary>
+  <summary><b>DISCLAIMER 🌱</b></summary>
   <br />
   <em>
     <p>
