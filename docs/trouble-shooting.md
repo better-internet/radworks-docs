@@ -1,0 +1,163 @@
+---
+id: trouble-shooting
+title: Trouble Shooting
+---
+
+> “If you know the enemy and know yourself, you need not fear the result of a
+> hundred battles. If you know yourself but not the enemy, for every victory
+> gained you will also suffer a defeat. If you know neither the enemy nor
+> yourself, you will succumb in every battle.”
+>
+> ― Sun Tzu, The Art of War
+
+As developers of Upstream we want you, the user, to have the best experience as
+possible. Also as developers of Upstream, we know that there will be bugs and
+errors. To help consolidate these diametrically opposed pieces of knowledge we
+will try and document any of the errors that we are aware of, and give you
+advice on how you might recover. In the event that this information doesn't
+help, do not hesitate to reach out to [radicle.community](community) — or our
+[GitHub issues](github-issues) if you are comfortable with opening a detailed
+issue.
+
+For our known failures, we categorise them with a camel-case code word that
+gives a high level idea of what went wrong. When you encounter one of these
+errors you will receive a notification in the application which allows you to
+copy the error output. The code will be included in this JSON data.
+
+![image of copy error](TODO(finto))
+
+The next sections will start with the header of the code, followed by a reason
+for the error, and perhaps a way to mitigate the error and get you back on track
+with enjoying your Radicle experience.
+
+## SessionFetchFailure
+### Reason
+
+## ProjectRequestFailure
+
+### DefaultBranch
+#### Reason
+
+During creation or replication of a project, the default branch was not created
+or fetched. This will result in the application not being able to browse the
+specific project.
+
+#### Action
+
+**Caution**: this advice involves inspecting the state and manually deleting
+some references. Be careful when attempting to apply this fix. If you are at all
+unsure then reach out to us on the previously mentioned channels.
+
+In the error you will spot that the `urn` of the project is in the JSON data.
+The suffix after `rad:git` will correspond to the namespace of the project — see
+[here](monorepo) for more details.
+
+Your monorepo will live under `$XDG_DATA_HOME/radicle/git`. Running the
+following command you should see something like:
+
+```
+$ tree $XDG_DATA_HOME/radicle/git/refs
+
+/home/user/.local/share/radicle/git/refs/
+├── heads
+├── namespaces
+│   ├── hwd1yre8ibmso5webrog7uqwcrys4fmdijcyjfoso73utnz7y41dbtqudxe
+│   │   └── refs
+│   │       └── rad
+│   │           ├── id
+│   │           ├── self
+│   │           └── signed_refs
+│   └── hwd1yredpofbnmb6d8ea4ofqu31fzziho8xoejjcd15p553fyr4msmg4k8w
+│       └── refs
+│           ├── heads
+│           │   └── main
+│           └── rad
+│               ├── id
+│               ├── ids
+│               │   └── hwd1yre8ibmso5webrog7uqwcrys4fmdijcyjfoso73utnz7y41dbtqudxe
+│               ├── self
+│               └── signed_refs
+└── tags
+```
+
+The suffix we pointed out earlier should correspond to one of these entries. In
+this error case the `refs/heads/main` will be missing.
+
+If you just **replicated** the project, then delete this namespace entry and try
+replicate again.
+
+If you just **created** the project, then navigate to your working copy and do
+the following:
+
+```
+$ git checkout -b <default branch>
+```
+
+Add a `README.md` and commit this to the `<default branch>`, then:
+
+```
+$ git push rad <default branch>
+```
+
+### Stats
+#### Reason
+
+The [browser](radicle-surf) for the project could not fetch the statistics for your project.
+This could be down to an error in git.
+
+#### Action
+
+Reach out to us on one of our channels, mention the `Stats` code, and provide
+as much detail as possible.
+
+### SignedRefs
+#### Reason
+
+`signed-refs` are the git references that peers advertise which they have also
+signed with their secret key. This means that when your peer receives
+`signed-refs` it attempts to verify the signature using the advertised [Device
+ID](device-id). If this verification fails, then this project may be left in a
+broken state.
+
+#### Action
+
+Some of these cases may not be errors and the `signed-refs` did not actually
+come from that Device ID. If you think this is indeed an error, then we can
+attempt to inspect the `signed-refs`.
+
+To get the JSON data for the `signed-refs` we must run the following commands,
+filling in the details for your particular project and remote.
+
+```
+$ cd $XDG_DATA_HOME/radicle/git
+
+$ git ls-tree refs/namespaces/<id>/refs[/remotes/<peer>]/rad/signed_refs
+100644 blob e3f6e6bd25955802060698f5b5449c874969aa71    refs
+
+$ git cat-file -p e3f6e6bd25955802060698f5b5449c874969aa71
+{"refs":{"heads":{},"remotes":{}},"signature":"hyydp6mkwkrx1cuz8i4pg3wfojujxaa3s81higa846msaroegcdspp3qe358wmpa3f85s6zmyha5zfgtqnkszwcc6a3k7pfd35fnceoec"}
+```
+
+If you report this JSON payload and the offending Device ID, we can take a look
+and see if we notice anything out of the ordinary.
+
+## UnexpectedProxyExit
+### Reason
+
+## UnknownException
+### Reason
+
+This is catch all error. As we categorise our errors more & more — and even
+better, eliminate them! — then we should see less & less of this particular
+case.
+
+### Action
+
+Please report these errors to [GitHub](github-issues) with as much detail as
+possible — checking first that it's not already reported by another user.
+
+[community]: https://radicle.community/
+[github-issues]: https://github.com/radicle-dev/radicle-upstream/issues
+[monorepo]: TODO(finto): Link to our monorepo explanation
+[radicle-surf]: https://github.com/radicle-dev/radicle-surf
+[device-id]: TODO(finto): link to device id

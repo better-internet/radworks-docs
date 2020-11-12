@@ -16,6 +16,7 @@
       "understanding-radicle/glossary",
       "understanding-radicle/faq"
     ],
-    "Building on Radicle": ["building-on-radicle/documentation"]
+    "Building on Radicle": ["building-on-radicle/documentation"],
+    "Trouble Shooting": ["trouble-shooting"]
   }
 }
