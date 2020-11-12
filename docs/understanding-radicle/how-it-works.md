@@ -3,61 +3,541 @@ id: how-it-works
 title: How it Works
 ---
 
-Behind every repository is a version control system—the most popular of these being Git, created in 2005 by Linus Torvalds for the development of the Linux kernel. Git marked the rise of distributed version control systems as developers realized the centralized model of SVN and CVS didn't scale well with the number of contributors. In fact, Git was only created when Linus’ free Bitkeeper license was revoked after a Linux kernel contributor tried to reverse engineer its networking protocols. Git brought distributed version control to the forefront and changed the way software is developed today.
+Radicle Link is the peer-to-peer gossip protocol that powers the Radicle network. This documentation will provide an overview on how the protocol works. More information — including specifications, security considerations, and implementation notes — can be found in the [corresponding repositories](https://github.com/radicle-dev). 
 
-Code collaboration platforms, or "forges", started building on top of Git: they introduced search and discovery, canonicity, and social collaboration (issues & code review) to Git-based workflows, albeit not always following the same distributed model that Git was designed for.
+# Overview
 
-Radicle was designed to provide this same functionality while retaining Git’s peer-to-peer nature, building on what made distributed version control so powerful in the first place.
+Radicle Link is a peer-to-peer protocol with a generic distributed version control backend. It aims to be general enough to be used on top of systems such as pijul or mercurial, though it's initial implementation is focused on supporting Git. 
 
-## Git gossips well
+Radicle Link distinguishes between two types of identities: peers (users) and projects (repositories). In Radicle:
 
-The earliest version of Radicle adopted a generalized approach to replication—it wasn’t tailored to replicating collaboration artifacts or source code and as we discovered, was ill-suited to the demands of real-world code collaboration.
+* Peers track other peers
+* Peers track projects they are interested in 
+* Peers gossip about projects. This means replicating updates from the peers they track and the projects they are interested in
 
-On the other hand, the current iteration is specifically designed for this use case. The most outstanding difference is the decision to use Git as our storage and replication layer, instead of a decentralized storage network such as IPFS. In our experimentation with decentralized storage, we realized that replicating Git repos on the storage layer didn't permit the use of packfiles, one of the key protocols that makes Git useable at scale. Essentially, this approach would make source code a second-class citizen— making it impractical to store repositories with large histories. The reason is simple: the packfile protocol is interactive, which means before data is transferred between two parties, they determine exactly what needs to be sent over the wire, and the server puts together a packfile on the fly, before sending it downstream. This incredibly efficient approach isn't compatible with simple file storage protocols such as IPFS, which operate on the premise that content is usually static, unlike active code repositories that are constantly updated.
+These interactions create a "trusted" social graph of peers and projects that become the foundation for collaboration within Radicle.
 
-   The dumb protocol is simple but a bit inefficient, and it can't handle writing of data from the client to the server. The smart protocol is a more common method of transferring data, but it requires a process on the remote end that is intelligent about Git—it can read local data, figure out what the client has and needs, and generate a custom packfile for it.
+<details>
+    <summary><b> DISCLAIMER 🌱 </b></summary>
+    <br>
+        <p><em>
+            While this documentation reflects the specification of the Radicle Link protocol, note that while all information is implemented, not all information is integrated into the Beta release
+        </p></em>
+</details>
 
-   — Git Internals
+# Identities
 
-In order to keep Git's efficiency when it comes to data replication, while offering global decentralized repository storage, we chose to design Radicle as a peer-to-peer networking layer on top of Git's smart transfer protocol. Radicle would take care of discovering peers, offloading the actual data transfer to Git.
+## Overview
 
-## radicle-link
+The notion of "identity" in Radicle Link simply means the presence of a document at a conventional location within a git repository, where the document is subject to certain verification rules. The hash of the initial document is considered its stable identifier and encoded as a uniform resource name (URN) of the form rad:git:$HASH (for git repositories). The URN is supposed to be resolvable on the network into a top-level git repository of the same name ($HASH.git), which is valid iff it contains said identity document, and the document passes the verification rules.
 
-Radicle Link is a peer-to-peer protocol with a generic distributed version control backend. It aims to be general enough to be used on top of systems such as pijul or mercurial, though it's initial implementation is focused on supporting Git.
+## Architecture
 
-Radicle Link extends Git with peer-to-peer network discovery. Taking inspiration from Secure Scuttlebutt, a peer-to-peer protocol for social networking, data is disseminated via a process called gossip. That is, participants in the network share and spread data they are "interested" in by keeping redundant copies locally and sharing deltas with peers. With Radicle, we replicate data across connected repositories according to a “social graph” of contributors and maintainers, enabling source code and changesets to be disseminated according to use and value: the more peers who are interested in a certain project, the more available this project is made to the network.
+All identities in Radicle are based on public-key cryptography. They are architected as such: 
 
-## How it works
+A `DeviceKey` is an Ed25519 keypair tied to a peer's device (`d`). 
 
-Repositories are the base unit of replication in Radicle. To publish a repository to the network, it must first be initialized as a project. Projects combine source code, issues and proposed changes under a single umbrella, and carry a unique, shareable peer-to-peer identifier. The entirety of the project data and metadata, including social artefacts such as comments, are stored within the repository. To create a project, the owner of a repository defines a project identity. In the background, a project.json file is created in a predetermined disjoint branch of the repository, by convention rad/id. This file contains important metadata such as the project name, list of maintainers, as well as any related links.
+DeviceKey ($K_{d}$)
 
-The owner of the repository thus becomes the founder of the project and signs the initial version of the project metadata file (project.json) with their private key. The digest of the initial version, becomes the Project ID.
+A `PeerID` is the textual representation of a peer's `DeviceKey` and is encoded as follows:
 
-In addition to the repository, a Radicle project includes the identities of all its maintainers: peers with designated rights over the project's identity. Initially, the only maintainer is the founder. By adding other maintainers to the project metadata, additional layers of trust can be introduced around the project. Any update to the project metadata must be signed by a quorum of maintainers, providing a cryptographically secure way to manage project state & metadata, for example in the case of transferring ownership. The history of the metadata file is backed by the underlying DVCS, and is verified upon replication, ensuring it was't tampered with.
+PeerID ($I_{d} = BASE58(PK(K_{d}))$)
 
-### Replication and validation
+In Radicle, keys are securely exchanged with an elliptic curve Diffie-Hellman key agreement scheme, where DHKey is used for authentication (as the static public key s in the Noise[@noise] protocol).
 
-To ensure data integrity and authenticity in the peer-to-peer network, we adopt an algorithm similar to the root file update process from The Update Framework (TUF). In this process, peers can fetch and verify the project metadata before replicating the latest changesets and revisions. This is important, since it effectively allows data to be served by any peer, in a secure manner. The physical location from which project data is fetched becomes irrelevant to the user.
+DHKey ($S_{d} = PK(Curve25519(K_{d}))$)
 
-### Tracking and discovery
+CodeSigningKey ($C$)
 
-When a project is published to the network the specific repository or source tree becomes identifiable by the maintainer of this tree. This allows repositories to be addressed by a shareable URL, which is then resolved to a physical location on the network, for the purpose of replication. This URL has the following form:
+The CodeSigningKey may be equal to the DeviceKey $K_{d}$ for any device d (i.e. as long as the key is not shared between multiple devices). Typically, PGP keys already present on a PKI are used for code signing, and shared across devices.
 
-`rad://<project-id>/<maintainer-id>`
 
-Peers decide what data to replicate through the tracking of projects. Tracking a project signals interest, and means to impliestracking its maintainers, therefore replicating the data within their social graphs. In the context of a project, maintainers of a repository may choose to track the repositories of other owners (this is called a remote in Git terminology: a named reference to a remote repository). If the remote repository is found to track other remotes, the tracking repository shall also transitively track those, up to a configurable N degrees out.
+## Data Model
 
-### Availability
+Radicle Link distinguishes two types of identities: personal and project. The first describes an actor (a `peer`) in the system, while the second describes a software project (repository) on which one or more actors collaborate.
 
-To improve data availability, participants in the network can choose to act as seeds. This is similar in concept to a pub in Secure Scuttlebutt: seeds are "always-on" nodes that automatically track discovered projects, thereby increasing the availability of these projects on the network. Since seeds may track a large number of repositories for a given project, replicating a project from a seed will greatly increase the connectedness of the tracking graph. Tracking a seed will also increase the number of paths leading back to the original upstream, ensuring that contributions can flow back up to the project maintainers even if they come from participants not within the set of tracked repositories of the maintainer.
+Our model for maintaining consistency on repository data, is based on The Update Framework ([TUF](https://theupdateframework.io/)), which was conceived as a means of securely distributing software packages. Our approach is to establish an ownership proof, tied to the network identity of a peer (`PeerId`), or a set of peers, such that the views of a project can be replicated according to the trust relationships between peers ("tracking").
 
-### Offline and local-first
+*Read the [spec](https://github.com/radicle-dev/radicle-link/blob/master/docs/spec/identities.md)*
 
-With the introduction of hosted platforms came new ‘enhanced’ workflows like pull requests, issue tracking, and code reviews. These workflows were unique because they were non-Git native but still tied to source code through rich user interfaces and features. As a result, they have further defined the common developer experience by making collaboration more than just code—the social interactions captured in issues, code reviews and discussions are just as important as the source code itself. However, they've also locked-in developers to the platforms that host these workflows and their artifacts. If you lost access to your GitHub account you'd have access to your source code, but wouldn't have access to any of your issues, reviews, or pull requests. Even worse, access to valuable conversations could be completely lost.
+The identity of a project (repository) or peer is established using a document of the form:
 
-With Radicle, central servers are unnecessary for ensuring the discoverability and availability of changesets and social artifacts. In addition, by returning to a fully distributed model, it enables a more complete offline experience. Not only is the source code available offline, but so is everything else. Radicle is built to provide a convenient collaboration experience without intermediaries or vendor lock-in.
+```rust
+struct Doc<T, D> {
+    replaces: Option<Revision>,
+    payload: T,
+    delegations: D,
+}
+```
+where:
 
-Having Git as the nexus of replication builds on its strengths and decentralized nature. Having issues, pull requests, comments, and reviews locally gives developers the tools to manage and design their workflows as they see fit. By existing as an open source protocol instead of a platform, Radicle gives developers the freedom to collaborate without reliance on third parties.
+* `Revision` is a cryptographic hash of a document's contents, such that this document is content-addressable by this hash within the storage system.
 
-You can follow the development of Radicle Link in the #development category of our radicle.community forum or sign up to our mailing list.
+* `replaces` refers to the previous revision of the document, or none if it is the first revision.
 
+* `payload` is an extensible, forwards- and backwards-compatible datatype containing application-defined metadata about the repository. The protocol interprets some of the properties, as described in [Doc Payload](#Doc Payload).
+
+* `delegations` contains the public keys of key owners who are authorised to issue and approve new revisions of the document. The delegation format depends on the type of identity being established, as detailed below.
+
+The `Doc` must be serialised in canonical form. See more in [Serialisation](/#Serialisation). 
+
+The authenticity of the `Doc` is captured by the following type:
+
+```rust
+struct Identity<T, D> {
+    id: ContentId,
+    root: Revision,
+    revision: Revision,
+    doc: Doc<T, D>,
+    signatures: HashMap<PublicKey, Signature>,
+}
+
+```
+
+where:
+
+    *`id` is the content-addressable hash of the Identity itself
+    *`root` is the initial revision of the identity Doc
+    *`revision` is the current revision of the identity Doc
+    *`doc` is the Doc described by revision
+    *`signatures` contains signatures over the document history, indexed by the public keys used. A signature is made over the cryptographic hash of the concatenation of the Revisions chain, from most recent to the root.
+
+An `Identity` describes the attestation of a `Doc`s validity. Attestation chains MUST be stored as a hash-linked history (each `Identity` refers to its parent) -- we omit the parent id as a field here, as it is not used in the following sections.
+
+The `root` of a verified `Identity` is the stable identifier of the repository.
+
+### Doc Payload
+
+The Doc payload MUST include one of the following structures (but not both) for interpretation by the protocol:
+
+```rust
+struct User {
+    /// A short name (nickname, handle), without any prefix such as the `@`
+    /// character
+    name: String,
+}
+
+struct Project {
+    /// A short name
+    name: String,
+
+    /// A slightly longer description (should fit in a headline)
+    description: Option<String>,
+
+    /// The default branch. "master" is assumed for git repositories if
+    /// unspecified.
+    default_branch: Option<String>,
+}
+
+```
+
+There are currently no restrictions on the length (in bytes) of the fields.
+
+Applications MAY add additional payload data, but MUST do so in a way which unambiguously preserves the shape of the above definitions. See also: [Serialisation](/#Serialisation).
+
+## Radicle URNs 
+
+Identities are addressable within the Radicle Network by their stable identifier, encoded as a URN. Radicle URNs are syntactically and functionally equivalent to URNs as per [RFC8141](https://tools.ietf.org/html/rfc8141), although we have no intention of registering our namespace with the IANA. r-, q-, and f-components are not currently honoured by the protocol, and MAY be discarded by recipients.
+
+The syntax of a Radicle URN is defined as follows:
+
+```
+"rad" ":" protocol ":" root [ "/" path ]
+
+```
+
+where:
+
+```
+protocol = "git"
+root     = MULTIBASE(MULTIHASH(id))
+path     = pct-encoded
+id       = BYTES
+
+```
+
+The `id` is the `root` field of a verified Identity, as specified previously. The MULTIBASE and MULTIHASH encodings are specified in [multibase](https://github.com/multiformats/multibase) and [multihash](https://multiformats.io/multihash/), respectively. The preferred alphabet for the multibase encoding is [z-base32](http://philzimmermann.com/docs/human-oriented-base-32-encoding.txt). pct-encoded is defined in [RFC3986](https://tools.ietf.org/html/rfc3986), and the equivalence rules as per [RFC8141](https://tools.ietf.org/html/rfc8141) apply. 
+
+A Radicle URN will look like `rad:git:hwd1yredksthny1hht3bkhtkxakuzfnjxd8dyk364prfkjxe4xpxsww3try`. In the Upstream client, Radicle URNs are called [**Radicle IDs**](/glossary.md/#radicle-id).
+
+Read more [here](https://github.com/radicle-dev/radicle-link/blob/master/docs/spec/identities.md#radicle-urns).
+
+
+## Delegations
+
+As described in [Data Model](#data-model) Radicle Link distinguishes two types of identities: personal and project. The first describes an actor (usually denoted as a `peer`) in the system, while the second describes a software project (repository) on which one or more actors collaborate. Apart from their [payload](#doc-payloads) types `T`, they differ in their delegations type `D`:
+
+Personal identities can only delegate to anonymous keys, while project identities may attach a personal identity to a key delegation.  More formally:
+
+```
+type User<T> = Identity<T, HashSet<PublicKey>>;
+
+enum ProjectDelegation<U> {
+    Key(PublicKey),
+    User(User<U>),
+}
+
+type Project<T, U> = Identity<T, ProjectDelegation<U>>;
+
+```
+
+The `delegations` of a `Project` are also referred to as the project's **maintainers**.
+
+See more notes on Verification [here](https://github.com/radicle-dev/radicle-link/blob/master/docs/spec/identities.md#delegations)
+
+## Verification
+
+Document revisions, as well as authenticity attestations, form a hash-linked chain leading to the initial revision of the document. In order to verify the authenticity of a given identity attestation (`Identity`), the chain of updates must be contiguous and subject to the following verification rules.
+
+There are four levels of validity:
+
+1. **Untrusted**
+
+    The identity document is well-formed, and points to a root object which is retrievable from local storage.
+
+2. **Signed**
+
+   The identity carrier passes **1.**, and is signed by at least one key specified in the delegations of the document.
+
+3. **Quorum**
+
+    The identity carrier passes **2.**, and is signed by a quorum of the keys specified in the delegations of the document (`Q > D/2`).
+
+4. **Verified**
+
+    The identity carrier passes **3.**, and:
+        * The document does not refer to a previous revision, and no previous revision is known
+        * Or, the set of signatures forms a quorum of the [delegations](/#delegations) of the previous revision.
+
+    It is an error if:
+        * No previous revision is given, but a parent in the identity attestation chain is found
+        * A previous revision is given, but the identity attestation chain does not yield a parent
+        * A previous revision is given, but it is not the same the parent attestation refers to
+        * The current and parent attestations refer to different roots
+
+See more notes on Verification [here](https://github.com/radicle-dev/radicle-link/blob/master/docs/spec/identities.md#verification)
+
+## Serialisation
+See notes on Serialisation [here](https://github.com/radicle-dev/radicle-link/blob/master/docs/spec/identities.md#serialisation).
+
+
+# Git Implementation
+
+## Overview
+
+Radicle basically uses Git as a database. This means everything is stored in single Git monorepo that is read and written from via the Upstream client. Our Git implementation was devised to create an incentive for the seeder to provide all data necessary to resolve and verify a repository, while reducing latency by eliminating gossip queries and git fetches as much as possible. Read more about the approach [here](https://github.com/radicle-dev/radicle-link/blob/master/docs/rfc/identity_resolution.md).
+
+### Namespacing
+
+Radicle uses [namespaces](https://git-scm.com/docs/gitnamespaces) to store a `peer`'s Radicle data. By using namespacing, Radicle Link partitions a single git repository, or monorepo, into logical, smaller repos, that can be checked out individually. This monorepo includes a `peer`'s identity (personal & project) data, as well as all tracked Git repositories.
+
+The namespacing scheme has the following format:
+
+```rust
+# Owner of the monorepo
+let PEER_ID;
+
+# Peer tracked by $PEER_ID, either directly or transitively
+let TRACKED_PEER_ID;
+
+# Identity hash of the project or peer
+let IDENTITY;
+
+# Identity hashes of certifiers of $IDENTITY
+let CERTIFIER[1..];
+
+$PEER_ID/refs/
+`-- namespaces
+    `-- $IDENTITY
+        `-- refs
+            |-- heads # <-- code branches owned by $PEER_ID go here
+            |-- rad
+            |   |-- id # <-- points to the identity document history
+            |   |-- signed_refs # <-- signed refs of the peer
+            |   |-- self # <-- points to the identity of $PEER_ID
+            |   `-- ids
+            |       |-- $CERTIFIER[1]
+            |       `-- $CERTIFIER[2]
+            `-- remotes
+                `-- $TRACKED_PEER_ID
+                    |-- heads
+                    `-- rad
+                        |-- id
+                        |-- signed_refs
+                        |-- self
+                        `-- ids
+                            |-- $CERTIFIER[1]
+                            `-- $CERTIFIER[2]
+```
+Note that the **owned** $CERTIFIER[n] refs (ie. not those of remotes) are [symbolic refs](https://git-scm.com/docs/git-symbolic-ref), pointing to the `rad/id` branch of the respective namespace. For example, if identity `A` is certified by identity `B`, `refs/namespaces/A/refs/rad/ids/B` would contain:
+
+```
+ref: refs/namespaces/B/refs/rad/id
+```
+Tooling ensures that the certifier can only certify if the certifying identity is present locally and is logically valid for the certifier to use for certifying. The symref ensures that the certifying identity can be updated in one place, and stays up-to-date at all use sites without maintenance.
+
+The `rad/self` branch identifies `$PEER_ID`, i.e. the `rad/id` branch of the corresponding identity namespace. For example, if the identity of `$PEER_ID` is `C`, `rad/self` within the context of `$IDENTITY` would be a symref:
+
+```
+ref: refs/namespaces/C/rad/id
+```
+
+Any certifiers of the `self` identity must be included under `rad/ids/`. The `rad/self` branch contains the  equivalent to the contributor file in the radicle-link spec, rev1-draft, which is required iff the refs/heads/ hierarchy of $PEER_ID is non-empty (ie. it is permissible to omit it if $PEER_ID does not publish any branches of their own).
+
+### Git Encoding
+
+In the `git` implementation, a `Doc` corresponds to a `blob` object, stored as
+the single entry of a `tree` object, such that its name (acc. to the `tree`) is
+equal to the `blob` hash of the _initial_ version of the `Doc`, serialised in
+canonical form. That is:
+
+    let name = git hash-object -t blob doc.canonical_form()
+
+An `Identity` corresponds to a `commit` object.
+
+We map the fields as follows:
+
+```rust
+/* Simplified git object model */
+struct Commit {
+    id: Oid,
+    tree: Tree,
+    message: String,
+}
+
+struct Tree {
+    id: Oid,
+    entries: Vec<TreeEntry>,
+}
+
+struct TreeEntry {
+    id: Oid,
+    name: String,
+    object: BlobOrTree,
+}
+
+struct Blob {
+    id: Oid,
+    content: Vec<u8>,
+}
+
+/* Mapping (trivial type conversions elided) */
+let commit = /* .. */;
+let identity = Identity {
+    id: commit.id,
+    root: commit.tree.entries[0].name,
+    revision: tree.id,
+    doc: deserialize(first_blob(commit.tree).content),
+    signatures: from_trailers(commit.message),
+};
+```
+
+Where:
+
+* `first_blob` finds the first `TreeEntry` which is of type `blob`.
+* `deserialize` is implemented by a standard JSON parser. `User` delegations
+  from a `Project` are specified in the `Project`'s `Doc` as URNs, which are
+  resolved by parsing a `blob` object of the same name as the URN's `id` field
+  below the `tree` entry of type directory named `delegations`.
+* `from_trailers` interprets the commit message as per [git-interpret-trailers](https://git-scm.com/docs/git-interpret-trailers),
+  and extracts the signatures from trailers with the token `x-rad-signature`.
+
+The commit chain is stored in a branch at `refs/rad/id` in the peer's monorepo.
+
+### Fetching 
+
+Fetching (or cloning) would still happen on a per-`$IDENTITY` basis, as a
+replication factor equal to the network size is not desirable. We also need to
+map owned refs (`refs/heads`) to remotes, and should limit the number of refs
+advertised by `git-upload-pack`.
+
+In order to do so, `git-upload-pack --advertise-refs` transparently sets the
+namespace to the requested repository identity. Due to the certifier symrefs,
+the serving side advertises a "proof" (or perhaps better: "promise") to be able
+to include all relevant data (the `rad/id` branches) in the packfile.
+
+When negotiating the packfile, we do **not** namespace, such that the requester
+can access the entire universe as seen by the server. The refspecs are computed
+like this (`rad/refs` signature verification elided, which needs to come first,
+incurring two additional network rountrips):
+
+    # The set of all certifier identity hashes as found in the advertised refs,
+    # i.e. `unique(refs/rad/ids/* || refs/remotes/**/rad/ids/*)`
+    procedure certifiers -> Set CertifierIdentity;
+
+    # The set of all transitively tracked peers
+    let TRACKED_PEERS;
+
+    # The currently connected-to peer
+    let CONNECTED_PEER;
+
+    for peer in $TRACKED_PEERS
+        # We are connected to a tracked peers, so need to map owned to remote
+        # branches
+        if $peer == $CONNECTED_PEER
+            # Code branches may be non-fast-forwarded
+            +refs/namespaces/$IDENTITY/refs/heads/*:refs/namespaces/$IDENTITY/refs/remotes/$peer/refs/heads/*
+
+            # Map the owned id and certifier branches
+            refs/namespaces/$IDENTITY/rad/id*:refs/namespaces/$IDENTITY/refs/remotes/$peer/rad/id*
+
+            # Also map the certifier identities from and to top-level repos.
+            # Here, we're only interested in the branches owned by $peer.
+            for certifier in certifiers()
+                refs/namespaces/$certifier/rad/id*:refs/namespaces/$certifier/refs/remotes/$peer/rad/id*
+            end
+        else
+            # Same as above, but $CONNECTED_PEER doesn't own the code branches
+            # (but is -- possibly -- tracking $peer).
+            +refs/namespaces/$IDENTITY/refs/remotes/$peer/heads/*:refs/namespaces/$IDENTITY/refs/remotes/$peer/refs/heads/*
+
+            # Dito
+            refs/namespaces/$IDENTITY/refs/remotes/$peer/rad/id*:refs/namespaces/$IDENTITY/refs/remotes/$peer/rad/id*
+
+            # Map top-level identities (from and to remote $peer)
+            for certifier in certifiers()
+                refs/namespaces/$certifier/refs/remotes/$peer/rad/id*:refs/namespaces/$certifier/refs/remotes/$peer/rad/id*
+            end
+        end
+    end
+
+We can now, in a single packfile, receive a "mirror" of the logical remote
+repository requested (modulo the mapping of remotely owned branches to
+`refs/remotes`), _as well as_ all of the top-level logical repositories of all
+certifiers required to verify the identity document(s). Additionally, also the
+certifier identities can be verified, as we can resolve second-degree certifier
+identities within the namespace of the respective certifier. This may still not
+be sufficient, as recursion depth is not inherently limited by the identity
+verification protocol -- it is, however, at the network protocol level, and it
+is so at a reasonable depth which _should_ be sufficient for most purposes.
+
+### Working Copies
+
+
+## Peer Discovery & Replication 
+
+### Overview
+
+Radicle Link extends Git with peer-to-peer network discovery via a process called **gossip**. This means that peers in the network share and spread data they are "interested" in by keeping (replicating) redundant copies locally and sharing deltas with peers. With Radicle, we replicate data across connected repositories according to a “social graph” of peers and projects, enabling source code and changesets to be disseminated according to use and value: the more peers who are interested in a certain project, the more available this project is made to the network. 
+
+### Replication Model
+
+Repositories are the base unit of replication in Radicle. To publish a repository to the network, it must first be initialized as a project. Projects combine source code, issues and proposed changes under a single umbrella, and carry a unique, shareable peer-to-peer identifier. The entirety of the project data and metadata, including social artefacts such as comments, are stored within the repository. To create a project, the owner of a repository defines a project identity. In the background, a project.json file is created in a predetermined disjoint branch of the repository, by convention rad/id. This file contains important metadata such as the project name, list of maintainers, as well as any related links. 
+
+The unit of replication is a repository, identified by a `PeerID` in the context of a project document (See [Data Model](#data-model)). The holder of the corresponding `DeviceKey` is referred to as the **maintainer** of the repository. Repositories belonging to the same project are represented locally as a single repository, identified by a Radicle URN (or [Radicle ID](#radicle-urns) in the Upstream client). In the context of a project, the maintainer of a repository may choose to track the repositories of other peers (this is called a remote in git terminology: a named reference to a remote repository). If the remote repository is found to track other remotes, the tracking repository will also transitively track those, up to n degrees out.
+
+Therefore, a project on Radicle preserves the transitivity information of its remotes (i.e. via which tracked PeerID another PeerID is tracked).
+
+#### Tracking 
+Tracking is the backbone of collaboration as it drives the exchange of projects and their artifacts. In Radicle, peers track other peers and projects that they are interested in. This happens when a peer clones another peer's project or tracks a peer directly by adding them as a remote to their project via Upstream.
+
+Since peers represent seperate devices in the network, they each have their own view of the network. Each peer tracks this view of projects, identities, and data from connected peers in its own monorepo (See [Git Implementation](#git-implementation)).
+
+When a peer tracks another peer in the context of a project — say, if it clones another peer's project — it sets the intention to fetch and gossip the other peer's view of that project. This means all includes the project metadata, all working branches and commits, and changesets will be replicated and stored in the tracking peer's monorepo, so that it can be fetched and collaborated on.
+
+Specifically, this means the tracked peer will be added as a *remote* within the tracking peer's monorepo as a `$TRACKED_PEER_ID`, as seen in the following example:
+
+```rust
+# Owner of the monorepo
+let PEER_ID;
+
+# Peer tracked by $PEER_ID, either directly or transitively
+let TRACKED_PEER_ID;
+
+# Identity hash of the project or user
+let IDENTITY;
+
+# Identity hashes of certifiers of $IDENTITY
+let CERTIFIER[1..];
+
+$PEER_ID/refs/
+`-- namespaces
+    `-- $PROJECT_NAME
+        `-- refs
+            |-- heads # <-- code branches owned by $PEER_ID go here
+            |-- rad
+            |   |-- id # <-- points to the identity document history
+            |   |-- signed_refs # <-- signed refs of the peer
+            |   |-- self # <-- points to the identity of $PEER_ID
+            |   `-- ids
+            |       |-- $CERTIFIER[1]
+            |       `-- $CERTIFIER[2]
+            `-- remotes
+                `-- $TRACKED_PEER_ID
+                    |-- heads <-- code branches owned by $TRACKED_PEER_ID go here
+                    `-- rad 
+                        |-- id 
+                        |-- signed_refs
+                        |-- self <-- points to the identity of $TRACKED_PEER_ID
+                        `-- ids
+                            |-- $CERTIFIER[1]
+                            `-- $CERTIFIER[2]
+```
+See [Namespacing](#Namespacing) for more on monorepo structure.
+
+As well as being added to `remotes/$TRACKED_PEER_ID`, the tracking peer's monorepo will also gain an entry in its `config` file (See [Fetching](#Fetching)). This means that if the tracked peer announces changes and they are gossiped to the tracking peer — whether through their device or another peer's — they can be fetched and applied to the tracking peer's monorepo.
+
+##### Direct Tracking
+The other way a peer can track another peer is by explicity telling their monorepo to track a specific `PEER_ID`. Using the `track` function with `PEER_ID` of interest, the monorepo creates a new entry in the git config. Any updates from the tracked peer can be similarly fetched and applied the tracking peer's monorepo.
+
+The [`Manage Remotes`](using-radicle/pushing-and-pulling-changes.md/#adding-remtoes) feature in Upstream uses the `track` function to add peers as remotes directly to the project.
+
+##### The Social Graph
+
+In the case of multiple peer replications, any peer that tracks a project will implicitly track it's maintainers as well. This means that when any peer on the network clones a project, all of said project's maintainers will end up in that peer's remote list. Since maintainers of the project work on the canonical view of the project, this automatic tracking ensures the health and consistency of a project as it's gossiped across the network.
+
+This also means that for a single `PEER_ID`, we have a sub-graph that consists of more `PEER_ID`s — whether they be the maintainers of the project or other tracked peers. Any time a peer is replicated, a portion of their sub-graph is replicated as well, up to 2 degrees out. 
+
+```rust
+pub struct Remotes(HashMap<PeerId, HashMap<PeerId, HashSet<PeerId>>>);
+```
+
+This means that everytime you track a peer, you are not only adding them as a remote, but also their remotes, and the remotes of their remotes. This ensures that a project is consistently available across the network without a total reliance on the maintainers of the project or the original tracked peer. 
+
+#### Validation 
+
+To ensure data integrity and authenticity, when cloning a repository, the attestation history according to the remote peer is fetched before all other repository contents, and the verification procedure (See [Verification](#Verification)) is run on it. If this does not yield a verified status, the clone is aborted. The resulting repository state must include the attestation histories of at least a quorum of the delegates (See [Delegation](#delegation)) as per the remote peer's view of the identity document. In Git, the claim that this will be the case can be determined before fetching the repository contents by examining the advertised remote refs (See [Fetching](#fetching)). If these preconditions are not met, the clone is aborted, and already fetched data is pruned.
+
+
+
+Participants in the network can choose to act as seeds. This is similar in concept to a "Pub" in SSB[@ssb]: when a peer starts tracking a seed, the seed also tracks this peer, thereby increasing the availability of data on the network. In order to limit its resource usage, a seed MAY require authentication. Note, however, that any participant may act as a seed, and may choose to do so only temporarily.
+
+
+
+Notice that a seed may track a large number of repositories for a given project, so cloning from a seed will greatly increase the connectedness of a tracking graph. Also note that, by tracking a seed, upstream maintainers can increase the number of paths leading back to them, such that contributions can flow back up even if they come from participants not within the set of tracked repositories of a maintainer. On the other hand, tracking a seed (or operating one) may increase disk and/or memory pressure on the tracking machine, and increases the risk to be exposed to malicious or otherwise unwanted data. We therefore devise that:
+
+#### Seeding 
+
+To improve data availability, participants in the network can choose to act as seeds. This is similar in concept to a pub in [Secure Scuttlebutt](https://scuttlebutt.nz/). Seed nodes are "always-on" nodes running on public IP addresses that serve data to any connected peers. By joining a seed node, it automatically tracks you and shares your data across its network of other connected users. This increases the availability of your data throughout the network, while making it easier to find other's data as well. Upstream is preconfigured with an official Radicle seed node to bootstrap your connectivity. If you have removed the default seed node, you can always re-add it later by following the steps in [Getting Started](getting-started/getting-started.md/#joining-a-seed-node).
+
+If you're interested in running a seed node, see [Running a seed node](using-radicle/running-a-seed-node.md).
+
+
+## Collaboration Model
+
+Our construction of the `Identity` from a git commit allows for multiple `id`s
+to describe the same revision of the document (and thus be equally valid). This
+means that the respective delegates' histories may diverge in their _commit_
+histories, but still converge to an agreement on the validity of the attested
+document revision.
+
+While this allows for arbitrarily complex workflows (and history topologies), we
+RECOMMEND to converge to equal or joined histories. This can be achieved by
+selecting a leader to commit the quorum (and the followers adopting this
+commit), or settling the vote out-of-band.
+
+As an example, a simple leader-based workflow could proceed as follows:
+
+* Peer `A` proposes a new revision on her view of the `rad/id` branch. The
+  revision is signed by `A`'s public key.
+* Peers `B` and `C` receive this proposal, and sign it off on their own `rad/id`
+  branches by creating a new commit over the same `tree` as the propsal, but
+  including their own signatures (they may also include `A`'s signature for
+  posterity, but that is not required as the verification procedure will skip
+  those commits).
+* Peer `A` is also designated as the leader, so after receiving the updates of
+  `B` and `C`, she creates a new commit on her branch, merging both `B`'s and
+  `C`'s "votes" (an "octopus merge"), and preserving the signature trailers of
+  all three.
+* `B` and `C` receive this "finalisation" commit, and simply merge it into their
+  own branches. This is a fast-forward merge.
