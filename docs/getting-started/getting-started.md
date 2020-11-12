@@ -45,18 +45,22 @@ $ which git-remote-rad
 
 With the remote helper installed, you will be able to [push changes](using-radicle/pushing-and-pulling-changes.md#pushing-changes-to-a-project) to your [Radicle installation](understanding-radicle/how-it-works.md), which will be published by the Upstream client.
 
-## Joining a seed node
+## Adding a seed node to Upstream
 
-Seed nodes are "always-on" nodes running on public IPs that serve data to any connected peers. By joining a seed node, it automatically tracks you and shares your data across it's network of other connected users. This increases the availability of your data throughout the network, while making it easier to find other's data as well. We recommend joining the official Radicle seed node to bootstrap your connectivity.
+Seed nodes are "always-on" nodes running on public IP addresses that serve data to connected peers. By adding a seed to Upstream, that seed automatically tracks you and shares your data across its network of other connected peers [^1]. This increases the availability of your data throughout the network, while making it easier to find other's data as well. Upstream is preconfigured with a Radicle operated seed to bootstrap your connectivity. If you have removed the default seed, you can always re-add it later by following these steps:
 
 1. Navigate to *Settings*. There, under the *Network* header, you'll find your seed list.
-2. Add the seed address to the input box and submit by pressing `RETURN`
+2. Paste the seed address into the input box and submit by pressing <kbd>RETURN</kbd>.
 
-    `hybh5cb7spafgs7skjg6qkssts3uxht31zskpgs4ypdzrnaq7ye83k@seedling.radicle.xyz:12345`
+    `hynewpywqj6x4mxgj7sojhue3erucyexiyhobxx4du9w66hxhbfqbw@seedling.radicle.xyz:12345`
 
 3. Check that you're connected by hovering over your Connection icon in your Homebar.
 
 Recent activity and connected peers on the Radicle network can be viewed at http://seedling.radicle.xyz/.
 
-
 To learn how to use Radicle, head over to the [Collaborating on Radicle](collaborating-on-radicle/creating-and-sharing-projects.md) section
+
+[^1]: Seed nodes can be configured to either track and share all data across the network, or to propagate only a specific set of peers or projects. Please refer to your seed operator for details. If you're running your own seed, have a look at the [Running a seed node](using-radicle/running-a-seed-node.md) section and the [seed node documentation][seed-docs].
+
+
+[seed-docs]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
