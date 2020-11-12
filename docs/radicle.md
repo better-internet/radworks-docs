@@ -36,7 +36,6 @@ The radicle-link protocol distinguishes between two types of identities: user an
 
 It's this "trusted" social graph of peers and projects that becomes the foundation for collaboration within Radicle.
 
-If you have already interacted with other decentralized social networks, this model might remind you of secure scuttlebutt. In fact, Radicle is heavily inspired by secure scuttlebutt's design but diverges from SSB in a few ways.
 
 [Read more about the Radicle collaboration model](understanding-radicle/faq.md)
 
