@@ -64,10 +64,10 @@ more on that below.
       --peer-listen 0.0.0.0:12345 \
       --http-listen 0.0.0.0:80 \
       --name "seedling" \
-      --public-addr "myseed.my.org:12345" \
+      --public-addr "seed.my.org:12345" \
       < ~/.radicle-seed/secret.key
         Finished dev [optimized] target(s) in 0.39s
-         Running `/Users/rudolfs/work/radicle-bins/target/debug/radicle-seed-node --root /Users/rudolfs/.radicle-seed --peer-listen '0.0.0.0:12345' --http-listen '0.0.0.0:80' --name seedling --public-addr 'myseed.my.org:12345'`
+         Running `/Users/rudolfs/work/radicle-bins/target/debug/radicle-seed-node --root /Users/rudolfs/.radicle-seed --peer-listen '0.0.0.0:12345' --http-listen '0.0.0.0:80' --name seedling --public-addr 'seed.my.org:12345'`
     Nov 10 16:48:11.006  INFO radicle_seed: Initializing tracker to track everything..
     Nov 10 16:48:11.006  INFO Protocol::run{local.id=hybecxsmx5t11emgg9mqkggihp5d7rd66tyuubaruiyym5f458fs1s local.addr=0.0.0.0:12345}: librad::net::protocol: Listening
     Nov 10 16:48:11.011  INFO Server::run{addr=V4(0.0.0.0:80)}: warp::server: listening on http://0.0.0.0:80
@@ -87,7 +87,8 @@ seed. In our example the address is:
 Have a look at the [Adding a seed node to Upstream](getting-started/getting-started.md#adding-a-seed-node-to-upstream)
 section for more information on how to set up the new seed in Upstream.
 
-[ssb][https://scuttlebutt.nz/]
+
+[ssb]: https://scuttlebutt.nz
 [seed]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
 [rust]: https://www.rust-lang.org/tools/install
 [yarn]: https://yarnpkg.com/getting-started/install
