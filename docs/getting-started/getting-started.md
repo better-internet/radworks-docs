@@ -9,19 +9,19 @@ sidebar_label: Getting Started
 The Radicle network can be accessed via Upstream, a desktop client. To download the app, click [here][bk]. While Upstream is currently the only client for using Radicle, it won't be the only one. Upstream development is public by default and completely open source. You can follow along development on [radicle.community][co]
 
 <details>
-    <summary><b> DISCLAIMER 🌱 </b></summary>
-    <br>
-    <em>
-        <p>
-            As the Software is of experimental nature and deployed for testing purposes in a testnet environment only, you acknowledge that this Beta Version of the Software is likely to contain bugs, defects, or errors (including any bug, defect, or error relating to or resulting from the display, manipulation, processing, storage, transmission, or use of data) that may materially and adversely affect the use, functionality, or performance of Radicle or any product or system containing or used in conjunction with Radicle.
-        </p>
-        <p>
-            You are aware and acknowledge that your processing, development, exchange, storage sharing, provision of, collaboration to or other involvement in Content on or via Radicle takes place in a testnet environment for testing purposes only. You acknowledge and agree that you have no claim to integrity and consistency regarding any Content whatsoever. You acknowledge and agree to the risk of total and irretrievable loss of Content throughout and after the Beta phase. You acknowledge and agree that any Content will most likely and without prior notice be irretrievably deleted upon completion of the testing phase. You acknowledge and agree that you are solely responsible for secure storage (e.g. backup copies) of Content and that the Foundation shall not be responsible and liable under any circumstance for any loss or corruption of Content.
-        </p>
-        <p>
-            Read the rest of our Terms of Services [here][te]
-        </p>
-    </em>
+  <summary><b> DISCLAIMER 🌱 </b></summary>
+  <br />
+  <em>
+    <p>
+      As the Software is of experimental nature and deployed for testing purposes in a testnet environment only, you acknowledge that this Beta Version of the Software is likely to contain bugs, defects, or errors (including any bug, defect, or error relating to or resulting from the display, manipulation, processing, storage, transmission, or use of data) that may materially and adversely affect the use, functionality, or performance of Radicle or any product or system containing or used in conjunction with Radicle.
+    </p>
+    <p>
+      You are aware and acknowledge that your processing, development, exchange, storage sharing, provision of, collaboration to or other involvement in Content on or via Radicle takes place in a testnet environment for testing purposes only. You acknowledge and agree that you have no claim to integrity and consistency regarding any Content whatsoever. You acknowledge and agree to the risk of total and irretrievable loss of Content throughout and after the Beta phase. You acknowledge and agree that any Content will most likely and without prior notice be irretrievably deleted upon completion of the testing phase. You acknowledge and agree that you are solely responsible for secure storage (e.g. backup copies) of Content and that the Foundation shall not be responsible and liable under any circumstance for any loss or corruption of Content.
+    </p>
+    <p>
+      Read the rest of our Terms of Services [here][te]
+    </p>
+  </em>
 </details>
 
 ## Creating an identity
