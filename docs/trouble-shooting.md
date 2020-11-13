@@ -15,8 +15,8 @@ possible. Also as developers of Upstream, we know that there will be bugs and
 errors. To help consolidate these diametrically opposed pieces of knowledge we
 will try and document any of the errors that we are aware of, and give you
 advice on how you might recover. In the event that this information doesn't
-help, do not hesitate to reach out to [radicle.community](community) — or our
-[GitHub issues](github-issues) if you are comfortable with opening a detailed
+help, do not hesitate to reach out to [radicle.community][rc] — or our
+[GitHub issues][gi] if you are comfortable with opening a detailed
 issue.
 
 For our known failures, we categorise them with a camel-case code word that
@@ -24,7 +24,7 @@ gives a high level idea of what went wrong. When you encounter one of these
 errors you will receive a notification in the application which allows you to
 copy the error output. The code will be included in this JSON data.
 
-![Error with copy to clipboard button](/img/error.png)
+![Error with copy to clipboard button][er]
 
 The next sections will start with the header of the code, followed by a reason
 for the error, and perhaps a way to mitigate the error and get you back on track
@@ -50,7 +50,7 @@ unsure then reach out to us on the previously mentioned channels.
 
 In the error you will spot that the `urn` of the project is in the JSON data.
 The suffix after `rad:git` will correspond to the namespace of the project — see
-[here](monorepo) for more details.
+[here][mo] for more details.
 
 Your monorepo will live under `$XDG_DATA_HOME/radicle/git`. Running the
 following command you should see something like:
@@ -102,7 +102,7 @@ $ git push rad <default branch>
 ### Stats
 #### Reason
 
-The [browser](radicle-surf) for the project could not fetch the statistics for
+The [browser][rs] for the project could not fetch the statistics for
 your project.
 
 This could be down to an error in git.
@@ -117,8 +117,8 @@ as much detail as possible.
 
 `signed-refs` are the git references that peers advertise which they have also
 signed with their secret key. This means that when your peer receives
-`signed-refs` it attempts to verify the signature using the advertised [Device
-ID](device-id). If this verification fails, then this project may be left in a
+`signed-refs` it attempts to verify the signature using the advertised
+[Device ID][di]. If this verification fails, then this project may be left in a
 broken state.
 
 #### Action
@@ -158,8 +158,8 @@ you what the issue is and give you an idea how you might fix it. For example,
 another process may be listening on the port we’re using or the backend does not
 have the permissions to write to a certain directory.
 
-If you’re not able to fix the problem, please open an [issue on
-GitHub][github-issues].
+If you’re not able to fix the problem, please open an
+[issue on GitHub][gi].
 
 ## UnknownException
 ### Reason
@@ -170,11 +170,16 @@ case.
 
 ### Action
 
-Please report these errors to [GitHub](github-issues) with as much detail as
+Please report these errors to [GitHub][gi] with as much detail as
 possible — checking first that it's not already reported by another user.
 
-[community]: https://radicle.community/
-[github-issues]: https://github.com/radicle-dev/radicle-upstream/issues
-[radicle-surf]: https://github.com/radicle-dev/radicle-surf
-[monorepo]: TODO(finto): Link to our monorepo explanation
-[device-id]: TODO(finto): link to device id
+<!--
+TODO(finto): Link to our monorepo explanation
+-->
+
+[rc]: https://radicle.community/
+[gi]: https://github.com/radicle-dev/radicle-upstream/issues
+[rs]: https://github.com/radicle-dev/radicle-surf
+[mo]: understanding-radicle/how-it-works.md
+[di]: understanding-radicle/glossary#peerid
+[er]: /img/error.png
