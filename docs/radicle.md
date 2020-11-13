@@ -6,7 +6,7 @@ sidebar_label: What is Radicle?
 
 Radicle is an open-source stack for code collaboration 🌱. It enables developers to collaborate on code without relying on intermediaries. It's a robust, functional, and secure alternative to centralized code collaboration platforms.
 
-Read more about the vision for decentralized code collaboration [here](understanding-radicle/why-radicle.md).
+Read more about the vision for decentralized code collaboration [here][wh].
 
 ## How it works
 
@@ -16,7 +16,7 @@ The network is powered by a peer-to-peer replication protocol built on Git, call
 
 Since all data on the network is stored locally by peers on the network, develops can share and collaborate on Git repositories *without* relying on intermediaries such as hosted servers.
 
-For more on Radicle Link, check out the [Understanding Radicle](understanding-radicle/why-radicle.md) section.
+For more on Radicle Link, check out the [Understanding Radicle][wh] section.
 
 ## How is Radicle different from GitHub?
 
@@ -37,8 +37,13 @@ The radicle-link protocol distinguishes between two types of identities: user an
 These interactions create a "trusted" social graph of peers and projects that becomes the foundation for collaboration within Radicle.
 
 
-[Read more about the Radicle collaboration model](understanding-radicle/faq.md)
+[Read more about the Radicle collaboration model][fa]
 
 ## How do I use Radicle?
 
-The easiest way to use Radicle is with Upstream, a desktop client developed by the founding team of the Radicle project. With Upstream, you can create an identity, host your code, and collaborate with others on the Radicle network. Head over to [Getting Started](getting-started/getting-started.md) for a walkthrough on how to download Upstream and becomee a part of the Radicle network.
+The easiest way to use Radicle is with Upstream, a desktop client developed by the founding team of the Radicle project. With Upstream, you can create an identity, host your code, and collaborate with others on the Radicle network. Head over to [Getting Started][gs] for a walkthrough on how to download Upstream and becomee a part of the Radicle network.
+
+
+[fa]: understanding-radicle/faq.md
+[gs]: getting-started/getting-started.md
+[wh]: understanding-radicle/why-radicle.md
