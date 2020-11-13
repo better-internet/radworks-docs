@@ -141,8 +141,23 @@ $ git cat-file -p e3f6e6bd25955802060698f5b5449c874969aa71
 If you report this JSON payload and the offending Device ID, we can take a look
 and see if we notice anything out of the ordinary.
 
-## UnexpectedProxyExit
+## UnexpectedBackendExit
 ### Reason
+
+The app runs a backend process in the background that handles networking and
+file system access. The error indicates that this process was either killed by
+the user or the system or crashed.
+
+### Action
+
+The first thing you can do is try to restart the app which will restart the
+backend process. If the problem persists, the logs from the process might tell
+you what the issue is and give you an idea how you might fix it. For example,
+another process may be listening on the port we’re using or the backend does not
+have the permissions to write to a certain directory.
+
+If you’re not able to fix the problem, please open an [issue on
+GitHub][github-issues].
 
 ## UnknownException
 ### Reason
