@@ -3,21 +3,21 @@ id: how-it-works
 title: How it Works - Radicle Link
 ---
 
-Radicle Link is the peer-to-peer gossip protocol that powers the Radicle network. This documentation will provide an overview on how the protocol works. More information — including specifications, security considerations, and implementation notes — can be found in the [corresponding repositories](https://github.com/radicle-dev). 
+Radicle Link is the peer-to-peer gossip protocol that powers the Radicle network. This documentation will provide an overview on how the protocol works. More information — including specifications, security considerations, and implementation notes — can be found in the [corresponding repositories](https://github.com/radicle-dev).
 
 ## Overview
 
-Radicle Link is a peer-to-peer gossip protocol with a generic distributed version control backend. It aims to be general enough to be used on top of systems such as pijul or mercurial, though it's initial implementation is focused on supporting Git. 
+Radicle Link is a peer-to-peer gossip protocol with a generic distributed version control backend. It aims to be general enough to be used on top of systems such as pijul or mercurial, though it's initial implementation is focused on supporting Git.
 
-The protocol disseminates Git repositories via gossip-based replication, enabling the hosting and sharing of repositories without reliance on central servers. Repositories on the Radicle network are called 'projects', which are gossiped by 'peers'. 
+The protocol disseminates Git repositories via gossip-based replication, enabling the hosting and sharing of repositories without reliance on central servers. Repositories on the Radicle network are called 'projects', which are gossiped by 'peers'.
 
 In Radicle:
 
 * Peers track other peers
-* Peers track projects they are interested in 
+* Peers track projects they are interested in
 * Peers gossip about projects. This means replicating updates from the peers they track and the projects they are interested in
 
-These interactions create a "trusted" social graph of peers and projects that become the foundation for collaboration within Radicle. 
+These interactions create a "trusted" social graph of peers and projects that become the foundation for collaboration within Radicle.
 
 Radicle Link supports a bazaar-style collaboration model in which there is no single canonical 'master' branch that contributors merge into, but a multitude of upstreams  exchanging patches via remotes.
 
@@ -37,9 +37,9 @@ The notion of "identity" in Radicle Link simply means the presence of an identit
 
 ### Architecture
 
-All identities in Radicle are based on public-key cryptography. They are architected as such: 
+All identities in Radicle are based on public-key cryptography. They are architected as such:
 
-A `DeviceKey` is an Ed25519 keypair tied to a peer's device (`d`). 
+A `DeviceKey` is an Ed25519 keypair tied to a peer's device (`d`).
 
 DeviceKey ($K_{d}$)
 
@@ -83,7 +83,7 @@ where:
 
 * `delegations` contains the public keys of key owners who are authorised to issue and approve new revisions of the document. The delegation format depends on the type of identity being established, as detailed below.
 
-The `Doc` must be serialised in canonical form. See more in [Serialisation](/#Serialisation). 
+The `Doc` must be serialised in canonical form. See more in [Serialisation](/#Serialisation).
 
 The authenticity of the `Doc` is captured by the following type:
 
@@ -139,7 +139,7 @@ There are currently no restrictions on the length (in bytes) of the fields.
 
 Applications may add additional payload data, but must do so in a way which unambiguously preserves the shape of the above definitions. See also: [Serialisation](/#Serialisation).
 
-### Radicle URNs 
+### Radicle URNs
 
 Identities are addressable within the Radicle Network by their stable identifier, encoded as a URN. Radicle URNs are syntactically and functionally equivalent to URNs as per [RFC8141](https://tools.ietf.org/html/rfc8141), although we have no intention of registering our namespace with the IANA. r-, q-, and f-components are not currently honoured by the protocol, and MAY be discarded by recipients.
 
@@ -160,7 +160,7 @@ id       = BYTES
 
 ```
 
-The `id` is the `root` field of a verified Identity, as specified previously. The MULTIBASE and MULTIHASH encodings are specified in [multibase](https://github.com/multiformats/multibase) and [multihash](https://multiformats.io/multihash/), respectively. The preferred alphabet for the multibase encoding is [z-base32](http://philzimmermann.com/docs/human-oriented-base-32-encoding.txt). pct-encoded is defined in [RFC3986](https://tools.ietf.org/html/rfc3986), and the equivalence rules as per [RFC8141](https://tools.ietf.org/html/rfc8141) apply. 
+The `id` is the `root` field of a verified Identity, as specified previously. The MULTIBASE and MULTIHASH encodings are specified in [multibase](https://github.com/multiformats/multibase) and [multihash](https://multiformats.io/multihash/), respectively. The preferred alphabet for the multibase encoding is [z-base32](http://philzimmermann.com/docs/human-oriented-base-32-encoding.txt). pct-encoded is defined in [RFC3986](https://tools.ietf.org/html/rfc3986), and the equivalence rules as per [RFC8141](https://tools.ietf.org/html/rfc8141) apply.
 
 A Radicle URN will look like `rad:git:hwd1yredksthny1hht3bkhtkxakuzfnjxd8dyk364prfkjxe4xpxsww3try`. In the Upstream client, Radicle URNs are called [**Radicle IDs**](/glossary.md/#radicle-id).
 
@@ -173,7 +173,7 @@ As described in [Data Model](#data-model) Radicle Link distinguishes two types o
 
 Personal identities can only delegate to anonymous keys, while project identities may attach a personal identity to a key delegation.  More formally:
 
-```rust 
+```rust
 type User<T> = Identity<T, HashSet<PublicKey>>;
 
 enum ProjectDelegation<U> {
@@ -348,9 +348,9 @@ Where:
 
 The commit chain is stored in a branch at `refs/rad/id` in the peer's monorepo.
 
-### Fetching 
+### Fetching
 
-Fetching (or cloning) a project on the Radicle network 
+Fetching (or cloning) a project on the Radicle network
 
 Fetching (or cloning) happens on a per-`$IDENTITY` basis, as a
 replication factor equal to the network size is not desirable. We also need to map owned refs (`refs/heads`) to remotes, and should limit the number of refs advertised by `git-upload-pack`.
@@ -418,21 +418,21 @@ In addition to this, we can see the branches of tracked peers by running `git br
     path = /path/to/managed.inc
 ```
 
-## Peer Discovery & Replication 
+## Peer Discovery & Replication
 
 ### Overview
 
-Radicle Link extends Git with peer-to-peer network discovery via a process called **gossip**. This means that peers in the network share and spread data they are "interested" in by keeping (replicating) redundant copies locally and sharing deltas with peers. With Radicle, we replicate data across connected repositories according to a “social graph” of peers and projects, enabling source code and changesets to be disseminated according to use and value: the more peers who are interested in a certain project, the more available this project is made to the network. 
+Radicle Link extends Git with peer-to-peer network discovery via a process called **gossip**. This means that peers in the network share and spread data they are "interested" in by keeping (replicating) redundant copies locally and sharing deltas with peers. With Radicle, we replicate data across connected repositories according to a “social graph” of peers and projects, enabling source code and changesets to be disseminated according to use and value: the more peers who are interested in a certain project, the more available this project is made to the network.
 
 ### Replication Model
 
-Repositories are the base unit of replication in Radicle. To publish a repository to the network, it must first be initialized as a project. Projects combine source code, issues and proposed changes under a single umbrella, and carry a unique, shareable peer-to-peer identifier. The entirety of the project data and metadata, including social artefacts such as comments, are stored within the repository. To create a project, the owner of a repository defines a project identity. In the background, a project.json file is created in a predetermined disjoint branch of the repository, by convention rad/id. This file contains important metadata such as the project name, list of maintainers, as well as any related links. 
+Repositories are the base unit of replication in Radicle. To publish a repository to the network, it must first be initialized as a project. Projects combine source code, issues and proposed changes under a single umbrella, and carry a unique, shareable peer-to-peer identifier. The entirety of the project data and metadata, including social artefacts such as comments, are stored within the repository. To create a project, the owner of a repository defines a project identity. In the background, a project.json file is created in a predetermined disjoint branch of the repository, by convention rad/id. This file contains important metadata such as the project name, list of maintainers, as well as any related links.
 
 The unit of replication is a repository, identified by a `PeerID` in the context of a project document (See [Data Model](#data-model)). The holder of the corresponding `DeviceKey` is referred to as the **maintainer** of the repository. Repositories belonging to the same project are represented locally as a single repository, identified by a Radicle URN (or [Radicle ID](#radicle-urns) in the Upstream client). In the context of a project, the maintainer of a repository may choose to track the repositories of other peers (this is called a remote in git terminology: a named reference to a remote repository). If the remote repository is found to track other remotes, the tracking repository will also transitively track those, up to n degrees out.
 
 Therefore, a project on Radicle preserves the transitivity information of its remotes (i.e. via which tracked PeerID another PeerID is tracked).
 
-### Tracking 
+### Tracking
 Tracking is the backbone of collaboration as it drives the exchange of projects and their artifacts. In Radicle, peers track other peers and projects that they are interested in. This happens when a peer clones another peer's project or tracks a peer directly by adding them as a remote to their project via Upstream.
 
 Since peers represent seperate devices in the network, they each have their own view of the network. Each peer tracks this view of projects, identities, and data from connected peers in its own monorepo (See [Git Implementation](#git-implementation)).
@@ -469,8 +469,8 @@ $PEER_ID/refs/
             `-- remotes
                 `-- $TRACKED_PEER_ID
                     |-- heads <-- code branches owned by $TRACKED_PEER_ID go here
-                    `-- rad 
-                        |-- id 
+                    `-- rad
+                        |-- id
                         |-- signed_refs
                         |-- self <-- points to the identity of $TRACKED_PEER_ID
                         `-- ids
@@ -490,15 +490,15 @@ The [`Manage Remotes`](using-radicle/pushing-and-pulling-changes.md/#adding-remt
 
 In the case of multiple peer replications, any peer that tracks a project will implicitly track it's maintainers as well. This means that when any peer on the network clones a project, all of said project's maintainers will end up in that peer's remote list. Since maintainers of the project work on the canonical view of the project, this automatic tracking ensures the health and consistency of a project as it's gossiped across the network.
 
-This also means that for a single `PEER_ID`, we have a sub-graph that consists of more `PEER_ID`s — whether they be the maintainers of the project or other tracked peers. Any time a peer is replicated, a portion of their sub-graph is replicated as well, up to 2 degrees out. 
+This also means that for a single `PEER_ID`, we have a sub-graph that consists of more `PEER_ID`s — whether they be the maintainers of the project or other tracked peers. Any time a peer is replicated, a portion of their sub-graph is replicated as well, up to 2 degrees out.
 
 ```rust
 pub struct Remotes(HashMap<PeerId, HashMap<PeerId, HashSet<PeerId>>>);
 ```
 
-This means that everytime you track a peer, you are not only adding them as a remote, but also their remotes, and the remotes of their remotes. This ensures that a project is consistently available across the network without a total reliance on the maintainers of the project or the original tracked peer. 
+This means that everytime you track a peer, you are not only adding them as a remote, but also their remotes, and the remotes of their remotes. This ensures that a project is consistently available across the network without a total reliance on the maintainers of the project or the original tracked peer.
 
-### Validation 
+### Validation
 
 To ensure data integrity and authenticity, when cloning a repository, the attestation history according to the remote peer is fetched before all other repository contents, and the verification procedure (See [Verification](#Verification)) is run on it. If this does not yield a verified status, the clone is aborted. The resulting repository state must include the attestation histories of at least a quorum of the delegates (See [Delegation](#delegation)) as per the remote peer's view of the identity document. In Git, the claim that this will be the case can be determined before fetching the repository contents by examining the advertised remote refs (See [Fetching](#fetching)). If these preconditions are not met, the clone is aborted, and already fetched data is pruned.
 
@@ -506,7 +506,7 @@ Participants in the network can choose to act as seeds. This is similar in conce
 
 Notice that a seed may track a large number of repositories for a given project, so cloning from a seed will greatly increase the connectedness of a tracking graph. Also note that, by tracking a seed, upstream maintainers can increase the number of paths leading back to them, such that contributions can flow back up even if they come from participants not within the set of tracked repositories of a maintainer. On the other hand, tracking a seed (or operating one) may increase disk and/or memory pressure on the tracking machine, and increases the risk to be exposed to malicious or otherwise unwanted data. We therefore devise that:
 
-### Seeding 
+### Seeding
 
 To improve data availability, participants in the network can choose to act as seeds. This is similar in concept to a pub in [Secure Scuttlebutt](https://scuttlebutt.nz/). Seed nodes are "always-on" nodes running on public IP addresses that serve data to any connected peers. By joining a seed node, it automatically tracks you and shares your data across its network of other connected users. This increases the availability of your data throughout the network, while making it easier to find other's data as well. Upstream is preconfigured with an official Radicle seed node to bootstrap your connectivity. If you have removed the default seed node, you can always re-add it later by following the steps in [Getting Started](getting-started/getting-started.md/#joining-a-seed-node).
 
