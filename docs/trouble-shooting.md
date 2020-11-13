@@ -24,7 +24,7 @@ gives a high level idea of what went wrong. When you encounter one of these
 errors you will receive a notification in the application which allows you to
 copy the error output. The code will be included in this JSON data.
 
-![image of copy error](TODO(finto))
+![Error with copy to clipboard button](/img/error.png)
 
 The next sections will start with the header of the code, followed by a reason
 for the error, and perhaps a way to mitigate the error and get you back on track
