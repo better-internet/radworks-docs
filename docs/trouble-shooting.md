@@ -102,7 +102,9 @@ $ git push rad <default branch>
 ### Stats
 #### Reason
 
-The [browser](radicle-surf) for the project could not fetch the statistics for your project.
+The [browser](radicle-surf) for the project could not fetch the statistics for
+your project.
+
 This could be down to an error in git.
 
 #### Action
