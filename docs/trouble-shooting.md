@@ -19,7 +19,7 @@ help, do not hesitate to reach out to [radicle.community][rc] — or our
 [GitHub issues][gi] if you are comfortable with opening a detailed
 issue.
 
-For our known failures, we categorise them with a camel-case code word that
+For our known failures, we categorise them with a PascalCase code word that
 gives a high level idea of what went wrong. When you encounter one of these
 errors you will receive a notification in the application which allows you to
 copy the error output. The code will be included in this JSON data.
