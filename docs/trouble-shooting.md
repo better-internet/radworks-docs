@@ -143,7 +143,7 @@ $ git cat-file -p e3f6e6bd25955802060698f5b5449c874969aa71
 If you report this JSON payload and the offending Device ID, we can take a look
 and see if we notice anything out of the ordinary.
 
-## UnexpectedBackendExit
+## BackendTerminated
 ### Reason
 
 The app runs a backend process in the background that handles networking and
