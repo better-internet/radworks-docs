@@ -1,6 +1,6 @@
 ---
 id: trouble-shooting
-title: Trouble Shooting
+title: Troubleshooting
 ---
 
 > “If you know the enemy and know yourself, you need not fear the result of a
