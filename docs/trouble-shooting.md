@@ -177,9 +177,12 @@ possible — checking first that it's not already reported by another user.
 TODO(finto): Link to our monorepo explanation
 -->
 
-[rc]: https://radicle.community/
-[gi]: https://github.com/radicle-dev/radicle-upstream/issues
-[rs]: https://github.com/radicle-dev/radicle-surf
-[mo]: understanding-radicle/how-it-works.md
+
 [di]: understanding-radicle/glossary#peerid
+[mo]: understanding-radicle/how-it-works.md
+
 [er]: /img/error.png
+
+[gi]: https://github.com/radicle-dev/radicle-upstream/issues
+[rc]: https://radicle.community/
+[rs]: https://github.com/radicle-dev/radicle-surf
