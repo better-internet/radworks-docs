@@ -33,6 +33,15 @@ with enjoying your Radicle experience.
 ## SessionFetchFailure
 ### Reason
 
+The app failed to log into the backend process that manages the peer-to-peer
+network. This might indicate that your identity in the network was not properly
+created or that your on-disk state became corrupted.
+
+### Action
+Since the cause of this error is most likely corrupted data you should reach out
+to us on [radicle.community][rc] so we can help you solve the issue.
+
+
 ## ProjectRequestFailure
 
 ### DefaultBranch
