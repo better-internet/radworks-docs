@@ -136,7 +136,7 @@ upstream or mainline). The upstream is often the [repository][re] of the
 this [repository][re], upstream will be a remote [repository][re].
 
 ## user
-Any individual who has created a Radicle ID on the Radicle network.
+Any individual who has created a Radicle ID on the Radicle network through the Upstream app. 
 
 
 [br]: #branch
