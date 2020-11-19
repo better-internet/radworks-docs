@@ -58,7 +58,7 @@ peers who are interested in certain data the more available it is
 made to the network. See [Gossip](/how-it-works.md/#replication-model)
 
 ## maintainer
-A [user][us] that manages updates to the canonical view of a project. A
+A [user][us] who manages updates to the canonical view of a project. A
 maintainer is explicitly associated with the [project][pr] at the time of
 creation or later, via the [project][pr] metadata [See Data
 Model](/how-it-works.md/#data-model), but there may be multiple maintainers of a
