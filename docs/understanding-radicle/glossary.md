@@ -32,7 +32,7 @@ To create a network connection to another Radicle [peer][pe]. Connected peers
 spread information between each other via gossip.
 
 ## contributor
-A [user][us] that has pushed code or other data to their version of another's
+A [user][us] who has pushed code to a project.
 [project][pr].
 
 ## display name
