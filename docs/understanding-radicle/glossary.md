@@ -76,7 +76,7 @@ changesets to the Radicle network.
 ## peer
 A device running the Radicle Link protocol.
 
-## peerID
+## Device ID
 The encoding of a peer's public key tied to their device. In the Beta, there will
 only be one Device ID per user (See
 [Architecture](how-it-works.md/#architecture))
