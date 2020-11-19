@@ -134,7 +134,6 @@ the works).
 A physical manifestation or working copy of a [project][pr], tied to a
 [user][us]'s machine. A [repository][re] in Radicle contains the owner's view
 then resolved to a physical location on the network, for the purpose of
-replication (See Radicle URNs)
 
 ## seed node
 An always-on node that automatically tracks discovered projects and serves data to
