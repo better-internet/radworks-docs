@@ -32,7 +32,7 @@ become the foundation for collaboration within Radicle.
 
 Radicle Link supports a bazaar-style collaboration model in which there is no
 single canonical 'master' branch that contributors merge into, but a multitude
-of upstreams  exchanging patches via remotes.
+of upstreams exchanging patches via remotes.
 
 <details>
   <summary><b>DISCLAIMER 🌱</b></summary>
