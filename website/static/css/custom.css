@@ -95,6 +95,15 @@ h3 {
   background: var(--color-foreground-level-1);
 }
 
+.button {
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  font-weight: 600;
+  text-transform: inherit;
+  border: none;
+  font-size: 1rem;
+}
+
 .navigationSlider .slidingNav ul li a {
   background: var(--color-foreground-level-3);
   border-radius: 0.5rem;
