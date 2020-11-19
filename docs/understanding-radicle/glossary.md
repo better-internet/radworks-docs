@@ -79,7 +79,7 @@ A peer running an instance of the Radicle Link protocol. There can only one node
 running per device.
 
 ## passphrase
-A passphrase used to decrypt a peer's keypair (See
+A sequence of characters used to encrypt a peer's private key (See
 [Identities](how-it-works.md/#identities)) to enable access to the Radicle
 network through the Upstream client. It's also needed to fetch and push
 changesets to the Radicle network. 
