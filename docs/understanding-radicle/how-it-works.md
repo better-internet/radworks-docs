@@ -521,7 +521,7 @@ data from connected peers in its own monorepo (See [Git Implementation][gi]).
 
 When a peer tracks another peer in the context of a project — say, if it clones
 another peer's project — it sets the intention to fetch and gossip the other
-peer's view of that project. This means all includes the project metadata, all
+peer's view of that project. This means includes the project metadata, all
 working branches and commits, and changesets will be replicated and stored in
 the tracking peer's monorepo, so that it can be fetched and collaborated on.
 
