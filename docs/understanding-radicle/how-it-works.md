@@ -291,7 +291,7 @@ There are four levels of validity:
 ### Overview
 
 Radicle basically uses Git as a database. This means everything is stored in
-single Git monorepo that is read and written from via the Upstream client. Our
+a single Git monorepo that is read and written from via the Upstream client. Our
 Git implementation was devised to create an incentive for the seeder to provide
 all data necessary to resolve and verify a repository, while reducing latency by
 eliminating gossip queries and git fetches as much as possible. 
