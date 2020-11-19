@@ -81,7 +81,7 @@ running per device.
 ## passphrase
 A sequence of characters used to encrypt a peer's private key (See
 [Identities](how-it-works.md/#identities)) to enable access to the Radicle
-network through the Upstream client. It's also needed to fetch and push
+network. It's also needed to fetch and push
 changesets to the Radicle network. 
 
 ## peer
