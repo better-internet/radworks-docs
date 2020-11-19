@@ -485,7 +485,7 @@ project is made to the network.
 ### Replication Model
 
 Repositories are the base unit of replication in Radicle. To publish a
-repository to the network, it must first be initialized as a project. Projects
+repository to the network, it must first be initialized as a project. Project
 combine source code, issues and proposed changes under a single umbrella, and
 carry a unique, shareable peer-to-peer identifier. The entirety of the project
 data and metadata, including social artefacts such as comments, are stored
