@@ -200,7 +200,7 @@ Read more [here][ur]
 ### Delegations
 
 As described in [Data Model][dm] Radicle Link distinguishes two types of
-identities: personal and project. The first describes an person (usually denoted
+identities: personal and project. The first describes a person (usually denoted
 as a `peer`) in the system, while the second describes a software project
 (repository) on which one or more persons collaborate. Apart from their
 [payload][dp] types `T`, they differ in their delegations type `D`:
