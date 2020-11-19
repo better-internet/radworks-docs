@@ -56,7 +56,6 @@ Model](/how-it-works.md/#data-model), but there may be multiple maintainers of a
 project, all maintaining their own trees. At creation, the creator of the
 [project][pr] is the sole maintainer.
 
-canonical upstream branch of a [project][pr]. 
 
 ## main
 How radicle-upstream refers to the default development branch of a project.
