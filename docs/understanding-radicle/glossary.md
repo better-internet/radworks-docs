@@ -18,9 +18,6 @@ changes committed to a [project][pr] history along with who made them and when.
 Commits can also contain a brief description of what changes were made, also
 known as a commit message.
 
-To "commit" is the action of storing a new snapshot of the [project][pr]'s state
-in the version controlled [project][pr] history. This new commit also represents
-the current state of the index and advances HEAD to point at the new commit.
 
 ## connect
 To create a network connection to another Radicle [peer][pe]. Connected peers
