@@ -93,6 +93,8 @@ h3 {
 .fixedHeaderContainer {
   color: var(--color-foreground);
   background: var(--color-foreground-level-1);
+  border-bottom: 1px solid var(--color-foreground-level-2);
+  height: 3.5rem;
 }
 
 .button {
@@ -120,6 +122,7 @@ h3 {
 .fixedHeaderContainer a {
   align-items: flex-end;
   height: 27px;
+  margin-top: 0.25rem;
   color: var(--color-foreground);
   font-family: ;
 }
