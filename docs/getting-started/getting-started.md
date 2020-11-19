@@ -12,36 +12,6 @@ using Radicle, it won't be the only one. Upstream development is public by
 default and completely open source. You can follow along development on
 [radicle.community][co].
 
-Once you've downloaded Upstream, start it like this:
-
-#### On Linux:
-
-1. make the package executable with: `chmod +x radicle-upstream-X.X.X.AppImage`
-2. start the app: `./radicle-upstream-X.X.X.AppImage`
-
-#### On macOS:
-
-Open the `radicle-upstream-x.x.x.dmg` package and install Upstream by dragging
-the `radicle-upstream` binary to the `/Applications` folder.
-
-![install Upstream on macOS][in]
-
-**Note**: before you can start Upstream for the first time, you'll have to
-perform the following steps. You'll only have to do this once, the first time
-you launch the app.
-
-1. Open `/Applications` in finder, locate the `radicle-upstream` app and
-   right-click it, then select `Open` from the context menu, you should see a
-   dialog with two buttons `Move to Bin` and `Cancel`.
-
-![macOS binary signing workaround part 1][m1]
-
-2. Dismiss the dialog by clicking `Cancel`, to bypass macOS security measures
-   which disallow running unsigned binaries, repeat the previous step, now you
-   should see three buttons: `Move to Bin`, `Open` and `Cancel`, click `Open`.
-
-![macOS binary signing workaround part 2][m2]
-
 <details>
   <summary><b>DISCLAIMER 🌱</b></summary>
   <br />
@@ -76,6 +46,36 @@ you launch the app.
     </p>
   </em>
 </details>
+
+Once you've downloaded Upstream, start it like this:
+
+#### On Linux:
+
+1. make the package executable with: `chmod +x radicle-upstream-X.X.X.AppImage`
+2. start the app: `./radicle-upstream-X.X.X.AppImage`
+
+#### On macOS:
+
+Open the `radicle-upstream-x.x.x.dmg` package and install Upstream by dragging
+the `radicle-upstream` binary to the `/Applications` folder.
+
+![install Upstream on macOS][in]
+
+**Note**: before you can start Upstream for the first time, you'll have to
+perform the following steps. You'll only have to do this once, the first time
+you launch the app.
+
+1. Open `/Applications` in finder, locate the `radicle-upstream` app and
+   right-click it, then select `Open` from the context menu, you should see a
+   dialog with two buttons `Move to Bin` and `Cancel`.
+
+![macOS binary signing workaround part 1][m1]
+
+2. Dismiss the dialog by clicking `Cancel`, to bypass macOS security measures
+   which disallow running unsigned binaries, repeat the previous step, now you
+   should see three buttons: `Move to Bin`, `Open` and `Cancel`, click `Open`.
+
+![macOS binary signing workaround part 2][m2]
 
 ## Creating an identity
 
