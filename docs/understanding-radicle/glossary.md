@@ -85,7 +85,7 @@ network. It's also needed to fetch and push
 changesets to the Radicle network. 
 
 ## peer
-A person running a node on the Radicle network. There can be only one peer per
+A device running the Radicle Link protocol.
 device.
 
 ## peerID
