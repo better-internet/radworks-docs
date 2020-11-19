@@ -133,9 +133,6 @@ the works).
 ## repository
 A physical manifestation or working copy of a [project][pr], tied to a
 [user][us]'s machine. A [repository][re] in Radicle contains the owner's view
-and the view of any tracked peers. To publish a [repository][re] to the network,
-it must first be initialized as a [project][pr] or part of a [project][pr]. A
-[repository][re] can be addressed by a shareable URN (See Radicle ID), which is
 then resolved to a physical location on the network, for the purpose of
 replication (See Radicle URNs)
 
