@@ -699,7 +699,7 @@ subjective (and often diverging) views.
 At minimum, your view of a project becomes the sum of the views of the people
 you follow, plus the views of the maintainers of the project. In addition, you
 can expand your perspective by configuring your replication settings to also
-transitively track other remotes N degrees out from the peers you follow (ie
+transitively track other remotes N-degrees out from the peers you follow (i.e.
 peers of your peers / remotes of your remotes).
 
 This design also addresses a significant problem with decentralized systems
