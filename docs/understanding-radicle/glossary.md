@@ -62,7 +62,6 @@ canonical upstream branch of a [project][pr].
 ## main
 How radicle-upstream refers to the default development branch of a project.
 
-## master
 
 ## node
 A peer running an instance of the Radicle Link protocol. There can only one node
