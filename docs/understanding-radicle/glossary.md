@@ -4,10 +4,6 @@ title: Glossary
 ---
 
 ## branch
-A parallel version of a [project][]. A branch is separate from the default
-branch, allowing one to work freely without disrupting the "live" version of a
-[repository][re]. Once changes are made, a branch can be merged back into the
-default branch to publish changes.
 
 ## checkout
 To create a working copy of a [project][pr]. This working copy is where a
