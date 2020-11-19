@@ -52,7 +52,7 @@ A free and open source distributed version control system.
 ## gossip
 A means of peer-to-peer communication that relies on the interactions of peers
 to disseminate information. Participants in the Radicle network share and spread
-data by keeping redundant copies of proejcts locally and sharing updates with
+data by keeping redundant copies of projects locally and sharing updates with
 peers. This allows data to be disseminated according to use and value: the more
 peers who are interested in certain data the more available a [project][pr] is
 made to the network. See [Gossip](/how-it-works.md/#replication-model)
