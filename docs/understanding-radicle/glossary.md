@@ -150,7 +150,7 @@ replication (See Radicle URNs)
 
 ## seed node
 An always-on node that automatically tracks discovered projects and serves data to
-their connected peers (see join), thereby increasing the availability of these
+their connected peers, thereby increasing the availability of these
 projects on the network. More on the [role and impacts of seeds][rl].
 
 ## upstream
