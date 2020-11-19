@@ -114,7 +114,7 @@ To make data public to the network. Once something is published, it may be
 fetched and replicated by connected peers.
 
 ## Radicle ID
-Unique shareable identifiers for peers and projects in the Radicle Network. 
+Unique shareable identifier for users and projects in the Radicle Network. Radicle IDs are usually shared as URNs.
 
 ## Radicle Link
 A peer-to-peer replication protocol built on Git. See [How it
