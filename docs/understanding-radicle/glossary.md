@@ -44,7 +44,7 @@ future.
 Following a [project][pr] or [peer][us] replicates its data to the your machine
 (See [Tracking](/how-it-works.md/#tracking)). This allows the follower to
 subscribe to updates from the project / peer and signal interest by further
-replicating the data across their network, making it available to their social
+replicating the data across their network, making it available to other peers.
 
 ## git
 A free and open source distributed version control system.
