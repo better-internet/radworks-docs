@@ -228,7 +228,7 @@ network. See more notes on Verification [here][vr].
 
 ### Key Architecture
 
-With delegations, all identity in Radicle can be verifiable by public-key
+With delegations, any identity in Radicle can be verifiable by public-key
 cryptography. Keys on Radicle are architected as such:
 
 * A `DeviceKey` is an Ed25519 keypair tied to a peer's device (`d`)
