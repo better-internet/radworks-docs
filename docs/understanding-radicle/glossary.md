@@ -161,7 +161,7 @@ original maintainer or creator. For everyone but the creator of this
 [repository][re], upstream will be a remote [repository][re].
 
 ## user
-Any individual who has created a Radicle ID on the Radicle network through the
+Any individual who has created a Radicle ID on the Radicle network.
 Upstream app. 
 
 
