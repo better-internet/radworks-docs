@@ -100,7 +100,7 @@ users see when they discover on the network.
 ## project
 A [project][pr] consists of source code, issues, and proposed changesets. It
 carries a unique, shareable [Radicle ID](Radicle ID). A [project][pr] also
-includes the identities of all its [maintainers](maintainers) The entirety of
+includes the identities of all its [maintainers](maintainers). The entirety of
 the [project][pr] data and metadata, including social artifacts such as
 comments, are stored within the [project][pr]'s [repository][re]. [project][pr]s
 are the principle unit of replication.
