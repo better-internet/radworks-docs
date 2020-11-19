@@ -62,7 +62,7 @@ A [user][us] who manages updates to the canonical view of a project. A
 maintainer is explicitly associated with the [project][pr] at the time of
 creation or later, via the [project][pr] metadata [See Data
 Model](/how-it-works.md/#data-model), but there may be multiple maintainers of a
-project, all maintaining their own views. At creation, the creator of the
+project, all maintaining their own trees. At creation, the creator of the
 [project][pr] is the sole maintainer.
 
 All (or a quorum of) maintainer signatures are required to write to the
