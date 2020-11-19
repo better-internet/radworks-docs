@@ -129,9 +129,6 @@ remote repository is found to track other remotes, the tracking repository shall
 also transitively track those, up to a configurable N degrees out (currently in
 the works).
 
-## repository
-A physical manifestation or working copy of a [project][pr], tied to a
-[user][us]'s machine. A [repository][re] in Radicle contains the owner's view
 then resolved to a physical location on the network, for the purpose of
 
 ## seed node
