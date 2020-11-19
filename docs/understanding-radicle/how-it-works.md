@@ -544,7 +544,7 @@ let CERTIFIER[1..];
 
 $PEER_ID/refs/
 `-- namespaces
-    `-- $PROJECT_NAME
+    `-- $IDENTITY
         `-- refs
             |-- heads # <-- code branches owned by $PEER_ID go here
             |-- rad
