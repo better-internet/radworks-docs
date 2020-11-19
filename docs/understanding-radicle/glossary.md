@@ -82,9 +82,6 @@ only be one Device ID per user (See
 [Architecture](how-it-works.md/#architecture))
 
 ## profile
-A [user][us]'s visual identity on Upstream. It includes the [user][us]'s display
-name, Radicle ID (for now, their peerID), and emoji avatar. This is what other
-users see when they discover on the network.
 
 ## project
 A [project][pr] consists of source code, issues, and proposed changesets. It
