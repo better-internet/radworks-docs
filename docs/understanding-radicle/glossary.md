@@ -3,7 +3,6 @@ id: glossary
 title: Glossary
 ---
 
-## branch
 
 ## checkout
 To create a working copy of a [project][pr]. This working copy is where a
