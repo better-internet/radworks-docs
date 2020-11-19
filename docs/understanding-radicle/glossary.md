@@ -11,7 +11,7 @@ default branch to publish changes.
 
 ## checkout
 To create a working copy of a [project][pr]. This working copy is where a
-[user][us] can make and publish changes to [repository][re] via 'git push rad'.
+[user][us] can make and publish changes to the project [repository][re] via 'git push rad'.
 For more on how working copies work in Radicle, see [Working
 Copies](/how-it-works.md/#working-copies)
 
