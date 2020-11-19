@@ -504,7 +504,7 @@ context of a project, the maintainer of a repository may choose to track the
 repositories of other peers (this is called a remote in git terminology: a named
 reference to a remote repository). If the remote repository is found to track
 other remotes, the tracking repository will also transitively track those, up to
-n degrees out.
+n-degrees out.
 
 Therefore, a project on Radicle preserves the transitivity information of its
 remotes (i.e. via which tracked PeerID another PeerID is tracked).
