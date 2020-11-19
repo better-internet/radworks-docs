@@ -149,7 +149,7 @@ then resolved to a physical location on the network, for the purpose of
 replication (See Radicle URNs)
 
 ## seed node
-Always-on nodes that automatically track discovered projects and serves data to
+An always-on node that automatically tracks discovered projects and serves data to
 their connected peers (see join), thereby increasing the availability of these
 projects on the network. More on the [role and impacts of seeds][rl].
 
