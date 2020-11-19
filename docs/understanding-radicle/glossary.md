@@ -41,7 +41,7 @@ A changeable and non-unique human-readable name chosen by the [user][us]. Like a
 future. 
 
 ## follow
-Following a [project][pr] or [peer][us] replicates it's data to the your machine
+Following a [project][pr] or [peer][us] replicates its data to the your machine
 (See [Tracking](/how-it-works.md/#tracking)). This allows the follower to
 subscribe to updates from the project / peer and signal interest by further
 replicating the data across their network, making it available to their social
