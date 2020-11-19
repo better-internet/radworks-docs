@@ -81,7 +81,6 @@ The encoding of a peer's public key tied to their device. In the Beta, there wil
 only be one Device ID per user (See
 [Architecture](how-it-works.md/#architecture))
 
-## profile
 
 ## project
 A [project][pr] consists of source code, issues, and proposed changesets. It
