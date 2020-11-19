@@ -675,7 +675,7 @@ In the context of a project, maintainers of a repository may choose to track the
 views of other owners (this is called a remote in Git terminology: a named
 reference to a remote repository). If the remote repository is found to track
 other remotes, the tracking repository shall also transitively track those, up
-to a configurable N degrees out (currently in the works).
+to a configurable N-degrees out (currently in the works).
 
 - **Spam and content moderation is naturally handled by the peer's social
   graph**
