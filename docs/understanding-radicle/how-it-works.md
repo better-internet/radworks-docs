@@ -443,7 +443,7 @@ interested in. Due to the [certifier symrefs][na], the peer being fetched from
 is able to advertise a "proof" (or perhaps better: "promise") to be able to
 include all relevant data (the `rad/id` branches) in the packfile. This enables,
 in a single packfile, a "mirror" of the logical remote repository requested, *as
-well as* all of the top-level top-level logical repositories of all certifiers
+well as* all of the top-level logical repositories of all certifiers
 required to verify the identity document(s).
 
 See more on [Fetching][fs]
