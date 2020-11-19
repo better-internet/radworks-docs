@@ -355,7 +355,7 @@ namespace. For example, if identity `A` is certified by identity `B`,
 ```
 ref: refs/namespaces/B/refs/rad/id
 ```
-The certifier can only certify  if the certifying identity is present locally
+The certifier can only certify if the certifying identity is present locally
 and is logically valid for the certifier to use for certifying. The symref
 ensures that the certifying identity can be updated in one place, and stays
 up-to-date at all use sites without maintenance.
