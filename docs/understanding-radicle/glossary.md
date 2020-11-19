@@ -10,7 +10,6 @@ To create a working copy of a [project][pr]. This working copy is where a
 For more on how working copies work in Radicle, see [Working
 Copies](/how-it-works.md/#working-copies)
 
-## commit
 An individual change to a file (or set of files) that represents a single point
 in a version controlled history. Every commit can be identified by it's unique
 ID (in Git, the "SHA" or "hash"). This allows you to keep a record of all
