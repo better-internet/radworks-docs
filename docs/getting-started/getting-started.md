@@ -57,7 +57,7 @@ Once you've downloaded Upstream, start it like this:
 #### On macOS:
 
 Open the `radicle-upstream-x.x.x.dmg` package and install Upstream by dragging
-the `radicle-upstream` binary to the `/Applications` folder.
+the `Radicle Upstream` binary to the `/Applications` folder.
 
 ![install Upstream on macOS][in]
 
@@ -65,7 +65,7 @@ the `radicle-upstream` binary to the `/Applications` folder.
 perform the following steps. You'll only have to do this the first time
 you launch the app.
 
-1. Open `/Applications` in finder, locate the `radicle-upstream` app and
+1. Open `/Applications` in finder, locate the `Radicle Upstream` app and
    right-click it, then select `Open` from the context menu. You should see a
    dialog with two buttons `Move to Bin` and `Cancel`.
 
