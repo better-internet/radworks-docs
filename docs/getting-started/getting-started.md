@@ -59,7 +59,9 @@ Once you've downloaded Upstream, start it like this:
 Open the `radicle-upstream-x.x.x.dmg` package and install Upstream by dragging
 the `Radicle Upstream` binary to the `/Applications` folder.
 
-![install Upstream on macOS][in]
+<video width="100%" height="100%" playsinline autoplay muted loop>
+  <source src="/img/macOS-install.mp4" type="video/mp4">
+</video>
 
 **Note**: before you can start Upstream for the first time, you'll have to
 perform the following steps. You'll only have to do this the first time
@@ -69,13 +71,13 @@ you launch the app.
    right-click it, then select `Open` from the context menu. You should see a
    dialog with two buttons `Move to Bin` and `Cancel`.
 
-![macOS binary signing workaround part 1][m1]
-
 2. Dismiss the dialog by clicking `Cancel` to bypass macOS security measures
    which disallow running unsigned binaries. Repeat the previous step. You
    should now see three buttons: `Move to Bin`, `Open` and `Cancel`, click `Open`.
 
-![macOS binary signing workaround part 2][m2]
+<video width="100%" height="100%" playsinline autoplay muted loop>
+  <source src="/img/macOS-open.mp4" type="video/mp4">
+</video>
 
 ## Creating an identity
 
@@ -154,9 +156,6 @@ section.
 [sn]: using-radicle/running-a-seed-node.md
 
 [id]: /img/identity.png
-[in]: /img/macOS-install.png
-[m1]: /img/macOS-open-1.png
-[m2]: /img/macOS-open-2.png
 
 [bk]: https://buildkite.com/monadic/radicle-upstream/builds/6098
 [co]: https://radicle.community
