@@ -62,18 +62,18 @@ the `radicle-upstream` binary to the `/Applications` folder.
 ![install Upstream on macOS][in]
 
 **Note**: before you can start Upstream for the first time, you'll have to
-perform the following steps. You'll only have to do this once, the first time
+perform the following steps. You'll only have to do this the first time
 you launch the app.
 
 1. Open `/Applications` in finder, locate the `radicle-upstream` app and
-   right-click it, then select `Open` from the context menu, you should see a
+   right-click it, then select `Open` from the context menu. You should see a
    dialog with two buttons `Move to Bin` and `Cancel`.
 
 ![macOS binary signing workaround part 1][m1]
 
-2. Dismiss the dialog by clicking `Cancel`, to bypass macOS security measures
-   which disallow running unsigned binaries, repeat the previous step, now you
-   should see three buttons: `Move to Bin`, `Open` and `Cancel`, click `Open`.
+2. Dismiss the dialog by clicking `Cancel` to bypass macOS security measures
+   which disallow running unsigned binaries. Repeat the previous step. You
+   should now see three buttons: `Move to Bin`, `Open` and `Cancel`, click `Open`.
 
 ![macOS binary signing workaround part 2][m2]
 
