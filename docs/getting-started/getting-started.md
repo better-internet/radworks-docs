@@ -47,7 +47,9 @@ default and completely open source. You can follow along development on
   </em>
 </details>
 
-Once you've downloaded Upstream, start it like this:
+Radicle Upstream is available for download on Linux and macOS. If you are installing on a [Mac computer with Apple Silicon ](https://support.apple.com/en-us/HT211814) please note that you may experience issues as Radicle Upstream has not been tested on the Apple Silicon platform. 
+
+Once you've downloaded the app for your respective platform, start it like this:
 
 #### On Linux:
 
