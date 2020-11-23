@@ -490,7 +490,7 @@ combine source code, issues and proposed changes under a single umbrella, and
 carry a unique, shareable peer-to-peer identifier. The entirety of the project
 data and metadata, including social artefacts such as comments, are stored
 within the repository. To create a project, the owner of a repository defines a
-project identity. In the background, a project.json file is created in a
+project identity. In the background, a project identity document is created in a
 predetermined disjoint branch of the repository, by convention `rad/id`. This file
 contains important metadata such as the project name, list of maintainers, as
 well as any related links.
