@@ -47,9 +47,13 @@ default and completely open source. You can follow along development on
   </em>
 </details>
 
-Radicle Upstream is available for download on Linux and macOS. If you are installing on a [Mac computer with Apple Silicon ](https://support.apple.com/en-us/HT211814) please note that you may experience issues as Radicle Upstream has not been tested on the Apple Silicon platform. 
+Radicle Upstream is available for download on Linux and macOS. If you are
+installing on a [Mac computer with Apple Silicon ][as] please note that you may
+experience issues as Radicle Upstream has not been tested on the Apple Silicon
+platform.
 
-Once you've downloaded the app for your respective platform, start it like this:
+Once you've downloaded the app for your respective platform, start it like
+this:
 
 #### On Linux:
 
@@ -168,6 +172,7 @@ section.
 [id]: /img/identity.png
 
 [an]: https://developer.apple.com/documentation/xcode/notarizing_macos_software_before_distribution
+[as]: https://support.apple.com/en-us/HT211814
 [aw]: https://support.apple.com/en-gb/guide/mac-help/mh40616/mac
 [bk]: https://buildkite.com/monadic/radicle-upstream/builds/6098
 [co]: https://radicle.community
