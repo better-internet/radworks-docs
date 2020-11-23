@@ -67,7 +67,7 @@ list of remotes that you follow.
 
 <video width="100%" height="100%" playsinline autoplay muted loop>
   <source src="/img/add-remote.mp4" type="video/mp4">
-<video>
+</video>
 
 Adding a peer's remote means that you wish to track their changes to your
 project. It's important to note that these changes may not instantly appear. We
