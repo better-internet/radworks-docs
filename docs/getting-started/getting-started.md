@@ -64,8 +64,16 @@ the `Radicle Upstream` binary to the `/Applications` folder.
 </video>
 
 **Note**: before you can start Upstream for the first time, you'll have to
-perform the following steps. You'll only have to do this the first time
-you launch the app.
+perform some extra steps. This is because we haven't set up
+[Apple notarization][an] for Upstream yet, read more about it [here][aw].
+You'll only have to do this once -- the first time you launch the app.
+
+While we will be participating in the Apple Developer Program to ensure
+accessibility to our macOS users, we do not agree with Apple's financial
+gatekeeping and increasing control over application distribution on their
+platform. Forcing developers to "pay-to-play" under the guise of a security
+solution is an extractive form of vendor lock-in that inhibits the growth and
+accessibility of open software.
 
 1. Open `/Applications` in finder, locate the `Radicle Upstream` app and
    right-click it, then select `Open` from the context menu. You should see a
@@ -157,6 +165,8 @@ section.
 
 [id]: /img/identity.png
 
+[an]: https://developer.apple.com/documentation/xcode/notarizing_macos_software_before_distribution
+[aw]: https://support.apple.com/en-gb/guide/mac-help/mh40616/mac
 [bk]: https://buildkite.com/monadic/radicle-upstream/builds/6098
 [co]: https://radicle.community
 [sd]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
