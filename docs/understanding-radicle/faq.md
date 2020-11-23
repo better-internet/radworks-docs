@@ -24,4 +24,7 @@ title: FAQ
   - A: You don't
 - I ran into a issue, where can I report it?
 - I need some help, where do I reach out?
--
+- Why no CLI?
+- How is Radicle more secure than GitHub?
+- How will issues and prs work? 
+- 
