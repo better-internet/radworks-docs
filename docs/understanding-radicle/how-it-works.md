@@ -240,9 +240,6 @@ key agreement scheme, where DHKey is used for authentication (as the static
 public key s in the [Noise](http://www.noiseprotocol.org/) protocol).
 
 The `CodeSigningKey` used in verification may be equal to the `DeviceKey` for
-any device `d` (i.e. as long as the key is not shared between multiple devices).
-Typically, PGP keys already present on a PKI are used for code signing, and
-shared across devices.
 
 *See more on [key architecture][sc]*
 
