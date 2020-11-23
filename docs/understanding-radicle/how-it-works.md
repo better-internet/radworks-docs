@@ -236,10 +236,6 @@ cryptography. Keys on Radicle are architected as such:
 * A `PeerID` is the textual representation of a peer's `DeviceKey`
 
 In Radicle, keys are securely exchanged with an elliptic curve Diffie-Hellman
-key agreement scheme, where DHKey is used for authentication (as the static
-public key s in the [Noise](http://www.noiseprotocol.org/) protocol).
-
-The `CodeSigningKey` used in verification may be equal to the `DeviceKey` for
 
 *See more on [key architecture][sc]*
 
