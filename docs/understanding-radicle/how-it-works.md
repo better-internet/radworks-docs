@@ -40,7 +40,7 @@ of upstreams exchanging patches via remotes.
   <p>
     <em>
       While this documentation reflects the specification of the Radicle Link
-      protocol, note that while all information is implemented, not all
+      protocol, not all
       information is integrated into the Beta release
     </em>
   </p>
