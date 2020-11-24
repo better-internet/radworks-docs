@@ -1,6 +1,6 @@
 ---
 id: how-it-works
-title: How it Works - Radicle Link
+title: How it Works
 ---
 
 Radicle Link is the peer-to-peer gossip protocol that powers the Radicle

@@ -27,12 +27,23 @@ as it's gossiped between peers. While centralized platforms rely on user
 interface components and key oracles to signal trust from user to user, Radicle
 has designed trust into the core of the protocol.
 
+## How does Radicle interact with Git?
+Radicle Link — the protocol that powers the Radicle network is built on Git. It
+basically uses Git as a database. This means everything is stored in a single
+Git monorepo that is read and written from via the Upstream client. To read more
+about Radicle's Git Implementation, see [How it Works][hw].
+
+## How is Radicle licensed?
+Radicle is completely free and open-source. It's licensed under version 3 of the
+GNU General Public License (GPLv3) with the Radicle Linking Exception. You can
+read more about how this license was chosen [here][ls].
+
 ## How will issues and PRs work? 
 Social collaboration features (i.e. bug reports, patches, discussions etc...)
 are all on the Radicle roadmap. They will work very similarly to the experiences
 we have now, but will be local-first and cryptographically signed. This means
 issues, PRs, and discussions will be more secure, available offline, and stored
-on your machine — not on a central server!
+on your machine as git objects — not on a central server!
 
 ## When CLI tooling?
 We're working on it! We will introduce CLI tooling alongside of Upstream
@@ -67,7 +78,8 @@ on another peer's machine.
 
 ## Can I create private repositories on Radicle?
 No, not yet - but in the future! Private projects with end-to-end encryption are
-on our roadmap.
+on our roadmap. In the meantime, be sure to note that everything you put on
+Radicle will be publicly available.
 
 ## What is a remote?
 A 'remote' refers to a version of your project that is maintained by another
@@ -77,26 +89,20 @@ on your project page (See [Adding Remotes][ar]). For more on how remote
 repositories work, see the [Git documentation][mr]]. 
 
 ## What's a Radicle ID?
-A Radicle ID is a unique way to identify people and projects in the Radicle
-Network. You use a project's Radicle ID to find it on Radicle Upstream. You can
-create a Radicle ID through Radicle Upstream.
+A Radicle ID is a unique way to identify projects in the Radicle
+Network. You use a project's Radicle ID to find it on Radicle Upstream.
 
 ## What's a Device ID?
 A Device ID is the encoding of a peer's public key tied to a specific device.
 People will be able to manage multiple Device IDs in the future, but for now can
 only have one Device ID per identity.
 
-## How does Radicle interact with Git?
-Radicle basically uses Git as a database. This means everything is stored in a
-single Git monorepo that is read and written from via the Upstream client. To
-read more about Radicle's Git Implementation, see [How it Works][hw].
-
 ## What does `following` mean in Radicle?
-Following (also known as [Tracking][tr]) a project replicates its data to your
+Following a project replicates its data to your
 machine. This allows the follower to subscribe to updates from the project's
 maintainer(s) or other remotes. It is also a way to signal interest in the
 project or peer by further replicating the data across their network, making it
-available to other people on the network.
+available to other people on the network. See [Tracking][tr].
 
 ## Can I use Radicle with multiple devices?
 Yes and no. While there isn't multi-device support yet, you can still create
@@ -112,8 +118,6 @@ You can't.... yet. We will be introducing unique names soon 👍
 Without your passphrase, there is no way to grant the Upstream client access to
 your secret key. This means that without your passphrase, there is no way to
 access or publish data to the Radicle network - so make sure you keep it safe!
-In the future, we plan to introduce better and more secure means of key
-recovery. Bear with us!
 
 ## I ran into a issue, where can I report it?
 Please submit a support request our #support channel, or submit an issue on our
@@ -130,6 +134,6 @@ of our Discourse.
 [hw]: /understanding-radicle
 [tr]: /how-it-works.md/#tracking
 
-
+[ls]: https://radicle.community/t/radicle-licensing-model/282/8
 [mr]: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
 [sm]: LINK TO RADICLE>COMMUNITY POST
