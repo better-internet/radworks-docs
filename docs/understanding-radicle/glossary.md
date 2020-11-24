@@ -8,7 +8,7 @@ title: Glossary
 To create a working copy of a [project][pr]. This working copy is where a
 [user][us] can make and publish changes to the project [repository][re] via 'git push rad'.
 For more on how working copies work in Radicle, see [Working
-Copies](how-it-works.md/#working-copies)
+Copies][hiw-wc]
 
 An individual change to a file (or set of files) that represents a single point
 in a version controlled history. Every commit can be identified by it's unique
@@ -33,7 +33,7 @@ future.
 
 ## follow
 Following a [project][pr] or [peer][us] replicates its data to the your machine
-(See [Tracking](how-it-works.md/#tracking)). This allows the follower to
+(See [Tracking][hiw-tr]). This allows the follower to
 subscribe to updates from the project / peer and signal interest by further
 replicating the data across their network, making it available to other peers.
 
@@ -46,13 +46,13 @@ to disseminate information. Participants in the Radicle network share and spread
 data by keeping redundant copies of projects locally and sharing updates with
 peers. This allows data to be disseminated according to use and value: the more
 peers who are interested in certain data the more available it is
-made to the network. See [Gossip](how-it-works.md/#replication-model)
+made to the network. See [Gossip][hiw-rm]
 
 ## maintainer
 A [user][us] who manages updates to the canonical view of a project. A
 maintainer is explicitly associated with the [project][pr] at the time of
-creation or later, via the [project][pr] metadata [See Data
-Model](how-it-works.md/#data-model), but there may be multiple maintainers of a
+creation or later, via the [project][pr] metadata (See [Data
+Model][hiw-dm]), but there may be multiple maintainers of a
 project, all maintaining their own trees. At creation, the creator of the
 [project][pr] is the sole maintainer.
 
@@ -67,7 +67,7 @@ running per device.
 
 ## passphrase
 A sequence of characters used to encrypt a peer's private key (See
-[Identities](how-it-works.md/#identities)) to enable access to the Radicle
+[Identities][hiw-id]) to enable access to the Radicle
 network. It's also needed to fetch and push
 changesets to the Radicle network. 
 
@@ -77,13 +77,13 @@ A device running the Radicle Link protocol.
 ## Device ID
 The encoding of a peer's public key tied to their device. In the Beta, there will
 only be one Device ID per user (See
-[Architecture](how-it-works.md/#architecture))
+[Architecture][hiw-ar])
 
 
 ## project
 A [project][pr] consists of source code, issues, and proposed changesets. It
 carries a unique, shareable [Radicle ID](Radicle ID). A [project][pr] also
-includes the identities of all its [maintainers](maintainers). The entirety of
+includes the identities of all its [maintainers][ma]. The entirety of
 the [project][pr] data and metadata, including social artifacts such as
 comments, are stored within the [project][pr]'s [repository][re]. [project][pr]s
 are the principle unit of replication.
@@ -101,7 +101,7 @@ Unique shareable identifier for users and projects in the Radicle Network. Radic
 
 ## Radicle Link
 A peer-to-peer replication protocol built on Git. See [How it
-Works](how-it-works.md).
+Works][hiw].
 
 ## Radicle network
 The network of peers that replicate and gossip data with Radicle Link.
@@ -142,10 +142,19 @@ Upstream app.
 
 
 [br]: #branch
+[ma]: #maintainer
 [pe]: #peer
 [pr]: #project
 [re]: #repository
 [ri]: #radicle-id
 [us]: #user
+
+[hiw]: how-it-works.md
+[hiw-ar]: how-it-works.md/#architecture
+[hiw-dm]: how-it-works.md/#data-model
+[hiw-id]: how-it-works.md/#identities
+[hiw-rm]: how-it-works.md/#replication-model
+[hiw-tr]: how-it-works.md/#tracking
+[hiw-wc]: how-it-works.md/#working-copies
 
 [rl]: https://radicle.xyz/radicle-link.html
