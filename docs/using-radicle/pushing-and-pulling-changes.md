@@ -110,7 +110,7 @@ remotes" modal.
 [ch]: understanding-radicle/glossary.md/#checkout
 [fo]: understanding-radicle/how-it-works.md/#following
 [go]: understanding-radicle/how-it-works.md/#gossip
-[gs]: getting-started/getting-started.md
+[gs]: getting-started.md
 [pn]: understanding-radicle/glossary.md/#project-name
 [ri]: understanding-radicle/glossary.md/#project-id
 [re]: understanding-radicle/glossary.md/#remote
