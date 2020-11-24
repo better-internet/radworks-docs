@@ -65,7 +65,12 @@ this:
 Open the `radicle-upstream-x.x.x.dmg` package and install Upstream by dragging
 the `Radicle Upstream` binary to the `/Applications` folder.
 
-<video width="100%" height="100%" playsinline autoplay muted loop>
+<video
+  style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
+  playsinline
+  autoplay
+  muted
+  loop>
   <source src="/img/macOS-install.mp4" type="video/mp4">
 </video>
 
@@ -89,7 +94,12 @@ accessibility of open software.
    which disallow running unsigned binaries. Repeat the previous step. You
    should now see three buttons: `Move to Bin`, `Open` and `Cancel`, click `Open`.
 
-<video width="100%" height="100%" playsinline autoplay muted loop>
+<video
+  style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
+  playsinline
+  autoplay
+  muted
+  loop>
   <source src="/img/macOS-open.mp4" type="video/mp4">
 </video>
 
