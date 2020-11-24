@@ -65,7 +65,12 @@ To view and pull changes from another user's version of your project, you must
 first **add their remote**. To do this, you must add their **Device ID** to the
 list of remotes that you follow.
 
-<video width="100%" height="100%" playsinline autoplay muted loop>
+<video
+  style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
+  playsinline
+  autoplay
+  muted
+  loop>
   <source src="/img/add-remote.mp4" type="video/mp4">
 </video>
 
