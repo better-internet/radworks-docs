@@ -8,7 +8,7 @@ title: Glossary
 To create a working copy of a [project][pr]. This working copy is where a
 [user][us] can make and publish changes to the project [repository][re] via 'git push rad'.
 For more on how working copies work in Radicle, see [Working
-Copies](/how-it-works.md/#working-copies)
+Copies](how-it-works.md/#working-copies)
 
 An individual change to a file (or set of files) that represents a single point
 in a version controlled history. Every commit can be identified by it's unique
@@ -33,7 +33,7 @@ future.
 
 ## follow
 Following a [project][pr] or [peer][us] replicates its data to the your machine
-(See [Tracking](/how-it-works.md/#tracking)). This allows the follower to
+(See [Tracking](how-it-works.md/#tracking)). This allows the follower to
 subscribe to updates from the project / peer and signal interest by further
 replicating the data across their network, making it available to other peers.
 
@@ -46,13 +46,13 @@ to disseminate information. Participants in the Radicle network share and spread
 data by keeping redundant copies of projects locally and sharing updates with
 peers. This allows data to be disseminated according to use and value: the more
 peers who are interested in certain data the more available it is
-made to the network. See [Gossip](/how-it-works.md/#replication-model)
+made to the network. See [Gossip](how-it-works.md/#replication-model)
 
 ## maintainer
-A [user][us] who manages updates to the canonical view of a project. A
+AAA [user][us] who manages updates to the canonical view of a project. A
 maintainer is explicitly associated with the [project][pr] at the time of
 creation or later, via the [project][pr] metadata [See Data
-Model](/how-it-works.md/#data-model), but there may be multiple maintainers of a
+Model](how-it-works.md/#data-model), but there may be multiple maintainers of a
 project, all maintaining their own trees. At creation, the creator of the
 [project][pr] is the sole maintainer.
 
