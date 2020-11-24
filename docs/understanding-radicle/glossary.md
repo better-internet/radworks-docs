@@ -77,7 +77,7 @@ A device running the Radicle Link protocol.
 ## Device ID
 The encoding of a peer's public key tied to their device. In the Beta, there will
 only be one Device ID per user (See
-[Architecture][hiw-ar])
+[Data Model][hiw-dm])
 
 
 ## project
@@ -150,7 +150,6 @@ Upstream app.
 [us]: #user
 
 [hiw]: how-it-works.md
-[hiw-ar]: how-it-works.md/#architecture
 [hiw-dm]: how-it-works.md/#data-model
 [hiw-id]: how-it-works.md/#identities
 [hiw-rm]: how-it-works.md/#replication-model
