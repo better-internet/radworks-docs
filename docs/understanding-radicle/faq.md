@@ -94,7 +94,7 @@ read more about Radicle's Git Implementation, see [How it Works][hw].
 ## What does `following` mean in Radicle?
 Following (also known as [Tracking][tr]) a project replicates its data to your
 machine. This allows the follower to subscribe to updates from the project's
-maintainer(s) or other remotes It is also a way to signal interest in the
+maintainer(s) or other remotes. It is also a way to signal interest in the
 project or peer by further replicating the data across their network, making it
 available to other people on the network.
 
