@@ -99,7 +99,7 @@ Have a look at the [Adding a seed node to Upstream][ad] section for more
 information on how to set up the new seed in Upstream.
 
 
-[ad]: getting-started/getting-started.md#adding-a-seed-node-to-upstream
+[ad]: getting-started.md#adding-a-seed-node-to-upstream
 
 [sn]: /img/seed-node-ui.png
 

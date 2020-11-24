@@ -73,5 +73,5 @@ Upstream and becomee a part of the Radicle network.
 
 
 [fa]: understanding-radicle/faq.md
-[gs]: getting-started/getting-started.md
+[gs]: getting-started.md
 [wh]: understanding-radicle/why-radicle.md

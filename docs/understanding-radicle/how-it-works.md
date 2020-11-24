@@ -702,7 +702,7 @@ Read more about the [Radicle collaboration model][rc].
 [dp]: #doc-payload
 [fe]: #fetching
 [gi]: #git-implementation
-[gs]: getting-started/getting-started.md/#joining-a-seed-node
+[gs]: getting-started.md/#joining-a-seed-node
 [ka]: #key-architecture
 [na]: #namespacing
 [mr]: using-radicle/pushing-and-pulling-changes.md/#adding-remtoes

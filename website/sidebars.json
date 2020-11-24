@@ -2,7 +2,7 @@
   "docs": {
     "Introduction": [
       "what-is-radicle",
-      "getting-started/getting-started"
+      "getting-started"
     ],
     "Using Radicle": [
       "using-radicle/creating-and-sharing-projects",
