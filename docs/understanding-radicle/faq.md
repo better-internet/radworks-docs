@@ -86,7 +86,7 @@ A 'remote' refers to a version of your project that is maintained by another
 person. To collaborate with others on Radicle, you have to add and follow other
 people's remotes to be able to fetch changes from them. You can manage remotes
 on your project page (See [Adding Remotes][ar]). For more on how remote
-repositories work, see the [Git documentation][mr]].
+repositories work, see the [Git documentation][mr].
 
 ## What's a Radicle ID?
 A Radicle ID is a unique way to identify projects in the Radicle
