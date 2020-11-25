@@ -38,14 +38,14 @@ Radicle is completely free and open-source. It's licensed under version 3 of the
 GNU General Public License (GPLv3) with the Radicle Linking Exception. You can
 read more about how this license was chosen [here][ls].
 
-## How will issues and PRs work? 
+## How will issues and PRs work?
 Social collaboration features (i.e. bug reports, patches, discussions etc...)
 are all on the Radicle roadmap. They will work very similarly to the experiences
 we have now, but will be local-first and cryptographically signed. This means
 issues, PRs, and discussions will be more secure, available offline, and stored
 on your machine as git objects — not on a central server!
 
-## When CLI tooling?
+## When will CLI tooling be available?
 We're working on it! We will introduce CLI tooling alongside of Upstream
 development.
 
@@ -60,16 +60,16 @@ If you want! While our Beta release will have the basic collaboration features
 (i.e. code hosting, sharing, checking out, and pushing/pulling), we plan to
 introduce features that could support a similar day-to-day code collaboration
 experience to GitHub. They will include bug reporting, patches, code review, and
-discussions. 
+discussions.
 
 That being said, while we believe that reducing one's reliance on
 centrally-hosted platforms is generally a good idea, we also believe that code
 collaboration solutions serve different purposes for different people. Radicle
 Upstream *will* support social collaboration, but it's priority will be
 delivering secure, local-first, peer-to-peer code collaboration — not an exact
-GitHub replica. 
+GitHub replica.
 
-## Where is my data stored? 
+## Where is my data stored?
 On the Radicle network, content is distributed peer-to-peer via a process called
 gossip. This means that peers self-host their own content — and the content of
 any peers they are interested in — locally on their machine. It also means that
@@ -86,7 +86,7 @@ A 'remote' refers to a version of your project that is maintained by another
 person. To collaborate with others on Radicle, you have to add and follow other
 people's remotes to be able to fetch changes from them. You can manage remotes
 on your project page (See [Adding Remotes][ar]). For more on how remote
-repositories work, see the [Git documentation][mr]]. 
+repositories work, see the [Git documentation][mr]].
 
 ## What's a Radicle ID?
 A Radicle ID is a unique way to identify projects in the Radicle
@@ -128,12 +128,12 @@ For help, join our #support channel in our Matrix chat or in the Help category
 of our Discourse.
 
 
-[ar]: /using-radicle/pushing-and-pulling-changes#adding-remotes
-[cp]: /using-radicle/creating-and-sharing-projects.md
-[gs]: /getting-started/getting-started.md
-[hw]: /understanding-radicle
-[tr]: /how-it-works.md/#tracking
+[ar]: using-radicle/pushing-and-pulling-changes.md#adding-remotes
+[cp]: using-radicle/creating-and-sharing-projects.md
+[gs]: getting-started.md
+[hw]: how-it-works.md
+[tr]: how-it-works.md/#tracking
 
 [ls]: https://radicle.community/t/radicle-licensing-model/282/8
 [mr]: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
-[sm]: LINK TO RADICLE>COMMUNITY POST
+[sm]: https://radicle.community/
