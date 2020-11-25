@@ -38,7 +38,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    { href: 'https://radicle.xyz', label: 'go to radicle.xyz' },
+    { href: 'https://radicle.xyz', label: 'Back to radicle.xyz' },
   ],
 
   // If you have users set above, you add it here:

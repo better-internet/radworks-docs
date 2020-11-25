@@ -4,7 +4,7 @@ title: Getting Started
 sidebar_label: Getting Started
 ---
 
-## Installation & Download
+## Download & Installation
 
 The Radicle network can be accessed via Upstream, a desktop client. To download
 the app, click [here][bk]. While Upstream is currently the only client for
@@ -46,6 +46,62 @@ default and completely open source. You can follow along development on
     </p>
   </em>
 </details>
+
+Radicle Upstream is available for download on Linux and macOS. If you are
+installing on a [Mac computer with Apple Silicon ][as] please note that you may
+experience issues as Radicle Upstream has not been tested on the Apple Silicon
+platform.
+
+Once you've downloaded the app for your respective platform, start it like
+this:
+
+#### On Linux:
+
+1. make the package executable with: `chmod +x radicle-upstream-X.X.X.AppImage`
+2. start the app: `./radicle-upstream-X.X.X.AppImage`
+
+#### On macOS:
+
+Open the `radicle-upstream-x.x.x.dmg` package and install Upstream by dragging
+the `Radicle Upstream` binary to the `/Applications` folder.
+
+<video
+  style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
+  playsinline
+  autoplay
+  muted
+  loop>
+  <source src="/img/macOS-install.mp4" type="video/mp4">
+</video>
+
+**Note**: before you can start Upstream for the first time, you'll have to
+perform some extra steps. This is because we haven't set up
+[Apple notarization][an] for Upstream yet, read more about it [here][aw].
+You'll only have to do this once -- the first time you launch the app.
+
+While we will be participating in the Apple Developer Program to ensure
+accessibility to our macOS users, we do not agree with Apple's financial
+gatekeeping and increasing control over application distribution on their
+platform. Forcing developers to "pay-to-play" under the guise of a security
+solution is an extractive form of vendor lock-in that inhibits the growth and
+accessibility of open software.
+
+1. Open `/Applications` in finder, locate the `Radicle Upstream` app and
+   right-click it, then select `Open` from the context menu. You should see a
+   dialog with two buttons `Move to Bin` and `Cancel`.
+
+2. Dismiss the dialog by clicking `Cancel` to bypass macOS security measures
+   which disallow running unsigned binaries. Repeat the previous step. You
+   should now see three buttons: `Move to Bin`, `Open` and `Cancel`, click `Open`.
+
+<video
+  style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
+  playsinline
+  autoplay
+  muted
+  loop>
+  <source src="/img/macOS-open.mp4" type="video/mp4">
+</video>
 
 ## Creating an identity
 
@@ -125,6 +181,9 @@ section.
 
 [id]: /img/identity.png
 
+[an]: https://developer.apple.com/documentation/xcode/notarizing_macos_software_before_distribution
+[as]: https://support.apple.com/en-us/HT211814
+[aw]: https://support.apple.com/en-gb/guide/mac-help/mh40616/mac
 [bk]: https://buildkite.com/monadic/radicle-upstream/builds/6098
 [co]: https://radicle.community
 [sd]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
