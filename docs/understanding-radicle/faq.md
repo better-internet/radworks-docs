@@ -136,4 +136,4 @@ of our Discourse.
 
 [ls]: https://radicle.community/t/radicle-licensing-model/282/8
 [mr]: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
-[sm]: LINK TO RADICLE>COMMUNITY POST
+[sm]: https://radicle.community/
