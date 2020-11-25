@@ -122,6 +122,17 @@ command line.
 
 ## Configuring your system
 
+### Add user details to your git config
+To create and publish projects to the Radicle network, you must associate your commits with an identity by setting a username in Git.
+
+You can do so by running the following command:
+
+```
+git config --global user.name "YOUR NAME"
+```
+For more help, refer to the relevant [Git documentation][gd].
+
+### Add the remote helper to your shell
 To publish code to the Radicle network via the Upstream client, you first have
 to add the [Radicle git remote helper][rg] to your shell configuration.
 
@@ -138,41 +149,10 @@ With the remote helper installed, you will be able to [push changes][pc] to
 your [Radicle installation][ri], which will be published by the Upstream
 client.
 
-## Adding a seed node to Upstream
-
-Seed nodes are "always-on" nodes running on public IP addresses that serve data
-to connected peers. By adding a seed to Upstream, that seed automatically
-tracks you and shares your data across its network of other connected peers
-[^1]. This increases the availability of your data throughout the network,
-while making it easier to find other's data as well. Upstream is preconfigured
-with a Radicle operated seed to bootstrap your connectivity. If you have
-removed the default seed, you can always re-add it later by following these
-steps:
-
-1. Navigate to *Settings*. There, under the *Network* header, you'll find your
-   seed list.
-2. Paste the seed address into the input box and submit by pressing
-   <kbd>RETURN</kbd>.
-
-    `hynewpywqj6x4mxgj7sojhue3erucyexiyhobxx4du9w66hxhbfqbw@seedling.radicle.xyz:12345`
-
-3. Check that you're connected by hovering over your Connection icon in your
-   Homebar.
-
-Recent activity and connected peers on the Radicle network can be viewed at
-http://seedling.radicle.xyz/.
-
-To learn how to use Radicle, head over to the [Collaborating on Radicle][cr]
+To learn how to use Radicle, continue on to the [Using Radicle][ur]
 section.
 
-
-[^1]: Seed nodes can be configured to either track and share all data across
-      the network, or to propagate only a specific set of peers or projects.
-      Please refer to your seed operator for details. If you're running your
-      own seed, have a look at the [Running a seed node][sn] section and the
-      [seed node documentation][sd].
-
-[cr]: using-radicle/creating-and-sharing-projects.md
+[ur]: using-radicle/creating-and-sharing-projects.md
 [di]: understanding-radicle/glossary.md/#peerid
 [pc]: using-radicle/pushing-and-pulling-changes.md#pushing-changes-to-a-project
 [rg]: understanding-radicle/faq.md
@@ -186,5 +166,6 @@ section.
 [aw]: https://support.apple.com/en-gb/guide/mac-help/mh40616/mac
 [bk]: https://buildkite.com/monadic/radicle-upstream/builds/6098
 [co]: https://radicle.community
+[gd]: https://docs.github.com/en/free-pro-team@latest/github/using-git/setting-your-username-in-git
 [sd]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
 [te]: https://radicle.xyz/terms.html

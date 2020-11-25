@@ -3,21 +3,16 @@ id: troubleshooting
 title: Troubleshooting
 ---
 
-> “If you know the enemy and know yourself, you need not fear the result of a
-> hundred battles. If you know yourself but not the enemy, for every victory
-> gained you will also suffer a defeat. If you know neither the enemy nor
-> yourself, you will succumb in every battle.”
->
-> ― Sun Tzu, The Art of War
+As the developers of Upstream we want you, the user, to have the best experience
+as possible. Also, as the developers of Upstream, we know that there will be
+bugs and errors in our Beta release. To help consolidate these diametrically
+opposed pieces of knowledge, we will try and document any of the errors that we
+are aware of and provide some troubleshooting advice. 
 
-As developers of Upstream we want you, the user, to have the best experience as
-possible. Also as developers of Upstream, we know that there will be bugs and
-errors. To help consolidate these diametrically opposed pieces of knowledge we
-will try and document any of the errors that we are aware of, and give you
-advice on how you might recover. In the event that this information doesn't
-help, do not hesitate to reach out to [radicle.community][rc] — or our
-[GitHub issues][gi] if you are comfortable with opening a detailed
-issue.
+In the event that this information doesn't resolve your issue, we encourage you
+to submit a formal request through our [#support channel][sc] on our Matrix
+server, in the [Help category][rc] of our radicle.community forum, or [open an
+issue][gi] on GitHub. issue.
 
 For our known failures, we categorise them with a PascalCase code word that
 gives a high level idea of what went wrong. When you encounter one of these
@@ -195,3 +190,4 @@ TODO(finto): Link to our monorepo explanation
 [gi]: https://github.com/radicle-dev/radicle-upstream/issues
 [rc]: https://radicle.community/
 [rs]: https://github.com/radicle-dev/radicle-surf
+[sc]: https://matrix.to/#/#support:radicle.community
