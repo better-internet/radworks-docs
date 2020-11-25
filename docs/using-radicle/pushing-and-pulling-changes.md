@@ -58,6 +58,15 @@ view this remote in the peer switcher.
 Once a remote is created for a project, it will also move the project to your
 **Projects** tab.
 
+You can also clone a project through your command line with `git clone`. To do
+so use the following command:
+
+`git clone --branch main --origin rad rad://<peer-id>@<project-id>`
+
+Where `<peer-id>` is the Device ID of the remote you wish to clone from (you can
+find this in the `Manage Remotes` flow) and `<project-id> is the Radicle ID of
+the project you wish to clone.
+
 ## Getting changes from a project
 
 ### Adding remotes
