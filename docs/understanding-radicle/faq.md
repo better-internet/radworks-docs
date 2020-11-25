@@ -45,7 +45,7 @@ we have now, but will be local-first and cryptographically signed. This means
 issues, PRs, and discussions will be more secure, available offline, and stored
 on your machine as git objects — not on a central server!
 
-## When CLI tooling?
+## When will CLI tooling be available?
 We're working on it! We will introduce CLI tooling alongside of Upstream
 development.
 
