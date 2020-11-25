@@ -128,11 +128,11 @@ For help, join our #support channel in our Matrix chat or in the Help category
 of our Discourse.
 
 
-[ar]: /using-radicle/pushing-and-pulling-changes#adding-remotes
-[cp]: /using-radicle/creating-and-sharing-projects.md
-[gs]: /getting-started/getting-started.md
-[hw]: /understanding-radicle
-[tr]: /how-it-works.md/#tracking
+[ar]: using-radicle/pushing-and-pulling-changes#adding-remotes
+[cp]: using-radicle/creating-and-sharing-projects.md
+[gs]: getting-started.md
+[hw]: how-it-works.md
+[tr]: how-it-works.md/#tracking
 
 [ls]: https://radicle.community/t/radicle-licensing-model/282/8
 [mr]: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
