@@ -128,7 +128,7 @@ For help, join our #support channel in our Matrix chat or in the Help category
 of our Discourse.
 
 
-[ar]: using-radicle/pushing-and-pulling-changes#adding-remotes
+[ar]: using-radicle/pushing-and-pulling-changes.md#adding-remotes
 [cp]: using-radicle/creating-and-sharing-projects.md
 [gs]: getting-started.md
 [hw]: how-it-works.md
