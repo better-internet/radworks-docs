@@ -55,6 +55,7 @@
 body {
   background: var(--color-foreground-level-1);
   font-family: var(--font-stack);
+  color: var(--color-foreground-level-6);
 }
 
 p {
@@ -69,6 +70,14 @@ p.small {
 
 strong {
   font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-foreground);
+  line-height: 100%;
 }
 
 h1 {
@@ -95,6 +104,17 @@ h3 {
   background: var(--color-foreground-level-1);
   border-bottom: 1px solid var(--color-foreground-level-2);
   height: 3.5rem;
+}
+
+code,
+pre code,
+.hljs {
+  background: var(--color-foreground-level-2);
+  color: var(--color-foreground-level-6);
+}
+
+details:hover {
+  cursor: pointer;
 }
 
 .button {
