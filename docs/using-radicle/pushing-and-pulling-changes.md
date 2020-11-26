@@ -92,12 +92,6 @@ also track the peer you are looking for, you will get their changes:
 2. Whenever your peer receives a gossip message about the peer you wish to
    follow. For more information on gossip, [click here][go].
 
-You can view all remotes of a project with the command:
-
-`git remote show`
-
-Or, list all branches of all remotes with the command:
-
 `git branch -a`
 
 ### Fetching changes
@@ -109,6 +103,13 @@ Where `<remote>` is of the following form: `<display name>@<Device ID>/<branch>`
 and can be looked up by inspecting the output of `git branch -a`. Remotes
 returned by `git branch -a` match the remotes found in the "Manage remotes"
 modal.
+
+You can view all remotes of a project with the command:
+
+`git remote show`
+
+Or, list all branches of all remotes with the command:
+
 
 
 [br]: understanding-radicle/glossary.md/#branch
