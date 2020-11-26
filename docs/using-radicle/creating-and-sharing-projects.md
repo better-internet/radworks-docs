@@ -1,6 +1,6 @@
 ---
-id: creating-and-sharing-projects
-title: Creating and sharing projects
+id: creating-projects
+title: Creating projects
 ---
 
 In Radicle, local Git repositories are published and shared as [projects][pr].
