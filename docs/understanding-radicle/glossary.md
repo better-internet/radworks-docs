@@ -73,11 +73,11 @@ A [project][pr] consists of source code, issues, and proposed changesets. It
 carries a unique, shareable [Radicle ID][ri]. A [project][pr] also
 includes the identities of all its [maintainers][ma]. The entirety of
 the [project][pr] data and metadata, including social artifacts such as
-comments, are stored within the [project][pr]'s [repository][re] on the user's machine. [Project][pr]s
+comments, are stored within the [project][pr]'s repository on the user's machine. [Project][pr]s
 are the principle unit of replication.
 
 ## project name
-A human-readable name that is chosen for a [project][pr]. It is not
+A human-readable name that is chosen for a [project][pe]. It is not
 guaranteed to be unique.
 
 ## publish

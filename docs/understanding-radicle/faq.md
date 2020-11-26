@@ -120,16 +120,13 @@ your secret key. This means that without your passphrase, there is no way to
 access or publish data to the Radicle network - so make sure you keep it safe!
 
 ## I can't find a project on the network. What should I do?
-First, check to see if you are connected to the seed node by hovering over the Connection Status icon in your toolbar. 
-
-If you are connected to one or more peer, navigate to the seed node dashboard to see if you can find your Device ID. 
+First, check to see if you are connected to the seed node by hovering over the Connection Status icon in your toolbar. If you are connected to one or more peer, navigate to the seed node dashboard (e.g. seedling.radicle.xyz) to see if you can find your Device ID. 
 
 If you are connected to the seed node and can find yourself on the dashboard, try closing the app.
 
 On restart, if there is still outstanding data to be found, try refreshing the app. Wait one minute before restarting the app again. 
 
-If you are still running into problems, please submit a request in our #support channel
-
+If you are still running into problems, please submit a request in our #support channel.
 
 ## I ran into a issue, where can I report it?
 Please submit a support request our #support channel, or submit an issue on our

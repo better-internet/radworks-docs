@@ -153,9 +153,9 @@ To learn how to use Radicle, continue on to the [Using Radicle][ur]
 section.
 
 [ur]: using-radicle/creating-and-sharing-projects.md
-[di]: understanding-radicle/glossary/#device-id
+[di]: understanding-radicle/glossary.md/#peerid
 [pc]: using-radicle/pushing-and-pulling-changes.md#pushing-changes-to-a-project
-[rg]: understanding-radicle/faq.md
+[rg]: understanding-radicle/faq.md/
 [ri]: understanding-radicle/how-it-works.md
 [sn]: using-radicle/running-a-seed-node.md
 

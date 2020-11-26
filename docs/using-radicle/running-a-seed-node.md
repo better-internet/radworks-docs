@@ -99,7 +99,7 @@ Have a look at the [Adding a custom seed node][ad] section for more
 information on how to set up the new seed in Upstream.
 
 
-[ad]: getting-started.md#adding-a-seed-node-to-upstream
+[ad]: using-radicle/adding-a-seed-node.md
 [se]: understanding-radicle/glossary.md/#seed
 
 [sn]: /img/seed-node-ui.png
