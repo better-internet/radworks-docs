@@ -56,7 +56,7 @@ project, all maintaining their own trees. At creation, the creator of the
 How Radicle Upstream refers to the default development branch of a project.
 
 ## node
-A [peer][pr] running an instance of the Radicle Link protocol. There can only one node
+A [peer][pr] running an instance of the Radicle Link protocol. There can only be one node
 running per device.
 
 ## passphrase
