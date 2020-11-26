@@ -153,7 +153,7 @@ To learn how to use Radicle, continue on to the [Using Radicle][ur]
 section.
 
 [ur]: using-radicle/creating-and-sharing-projects.md
-[di]: understanding-radicle/glossary.md/#peerid
+[di]: understanding-radicle/glossary/#device-id
 [pc]: using-radicle/pushing-and-pulling-changes.md#pushing-changes-to-a-project
 [rg]: understanding-radicle/faq.md
 [ri]: understanding-radicle/how-it-works.md
