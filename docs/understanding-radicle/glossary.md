@@ -47,7 +47,7 @@ made to the network. See [Gossip][hiw-rm].
 ## maintainer
 A [user][us] who manages and pushes updates to the canonical view of a project. A
 maintainer is explicitly associated with the [project][pr] at the time of
-creation or later, via the [project][pr] metadata (See [Data
+creation or later, via the [project][pr] metadata (see [Data
 Model][hiw-dm]), but there may be multiple maintainers of a
 project, all maintaining their own trees. At creation, the creator of the
 [project][pr] is the sole maintainer.
@@ -56,7 +56,7 @@ project, all maintaining their own trees. At creation, the creator of the
 How Radicle Upstream refers to the default development branch of a project.
 
 ## node
-A [peer][pr] running an instance of the Radicle Link protocol. There can only one node
+A [peer][pr] running an instance of the Radicle Link protocol. There can only be one node
 running per device.
 
 ## passphrase

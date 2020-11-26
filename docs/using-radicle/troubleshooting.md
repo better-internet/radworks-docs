@@ -4,7 +4,7 @@ title: Troubleshooting
 ---
 
 As the developers of Upstream we want you, the user, to have the best experience
-as possible. Also, as the developers of Upstream, we know that there will be
+possible. Also, as the developers of Upstream, we know that there will be
 bugs and errors in our Beta release. To help consolidate these diametrically
 opposed pieces of knowledge, we will try and document any of the errors that we
 are aware of and provide some troubleshooting advice. 
@@ -12,7 +12,7 @@ are aware of and provide some troubleshooting advice.
 In the event that this information doesn't resolve your issue, we encourage you
 to submit a formal request through our [#support channel][sc] on our Matrix
 server, in the [Help category][rc] of our radicle.community forum, or [open an
-issue][gi] on GitHub. issue.
+issue][gi] on GitHub.
 
 For our known failures, we categorise them with a PascalCase code word that
 gives a high level idea of what went wrong. When you encounter one of these

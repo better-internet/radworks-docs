@@ -11,7 +11,7 @@ correctly by following the instructions in the [Getting Started][gs] section.
 After the Radicle remote helper is configured, pushing to Radicle is as simple
 as pushing to any other remote. After changes are added and commited, they can
 be pushed to the Radicle remote via `git push rad`. For help using Git, please
-refer to [relevant documentation][rd].
+refer to the [relevant documentation][rd].
 
 It's important to note that once changes are pushed to your Radicle remote, they
 are published to the Radicle network and will be publicly available to anybody

@@ -22,7 +22,7 @@ steps:
 3. Check that you're connected by hovering over your Connection icon in your
    Homebar.
 
-Recent seed node activity and connected peers can be viewed on the added seed node's dashboard (i.e. http://seed.my.org.). The default seed dashboard for Upstream can be viewed at http://seedling.radicle.xyz/.
+Recent seed node activity and connected peers can be viewed on the added seed node's dashboard (e.g. http://seed.my.org). The default seed dashboard for Upstream can be viewed at http://seedling.radicle.xyz.
 
 [^1]: Seed nodes can be configured to either track and share all data across
       the network, or to propagate only a specific set of peers or projects.
@@ -32,4 +32,3 @@ Recent seed node activity and connected peers can be viewed on the added seed no
 
 [sn]: using-radicle/running-a-seed-node.md
 [sd]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
-
