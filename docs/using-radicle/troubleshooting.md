@@ -4,7 +4,7 @@ title: Troubleshooting
 ---
 
 As the developers of Upstream we want you, the user, to have the best experience
-as possible. Also, as the developers of Upstream, we know that there will be
+possible. Also, as the developers of Upstream, we know that there will be
 bugs and errors in our Beta release. To help consolidate these diametrically
 opposed pieces of knowledge, we will try and document any of the errors that we
 are aware of and provide some troubleshooting advice. 
