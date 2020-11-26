@@ -16,7 +16,9 @@ Radicle prioritizes different concerns:
 2. People should control of their content
 3. People should control of their social interactions
 
-These concerns have informed the design of Radicle Link, the peer-to-peer protocol that powers the Radicle network. Radicle Link gossips data between `peers`
+These concerns have informed the design of Radicle Link, the peer-to-peer
+protocol that powers the Radicle network. Radicle Link gossips data between
+`peers`
 
 In Radicle:
 
