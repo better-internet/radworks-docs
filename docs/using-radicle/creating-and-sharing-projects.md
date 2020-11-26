@@ -34,7 +34,7 @@ the project page (see above).
 Copy and pasting a project's Radicle ID into your search bar will find it on the
 network for you. Following a project will replicate it to your local machine,
 making it available to all of your connected peers. To learn more about
-following & replication, [See][un].
+following & replication, [See Replication][un].
 
 
 [fa]: understanding-radicle/faq.md#when-cli

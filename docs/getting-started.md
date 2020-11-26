@@ -166,6 +166,6 @@ section.
 [aw]: https://support.apple.com/en-gb/guide/mac-help/mh40616/mac
 [bk]: https://buildkite.com/monadic/radicle-upstream/builds/6098
 [co]: https://radicle.community
-[gd]: https://docs.github.com/en/free-pro-team@latest/github/using-git/setting-your-username-in-git
+[gd]: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
 [sd]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
 [te]: https://radicle.xyz/terms.html

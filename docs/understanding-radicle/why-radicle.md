@@ -1,6 +1,6 @@
 ---
 id: why-radicle
-title: Why Radicle
+title: Why Radicle?
 ---
 ## *An overview of Radicle, what we're building and why.*
 
