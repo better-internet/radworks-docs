@@ -156,23 +156,6 @@ $ export PATH=$PATH:$HOME/.radicle/bin
 ```
 
 
-
-
 [tv]: pushing-and-pulling-changes.md
 [tr]: troubleshooting.md
-
-[br]: understanding-radicle/glossary.md/#branch
-[ch]: understanding-radicle/glossary.md/#checkout
-[fo]: understanding-radicle/how-it-works.md/#following
 [gi]: understanding-radicle/how-it-works.md/#git-implementation
-[go]: understanding-radicle/how-it-works.md/#gossip
-[gs]: getting-started.md
-[pn]: understanding-radicle/glossary.md/#project-name
-[ri]: understanding-radicle/glossary.md/#project-id
-[re]: understanding-radicle/glossary.md/#remote
-
-[id]: /img/radicle-id-seed-node.png
-[ps]: /img/peer-switcher.png
-[sb]: /img/search-bar.png
-
-[rd]: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup

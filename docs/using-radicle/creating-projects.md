@@ -16,7 +16,7 @@ A project also includes the identities of all its [maintainers][ma]. Maintainers
 designated rights over the project's metadata. At this point in time, the person who creates the project is considered its sole maintainer, but multiple maintainers will be able to be added in the future.
 
 To read more about how projects are designed
-are replicated across the Radicle network, head to our [How it Works][un] section.
+are replicated across the Radicle network, head to our [How it Works][hw] section.
 
 ## Creating projects
 
@@ -35,7 +35,6 @@ At the moment, [projects can only be created through the Upstream client][fa].
 [fa]: understanding-radicle/faq.md/#when-will-cli-tooling-be-available
 [ma]: understanding-radicle/glossary.md/#maintainer
 [pr]: understanding-radicle/glossary.md/#project
-[rad]: understanding-radicle/glossary.md/#radicle-id
-[un]: understanding-radicle/how-it-works.md/#replication-model
+[hw]: understanding-radicle/how-it-works.md
 
 [ri]: /img/radicle-id.png
