@@ -7,9 +7,9 @@ sidebar_label: Getting Started
 ## Download & Installation
 
 The Radicle network can be accessed via Upstream, a desktop client. To download
-the app, click [here][bk]. While Upstream is currently the only client for
-using Radicle, it won't be the only one. Upstream development is public by
-default and completely open source. You can follow along development on
+the app, click [here][bk]. While Upstream is currently the only client for using
+Radicle, it won't be the only one. Upstream development is public by default and
+completely open source. You can follow along development on
 [radicle.community][co].
 
 <details>
@@ -52,8 +52,7 @@ installing on a [Mac computer with Apple Silicon ][as] please note that you may
 experience issues as Radicle Upstream has not been tested on the Apple Silicon
 platform.
 
-Once you've downloaded the app for your respective platform, start it like
-this:
+Once you've downloaded the app for your respective platform, start it like this:
 
 #### On Linux:
 
@@ -65,19 +64,15 @@ this:
 Open the `radicle-upstream-x.x.x.dmg` package and install Upstream by dragging
 the `Radicle Upstream` binary to the `/Applications` folder.
 
-<video
-  style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
-  playsinline
-  autoplay
-  muted
-  loop>
+<video style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
+  playsinline autoplay muted loop>
   <source src="/img/macOS-install.mp4" type="video/mp4">
 </video>
 
 **Note**: before you can start Upstream for the first time, you'll have to
-perform some extra steps. This is because we haven't set up
-[Apple notarization][an] for Upstream yet, read more about it [here][aw].
-You'll only have to do this once -- the first time you launch the app.
+perform some extra steps. This is because we haven't set up [Apple
+notarization][an] for Upstream yet, read more about it [here][aw]. You'll only
+have to do this once -- the first time you launch the app.
 
 While we will be participating in the Apple Developer Program to ensure
 accessibility to our macOS users, we do not agree with Apple's financial
@@ -92,14 +87,11 @@ accessibility of open software.
 
 2. Dismiss the dialog by clicking `Cancel` to bypass macOS security measures
    which disallow running unsigned binaries. Repeat the previous step. You
-   should now see three buttons: `Move to Bin`, `Open` and `Cancel`, click `Open`.
+   should now see three buttons: `Move to Bin`, `Open` and `Cancel`, click
+   `Open`.
 
-<video
-  style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
-  playsinline
-  autoplay
-  muted
-  loop>
+<video style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
+  playsinline autoplay muted loop>
   <source src="/img/macOS-open.mp4" type="video/mp4">
 </video>
 
@@ -116,14 +108,26 @@ and consistency across multiple devices.
 
 The app will also prompt you to create a passphrase. This passphrase *isn't* a
 private key — it is a password decrypting your keypair to access and publish to
-the Upstream app. You will also be prompted for this passphrase when pushing
-and fetching code from your local machine to the Radicle network via your
-command line.
+the Upstream app. You will also be prompted for this passphrase when pushing and
+fetching code from your local machine to the Radicle network via your command
+line.
 
 ## Configuring your system
 
+### Add user details to your git config
+To create and publish projects to the Radicle network, you must associate your
+commits with an identity by setting a username in Git.
+
+You can do so by running the following command:
+
+```
+git config --global user.name "YOUR NAME"
+```
+For more help, refer to the relevant [Git documentation][gd].
+
+### Add the remote helper to your shell
 To publish code to the Radicle network via the Upstream client, you first have
-to add the [Radicle git remote helper][rg] to your shell configuration.
+to add the Radicle _git remote helper_ to your shell configuration.
 
 - Add `export PATH="$HOME/.radicle/bin:$PATH"` to your shell configuration
 - Restart your shell
@@ -134,48 +138,15 @@ $ which git-remote-rad
 <home path>/.radicle/bin/git-remote-rad
 ```
 
-With the remote helper installed, you will be able to [push changes][pc] to
-your [Radicle installation][ri], which will be published by the Upstream
-client.
+With the remote helper installed, you will be able to [push changes][pc] to your
+[Radicle installation][ri], which will be published by the Upstream client.
 
-## Adding a seed node to Upstream
+To learn how to use Radicle, continue on to the [Using Radicle][ur] section.
 
-Seed nodes are "always-on" nodes running on public IP addresses that serve data
-to connected peers. By adding a seed to Upstream, that seed automatically
-tracks you and shares your data across its network of other connected peers
-[^1]. This increases the availability of your data throughout the network,
-while making it easier to find other's data as well. Upstream is preconfigured
-with a Radicle operated seed to bootstrap your connectivity. If you have
-removed the default seed, you can always re-add it later by following these
-steps:
-
-1. Navigate to *Settings*. There, under the *Network* header, you'll find your
-   seed list.
-2. Paste the seed address into the input box and submit by pressing
-   <kbd>RETURN</kbd>.
-
-    `hynewpywqj6x4mxgj7sojhue3erucyexiyhobxx4du9w66hxhbfqbw@seedling.radicle.xyz:12345`
-
-3. Check that you're connected by hovering over your Connection icon in your
-   Homebar.
-
-Recent activity and connected peers on the Radicle network can be viewed at
-http://seedling.radicle.xyz/.
-
-To learn how to use Radicle, head over to the [Collaborating on Radicle][cr]
-section.
-
-
-[^1]: Seed nodes can be configured to either track and share all data across
-      the network, or to propagate only a specific set of peers or projects.
-      Please refer to your seed operator for details. If you're running your
-      own seed, have a look at the [Running a seed node][sn] section and the
-      [seed node documentation][sd].
-
-[cr]: using-radicle/creating-and-sharing-projects.md
-[di]: understanding-radicle/glossary.md/#peerid
+[ur]: using-radicle/creating-and-sharing-projects.md
+[di]: understanding-radicle/glossary.md/#device-id
 [pc]: using-radicle/pushing-and-pulling-changes.md#pushing-changes-to-a-project
-[rg]: understanding-radicle/faq.md
+[rg]: understanding-radicle/faq.md#
 [ri]: understanding-radicle/how-it-works.md
 [sn]: using-radicle/running-a-seed-node.md
 
@@ -186,5 +157,6 @@ section.
 [aw]: https://support.apple.com/en-gb/guide/mac-help/mh40616/mac
 [bk]: https://buildkite.com/monadic/radicle-upstream/builds/6098
 [co]: https://radicle.community
+[gd]: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
 [sd]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
 [te]: https://radicle.xyz/terms.html

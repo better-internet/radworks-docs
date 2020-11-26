@@ -5,8 +5,8 @@ title: Creating and sharing projects
 
 In Radicle, local Git repositories are published and shared as [projects][pr].
 Projects contain all files of a repository and stores each file's revision
-history. It also carries a unique, shareable peer-to-peer identitifer known as
-a Radicle ID.
+history. It also carries a unique, shareable peer-to-peer identitifer known as a
+[Radicle ID][rad]. 
 
 ![Radicle ID][ri]
 
@@ -29,17 +29,18 @@ At the moment, [projects can only be created through the Upstream client][fa].
 ## Sharing projects
 
 Projects can be shared with their Radicle ID. The Radicle ID can be copied from
-the project page.
+the project page (see above).
 
-Copy and pasting a project's Radicle ID into your search bar will find it on
-the network for you. Following a project will replicate it to your local
-machine, making it available to all of your connected peers. To learn more
-about following & replication, [click here][un].
+Copy and pasting a project's Radicle ID into your search bar will find it on the
+network for you. Following a project will replicate it to your local machine,
+making it available to all of your connected peers. To learn more about
+following & replication, [See Replication][un].
 
 
-[fa]: understanding-radicle/faq.md
+[fa]: understanding-radicle/faq.md#when-will-cli-tooling-be-available
 [ma]: understanding-radicle/glossary.md/#maintainer
 [pr]: understanding-radicle/glossary.md/#project
-[un]: understanding-radicle/how-it-works.md
+[rad]: understanding-radicle/glossary.md/#radicle-id
+[un]: understanding-radicle/how-it-works.md/#replication-model
 
 [ri]: /img/radicle-id.png

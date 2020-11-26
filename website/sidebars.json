@@ -5,9 +5,11 @@
       "getting-started"
     ],
     "Using Radicle": [
+      "using-radicle/overview",
       "using-radicle/creating-and-sharing-projects",
       "using-radicle/pushing-and-pulling-changes",
       "using-radicle/running-a-seed-node",
+      "using-radicle/adding-a-seed-node",
       "using-radicle/troubleshooting"
     ],
     "Understanding Radicle": [

@@ -4,10 +4,9 @@ title: What is Radicle?
 sidebar_label: What is Radicle?
 ---
 
-Radicle is an open-source stack for code collaboration 🌱. It enables
-developers to collaborate on code without relying on intermediaries. It's a
-robust, functional, and secure alternative to centralized code collaboration
-platforms.
+Radicle is an open-source stack for code collaboration 🌱. It enables developers
+to collaborate on code without relying on intermediaries. It's a robust,
+functional, and secure alternative to centralized code collaboration platforms.
 
 Read more about the vision for decentralized code collaboration [here][wh].
 
@@ -68,8 +67,8 @@ becomes the foundation for collaboration within Radicle.
 The easiest way to use Radicle is with Upstream, a desktop client developed by
 the founding team of the Radicle project. With Upstream, you can create an
 identity, host your code, and collaborate with others on the Radicle network.
-Head over to [Getting Started][gs] for a walkthrough on how to download
-Upstream and becomee a part of the Radicle network.
+Head over to [Getting Started][gs] for a walkthrough on how to download Upstream
+and becomee a part of the Radicle network.
 
 
 [fa]: understanding-radicle/faq.md
