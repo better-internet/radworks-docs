@@ -4,25 +4,27 @@ title: Pushing changes
 ---
 
 To push code to Radicle, you first need to make sure your shell is configured
-correctly by following the instructions in the [Getting Started][gs] section to add the Radicle remote helper.
+correctly by following the instructions in the [Getting Started][gs] section to
+add the Radicle remote helper.
 
 After the Radicle remote helper is configured, pushing to Radicle is as simple
-as pushing to any other remote, with the Radicle network being known as 'rad'. After changes are added and commited in git, they
-can be pushed to the Radicle remote via `git push rad`. This will push your upstream tracking branch. 
+as pushing to any other remote, with the Radicle network being known as 'rad'.
+After changes are added and commited in git, they can be pushed to the Radicle
+remote via `git push rad`. This will push your upstream tracking branch. 
 
-Radicle projects also support [branches][br]. Specific branches can be pushed to Radicle with:
+Radicle projects also support [branches][br]. Specific branches can be pushed to
+Radicle with:
 
 `git push rad <branch name>`
 
 [DO WE NEED TO ADD SOMETHING ABOUT -U HERE]
 
-For help using Git,
-please refer to the [relevant documentation][rd].
+For help using Git, please refer to the [relevant documentation][rd].
 
-It's important to note that once changes are pushed to the Radicle remote,
-they are published to the Radicle network and will be publicly available to
-anybody you are connected with. While you can push to the Radicle remote while offline, updates are only published to the network if
-the Upstream client is running.
+It's important to note that once changes are pushed to the Radicle remote, they
+are published to the Radicle network and will be publicly available to anybody
+you are connected with. While you can push to the Radicle remote while offline,
+updates are only published to the network if the Upstream client is running.
 
 [br]: understanding-radicle/glossary.md/#branch
 [ch]: understanding-radicle/glossary.md/#checkout
