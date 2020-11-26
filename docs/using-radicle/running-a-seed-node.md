@@ -6,7 +6,7 @@ title: Running a seed node
 To improve data availability, participants in the network can choose to act as
 [seeds][se]. Seeds
 are always-on nodes that automatically track discovered projects, thereby
-increasing the availability of these projects on the network. Conceptually, they are similar to pubs in [Secure Scuttlebutt][ss]: 
+increasing the availability of these projects on the network. Conceptually, they are similar to pubs in [Secure Scuttlebutt][ss].
 
 To build and run a seed node, you'll have to install some prerequisites on your
 machine first:
