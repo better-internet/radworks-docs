@@ -89,8 +89,8 @@ on your project page (See [Adding Remotes][ar]). For more on how remote
 repositories work, see the [Git documentation][mr].
 
 ## What's a Radicle ID?
-A Radicle ID is a unique way to identify projects in the Radicle
-Network. You use a project's Radicle ID to find it on Radicle Upstream.
+A Radicle ID is a unique way to identify projects in the Radicle Network. You
+use a project's Radicle ID to find it on Radicle Upstream.
 
 ## What's a Device ID?
 A Device ID is the encoding of a peer's public key tied to a specific device.
@@ -98,11 +98,11 @@ People will be able to manage multiple Device IDs in the future, but for now can
 only have one Device ID per identity.
 
 ## What does `following` mean in Radicle?
-Following a project replicates its data to your
-machine. This allows the follower to subscribe to updates from the project's
-maintainer(s) or other remotes. It is also a way to signal interest in the
-project or peer by further replicating the data across their network, making it
-available to other people on the network. See [Tracking][tr].
+Following a project replicates its data to your machine. This allows the
+follower to subscribe to updates from the project's maintainer(s) or other
+remotes. It is also a way to signal interest in the project or peer by further
+replicating the data across their network, making it available to other people
+on the network. See [Tracking][tr].
 
 ## Can I use Radicle with multiple devices?
 Yes and no. While there isn't multi-device support yet, you can still create
@@ -120,13 +120,19 @@ your secret key. This means that without your passphrase, there is no way to
 access or publish data to the Radicle network - so make sure you keep it safe!
 
 ## I can't find a project on the network. What should I do?
-First, check to see if you are connected to the seed node by hovering over the Connection Status icon in your toolbar. If you are connected to one or more peer, navigate to the seed node dashboard (e.g. seedling.radicle.xyz) to see if you can find your Device ID. 
+First, check to see if you are connected to the seed node by hovering over the
+Connection Status icon in your toolbar. If you are connected to one or more
+peer, navigate to the seed node dashboard (e.g. seedling.radicle.xyz) to see if
+you can find your Device ID. 
 
-If you are connected to the seed node and can find yourself on the dashboard, try closing the app.
+If you are connected to the seed node and can find yourself on the dashboard,
+try closing the app.
 
-On restart, if there is still outstanding data to be found, try refreshing the app. Wait one minute before restarting the app again. 
+On restart, if there is still outstanding data to be found, try refreshing the
+app. Wait one minute before restarting the app again. 
 
-If you are still running into problems, please submit a request in our #support channel.
+If you are still running into problems, please submit a request in our #support
+channel.
 
 ## I ran into a issue, where can I report it?
 Please submit a support request our #support channel, or submit an issue on our

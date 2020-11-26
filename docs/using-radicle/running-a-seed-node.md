@@ -4,9 +4,9 @@ title: Running a seed node
 ---
 
 To improve data availability, participants in the network can choose to act as
-[seeds][se]. Seeds
-are always-on nodes that automatically track discovered projects, thereby
-increasing the availability of these projects on the network. Conceptually, they are similar to pubs in [Secure Scuttlebutt][ss].
+[seeds][se]. Seeds are always-on nodes that automatically track discovered
+projects, thereby increasing the availability of these projects on the network.
+Conceptually, they are similar to pubs in [Secure Scuttlebutt][ss].
 
 To build and run a seed node, you'll have to install some prerequisites on your
 machine first:
@@ -25,8 +25,8 @@ Install UI depependencies and build the UI:
 
 First, let's set up a directory where the seed can store its data. This is
 important in case you are running an Upstream client on the same machine. The
-default path for both Upstream and the seed node would otherwise be the same
-and could result in unexpected behaviour.
+default path for both Upstream and the seed node would otherwise be the same and
+could result in unexpected behaviour.
 
     mkdir -p ~/.radicle-seed
 
@@ -95,8 +95,8 @@ example the address is:
 
     hyy5s7ysg96fqa91gbe7h38yddh4mkokft7y4htt8szt9e17sxoe3h@seed.my.org:12345
 
-Have a look at the [Adding a custom seed node][ad] section for more
-information on how to set up the new seed in Upstream.
+Have a look at the [Adding a custom seed node][ad] section for more information
+on how to set up the new seed in Upstream.
 
 
 [ad]: using-radicle/adding-a-seed-node.md

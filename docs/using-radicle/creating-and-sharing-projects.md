@@ -37,7 +37,7 @@ making it available to all of your connected peers. To learn more about
 following & replication, [See Replication][un].
 
 
-[fa]: understanding-radicle/faq.md#when-cli
+[fa]: understanding-radicle/faq.md#when-will-cli-tooling-be-available
 [ma]: understanding-radicle/glossary.md/#maintainer
 [pr]: understanding-radicle/glossary.md/#project
 [rad]: understanding-radicle/glossary.md/#radicle-id

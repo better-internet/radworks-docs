@@ -274,8 +274,8 @@ There are four levels of validity:
 
 ### Overview
 
-Radicle basically uses Git as a database. This means everything is stored in
-a single Git monorepo that is read and written from via the Upstream client. Our
+Radicle basically uses Git as a database. This means everything is stored in a
+single Git monorepo that is read and written from via the Upstream client. Our
 Git implementation was devised to create an incentive for the seeder to provide
 all data necessary to resolve and verify a repository, while reducing latency by
 eliminating gossip queries and git fetches as much as possible. 
@@ -339,10 +339,10 @@ namespace. For example, if identity `A` is certified by identity `B`,
 ```
 ref: refs/namespaces/B/refs/rad/id
 ```
-The certifier can only certify if the certifying identity is present locally
-and is logically valid for the certifier to use for certifying. The symref
-ensures that the certifying identity can be updated in one place, and stays
-up-to-date at all use sites without maintenance.
+The certifier can only certify if the certifying identity is present locally and
+is logically valid for the certifier to use for certifying. The symref ensures
+that the certifying identity can be updated in one place, and stays up-to-date
+at all use sites without maintenance.
 
 The `rad/self` branch identifies `$PEER_ID`, i.e. the `rad/id` branch of the
 corresponding identity namespace. For example, if the identity of `$PEER_ID` is
@@ -427,8 +427,8 @@ interested in. Due to the [certifier symrefs][na], the peer being fetched from
 is able to advertise a "proof" (or perhaps better: "promise") to be able to
 include all relevant data (the `rad/id` branches) in the packfile. This enables,
 in a single packfile, a "mirror" of the logical remote repository requested, *as
-well as* all of the top-level logical repositories of all certifiers
-required to verify the identity document(s).
+well as* all of the top-level logical repositories of all certifiers required to
+verify the identity document(s).
 
 See more on [Fetching][fs]
 
@@ -475,9 +475,9 @@ carry a unique, shareable peer-to-peer identifier. The entirety of the project
 data and metadata, including social artefacts such as comments, are stored
 within the repository. To create a project, the owner of a repository defines a
 project identity. In the background, a project identity document is created in a
-predetermined disjoint branch of the repository, by convention `rad/id`. This file
-contains important metadata such as the project name, list of maintainers, as
-well as any related links.
+predetermined disjoint branch of the repository, by convention `rad/id`. This
+file contains important metadata such as the project name, list of maintainers,
+as well as any related links.
 
 The unit of replication is a repository, identified by a `PeerID` in the context
 of a project document (See [Data Model][dm]). The holder of the corresponding

@@ -117,7 +117,7 @@ modal.
 [go]: understanding-radicle/how-it-works.md/#gossip
 [gs]: getting-started.md
 [pn]: understanding-radicle/glossary.md/#project-name
-[ri]: understanding-radicle/glossary.md/#project-id
+[ri]: understanding-radicle/glossary.md/#radicle-id
 [re]: understanding-radicle/glossary.md/#remote
 
 [id]: /img/radicle-id-seed-node.png

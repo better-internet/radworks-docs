@@ -7,9 +7,9 @@ sidebar_label: Getting Started
 ## Download & Installation
 
 The Radicle network can be accessed via Upstream, a desktop client. To download
-the app, click [here][bk]. While Upstream is currently the only client for
-using Radicle, it won't be the only one. Upstream development is public by
-default and completely open source. You can follow along development on
+the app, click [here][bk]. While Upstream is currently the only client for using
+Radicle, it won't be the only one. Upstream development is public by default and
+completely open source. You can follow along development on
 [radicle.community][co].
 
 <details>
@@ -52,8 +52,7 @@ installing on a [Mac computer with Apple Silicon ][as] please note that you may
 experience issues as Radicle Upstream has not been tested on the Apple Silicon
 platform.
 
-Once you've downloaded the app for your respective platform, start it like
-this:
+Once you've downloaded the app for your respective platform, start it like this:
 
 #### On Linux:
 
@@ -65,19 +64,15 @@ this:
 Open the `radicle-upstream-x.x.x.dmg` package and install Upstream by dragging
 the `Radicle Upstream` binary to the `/Applications` folder.
 
-<video
-  style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
-  playsinline
-  autoplay
-  muted
-  loop>
+<video style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
+  playsinline autoplay muted loop>
   <source src="/img/macOS-install.mp4" type="video/mp4">
 </video>
 
 **Note**: before you can start Upstream for the first time, you'll have to
-perform some extra steps. This is because we haven't set up
-[Apple notarization][an] for Upstream yet, read more about it [here][aw].
-You'll only have to do this once -- the first time you launch the app.
+perform some extra steps. This is because we haven't set up [Apple
+notarization][an] for Upstream yet, read more about it [here][aw]. You'll only
+have to do this once -- the first time you launch the app.
 
 While we will be participating in the Apple Developer Program to ensure
 accessibility to our macOS users, we do not agree with Apple's financial
@@ -92,14 +87,11 @@ accessibility of open software.
 
 2. Dismiss the dialog by clicking `Cancel` to bypass macOS security measures
    which disallow running unsigned binaries. Repeat the previous step. You
-   should now see three buttons: `Move to Bin`, `Open` and `Cancel`, click `Open`.
+   should now see three buttons: `Move to Bin`, `Open` and `Cancel`, click
+   `Open`.
 
-<video
-  style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
-  playsinline
-  autoplay
-  muted
-  loop>
+<video style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
+  playsinline autoplay muted loop>
   <source src="/img/macOS-open.mp4" type="video/mp4">
 </video>
 
@@ -116,14 +108,15 @@ and consistency across multiple devices.
 
 The app will also prompt you to create a passphrase. This passphrase *isn't* a
 private key — it is a password decrypting your keypair to access and publish to
-the Upstream app. You will also be prompted for this passphrase when pushing
-and fetching code from your local machine to the Radicle network via your
-command line.
+the Upstream app. You will also be prompted for this passphrase when pushing and
+fetching code from your local machine to the Radicle network via your command
+line.
 
 ## Configuring your system
 
 ### Add user details to your git config
-To create and publish projects to the Radicle network, you must associate your commits with an identity by setting a username in Git.
+To create and publish projects to the Radicle network, you must associate your
+commits with an identity by setting a username in Git.
 
 You can do so by running the following command:
 
@@ -134,7 +127,7 @@ For more help, refer to the relevant [Git documentation][gd].
 
 ### Add the remote helper to your shell
 To publish code to the Radicle network via the Upstream client, you first have
-to add the [Radicle git remote helper][rg] to your shell configuration.
+to add the Radicle _git remote helper_ to your shell configuration.
 
 - Add `export PATH="$HOME/.radicle/bin:$PATH"` to your shell configuration
 - Restart your shell
@@ -145,17 +138,15 @@ $ which git-remote-rad
 <home path>/.radicle/bin/git-remote-rad
 ```
 
-With the remote helper installed, you will be able to [push changes][pc] to
-your [Radicle installation][ri], which will be published by the Upstream
-client.
+With the remote helper installed, you will be able to [push changes][pc] to your
+[Radicle installation][ri], which will be published by the Upstream client.
 
-To learn how to use Radicle, continue on to the [Using Radicle][ur]
-section.
+To learn how to use Radicle, continue on to the [Using Radicle][ur] section.
 
 [ur]: using-radicle/creating-and-sharing-projects.md
-[di]: understanding-radicle/glossary.md/#peerid
+[di]: understanding-radicle/glossary.md/#device-id
 [pc]: using-radicle/pushing-and-pulling-changes.md#pushing-changes-to-a-project
-[rg]: understanding-radicle/faq.md/
+[rg]: understanding-radicle/faq.md#
 [ri]: understanding-radicle/how-it-works.md
 [sn]: using-radicle/running-a-seed-node.md
 

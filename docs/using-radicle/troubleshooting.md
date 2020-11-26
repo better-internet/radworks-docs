@@ -4,15 +4,15 @@ title: Troubleshooting
 ---
 
 As the developers of Upstream we want you, the user, to have the best experience
-possible. Also, as the developers of Upstream, we know that there will be
-bugs and errors in our Beta release. To help consolidate these diametrically
-opposed pieces of knowledge, we will try and document any of the errors that we
-are aware of and provide some troubleshooting advice. 
+possible. Also, as the developers of Upstream, we know that there will be bugs
+and errors in our Beta release. To help consolidate these diametrically opposed
+pieces of knowledge, we will try and document any of the errors that we are
+aware of and provide some troubleshooting advice. 
 
 In the event that this information doesn't resolve your issue, we encourage you
 to submit a formal request through our [#support channel][sc] on our Matrix
-server, in the [Help category][rc] of our radicle.community forum, or [open an
-issue][gi] on GitHub.
+server, in the [Support category][rc] of our radicle.community forum, or [open
+an issue][gi] on GitHub.
 
 For our known failures, we categorise them with a PascalCase code word that
 gives a high level idea of what went wrong. When you encounter one of these
@@ -106,24 +106,24 @@ $ git push rad <default branch>
 ### Stats
 #### Reason
 
-The [browser][rs] for the project could not fetch the statistics for
-your project.
+The [browser][rs] for the project could not fetch the statistics for your
+project.
 
 This could be down to an error in git.
 
 #### Action
 
-Reach out to us on one of our channels, mention the `Stats` code, and provide
-as much detail as possible.
+Reach out to us on one of our channels, mention the `Stats` code, and provide as
+much detail as possible.
 
 ### SignedRefs
 #### Reason
 
 `signed-refs` are the git references that peers advertise which they have also
 signed with their secret key. This means that when your peer receives
-`signed-refs` it attempts to verify the signature using the advertised
-[Device ID][di]. If this verification fails, then this project may be left in a
-broken state.
+`signed-refs` it attempts to verify the signature using the advertised [Device
+ID][di]. If this verification fails, then this project may be left in a broken
+state.
 
 #### Action
 
@@ -162,8 +162,7 @@ you what the issue is and give you an idea how you might fix it. For example,
 another process may be listening on the port we’re using or the backend does not
 have the permissions to write to a certain directory.
 
-If you’re not able to fix the problem, please open an
-[issue on GitHub][gi].
+If you’re not able to fix the problem, please open an [issue on GitHub][gi].
 
 ## UnknownException
 ### Reason
@@ -174,8 +173,8 @@ case.
 
 ### Action
 
-Please report these errors to [GitHub][gi] with as much detail as
-possible — checking first that it's not already reported by another user.
+Please report these errors to [GitHub][gi] with as much detail as possible —
+checking first that it's not already reported by another user.
 
 <!--
 TODO(finto): Link to our monorepo explanation
