@@ -3,113 +3,168 @@ id: fetching-and-merging
 title: Fetching and merging contributions
 ---
 
-## Committing and pushing code
+To be able to collaborate on a Radicle project, you need to know how to fetch and merge contributions from other people. To fetch and merge changes from a contributor, you first need to add them as a remote to your project. If you haven't done so, then first follow the steps in the
+[Tracking and Viewing Contributions][tv] section.
 
-To push code to Radicle, you first need to make sure your shell is configured
-correctly by following the instructions in the [Getting Started][gs] section.
+If you can see your a tracked peer's changes after adding them as a remote, this means they have been successfully replicated to your machine. If you have added a peer as a remote and can't see their changes, head over to our [troubleshooting][tr] section.
 
-After the Radicle remote helper is configured, pushing to Radicle is as simple
-as pushing to any other platform. After changes are added and commited, they
-can be pushed to the Radicle remote via `git push rad`. For help using Git,
-please refer to [relevant documentation][rd].
+## Fetching changes 
 
-It's important to note that once changes are pushed to your Radicle remote,
-they are published to the Radicle network and will be publicly available to
-anybody you are connected with. Updates are only published to the network if
-the Upstream client is running.
+If you're interested in merging these changes into one of your branches, you'll need to fetch these commits into your working copy [TODO: section on working copy]. To make sure you can
+fetch or push changes, you need to add the [`git-rad-remote` helper][gs] to your `$PATH`.
 
-Radicle projects also support [branches][br]. A new branch can be made by
-following common Git commands.
+Navigate to your woking copy in a terminal. Here you
+can inspect the remotes of your project by running the `git remote` command. For example, a project that tracks multiple people might look something like this.
 
-`git checkout -b <branch name>`
+```
+$ git remote show
+fintohaps@hybaapjdrhj8mg4mathpwjaeuktfzxd8uqfpjknp65fyncehpxxzze
+merle@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g
+rad
+xla@hydxmk8cx8mcbijp6kgb8htm6jdhpstiow3kbezxp438adybaaqzgy
+```
 
-It can be pushed to Radicle with:
+As you can see, the format of a remote handle is:
 
-`git push rad <branch name>`
+```
+<display name>@<Device ID>
+```
 
-## Finding & cloning projects
+where the display name is the name you see on a user's profile page in Upstream. 
 
-### Following projects
+**Note**: You may be used to the concept of setting up an `origin` remote for a project when pushing to a centrally hosted platform like GitHub. This allows you to fetch and push changes from the server that
+hosts your project. In Radicle, these remotes point to the Git monorepo on your machine that stores all of your Radicle data. They allow you to fetch changes from your peers
+and push your changes. This means that fetching and pushing to remotes are _local first_
+actions. To read more about how Radicle is built on Git see our [How it Works][gi] section.
 
-To contribute to another user's project, you must first find it on the Radicle
-network. To find a project, you need its [**Radicle ID**][ri]. This can be
-found in the project page under the [project name][pn], or in a seed node UI.
+To fetch the changes of a specific remote, run the `git fetch` command with their remote handle:
 
-![Identity][id]
+```
+$ git fetch merle@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.50 KiB | 1.50 MiB/s, done.
+From rad://hwd1yre8wtxufyqnt8xzxt8ps3n7ww8qzpfmud5pibarumshawnpcrjzjme
+ * [new ref]         hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g/heads/main -> merle/main
+```
 
-Once found, copy the Radicle ID into the Upstream search bar. Following the
-project will replicate it to your local machine once it's found in your network
-of connected peers.
+A successful fetch will have a similar output to the example above and show that the reference is now located as a remote
+branch (e.g. `merle/main`). We can confirm this is under a remote branch by entering the
+following command:
 
-![Search bar][sb]
+```
+$ git branch -a
+main
+remotes/merle/main
+remotes/rad/main
+```
 
-### Cloning projects
+<details>
+<summary>**Where did the
+`@@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g` go?**</summary>
+The suffix of the remotes is disappearing and is a known
+[issue](https://github.com/radicle-dev/radicle-upstream/issues/1389).
+</details>
 
-To clone a working copy of a followed project to your computer, you can use the
-[**Checkout**][ch] option within the Upstream client. This will clone the
-project to a specified location on your local machine.
+Once changes have been fetched, you can view the changes by getting a diff of your
+changes:
 
-Commiting and publishing changes to this working copy will create a new
-[remote][re] for that project which is uniquely linked to your peerID. You can
-view this remote in the peer switcher.
+```
+$ git diff merle/main main
+diff --git a/README.md b/README.md
+index b72e7d4..8c98464 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1 @@
+-Radicle is the next big thing!
++Radicle
+```
 
-![Peer switcher][ps]
+If you are happy with these changes, you can merge them into your own
+branch:
 
-Once a remote is created for a project, it will also move the project to your
-**Projects** tab.
+```
+$ git merge merle/main
+[main e6ee76d] Merge remote-tracking branch 'merle/main' into main
+```
 
-## Getting changes from a project
+or for those of you who prefer rebasing:
 
-### Adding remotes
-To view and pull changes from another user's version of your project, you must
-first **add their remote**. To do this, you must add their **Device ID** to the
-list of remotes that you follow.
+```
+$ git rebase merle/main
+[main 3e0e32d] Radicle Update
+ 1 file changed, 2 insertions(+)
+Successfully rebased and updated refs/heads/main.
+```
 
-<video
-  style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
-  playsinline
-  autoplay
-  muted
-  loop>
-  <source src="/img/add-remote.mp4" type="video/mp4">
-</video>
+This puts your working copy in a state this up-to-date with your contributor's changes. 
 
-Adding a peer's remote means that you wish to track their changes to your
-project. It's important to note that these changes may not instantly appear. We
-rely on the connectedness of the network to ensure that we hear about the
-changes from a peer we follow. Assuming that the network of peers also track
-the peer you are looking for, you will get their changes:
+You can publish these changes to the Radicle network by running `git push rad`:
 
-1. On application startup, where your peer will ask for any new changes from
-   all the peers you follow. For more information on following,
-   [click here][fo].
+```
+$ git push rad main
+Enumerating objects: 2, done.
+Counting objects: 100% (2/2), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 1.72 KiB | 1.72 MiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To rad://hwd1yre8wtxufyqnt8xzxt8ps3n7ww8qzpfmud5pibarumshawnpcrjzjme.git
+   e6ee76d..57917bf  main -> main
+```
 
-2. Whenever your peer receives a gossip message about the peer you wish to
-   follow.  For more information on gossip, [click here][go].
+Once you have published the changes from your working copy, you can view the changes you made in
+**Radicle Upstream**. If the changes were successfully published to the network, you should see the new commits on your project page. If you are connected to the network, these changes will also be gossiped to your connected peers. If you are a maintainer, this means that anybody who tracks your project will be able to find, view, and fetch your updates to the project.
 
-`git branch -a`
+If you can't see your changes on Radicle Upstream they may not have been published successfully. See [Troubleshoooting][tr] for more help.
 
-### Fetching changes
-After a remote has been added, any changes can be fetched with:
-
-`git fetch <remote>`
-
-Where `<remote>` is of the following form: `<display name>@<Device
-ID>/<branch>` and can be looked up by inspecting the output of `git branch -a`.
-Remotes returned by `git branch -a` match the remotes found in the "Manage
-remotes" modal.
-
-You can view all remotes of a project with the command:
-
-`git remote show`
-
-Or, list all branches of all remotes with the command:
+Have fun collaborating!
 
 
+~~~~~~~~ ADD TO TROUBLESHOOTING ~~~~~~~~
+
+Those of you who are reading this and getting ahead of me will have already
+tried to enter the following command:
+
+```
+$ git fetch merle@hybaapjdrhj8mg4mathpwjaeuktfzxd8uqfpjknp65fyncehpxxzze
+```
+
+and were met with a message such as:
+
+```
+git: 'remote-rad' is not a git command. See 'git --help'.
+```
+
+or:
+
+```
+TODO: different error variant here
+```
+
+The reason for this is that to interact with the monorepo we use a custom
+protocol to ensure that commits are verified by a peer. To make sure you can
+fetch or push changes you need to add the [`git-rad-remote` helper][TODO:
+section on git remote helper] to your `$PATH`. **Note** that the
+`git-rad-remote` helper was included with your installation of **Radicle
+Upstream** and lives under `$HOME/.radicle/bin`.
+
+```
+$ export PATH=$PATH:$HOME/.radicle/bin
+```
+
+
+
+
+[tv]: pushing-and-pulling-changes.md
+[tr]: troubleshooting.md
 
 [br]: understanding-radicle/glossary.md/#branch
 [ch]: understanding-radicle/glossary.md/#checkout
 [fo]: understanding-radicle/how-it-works.md/#following
+[gi]: understanding-radicle/how-it-works.md/#git-implementation
 [go]: understanding-radicle/how-it-works.md/#gossip
 [gs]: getting-started.md
 [pn]: understanding-radicle/glossary.md/#project-name
