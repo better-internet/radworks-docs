@@ -17,23 +17,23 @@ Radicle prioritizes different concerns:
 2. People should control their content
 3. People should control their social interactions
 
-These concerns have informed the design of Radicle Link, the peer-to-peer
-protocol that powers the Radicle network. Radicle Link gossips data between
-`peers`
+These concerns have informed the design of [Radicle Link][rl], the peer-to-peer
+protocol that powers the Radicle network. Radicle Link gossips and replicates
+data between `peers`
 
 In Radicle:
 
 1. Peers follow other peers.
 2. Peers track projects they are interested in.
-3. Peers gossip about projects. This means tracking and replicating objects from
-   the peers they follow, about the projects they are interested in.
+3. Peers gossip about projects - this means tracking peers can replicate objects
+   from the peers they follow, about the projects they are interested in.
 
 To read more about the implications of the protocol design on user experience,
-check out this post.
+check out this [post][rp].
 
 ### How does this affect my collaboration?
 
-As a result of it's design, Radicle Link supports a bazaar-style development
+As a result of its design, Radicle Link supports a bazaar-style development
 where there is no single canonical view of any project, but multiple upstreams
 maintained by maintainers and contributors that exchange patches with each
 other.
@@ -74,3 +74,6 @@ guides for answering some common questions we get on how to use Radicle.
 [5]: using-radicle/fetching-and-merging.md
 [6]: using-radicle/contributing.md
 [7]: using-radicle/contributing.md
+
+[rp]: https://radicle.xyz/radicle-link.html
+[rl]: https://github.com/radicle-dev/radicle-link
