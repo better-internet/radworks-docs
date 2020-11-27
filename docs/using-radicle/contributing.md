@@ -10,14 +10,13 @@ such as [seedling.radicle.xyz](seedling.radicle.xyz).
 
 ![Identity][id]
 
-[INSERT PICTURE OF RADICLE ON SEED NODE DASHBOARD]
-
 Once you have the Radicle ID, copy it into the Upstream search bar. From there,
 following the project will replicate it to your local machine once it's found in
 your network of connected peers. You won't see the project metadata — such as,
 the name of the project — until it is verified by Radicle Link. 
 
 ![Search bar][sb]
+![Found Project][fp]
 
 ### Cloning projects
 
@@ -25,6 +24,8 @@ To clone a working copy of a followed project to your computer, you can use the
 **Fork** option within the Upstream client. This will clone the project to a
 specified location on your local machine and publish your version to the Radicle
 network.
+
+![Fork Project][fo]
 
 Forking a project will move it from the **Following** tab to the **My Projects**
 tab. This is because once you fork a project, you create your own view of it
@@ -42,3 +43,5 @@ contributions][fm]).
 [id]: /img/radicle-id-seed-node.png
 [ps]: /img/peer-switcher.png
 [sb]: /img/search-bar.png
+[fp]: /img/project-found.png
+[fo]: /img/fork-project.png

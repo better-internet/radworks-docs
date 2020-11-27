@@ -14,7 +14,7 @@ the **Start a new project** modal. This will prompt you to choose a location on
 your machine for the repository to be created. At the moment, [projects can only
 be created through the Upstream client][fa].
 
-[Insert picture of Start a new project modal]
+![Start New Project][np]
 
 This will initalize a Git repository (with the name you've given it) in the
 location you choose and publish it to the Radicle network. Note, that when a
@@ -27,6 +27,8 @@ If you have a repository that you'd like to publish to the Radicle network,
 choose the 'Create from an exisiting repository' in the **Start a new project**
 modal. This will allow you to choose the repository and branch you wish to
 publish to the network.
+
+![Start Existing Project][ep]
 
 The name of the project on the network will be fetched from the name of the
 repository.
@@ -63,5 +65,8 @@ network, head to our [How it Works][hw] section.
 
 [ri]: /img/radicle-id.png
 [ss]: /img/seed-dashboard-search.png
+[np]: /img/create-new-project-finish.png
+[ep]: /img/create-existing-project.png
+
 
 [sn]: http://seedling.radicle.xyz/

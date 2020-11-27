@@ -26,8 +26,8 @@ connected peer makes it available to you.
 
 When a project has been successfully replicated, it will appear in your
 **Following** tab. Following and replicating a project also makes it available
-to all of your connected peers. To learn more about following & replication,
-[See How it Works][un].
+to all of your connected peers. To learn more about following & replication, see 
+[How it Works][un].
 
 [fa]: understanding-radicle/faq.md
 [ma]: understanding-radicle/glossary.md/#maintainer
@@ -36,4 +36,4 @@ to all of your connected peers. To learn more about following & replication,
 
 [ri]: /img/radicle-id.png
 [sf]: /img/search-and-follow.png
-[sl]: /img/still-looking-project.png
+[sl]: /img/still-looking.png
