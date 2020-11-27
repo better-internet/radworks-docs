@@ -25,7 +25,7 @@ connected peers.
 ## Publishing an existing project
 
 If you have a repository that you'd like to publish to the Radicle network,
-choose the 'Create from an exisiting repository' in the **Start a new project**
+choose the `Create from an existing repository` in the **Start a new project**
 modal. This will allow you to choose the repository and its configured default branch.
 All branches present when you add the repository will be published.
 
