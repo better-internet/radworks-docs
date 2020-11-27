@@ -151,6 +151,16 @@ GitHub repository.
 For help, join our #support channel in our Matrix chat or in the Help category
 of our Discourse.
 
+## How do I join your Matrix channel?
+To join our Matrix chat, follow these steps:
+
+* Go to https://matrix.radicle.community
+* Create an account
+* Verify your account by email
+* Join the #general and #support rooms
+
+To join our Matrix chat with an account from another Matrix server, you can use
+this [direct invite link][mc] to join #general.
 
 [ar]: using-radicle/tracking-and-viewing.md
 [cp]: using-radicle/creating-projects.md
@@ -158,9 +168,11 @@ of our Discourse.
 [hw]: how-it-works.md
 [tr]: how-it-works.md/#tracking
 
+[sd]: /img/seed-dashboard-search.png
+
 [ls]: https://radicle.community/t/radicle-licensing-model/282/8
 [mr]: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
 [sc]: https://matrix.to/#/#support:radicle.community
 [sm]: https://radicle.community/
 
-[sd]: /img/seed-dashboard-search.png
+[mc]: https://matrix.to/#/#general:radicle.community
