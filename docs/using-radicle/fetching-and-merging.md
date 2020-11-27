@@ -99,7 +99,7 @@ $ git merge merle@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g/main
 or for those of you who prefer rebasing:
 
 ```
-$ git rebase merle/main
+$ git rebase merle@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g/main
 [main 3e0e32d] Radicle Update
  1 file changed, 2 insertions(+)
 Successfully rebased and updated refs/heads/main.
