@@ -12,8 +12,11 @@ operated seed to bootstrap your connectivity. If you have removed the default
 seed and need to re-add it or would like to add a custom seed address, you can
 do so by following these steps:
 
-1. Navigate to *Settings*. There, under the *Network* header, you'll find your
+1. Navigate to **Settings**. There, under the **Network** header, you'll find your
    seed list.
+
+   ![Settings][st]
+
 2. Paste the seed address into the input box and submit by pressing
    <kbd>RETURN</kbd>.
 
@@ -35,4 +38,6 @@ Upstream can be viewed at http://seedling.radicle.xyz/.
 
 [sn]: using-radicle/running-a-seed-node.md
 [sd]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
+
+[st]: /img/settings.png
 

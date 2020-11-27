@@ -6,10 +6,14 @@
     ],
     "Using Radicle": [
       "using-radicle/overview",
-      "using-radicle/creating-and-sharing-projects",
-      "using-radicle/pushing-and-pulling-changes",
-      "using-radicle/running-a-seed-node",
+      "using-radicle/creating-projects",
+      "using-radicle/sharing-projects",
+      "using-radicle/pushing-changes",
+      "using-radicle/tracking-and-viewing",
+      "using-radicle/fetching-and-merging",
+      "using-radicle/contributing",
       "using-radicle/adding-a-seed-node",
+      "using-radicle/running-a-seed-node",
       "using-radicle/troubleshooting"
     ],
     "Understanding Radicle": [
