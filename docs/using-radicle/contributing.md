@@ -12,7 +12,7 @@ such as [seedling.radicle.xyz](seedling.radicle.xyz).
 
 [INSERT PICTURE OF RADICLE ON SEED NODE DASHBOARD]
 
-Once found, copy the Radicle ID into the Upstream search bar. From there,
+Once you have the Radicle ID, copy it into the Upstream search bar. From there,
 following the project will replicate it to your local machine once it's found in
 your network of connected peers. You won't see the project metadata — such as,
 the name of the project — until it is verified by Radicle Link. 
@@ -42,4 +42,3 @@ contributions][fm]).
 [id]: /img/radicle-id-seed-node.png
 [ps]: /img/peer-switcher.png
 [sb]: /img/search-bar.png
-
