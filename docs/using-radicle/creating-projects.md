@@ -35,7 +35,7 @@ To see if your project was published correctly, you can search for it on the
 [Radicle seed node dashboard][sn]. If it has been correctly replicated by the
 seed, you be able to see it under the **Projects** section.
 
-[Insert picture of seed node UI]
+![Seed Dashboard Search][ss]
 
 ### How are projects different from repositories?
 
@@ -62,5 +62,6 @@ network, head to our [How it Works][hw] section.
 [hw]: understanding-radicle/how-it-works.md
 
 [ri]: /img/radicle-id.png
+[ss]: /img/seed-dashboard-search.png
 
 [sn]: http://seedling.radicle.xyz/
