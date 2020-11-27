@@ -180,8 +180,39 @@ checking first that it's not already reported by another user.
 TODO(finto): Link to our monorepo explanation
 -->
 
+# Working with Git
 
-[di]: understanding-radicle/glossary#peerid
+This section will try to resolve common errors you may run into while trying to
+interact with Radicle as a remote.
+
+### Radicle remote helper not configured correctly
+If you try to `git fetch` or `git push rad` without first adding the Radicle
+remote helper to your shell configuration, you'll recieve an error similar to
+the following:
+
+```
+git: 'remote-rad' is not a git command. See 'git --help'.
+```
+
+To make sure you can fetch or push changes you need to add the `git-rad-remote`
+helper to your `$PATH` by adding the following to your shell configuration:
+
+```
+$ export PATH=$PATH:$HOME/.radicle/bin
+```
+
+This custom remote helper ensures that commits are verified by a peer when you
+interact with the Radicle network. For more instructions on how to do this, see
+[Getting Started][gs].
+
+
+**Note** that the `git-rad-remote` helper was included with your installation of
+**Radicle Upstream** and lives under `$HOME/.radicle/bin`.
+
+
+
+[di]: understanding-radicle/glossary#device-id
+[gs]: getting-started.md
 [mo]: understanding-radicle/how-it-works.md
 
 [er]: /img/error.png

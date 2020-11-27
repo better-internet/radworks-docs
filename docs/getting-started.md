@@ -9,7 +9,7 @@ sidebar_label: Getting Started
 The Radicle network can be accessed via Upstream, a desktop client. To download
 the app, click [here][bk]. While Upstream is currently the only client for using
 Radicle, it won't be the only one. Upstream development is public by default and
-completely open source. You can follow along development on
+completely open source. You can follow along development in our [Matrix channel][mc] or on
 [radicle.community][co].
 
 <details>
@@ -143,9 +143,9 @@ With the remote helper installed, you will be able to [push changes][pc] to your
 
 To learn how to use Radicle, continue on to the [Using Radicle][ur] section.
 
-[ur]: using-radicle/creating-and-sharing-projects.md
+[ur]: using-radicle/overview.md
 [di]: understanding-radicle/glossary.md/#device-id
-[pc]: using-radicle/pushing-and-pulling-changes.md#pushing-changes-to-a-project
+[pc]: using-radicle/pushing-changes
 [rg]: understanding-radicle/faq.md#
 [ri]: understanding-radicle/how-it-works.md
 [sn]: using-radicle/running-a-seed-node.md
@@ -160,3 +160,4 @@ To learn how to use Radicle, continue on to the [Using Radicle][ur] section.
 [gd]: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
 [sd]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
 [te]: https://radicle.xyz/terms.html
+[mc]: https://matrix.radicle.community

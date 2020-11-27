@@ -8,7 +8,7 @@ Radicle is an open-source stack for code collaboration 🌱. It enables develope
 to collaborate on code without relying on intermediaries. It's a robust,
 functional, and secure alternative to centralized code collaboration platforms.
 
-Read more about the vision for decentralized code collaboration [here][wh].
+Read more about our vision for decentralized code collaboration [here][wh].
 
 ## How it works
 
@@ -36,39 +36,39 @@ For more on Radicle Link, check out the [Understanding Radicle][wh] section.
 ## How is Radicle different from GitHub?
 
 When coming to Radicle from a centralized code collaboration platform like
-Github or Gitlab, you might notice that Radicle priotizes different concerns.
-Concretely:
+Github or Gitlab, you might notice that Radicle priotizes different concerns. In
+contrast to the traditional Web2.0 model of centralized code collaboration
+platforms (i.e. global by default, reliance on service providers, convienience),
+Radicle ensures that:
 
-1. users being in control of their identity
-2. users being in control of their content
-3. users being in control of their social interactions
+1. People control their identity
+2. People control their content
+3. People control their social interactions
 
-These concerns support a model for collaboration that might be familiar to the
-free and open-source hackers of the 90s and early 2000s — one that is radically
-different from the prevailing 'Web 2.0' platform approach.
+These concerns have informed the design of [Radicle Link][rl], the peer-to-peer
+protocol that powers the Radicle network. Radicle Link gossips and replicates
+data between `peers`.
 
-The radicle-link protocol distinguishes between two types of identities: user
-and project. The first describes an actor in the system, while the second
-describes a (software) repository within which one or more actors collaborate.
 In Radicle:
 
 1. Peers follow other peers.
 2. Peers track projects they are interested in.
-3. Peers gossip about projects. This means replicating updates from the peers
-   they follow and the projects they are interested in.
+3. Peers gossip about projects - this means tracking peers can replicate objects
+   from the peers they follow, about the projects they are interested in.
 
 These interactions create a "trusted" social graph of peers and projects that
 becomes the foundation for collaboration within Radicle.
 
-[Read more about the Radicle collaboration model][fa]
+Read more about the [Radicle collaboration model][fa].
 
 ## How do I use Radicle?
 
-The easiest way to use Radicle is with Upstream, a desktop client developed by
+The easiest way to use Radicle is with **Upstream**, a desktop client developed by
 the founding team of the Radicle project. With Upstream, you can create an
 identity, host your code, and collaborate with others on the Radicle network.
+
 Head over to [Getting Started][gs] for a walkthrough on how to download Upstream
-and becomee a part of the Radicle network.
+and become a part of the Radicle network.
 
 
 [fa]: understanding-radicle/faq.md

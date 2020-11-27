@@ -621,7 +621,7 @@ maintainer.
 
 Upstream is preconfigured with an official Radicle seed node to bootstrap your
 connectivity. If you have removed the default seed node, you can always re-add
-it later by following the steps in [Getting Started][gs].
+it later by following the steps in [Adding a seed node][gs].
 
 If you're interested in running a seed node, see [Running a seed node][rs].
 
@@ -702,10 +702,10 @@ Read more about the [Radicle collaboration model][rc].
 [dp]: #doc-payload
 [fe]: #fetching
 [gi]: #git-implementation
-[gs]: getting-started.md/#joining-a-seed-node
+[gs]: using-radicle/adding-a-seed-node.md
 [ka]: #key-architecture
 [na]: #namespacing
-[mr]: using-radicle/pushing-and-pulling-changes.md/#adding-remtoes
+[mr]: using-radicle/tracking-and-viewing.md
 [ri]: glossary.md/#radicle-id
 [rs]: using-radicle/running-a-seed-node.md
 [ru]: #radicle-urns
