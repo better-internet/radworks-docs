@@ -38,7 +38,8 @@ As you can see, the format of a remote handle is:
 <display name>@<Device ID>
 ```
 
-where the display name is the name you see when you add a Device ID to your peer selector in Upstream.
+where the display name is the name you see when you add a Device ID to your peer
+selector in Upstream.
 
 You may be used to the concept of setting up an `origin` remote for a project
 when pushing to a centrally hosted platform like GitHub. This allows you to

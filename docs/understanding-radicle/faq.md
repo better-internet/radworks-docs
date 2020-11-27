@@ -125,14 +125,23 @@ Connection Status icon in your toolbar. If you are connected to one or more
 peer, navigate to the seed node dashboard (e.g. seedling.radicle.xyz) to see if
 you can find your Device ID. 
 
+![Seed Dashboard Search][sd]
+
 If you are connected to the seed node and can find yourself on the dashboard,
-try closing the app.
+try restarting the app. On restart, if there is still outstanding data to be
+found, try refreshing the app. Wait one minute before restarting the app again. 
 
-On restart, if there is still outstanding data to be found, try refreshing the
-app. Wait one minute before restarting the app again. 
+If you are still running into problems, please submit a request in our [#support
+channel][sc].
 
-If you are still running into problems, please submit a request in our #support
-channel.
+## Why am I only connected to one peer?
+
+
+## Can I run Radicle as a daemon?
+
+
+## Why do I have to enter my password everytime?
+
 
 ## I ran into a issue, where can I report it?
 Please submit a support request our #support channel, or submit an issue on our
@@ -159,7 +168,11 @@ this [direct invite link][mc] to join #general.
 [hw]: how-it-works.md
 [tr]: how-it-works.md/#tracking
 
+[sd]: /img/seed-dashboard-search.png
+
 [ls]: https://radicle.community/t/radicle-licensing-model/282/8
 [mr]: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+[sc]: https://matrix.to/#/#support:radicle.community
 [sm]: https://radicle.community/
+
 [mc]: https://matrix.to/#/#general:radicle.community

@@ -10,24 +10,24 @@ it available to any of your connected peers.
 
 ## Starting a new project
 
-When starting a new project from scratch, choose `Create from a new repository` in
-the **Start a new project** modal. This will prompt you to choose a location on
-your machine for the repository to be created. At the moment, [projects can only
-be created through the Upstream client][fa].
+When starting a new project from scratch, choose `Create from a new repository`
+in the **Start a new project** modal. This will prompt you to choose a location
+on your machine for the repository to be created. At the moment, [projects can
+only be created through the Upstream client][fa].
 
 ![Start New Project][np]
 
 This will initalize a Git repository (with the name you've given it) in the
-location you choose and publish it to the Radicle network. Note, when a
-project is published to the network, it will be able to be replicated by any
-connected peers. 
+location you choose and publish it to the Radicle network. Note, when a project
+is published to the network, it will be able to be replicated by any connected
+peers. 
 
 ## Publishing an existing project
 
 If you have a repository that you'd like to publish to the Radicle network,
 choose the `Create from an existing repository` in the **Start a new project**
-modal. This will allow you to choose the repository and its configured default branch.
-All branches present when you add the repository will be published.
+modal. This will allow you to choose the repository and its configured default
+branch. All branches present when you add the repository will be published.
 
 ![Start Existing Project][ep]
 
@@ -35,16 +35,16 @@ The name of the project on the network will be taken from the name of the
 repository.
 
 To see if your project was published correctly, you can search for it on the
-[Radicle seed dashboard][sn]. If it has been correctly replicated by the
-seed, you will be able to see it under the **Projects** section of the seed dashboard.
+[Radicle seed dashboard][sn]. If it has been correctly replicated by the seed,
+you will be able to see it under the **Projects** section of the seed dashboard.
 
 ![Seed Dashboard Search][ss]
 
 ### How are projects different from repositories?
 
 In Radicle, local Git repositories are published and shared as [projects][pr].
-Projects contain all files of a repository and their revision history.
-Projects also have associated metadata such as a name and description. 
+Projects contain all files of a repository and their revision history. Projects
+also have associated metadata such as a name and description. 
 
 Each project carries a unique, shareable peer-to-peer identitifer known as a
 **Radicle ID**.
