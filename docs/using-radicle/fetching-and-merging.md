@@ -79,7 +79,7 @@ Once changes have been fetched, you can view the changes by getting a diff of
 your changes:
 
 ```
-$ git diff merle/main 
+$ git diff merle@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g/main 
 diff --git a/README.md b/README.md
 index b72e7d4..8c98464 100644
 --- a/README.md
