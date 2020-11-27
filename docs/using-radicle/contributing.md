@@ -27,7 +27,7 @@ network.
 
 ![Fork Project][fo]
 
-Forking a project will move it from the **Following** tab to the **My Projects**
+Forking a project will move it from the **Following** tab to the **Projects** tab.
 tab. This is because once you fork a project, you create your own view of it
 that is unique to your Device ID. You can push changes to this view and publish
 them to the Radicle network. If another person has added you as a remote (See
