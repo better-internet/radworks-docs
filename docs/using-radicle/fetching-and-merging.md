@@ -29,7 +29,6 @@ $ git remote show
 fintohaps@hybaapjdrhj8mg4mathpwjaeuktfzxd8uqfpjknp65fyncehpxxzze
 merle@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g
 rad
-xla@hydxmk8cx8mcbijp6kgb8htm6jdhpstiow3kbezxp438adybaaqzgy
 ```
 
 As you can see, the format of a remote handle is:
