@@ -10,7 +10,7 @@ To view someone else's changes to your project, you first need to add them as a
 To view and pull changes from another user's version of your project, you must
 first **add them as a remote**. To do this, you must add their **Device ID** to
 the list of remotes that you follow. You can do so by clicking Manage Remotes in
-the peer switcher on your project page and adding their Device ID. This is also
+the peer selector on your project page and adding their Device ID. This is also
 where you can switch between the different views of peers to see their changes
 before fetching them locally.
 
