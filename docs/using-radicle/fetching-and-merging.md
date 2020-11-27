@@ -6,7 +6,8 @@ title: Fetching and merging contributions
 To be able to collaborate on a Radicle project, you need to know how to fetch
 and merge contributions from other people. To fetch and merge changes from a
 contributor, you first need to add them as a remote to your project. If you
-haven't done so, then first follow the steps in [Tracking & viewing contributions][tv] section.
+haven't done so, then first follow the steps in [Tracking & viewing
+contributions][tv] section.
 
 If you can see your a tracked peer's changes after adding them as a remote, this
 means they have been successfully replicated to your machine. If you have added
@@ -86,7 +87,7 @@ Once changes have been fetched, you can view the changes by getting a diff of
 your changes:
 
 ```
-$ git diff merle/main main
+$ git diff merle/main 
 diff --git a/README.md b/README.md
 index b72e7d4..8c98464 100644
 --- a/README.md
@@ -115,7 +116,8 @@ Successfully rebased and updated refs/heads/main.
 This puts your working copy in a state this up-to-date with your contributor's
 changes. 
 
-You can publish these changes to the Radicle network by running `git push rad`:
+You can publish these changes to the Radicle network by running `git push
+rad`(See [Pushing changes][pc]):
 
 ```
 $ git push rad main
@@ -141,39 +143,7 @@ published successfully. See [Troubleshoooting][tr] for more help.
 
 Have fun collaborating!
 
-
-~~~~~~~~ ADD TO TROUBLESHOOTING ~~~~~~~~
-
-Those of you who are reading this and getting ahead of me will have already
-tried to enter the following command:
-
-```
-$ git fetch merle@hybaapjdrhj8mg4mathpwjaeuktfzxd8uqfpjknp65fyncehpxxzze
-```
-
-and were met with a message such as:
-
-```
-git: 'remote-rad' is not a git command. See 'git --help'.
-```
-
-or:
-
-```
-TODO: different error variant here
-```
-
-The reason for this is that to interact with the monorepo we use a custom
-protocol to ensure that commits are verified by a peer. To make sure you can
-fetch or push changes you need to add the [`git-rad-remote` helper][TODO:
-section on git remote helper] to your `$PATH`. **Note** that the
-`git-rad-remote` helper was included with your installation of **Radicle
-Upstream** and lives under `$HOME/.radicle/bin`.
-
-```
-$ export PATH=$PATH:$HOME/.radicle/bin
-```
-
+[pc]: using-radicle/pushing-changes.md
 [tv]: using-radicle/tracking-and-viewing.md
 [tr]: using-radicle/troubleshooting.md
 [gi]: understanding-radicle/how-it-works.md/#git-implementation
