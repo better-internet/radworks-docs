@@ -12,7 +12,7 @@ the project page.
 
 A Radicle ID is a URN with the following format:
 
-rad:git// etc....
+rad:git: etc....
 
 Copy and pasting a project's Radicle ID into your search bar will find it on the
 network for you. Following a project will replicate it to your local machine,
