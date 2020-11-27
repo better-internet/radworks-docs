@@ -13,9 +13,9 @@ In contrast to the traditional Web2.0 model of centralized code collaboration
 platforms (i.e. global by default, reliance on service providers, convienience),
 Radicle prioritizes different concerns:
 
-1. People should control of their identity
-2. People should control of their content
-3. People should control of their social interactions
+1. People should control their identity
+2. People should control their content
+3. People should control their social interactions
 
 These concerns have informed the design of Radicle Link, the peer-to-peer
 protocol that powers the Radicle network. Radicle Link gossips data between
