@@ -161,7 +161,7 @@ To learn how to use Radicle, continue on to the [Using Radicle][ur] section.
 [an]: https://developer.apple.com/documentation/xcode/notarizing_macos_software_before_distribution
 [as]: https://support.apple.com/en-us/HT211814
 [aw]: https://support.apple.com/en-gb/guide/mac-help/mh40616/mac
-[bk]: https://buildkite.com/monadic/radicle-upstream/builds/6098
+[bk]: https://buildkite.com/monadic/radicle-upstream/builds/6851
 [co]: https://radicle.community
 [gd]: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
 [sd]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
