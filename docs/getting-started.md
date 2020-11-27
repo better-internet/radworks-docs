@@ -103,7 +103,7 @@ accessibility of open software.
 
 ## Creating an identity
 
-To create an identity on the Radicle network, you can use the Upstream client. After onboarding, it will generate a unique identifier — known as a [**Device ID**][di] — that's
+To create an identity on the Radicle network, use the Radicle Upstream app. After choosing a display name and setting a passphrase, it will generate a unique identifier — known as a [**Device ID**][di] — that's
 paired to the computer you've installed it on. For now, this Device ID is
 the only way other users can find and collaborate with you. Later on, you will
 be able to manage multiple Device IDs under one user handle, enabling support
