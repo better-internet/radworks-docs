@@ -18,7 +18,7 @@ be created through the Upstream client][fa].
 ![Start New Project][np]
 
 This will initalize a Git repository (with the name you've given it) in the
-location you choose and publish it to the Radicle network. Note, that when a
+location you choose and publish it to the Radicle network. Note, when a
 project is published to the network, it will be able to be replicated by any
 connected peers. 
 
