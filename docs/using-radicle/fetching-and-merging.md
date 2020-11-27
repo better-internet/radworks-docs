@@ -92,7 +92,7 @@ index b72e7d4..8c98464 100644
 If you are happy with these changes, you can merge them into your own branch:
 
 ```
-$ git merge merle/main
+$ git merge merle@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g/main
 [main e6ee76d] Merge remote-tracking branch 'merle/main' into main
 ```
 
