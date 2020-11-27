@@ -10,7 +10,7 @@ it available to any of your connected peers.
 
 ## Starting a new project
 
-If starting a new project from scratch, choose `Create from a new repository` in
+When starting a new project from scratch, choose `Create from a new repository` in
 the **Start a new project** modal. This will prompt you to choose a location on
 your machine for the repository to be created. At the moment, [projects can only
 be created through the Upstream client][fa].
