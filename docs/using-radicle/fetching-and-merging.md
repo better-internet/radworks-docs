@@ -6,13 +6,12 @@ title: Fetching and merging contributions
 To be able to collaborate on a Radicle project, you need to know how to fetch
 and merge contributions from other people. To fetch and merge changes from a
 contributor, you first need to add them as a remote to your project. If you
-haven't done so, then first follow the steps in the [Tracking and Viewing
-Contributions][tv] section.
+haven't done so, then first follow the steps in [Tracking & viewing contributions][tv] section.
 
 If you can see your a tracked peer's changes after adding them as a remote, this
 means they have been successfully replicated to your machine. If you have added
 a peer as a remote and can't see their changes, head over to our
-[troubleshooting][tr] section.
+[Troubleshooting][tr] section.
 
 ## Fetching changes 
 
@@ -175,7 +174,6 @@ Upstream** and lives under `$HOME/.radicle/bin`.
 $ export PATH=$PATH:$HOME/.radicle/bin
 ```
 
-
-[tv]: pushing-and-pulling-changes.md
-[tr]: troubleshooting.md
+[tv]: using-radicle/tracking-and-viewing.md
+[tr]: using-radicle/troubleshooting.md
 [gi]: understanding-radicle/how-it-works.md/#git-implementation

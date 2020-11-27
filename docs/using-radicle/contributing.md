@@ -34,7 +34,7 @@ them to the Radicle network. If another person has added you as a remote (See
 changes and merge them into their branches (See [Fetching and merging
 contributions][fm]).
 
-[tv]: pushing-and-pulling-changes.md
+[tv]: tracking-and-viewing.md
 [fm]: fetching-and-merging.md
 [pn]: understanding-radicle/glossary.md/#project-name
 [ri]: understanding-radicle/glossary.md/#radicle-id
