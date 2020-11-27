@@ -67,23 +67,16 @@ From rad://hwd1yre8wtxufyqnt8xzxt8ps3n7ww8qzpfmud5pibarumshawnpcrjzjme
 ```
 
 A successful fetch will have a similar output to the example above and show that
-the reference is now located as a remote branch (e.g. `merle/main`). We can
+the reference is now located as a remote branch (e.g. `merle@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g/main`). We can
 confirm this is under a remote branch by entering the following command:
 
 
 ```
 $ git branch -a
 main
-remotes/merle/main
+remotes/merle@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g/main
 remotes/rad/main
 ```
-
-
-   <details>
-      <summary> **Where did the`@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g`go?**</summary>
-      The suffix of the remotes is disappearing and is a known
-      [issue](https://github.com/radicle-dev/radicle-upstream/issues/1389).
-   </details>
 
 
 Once changes have been fetched, you can view the changes by getting a diff of
