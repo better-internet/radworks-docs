@@ -4,9 +4,8 @@ title: Creating projects
 ---
 
 In Radicle, local Git repositories are published and shared as [projects][pr].
-Projects contain all files of a repository and stores each file's revision
-history. Projects also have associated metadata such as a project name and
-description. 
+Projects contain all files of a repository and their revision history.
+Projects also have associated metadata such as a name and description. 
 
 Each project carries a unique, shareable peer-to-peer identitifer known as a
 **Radicle ID**.
