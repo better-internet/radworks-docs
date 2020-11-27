@@ -59,7 +59,7 @@ the first place.
 To help make Radicle's collaboration model easier to understand, here are some
 guides for answering some common questions we get on how to use Radicle.
 
-### [How do I upload a project?][1]
+### [How do I publish a project?][1]
 ### [How do I push changes to my project?][2]
 ### [How do I share my project?][3]
 ### [How do I see contributions or changes to my project?][4]
