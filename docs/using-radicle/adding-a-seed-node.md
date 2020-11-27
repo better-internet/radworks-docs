@@ -12,8 +12,8 @@ operated seed to bootstrap your connectivity. If you have removed the default
 seed and need to re-add it or would like to add a custom seed address, you can
 do so by following these steps:
 
-1. Navigate to **Settings**. There, under the **Network** header, you'll find your
-   seed list.
+1. Navigate to **Settings**. There, under the **Network** header, you'll find
+   your seed list.
 
    ![Settings][st]
 
