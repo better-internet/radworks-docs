@@ -36,7 +36,7 @@ repository.
 
 To see if your project was published correctly, you can search for it on the
 [Radicle seed dashboard][sn]. If it has been correctly replicated by the
-seed, you be able to see it under the **Projects** section.
+seed, you will be able to see it under the **Projects** section of the seed dashboard.
 
 ![Seed Dashboard Search][ss]
 
