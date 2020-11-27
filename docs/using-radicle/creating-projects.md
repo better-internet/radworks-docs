@@ -31,7 +31,7 @@ All branches present when you add the repository will be published.
 
 ![Start Existing Project][ep]
 
-The name of the project on the network will be fetched from the name of the
+The name of the project on the network will be taken from the name of the
 repository.
 
 To see if your project was published correctly, you can search for it on the
