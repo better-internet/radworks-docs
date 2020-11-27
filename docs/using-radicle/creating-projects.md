@@ -35,7 +35,7 @@ The name of the project on the network will be fetched from the name of the
 repository.
 
 To see if your project was published correctly, you can search for it on the
-[Radicle seed node dashboard][sn]. If it has been correctly replicated by the
+[Radicle seed dashboard][sn]. If it has been correctly replicated by the
 seed, you be able to see it under the **Projects** section.
 
 ![Seed Dashboard Search][ss]
