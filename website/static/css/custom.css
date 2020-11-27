@@ -5,6 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+
 @import url("https://rsms.me/inter/inter.css");
 
 @font-face {
@@ -95,6 +96,12 @@ h3 {
   line-height: 24px;
 }
 
+blockquote {
+  display: block;
+  background: #e3e3ff;
+  border-left: .25em solid #5555ff;
+}
+
 .fixedHeaderContainer header .headerTitleWithLogo {
   display: none;
 }
@@ -111,6 +118,7 @@ pre code,
 .hljs {
   background: var(--color-foreground-level-2);
   color: var(--color-foreground-level-6);
+  overflow-x: scroll;
 }
 
 details:hover {

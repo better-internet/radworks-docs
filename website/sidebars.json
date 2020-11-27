@@ -11,8 +11,8 @@
       "using-radicle/pushing-changes",
       "using-radicle/fetching-and-merging",
       "using-radicle/contributing",
-      "using-radicle/running-a-seed-node",
       "using-radicle/adding-a-seed-node",
+      "using-radicle/running-a-seed-node",
       "using-radicle/troubleshooting"
     ],
     "Understanding Radicle": [
