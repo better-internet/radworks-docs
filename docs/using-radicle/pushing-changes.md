@@ -17,7 +17,11 @@ Radicle with:
 
 `git push rad <branch name>`
 
-[DO WE NEED TO ADD SOMETHING ABOUT -U HERE]
+To set up branch tracking, run:
+
+`git push -u rad <branch_name>` or `git push --set-upstream rad <branch_name>`
+
+as you would with any other Git code hosting platform.
 
 For help using Git, please refer to the [relevant documentation][rd].
 

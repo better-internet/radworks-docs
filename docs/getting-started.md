@@ -143,9 +143,9 @@ With the remote helper installed, you will be able to [push changes][pc] to your
 
 To learn how to use Radicle, continue on to the [Using Radicle][ur] section.
 
-[ur]: using-radicle/creating-and-sharing-projects.md
+[ur]: using-radicle/overview.md
 [di]: understanding-radicle/glossary.md/#device-id
-[pc]: using-radicle/pushing-and-pulling-changes.md#pushing-changes-to-a-project
+[pc]: using-radicle/pushing-changes
 [rg]: understanding-radicle/faq.md#
 [ri]: understanding-radicle/how-it-works.md
 [sn]: using-radicle/running-a-seed-node.md
