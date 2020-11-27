@@ -180,7 +180,7 @@ checking first that it's not already reported by another user.
 TODO(finto): Link to our monorepo explanation
 -->
 
-# Git Errors
+# Working with Git
 
 This section will try to resolve common errors you may run into while trying to
 interact with Radicle as a remote.

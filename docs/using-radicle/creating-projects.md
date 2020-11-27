@@ -7,7 +7,7 @@ Creating a project is as easy as initializing a repository in Git. In the
 Upstream client, you can create a project from scratch or from an existing
 repository. 
 
-## Creating a new project
+## Starting a new project
 
 If starting a new project from scratch, choose `Create from a new repository` in
 the **Start a new project** modal. This will prompt you to choose a location on

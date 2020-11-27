@@ -25,10 +25,12 @@ as you would with any other Git code hosting platform.
 
 For help using Git, please refer to the [relevant documentation][rd].
 
+<blockquote>
 It's important to note that once changes are pushed to the Radicle remote, they
 are published to the Radicle network and will be publicly available to anybody
 you are connected with. While you can push to the Radicle remote while offline,
 updates are only published to the network if the Upstream client is running.
+</blockquote>
 
 [br]: understanding-radicle/glossary.md/#branch
 [ch]: understanding-radicle/glossary.md/#checkout

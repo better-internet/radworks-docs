@@ -17,8 +17,7 @@ a peer as a remote and can't see their changes, head over to our
 ## Fetching changes 
 
 If you're interested in merging these changes into one of your branches, you'll
-need to fetch these commits into your working copy [TODO: section on working
-copy]. To make sure you can fetch or push changes, you need to add the
+need to fetch these commits into your working copy. To make sure you can fetch or push changes, you need to add the
 [`git-rad-remote` helper][gs] to your `$PATH`.
 
 Navigate to your woking copy in a terminal. Here you can inspect the remotes of
@@ -41,8 +40,8 @@ As you can see, the format of a remote handle is:
 
 where the display name is the name you see on a user's profile page in Upstream.
 
-
-**Note**: You may be used to the concept of setting up an `origin` remote for a
+<blockquote>
+You may be used to the concept of setting up an `origin` remote for a
 project when pushing to a centrally hosted platform like GitHub. This allows you
 to fetch and push changes from the server that hosts your project. In Radicle,
 these remotes point to the Git monorepo on your machine that stores all of your
@@ -50,9 +49,11 @@ Radicle data. They allow you to fetch changes from your peers and push your
 changes. This means that fetching and pushing to remotes are _local first_
 actions. To read more about how Radicle is built on Git see our [How it
 Works][gi] section.
+</blockquote>
 
 To fetch the changes of a specific remote, run the `git fetch` command with
 their remote handle:
+
 
 ```
 $ git fetch merle@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g
@@ -69,6 +70,7 @@ A successful fetch will have a similar output to the example above and show that
 the reference is now located as a remote branch (e.g. `merle/main`). We can
 confirm this is under a remote branch by entering the following command:
 
+
 ```
 $ git branch -a
 main
@@ -76,12 +78,13 @@ remotes/merle/main
 remotes/rad/main
 ```
 
-<details>
-<summary>**Where did the
-`@@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g` go?**</summary>
-The suffix of the remotes is disappearing and is a known
-[issue](https://github.com/radicle-dev/radicle-upstream/issues/1389).
-</details>
+
+   <details>
+      <summary> **Where did the`@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g`go?**</summary>
+      The suffix of the remotes is disappearing and is a known
+      [issue](https://github.com/radicle-dev/radicle-upstream/issues/1389).
+   </details>
+
 
 Once changes have been fetched, you can view the changes by getting a diff of
 your changes:
@@ -141,9 +144,9 @@ your project will be able to find, view, and fetch your updates to the project.
 If you can't see your changes on Radicle Upstream they may not have been
 published successfully. See [Troubleshoooting][tr] for more help.
 
-Have fun collaborating!
 
 [pc]: using-radicle/pushing-changes.md
 [tv]: using-radicle/tracking-and-viewing.md
 [tr]: using-radicle/troubleshooting.md
 [gi]: understanding-radicle/how-it-works.md/#git-implementation
+[gs]: getting-started.md/#configuring-your-system
