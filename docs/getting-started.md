@@ -47,45 +47,37 @@ completely open source. You can follow along development in our [Matrix channel]
   </em>
 </details>
 
-Radicle Upstream is available for download on Linux and macOS. If you are
-installing on a [Mac computer with Apple Silicon ][as] please note that you may
-experience issues as Radicle Upstream has not been tested on the Apple Silicon
-platform.
+### Supported Platforms
 
-Once you've downloaded the app for your respective platform, start it like this:
+Radicle Upstream is available for download on Linux and macOS (version 10.14 and
+newer). Once you've [downloaded the binary][bk] for your respective platform, start it
+like this:
 
 #### On Linux:
 
-1. make the package executable with: `chmod +x radicle-upstream-X.X.X.AppImage`
-2. start the app: `./radicle-upstream-X.X.X.AppImage`
+1. Make the package executable with: `chmod +x radicle-upstream-X.X.X.AppImage`
+2. Start the app: `./radicle-upstream-X.X.X.AppImage`
 
 #### On macOS:
 
-Open the `radicle-upstream-x.x.x.dmg` package and install Upstream by dragging
-the `Radicle Upstream` binary to the `/Applications` folder.
+**Note**: before you can start Upstream for the first time, you'll have to
+perform some extra steps. This is because we haven't set up [Apple
+notarization][an] for Upstream yet — read more about it [here][aw]. You'll only
+have to do this once -- the first time you launch the app.
+
+1. Open the `radicle-upstream-x.x.x.dmg` package and install Upstream by dragging
+   the `Radicle Upstream` binary to the `/Applications` folder.
 
 <video style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
   playsinline autoplay muted loop>
   <source src="/img/macOS-install.mp4" type="video/mp4">
 </video>
 
-**Note**: before you can start Upstream for the first time, you'll have to
-perform some extra steps. This is because we haven't set up [Apple
-notarization][an] for Upstream yet, read more about it [here][aw]. You'll only
-have to do this once -- the first time you launch the app.
-
-While we will be participating in the Apple Developer Program to ensure
-accessibility to our macOS users, we do not agree with Apple's financial
-gatekeeping and increasing control over application distribution on their
-platform. Forcing developers to "pay-to-play" under the guise of a security
-solution is an extractive form of vendor lock-in that inhibits the growth and
-accessibility of open software.
-
-1. Open `/Applications` in finder, locate the `Radicle Upstream` app and
+2. Open `/Applications` in finder, locate the `Radicle Upstream` app and
    right-click it, then select `Open` from the context menu. You should see a
    dialog with two buttons `Move to Bin` and `Cancel`.
 
-2. Dismiss the dialog by clicking `Cancel` to bypass macOS security measures
+3. Dismiss the dialog by clicking `Cancel` to bypass macOS security measures
    which disallow running unsigned binaries. Repeat the previous step. You
    should now see three buttons: `Move to Bin`, `Open` and `Cancel`, click
    `Open`.
@@ -95,11 +87,24 @@ accessibility of open software.
   <source src="/img/macOS-open.mp4" type="video/mp4">
 </video>
 
+If you are installing on a [Mac computer with Apple Silicon ][as] please note
+that you may experience issues as Radicle Upstream has not been tested on the
+Apple Silicon platform.
+
+<blockquote>
+While we will be participating in the Apple Developer Program to ensure
+accessibility to our macOS users, we do not agree with Apple's financial
+gatekeeping and increasing control over application distribution on their
+platform. Forcing developers to "pay-to-play" under the guise of a security
+solution is an extractive form of vendor lock-in that inhibits the growth and
+accessibility of open software.
+</blockquote>
+
+
 ## Creating an identity
 
-To create an identity on the Radicle network, you can use the Upstream app. The
-app will generate a unique identifier — known as a [**Device ID**][di] — that's
-paired to the computer you've installed Radicle on. For now, this Device ID is
+To create an identity on the Radicle network, you can use the Upstream client. After onboarding, it will generate a unique identifier — known as a [**Device ID**][di] — that's
+paired to the computer you've installed it on. For now, this Device ID is
 the only way other users can find and collaborate with you. Later on, you will
 be able to manage multiple Device IDs under one user handle, enabling support
 and consistency across multiple devices.
@@ -107,14 +112,14 @@ and consistency across multiple devices.
 ![Identity][id]
 
 The app will also prompt you to create a passphrase. This passphrase *isn't* a
-private key — it is a password decrypting your keypair to access and publish to
+private key — it is a password that decrypts your keypair to access and publish to
 the Upstream app. You will also be prompted for this passphrase when pushing and
 fetching code from your local machine to the Radicle network via your command
 line.
 
 ## Configuring your system
 
-### Add user details to your git config
+### Setting up Git
 To create and publish projects to the Radicle network, you must associate your
 commits with an identity by setting a username in Git.
 
@@ -125,7 +130,7 @@ git config --global user.name "YOUR NAME"
 ```
 For more help, refer to the relevant [Git documentation][gd].
 
-### Add the remote helper to your shell
+### Adding the Radicle remote helper
 To publish code to the Radicle network via the Upstream client, you first have
 to add the Radicle _git remote helper_ to your shell configuration.
 
