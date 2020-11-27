@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Adding a custom seed node · docs</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Seed nodes are &quot;always-on&quot; nodes running on public IP addresses that serve data"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Adding a custom seed node · docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.radicle.xyz/"/><meta property="og:description" content="Seed nodes are &quot;always-on&quot; nodes running on public IP addresses that serve data"/><meta property="og:image" content="https://docs.radicle.xyz/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.radicle.xyz/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/radicle.svg" alt="docs"/><h2 class="headerTitleWithLogo">docs</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="https://radicle.xyz" target="_self">Back to radicle.xyz</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Using Radicle</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/what-is-radicle">What is Radicle?</a></li><li class="navListItem"><a class="navItem" href="/docs/getting-started">Getting Started</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Using Radicle</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/using-radicle/overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/docs/using-radicle/creating-projects">Creating projects</a></li><li class="navListItem"><a class="navItem" href="/docs/using-radicle/sharing-projects">Sharing projects</a></li><li class="navListItem"><a class="navItem" href="/docs/using-radicle/pushing-changes">Pushing changes</a></li><li class="navListItem"><a class="navItem" href="/docs/using-radicle/tracking-and-viewing">Tracking and viewing contributions</a></li><li class="navListItem"><a class="navItem" href="/docs/using-radicle/fetching-and-merging">Fetching and merging contributions</a></li><li class="navListItem"><a class="navItem" href="/docs/using-radicle/contributing">Contributing to projects</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/using-radicle/adding-a-seed-node">Adding a custom seed node</a></li><li class="navListItem"><a class="navItem" href="/docs/using-radicle/running-a-seed-node">Running a seed node</a></li><li class="navListItem"><a class="navItem" href="/docs/using-radicle/troubleshooting">Troubleshooting</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Understanding Radicle</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/understanding-radicle/why-radicle">Why Radicle?</a></li><li class="navListItem"><a class="navItem" href="/docs/understanding-radicle/how-it-works">How it Works</a></li><li class="navListItem"><a class="navItem" href="/docs/understanding-radicle/glossary">Glossary</a></li><li class="navListItem"><a class="navItem" href="/docs/understanding-radicle/faq">Frequently Asked Questions</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Adding a custom seed node</h1></header><article><div><span><p>Seed nodes are &quot;always-on&quot; nodes running on public IP addresses that serve data
+to connected peers. By adding a seed to Upstream, that seed automatically tracks
+you and shares your data across its network of other connected peers <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>. This
+increases the availability of your data throughout the network, while making it
+easier to find other's data as well. Upstream is preconfigured with a Radicle
+operated seed to bootstrap your connectivity. If you have removed the default
+seed and need to re-add it or would like to add a custom seed address, you can
+do so by following these steps:</p>
+<ol>
+<li><p>Navigate to <strong>Settings</strong>. There, under the <strong>Network</strong> header, you'll find
+your seed list.</p>
+<p><img src="/img/settings.png" alt="Settings"></p></li>
+<li><p>Paste the seed address into the input box and submit by pressing
+<kbd>RETURN</kbd>.</p>
+<p>Radicle Upstream's default seed node:
+<code>hynewpywqj6x4mxgj7sojhue3erucyexiyhobxx4du9w66hxhbfqbw@seedling.radicle.xyz:12345</code></p></li>
+<li><p>Check that you're connected by hovering over your Connection icon in your
+sidebar.</p></li>
+</ol>
+<p>Recent seed node activity and connected peers can be viewed on the added seed
+node's dashboard (e.g. <a href="http://seed.my.org">http://seed.my.org</a>). The default seed dashboard for
+Upstream can be viewed at <a href="http://seedling.radicle.xyz/">http://seedling.radicle.xyz/</a>.</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1"  class="footnote-item"><p>Seed nodes can be configured to either track and share all data across the
+network, or to propagate only a specific set of peers or projects. Please
+refer to your seed operator for details. If you're running your own seed,
+have a look at the <a href="/docs/using-radicle/running-a-seed-node">Running a seed node</a> section and the <a href="https://github.com/radicle-dev/radicle-bins/tree/master/seed">seed node
+documentation</a>. <a href="#fnref1" class="footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/using-radicle/contributing"><span class="arrow-prev">← </span><span>Contributing to projects</span></a><a class="docs-next button" href="/docs/using-radicle/running-a-seed-node"><span>Running a seed node</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div></div></body></html>
