@@ -40,16 +40,13 @@ As you can see, the format of a remote handle is:
 
 where the display name is the name you see on a user's profile page in Upstream.
 
-<blockquote>
 You may be used to the concept of setting up an `origin` remote for a
 project when pushing to a centrally hosted platform like GitHub. This allows you
 to fetch and push changes from the server that hosts your project. In Radicle,
 these remotes point to the Git monorepo on your machine that stores all of your
 Radicle data. They allow you to fetch changes from your peers and push your
 changes. This means that fetching and pushing to remotes are _local first_
-actions. To read more about how Radicle is built on Git see our [How it
-Works][gi] section.
-</blockquote>
+actions. To read more about how Radicle is built on Git see our [**How it Works**][gi] section.
 
 To fetch the changes of a specific remote, run the `git fetch` command with
 their remote handle:

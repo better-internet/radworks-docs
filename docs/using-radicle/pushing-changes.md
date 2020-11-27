@@ -39,7 +39,7 @@ updates are only published to the network if the Upstream client is running.
 [ch]: understanding-radicle/glossary.md/#checkout
 [fo]: understanding-radicle/how-it-works.md/#following
 [go]: understanding-radicle/how-it-works.md/#gossip
-[gs]: getting-started.md
+[gs]: getting-started.md/#configuring-your-system
 [pn]: understanding-radicle/glossary.md/#project-name
 [ri]: understanding-radicle/glossary.md/#project-id
 [re]: understanding-radicle/glossary.md/#remote

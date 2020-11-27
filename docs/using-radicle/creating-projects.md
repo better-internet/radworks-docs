@@ -5,7 +5,8 @@ title: Creating projects
 
 Creating a project is as easy as initializing a repository in Git. In the
 Upstream client, you can create a project from scratch or from an existing
-repository. 
+repository. Creating a project on Radicle will publish it to the network, making
+it available to any of your connected peers.
 
 ## Starting a new project
 

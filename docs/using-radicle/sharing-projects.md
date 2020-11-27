@@ -25,7 +25,7 @@ connected peer makes it available to you.
 ![Still Looking][sl]
 
 When a project has been successfully replicated, it will appear in your
-**Following** tab. Following and replicating a project also makes it available
+**Following** tab. Replicating a project also makes it available
 to all of your connected peers. To learn more about following & replication, see 
 [How it Works][un].
 
