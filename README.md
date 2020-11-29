@@ -1,4 +1,4 @@
-# radicle-docs
+# Radicle Docs
 
 This website was created with [Docusaurus](https://docusaurus.io/).
 
