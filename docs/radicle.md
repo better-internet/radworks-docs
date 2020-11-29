@@ -29,8 +29,8 @@ developers can share and collaborate on Git repositories *without* relying on
 intermediaries such as hosted servers.
 
 The Radicle Link protocol distinguishes between two types of identities: personal and project.
-The first describes an actor in the system, while the second describes a (software) project
-on which one or more actors collaborate. In Radicle:
+The first describes a person running a node on the network (e.g. a peer), while the second describes a repository (e.g. a project)
+on which one or more people collaborate. In Radicle: 
 
 1. peers follow other peers.
 2. peers track projects they are interested in.
