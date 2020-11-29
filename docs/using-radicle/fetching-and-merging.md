@@ -101,7 +101,8 @@ Successfully rebased and updated refs/heads/main.
 ```
 
 This puts your working copy in a state this up-to-date with your contributor's
-changes. Once you have commited changes to your working copy, you can publish them changes to the Radicle network by running `git push
+changes. Once you have commited changes to your working copy, you can publish
+them changes to the Radicle network by running `git push
 rad`(See [Pushing changes][pc]):
 
 ```
