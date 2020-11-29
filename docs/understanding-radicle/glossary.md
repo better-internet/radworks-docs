@@ -31,7 +31,8 @@ replicating the data across their network, making it available to other people
 on the network. See [Tracking][hiw-tr].
 
 ## fork
-Forking a project in Radicle clones a working copy to your machine and publishes it as a project to the network.
+Forking a project in Radicle clones a working copy to your machine and publishes
+it as a project to the network.
 
 ## git
 A free and open source distributed version control system.
