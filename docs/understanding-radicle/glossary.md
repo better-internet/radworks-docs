@@ -3,10 +3,9 @@ id: glossary
 title: Glossary
 ---
 
-## checkout
-To create a working copy of a [project][pr]. This working copy is where a
-[user][us] can make and publish changes to the project via 'git push rad'. For
-more on how working copies work in Radicle, see [Working Copies][hiw-wc].
+## clone
+To create a working copy of a [project][pr] on a user's machine. This working
+copy is where a person can make and publish changes to a project locally.
 
 ## connect
 To create a network connection to another Radicle [peer][pe]. Connected peers
@@ -16,8 +15,8 @@ spread information between each other via [gossip][gp].
 A [peer][pe] who has pushed code to a [project][pr].
 
 ## Device ID
-The encoding of a [peer][pr]'s public key tied to their device. In the Beta,
-there will only be one Device ID per user (See [Data Model][hiw-dm])
+The encoding of a [peer][pr]'s public key tied to their device. Right now, there
+can only be one Device ID per user (See [Data Model][hiw-dm])
 
 ## display name
 A changeable and non-unique human-readable name chosen by an Upstream
@@ -25,11 +24,11 @@ A changeable and non-unique human-readable name chosen by an Upstream
 possible to change in the future. 
 
 ## follow
-Following a [project][pr] replicates its data to your machine. This allows the
+Following a [project][pr] replicates it to your machine. This allows the
 follower to subscribe to updates from the project's [maintainer(s)][ma] or other
 remotes. It is also a way to signal interest in the project or peer by further
 replicating the data across their network, making it available to other people
-on the network. See [Tracking][tr].
+on the network. See [Tracking][hiw-tr].
 
 ## git
 A free and open source distributed version control system.
