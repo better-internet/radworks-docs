@@ -5,26 +5,23 @@ title: Overview
 
 ## How do I collaborate on Radicle?
 
-As a result of its [design][dr], Radicle Link supports a bazaar-style development model
-where there is no single canonical view of any project, but multiple upstreams
+Radicle Link is designed for bazaar-style development. This means that there is no single canonical view (e.g. master) of any project, but multiple upstreams
 maintained by maintainers and contributors that exchange patches with each
 other.
 
 Within the same project, two people will have subjective (and often diverging
 views), but *your* view of the project becomes the sum of all other views of the
-project. This means that when you find and follow a project on Radicle, you are
-not only able to replicate the maintainer's view of the project, but all other
+project. This means that when you find and follow a project on Radicle, you don't just replicate the maintainer's view of the project, but all other
 contributor's views as well. Conceptually, the project becomes decentralized
 among the many views of it's maintainers and contributors, instead of being
-confined to the control of a small group of people with access.
+confined to the control of a small group of people with read/write access.
 
-In practice, this means that to fetch and receive changes to your project, you
+In practice, this means that to fetch and receive changes from contributors, you
 have to **add other people as remotes to your project**. Adding someone as a
-remote automatically tracks them, giving you a way to continuously subscribe to
-updates they make to their view of the project (i.e. new commits).
+remote automatically tracks them, giving you a way to continuously subscribe to the
+updates they make to your project (i.e. new commits).
 
-The introduction of social coding features like bug reporting, patches, and
-discussions will improve the process of finding and fetching changes between
+The introduction of social coding features like bug reporting, patches, and code review will improve the process of finding and fetching changes between
 people on the Radicle network by making it easier to know those changes exist in
 the first place.
 
