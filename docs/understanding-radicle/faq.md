@@ -21,7 +21,7 @@ implications and approach to this design [here][sm].
 The Radicle network is peer-to-peer and built on public key cryptography. To
 start, this means that there is no need to rely on third parties to access or
 use the Radicle network. It is harder to take down because there is no central
-point of failure, and is resistant to corporate capture and censorship. In
+point of failure, and is resistant to corporate and state capture and censorship. In
 addition, all data on the Radicle network is cryptographically signed & verified
 as it's gossiped between peers. While centralized platforms rely on user
 interface components and key oracles to signal trust from user to user, Radicle
@@ -123,13 +123,13 @@ access or publish data to the Radicle network - so make sure you keep it safe!
 First, check to see if you are connected to the seed node by hovering over the
 Connection Status icon in your toolbar. If you are connected to one or more
 peer, navigate to the seed node dashboard (e.g. seedling.radicle.xyz) to see if
-you can find your Device ID. 
+you can find your Device ID.
 
 ![Seed Dashboard Search][sd]
 
 If you are connected to the seed node and can find yourself on the dashboard,
 try restarting the app. On restart, if there is still outstanding data to be
-found, try refreshing the app. Wait one minute before restarting the app again. 
+found, try refreshing the app. Wait one minute before restarting the app again.
 
 If you are still running into problems, please submit a request in our [#support
 channel][sc].
