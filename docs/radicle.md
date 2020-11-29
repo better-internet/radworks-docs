@@ -15,7 +15,7 @@ Read more about our vision for decentralized code collaboration [here][wh].
 ## How it works
 
 The network is powered by a peer-to-peer replication protocol built on Git,
-called Radicle Link. Radicle Link extends Git with peer-to-peer network
+called Radicle Link. Radicle Link extends Git with peer-to-peer
 discovery by disseminating data via a process called gossip. That is,
 participants in the network share and spread data they are "interested" in by
 keeping redundant copies locally and sharing, otherwise known as "replicating",
