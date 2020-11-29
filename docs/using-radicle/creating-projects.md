@@ -43,18 +43,25 @@ you will be able to see it under the **Projects** section of the seed dashboard.
 ### How are projects different from repositories?
 
 In Radicle, local Git repositories are published and shared as [projects][pr].
-Projects contain all files of a repository and their revision history. Projects
-also have associated metadata such as a name and description. 
+This is done via the Radicle monorepo on your machine, which pulls in updates to
+your local working copies, and stores them as Git objects. A client (like
+Radicle Upstream) then publishes changes to your monorepo to the Radicle
+network, making it available to your network of connected peers.
+
+Projects contain all files of a Git repository and their revision history, but
+they also have associated Radicle-speciifc metadata such as a name and
+description. 
 
 Each project carries a unique, shareable peer-to-peer identitifer known as a
 **Radicle ID**.
 
 ![Radicle ID][ri]
 
-A project also includes the identities of all its [maintainers][ma]. Maintainers
-are people with designated rights over the project's metadata. At this point in
-time, the person who creates the project is considered its sole maintainer, but
-multiple maintainers will be able to be added in the future.
+A project also includes the Radicle identities of all its [maintainers][ma].
+Maintainers are people with designated rights over the project's metadata. At
+this point in time, the person who creates the project in Radicle is considered
+its sole maintainer, but multiple maintainers will be able to be added in the
+future.
 
 To read more about how projects are designed are replicated across the Radicle
 network, head to our [How it Works][hw] section.
@@ -62,7 +69,7 @@ network, head to our [How it Works][hw] section.
 [fa]: understanding-radicle/faq.md/#when-will-cli-tooling-be-available
 [ma]: understanding-radicle/glossary.md/#maintainer
 [pr]: understanding-radicle/glossary.md/#project
-[hw]: understanding-radicle/how-it-works.md
+[hw]: understanding-radicle/how-it-works.md/#git-implementation
 
 [ri]: /img/radicle-id.png
 [ss]: /img/seed-dashboard-search.png

@@ -5,7 +5,7 @@ title: Sharing projects
 
 ## Finding projects
 
-Projects can be shared with their **Radicle ID**. The Radicle ID can be copied
+Projects can be found with their **Radicle ID**. The Radicle ID can be copied
 from the project page.
 
 ![Radicle ID][ri]
@@ -19,7 +19,7 @@ will send out a request to your network.
 
 ![Search and Follow][sf]
 
-Once requested, you'll be able to view and replicate the project once a
+You'll be able to view and replicate the project once a
 connected peer makes it available to you. 
 
 ![Still Looking][sl]
@@ -29,11 +29,14 @@ When a project has been successfully replicated, it will appear in your
 to all of your connected peers. To learn more about following & replication, see 
 [How it Works][un].
 
+![Project Found][pf]
+
 [fa]: understanding-radicle/faq.md
 [ma]: understanding-radicle/glossary.md/#maintainer
 [pr]: understanding-radicle/glossary.md/#project
 [un]: understanding-radicle/how-it-works.md/#replication-model
 
 [ri]: /img/radicle-id.png
+[pf]: /img/project-found.png
 [sf]: /img/search-and-follow.png
 [sl]: /img/still-looking.png

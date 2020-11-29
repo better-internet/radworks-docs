@@ -3,28 +3,27 @@ id: pushing-changes
 title: Pushing changes
 ---
 
-To push code to Radicle, you first need to make sure your shell is configured
-correctly by following the instructions in the [Getting Started][gs] section to
-add the Radicle remote helper.
+To push code to Radicle, you first need to add the Radicle remote helper to your
+shell configuration. If you haven't done so, follow the instructions in the
+[Getting Started][gs] section.
 
 After the Radicle remote helper is configured, navigate to the working copy of
 your project. You can see the branches of your project with `git branch -a` or
 the remotes with `git remote show`. 
 
-After changes are made and commited to a branch, they can be pushed to the
-Radicle remote via:
+After changes are made and commited to a branch, they need to be published to
+the Radicle network so they can be found and replicated by peers. To do so,
+changes need to be pushed to the `rad` remote — similar to what you would do
+with any other Git code hosting platform. The `rad` remote points to your
+monorepo where all Radicle data is stored.
+
+To push changes to the `rad` remote run:
 
 `git push rad <branch name>`
 
 To set up branch tracking, run:
 
 `git push -u rad <branch_name>` or `git push --set-upstream rad <branch_name>`
-
-as you would with any other Git code hosting platform.
-
-The `rad` remote points to your monorepo where all Radicle data is stored.
-Pushing to the `rad` remote publishes the changes to the network so they can be
-found and fetched by connected peers. 
 
 For help using Git, please refer to the [relevant documentation][rd].
 
@@ -48,4 +47,4 @@ updates are only published to the network if the Upstream client is running.
 [ps]: /img/peer-switcher.png
 [sb]: /img/search-bar.png
 
-[rd]: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
+[rd]: https://git-scm.com/doc
