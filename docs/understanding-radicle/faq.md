@@ -89,7 +89,8 @@ on your project page (See [Adding Remotes][ar]). For more on how remote
 repositories work, see the [Git documentation][mr].
 
 ## What's a Radicle ID?
-A Radicle ID is a unique way identifier for projects in the Radicle Network. You can find it on a project's page or on the [seed node dashboard][sn]. You
+A Radicle ID is a unique way identifier for projects in the Radicle Network.
+You can find it on a project's page or on the [seed node dashboard][sn]. You
 use a project's Radicle ID to find it via Radicle Upstream.
 
 ## What's a Device ID?
