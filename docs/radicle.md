@@ -28,7 +28,7 @@ Since all data on the network is stored locally by peers on the network,
 developers can share and collaborate on Git repositories *without* relying on
 intermediaries such as hosted servers.
 
-The radicle-link protocol distinguishes between two types of identities: personal and project.
+The Radicle Link protocol distinguishes between two types of identities: personal and project.
 The first describes an actor in the system, while the second describes a (software) project
 on which one or more actors collaborate. In Radicle:
 
