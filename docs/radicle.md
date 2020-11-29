@@ -56,7 +56,7 @@ Read more about the [Radicle collaboration model][fa].
 The above concerns led us to a design and implementation that differentiates itself from
 centralized forges in a few critical ways:
 
-1. The Radicle stack is open-source from beginning to end. There are no "closed" components.
+1. The Radicle stack is open-source from top to bottom. There are no "closed" components.
 Every component of the Radicle stack is auditable, modifiable and extendable.
 2. Radicle is build *entirely* on open protocols. There are no "special servers", privileged
 users or companies in control of your collaboration.
