@@ -63,9 +63,9 @@ users or companies in control of your collaboration.
 3. Radicle is based on a peer-to-peer architecture instead of a client server model.
 4. All artifacts within Radicle are cryptographically signed and are verified by your client,
 including social artifacts like issues, PRs and comments.
-5. Collaboration within Radicle is NOT global by default. Instead it's your "trusted"
-social graph of peers and projects that determines which content you see, interact with
-and replicate. This means that within projects, there isn't a single master branch that contributors merge into.
+5. Radicle is **not** global by default. Instead, the
+social graph of peers and projects you track determines what content you see, interact with,
+and replicate.
 6. Radicle is optimized for a local-first experience instead of a software-as-a-service
 type of experience.
 
