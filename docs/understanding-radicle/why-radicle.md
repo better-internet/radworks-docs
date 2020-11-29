@@ -139,9 +139,9 @@ cryptography, hosted issue trackers are replaced by local peer replication, and
 the idea of a single canonical upstream is replaced by a patch-based
 peer-to-peer or "bazaar" model.
 
-To complement the replication layer we introduce an opt-in, Ethereum based registry
+To complement the replication layer we introduce an opt-in registry built on Ethereum
 which holds canonical project metadata. This allows projects to anchor important
-information—such as project state and repository heads—with the guarantee of
+information — such as project state and repository heads — with the guarantee of
 global availability and immutability.
 
 The three major themes to highlight are the decisions to focus on a peer-to-peer
