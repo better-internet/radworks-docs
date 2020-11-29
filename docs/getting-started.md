@@ -6,11 +6,12 @@ sidebar_label: Getting Started
 
 ## Download & Installation
 
-The Radicle network can be accessed via **Radicle Upstream**, an open-source desktop client.
+The Radicle network can be accessed via **Radicle Upstream**, an open-source
+desktop client.
 
-Radicle development is public by default and
-completely open-source. You can follow along development in our [Matrix
-channel][mc] or on [radicle.community][co].
+Radicle development is public by default and completely open-source. You can
+follow along development in our [Matrix channel][mc] or on
+[radicle.community][co].
 
 <details>
   <summary><b>DISCLAIMER 🌱</b></summary>
@@ -54,8 +55,8 @@ newer).
 
 **-> [Download Radicle Upstream][bk]**
 
-Once you've downloaded the binary for your respective platform,
-start it like this:
+Once you've downloaded the binary for your respective platform, start it like
+this:
 
 #### On Linux:
 
@@ -104,7 +105,8 @@ solution is an extractive form of vendor lock-in that inhibits the growth and
 accessibility of open software.
 </blockquote>
 
-If you are running a different operating system (e.g. NixOS or an older macOS) you can trying [building Radicle Upstream from source][bs].
+If you are running a different operating system (e.g. NixOS or an older macOS)
+you can trying [building Radicle Upstream from source][bs].
 
 
 ## Creating an identity
@@ -113,28 +115,28 @@ After choosing a display name and setting a passphrase, it will generate a
 unique identifier — known as a [**Device ID**][di] — that's paired to the
 computer you've installed it on. 
 
-For now, this Device ID is the only way other
-users can find and collaborate with you. Later on, you will be able to manage
-multiple Device IDs under one user handle, enabling support and consistency
-across multiple devices.
+For now, this Device ID is the only way other users can find and collaborate
+with you. Later on, you will be able to manage multiple Device IDs under one
+user handle, enabling support and consistency across multiple devices.
 
 ![Identity][id]
 
 ### Setting a passphrase
 The app will also prompt you to create a passphrase. This passphrase *isn't* a
 private key — it is a password that decrypts your keypair to access and publish
-to the Upstream client. You will also be prompted for this passphrase when pushing
-and fetching code from your local machine to the Radicle network via your
-command line.
+to the Upstream client. You will also be prompted for this passphrase when
+pushing and fetching code from your local machine to the Radicle network via
+your command line.
 
 <blockquote>
-There is no way to recover this passphrase yet, so be sure to keep it in a very safe place!
+There is no way to recover this passphrase yet, so be sure to keep it in a very
+safe place!
 </blockquote>
 
 ## Configuring your system
 
 ### Setting up Git
-To create and publish projects to the Radicle network, you must make sure your 
+To create and publish projects to the Radicle network, you must make sure your
 commits are associated with a username in Git.
 
 You can do so by running the following command:
@@ -157,8 +159,10 @@ $ which git-remote-rad
 <home path>/.radicle/bin/git-remote-rad
 ```
 
-With the remote helper installed, you will be able to [push changes][pc] from your working copies to your Radicle
-[monorepo][ri] or [fetch changes][fc] from other peers via the `rad` remote. The Radicle Upstream client then publishes these changes to the Radicle network.
+With the remote helper installed, you will be able to [push changes][pc] from
+your working copies to your Radicle [monorepo][ri] or [fetch changes][fc] from
+other peers via the `rad` remote. The Radicle Upstream client then publishes
+these changes to the Radicle network.
 
 To start using Radicle, continue on to the [Using Radicle][ur] section.
 
