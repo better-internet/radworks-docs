@@ -27,7 +27,7 @@ local machine and publish your version to the Radicle network as a new project.
 ![Fork Project][fo]
 
 Forking a project will move it from the **Following** tab to the **Projects**
-tab. tab. This is because once you fork a project, you create your own view of
+tab. This is because once you fork a project, you create your own view of
 it that is unique to your Device ID. You can [push changes][pc] to this view via
 the `rad` remote and publish them to the Radicle network. If another person has
 added you as a remote (See [Tracking & viewing contributions][tv]), they will be
