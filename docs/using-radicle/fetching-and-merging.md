@@ -9,7 +9,8 @@ contributor, you first need to add them as a remote to your project. If you
 haven't done so, follow the instructions in [Tracking & viewing
 contributions][tv] section.
 
-If you can see a peer's changes after adding them as a remote, they have been successfully replicated to your machine. If you have added
+If you can see a peer's changes after adding them as a remote, they have been
+successfully replicated to your machine. If you have added
 a peer as a remote and can't see their changes, head over to our
 [Troubleshooting][tr] section.
 
