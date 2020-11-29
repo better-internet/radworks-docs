@@ -66,7 +66,7 @@ including social artifacts like issues, PRs and comments.
 5. Radicle is **not** global by default. Instead, the
 social graph of peers and projects you track determines what content you see, interact with,
 and replicate.
-
+6. Radicle is designed for bazaar-style development. This means that within projects, there isn't a single master branch that contributors merge into. Instead, peers maintain their own views of projects that can be fetched and merged by other peers via patches.
 ## How do I use Radicle?
 
 The easiest way to use Radicle is with **Upstream**, a desktop client developed by
