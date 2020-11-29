@@ -66,7 +66,7 @@ including social artifacts like issues, PRs and comments.
 5. Collaboration within Radicle is NOT global by default. Instead it's your "trusted"
 social graph of peers and projects that determines which content you see, interact with
 and replicate. This means that within projects, there isn't a single master branch that contributors merge into.
-6. Radicle is optimized for a local-first, dekstop experience instead of a software-as-a-service
+6. Radicle is optimized for a local-first experience instead of a software-as-a-service
 type of experience.
 
 ## How do I use Radicle?
