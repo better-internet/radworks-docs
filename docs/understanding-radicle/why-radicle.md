@@ -24,7 +24,7 @@ These platforms, however, are owned by corporations. They are subject to
 corporate law and have the right to define their terms of services. They can
 implement user bans—like those currently in place against Iranian, Syrian, and
 Crimean GitHub accounts in response to pressure from the U.S. government. They
-are vulnerable to censorship as well as capitalist ends, which are often
+are vulnerable to censorship as well as corporate and state ends, which are often
 misaligned with the goals of free and open source communities.
 
 In a world where nearly all software relies on open source code, maintaining the
@@ -139,10 +139,10 @@ cryptography, hosted issue trackers are replaced by local peer replication, and
 the idea of a single canonical upstream is replaced by a patch-based
 peer-to-peer or "bazaar" model.
 
-To complement the replication layer we introduce a totally-ordered
-consensus-backed registry which holds canonical project metadata. This allows
-projects to anchor important information—such as project state and repository
-head—with the guarantee of global availability and immutability.
+To complement the replication layer we introduce an opt-in, Ethereum based registry
+which holds canonical project metadata. This allows projects to anchor important
+information—such as project state and repository head—with the guarantee of
+global availability and immutability.
 
 The three major themes to highlight are the decisions to focus on a peer-to-peer
 code collaboration model, to build on the underlying distributed version control
