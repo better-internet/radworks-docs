@@ -123,7 +123,7 @@ access or publish data to the Radicle network - so make sure you keep it safe!
 ## Can I change my passphrase?
 Not yet — so make sure to keep it in a safe place!
 
-## I can't find a project on the network. What should I do?
+## I can't find a project on the network or see a peer's changes. What should I do?
 First, check to see if you are connected to the seed node by hovering over the
 Connection Status icon in your toolbar. If you are connected to one or more
 peer, navigate to the seed node dashboard (e.g. seedling.radicle.xyz) to see if
