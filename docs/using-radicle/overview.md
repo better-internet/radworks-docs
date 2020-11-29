@@ -12,13 +12,11 @@ other.
 
 Within the same project, two people will have subjective (and often diverging
 views), but *your* view of the project becomes the sum of all other views of the
-project. This means that when you find and follow a project on Radicle, you
-don't just replicate the maintainer's view of the project, but all other
-contributor's views as well. Conceptually, the project becomes decentralized
+project. Conceptually, the project becomes decentralized
 among the many views of it's maintainers and contributors, instead of being
-confined to the control of a small group of people with access.
+confined to the control of a small group of people with read/write access.
 
-In practice, this means that to fetch and receive changes to your project, you
+In practice, this means that to fetch and receive changes from contributors, you
 have to **add other people as remotes to your project**. Adding someone as a
 remote automatically tracks them, giving you a way to continuously subscribe to
 the updates they make to your project (i.e. new commits).
