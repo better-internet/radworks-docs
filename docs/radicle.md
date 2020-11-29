@@ -6,7 +6,7 @@ sidebar_label: What is Radicle?
 
 Radicle is a peer-to-peer stack for code collaboration 🌱. It enables developers
 to collaborate on code without relying on trusted intermediaries. Radicle was designed
-to provide similar functionality to centralized code collaboration platforms, or "forges",
+to provide similar functionality to centralized code collaboration platforms — or "forges" —
 while retaining Git’s peer-to-peer nature, building on what made distributed
 version control so powerful in the first place.
 
