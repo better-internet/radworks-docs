@@ -12,9 +12,7 @@ other.
 
 Within the same project, two people will have subjective (and often diverging
 views), but *your* view of the project becomes the sum of all other views of the
-project. This means that when you find and follow a project on Radicle, you
-don't just replicate the maintainer's view of the project, but all other
-contributor's views as well. Conceptually, the project becomes decentralized
+project. Conceptually, the project becomes decentralized
 among the many views of it's maintainers and contributors, instead of being
 confined to the control of a small group of people with read/write access.
 
