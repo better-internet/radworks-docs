@@ -61,12 +61,12 @@ Every component of the Radicle stack is auditable, modifiable and extendable.
 2. Radicle is build *entirely* on open protocols. There are no "special servers", privileged
 users or companies in control of your collaboration.
 3. Radicle is based on a peer-to-peer architecture instead of a client server model.
-4. All artifacts within Radicle are cryptographically signed and are verified by your client,
-including social artifacts like issues, PRs and comments.
-5. Radicle is **not** global by default. Instead, the
-social graph of peers and projects you track determines what content you see, interact with,
-and replicate.
-6. Radicle is designed for bazaar-style development. This means that within projects, there isn't a single master branch that contributors merge into. Instead, peers maintain their own views of projects that can be fetched and merged by other peers via patches.
+4. Radicle is **not** global by default. Instead, the social graph of peers and projects you 
+track determines what content you see, interact with, and replicate.
+5. Radicle is designed for bazaar-style development. This means that within projects, there isn't 
+a single master branch that contributors merge into. Instead, peers maintain their own views of 
+projects that can be fetched and merged by other peers via patches.
+
 ## How do I use Radicle?
 
 The easiest way to use Radicle is with **Upstream**, a desktop client developed by
