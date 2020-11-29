@@ -28,8 +28,9 @@ interface components and key oracles to signal trust from user to user, Radicle
 has designed trust into the core of the protocol.
 
 ## How does Radicle interact with Git?
-Radicle Link — the protocol that powers the Radicle network is built on Git. All Radicle data is stored in a single
-Git monorepo on your machine that is read and written from via the Upstream client. To read more
+Radicle Link — the protocol that powers the Radicle network is built on Git. All
+Radicle data is stored in a single Git monorepo on your machine that is read
+and written from via the Upstream client. To read more
 about Radicle's Git Implementation, see [How it Works][hw].
 
 ## How is Radicle licensed?
@@ -183,5 +184,4 @@ this [direct invite link][mc] to join #general.
 [sc]: https://matrix.to/#/#support:radicle.community
 [sm]: https://radicle.community/
 [sn]: http://seedling.radicle.xyz/
-
 
