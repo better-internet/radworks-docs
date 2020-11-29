@@ -32,10 +32,10 @@ The Radicle Link protocol distinguishes between two types of identities: persona
 The first describes a person running a node on the network (e.g. a peer), while the second describes a repository (e.g. a project)
 on which one or more people collaborate. In Radicle: 
 
-1. peers follow other peers.
-2. peers track projects they are interested in.
-3. peers gossip about projects. This means tracking and replicating objects from
-the peers they follow, about the projects they are interested in.
+1. Peers track projects they are interested in
+2. Peers track other peers by adding them as remotes to projects
+3. Peers gossip about projects. This means they replicate objects from the peers they follow and 
+make them available to the peers that follow them.
 
 It's this "trusted" social graph of peers and projects that becomes the foundation for
 collaboration within Radicle.
