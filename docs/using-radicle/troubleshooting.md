@@ -14,6 +14,8 @@ to submit a formal request through our [#support channel][sc] on our Matrix
 server, in the [Support category][rc] of our radicle.community forum, or [open
 an issue][gi] on GitHub.
 
+If you're having issues using Git, see the [Working with Git][wg] category of this section.
+
 For our known failures, we categorise them with a PascalCase code word that
 gives a high level idea of what went wrong. When you encounter one of these
 errors you will receive a notification in the application which allows you to
@@ -26,13 +28,13 @@ for the error, and perhaps a way to mitigate the error and get you back on track
 with enjoying your Radicle experience.
 
 ## SessionFetchFailure
-### Reason
+#### Reason
 
 The app failed to log into the backend process that manages the peer-to-peer
 network. This might indicate that your identity in the network was not properly
 created or that your on-disk state became corrupted.
 
-### Action
+#### Action
 Since the cause of this error is most likely corrupted data you should reach out
 to us on [radicle.community][rc] so we can help you solve the issue.
 
@@ -214,10 +216,12 @@ interact with the Radicle network. For more instructions on how to do this, see
 [di]: understanding-radicle/glossary#device-id
 [gs]: getting-started.md
 [mo]: understanding-radicle/how-it-works.md
+[wg]: #working-with-git
 
 [er]: /img/error.png
 
 [gi]: https://github.com/radicle-dev/radicle-upstream/issues
-[rc]: https://radicle.community/
+[rc]: https://radicle.community/c/help
 [rs]: https://github.com/radicle-dev/radicle-surf
 [sc]: https://matrix.to/#/#support:radicle.community
+
