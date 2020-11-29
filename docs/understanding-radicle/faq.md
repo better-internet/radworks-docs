@@ -1,6 +1,6 @@
 ---
 id: faq
-title: Frequently Asked Questions
+title: FAQ
 ---
 ## How do I get started?
 Head over to the [Getting Started][gs] section for instructions on how to
@@ -15,7 +15,7 @@ of any peers they are interested in. This also means that within projects, there
 isn't a single `master` branch that contributors merge into. Each peer maintains
 a view of a project with their changesets and branches. These views are gossiped
 around to other peers that are interested in those changes. Read more about the
-implications and approach to this design [here][sm].
+implications and approach to this design [here][ov].
 
 ## How is Radicle more secure than centralized platforms?
 The Radicle network is peer-to-peer and built on public key cryptography. To
@@ -28,9 +28,8 @@ interface components and key oracles to signal trust from user to user, Radicle
 has designed trust into the core of the protocol.
 
 ## How does Radicle interact with Git?
-Radicle Link — the protocol that powers the Radicle network is built on Git. It
-basically uses Git as a database. This means everything is stored in a single
-Git monorepo that is read and written from via the Upstream client. To read more
+Radicle Link — the protocol that powers the Radicle network is built on Git. All Radicle data is stored in a single
+Git monorepo on your machine that is read and written from via the Upstream client. To read more
 about Radicle's Git Implementation, see [How it Works][hw].
 
 ## How is Radicle licensed?
@@ -46,13 +45,13 @@ issues, PRs, and discussions will be more secure, available offline, and stored
 on your machine as git objects — not on a central server!
 
 ## When will CLI tooling be available?
-We're working on it! We will introduce CLI tooling alongside of Upstream
+We're working on it! 🤞 We will introduce CLI tooling alongside of Upstream
 development.
 
 ## Can I backup a GitHub project on Radicle?
 Yes! Publishing a codebase to Radicle is a great way to create a peer-to-peer
 backup of your repositories. Maintaining a mirror of a project on Radicle is as
-simple as pushing to another remote. Read more about [creating and sharing
+simple as pushing to another remote. Read more about [creating
 projects][cp].
 
 ## Can I replace GitHub with Radicle?
@@ -164,8 +163,9 @@ this [direct invite link][mc] to join #general.
 
 [ar]: using-radicle/tracking-and-viewing.md
 [cp]: using-radicle/creating-projects.md
+[ov]: using-radicle/overview.md
 [gs]: getting-started.md
-[hw]: how-it-works.md
+[hw]: how-it-works.md/#git-implementation
 [tr]: how-it-works.md/#tracking
 
 [sd]: /img/seed-dashboard-search.png
