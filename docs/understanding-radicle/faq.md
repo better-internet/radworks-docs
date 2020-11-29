@@ -72,9 +72,9 @@ GitHub replica.
 ## Where is my data stored?
 On the Radicle network, content is distributed peer-to-peer via a process called
 gossip. This means that peers self-host their own content — and the content of
-any peers they are interested in — locally on their machine in a [Git monorepo][hw]. It also means that
-whenever your data is published to the network, it can be replicated and stored
-on another peer's machine.
+any peers they are interested in — locally on their machine in a [Git monorepo][hw].
+It also means that whenever your data is published to the network, it can be
+replicated and stored on another peer's machine.
 
 ## Can I create private repositories on Radicle?
 No, not yet - but in the future! Private projects with end-to-end encryption are
@@ -184,4 +184,3 @@ this [direct invite link][mc] to join #general.
 [sc]: https://matrix.to/#/#support:radicle.community
 [sm]: https://radicle.community/
 [sn]: http://seedling.radicle.xyz/
-
