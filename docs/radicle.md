@@ -53,7 +53,7 @@ Github or Gitlab, you might notice that Radicle priotizes different concerns. Co
 
 Read more about the [Radicle collaboration model][fa].
 
-The above concerns led us to a design and implementation that differentiates itself from
+The concerns above led us to a design and implementation that differentiates itself from
 centralized forges in a few critical ways:
 
 1. The Radicle stack is open-source from top to bottom. There are no "closed" components.
