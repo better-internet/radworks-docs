@@ -66,8 +66,6 @@ including social artifacts like issues, PRs and comments.
 5. Radicle is **not** global by default. Instead, the
 social graph of peers and projects you track determines what content you see, interact with,
 and replicate.
-6. Radicle is optimized for a local-first experience instead of a software-as-a-service
-type of experience.
 
 ## How do I use Radicle?
 
