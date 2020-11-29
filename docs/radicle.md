@@ -4,31 +4,19 @@ title: What is Radicle?
 sidebar_label: What is Radicle?
 ---
 
-Radicle is an open-source stack for code collaboration 🌱. It enables developers to collaborate on code without relying on intermediaries. It's a robust, functional, and secure alternative to centralized code collaboration platforms.
+Radicle is a peer-to-peer stack for code collaboration 🌱. It enables developers to collaborate on code without relying on trusted intermediaries. It was designed to provide similar functionality to centralized code collaboration platforms, or "forges", while retaining Git’s peer-to-peer nature, building on what made distributed version control so powerful in the first place.
 
 Read more about the vision for decentralized code collaboration [here](understanding-radicle/why-radicle.md).
 
 ## How it works
 
-Radicle is built on open protocols — not platforms. It was designed to provide similar functionality to centralized code collaboration platforms, or "forges", while retaining Git’s peer-to-peer nature, building on what made distributed version control so powerful in the first place.
-
 The network is powered by a peer-to-peer replication protocol built on Git, called Radicle Link. Radicle Link extends Git with peer-to-peer network discovery by disseminating data via a process called gossip. That is, participants in the network share and spread data they are "interested" in by keeping redundant copies locally and sharing, otherwise known as "replicating", their local data with selected peers. By leveraging Git's smart transfer protocol, Radicle Link keeps Git's efficiency when it comes to data replication while offering global decentralized repository storage through the peer-to-peer networking layer.
 
-Since all data on the network is stored locally by peers on the network, develops can share and collaborate on Git repositories *without* relying on intermediaries such as hosted servers.
+Since all data on the network is stored locally by peers on the network, developers can share and collaborate on Git repositories *without* relying on intermediaries such as hosted servers.
 
 For more on Radicle Link, check out the [Understanding Radicle](understanding-radicle/why-radicle.md) section.
 
-## How is Radicle different from GitHub?
-
-When coming to Radicle from a centralized code collaboration network like Github or Gitlab, you might notice that Radicle priotizes different concerns. Concretely:
-
-1. users being in control of their identity
-2. users being in control of their content
-3. users being in control of their social interactions
-
-These concerns lead to a model for collaboration that might be familiar to the free and open source hackers of the 90s and early 2000s, that is radically different to the one presented by the web 2.0 platforms.
-
-The radicle-link protocol distinguishes between two types of identities: personal and project. The first describes an actor in the system, while the second describes a (software) project on which one or more actors collaborate. In radicle:
+The radicle-link protocol distinguishes between two types of identities: personal and project. The first describes an actor in the system, while the second describes a (software) project on which one or more actors collaborate. In Radicle:
 
 1. peers follow other peers.
 2. peers track projects they are interested in.
@@ -43,3 +31,20 @@ If you have already interacted with other decentralized social networks, this mo
 ## How do I use Radicle?
 
 The easiest way to use Radicle is with Upstream, a desktop client developed by the founding team of the Radicle project. With Upstream, you can create an identity, host your code, and collaborate with others on the Radicle network. Head over to [Getting Started](getting-started/getting-started.md) for a walkthrough on how to download Upstream and becomee a part of the Radicle network.
+
+## How is Radicle different from GitHub?
+
+When coming to Radicle from a centralized code collaboration platform like Github or Gitlab, you might notice that Radicle priotizes different concerns. Concretely:
+
+- users being in control of their identity
+- users being in control of their content
+- users being in control of their social interactions
+
+The above cocnerns led us to a design and implementation that differentiates itself from centralized forges in a few critical ways:
+
+1. The Radicle stack is open-source from beginning to end. There are no "closed" components. Every component of the Radicle stack is auditable, modifiable and extendable.
+2. Radicle is build *entirely* on open protocols. There are no "special servers", privileged users or companies in control of your collaboration.
+3. Radicle is based on a peer-to-peer architecture instead of a client server model.
+4. All artifacts within Radicle are cryptographically signed and are verified by your client, including social artifacts like issues, PRs and comments.
+5. Collaboration within Radicle is NOT global by default. Instead it's your "trusted" social graph of peers and projects that determines which content you see, interact with and replicate.
+6. Radicle is optimized for a local-first, dekstop experience instead of a software as a service type of model.
