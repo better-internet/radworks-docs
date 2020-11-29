@@ -130,7 +130,7 @@ outlined principles, but are limited in terms of user friendliness. It's hard to
 compare the usability of email threads to the sophisticated workflows possible
 on platforms like GitHub and GitLab.
 
-### Radicle: A p2p protocol for code collaboration 🌱
+### Radicle: A peer-to-peer stack for code collaboration 🌱
 
 Radicle adopts the Scuttlebutt social overlay paradigm by establishing a
 peer-to-peer replication layer on top of distributed version control systems,
@@ -216,16 +216,3 @@ manage and design their workflows without locking them into a new "experience".
 Despite any front-end interface that will be built (😉), Radicle exists foremost
 as an open protocol — not a platform.
 
-To complement the eventually-consistent peer-to-peer replication layer, a global
-registry that holds canonical project metadata is also desirable. This can
-provide functionality that is difficult to address at the gossip level, such as
-globally unique human-readable identifiers, as well as giving the ability for
-projects to anchor important information about their project in an immutable and
-totally-ordered way—for example, the latest repository head. This can alleviate
-weaknesses at the replication layer which is unable to prove to the user that
-the information shown is the latest available. In essence, the registry can
-provide users with the trusted, auditable and shared view of the network that is
-otherwise lacking, delivering the same connected "social" layer that attracted
-developers to platforms like GitHub. Designing such a system as an open protocol
-is challenging, and requires a consensus-based approach which we will discuss in
-more depth in the future.
