@@ -23,10 +23,10 @@ Install UI depependencies and build the UI:
 
     (cd seed/ui && yarn && yarn build)
 
-First, let's set up a directory where the seed can store its data. This is
-important in case you are running an Upstream client on the same machine. The
-default path for both Upstream and the seed node would otherwise be the same and
-could result in unexpected behaviour.
+Next, let's set up a directory where the seed can store its data. This is
+important in case you are running a Radicle Upstream client on the same machine.
+The default path for both Radicle Upstream and the seed node would otherwise be
+the same and could result in unexpected behaviour.
 
     mkdir -p ~/.radicle-seed
 
