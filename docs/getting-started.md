@@ -6,10 +6,10 @@ sidebar_label: Getting Started
 
 ## Download & Installation
 
-The Radicle network can be accessed via Upstream, a desktop client. To download
-the app, click [here][bk]. While Upstream is currently the only client for using
-Radicle, it won't be the only one. Upstream development is public by default and
-completely open source. You can follow along development in our [Matrix
+The Radicle network can be accessed via **Radicle Upstream**, an open-source desktop client.
+
+Radicle development is public by default and
+completely open-source. You can follow along development in our [Matrix
 channel][mc] or on [radicle.community][co].
 
 <details>
@@ -50,7 +50,11 @@ channel][mc] or on [radicle.community][co].
 ### Supported Platforms
 
 Radicle Upstream is available for download on Linux and macOS (version 10.14 and
-newer). Once you've [downloaded the binary][bk] for your respective platform,
+newer). 
+
+**-> [Download Radicle Upstream][bk]**
+
+Once you've downloaded the binary for your respective platform,
 start it like this:
 
 #### On Linux:
@@ -100,29 +104,38 @@ solution is an extractive form of vendor lock-in that inhibits the growth and
 accessibility of open software.
 </blockquote>
 
+If you are running a different operating system (e.g. NixOS or an older macOS) you can trying [building Radicle Upstream from source][bs].
+
 
 ## Creating an identity
-To create an identity on the Radicle network, use the Radicle Upstream app.
+To create an identity on the Radicle network, use the Radicle Upstream client.
 After choosing a display name and setting a passphrase, it will generate a
 unique identifier — known as a [**Device ID**][di] — that's paired to the
-computer you've installed it on. For now, this Device ID is the only way other
+computer you've installed it on. 
+
+For now, this Device ID is the only way other
 users can find and collaborate with you. Later on, you will be able to manage
 multiple Device IDs under one user handle, enabling support and consistency
 across multiple devices.
 
 ![Identity][id]
 
+### Setting a passphrase
 The app will also prompt you to create a passphrase. This passphrase *isn't* a
 private key — it is a password that decrypts your keypair to access and publish
-to the Upstream app. You will also be prompted for this passphrase when pushing
+to the Upstream client. You will also be prompted for this passphrase when pushing
 and fetching code from your local machine to the Radicle network via your
 command line.
+
+<blockquote>
+There is no way to recover this passphrase yet, so be sure to keep it in a very safe place!
+</blockquote>
 
 ## Configuring your system
 
 ### Setting up Git
-To create and publish projects to the Radicle network, you must associate your
-commits with an identity by setting a username in Git.
+To create and publish projects to the Radicle network, you must make sure your 
+commits are associated with a username in Git.
 
 You can do so by running the following command:
 
@@ -131,9 +144,9 @@ git config --global user.name "YOUR NAME"
 ```
 For more help, refer to the relevant [Git documentation][gd].
 
-### Adding the Radicle remote helper
+### Adding the remote helper
 To publish code to the Radicle network via the Upstream client, you first have
-to add the Radicle _git remote helper_ to your shell configuration.
+to add the Radicle gitremote-helper to your shell configuration.
 
 - Add `export PATH="$HOME/.radicle/bin:$PATH"` to your shell configuration
 - Restart your shell
@@ -144,16 +157,17 @@ $ which git-remote-rad
 <home path>/.radicle/bin/git-remote-rad
 ```
 
-With the remote helper installed, you will be able to [push changes][pc] to your
-[Radicle installation][ri], which will be published by the Upstream client.
+With the remote helper installed, you will be able to [push changes][pc] from your working copies to your Radicle
+[monorepo][ri] or [fetch changes][fc] from other peers via the `rad` remote. The Radicle Upstream client then publishes these changes to the Radicle network.
 
-To learn how to use Radicle, continue on to the [Using Radicle][ur] section.
+To start using Radicle, continue on to the [Using Radicle][ur] section.
 
 [ur]: using-radicle/overview.md
 [di]: understanding-radicle/glossary.md/#device-id
 [pc]: using-radicle/pushing-changes
+[fc]: using-radicle/fetching-and-merging
 [rg]: understanding-radicle/faq.md#
-[ri]: understanding-radicle/how-it-works.md
+[ri]: understanding-radicle/how-it-works.md/#git-implementation
 [sn]: using-radicle/running-a-seed-node.md
 
 [id]: /img/identity.png
@@ -162,6 +176,7 @@ To learn how to use Radicle, continue on to the [Using Radicle][ur] section.
 [as]: https://support.apple.com/en-us/HT211814
 [aw]: https://support.apple.com/en-gb/guide/mac-help/mh40616/mac
 [bk]: https://buildkite.com/monadic/radicle-upstream/builds/6851
+[bs]: https://github.com/radicle-dev/radicle-upstream/blob/master/DEVELOPMENT.md
 [co]: https://radicle.community
 [gd]: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
 [sd]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
