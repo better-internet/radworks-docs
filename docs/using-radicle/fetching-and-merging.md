@@ -12,7 +12,7 @@ contributions][tv] section.
 If you can see a peer's changes after adding them as a remote, they have been
 successfully replicated to your machine. If you have added
 a peer as a remote and can't see their changes, head over to our
-[Troubleshooting][tr] section.
+[FAQ][fq] section.
 
 ## Fetching changes 
 
@@ -123,7 +123,7 @@ your updates to the project.
 
 Make sure that your client is running when you run `git push rad` to ensure
 changes are successfully published. If you can't see your changes in Radicle
-Upstream, see [Troubleshoooting][tr] for more help.
+Upstream, see the [FAQ][fq] for more help.
 
 
 [pc]: using-radicle/pushing-changes.md
@@ -131,3 +131,4 @@ Upstream, see [Troubleshoooting][tr] for more help.
 [tr]: using-radicle/troubleshooting.md
 [gi]: understanding-radicle/how-it-works.md/#git-implementation
 [gs]: getting-started.md/#configuring-your-system
+[fq]: understanding-radicle/faq.md/#i-cant-find-a-project-on-the-network-or-see-a-peers-changes-what-should-i-do]

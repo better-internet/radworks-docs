@@ -1,6 +1,6 @@
 ---
 id: faq
-title: Frequently Asked Questions
+title: FAQ
 ---
 ## How do I get started?
 Head over to the [Getting Started][gs] section for instructions on how to
@@ -15,7 +15,7 @@ of any peers they are interested in. This also means that within projects, there
 isn't a single `master` branch that contributors merge into. Each peer maintains
 a view of a project with their changesets and branches. These views are gossiped
 around to other peers that are interested in those changes. Read more about the
-implications and approach to this design [here][sm].
+implications and approach to this design [here][ov].
 
 ## How is Radicle more secure than centralized platforms?
 The Radicle network is peer-to-peer and built on public key cryptography. To
@@ -28,9 +28,9 @@ interface components and key oracles to signal trust from user to user, Radicle
 has designed trust into the core of the protocol.
 
 ## How does Radicle interact with Git?
-Radicle Link — the protocol that powers the Radicle network is built on Git. It
-basically uses Git as a database. This means everything is stored in a single
-Git monorepo that is read and written from via the Upstream client. To read more
+Radicle Link — the protocol that powers the Radicle network is built on Git. All
+Radicle data is stored in a single Git monorepo on your machine that is read
+from and written to via the Upstream client. To read more
 about Radicle's Git Implementation, see [How it Works][hw].
 
 ## How is Radicle licensed?
@@ -46,17 +46,17 @@ issues, PRs, and discussions will be more secure, available offline, and stored
 on your machine as git objects — not on a central server!
 
 ## When will CLI tooling be available?
-We're working on it! We will introduce CLI tooling alongside of Upstream
+We're working on it! 🤞 We will introduce CLI tooling alongside of Upstream
 development.
 
 ## Can I backup a GitHub project on Radicle?
 Yes! Publishing a codebase to Radicle is a great way to create a peer-to-peer
 backup of your repositories. Maintaining a mirror of a project on Radicle is as
-simple as pushing to another remote. Read more about [creating and sharing
+simple as pushing to another remote. Read more about [creating
 projects][cp].
 
 ## Can I replace GitHub with Radicle?
-If you want! While our Beta release will have the basic collaboration features
+If you want! While our Beta release will have only the basic collaboration features
 (i.e. code hosting, sharing, checking out, and pushing/pulling), we plan to
 introduce features that could support a similar day-to-day code collaboration
 experience to GitHub. They will include bug reporting, patches, code review, and
@@ -72,9 +72,9 @@ GitHub replica.
 ## Where is my data stored?
 On the Radicle network, content is distributed peer-to-peer via a process called
 gossip. This means that peers self-host their own content — and the content of
-any peers they are interested in — locally on their machine. It also means that
-whenever your data is published to the network, it can be replicated and stored
-on another peer's machine.
+any peers they are interested in — locally on their machine in a [Git monorepo][hw].
+It also means that whenever your data is published to the network, it can be
+replicated and stored on another peer's machine.
 
 ## Can I create private repositories on Radicle?
 No, not yet - but in the future! Private projects with end-to-end encryption are
@@ -82,23 +82,26 @@ on our roadmap. In the meantime, be sure to note that everything you put on
 Radicle will be publicly available.
 
 ## What is a remote?
-A 'remote' refers to a version of your project that is maintained by another
+A remote refers to a version of your project that is maintained by another
 person. To collaborate with others on Radicle, you have to add and follow other
-people's remotes to be able to fetch changes from them. You can manage remotes
+their remotes to be able to fetch changes from them. You can manage remotes
 on your project page (See [Adding Remotes][ar]). For more on how remote
 repositories work, see the [Git documentation][mr].
 
 ## What's a Radicle ID?
-A Radicle ID is a unique way to identify projects in the Radicle Network. You
-use a project's Radicle ID to find it on Radicle Upstream.
+A Radicle ID is a unique way of identifying projects in the Radicle Network.
+You can find it on a project's page or on the [seed node dashboard][sn]. You
+use a project's Radicle ID to find it via Radicle Upstream.
 
 ## What's a Device ID?
-A Device ID is the encoding of a peer's public key tied to a specific device.
-People will be able to manage multiple Device IDs in the future, but for now can
+A Device ID is the encoding of a peer's public key that is tied to a specific device.
+People will be able to manage multiple Device IDs in the future, but for now you can
 only have one Device ID per identity.
 
-## What does `following` mean in Radicle?
-Following a project replicates its data to your machine. This allows the
+To be [added as a remote][ar] to a project, you need to share your Device ID.
+
+## What does following mean in Radicle?
+Following a project replicates its data to your machine by tracking it. This allows the
 follower to subscribe to updates from the project's maintainer(s) or other
 remotes. It is also a way to signal interest in the project or peer by further
 replicating the data across their network, making it available to other people
@@ -119,7 +122,10 @@ Without your passphrase, there is no way to grant the Upstream client access to
 your secret key. This means that without your passphrase, there is no way to
 access or publish data to the Radicle network - so make sure you keep it safe!
 
-## I can't find a project on the network. What should I do?
+## Can I change my passphrase?
+Not yet — so make sure to keep it in a safe place!
+
+## I can't find a project on the network or see a peer's changes. What should I do?
 First, check to see if you are connected to the seed node by hovering over the
 Connection Status icon in your toolbar. If you are connected to one or more
 peer, navigate to the seed node dashboard (e.g. seedling.radicle.xyz) to see if
@@ -134,18 +140,9 @@ found, try refreshing the app. Wait one minute before restarting the app again.
 If you are still running into problems, please submit a request in our [#support
 channel][sc].
 
-## Why am I only connected to one peer?
-
-
-## Can I run Radicle as a daemon?
-
-
-## Why do I have to enter my password everytime?
-
-
 ## I ran into a issue, where can I report it?
-Please submit a support request our #support channel, or submit an issue on our
-GitHub repository.
+Please reach out to us in our [#support channel][sc], or submit an issue on our
+[GitHub repository][gh].
 
 ## I need some help, where do I reach out?
 For help, join our #support channel in our Matrix chat or in the Help category
@@ -157,22 +154,25 @@ To join our Matrix chat, follow these steps:
 * Go to https://matrix.radicle.community
 * Create an account
 * Verify your account by email
-* Join the #general and #support rooms
+* Join the [community page][cp]
 
 To join our Matrix chat with an account from another Matrix server, you can use
 this [direct invite link][mc] to join #general.
 
 [ar]: using-radicle/tracking-and-viewing.md
 [cp]: using-radicle/creating-projects.md
+[ov]: using-radicle/overview.md
 [gs]: getting-started.md
-[hw]: how-it-works.md
+[hw]: how-it-works.md/#git-implementation
 [tr]: how-it-works.md/#tracking
 
 [sd]: /img/seed-dashboard-search.png
 
+[cp]: https://matrix.to/#/+home:radicle.community
+[gh]: https://github.com/radicle-dev/radicle-upstream/issues
 [ls]: https://radicle.community/t/radicle-licensing-model/282/8
+[mc]: https://matrix.to/#/#general:radicle.community
 [mr]: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
 [sc]: https://matrix.to/#/#support:radicle.community
 [sm]: https://radicle.community/
-
-[mc]: https://matrix.to/#/#general:radicle.community
+[sn]: http://seedling.radicle.xyz/

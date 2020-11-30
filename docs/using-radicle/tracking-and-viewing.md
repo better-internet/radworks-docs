@@ -31,10 +31,9 @@ peer's changes to your project. Until then, you'll have to manage remotes
 manually. 
 
 If you are having trouble adding another peer as a remote, see our
-[troubleshooting][tr] guide.
+[FAQ][fq].
 
-[tr]: troubleshooting.md
-
+[fq]: understanding-radicle/faq.md/#i-cant-find-a-project-on-the-network-or-see-a-peers-changes-what-should-i-do
 [id]: /img/radicle-id-seed-node.png
 [ps]: /img/peer-switcher.png
 [sb]: /img/search-bar.png
