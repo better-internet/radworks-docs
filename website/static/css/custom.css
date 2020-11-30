@@ -161,6 +161,9 @@ details:hover {
   .navPusher {
     padding-top: 90px;
   }
+  .tocActive .onPageNav {
+    top: 138px;
+  }
   .navigationSlider .slidingNav ul li a {
     border-radius: 0;
   }
