@@ -37,11 +37,25 @@ and merging contributions][fm]).
 You are able to clone your project with the **Checkout** option on your project
 page.
 
+## Getting a contribution merged
+
+Once you [push changes][pc] to a fork of a project and they've been successfully
+published to the network, they can be replicated by other peers. For another
+peer (e.g. the maintainer of a project) to see your changes, they need to add
+you as a remote to their projects. This means that until [social coding features
+are introduced][fq], you'll have to manually communicate your patches to the
+maintainer of a project by sending them your Device ID. This can be done through
+email, a developer chat, or social media channel. 
+
+If you are a maintainer of a project, it is suggested that you provide a link to
+a channel for receiving contributor Device IDs.
+
 [tv]: tracking-and-viewing.md
 [fm]: fetching-and-merging.md
 [pc]: pushing-changes.md
 [pn]: understanding-radicle/glossary.md/#project-name
 [ri]: understanding-radicle/glossary.md/#radicle-id
+[fq]: understanding-radicle/faq.md/#how-will-issues-and-prs-work
 
 [id]: /img/radicle-id-seed-node.png
 [ps]: /img/peer-switcher.png
