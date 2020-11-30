@@ -5,7 +5,7 @@ title: Creating projects
 
 Creating a project is as easy as initializing a repository in Git. In the
 Upstream client, you can create a project from scratch or from an existing
-repository. Creating a project on Radicle will publish it to the network, making
+repository. Creating a project on Upstream will publish it to the Radicle network, making
 it available to any of your connected peers.
 
 ## Starting a new project
@@ -24,7 +24,7 @@ peers.
 
 ## Publishing an existing project
 
-If you have a repository that you'd like to publish to the Radicle network,
+If you have a repository that you'd like to publish to the network,
 choose the `Create from an existing repository` in the **Start a new project**
 modal. This will allow you to choose the repository and its configured default
 branch. All branches present when you add the repository will be published.
@@ -44,9 +44,9 @@ you will be able to see it under the **Projects** section of the seed dashboard.
 
 In Radicle, local Git repositories are published and shared as [projects][pr].
 This is done via the Radicle monorepo on your machine, which pulls in updates to
-your local working copies, and stores them as Git objects. A client (like
-Radicle Upstream) then publishes changes to your monorepo to the Radicle
-network, making it available to your network of connected peers.
+your local working copies and stores them as Git objects. A client (like Radicle
+Upstream) then publishes changes to your monorepo to Radicle, making it
+available to your network of connected peers.
 
 Projects contain all files of a Git repository and their revision history, but
 they also have associated Radicle-speciifc metadata such as a name and

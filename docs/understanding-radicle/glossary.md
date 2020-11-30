@@ -97,7 +97,7 @@ The network of peers that replicate and gossip data with Radicle Link.
 An open-source desktop application (graphic [user][us] interface, GUI) built to
 interact with and enable access to the Radicle Network and, initially, the
 primary end-[user][us] experience. However, in the future, it will be one of
-many potential clients that [user][us]s can use to access the Radicle Network.
+many potential clients that [user][us]s can use to access the Radicle network.
 
 ## remote
 Another peer's view of a project. Remotes can be pulled/fetched from.

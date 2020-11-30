@@ -5,7 +5,7 @@ title: Overview
 
 ## How do I collaborate on Radicle?
 
-Radicle Link is designed for bazaar-style development. This means that there is
+Radicle is designed for bazaar-style development. This means that there is
 no single canonical view (e.g. master) of any project, but multiple upstreams
 maintained by maintainers and contributors that exchange patches with each
 other.
@@ -32,10 +32,10 @@ how Radicle is built on Git see our [**How it Works**][gi] section
 
 The introduction of social coding features like bug reporting, patches, and code
 review will improve the process of finding and fetching changes between people
-on the Radicle network by making it easier to know those changes exist in the
+on the network by making it easier to know those changes exist in the
 first place.
 
-To help make Radicle's collaboration model easier to understand, here are some
+To help make this collaboration model easier to understand, here are some
 guides for answering some common questions we get on how to use Radicle:
 
 * [How do I publish a project?][1]
