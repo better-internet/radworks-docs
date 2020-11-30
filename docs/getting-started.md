@@ -11,7 +11,8 @@ desktop client.
 
 Radicle development is public by default and completely open-source. You can
 follow along development in our [Matrix channel][mc] or on
-[radicle.community][co]. For more information on our community channels, see [Join our Community][cc].
+[radicle.community][co]. For more information on our community channels, see
+[Join our Community][cc].
 
 <details>
   <summary><b>DISCLAIMER 🌱</b></summary>
