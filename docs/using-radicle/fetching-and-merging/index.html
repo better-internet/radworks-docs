@@ -57,19 +57,19 @@
         </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Fetching and merging contributions</h1></header><article><div><span><p>To be able to collaborate on a Radicle project, you need to know how to fetch
 and merge contributions from other people. To fetch and merge changes from a
 contributor, you first need to add them as a remote to your project. If you
-haven't done so, then first follow the steps in <a href="/docs/using-radicle/tracking-and-viewing">Tracking &amp; viewing
+haven't done so, follow the instructions in <a href="/docs/using-radicle/tracking-and-viewing">Tracking &amp; viewing
 contributions</a> section.</p>
-<p>If you can see your a tracked peer's changes after adding them as a remote, this
-means they have been successfully replicated to your machine. If you have added
+<p>If you can see a peer's changes after adding them as a remote, they have been
+successfully replicated to your machine. If you have added
 a peer as a remote and can't see their changes, head over to our
 <a href="/docs/using-radicle/troubleshooting">Troubleshooting</a> section.</p>
 <h2><a class="anchor" aria-hidden="true" id="fetching-changes"></a><a href="#fetching-changes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Fetching changes</h2>
 <p>If you're interested in merging these changes into one of your branches, you'll
-need to fetch these commits into your working copy. To make sure you can fetch
-or push changes, you need to add the <a href="/docs/getting-started/#configuring-your-system"><code>git-rad-remote</code> helper</a> to your
+need to fetch these commits and merge them into your working copy. To make sure you can fetch
+and push changes, you need to add the <a href="/docs/getting-started/#configuring-your-system"><code>git-rad-remote</code> helper</a> to your
 <code>$PATH</code>.</p>
 <p>Navigate to your woking copy in a terminal. Here you can inspect the remotes of
-your project by running the <code>git remote</code> command. For example, a project that
+your project by running <code>git remote show</code>. For example, a project that
 tracks multiple people might look something like this.</p>
 <pre><code class="hljs">$ git remote <span class="hljs-keyword">show</span>
 fintohaps<span class="hljs-meta">@hybaapjdrhj</span>8mg4mathpwjaeuktfzxd8uqfpjknp65fyncehpxxzze
@@ -80,15 +80,7 @@ rad
 <pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">display</span> <span class="hljs-attr">name</span>&gt;</span>@<span class="hljs-tag">&lt;<span class="hljs-name">Device</span> <span class="hljs-attr">ID</span>&gt;</span>
 </code></pre>
 <p>where the display name is the name you see when you add a Device ID to your peer
-selector in Upstream.</p>
-<p>You may be used to the concept of setting up an <code>origin</code> remote for a project
-when pushing to a centrally hosted platform like GitHub. This allows you to
-fetch and push changes from the server that hosts your project. In Radicle,
-these remotes point to the Git monorepo on your machine that stores all of your
-Radicle data. They allow you to fetch changes from your peers and push your
-changes. This means that fetching and pushing to remotes are <em>local first</em>
-actions. To read more about how Radicle is built on Git see our <a href="/docs/understanding-radicle/how-it-works/#git-implementation"><strong>How it
-Works</strong></a> section.</p>
+selector in Radicle Upstream.</p>
 <p>To fetch the changes of a specific remote, run the <code>git fetch</code> command with
 their remote handle:</p>
 <pre><code class="hljs">$ git fetch <span class="hljs-symbol">merle@</span>hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g
@@ -109,8 +101,8 @@ main
 remotes<span class="hljs-regexp">/merle@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g/m</span>ain
 remotes<span class="hljs-regexp">/rad/m</span>ain
 </code></pre>
-<p>Once changes have been fetched, you can view the changes by getting a diff of
-your changes:</p>
+<p>Once changes have been fetched, you can view the changes by running <code>git diff</code>
+on the specific branch of your remote (e.g. <code>&lt;remote handle&gt;/&lt;branch name&gt;</code>):</p>
 <pre><code class="hljs">$ git diff merle@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g/main 
 diff --git a/<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">README</span>.</span></span>md b/<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">README</span>.</span></span>md
 index b72e7d4..<span class="hljs-number">8</span>c98464 <span class="hljs-number">100644</span>
@@ -131,9 +123,8 @@ index b72e7d4..<span class="hljs-number">8</span>c98464 <span class="hljs-number
 Successfully rebased <span class="hljs-keyword">and</span> updated <span class="hljs-built_in">ref</span>s/heads/main.
 </code></pre>
 <p>This puts your working copy in a state this up-to-date with your contributor's
-changes. Once you have pushed changes to your working copy, you can view the
-changes in <strong>Radicle Upstream</strong>.</p>
-<p>You can publish these changes to the Radicle network by running <code>git push rad</code>(See <a href="/docs/using-radicle/pushing-changes">Pushing changes</a>):</p>
+changes. Once you have commited changes to your working copy, you can publish
+them changes to the Radicle network by running <code>git push rad</code>(See <a href="/docs/using-radicle/pushing-changes">Pushing changes</a>):</p>
 <pre><code class="hljs">$ git push rad main
 Enumerating objects: <span class="hljs-number">2</span>, done.
 Counting objects: <span class="hljs-number">100</span>% (<span class="hljs-number">2</span>/<span class="hljs-number">2</span>), done.

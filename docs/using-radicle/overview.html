@@ -55,25 +55,31 @@
               }
             });
         </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Overview</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="how-do-i-collaborate-on-radicle"></a><a href="#how-do-i-collaborate-on-radicle" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How do I collaborate on Radicle?</h2>
-<p>As a result of its <a href="/docs/what-is-radicle/#how-is-radicle-different-from-github">design</a>, Radicle Link supports a bazaar-style development model
-where there is no single canonical view of any project, but multiple upstreams
+<p>Radicle Link is designed for bazaar-style development. This means that there is
+no single canonical view (e.g. master) of any project, but multiple upstreams
 maintained by maintainers and contributors that exchange patches with each
 other.</p>
 <p>Within the same project, two people will have subjective (and often diverging
 views), but <em>your</em> view of the project becomes the sum of all other views of the
-project. This means that when you find and follow a project on Radicle, you are
-not only able to replicate the maintainer's view of the project, but all other
-contributor's views as well. Conceptually, the project becomes decentralized
+project. Conceptually, the project becomes decentralized
 among the many views of it's maintainers and contributors, instead of being
-confined to the control of a small group of people with access.</p>
-<p>In practice, this means that to fetch and receive changes to your project, you
+confined to the control of a small group of people with read/write access.</p>
+<p>In practice, this means that to fetch and receive changes from contributors, you
 have to <strong>add other people as remotes to your project</strong>. Adding someone as a
 remote automatically tracks them, giving you a way to continuously subscribe to
-updates they make to their view of the project (i.e. new commits).</p>
-<p>The introduction of social coding features like bug reporting, patches, and
-discussions will improve the process of finding and fetching changes between
-people on the Radicle network by making it easier to know those changes exist in
-the first place.</p>
+the updates they make to your project (i.e. new commits).</p>
+<p>You may be used to the concept of setting up an <code>origin</code> remote for a project
+when pushing to a centrally hosted platform like GitHub. This allows you to
+fetch and push changes from the server that hosts your project. In
+Radicle, remotes of other peers point to the Git monorepo on your machine that
+stores all of your Radicle data. These remotes allow you to fetch changes from
+your peers and publish your changes to the Radicle network. This means that
+fetching and pushing to remotes are <em>local first</em> actions. To read more about
+how Radicle is built on Git see our [<strong>How it Works</strong>][gi] section</p>
+<p>The introduction of social coding features like bug reporting, patches, and code
+review will improve the process of finding and fetching changes between people
+on the Radicle network by making it easier to know those changes exist in the
+first place.</p>
 <p>To help make Radicle's collaboration model easier to understand, here are some
 guides for answering some common questions we get on how to use Radicle:</p>
 <ul>
