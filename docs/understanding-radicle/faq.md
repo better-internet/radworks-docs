@@ -150,7 +150,7 @@ channel][sc].
 
 
 ## I ran into a issue, where can I report it?
-Please submit a support request our [#support channel][sc], or submit an issue on our
+Please reach out to us in our [#support channel][sc], or submit an issue on our
 [GitHub repository][gh].
 
 ## I need some help, where do I reach out?
