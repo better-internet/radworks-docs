@@ -140,15 +140,6 @@ found, try refreshing the app. Wait one minute before restarting the app again.
 If you are still running into problems, please submit a request in our [#support
 channel][sc].
 
-## Why am I only connected to one peer?
-
-
-## Can I run Radicle as a daemon?
-
-
-## Why do I have to enter my password everytime?
-
-
 ## I ran into a issue, where can I report it?
 Please reach out to us in our [#support channel][sc], or submit an issue on our
 [GitHub repository][gh].
