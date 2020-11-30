@@ -46,6 +46,7 @@ guides for answering some common questions we get on how to use Radicle:
 * [How do I find other projects?][6]
 * [How do I contribute to a project?][7]
 
+For more help on using Radicle, be sure to join our [community channels].
 
 [1]: using-radicle/creating-projects.md
 [2]: using-radicle/pushing-changes.md
@@ -55,6 +56,9 @@ guides for answering some common questions we get on how to use Radicle:
 [6]: using-radicle/contributing.md
 [7]: using-radicle/contributing.md
 
+[cc]: using-radicle/community.md
+
 [dr]: radicle.md/#how-is-radicle-different-from-github
 [rp]: https://radicle.xyz/radicle-link.html
 [rl]: https://github.com/radicle-dev/radicle-link
+
