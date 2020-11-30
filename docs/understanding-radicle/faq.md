@@ -157,7 +157,8 @@ To join our Matrix chat, follow these steps:
 * Join the [community page][cp]
 
 To join our Matrix chat with an account from another Matrix server, you can use
-this [direct invite link][mc] to join #general.
+this [direct invite link][mc] to join #general. For more information on our
+community channels see [Join our Community][cc].
 
 [ar]: using-radicle/tracking-and-viewing.md
 [cp]: using-radicle/creating-projects.md
@@ -165,6 +166,7 @@ this [direct invite link][mc] to join #general.
 [gs]: getting-started.md
 [hw]: how-it-works.md/#git-implementation
 [tr]: how-it-works.md/#tracking
+[cc]: using-radicle/community.md
 
 [sd]: /img/seed-dashboard-search.png
 
