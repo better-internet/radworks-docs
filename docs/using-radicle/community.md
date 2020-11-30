@@ -18,8 +18,8 @@ can find a list of our available rooms.
 requests into GitHub
 
 ### Join our [community forum][cf]
-_For longer-form discussions. This includes feature requests, development
-decisions, and general discussions_
+_For longer-form discussions on feature requests, development
+decisions, and other general topics_
 
 ### Subscribe to our [telegram channel][tc]
 _For announcements from the Radicle project_
