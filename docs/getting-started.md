@@ -164,9 +164,7 @@ To start using Radicle, continue on to the [Using Radicle][ur] section.
 
 [id]: /img/identity.png
 
-[an]: https://developer.apple.com/documentation/xcode/notarizing_macos_software_before_distribution
 [as]: https://support.apple.com/en-us/HT211814
-[aw]: https://support.apple.com/en-gb/guide/mac-help/mh40616/mac
 [bs]: https://github.com/radicle-dev/radicle-upstream/blob/master/DEVELOPMENT.md
 [co]: https://radicle.community
 [gd]: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
