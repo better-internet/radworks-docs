@@ -172,7 +172,7 @@ To join our Matrix chat with an account from another Matrix server, you can use
 this [direct invite link][mc] to join #general.
 
 ## Can I run Radicle as a daemon?
-While technically possible we haven't bundled it yet in a convenient package
+While technically possible, we haven't bundled it yet in a convenient package
 for anyone to run in the background. We are working hard to change that so we can
 help people operate Radicle nodes in many different ways. Should you be keen to
 have it as a daemon right now, check out how the [seed][si[ is implemented, and
