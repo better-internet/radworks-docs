@@ -725,7 +725,7 @@ Read more about the [Radicle collaboration model][rc].
 [ns]: https://git-scm.com/docs/gitnamespaces
 [r3]: https://tools.ietf.org/html/rfc3986
 [r8]: https://tools.ietf.org/html/rfc8141
-[rc]: https://www.notion.so/monadic/The-Radicle-Social-Model-c661231746b04be09b9739f4e3f005c0
+[rc]: https://radicle.community/t/the-radicle-social-model/317
 [sc]: https://github.com/radicle-dev/radicle-link/blob/master/spec/radicle-link.md#cryptographic-identities
 [se]: https://github.com/radicle-dev/radicle-link/blob/master/docs/spec/identities.md#serialisation
 [sp]: https://github.com/radicle-dev/radicle-link/blob/9e1cfdf8bbb77a31f9a4c39352cf6faea220afc2/docs/spec/identities.md
