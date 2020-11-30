@@ -41,8 +41,8 @@ page.
 
 Once you [push changes][pc] to a fork of a project and they've been successfully
 published to the network, they can be replicated by other peers. For another
-peer (e.g. the maintainer of a project) to see your changes, they need to add
-you as a remote to their projects. This means that until [social coding features
+peer (e.g. the maintainer of a project) to see your changes, they need to [add
+you as a remote][fm] to their projects. This means that until [social coding features
 are introduced][fq], you'll have to manually communicate your patches to the
 maintainer of a project by sending them your Device ID. This can be done through
 email, a developer chat, or social media channel. 
