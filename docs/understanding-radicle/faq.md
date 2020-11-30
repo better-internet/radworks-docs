@@ -125,6 +125,12 @@ access or publish data to the Radicle network - so make sure you keep it safe!
 ## Can I change my passphrase?
 Not yet — so make sure to keep it in a safe place!
 
+## Why do I have to enter my passphrase everytime?
+Interactions through Git and the remote helper are adhoc and don't have the
+benefit of a long-running daemon - i.e. Upstream client. That means for now the
+passphrase as to be provided every time you interact with Radicle outside of
+a client.
+
 ## I can't find a project on the network or see a peer's changes. What should I do?
 First, check to see if you are connected to the seed node by hovering over the
 Connection Status icon in your toolbar. If you are connected to one or more
@@ -139,6 +145,12 @@ found, try refreshing the app. Wait one minute before restarting the app again.
 
 If you are still running into problems, please submit a request in our [#support
 channel][sc].
+
+## Why am I only connected to one peer?
+By default the Upstream client is conecting to a seed node operated by Radicle.
+While we support [epidemic broadcast][eb] to find and connect to other peers, we
+have support [hole punching][hp] just yet, which will prevent a stable conenction
+between two computers.
 
 ## I ran into a issue, where can I report it?
 Please reach out to us in our [#support channel][sc], or submit an issue on our
@@ -159,6 +171,13 @@ To join our Matrix chat, follow these steps:
 To join our Matrix chat with an account from another Matrix server, you can use
 this [direct invite link][mc] to join #general.
 
+## Can I run Radicle as a daemon?
+While technically possible we haven't bundled it yet in a convenient package
+for anyone to run in the background. We are working hard to change that and
+help people operate Radicle peers in many different ways. Should you be keen to
+have it as a daemon right, check out how the [seed][si[ is implemented and try to run
+your own.
+ 
 [ar]: using-radicle/tracking-and-viewing.md
 [cp]: using-radicle/creating-projects.md
 [ov]: using-radicle/overview.md
@@ -169,10 +188,13 @@ this [direct invite link][mc] to join #general.
 [sd]: /img/seed-dashboard-search.png
 
 [cp]: https://matrix.to/#/+home:radicle.community
+[eb]: https://en.wikipedia.org/wiki/Gossip_protocol
 [gh]: https://github.com/radicle-dev/radicle-upstream/issues
+[hp]: https://en.wikipedia.org/wiki/Hole_punching_(networking)
 [ls]: https://radicle.community/t/radicle-licensing-model/282/8
 [mc]: https://matrix.to/#/#general:radicle.community
 [mr]: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
 [sc]: https://matrix.to/#/#support:radicle.community
+[si]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
 [sm]: https://radicle.community/
 [sn]: http://seedling.radicle.xyz/
