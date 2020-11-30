@@ -126,9 +126,9 @@ access or publish data to the Radicle network - so make sure you keep it safe!
 Not yet — so make sure to keep it in a safe place!
 
 ## Why do I have to enter my passphrase everytime?
-Interactions through Git and the remote helper are adhoc and don't have the
+Interactions through Git and the remote helper are ad-hoc and don't have the
 benefit of a long-running daemon - i.e. Upstream client. That means for now the
-passphrase as to be provided every time you interact with Radicle outside of
+passphrase has to be provided every time you interact with Radicle outside of
 a client.
 
 ## I can't find a project on the network or see a peer's changes. What should I do?
@@ -147,9 +147,9 @@ If you are still running into problems, please submit a request in our [#support
 channel][sc].
 
 ## Why am I only connected to one peer?
-By default the Upstream client is conecting to a seed node operated by Radicle.
+By default, the Upstream client is conecting to a seed node operated by Radicle.
 While we support [epidemic broadcast][eb] to find and connect to other peers, we
-have support [hole punching][hp] just yet, which will prevent a stable conenction
+don't have support for [hole punching][hp] just yet, which will prevent a stable conenction
 between two computers.
 
 ## I ran into a issue, where can I report it?
@@ -173,10 +173,10 @@ this [direct invite link][mc] to join #general.
 
 ## Can I run Radicle as a daemon?
 While technically possible we haven't bundled it yet in a convenient package
-for anyone to run in the background. We are working hard to change that and
-help people operate Radicle peers in many different ways. Should you be keen to
-have it as a daemon right, check out how the [seed][si[ is implemented and try to run
-your own.
+for anyone to run in the background. We are working hard to change that so we can
+help people operate Radicle nodes in many different ways. Should you be keen to
+have it as a daemon right now, check out how the [seed][si[ is implemented, and
+try to run your own.
  
 [ar]: using-radicle/tracking-and-viewing.md
 [cp]: using-radicle/creating-projects.md
