@@ -9,7 +9,7 @@ To get involved with the Radicle project, start by joining our community channel
 _For real-time discussion on everything related to Radicle_
 
 The best way to join our chat is by making an account on
-matrix.radicle.community and joining our [community homepage]. This is where you
+matrix.radicle.community and joining our [community homepage][mc]. This is where you
 can find a list of our available rooms. 
 
 → [**#general**][gn] for introductions and general discussions
