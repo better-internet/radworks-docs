@@ -38,4 +38,3 @@ _For announcements and release updates_
 [tl]: https://twitter.com/radicle
 [el]: http://eepurl.com/hhHxMX
 [tc]: https://t.me/joinchat/AAAAAFI8OTFiRiOWm8nTHg
-
