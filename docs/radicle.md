@@ -45,7 +45,7 @@ For more on Radicle Link, check out the [Understanding Radicle][wh] section.
 ## How is Radicle different from GitHub?
 
 When coming to Radicle from a centralized code collaboration platform like
-Github or Gitlab, you might notice that Radicle priotizes different concerns. Concretely:
+Github or Gitlab, you might notice that it prioritizes different concerns. Concretely:
 
 - People being in control of their identity
 - People being in control of their content
@@ -74,7 +74,7 @@ the founding team of the Radicle project. With Upstream, you can create an
 identity, host your code, and collaborate with others on the Radicle network.
 
 Head over to [Getting Started][gs] for a walkthrough on how to download Upstream
-and become a part of the Radicle network.
+and become a part of the network.
 
 
 [fa]: understanding-radicle/faq.md

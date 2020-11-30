@@ -3,7 +3,7 @@ id: contributing
 title: Contributing to projects
 ---
 
-To contribute to another user's project, you must first find it on the Radicle
+To contribute to another user's project, you must first find it on the
 network. To find a project, you need its [**Radicle ID**][ri]. This can be found
 in the project page under the project name, or in a seed node dashboard such as
 [seedling.radicle.xyz](seedling.radicle.xyz).
@@ -29,7 +29,7 @@ local machine and publish your version to the Radicle network as a new project.
 Forking a project will move it from the **Following** tab to the **Projects**
 tab. This is because once you fork a project, you create your own view of
 it that is unique to your Device ID. You can [push changes][pc] to this view via
-the `rad` remote and publish them to the Radicle network. If another person has
+the `rad` remote and publish them to the network. If another person has
 added you as a remote (See [Tracking & viewing contributions][tv]), they will be
 able to fetch these changes and merge them into their branches (See [Fetching
 and merging contributions][fm]).

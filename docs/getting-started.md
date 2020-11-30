@@ -110,7 +110,7 @@ you can trying [building Radicle Upstream from source][bs].
 
 
 ## Creating an identity
-To create an identity on the Radicle network, use the Radicle Upstream client.
+To create an identity on the Radicle network, use the Upstream client.
 After choosing a display name and setting a passphrase, it will generate a
 unique identifier — known as a [**Device ID**][di] — that's paired to the
 computer you've installed it on. 
@@ -122,10 +122,10 @@ user handle, enabling support and consistency across multiple devices.
 ![Identity][id]
 
 ### Setting a passphrase
-The app will also prompt you to create a passphrase. This passphrase *isn't* a
+The client will also prompt you to create a passphrase. This passphrase *isn't* a
 private key — it is a password that decrypts your keypair to access and publish
-to the Upstream client. You will also be prompted for this passphrase when
-pushing and fetching code from your local machine to the Radicle network via
+to the network. You will also be prompted for this passphrase when
+pushing and fetching code from your local machine to Radicle via
 your command line.
 
 <blockquote>
@@ -136,7 +136,7 @@ safe place!
 ## Configuring your system
 
 ### Setting up Git
-To create and publish projects to the Radicle network, you must make sure your
+To create and publish projects to the network, you must make sure your
 commits are associated with a username in Git.
 
 You can do so by running the following command:
@@ -147,7 +147,7 @@ git config --global user.name "YOUR NAME"
 For more help, refer to the relevant [Git documentation][gd].
 
 ### Adding the remote helper
-To publish code to the Radicle network via the Upstream client, you first have
+To publish code to the network via the Upstream client, you first have
 to add the Radicle gitremote-helper to your shell configuration.
 
 - Add `export PATH="$HOME/.radicle/bin:$PATH"` to your shell configuration
@@ -161,8 +161,8 @@ $ which git-remote-rad
 
 With the remote helper installed, you will be able to [push changes][pc] from
 your working copies to your Radicle [monorepo][ri] or [fetch changes][fc] from
-other peers via the `rad` remote. The Radicle Upstream client then publishes
-these changes to the Radicle network.
+other peers via the `rad` remote. The Upstream client then publishes
+these changes to the network.
 
 To start using Radicle, continue on to the [Using Radicle][ur] section.
 

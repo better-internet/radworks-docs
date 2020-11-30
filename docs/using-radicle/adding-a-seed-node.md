@@ -4,7 +4,7 @@ title: Adding a custom seed node
 ---
 
 Seed nodes are "always-on" nodes running on public IP addresses that serve data
-to connected peers. When you add a seed to Radicle Upstream, it will
+to connected peers. When you add a seed to Upstream, it will
 automatically track you and share your data across its network of other
 connected peers [^1]. This increases the availability of your data throughout
 the network, while making it easier to find others data as well. Upstream is
@@ -20,7 +20,7 @@ custom seed address, you can do so by following these steps:
 2. Paste the seed address into the input box and submit by pressing
    <kbd>RETURN</kbd>.
 
-    Radicle Upstream's default seed node:
+    Upstream's default seed node:
     `hynewpywqj6x4mxgj7sojhue3erucyexiyhobxx4du9w66hxhbfqbw@seedling.radicle.xyz:12345`
 
 3. Check that you're connected by hovering over your Connection icon in your

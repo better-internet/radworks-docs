@@ -7,12 +7,12 @@ To push code to Radicle, you first need to add the Radicle remote helper to your
 shell configuration. If you haven't done so, follow the instructions in the
 [Getting Started][gs] section.
 
-After the Radicle remote helper is configured, navigate to the working copy of
+After the remote helper is configured, navigate to the working copy of
 your project. You can see the branches of your project with `git branch -a` or
 the remotes with `git remote show`. 
 
 After changes are made and commited to a branch, they need to be published to
-the Radicle network so they can be found and replicated by peers. To do so,
+the network so they can be found and replicated by peers. To do so,
 changes need to be pushed to the `rad` remote — similar to what you would do
 with any other Git code hosting platform. The `rad` remote points to your
 monorepo where all Radicle data is stored.
@@ -29,7 +29,7 @@ For help using Git, please refer to the [relevant documentation][rd].
 
 <blockquote>
 It's important to note that once changes are pushed to the Radicle remote, they
-are published to the Radicle network and will be publicly available to anybody
+are published to the network and will be publicly available to anybody
 you are connected with. While you can push to the Radicle remote while offline,
 updates are only published to the network if the Upstream client is running.
 </blockquote>
