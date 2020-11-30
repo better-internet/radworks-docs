@@ -32,7 +32,11 @@ branch. All branches present when you add the repository will be published.
 ![Start Existing Project][ep]
 
 The name of the project on the network will be taken from the name of the
-repository.
+repository. 
+
+⚠️ On project creation, **all branches that have a local head will be
+published**. You can see what branches will be published by running `git branch
+-a`.
 
 To see if your project was published correctly, you can search for it on the
 [Radicle seed dashboard][sn]. If it has been correctly replicated by the seed,

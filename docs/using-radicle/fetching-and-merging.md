@@ -68,6 +68,7 @@ remotes/merle@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g/main
 remotes/rad/main
 ```
 
+## Merging Changes
 
 Once changes have been fetched, you can view the changes by running `git diff`
 on the specific branch of your remote (e.g. `<remote handle>/<branch name>`):
