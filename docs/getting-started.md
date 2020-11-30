@@ -51,9 +51,13 @@ follow along development in our [Matrix channel][mc] or on
 ### Supported Platforms
 
 Radicle Upstream is available for download on Linux and macOS (version 10.14 and
-newer). 
+newer).
 
-**-> [Download Radicle Upstream][bk]**
+**→ [Download Radicle Upstream for Linux (AppImage)][d1]**
+
+**→ [Download Radicle Upstream for Linux (snap)][d2]**
+
+**→ [Download Radicle Upstream for macOS (dmg)][d3]**
 
 Once you've downloaded the binary for your respective platform, start it like
 this:
@@ -65,11 +69,6 @@ this:
 
 #### On macOS:
 
-**Note**: before you can start Upstream for the first time, you'll have to
-perform some extra steps. This is because we haven't set up [Apple
-notarization][an] for Upstream yet — read more about it [here][aw]. You'll only
-have to do this once -- the first time you launch the app.
-
 1. Open the `radicle-upstream-x.x.x.dmg` package and install Upstream by
    dragging the `Radicle Upstream` binary to the `/Applications` folder.
 
@@ -78,26 +77,12 @@ have to do this once -- the first time you launch the app.
   <source src="/img/macOS-install.mp4" type="video/mp4">
 </video>
 
-2. Open `/Applications` in finder, locate the `Radicle Upstream` app and
-   right-click it, then select `Open` from the context menu. You should see a
-   dialog with two buttons `Move to Bin` and `Cancel`.
-
-3. Dismiss the dialog by clicking `Cancel` to bypass macOS security measures
-   which disallow running unsigned binaries. Repeat the previous step. You
-   should now see three buttons: `Move to Bin`, `Open` and `Cancel`, click
-   `Open`.
-
-<video style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
-  playsinline autoplay muted loop>
-  <source src="/img/macOS-open.mp4" type="video/mp4">
-</video>
-
 If you are installing on a [Mac computer with Apple Silicon ][as] please note
 that you may experience issues as Radicle Upstream has not been tested on the
 Apple Silicon platform.
 
 <blockquote>
-While we will be participating in the Apple Developer Program to ensure
+While we are participating in the Apple Developer Program to ensure
 accessibility to our macOS users, we do not agree with Apple's financial
 gatekeeping and increasing control over application distribution on their
 platform. Forcing developers to "pay-to-play" under the guise of a security
@@ -167,6 +152,9 @@ these changes to the Radicle network.
 To start using Radicle, continue on to the [Using Radicle][ur] section.
 
 [ur]: using-radicle/overview.md
+[d1]: https://storage.googleapis.com/builds.radicle.xyz/releases/radicle-upstream/0.1.3/radicle-upstream-0.1.3.AppImage
+[d2]: https://storage.googleapis.com/builds.radicle.xyz/releases/radicle-upstream/0.1.3/radicle-upstream-0.1.3.snap
+[d3]: https://storage.googleapis.com/builds.radicle.xyz/releases/radicle-upstream/0.1.3/radicle-upstream-0.1.3.dmg
 [di]: understanding-radicle/glossary.md/#device-id
 [pc]: using-radicle/pushing-changes
 [fc]: using-radicle/fetching-and-merging
@@ -179,7 +167,6 @@ To start using Radicle, continue on to the [Using Radicle][ur] section.
 [an]: https://developer.apple.com/documentation/xcode/notarizing_macos_software_before_distribution
 [as]: https://support.apple.com/en-us/HT211814
 [aw]: https://support.apple.com/en-gb/guide/mac-help/mh40616/mac
-[bk]: https://buildkite.com/monadic/radicle-upstream/builds/6851
 [bs]: https://github.com/radicle-dev/radicle-upstream/blob/master/DEVELOPMENT.md
 [co]: https://radicle.community
 [gd]: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
