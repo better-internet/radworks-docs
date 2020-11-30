@@ -166,6 +166,21 @@ details:hover {
 }
 
 @media only screen and (max-width: 1023px) {
+  .navPusher {
+    padding-top: 90px;
+  }
+  .tocActive .onPageNav {
+    top: 138px;
+  }
+  .navigationSlider .slidingNav ul li a {
+    border-radius: 0;
+  }
+  .mainContainer .wrapper .post .postHeaderTitle {
+    margin-top: 24px;
+  }
+  i {
+    font-style: normal;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
