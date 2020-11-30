@@ -150,8 +150,6 @@ these changes to the Radicle network.
 To start using Radicle, continue on to the [Using Radicle][ur] section.
 
 [ur]: using-radicle/overview.md
-[d1]: https://releases.radicle.xyz/radicle-upstream-0.1.4.AppImage
-[d2]: https://releases.radicle.xyz/radicle-upstream-0.1.4.dmg
 [di]: understanding-radicle/glossary.md/#device-id
 [pc]: using-radicle/pushing-changes
 [fc]: using-radicle/fetching-and-merging
@@ -164,6 +162,8 @@ To start using Radicle, continue on to the [Using Radicle][ur] section.
 [as]: https://support.apple.com/en-us/HT211814
 [bs]: https://github.com/radicle-dev/radicle-upstream/blob/master/DEVELOPMENT.md
 [co]: https://radicle.community
+[d1]: https://releases.radicle.xyz/radicle-upstream-0.1.4.AppImage
+[d2]: https://releases.radicle.xyz/radicle-upstream-0.1.4.dmg
 [gd]: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
 [sd]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
 [te]: https://radicle.xyz/terms.html
