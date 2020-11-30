@@ -55,9 +55,7 @@ newer).
 
 **→ [Download Radicle Upstream for Linux (AppImage)][d1]**
 
-**→ [Download Radicle Upstream for Linux (snap)][d2]**
-
-**→ [Download Radicle Upstream for macOS (dmg)][d3]**
+**→ [Download Radicle Upstream for macOS (dmg)][d2]**
 
 Once you've downloaded the binary for your respective platform, start it like
 this:
@@ -152,9 +150,8 @@ these changes to the Radicle network.
 To start using Radicle, continue on to the [Using Radicle][ur] section.
 
 [ur]: using-radicle/overview.md
-[d1]: https://storage.googleapis.com/builds.radicle.xyz/releases/radicle-upstream/0.1.3/radicle-upstream-0.1.3.AppImage
-[d2]: https://storage.googleapis.com/builds.radicle.xyz/releases/radicle-upstream/0.1.3/radicle-upstream-0.1.3.snap
-[d3]: https://storage.googleapis.com/builds.radicle.xyz/releases/radicle-upstream/0.1.3/radicle-upstream-0.1.3.dmg
+[d1]: https://releases.radicle.xyz/radicle-upstream-0.1.4.AppImage
+[d2]: https://releases.radicle.xyz/radicle-upstream-0.1.4.dmg
 [di]: understanding-radicle/glossary.md/#device-id
 [pc]: using-radicle/pushing-changes
 [fc]: using-radicle/fetching-and-merging
