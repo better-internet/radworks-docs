@@ -8,6 +8,8 @@ To get involved with the Radicle project, start by joining our community channel
 ### Join our [Matrix chat][mc]
 _For real-time discussion on everything related to Radicle_
 
+The address for our homeserver is **matrix.radicle.xyz**.
+
 The best way to join our chat is by making an account on
 [matrix.radicle.community][mc] and joining our [community homepage][ch]. This is where you
 can find a list of our available rooms. 
