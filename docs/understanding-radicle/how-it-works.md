@@ -328,8 +328,6 @@ $PEER_ID/refs/
                             |-- $CERTIFIER[1]
                             `-- $CERTIFIER[2]
 ```
-*[Fintan - can you write a paragraph that consolidates the following sections on
-Certifiers & the rad/self branch?]*
 
 Note that the **owned** $CERTIFIER[n] refs (ie. not those of remotes) are
 [symbolic refs][sr], pointing to the `rad/id` branch of the respective
