@@ -78,7 +78,7 @@ As we set out to build an alternative, we started by thinking about the values
 that we recognize as integral to free and open source code collaboration. With
 that said, we developed the following list of guiding principles:
 
-1.  It must prioritize user freedom In the words of the free software movement:
+1. It must prioritize user freedom In the words of the free software movement:
 
         […] users have the freedom to run, copy, distribute, study, change and
         improve the software. Thus, "free software" is a matter of liberty, not
