@@ -84,7 +84,7 @@ that said, we developed the following list of guiding principles:
         improve the software. Thus, "free software" is a matter of liberty, not
         price.
 
-2.  It must be accessible and uncensorable
+2. It must be accessible and uncensorable
 
     Anyone should have the freedom to use the software to collaborate with
     others. No single party should be able to ban users from accessing the
