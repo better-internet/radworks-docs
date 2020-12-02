@@ -92,7 +92,7 @@ that said, we developed the following list of guiding principles:
     In addition, users should have the freedom to control their interactions and
     the content they see on an individual basis.
 
-3.  It must be user-friendly
+3. It must be user-friendly
 
     The software must be easy to use and not expect tremendous change in
     behavior from the user. Responsiveness and functionality must meet the
