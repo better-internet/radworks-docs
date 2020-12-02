@@ -182,10 +182,11 @@ data.
 The next design decision came as a result of our experimentation with
 decentralized storage. After building the first version of Radicle on IPFS, we
 ran into performance and functionality issues. A more detailed analysis can be
-found [here](https://github.com/radicle-dev/radicle-alpha/issues/689), but the major realization was that replicating git repos
-peer-to-peer on the storage layer left us no choice but losing the packfile
-protocol, one of the things that makes git fast. This approach would make source
-code a second-class citizen—making it impractical to store repositories with
+found [here](https://github.com/radicle-dev/radicle-alpha/issues/689), but the
+major realization was that replicating git repos peer-to-peer on the storage
+layer left us no choice but losing the packfile protocol, one of the things that
+makes git fast. This approach would make source code a second-class
+citizen—making it impractical to store repositories with
 large histories.
 
 When reflecting on the above, the almost obvious thought returned: why not use
