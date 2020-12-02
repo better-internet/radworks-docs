@@ -98,7 +98,7 @@ that said, we developed the following list of guiding principles:
     behavior from the user. Responsiveness and functionality must meet the
     standards established by current platforms.
 
-4.  It must be offline-first
+4. It must be offline-first
 
     It must not require internet connectivity, DNS or online portals to
     function. There must be no single point of failure and it must be always
