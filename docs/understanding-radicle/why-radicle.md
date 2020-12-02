@@ -2,7 +2,8 @@
 id: why-radicle
 title: Why Radicle?
 ---
-## *An overview of Radicle, what we're building and why.*
+
+## An overview of Radicle, what we're building and why.
 
 Throughout the last decade, open source has become a standard for software
 development. Sharing code freely and publicly has made it drastically cheaper
@@ -105,7 +106,7 @@ that said, we developed the following list of guiding principles:
 
 5. It must not compromise on security
 
-    Trust in a third party or intermediary must not be required for use.  Every
+    Trust in a third party or intermediary must not be required for use. Every
     artefact of the system must be attested with cryptographic signatures, and
     verified.
 
@@ -181,10 +182,11 @@ data.
 The next design decision came as a result of our experimentation with
 decentralized storage. After building the first version of Radicle on IPFS, we
 ran into performance and functionality issues. A more detailed analysis can be
-found here, but the major realization was that replicating git repos
-peer-to-peer on the storage layer left us no choice but losing the packfile
-protocol, one of the things that makes git fast. This approach would make source
-code a second-class citizen—making it impractical to store repositories with
+found [here](https://github.com/radicle-dev/radicle-alpha/issues/689), but the
+major realization was that replicating git repos peer-to-peer on the storage
+layer left us no choice but losing the packfile protocol, one of the things that
+makes git fast. This approach would make source code a second-class
+citizen—making it impractical to store repositories with
 large histories.
 
 When reflecting on the above, the almost obvious thought returned: why not use
@@ -215,4 +217,3 @@ pull requests, comments, and reviews locally gives developers the tools to
 manage and design their workflows without locking them into a new "experience".
 Despite any front-end interface that will be built (😉), Radicle exists foremost
 as an open protocol — not a platform.
-
