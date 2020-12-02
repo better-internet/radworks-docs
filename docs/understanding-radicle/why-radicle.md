@@ -104,7 +104,7 @@ that said, we developed the following list of guiding principles:
     function. There must be no single point of failure and it must be always
     available.
 
-5.  It must not compromise on security
+5. It must not compromise on security
 
     Trust in a third party or intermediary must not be required for use. Every
     artefact of the system must be attested with cryptographic signatures, and
