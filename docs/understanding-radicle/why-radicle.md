@@ -3,7 +3,7 @@ id: why-radicle
 title: Why Radicle?
 ---
 
-## _An overview of Radicle, what we're building and why._
+## An overview of Radicle, what we're building and why.
 
 Throughout the last decade, open source has become a standard for software
 development. Sharing code freely and publicly has made it drastically cheaper
