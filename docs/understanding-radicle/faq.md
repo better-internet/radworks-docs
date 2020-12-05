@@ -146,6 +146,11 @@ found, try refreshing the app. Wait one minute before restarting the app again.
 If you are still running into problems, please submit a request in our [#support
 channel][sc].
 
+## Can I delete a project?
+Currently this feature is not supported, it will come in one of the upcoming
+releases. After it landed in the clients, it still will not be possible to
+remove projects from the network.
+
 ## Why am I only connected to one peer?
 By default, the Upstream client is conecting to a seed node operated by Radicle.
 While we support [epidemic broadcast][eb] to find and connect to other peers, we
