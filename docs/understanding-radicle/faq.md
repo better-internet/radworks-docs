@@ -101,11 +101,11 @@ only have one Device ID per identity.
 To be [added as a remote][ar] to a project, you need to share your Device ID.
 
 ## What does following mean in Radicle?
-Following a project replicates its data to your machine by tracking it. This allows the
-follower to subscribe to updates from the project's maintainer(s) or other
-remotes. It is also a way to signal interest in the project or peer by further
-replicating the data across their network, making it available to other people
-on the network. See [Tracking][tr].
+Following a project replicates its data to your machine by tracking it. This
+allows the follower to subscribe to updates from the project's maintainer(s) or
+other remotes. It is also a way to signal interest in the project or peer by
+further replicating the data across their network, making it available to other
+people on the network. See [Tracking][tr].
 
 ## Can I use Radicle with multiple devices?
 Yes and no. While there isn't multi-device support yet, you can still create
@@ -147,9 +147,11 @@ If you are still running into problems, please submit a request in our [#support
 channel][sc].
 
 ## Can I delete a project?
-Currently this feature is not supported, it will come in one of the upcoming
-releases. After it landed in the clients, it still will not be possible to
-remove projects from the network.
+Currently, this feature is not supported but it is on the roadmap and will be
+included in an upcoming release. With this feature, you can only remove your
+project from your local machine, thus limiting the number of peers who can find
+and replicate your project. You can not delete a project from another peer's
+local machine, as they retain control over their local data.
 
 ## Why am I only connected to one peer?
 By default, the Upstream client is conecting to a seed node operated by Radicle.
