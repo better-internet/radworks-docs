@@ -111,7 +111,7 @@ configurable N degrees out.
 ## seed
 An always-on node that automatically tracks discovered projects and serves data
 to their connected peers, thereby increasing the availability of these projects
-on the network. More on the [role and impacts of seeds][rl].
+on the network. More on the [role and impacts of seeds][hiw-se].
 
 ## upstream
 The [repository][re] in which code contributions for a [project][pr] are
@@ -138,7 +138,6 @@ Upstream client.
 [hiw-dm]: how-it-works.md/#data-model
 [hiw-id]: how-it-works.md/#identities
 [hiw-rm]: how-it-works.md/#replication-model
+[hiw-se]: how-it-works.md/#seeding
 [hiw-tr]: how-it-works.md/#tracking
 [hiw-wc]: how-it-works.md/#working-copies
-
-[rl]: https://radicle.xyz/radicle-link.html
