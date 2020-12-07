@@ -148,7 +148,7 @@ channel][sc].
 
 ## Can I delete a project?
 Currently, this feature is not supported but it is on the roadmap and will be
-included in an upcoming release. With this feature, you can only remove your
+included in an upcoming release. Until then, you can only remove your
 project from your local machine, thus limiting the number of peers who can find
 and replicate your project. You can not delete a project from another peer's
 local machine, as they retain control over their local data.
