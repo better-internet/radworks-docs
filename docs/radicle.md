@@ -58,7 +58,7 @@ centralized forges in a few critical ways:
 
 1. The Radicle stack is open-source from top to bottom. There are no "closed" components.
 Every component of the Radicle stack is auditable, modifiable and extendable.
-2. Radicle is build *entirely* on open protocols. There are no "special servers", privileged
+2. Radicle is built *entirely* on open protocols. There are no "special servers", privileged
 users or companies in control of your collaboration.
 3. Radicle is based on a peer-to-peer architecture instead of a client server model.
 4. Radicle is **not** global by default. Instead, the social graph of peers and projects you 
