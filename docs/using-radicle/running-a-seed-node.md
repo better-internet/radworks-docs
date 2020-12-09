@@ -11,7 +11,8 @@ Conceptually, they are similar to pubs in [Secure Scuttlebutt][ss].
 To build and run a seed node, you'll have to install some prerequisites on your
 machine first:
 
-  - [Rust toolchain][ru], you'll need **nightly**
+  - [Rust toolchain][ru], you'll need Rust **nightly**, easiest way to set it
+    up is via [rustup][rp]
   - [yarn][ya]
 
 Next, clone and set up the `radicle-bins` repository:
@@ -105,6 +106,7 @@ on how to set up the new seed in Upstream.
 
 [sn]: /img/seed-node-ui.png
 
+[rp]: https://rustup.rs
 [ru]: https://www.rust-lang.org/tools/install
 [ss]: https://scuttlebutt.nz
 [ya]: https://yarnpkg.com/getting-started/install
