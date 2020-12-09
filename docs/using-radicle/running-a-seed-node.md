@@ -11,7 +11,7 @@ Conceptually, they are similar to pubs in [Secure Scuttlebutt][ss].
 To build and run a seed node, you'll have to install some prerequisites on your
 machine first:
 
-  - [Rust toolchain][ru]
+  - [Rust toolchain][ru], you'll need **nightly**
   - [yarn][ya]
 
 Next, clone and set up the `radicle-bins` repository:
@@ -61,8 +61,9 @@ Now you're ready to start the seed node. Let's configure it to listen on ports
       < ~/.radicle-seed/secret.key
 
 **Note:** we configured the seed to use `~/.radicle-seed` as its data directory
-with the `--root` option. The `--public-addr` option is needed so the UI can
-show the seed address, more on that below.
+with the `--root` option. Remember to adjust `--public-addr` and `--name` to
+your setup. `--name` will be shown as a heading and `--public-addr` will appear
+in the seed address as `<SEED-ID>@<PUBLIC-ADDR>:<PORT>`.
 
 <details>
   <summary>
