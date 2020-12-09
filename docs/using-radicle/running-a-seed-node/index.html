@@ -61,7 +61,8 @@ Conceptually, they are similar to pubs in <a href="https://scuttlebutt.nz">Secur
 <p>To build and run a seed node, you'll have to install some prerequisites on your
 machine first:</p>
 <ul>
-<li><a href="https://www.rust-lang.org/tools/install">Rust toolchain</a></li>
+<li><a href="https://www.rust-lang.org/tools/install">Rust toolchain</a>, you'll need Rust <strong>nightly</strong>, easiest way to set it
+up is via <a href="https://rustup.rs">rustup</a></li>
 <li><a href="https://yarnpkg.com/getting-started/install">yarn</a></li>
 </ul>
 <p>Next, clone and set up the <code>radicle-bins</code> repository:</p>
@@ -104,8 +105,9 @@ public IP address as well. For this example, we'll use this record:
   &lt; ~/.radicle-seed/secret.key
 </code></pre>
 <p><strong>Note:</strong> we configured the seed to use <code>~/.radicle-seed</code> as its data directory
-with the <code>--root</code> option. The <code>--public-addr</code> option is needed so the UI can
-show the seed address, more on that below.</p>
+with the <code>--root</code> option. Remember to adjust <code>--public-addr</code> and <code>--name</code> to
+your setup. <code>--name</code> will be shown as a heading and <code>--public-addr</code> will appear
+in the seed address as <code>&lt;SEED-ID&gt;@&lt;PUBLIC-ADDR&gt;:&lt;PORT&gt;</code>.</p>
 <p><details>
 <summary>
 This is what you'll see in the terminal when starting the seed node:
