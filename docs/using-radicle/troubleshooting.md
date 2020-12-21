@@ -213,7 +213,7 @@ interact with the Radicle network. For more instructions on how to do this, see
 
 ### Radicle does not prompt for password
 Every git command interacting with the rad remote prompts you for the password. It does so via git which relies on the `SSH_ASKPASS` environment variable.
-If you have that variable broken you wont get prompted for a password and see:
+If you have that variable broken you won't get prompted for a password and see:
 ```
 Error: Error unsealing key: Unable to decrypt secret box using the derived key
 ```
