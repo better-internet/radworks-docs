@@ -217,7 +217,7 @@ If you have that variable broken you wont get prompted for a password and see:
 ```
 Error: Error unsealing key: Unable to decrypt secret box using the derived key
 ```
-(Which is the error message for entering a wrong password also.)
+**Note**: this is also the error message for entering a wrong password.
 
 You can solve the issue by fixing your `SSH_ASKPASS`. One nice trick can be to have a wrapper like
 `pass show radicle-password` in `~/bin/print-radicle-pw` and then use `SSH_ASKPASS=print-radicle-pw git push rad`.
@@ -233,4 +233,3 @@ You can solve the issue by fixing your `SSH_ASKPASS`. One nice trick can be to h
 [rc]: https://radicle.community/c/help
 [rs]: https://github.com/radicle-dev/radicle-surf
 [sc]: https://matrix.to/#/#support:radicle.community
-
