@@ -211,7 +211,18 @@ interact with the Radicle network. For more instructions on how to do this, see
 **Note** that the `git-rad-remote` helper was included with your installation of
 **Radicle Upstream** and lives under `$HOME/.radicle/bin`.
 
+### Radicle does not prompt for password
+Every git command interacting with the rad remote prompts you for the password.
+It does so via git which relies on the `SSH_ASKPASS` environment variable.
+If you have that variable broken you won't get prompted for a password and see:
+```
+Error: Error unsealing key: Unable to decrypt secret box using the derived key
+```
+**Note**: this is also the error message for entering a wrong password.
 
+You can solve the issue by fixing your `SSH_ASKPASS`. One nice trick can be
+to have a wrapper like `pass show radicle-password` in `~/bin/print-radicle-pw`
+and then use `SSH_ASKPASS=print-radicle-pw git push rad`.
 
 [di]: understanding-radicle/glossary#device-id
 [gs]: getting-started.md
@@ -224,4 +235,3 @@ interact with the Radicle network. For more instructions on how to do this, see
 [rc]: https://radicle.community/c/help
 [rs]: https://github.com/radicle-dev/radicle-surf
 [sc]: https://matrix.to/#/#support:radicle.community
-
