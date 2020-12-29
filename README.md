@@ -109,12 +109,12 @@ If contributing via Radicle, submit your patch for review by sending an email to
 
 Subject line:
 
-*[PATCH] Description of patch*
+  *[PATCH] Description of patch*
 
 Message body: 
 
-*[Device ID]*
-*[Display name]*
+  *[Device ID]*
+  *[Display name]*
 
-*Description of patch and other relevant information*
+  *Description of patch and other relevant information*
 
