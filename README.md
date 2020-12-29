@@ -1,4 +1,4 @@
-# radicle-docs
+# Welcome to Radicle Docs 👋
 
 This is the repository for the Radicle documentation site [docs.radicle.xyz](https://docs.radicle.xyz/docs/what-is-radicle.html). radicle-docs accepts contributions via Radicle patches and GitHub pull requests. This document outlines some contributing guidelines, contact points, and other resources to make it easier to contribute to radicle-docs.
 
@@ -6,13 +6,15 @@ This is the repository for the Radicle documentation site [docs.radicle.xyz](htt
 
 If you have a bug or an idea, browse the open [issues](https://github.com/radicle-dev/radicle-docs/issues) before opening a new one. When opening an issue, please follow our [label system](https://github.com/radicle-dev/radicle-docs/labels).
 
-![](https://img.shields.io/badge/-fixup-critical) for typos, broken links, and other quick fixes
+* ![](https://img.shields.io/badge/-fixup-critical) for typos, broken links, and other quick fixes
 
-![](https://img.shields.io/badge/-improvement-blueviolet) for revisions, rewrites, and larger improvements
+* ![](https://img.shields.io/badge/-improvement-blueviolet) for revisions, rewrites, and larger improvements
 
-![](https://img.shields.io/badge/-feedback-orange) for feedback on structure & content
+* ![](https://img.shields.io/badge/-feedback-orange) for feedback on structure & content
 
-![](https://img.shields.io/badge/-question-success) for questions that can't be answered via documentation
+* ![](https://img.shields.io/badge/-question-success) for questions that can't be answered via documentation
+
+# Contributing Guide
   
 - [Get Started](#get-started)
 - [Editing Content](#editing-content)
