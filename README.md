@@ -14,7 +14,7 @@ If you have a bug or an idea, browse the open [issues](https://github.com/radicl
 
 * ![](https://img.shields.io/badge/-feedback-%23DD0BE1) for feedback on structure & content
 
-* ![](https://img.shields.io/badge/-question-%23B11FF8) for questions that can't be answered via documentation
+* ![](https://img.shields.io/badge/-question-C0EE59) for questions that can't be answered via documentation
 
 # Contributing Guide
   
@@ -103,12 +103,13 @@ For more information about adding new docs, click [here](https://docusaurus.io/d
 
 ## Contributing
 
-Contributions to radicle-docs can be made via pull requests on GitHub or through Radicle. If opening a PR, please tag any associated parties and @abbey-titcomb for visibility. 
-
 💡 We require all commits to be signed for a branch to be merged into master. Learn more on setting up commit signing.
+
+Contributions to radicle-docs can be made via pull requests on GitHub or through Radicle. If opening a PR, please tag any associated parties and @abbey-titcomb for visibility. 
 
 If contributing via Radicle, submit your patch for review by sending an email to abbey@monadic.xyz in the following format:
 
+```
 Subject line:
 
   *[PATCH] Description of patch*
@@ -119,4 +120,5 @@ Message body:
   *[Display name]*
 
   *Description of patch and other relevant information*
+  ```
 
