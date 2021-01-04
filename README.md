@@ -4,7 +4,7 @@ This is the repository for the Radicle documentation site [docs.radicle.xyz](htt
 
 [docs.radicle.xyz](https://docs.radicle.xyz/docs/what-is-radicle.html) was created with [Docusaurus](https://docusaurus.io/). Full Docusaurus documentation can be found on their [website](https://docusaurus.io/).
 
-If you have a bug or an idea, browse the open [issues](https://github.com/radicle-dev/radicle-docs/issues) before opening a new one. When opening an issue, please follow our [label system](https://github.com/radicle-dev/radicle-docs/labels).
+If you've run into a problem or have a suggestion, browse the open [issues](https://github.com/radicle-dev/radicle-docs/issues) before opening a new one. When opening an issue, please follow our [label system](https://github.com/radicle-dev/radicle-docs/labels).
 
 * ![](https://img.shields.io/badge/-fixup-critical) for typos, broken links, and other quick fixes
 
