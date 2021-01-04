@@ -16,11 +16,13 @@ If you've run into a problem or have a suggestion, browse the open [issues](http
 
 * ![](https://img.shields.io/badge/-question-C0EE59) for questions that can't be answered via documentation
 
+* ![](https://img.shields.io/badge/-ui-1d76db) for improvements and fixups related to the look and feel of the docs site 
+
 ### Best Practices 
 
 * If a question is asked more than twice in a support channel, it should be added as an outstanding ![](https://img.shields.io/badge/-troubleshooting-%23FBCA04) issue. If a resolution is found, it should be captured in the issue before it's closed or in a following pull request. Those involved in the support process should contribute to the documentation (i.e. if you answered the question, be sure to capture the outcome in the relevant documentation)
 
-* If a piece of feedback is given more than twice, a ![](https://img.shields.io/badge/-feedback-%23DD0BE1) issue should be created and added to the [Feedback Hub](https://github.com/orgs/radicle-dev/projects/19).
+* If a piece of unaddressed feedback is given more than three times, a ![](https://img.shields.io/badge/-feedback-%23DD0BE1) issue should be created and added to the [Feedback Hub](https://github.com/orgs/radicle-dev/projects/19) to be prioritized in the following weekly sync. 
 
 * ![](https://img.shields.io/badge/-improvement-blueviolet) issues should be created to capture upcoming documentation work related to new features or releases. 
 
