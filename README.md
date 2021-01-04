@@ -16,7 +16,7 @@ If you have a bug or an idea, browse the open [issues](https://github.com/radicl
 
 * ![](https://img.shields.io/badge/-question-C0EE59) for questions that can't be answered via documentation
 
-# Contributing Guide
+# How to Contribute
   
 - [Get Started](#get-started)
 - [Editing Content](#editing-content)
