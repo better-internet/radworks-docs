@@ -8,11 +8,13 @@ If you have a bug or an idea, browse the open [issues](https://github.com/radicl
 
 * ![](https://img.shields.io/badge/-fixup-critical) for typos, broken links, and other quick fixes
 
+* ![](https://img.shields.io/badge/-troubleshooting-%23FBCA04) for additions to the FAQ and Troubleshooting sections
+
 * ![](https://img.shields.io/badge/-improvement-blueviolet) for revisions, rewrites, and larger improvements
 
-* ![](https://img.shields.io/badge/-feedback-orange) for feedback on structure & content
+* ![](https://img.shields.io/badge/-feedback-%23DD0BE1) for feedback on structure & content
 
-* ![](https://img.shields.io/badge/-question-success) for questions that can't be answered via documentation
+* ![](https://img.shields.io/badge/-question-%23B11FF8) for questions that can't be answered via documentation
 
 # Contributing Guide
   
