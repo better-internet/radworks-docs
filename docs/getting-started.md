@@ -164,8 +164,8 @@ To start using Radicle, continue on to the [Using Radicle][ur] section.
 [as]: https://support.apple.com/en-us/HT211814
 [bs]: https://github.com/radicle-dev/radicle-upstream/blob/master/DEVELOPMENT.md
 [co]: https://radicle.community
-[d1]: https://releases.radicle.xyz/radicle-upstream-0.1.5.AppImage
-[d2]: https://releases.radicle.xyz/radicle-upstream-0.1.5.dmg
+[d1]: https://releases.radicle.xyz/radicle-upstream-0.1.6.AppImage
+[d2]: https://releases.radicle.xyz/radicle-upstream-0.1.6.dmg
 [gd]: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
 [sd]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
 [te]: https://radicle.xyz/terms.html
