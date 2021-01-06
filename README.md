@@ -4,7 +4,7 @@ This is the repository for the Radicle documentation site [docs.radicle.xyz](htt
 
 [docs.radicle.xyz](https://docs.radicle.xyz/docs/what-is-radicle.html) was created with [Docusaurus](https://docusaurus.io/). Full Docusaurus documentation can be found on their [website](https://docusaurus.io/).
 
-If you've run into a problem or have a suggestion, browse the open [issues](https://github.com/radicle-dev/radicle-docs/issues) before opening a new one. When opening an issue, please follow our [label system](https://github.com/radicle-dev/radicle-docs/labels).
+If you've run into a problem or have a suggestion, browse the open [issues](https://github.com/radicle-dev/radicle-docs/issues) before opening a new one. We use the following [label system](https://github.com/radicle-dev/radicle-docs/labels) to organize our issues.
 
 * ![](https://img.shields.io/badge/-fixup-critical) for typos, broken links, and other quick fixes
 
@@ -18,7 +18,7 @@ If you've run into a problem or have a suggestion, browse the open [issues](http
 
 * ![](https://img.shields.io/badge/-ui-1d76db) for improvements and fixups related to the look and feel of the docs site 
 
-### Best Practices 
+### Best practices for managing contributions
 
 * If a question is asked more than twice in a support channel, it should be added as an outstanding ![](https://img.shields.io/badge/-troubleshooting-%23FBCA04) issue. If a resolution is found, it should be captured in the issue before it's closed or in a following pull request. Those involved in the support process should contribute to the documentation (i.e. if you answered the question, be sure to capture the outcome in the relevant documentation)
 
