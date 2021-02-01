@@ -51,12 +51,10 @@ follow along development in our [Matrix channel][mc] or on
 
 ### Supported Platforms
 
-Radicle Upstream is available for download on Linux and macOS (version 10.14 and
+Radicle Upstream is available for Linux and macOS (version 10.14 and
 newer).
 
-**→ [Download Radicle Upstream for Linux (AppImage)][d1]**
-
-**→ [Download Radicle Upstream for macOS (dmg)][d2]**
+**→ [You can download it here][do]**
 
 Once you've downloaded the binary for your respective platform, start it like
 this:
@@ -164,8 +162,7 @@ To start using Radicle, continue on to the [Using Radicle][ur] section.
 [as]: https://support.apple.com/en-us/HT211814
 [bs]: https://github.com/radicle-dev/radicle-upstream/blob/master/DEVELOPMENT.md
 [co]: https://radicle.community
-[d1]: https://releases.radicle.xyz/radicle-upstream-0.1.9.AppImage
-[d2]: https://releases.radicle.xyz/radicle-upstream-0.1.9.dmg
+[do]: https://radicle.xyz/downloads.html
 [gd]: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
 [sd]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
 [te]: https://radicle.xyz/terms.html
