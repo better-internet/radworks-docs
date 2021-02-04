@@ -13,15 +13,18 @@
       "using-radicle/fetching-and-merging",
       "using-radicle/contributing",
       "using-radicle/adding-a-seed-node",
-      "using-radicle/running-a-seed-node",
-      "using-radicle/troubleshooting",
-      "using-radicle/join-the-community"
+      "using-radicle/running-a-seed-node"
     ],
     "Understanding Radicle": [
       "understanding-radicle/why-radicle",
       "understanding-radicle/how-it-works",
+      "understanding-radicle/troubleshooting",
       "understanding-radicle/glossary",
       "understanding-radicle/faq"
+    ],
+    "Get Involved": [
+      "get-involved/join-the-community",
+      "get-involved/radicle-garden"
     ]
   }
 }
