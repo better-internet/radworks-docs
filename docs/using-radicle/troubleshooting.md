@@ -64,7 +64,7 @@ following command you should see something like:
 ```
 $ tree $XDG_DATA_HOME/radicle-link/*/git/refs
 
-/home/user/.local/share/radicle-link/*/git/refs/
+/home/user/.local/share/radicle-link/d9a6c997-c481-4e0b-888f-6b0e30792458/git/refs/
 ├── heads
 ├── namespaces
 │   ├── hwd1yre8ibmso5webrog7uqwcrys4fmdijcyjfoso73utnz7y41dbtqudxe
