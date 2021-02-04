@@ -234,7 +234,10 @@ to restore it.
 To start with a new identity, you need to delete the `active_profile` file.
 This file stores the `active_profile_id` that points radicle to the profile aka
 directory it needs to access for your identity specific data.
-The `active_profile` file can be found under `$XDG_CONFIG_HOME/radicle-link/active_profile`.
+The `active_profile` file can be found under
+`$XDG_CONFIG_HOME/radicle-link/active_profile`.
+Stop the app _before_ removing the file. When you start it up again, the app
+should automatically begin with the onboarding screen to create a new identity.
 
 [di]: understanding-radicle/glossary#device-id
 [gs]: getting-started.md
