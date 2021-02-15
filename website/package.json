@@ -6,7 +6,8 @@
     "deploy": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
-    "rename-version": "docusaurus-rename-version"
+    "rename-version": "docusaurus-rename-version",
+    "publish-gh-pages": "docusaurus-publish"
   },
   "devDependencies": {
     "docusaurus": "^1.14.4"
