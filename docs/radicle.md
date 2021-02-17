@@ -37,7 +37,7 @@ intermediaries such as hosted servers.
 
 ## How is Radicle different from GitHub?
 
-Collaborating on Radicle is a slightly different than collaborating on centralized code collaboration platforms like GitHub and GitLab. 
+Collaborating on Radicle is slightly different than collaborating on centralized code collaboration platforms like GitHub and GitLab. 
 
 1. The Radicle stack is open-source from top to bottom. There are no "closed" components.
 Every component of the Radicle stack is auditable, modifiable, and extendable.
