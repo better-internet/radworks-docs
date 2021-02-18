@@ -4,13 +4,18 @@ title: What is Radicle?
 sidebar_label: What is Radicle?
 ---
 
-Radicle is a peer-to-peer stack for code collaboration 🌱. It enables developers
+Radicle is a decentralized code collaboration network built on open protocols 🌱. It enables developers
 to collaborate on code without relying on trusted intermediaries. Radicle was designed
 to provide similar functionality to centralized code collaboration platforms — or "forges" —
 while retaining Git’s peer-to-peer nature, building on what made distributed
 version control so powerful in the first place.
 
-Read more about our vision for decentralized code collaboration [here][wh].
+
+> Read more about our vision for decentralized code collaboration <a href="https://radicle.xyz/blog/towards-decentralized-code-collaboration.html">here</a>.
+
+Radicle also leverages Ethereum (opt-in) for unique global names, decentralized organizations, and protocols that help maintainers sustain their open-source work.
+
+> Read more about the Radicle Ethereum integration <a href="https://radicle.xyz/blog/integrating-with-ethereum.html">here.</a>
 
 ## How it works
 
@@ -28,44 +33,38 @@ Since all data on the network is stored locally by peers on the network,
 developers can share and collaborate on Git repositories *without* relying on
 intermediaries such as hosted servers.
 
-The Radicle Link protocol distinguishes between two types of identities: personal and project.
-The first describes a person running a node on the network (e.g. a peer), while the second describes a repository (e.g. a project)
-on which one or more people collaborate. In Radicle: 
-
-1. Peers track projects they are interested in.
-2. Peers track other peers by adding them as remotes to projects.
-3. Peers gossip about projects. This means they replicate objects from the peers they follow and 
-make them available to the peers that follow them.
-
-It's this "trusted" social graph of peers and projects that becomes the foundation for
-collaboration within Radicle.
-
-For more on Radicle Link, check out the [Understanding Radicle][wh] section.
+> For more on Radicle Link, check out the <a href="understanding-radicle/how-it-works.md">Understanding Radicle</a> section.
 
 ## How is Radicle different from GitHub?
 
-When coming to Radicle from a centralized code collaboration platform like
-Github or Gitlab, you might notice that it prioritizes different concerns. Concretely:
-
-- People being in control of their identity
-- People being in control of their content
-- People being in control of their social interactions
-
-Read more about the [Radicle collaboration model][fa].
-
-The concerns above led us to a design and implementation that differentiates itself from
-centralized forges in a few critical ways:
+Collaborating on Radicle is slightly different than collaborating on centralized code collaboration platforms like GitHub and GitLab. 
 
 1. The Radicle stack is open-source from top to bottom. There are no "closed" components.
-Every component of the Radicle stack is auditable, modifiable and extendable.
+Every component of the Radicle stack is auditable, modifiable, and extendable.
+
+
 2. Radicle is built *entirely* on open protocols. There are no "special servers", privileged
 users or companies in control of your collaboration.
-3. Radicle is based on a peer-to-peer architecture instead of a client server model.
+
+
+3. Radicle is based on a peer-to-peer architecture instead of a client-server model.
+
+
 4. Radicle is **not** global by default. Instead, the social graph of peers and projects you 
 track determines what content you see, interact with, and replicate.
+
+
 5. Radicle is designed for bazaar-style development. This means that within projects, there isn't 
 a single master branch that contributors merge into. Instead, peers maintain their own views of 
 projects that can be fetched and merged by other peers via patches.
+
+6. Radicle replaces the Org functionality of centralized forges and their hierarchical admin models with decentralized organizations on Ethereum
+
+7. Radicle is a self-sustained and community-owned network — not a corporation. It's governance is organized by a token called RAD that lives on Ethereum.
+
+
+> For more on the Radicle's social model, check out <a href="https://radicle.xyz/blog/collaborating-on-radicle.html">Collaborating on Radicle</a>. 
+
 
 ## How do I use Radicle?
 
@@ -77,6 +76,5 @@ Head over to [Getting Started][gs] for a walkthrough on how to download Upstream
 and become a part of the network.
 
 
-[fa]: understanding-radicle/faq.md
 [gs]: getting-started.md
-[wh]: understanding-radicle/why-radicle.md
+[wh]: https://radicle.xyz/blog/towards-decentralized-code-collaboration.html
