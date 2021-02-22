@@ -33,7 +33,7 @@ Since all data on the network is stored locally by peers on the network,
 developers can share and collaborate on Git repositories *without* relying on
 intermediaries such as hosted servers.
 
-> For more on Radicle Link, check out the <a href="understanding-radicle/how-it-works.md">Understanding Radicle</a> section.
+> For more on Radicle Link, check out the [Understanding Radicle](understanding-radicle/how-it-works.md) section.
 
 ## How is Radicle different from GitHub?
 
