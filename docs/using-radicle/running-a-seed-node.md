@@ -3,10 +3,16 @@ id: running-a-seed-node
 title: Running a seed node
 ---
 
-To improve data availability, participants in the network can choose to act as
+To improve data availability of Radicle's peer-to-peer network, participants in the network can choose to act as
 [seeds][se]. Seeds are always-on nodes that automatically track discovered
 projects, thereby increasing the availability of these projects on the network.
 Conceptually, they are similar to pubs in [Secure Scuttlebutt][ss].
+
+> Running a seed node is for contributing to the availability
+> and redundancy of Radicle's peer-to-peer network. Running a seed node is not
+> related to token incentives at this time. For more on how the Radicle token
+> works, please refer to the <a
+> href="https://radicle.xyz/blog/introducing-rad.html">Introducing RAD</a> post.
 
 To build and run a seed node, you'll have to install some prerequisites on your
 machine first:

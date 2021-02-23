@@ -8,8 +8,11 @@ to connected peers. When you add a seed to Upstream, it will
 automatically track you and share your data across its network of other
 connected peers [^1]. This increases the availability of your data throughout
 the network, while making it easier to find others data as well. Upstream is
-preconfigured with a Radicle operated seed to bootstrap your connectivity. If
-you have removed the default seed and need to re-add it or would like to add a
+preconfigured with a Radicle operated seed to bootstrap your connectivity. Adding more seed nodes to your Upstream configuration is a great way to improve data availability and redundancy. 
+
+> To discover seed nodes, please refer to this <a href="https://radicle.community/t/list-of-public-seeds/1155">list of public seed nodes</a>.
+
+If you have removed the default seed and need to re-add it or would like to add a
 custom seed address, you can do so by following these steps:
 
 1. Navigate to **Settings**. There, under the **Network** header, you'll find
