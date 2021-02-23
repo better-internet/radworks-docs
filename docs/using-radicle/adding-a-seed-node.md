@@ -4,13 +4,16 @@ title: Adding a custom seed node
 ---
 
 Seed nodes are "always-on" nodes running on public IP addresses that serve data
-to connected peers. When you add a seed to Upstream, it will
-automatically track you and share your data across its network of other
-connected peers [^1]. This increases the availability of your data throughout
-the network, while making it easier to find others data as well. Upstream is
-preconfigured with a Radicle operated seed to bootstrap your connectivity. Adding more seed nodes to your Upstream configuration is a great way to improve data availability and redundancy. 
+to connected peers. When you add a seed to Upstream, it will automatically track
+you and share your data across its network of other connected peers [^1]. This
+increases the availability of your data throughout the network, while making it
+easier to find others data as well. Upstream is preconfigured with a Radicle
+operated seed to bootstrap your connectivity. Adding more seed nodes to your
+Upstream configuration is a great way to improve data availability and
+redundancy. 
 
-> To discover seed nodes, please refer to this <a href="https://radicle.community/t/list-of-public-seeds/1155">list of public seed nodes</a>.
+> To discover seed nodes, please refer to this [list of public
+> seed nodes][lp].
 
 If you have removed the default seed and need to re-add it or would like to add a
 custom seed address, you can do so by following these steps:
@@ -41,6 +44,6 @@ Upstream can be viewed at http://seedling.radicle.xyz/.
 
 [sn]: using-radicle/running-a-seed-node.md
 [sd]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
-
+[lp]: https://radicle.community/t/list-of-public-seeds/1155
 [st]: /img/settings.png
 
