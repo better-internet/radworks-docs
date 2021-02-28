@@ -106,6 +106,22 @@ example the address is:
 Have a look at the [Adding a custom seed node][ad] section for more information
 on how to set up the new seed in Upstream.
 
+### Common issues
+
+When trying to start the seed, you may run into a few common issues:
+
+1. `error: linker 'cc' not found`
+
+You don't have a C compiler installed. In debian/ubuntu try `apt-get install build-essential`. In redhat-based systems try `yum install gcc`.
+
+2. `error binding to 0.0.0.0:80 (...) Permission denied`
+
+Ports below 1024 are often reserved for administrator accounts. You can change the `http-listen` parameter to a higher port, or run behind a proxy.
+
+3. `Address already in use`
+
+Another services is already listening on one of the requested ports. Either use a different port for radicle, or find the conflicting service using tools like `netstat` or `lsof`.
+
 
 [ad]: using-radicle/adding-a-seed-node.md
 [se]: understanding-radicle/glossary.md/#seed
