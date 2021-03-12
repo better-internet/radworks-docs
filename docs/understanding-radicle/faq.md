@@ -186,7 +186,7 @@ help people operate Radicle nodes in many different ways. Should you be keen to
 have it as a daemon right now, check out how the [seed][si] is implemented, and
 try to run your own.
 
-## Is it possible to open radicle URIs directly in Upstream?
+## Is it possible to launch Upstream via links on the web?
 Yes, as of Upstream v0.1.13 we support opening links to Radicle projects in
 Upstream. Clicking the following link will launch Upstream and navigate to the
 specified project:
