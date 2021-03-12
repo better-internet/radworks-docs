@@ -203,7 +203,7 @@ Assuming you have downloaded the latest upstream in
 `$HOME/Downloads/radicle-upstream-0.1.13.AppImage`, you can register the
 protocol by running the following commands:
 
-```
+```sh
 chmod +x $HOME/Downloads/radicle-upstream-0.1.13.AppImage
 
 cat > $HOME/.local/share/applications/radicle-upstream.desktop <<EOF
@@ -219,7 +219,7 @@ update-desktop-database ~/.local/share/applications
 
 To verify whether the custom protocol was registered by launching Upstream via
 a custom URI from your terminal:
-```
+```sh
 xdg-open "radicle://v0/link/rad:git:hwd1yredna5k7undw9xurpm6mtfyczodz4fkute7bcpii3jb9uoj7tf1sho?action=show"
 ```
 
