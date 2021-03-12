@@ -185,9 +185,51 @@ for anyone to run in the background. We are working hard to change that so we ca
 help people operate Radicle nodes in many different ways. Should you be keen to
 have it as a daemon right now, check out how the [seed][si] is implemented, and
 try to run your own.
- 
+
+## Is it possible to open radicle URIs directly in Upstream?
+Yes, as of Upstream v0.1.13 we support opening links to Radicle projects in
+Upstream. Clicking the following link will launch Upstream and navigate to the
+specified project:
+
+  radicle://v0/link/rad:git:hwd1yredna5k7undw9xurpm6mtfyczodz4fkute7bcpii3jb9uoj7tf1sho?action=show
+
+The custom protocol is registered automatically when installing Upstream on
+macOS.
+
+On Linux you'll have to either manually register the custom protocol or
+[integrate Upstream into your system][ai] with AppImageLauncher or appimaged.
+
+Assuming you have downloaded the latest upstream in
+`$HOME/Downloads/radicle-upstream-0.1.13.AppImage`, you can register the
+protocol by running the following commands:
+
+```
+chmod +x $HOME/Downloads/radicle-upstream-0.1.13.AppImage
+
+cat > $HOME/.local/share/applications/radicle-upstream.desktop <<EOF
+[Desktop Entry]
+Exec=$HOME/Downloads/radicle-upstream-0.1.13.AppImage %U
+Terminal=false
+Type=Application
+MimeType=x-scheme-handler/radicle;
+EOF
+
+update-desktop-database ~/.local/share/applications
+```
+
+To verify whether the custom protocol was registered by launching Upstream via
+a custom URI from your terminal:
+```
+xdg-open "radicle://v0/link/rad:git:hwd1yredna5k7undw9xurpm6mtfyczodz4fkute7bcpii3jb9uoj7tf1sho?action=show"
+```
+
+Read more about the custom Radicle client URI scheme [here][cu].
+
+
+[ai]: https://docs.appimage.org/user-guide/run-appimages.html#integrating-appimages-into-the-desktop
 [ar]: using-radicle/tracking-and-viewing.md
 [cp]: using-radicle/creating-projects.md
+[cu]: https://github.com/radicle-dev/radicle-decisions/blob/63ed45c2dc3e2c4b8e1a02619dcf26f957e5fdfe/proposals/0004.md
 [ov]: using-radicle/overview.md
 [gs]: getting-started.md
 [hw]: how-it-works.md/#git-implementation
