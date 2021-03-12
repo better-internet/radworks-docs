@@ -197,9 +197,10 @@ The custom protocol is registered automatically when installing Upstream on
 macOS.
 
 On Linux you'll have to either manually register the custom protocol or
-[integrate Upstream into your system][ai] with AppImageLauncher or appimaged.
+integrate Upstream into your system with `AppImageLauncher` or `appimaged` as
+described [here][ai].
 
-Assuming you have downloaded the latest upstream in
+Assuming you have downloaded the latest Upstream in
 `$HOME/Downloads/radicle-upstream-0.1.13.AppImage`, you can register the
 protocol by running the following commands:
 
@@ -217,12 +218,11 @@ EOF
 update-desktop-database ~/.local/share/applications
 ```
 
-**Note**: It's advisable to move the Upstream binary to a stable location,
+**Note**: It's advisable to move the Upstream binary to a stable location
 before registering the custom protocol, otherwise the custom protocol
-handling will break if the binary is moved.
+handling will break if the binary is renamed or moved to another location.
 
-To verify whether the custom protocol was registered by launching Upstream via
-a custom URI from your terminal:
+On Linux you can verify whether the custom protocol is working like this:
 ```sh
 xdg-open "radicle://v0/link/rad:git:hwd1yredna5k7undw9xurpm6mtfyczodz4fkute7bcpii3jb9uoj7tf1sho?action=show"
 ```
