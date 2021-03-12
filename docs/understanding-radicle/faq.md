@@ -217,6 +217,10 @@ EOF
 update-desktop-database ~/.local/share/applications
 ```
 
+**Note**: It's advisable to move the Upstream binary to a stable location,
+before registering the custom protocol, otherwise the custom protocol
+handling will break if the binary is moved.
+
 To verify whether the custom protocol was registered by launching Upstream via
 a custom URI from your terminal:
 ```sh
