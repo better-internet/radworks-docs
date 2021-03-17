@@ -99,7 +99,7 @@ our disposal and that our router is set up to forward the ports UDP:12345 and
 TCP:80 to the machine where the seed node will be running.</p>
 <p>While not strictly necessary, it's nice to have a domain name set up for the
 public IP address as well. For this example, we'll use this record:
-<code>seed.my.org. A 1.2.3.4</code>.</p>
+<code>seed.example.com. A 1.2.3.4</code>.</p>
 <p>Now you're ready to start the seed node. Let's configure it to listen on ports
 12345 and 80 on all interfaces, the private key is supplied via <code>STDIN</code>:</p>
 <pre><code class="hljs">cargo run -p radicle-seed-node --release -- \
@@ -107,7 +107,7 @@ public IP address as well. For this example, we'll use this record:
   --peer-listen 0.0.0.0:12345 \
   --http-listen 0.0.0.0:80 \
   --name &quot;seedling&quot; \
-  --public-addr &quot;seed.my.org:12345&quot; \
+  --public-addr &quot;seed.example.com:12345&quot; \
   --assets-path seed/ui/public \
   &lt; ~/.radicle-seed/secret.key
 </code></pre>
@@ -124,23 +124,23 @@ This is what you'll see in the terminal when starting the seed node:
   --peer-listen 0.0.0.0:12345 \
   --http-listen 0.0.0.0:80 \
   --name &quot;seedling&quot; \
-  --public-addr &quot;seed.my.org:12345&quot; \
+  --public-addr &quot;seed.example.com:12345&quot; \
   --assets-path seed/ui/public \
   &lt; ~/.radicle-seed/secret.key
     Finished release [optimized] target(s) in 0.19s
-     Running `target/release/radicle-seed-node --root /Users/rudolfs/.radicle-seed --peer-listen '0.0.0.0:12345' --http-listen '0.0.0.0:80' --name seedling --public-addr 'seed.my.org:12345' --assets-path seed/ui/public`
+     Running `target/release/radicle-seed-node --root /Users/rudolfs/.radicle-seed --peer-listen '0.0.0.0:12345' --http-listen '0.0.0.0:80' --name seedling --public-addr 'seed.example.com:12345' --assets-path seed/ui/public`
 Nov 12 10:48:03.758  INFO radicle_seed: Initializing tracker to track everything..
 Nov 12 10:48:03.758  INFO Protocol::run{local.id=hyy5s7ysg96fqa91gbe7h38yddh4mkokft7y4htt8szt9e17sxoe3h local.addr=0.0.0.0:12345}: librad::net::protocol: Listening
 Nov 12 10:48:03.760  INFO Server::run{addr=0.0.0.0:80}: warp::server: listening on http://0.0.0.0:80
 Nov 12 10:48:03.760  INFO radicle_seed_node::frontend: Listening(0.0.0.0:12345)
 </code></pre>
 <p></details></p>
-<p>Now point your browser <a href="http://seed.my.org">http://seed.my.org</a>. This is the seed node dashboard.</p>
+<p>Now point your browser to the address you set instead of <a href="http://seed.example.com">http://seed.example.com</a>. This is the seed node dashboard.</p>
 <p><img src="/img/seed-node-ui.png" alt="Seed node UI"></p>
 <p>For Upstream clients to connect to your new seed, you'll need to share the seed
 address. This address can be found in the UI under the name of the seed. In our
 example the address is:</p>
-<pre><code class="hljs">hyy5s7ysg96fqa91gbe7h38yddh4mkokft7y4htt8szt9e17sxoe3h@seed.my.org:12345
+<pre><code class="hljs">hyy5s7ysg96fqa91gbe7h38yddh4mkokft7y4htt8szt9e17sxoe3h@seed.example.com:12345
 </code></pre>
 <p>Have a look at the <a href="/docs/using-radicle/adding-a-seed-node">Adding a custom seed node</a> section for more information
 on how to set up the new seed in Upstream.</p>
