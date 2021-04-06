@@ -191,7 +191,7 @@ Yes, as of Upstream v0.1.13 we support opening links to Radicle projects in
 Upstream. Clicking the following link will launch Upstream and navigate to the
 specified project:
 
-  radicle://v0/link/rad:git:hwd1yredna5k7undw9xurpm6mtfyczodz4fkute7bcpii3jb9uoj7tf1sho?action=show
+  radicle://link/v0/rad:git:hnrkdjjrkfmi43ukh594bxtf1k664oo3hzaeo
 
 The custom protocol is registered automatically when installing Upstream on
 macOS.
@@ -224,7 +224,7 @@ handling will break if the binary is renamed or moved to another location.
 
 On Linux you can verify whether the custom protocol is working like this:
 ```sh
-xdg-open "radicle://v0/link/rad:git:hwd1yredna5k7undw9xurpm6mtfyczodz4fkute7bcpii3jb9uoj7tf1sho?action=show"
+xdg-open "radicle://link/v0/rad:git:hnrkdjjrkfmi43ukh594bxtf1k664oo3hzaeo"
 ```
 
 Read more about the custom Radicle client URI scheme [here][cu].
@@ -233,7 +233,7 @@ Read more about the custom Radicle client URI scheme [here][cu].
 [ai]: https://docs.appimage.org/user-guide/run-appimages.html#integrating-appimages-into-the-desktop
 [ar]: using-radicle/tracking-and-viewing.md
 [cp]: using-radicle/creating-projects.md
-[cu]: https://github.com/radicle-dev/radicle-decisions/blob/63ed45c2dc3e2c4b8e1a02619dcf26f957e5fdfe/proposals/0004.md
+[cu]: https://github.com/radicle-dev/radicle-decisions/blob/master/proposals/0004.md
 [ov]: using-radicle/overview.md
 [gs]: getting-started.md
 [hw]: how-it-works.md/#git-implementation
