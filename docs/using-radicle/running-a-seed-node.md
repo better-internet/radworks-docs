@@ -3,10 +3,16 @@ id: running-a-seed-node
 title: Running a seed node
 ---
 
-To improve data availability, participants in the network can choose to act as
-[seeds][se]. Seeds are always-on nodes that automatically track discovered
-projects, thereby increasing the availability of these projects on the network.
-Conceptually, they are similar to pubs in [Secure Scuttlebutt][ss].
+To improve data availability of Radicle's peer-to-peer network, participants in
+the network can choose to act as [seeds][se]. Seeds are always-on nodes that
+automatically track discovered projects, thereby increasing the availability of
+these projects on the network. Conceptually, they are similar to pubs in [Secure
+Scuttlebutt][ss].
+
+> Running a seed node is for contributing to the availability
+> and redundancy of Radicle's peer-to-peer network. Running a seed node is not
+> related to token incentives at this time. For more on how the Radicle token
+> works, please refer to the [Introducing RAD][ir] post.
 
 To build and run a seed node, you'll have to install some prerequisites on your
 machine first:
@@ -47,7 +53,7 @@ TCP:80 to the machine where the seed node will be running.
 
 While not strictly necessary, it's nice to have a domain name set up for the
 public IP address as well. For this example, we'll use this record:
-`seed.my.org. A 1.2.3.4`.
+`seed.example.com. A 1.2.3.4`.
 
 Now you're ready to start the seed node. Let's configure it to listen on ports
 12345 and 80 on all interfaces, the private key is supplied via `STDIN`:
@@ -57,7 +63,7 @@ Now you're ready to start the seed node. Let's configure it to listen on ports
       --peer-listen 0.0.0.0:12345 \
       --http-listen 0.0.0.0:80 \
       --name "seedling" \
-      --public-addr "seed.my.org:12345" \
+      --public-addr "seed.example.com:12345" \
       --assets-path seed/ui/public \
       < ~/.radicle-seed/secret.key
 
@@ -76,18 +82,18 @@ in the seed address as `<SEED-ID>@<PUBLIC-ADDR>:<PORT>`.
       --peer-listen 0.0.0.0:12345 \
       --http-listen 0.0.0.0:80 \
       --name "seedling" \
-      --public-addr "seed.my.org:12345" \
+      --public-addr "seed.example.com:12345" \
       --assets-path seed/ui/public \
       < ~/.radicle-seed/secret.key
         Finished release [optimized] target(s) in 0.19s
-         Running `target/release/radicle-seed-node --root /Users/rudolfs/.radicle-seed --peer-listen '0.0.0.0:12345' --http-listen '0.0.0.0:80' --name seedling --public-addr 'seed.my.org:12345' --assets-path seed/ui/public`
+         Running `target/release/radicle-seed-node --root /Users/rudolfs/.radicle-seed --peer-listen '0.0.0.0:12345' --http-listen '0.0.0.0:80' --name seedling --public-addr 'seed.example.com:12345' --assets-path seed/ui/public`
     Nov 12 10:48:03.758  INFO radicle_seed: Initializing tracker to track everything..
     Nov 12 10:48:03.758  INFO Protocol::run{local.id=hyy5s7ysg96fqa91gbe7h38yddh4mkokft7y4htt8szt9e17sxoe3h local.addr=0.0.0.0:12345}: librad::net::protocol: Listening
     Nov 12 10:48:03.760  INFO Server::run{addr=0.0.0.0:80}: warp::server: listening on http://0.0.0.0:80
     Nov 12 10:48:03.760  INFO radicle_seed_node::frontend: Listening(0.0.0.0:12345)
 </details>
 
-Now point your browser http://seed.my.org. This is the seed node dashboard.
+Now point your browser to the address you set instead of http://seed.example.com. This is the seed node dashboard.
 
 ![Seed node UI][sn]
 
@@ -95,7 +101,7 @@ For Upstream clients to connect to your new seed, you'll need to share the seed
 address. This address can be found in the UI under the name of the seed. In our
 example the address is:
 
-    hyy5s7ysg96fqa91gbe7h38yddh4mkokft7y4htt8szt9e17sxoe3h@seed.my.org:12345
+    hyy5s7ysg96fqa91gbe7h38yddh4mkokft7y4htt8szt9e17sxoe3h@seed.example.com:12345
 
 Have a look at the [Adding a custom seed node][ad] section for more information
 on how to set up the new seed in Upstream.
@@ -110,3 +116,4 @@ on how to set up the new seed in Upstream.
 [ru]: https://www.rust-lang.org/tools/install
 [ss]: https://scuttlebutt.nz
 [ya]: https://yarnpkg.com/getting-started/install
+[ir]: https://radicle.xyz/blog/introducing-rad.html

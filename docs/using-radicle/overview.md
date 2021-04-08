@@ -28,7 +28,7 @@ Radicle, remotes of other peers point to the Git monorepo on your machine that
 stores all of your Radicle data. These remotes allow you to fetch changes from
 your peers and publish your changes to the Radicle network. This means that
 fetching and pushing to remotes are _local first_ actions. To read more about
-how Radicle is built on Git see our [**How it Works**][gi] section
+how Radicle is built on Git see our [**How it Works**][gi] section.
 
 The introduction of social coding features like bug reporting, patches, and code
 review will improve the process of finding and fetching changes between people

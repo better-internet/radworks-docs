@@ -9,10 +9,8 @@ sidebar_label: Getting Started
 The Radicle network can be accessed via **Radicle Upstream**, an open-source
 desktop client.
 
-Radicle development is public by default and completely open-source. You can
-follow along development in our [Matrix channel][mc] or on
-[radicle.community][co]. For more information on our community channels, see
-[Join our Community][cc].
+Radicle development is public by default and completely open-source. See
+[Join our Community][cc] for information on our community channels.
 
 <details>
   <summary><b>DISCLAIMER 🌱</b></summary>
