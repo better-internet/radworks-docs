@@ -190,7 +190,7 @@ is [z-base32][zb]. pct-encoded is defined in [RFC3986][r3], and the equivalence
 rules as per [RFC8141][r8] apply.
 
 An example of a Radicle URN:
-`rad:git:hwd1yredksthny1hht3bkhtkxakuzfnjxd8dyk364prfkjxe4xpxsww3try`.
+`rad:git:hnrkmzko1nps1pjogxadcmqipfxpeqn6xbeto`.
 
 In the Upstream client, Radicle URNs are called [**Radicle IDs**][ri].
 

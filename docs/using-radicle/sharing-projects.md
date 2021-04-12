@@ -12,7 +12,7 @@ from the project page.
 
 A Radicle ID is a URN with the following format:
 
-`rad:git:hwd1yrerye4msk57338r71kk9nb1sjdpkeaiqx7tq1138n48enojgsw3ksw`
+`rad:git:hnrkmzko1nps1pjogxadcmqipfxpeqn6xbeto`
 
 Copy and pasting a project's Radicle ID into your search bar and following it
 will send out a request to your network. 
