@@ -187,11 +187,11 @@ have it as a daemon right now, check out how the [seed][si] is implemented, and
 try to run your own.
 
 ## Is it possible to launch Upstream via links on the web?
-Yes, as of Upstream v0.1.13 we support opening links to Radicle projects in
+Yes, as of Upstream v0.2.1 we support opening links to Radicle projects in
 Upstream. Clicking the following link will launch Upstream and navigate to the
 specified project:
 
-  radicle://link/v0/rad:git:hnrkdjjrkfmi43ukh594bxtf1k664oo3hzaeo
+  radicle://link/v0/rad:git:hnrkmzko1nps1pjogxadcmqipfxpeqn6xbeto
 
 The custom protocol is registered automatically when installing Upstream on
 macOS.
@@ -201,15 +201,15 @@ integrate Upstream into your system with `AppImageLauncher` or `appimaged` as
 described [here][ai].
 
 Assuming you have downloaded the latest Upstream in
-`$HOME/Downloads/radicle-upstream-0.1.13.AppImage`, you can register the
+`$HOME/Downloads/radicle-upstream-0.2.1.AppImage`, you can register the
 protocol by running the following commands:
 
 ```sh
-chmod +x $HOME/Downloads/radicle-upstream-0.1.13.AppImage
+chmod +x $HOME/Downloads/radicle-upstream-0.2.1.AppImage
 
 cat > $HOME/.local/share/applications/radicle-upstream.desktop <<EOF
 [Desktop Entry]
-Exec=$HOME/Downloads/radicle-upstream-0.1.13.AppImage %U
+Exec=$HOME/Downloads/radicle-upstream-0.2.1.AppImage %U
 Terminal=false
 Type=Application
 MimeType=x-scheme-handler/radicle;
@@ -224,7 +224,7 @@ handling will break if the binary is renamed or moved to another location.
 
 On Linux you can verify whether the custom protocol is working like this:
 ```sh
-xdg-open "radicle://link/v0/rad:git:hnrkdjjrkfmi43ukh594bxtf1k664oo3hzaeo"
+xdg-open "radicle://link/v0/rad:git:hnrkmzko1nps1pjogxadcmqipfxpeqn6xbeto"
 ```
 
 Read more about the custom Radicle client URI scheme [here][cu].
