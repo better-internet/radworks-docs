@@ -81,4 +81,4 @@ network, head to our [How it Works][hw] section.
 [ep]: /img/create-existing-project.png
 
 
-[sn]: http://seedling.radicle.xyz/
+[sn]: http://sprout.radicle.xyz/

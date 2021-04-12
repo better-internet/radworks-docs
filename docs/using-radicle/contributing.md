@@ -6,7 +6,7 @@ title: Contributing to projects
 To contribute to another user's project, you must first find it on the
 network. To find a project, you need its [**Radicle ID**][ri]. This can be found
 in the project page under the project name, or in a seed node dashboard such as
-[seedling.radicle.xyz](http://seedling.radicle.xyz).
+[sprout.radicle.xyz](http://sprout.radicle.xyz).
 
 ![Identity][id]
 
