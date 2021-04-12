@@ -38,5 +38,5 @@ to all of your connected peers. To learn more about following & replication, see
 
 [ri]: /img/radicle-id.png
 [pf]: /img/project-found.png
-[sf]: /img/search-and-follow.png
+[sf]: /img/search-bar.png
 [sl]: /img/still-looking.png
