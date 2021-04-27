@@ -108,11 +108,11 @@ on how to set up the new seed in Upstream.
 
 ### Upgrading a seed node from v0.1.x to v0.2.x
 
-1. Fetch the latest changes on `radicle-bins`:
+1. Get the latest changes on `radicle-bins`:
 ```
 cd radicle-bins
-git fetch
 git checkout master
+git pull
 ```
 
 2. The data layout between v0.1 and v0.2 seed nodes changed, this means you'll
