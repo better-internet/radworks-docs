@@ -134,7 +134,7 @@ a client.
 ## I can't find a project on the network or see a peer's changes. What should I do?
 First, check to see if you are connected to the seed node by hovering over the
 Connection Status icon in your toolbar. If you are connected to one or more
-peer, navigate to the seed node dashboard (e.g. seedling.radicle.xyz) to see if
+peer, navigate to the seed node dashboard (e.g. sprout.radicle.xyz) to see if
 you can find your Device ID.
 
 ![Seed Dashboard Search][sd]
@@ -206,4 +206,4 @@ try to run your own.
 [sc]: https://matrix.to/#/#support:radicle.community
 [si]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
 [sm]: https://radicle.community/
-[sn]: http://seedling.radicle.xyz/
+[sn]: http://sprout.radicle.xyz/

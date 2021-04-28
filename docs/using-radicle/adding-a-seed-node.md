@@ -27,14 +27,14 @@ custom seed address, you can do so by following these steps:
    <kbd>RETURN</kbd>.
 
     Upstream's default seed node:
-    `hynewpywqj6x4mxgj7sojhue3erucyexiyhobxx4du9w66hxhbfqbw@seedling.radicle.xyz:12345`
+    `hynkyndc6w3p8urucakobzna7sxwgcqny7xxtw88dtx3pkf7m3nrzc@sprout.radicle.xyz:12345`
 
 3. Check that you're connected by hovering over your Connection icon in your
    sidebar.
 
 Recent seed node activity and connected peers can be viewed on the added seed
 node's dashboard (e.g. http://seed.my.org). The default seed dashboard for
-Upstream can be viewed at http://seedling.radicle.xyz/.
+Upstream can be viewed at http://sprout.radicle.xyz/.
 
 [^1]: Seed nodes can be configured to either track and share all data across the
       network, or to propagate only a specific set of peers or projects. Please

@@ -39,4 +39,4 @@ If you are having trouble adding another peer as a remote, see our
 [sb]: /img/search-bar.png
 
 [rd]: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
-[sn]: http://seedling.radicle.xyz/
+[sn]: http://sprout.radicle.xyz/
