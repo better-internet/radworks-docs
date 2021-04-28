@@ -106,6 +106,24 @@ example the address is:
 Have a look at the [Adding a custom seed node][ad] section for more information
 on how to set up the new seed in Upstream.
 
+### Upgrading a seed node from v0.1.x to v0.2.x
+
+1. Get the latest changes on `radicle-bins`:
+```
+cd radicle-bins
+git checkout master
+git pull
+```
+
+2. The data layout between v0.1 and v0.2 seed nodes changed, this means you'll
+   have to remove the old seed data directory and re-seed all of your projects
+   from source. Assuming you followed this documentation to set up your seed
+   node it should be sufficient to remove the directory where `--root` pointed
+   to.
+
+3. Set up and run the seed node as per the steps outlined above starting with
+   creating a new key.
+
 
 [ad]: using-radicle/adding-a-seed-node.md
 [se]: understanding-radicle/glossary.md/#seed
