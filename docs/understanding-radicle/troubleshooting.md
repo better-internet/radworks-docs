@@ -58,13 +58,13 @@ In the error you will spot that the `urn` of the project is in the JSON data.
 The suffix after `rad:git` will correspond to the namespace of the project — see
 [here][mo] for more details.
 
-Your monorepo will live under `$XDG_DATA_HOME/radicle/git`. Running the
+Your monorepo will live under `$XDG_DATA_HOME/radicle-link/<active_profile_id>/git`. Running the
 following command you should see something like:
 
 ```
-$ tree $XDG_DATA_HOME/radicle/git/refs
+$ tree $XDG_DATA_HOME/radicle-link/*/git/refs
 
-/home/user/.local/share/radicle/git/refs/
+/home/user/.local/share/radicle-link/d9a6c997-c481-4e0b-888f-6b0e30792458/git/refs/
 ├── heads
 ├── namespaces
 │   ├── hwd1yre8ibmso5webrog7uqwcrys4fmdijcyjfoso73utnz7y41dbtqudxe
@@ -137,7 +137,7 @@ To get the JSON data for the `signed-refs` we must run the following commands,
 filling in the details for your particular project and remote.
 
 ```
-$ cd $XDG_DATA_HOME/radicle/git
+$ cd $XDG_DATA_HOME/radicle-link/<active_profile_id>/git
 
 $ git ls-tree refs/namespaces/<id>/refs[/remotes/<peer>]/rad/signed_refs
 100644 blob e3f6e6bd25955802060698f5b5449c874969aa71    refs
@@ -223,6 +223,21 @@ Error: Error unsealing key: Unable to decrypt secret box using the derived key
 You can solve the issue by fixing your `SSH_ASKPASS`. One nice trick can be
 to have a wrapper like `pass show radicle-password` in `~/bin/print-radicle-pw`
 and then use `SSH_ASKPASS=print-radicle-pw git push rad`.
+
+# Lost Passphrase
+
+**Caution**: this advice involves manually deleting a file created by radicle.
+If you are at all unsure then reach out to us on the previously mentioned channels.
+
+If you lost your passphrase for your radicle identity, there is currently no way
+to restore it.
+To start with a new identity, you need to delete the `active_profile` file.
+This file stores the `active_profile_id` that points radicle to the profile aka
+directory it needs to access for your identity specific data.
+The `active_profile` file can be found under
+`$XDG_CONFIG_HOME/radicle-link/active_profile`.
+Stop the app _before_ removing the file. When you start it up again, the app
+should automatically begin with the onboarding screen to create a new identity.
 
 [di]: understanding-radicle/glossary#device-id
 [gs]: getting-started.md
