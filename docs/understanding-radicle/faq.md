@@ -185,9 +185,55 @@ for anyone to run in the background. We are working hard to change that so we ca
 help people operate Radicle nodes in many different ways. Should you be keen to
 have it as a daemon right now, check out how the [seed][si] is implemented, and
 try to run your own.
- 
+
+## Is it possible to launch Upstream via links on the web?
+Yes, as of Upstream v0.2.1 we support opening links to Radicle projects in
+Upstream. Clicking the following link will launch Upstream and navigate to the
+specified project:
+
+  radicle://link/v0/rad:git:hnrkmzko1nps1pjogxadcmqipfxpeqn6xbeto
+
+The custom protocol is registered automatically when installing Upstream on
+macOS.
+
+On Linux you'll have to either manually register the custom protocol or
+integrate Upstream into your system with `AppImageLauncher` or `appimaged` as
+described [here][ai].
+
+Assuming you have downloaded the latest Upstream in
+`$HOME/Downloads/radicle-upstream-0.2.1.AppImage`, you can register the
+protocol by running the following commands:
+
+```sh
+chmod +x $HOME/Downloads/radicle-upstream-0.2.1.AppImage
+
+cat > $HOME/.local/share/applications/radicle-upstream.desktop <<EOF
+[Desktop Entry]
+Exec=$HOME/Downloads/radicle-upstream-0.2.1.AppImage %U
+Terminal=false
+Type=Application
+MimeType=x-scheme-handler/radicle;
+EOF
+
+update-desktop-database ~/.local/share/applications
+```
+
+**Note**: It's advisable to move the Upstream binary to a stable location
+before registering the custom protocol, otherwise the custom protocol
+handling will break if the binary is renamed or moved to another location.
+
+On Linux you can verify whether the custom protocol is working like this:
+```sh
+xdg-open "radicle://link/v0/rad:git:hnrkmzko1nps1pjogxadcmqipfxpeqn6xbeto"
+```
+
+Read more about the custom Radicle client URI scheme [here][cu].
+
+
+[ai]: https://docs.appimage.org/user-guide/run-appimages.html#integrating-appimages-into-the-desktop
 [ar]: using-radicle/tracking-and-viewing.md
 [cp]: using-radicle/creating-projects.md
+[cu]: https://github.com/radicle-dev/radicle-decisions/blob/master/proposals/0004.md
 [ov]: using-radicle/overview.md
 [gs]: getting-started.md
 [hw]: how-it-works.md/#git-implementation
