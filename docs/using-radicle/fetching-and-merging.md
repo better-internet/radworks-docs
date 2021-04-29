@@ -13,7 +13,7 @@ If you can see a peer's changes after adding them as a remote, they have been
 successfully replicated to your machine. If you have added a peer as a remote
 and can't see their changes, head over to our [FAQ][fq] section.
 
-## Fetching changes 
+## Fetching changes
 
 If you're interested in merging these changes into one of your branches, you'll
 need to fetch these commits and merge them into your working copy. To make sure
@@ -74,7 +74,7 @@ Once changes have been fetched, you can view the changes by running `git diff`
 on the specific branch of your remote (e.g. `<remote handle>/<branch name>`):
 
 ```
-$ git diff merle@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g/main 
+$ git diff merle@hyb1exienq5txww75rgdftuf6j78qehtigma6hn19zt8gz5pu5k73g/main
 diff --git a/README.md b/README.md
 index b72e7d4..8c98464 100644
 --- a/README.md
@@ -128,7 +128,6 @@ see the [FAQ][fq] for more help.
 
 [pc]: using-radicle/pushing-changes.md
 [tv]: using-radicle/tracking-and-viewing.md
-[tr]: using-radicle/troubleshooting.md
 [gi]: understanding-radicle/how-it-works.md/#git-implementation
 [gs]: getting-started.md/#configuring-your-system
 [fq]: understanding-radicle/faq.md/#i-cant-find-a-project-on-the-network-or-see-a-peers-changes-what-should-i-do
