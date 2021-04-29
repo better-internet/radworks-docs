@@ -10,7 +10,7 @@ increases the availability of your data throughout the network, while making it
 easier to find others data as well. Upstream is preconfigured with a Radicle
 operated seed to bootstrap your connectivity. Adding more seed nodes to your
 Upstream configuration is a great way to improve data availability and
-redundancy. 
+redundancy.
 
 > To discover seed nodes, please refer to this [list of public
 > seed nodes][lp].
@@ -33,7 +33,7 @@ custom seed address, you can do so by following these steps:
    sidebar.
 
 Recent seed node activity and connected peers can be viewed on the added seed
-node's dashboard (e.g. http://seed.my.org). The default seed dashboard for
+node's dashboard (e.g. ht<span>tp:</span>//seed.my.org). The default seed dashboard for
 Upstream can be viewed at http://sprout.radicle.xyz/.
 
 [^1]: Seed nodes can be configured to either track and share all data across the
