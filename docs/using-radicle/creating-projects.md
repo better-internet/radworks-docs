@@ -20,7 +20,7 @@ only be created through the Upstream client][fa].
 This will initalize a Git repository (with the name you've given it) in the
 location you choose and publish it to the Radicle network. Note, when a project
 is published to the network, it will be able to be replicated by any connected
-peers. 
+peers.
 
 ## Publishing an existing project
 
@@ -32,7 +32,7 @@ branch. All branches present when you add the repository will be published.
 ![Start Existing Project][ep]
 
 The name of the project on the network will be taken from the name of the
-repository. 
+repository.
 
 ⚠️ On project creation, **all branches that have a local head will be
 published**. You can see what branches will be published by running `git branch
@@ -54,7 +54,7 @@ available to your network of connected peers.
 
 Projects contain all files of a Git repository and their revision history, but
 they also have associated Radicle-speciifc metadata such as a name and
-description. 
+description.
 
 Each project carries a unique, shareable peer-to-peer identitifer known as a
 **Radicle ID**.
@@ -67,13 +67,13 @@ this point in time, the person who creates the project in Radicle is considered
 its sole maintainer, but multiple maintainers will be able to be added in the
 future.
 
-To read more about how projects are designed are replicated across the Radicle
+To read more about how projects are replicated across the Radicle
 network, head to our [How it Works][hw] section.
 
 [fa]: understanding-radicle/faq.md/#when-will-cli-tooling-be-available
 [ma]: understanding-radicle/glossary.md/#maintainer
 [pr]: understanding-radicle/glossary.md/#project
-[hw]: understanding-radicle/how-it-works.md/#git-implementation
+[hw]: understanding-radicle/how-it-works.md/#peer-discovery--replication
 
 [ri]: /img/radicle-id.png
 [ss]: /img/seed-dashboard-search.png
