@@ -42,7 +42,7 @@ Radicle development is public by default and completely open-source. See
       of Content.
     </p>
     <p>
-      Read the rest of our Terms of Services [here][te].
+      Read the rest of our Terms of Use [here][te].
     </p>
   </em>
 </details>
