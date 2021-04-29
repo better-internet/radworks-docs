@@ -144,6 +144,23 @@ example the address is:</p>
 </code></pre>
 <p>Have a look at the <a href="/docs/using-radicle/adding-a-seed-node">Adding a custom seed node</a> section for more information
 on how to set up the new seed in Upstream.</p>
+<h3><a class="anchor" aria-hidden="true" id="upgrading-a-seed-node-from-v01x-to-v02x"></a><a href="#upgrading-a-seed-node-from-v01x-to-v02x" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Upgrading a seed node from v0.1.x to v0.2.x</h3>
+<ol>
+<li>Get the latest changes on <code>radicle-bins</code>:</li>
+</ol>
+<pre><code class="hljs">cd radicle-bins
+git checkout <span class="hljs-keyword">master</span>
+<span class="hljs-title">git</span> pull
+</code></pre>
+<ol start="2">
+<li><p>The data layout between v0.1 and v0.2 seed nodes changed, this means you'll
+have to remove the old seed data directory and re-seed all of your projects
+from source. Assuming you followed this documentation to set up your seed
+node it should be sufficient to remove the directory where <code>--root</code> pointed
+to.</p></li>
+<li><p>Set up and run the seed node as per the steps outlined above starting with
+creating a new key.</p></li>
+</ol>
 </span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/using-radicle/adding-a-seed-node"><span class="arrow-prev">← </span><span>Adding a custom seed node</span></a><a class="docs-next button" href="/docs/understanding-radicle/why-radicle"><span>Why Radicle?</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
                 document.addEventListener('keyup', function(e) {
                   if (e.target !== document.body) {

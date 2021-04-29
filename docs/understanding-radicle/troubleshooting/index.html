@@ -93,11 +93,11 @@ unsure then reach out to us on the previously mentioned channels.</p>
 <p>In the error you will spot that the <code>urn</code> of the project is in the JSON data.
 The suffix after <code>rad:git</code> will correspond to the namespace of the project — see
 <a href="/docs/understanding-radicle/how-it-works">here</a> for more details.</p>
-<p>Your monorepo will live under <code>$XDG_DATA_HOME/radicle/git</code>. Running the
+<p>Your monorepo will live under <code>$XDG_DATA_HOME/radicle-link/&lt;active_profile_id&gt;/git</code>. Running the
 following command you should see something like:</p>
-<pre><code class="hljs">$ tree $XDG_DATA_HOME/radicle/git/refs
+<pre><code class="hljs">$ tree $XDG_DATA_HOME/radicle-link/*<span class="hljs-regexp">/git/refs</span>
 
-<span class="hljs-regexp">/home/user</span><span class="hljs-regexp">/.local/share</span><span class="hljs-regexp">/radicle/git</span><span class="hljs-regexp">/refs/</span>
+<span class="hljs-regexp">/home/user</span><span class="hljs-regexp">/.local/share</span><span class="hljs-regexp">/radicle-link/d</span>9a6c997-c481-<span class="hljs-number">4e0</span>b-<span class="hljs-number">888</span>f-<span class="hljs-number">6</span>b0e30792458/git/refs/
 ├── heads
 ├── namespaces
 │   ├── hwd1yre8ibmso5webrog7uqwcrys4fmdijcyjfoso73utnz7y41dbtqudxe
@@ -150,7 +150,7 @@ come from that Device ID. If you think this is indeed an error, then we can
 attempt to inspect the <code>signed-refs</code>.</p>
 <p>To get the JSON data for the <code>signed-refs</code> we must run the following commands,
 filling in the details for your particular project and remote.</p>
-<pre><code class="hljs">$ cd $XDG_DATA_HOME<span class="hljs-meta-keyword">/radicle/</span>git
+<pre><code class="hljs">$ cd $XDG_DATA_HOME<span class="hljs-meta-keyword">/radicle-link/</span><span class="hljs-params">&lt;active_profile_id&gt;</span>/git
 
 $ git ls-tree refs<span class="hljs-meta-keyword">/namespaces/</span><span class="hljs-params">&lt;id&gt;</span>/refs[<span class="hljs-meta-keyword">/remotes/</span><span class="hljs-params">&lt;peer&gt;</span>]<span class="hljs-meta-keyword">/rad/</span>signed_refs
 <span class="hljs-number">100644</span> blob e3f6e6bd25955802060698f5b5449c874969aa71    refs
@@ -211,6 +211,18 @@ If you have that variable broken you won't get prompted for a password and see:<
 <p>You can solve the issue by fixing your <code>SSH_ASKPASS</code>. One nice trick can be
 to have a wrapper like <code>pass show radicle-password</code> in <code>~/bin/print-radicle-pw</code>
 and then use <code>SSH_ASKPASS=print-radicle-pw git push rad</code>.</p>
+<h1><a class="anchor" aria-hidden="true" id="lost-passphrase"></a><a href="#lost-passphrase" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Lost Passphrase</h1>
+<p><strong>Caution</strong>: this advice involves manually deleting a file created by radicle.
+If you are at all unsure then reach out to us on the previously mentioned channels.</p>
+<p>If you lost your passphrase for your radicle identity, there is currently no way
+to restore it.
+To start with a new identity, you need to delete the <code>active_profile</code> file.
+This file stores the <code>active_profile_id</code> that points radicle to the profile aka
+directory it needs to access for your identity specific data.
+The <code>active_profile</code> file can be found under
+<code>$XDG_CONFIG_HOME/radicle-link/active_profile</code>.
+Stop the app <em>before</em> removing the file. When you start it up again, the app
+should automatically begin with the onboarding screen to create a new identity.</p>
 </span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/understanding-radicle/how-it-works"><span class="arrow-prev">← </span><span>How it Works</span></a><a class="docs-next button" href="/docs/understanding-radicle/glossary"><span>Glossary</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#sessionfetchfailure">SessionFetchFailure</a></li><li><a href="#projectrequestfailure">ProjectRequestFailure</a><ul class="toc-headings"><li><a href="#defaultbranch">DefaultBranch</a></li><li><a href="#stats">Stats</a></li><li><a href="#signedrefs">SignedRefs</a></li></ul></li><li><a href="#backendterminated">BackendTerminated</a><ul class="toc-headings"><li><a href="#reason-4">Reason</a></li><li><a href="#action-4">Action</a></li></ul></li><li><a href="#unknownexception">UnknownException</a><ul class="toc-headings"><li><a href="#reason-5">Reason</a></li><li><a href="#action-5">Action</a></li><li><a href="#radicle-remote-helper-not-configured-correctly">Radicle remote helper not configured correctly</a></li><li><a href="#radicle-does-not-prompt-for-password">Radicle does not prompt for password</a></li></ul></li></ul></nav></div></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
                 document.addEventListener('keyup', function(e) {
                   if (e.target !== document.body) {
