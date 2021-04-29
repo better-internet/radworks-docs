@@ -56,7 +56,7 @@ For more help on using Radicle, be sure to join our [community channels][cc].
 [6]: using-radicle/contributing.md
 [7]: using-radicle/contributing.md
 
-[cc]: using-radicle/community.md
+[cc]: get-involved/community.md
 [dr]: radicle.md/#how-is-radicle-different-from-github
 [gi]: understanding-radicle/how-it-works.md
 [rl]: https://github.com/radicle-dev/radicle-link

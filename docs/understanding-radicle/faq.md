@@ -173,7 +173,7 @@ To join our Matrix chat, follow these steps:
 * Go to https://matrix.radicle.community
 * Create an account
 * Verify your account by email
-* Join the [community page][cp]
+* Join the [community page][cc]
 
 To join our Matrix chat with an account from another Matrix server, you can use
 this [direct invite link][mc] to join #general. For more information on our
@@ -238,11 +238,10 @@ Read more about the custom Radicle client URI scheme [here][cu].
 [gs]: getting-started.md
 [hw]: how-it-works.md/#git-implementation
 [tr]: how-it-works.md/#tracking
-[cc]: using-radicle/community.md
+[cc]: get-involved/community.md
 
 [sd]: /img/seed-dashboard-search.png
 
-[cp]: https://matrix.to/#/+home:radicle.community
 [eb]: https://en.wikipedia.org/wiki/Gossip_protocol
 [gh]: https://github.com/radicle-dev/radicle-upstream/issues
 [hp]: https://en.wikipedia.org/wiki/Hole_punching_(networking)
