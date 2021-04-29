@@ -226,10 +226,6 @@ The `delegations` of a `Project` are also referred to as the project's
 These delegations are used to verify the authenticity of data across the
 network. See more notes on Verification [here][vr].
 
-### Key Architecture
-
-*See more on [key architecture][sc]*
-
 
 ### Verification
 
@@ -268,7 +264,6 @@ There are four levels of validity:
         revision is given, but it is not the same the parent attestation refers
         to * The current and parent attestations refer to different roots
 
-*See more notes on [Verification][ve]*
 
 ## Git Implementation
 
@@ -278,7 +273,7 @@ Radicle basically uses Git as a database. This means everything is stored in a
 single Git monorepo that is read and written from via the Upstream client. Our
 Git implementation was devised to create an incentive for the seeder to provide
 all data necessary to resolve and verify a repository, while reducing latency by
-eliminating gossip queries and git fetches as much as possible. 
+eliminating gossip queries and git fetches as much as possible.
 
 Read more about our approach [here][ir]
 
@@ -608,7 +603,7 @@ nodes are "always-on" nodes running on public IP addresses that serve data to
 any connected peers. By joining a seed node, it automatically tracks you and
 shares your data across its network of other connected users. This increases the
 availability of your data throughout the network, while making it easier to find
-other's data as well. 
+other's data as well.
 
 A seed may track a large number of repositories for a given project, so cloning
 from a seed will greatly increase the connectedness of a tracking graph. Also
@@ -651,7 +646,7 @@ Assuming you have discovered a project of interest within the Radicle network
 (more on discoverability later), then the first thing you have to do in order to
 interact with it is to track it. Tracking a project signals interest, and by
 design implies tracking the project's maintainers, therefore replicating the
-data within their social graphs. 
+data within their social graphs.
 
 In the context of a project, maintainers of a repository may choose to track the
 views of other owners (this is called a remote in Git terminology: a named
@@ -692,7 +687,7 @@ problematic, as correctly pointed out by Konstantin Ryabitsev of the Linux
 foundation with regards to a [previous version](http://alpha.radicle.xyz) of
 Radicle that was relying on [IPFS](https://ipfs.io/).
 
-Read more about the [Radicle collaboration model][rc]. 
+Read more about the [Radicle collaboration model][rc].
 
 
 [dl]: #delegations
@@ -716,8 +711,8 @@ Read more about the [Radicle collaboration model][rc].
 [cr]: https://github.com/radicle-dev/radicle-link
 [de]: https://github.com/radicle-dev/radicle-link/blob/master/docs/spec/identities.md#delegations
 [gt]: https://git-scm.com/docs/git-interpret-trailers
-[fs]: https://github.com/radicle-dev/radicle-link/blob/master/docs/rfc/identity_resolution.md#fetching
-[ir]: https://github.com/radicle-dev/radicle-link/blob/master/docs/rfc/identity_resolution.md
+[fs]: https://github.com/radicle-dev/radicle-link/blob/master/docs/rfc/0001-identity_resolution.md#fetching
+[ir]: https://github.com/radicle-dev/radicle-link/blob/master/docs/rfc/0001-identity_resolution.md
 [mh]: https://multiformats.io/multihash/
 [mu]: https://github.com/multiformats/multibase
 [ns]: https://git-scm.com/docs/gitnamespaces

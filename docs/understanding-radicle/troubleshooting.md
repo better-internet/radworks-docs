@@ -7,7 +7,7 @@ As the developers of Upstream we want you, the user, to have the best experience
 possible. Also, as the developers of Upstream, we know that there will be bugs
 and errors in our Beta release. To help consolidate these diametrically opposed
 pieces of knowledge, we will try and document any of the errors that we are
-aware of and provide some troubleshooting advice. 
+aware of and provide some troubleshooting advice.
 
 In the event that this information doesn't resolve your issue, we encourage you
 to submit a formal request through our [#support channel][sc] on our Matrix
@@ -239,7 +239,7 @@ The `active_profile` file can be found under
 Stop the app _before_ removing the file. When you start it up again, the app
 should automatically begin with the onboarding screen to create a new identity.
 
-[di]: understanding-radicle/glossary#device-id
+[di]: glossary#device-id
 [gs]: getting-started.md
 [mo]: understanding-radicle/how-it-works.md
 [wg]: #working-with-git
