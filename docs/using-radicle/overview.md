@@ -30,6 +30,8 @@ your peers and publish your changes to the Radicle network. This means that
 fetching and pushing to remotes are _local first_ actions. To read more about
 how Radicle is built on Git see our [**How it Works**][gi] section.
 
+<!-- OPTIONAL TODO: UPDATE THIS PIECE OF TEXT -->
+
 The introduction of social coding features like bug reporting, patches, and code
 review will improve the process of finding and fetching changes between people
 on the network by making it easier to know those changes exist in the
@@ -41,10 +43,9 @@ guides for answering some common questions we get on how to use Radicle:
 * [How do I publish a project?][1]
 * [How do I push changes to my project?][2]
 * [How do I share my project?][3]
-* [How do I see contributions or changes to my project?][4]
-* [How do I fetch and merge contributions to my project?][5]
-* [How do I find other projects?][6]
-* [How do I contribute to a project?][7]
+* [How do I see someone created a patch for my project?][4]
+* [How do I contribute a patch to a project?][5]
+* [How do I fetch and merge patches into my project?][6]
 
 For more help on using Radicle, be sure to join our [community channels][cc].
 
@@ -52,9 +53,8 @@ For more help on using Radicle, be sure to join our [community channels][cc].
 [2]: using-radicle/pushing-changes.md
 [3]: using-radicle/sharing-projects.md
 [4]: using-radicle/tracking-and-viewing.md
-[5]: using-radicle/fetching-and-merging.md
-[6]: using-radicle/contributing.md
-[7]: using-radicle/contributing.md
+[5]: using-radicle/contributing.md
+[6]: using-radicle/fetching-and-merging.md
 
 [cc]: get-involved/community.md
 [dr]: radicle.md/#how-is-radicle-different-from-github

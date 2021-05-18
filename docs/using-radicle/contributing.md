@@ -1,6 +1,6 @@
 ---
 id: contributing
-title: Contributing to projects
+title: Creating patches
 ---
 
 To contribute to another user's project, you must first find it on the
@@ -14,7 +14,7 @@ Once you have the Radicle ID, copy it into the Upstream search bar. From there,
 you can follow the project to track it. This will replicate it to your local
 machine once it's found in your network of connected peers. You won't see the
 project metadata — such as, the name of the project — until it is verified by
-the protocol. 
+the protocol.
 
 ![Search bar][sb] ![Found Project][fp]
 
@@ -24,41 +24,58 @@ To create your own view of a project, you can use the **Fork** option within the
 Upstream client. This will clone the project to a specified location on your
 local machine and publish your version to the Radicle network as a new project.
 
+<!-- TODO: Update screenshot to have patches -->
+
 ![Fork Project][fo]
 
 Forking a project will move it from the **Following** tab to the **Projects**
-tab. This is because once you fork a project, you create your own view of
-it that is unique to your Device ID. You can [push changes][pc] to this view via
-the `rad` remote and publish them to the network. If another person has
-added you as a remote (See [Tracking & viewing contributions][tv]), they will be
-able to fetch these changes and merge them into their branches (See [Fetching
-and merging contributions][fm]).
+tab. This is because once you fork a project, you create your own view of it
+that is unique to your Device ID. You can [push changes][pc] to this view via
+the `rad` remote and publish them to the network. You are able to clone your
+project with the **Checkout** option on your project page.
 
-You are able to clone your project with the **Checkout** option on your project
-page.
+### Creating a patch
 
-## Getting a contribution merged
+Now that you have your own view of the project and you have it checked out, you
+can start creating a patch. In your view of the project you'll see a patches tab next to `Files` and `Commits`. There you see a `New patch` button which will guide you through the steps.
 
-Once you [push changes][pc] to a fork of a project and they've been successfully
-published to the network, they can be replicated by other peers. For another
-peer (e.g. the maintainer of a project) to see your changes, they need to [add
-you as a remote][fm] to their projects. This means that until [social coding features
-are introduced][fq], you'll have to manually communicate your patches to the
-maintainer of a project by sending them your Device ID. This can be done through
-email, a developer chat, or social media channel. 
+<!-- TODO: Replace with new screenshot -->
+
+![New Patch][np]
+
+First thing you do is make your changes as you always would and commit those
+locally. Once you've done that you have to package them as a patch by creating
+an annotated git tag that starts with `radicle-patch/`, like this:
+
+`git tag--annotate radicle-patch/<name>`
+
+Be sure to replace `<name>` with the name of your patch.
+
+Next git will allow you to add a title and description to the tag, those will be
+the ones that show up in the UI, so be sure to add those to make it easy for the
+maintainer to understand the changes you're proposing.
+
+<!-- TODO: Replace with screenshot showing the tag message thing -->
+
+![Tag Message][tm]
+
+All that's left to do is to publish the new patch by simply pushing the git tag to the network: `git push --tags rad`. Your patch is now public 🎉.
+
+Make sure the maintainer is tracking you so that they see your patch. To learn how to do that, take a look at [tracking and viewing contributions][tv].
 
 If you are a maintainer of a project, it is suggested that you provide a link to
 a channel for receiving contributor Device IDs.
 
-[tv]: tracking-and-viewing.md
-[fm]: fetching-and-merging.md
 [pc]: pushing-changes.md
-[pn]: understanding-radicle/glossary.md/#project-name
+[tv]: tracking-and-viewing.md
 [ri]: understanding-radicle/glossary.md/#radicle-id
-[fq]: understanding-radicle/faq.md/#how-will-issues-and-prs-work
 
 [id]: /img/radicle-id-seed-node.png
-[ps]: /img/peer-switcher.png
 [sb]: /img/search-bar.png
 [fp]: /img/project-found.png
 [fo]: /img/fork-project.png
+
+<!-- TODO: REPLACE LINKS TO PROPER IMAGES -->
+
+[np]: /img/fork-project.png
+[tm]: /img/fork-project.png
