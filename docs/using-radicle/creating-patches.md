@@ -36,9 +36,9 @@ project with the **Checkout** option on your project page.
 ### Creating a patch
 
 Now that you have your own view of the project and you have it checked out, you
-can start creating a patch. In your view of the project you'll see a `Patches`
-tab next to `Files` and `Commits`. There you see a `New patch` button which will
-guide you through the steps.
+can start creating a patch. In your view of the project you'll see a **Patches**
+tab next to **Files** and **Commits**. There you see a **New patch** button
+which will guide you through the steps.
 
 <!-- TODO: Replace with new screenshot -->
 
@@ -51,16 +51,18 @@ by creating an annotated git tag:
 
 Be sure to replace `<name>` with the name of your patch.
 
-Next git will allow you to add a title and description to the tag, those will be
-the ones that show up in the UI, so be sure to add those to make it easy for the
-maintainer to understand the changes you're proposing.
+Next git will open your editor and allow you to add a title and description (the
+first line is the title, the second line is the description). Be sure to add
+those to make it easy for the maintainer to understand the changes you're
+proposing. Just so you know, you can't edit these later.
 
 <!-- TODO: Replace with screenshot showing the tag message thing -->
 
 ![Tag Message][tm]
 
 All that's left to do is to publish the new patch by simply pushing the git tag
-to the network: `git push --tags rad`. Your patch is now public 🎉.
+to the network: `git push --tags rad`. Your patch is now public 🎉. Refresh the
+app to see your new patch.
 
 Make sure the maintainer has added your Device ID as a remote on their project
 so that they see your patch. To learn how to do that, take a look at [tracking
