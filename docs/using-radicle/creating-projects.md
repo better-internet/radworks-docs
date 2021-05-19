@@ -59,8 +59,6 @@ description.
 Each project carries a unique, shareable peer-to-peer identitifer known as a
 **Radicle ID**.
 
-<!-- TODO: REPLACE WITH PATCHES SCREENSHOT -->
-
 ![Radicle ID][ri]
 
 A project also includes the Radicle identities of all its [maintainers][ma].

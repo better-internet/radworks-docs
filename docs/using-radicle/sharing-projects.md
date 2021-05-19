@@ -8,8 +8,6 @@ title: Sharing projects
 Projects can be found with their **Radicle ID**. The Radicle ID can be copied
 from the project page.
 
-<!-- TODO: REPLACE WITH PATCHES SCREENSHOT -->
-
 ![Radicle ID][ri]
 
 A Radicle ID is a URN with the following format:

@@ -15,7 +15,9 @@ you can follow the project to track it. This will replicate it to your local
 machine once it's found in your network of connected peers. You won't see any
 information on the project until it is verified by the protocol.
 
-![Search bar][sb] ![Found Project][fp]
+![Search bar][sb]
+
+![Found Project][fp]
 
 ### Forking projects
 
