@@ -5,8 +5,8 @@ title: Creating projects
 
 Creating a project is as easy as initializing a repository in Git. In the
 Upstream client, you can create a project from scratch or from an existing
-repository. Creating a project on Upstream will publish it to the Radicle network, making
-it available to any of your connected peers.
+repository. Creating a project on Upstream will publish it to the Radicle
+network, making it available to any of your connected peers.
 
 ## Starting a new project
 
@@ -24,10 +24,10 @@ peers.
 
 ## Publishing an existing project
 
-If you have a repository that you'd like to publish to the network,
-choose the `Create from an existing repository` in the **Start a new project**
-modal. This will allow you to choose the repository and its configured default
-branch. All branches present when you add the repository will be published.
+If you have a repository that you'd like to publish to the network, choose the
+`Create from an existing repository` in the **Start a new project** modal. This
+will allow you to choose the repository and its configured default branch. All
+branches present when you add the repository will be published.
 
 ![Start Existing Project][ep]
 

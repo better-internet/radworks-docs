@@ -4,11 +4,11 @@ title: Tracking and viewing contributions
 ---
 
 On Radicle, peers track projects they are interested in. If a peer wants to
-contribute to a project, they fork it, create their own view of the project
-that they publish changes to and then package those changes as a patch.
+contribute to a project, they fork it, create their own view of the project that
+they publish changes to and then package those changes as a patch.
 
-Therefore, to view someone else's patches to your project, you first need to add
-them as a `remote` to track their view of your project.
+Therefore, to view someone else's patch to your project, you first need to add
+them as a remote to track their view of your project.
 
 ### Adding remotes
 To add a peer as a remote, you must add their **Device ID** to the list of
@@ -27,13 +27,10 @@ see their changes before fetching them locally.
 Adding a peer as a remote automatically tracks their view of your project,
 subscribing you to any updates they push to their branches as well as any
 patches they might have. It's important to note that these changes may not
-instantly appear. We rely on the connectedness of the network to ensure you hear
-about the changes from a peer you track. Eventually we want to introduce
-automatic subscribing to any patches that might be available by others to your
-project. Until then, you'll have to manage remotes manually.
+instantly appear. We rely on the connectedness of the network to ensure you see
+the changes from a contributor.
 
-If you are having trouble adding another peer as a remote, see our
-[FAQ][fq].
+If you are having trouble adding peer as a remote, see our [FAQ][fq].
 
 <!-- TODO: Should we add a section here about viewing patches or is this in the next section? -->
 

@@ -1,20 +1,19 @@
 ---
-id: contributing
+id: creating-patches
 title: Creating patches
 ---
 
-To contribute to another user's project, you must first find it on the
-network. To find a project, you need its [**Radicle ID**][ri]. This can be found
-in the project page under the project name, or in a seed node dashboard such as
+To contribute to another user's project, you must first find it on the network.
+To find a project, you need its [**Radicle ID**][ri]. This can be found in the
+project page under the project name, or in a seed node dashboard such as
 [sprout.radicle.xyz](http://sprout.radicle.xyz).
 
 ![Identity][id]
 
 Once you have the Radicle ID, copy it into the Upstream search bar. From there,
 you can follow the project to track it. This will replicate it to your local
-machine once it's found in your network of connected peers. You won't see the
-project metadata — such as, the name of the project — until it is verified by
-the protocol.
+machine once it's found in your network of connected peers. You won't see any
+information on the project until it is verified by the protocol.
 
 ![Search bar][sb] ![Found Project][fp]
 
@@ -37,15 +36,16 @@ project with the **Checkout** option on your project page.
 ### Creating a patch
 
 Now that you have your own view of the project and you have it checked out, you
-can start creating a patch. In your view of the project you'll see a patches tab next to `Files` and `Commits`. There you see a `New patch` button which will guide you through the steps.
+can start creating a patch. In your view of the project you'll see a `Patches`
+tab next to `Files` and `Commits`. There you see a `New patch` button which will
+guide you through the steps.
 
 <!-- TODO: Replace with new screenshot -->
 
 ![New Patch][np]
 
-First thing you do is make your changes as you always would and commit those
-locally. Once you've done that you have to package them as a patch by creating
-an annotated git tag that starts with `radicle-patch/`, like this:
+First, make your changes and commit them locally. Next, package them as a patch
+by creating an annotated git tag:
 
 `git tag--annotate radicle-patch/<name>`
 
@@ -59,12 +59,16 @@ maintainer to understand the changes you're proposing.
 
 ![Tag Message][tm]
 
-All that's left to do is to publish the new patch by simply pushing the git tag to the network: `git push --tags rad`. Your patch is now public 🎉.
+All that's left to do is to publish the new patch by simply pushing the git tag
+to the network: `git push --tags rad`. Your patch is now public 🎉.
 
-Make sure the maintainer is tracking you so that they see your patch. To learn how to do that, take a look at [tracking and viewing contributions][tv].
+Make sure the maintainer has added your Device ID as a remote on their project
+so that they see your patch. To learn how to do that, take a look at [tracking
+and viewing contributions][tv].
 
-If you are a maintainer of a project, it is suggested that you provide a link to
-a channel for receiving contributor Device IDs.
+If you are a maintainer, share your contact information with potential
+contributors so they can give you their Device IDs and easily submit patches.
+Your `README.md` might be a good place for this.
 
 [pc]: pushing-changes.md
 [tv]: tracking-and-viewing.md

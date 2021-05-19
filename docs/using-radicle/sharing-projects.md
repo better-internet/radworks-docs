@@ -21,15 +21,15 @@ will send out a request to your network.
 
 ![Search and Follow][sf]
 
-You'll be able to view and replicate the project once a
-connected peer makes it available to you.
+You'll be able to view and replicate the project once a connected peer makes it
+available to you.
 
 ![Still Looking][sl]
 
 When a project has been successfully replicated, it will appear in your
-**Following** tab. Replicating a project also makes it available
-to all of your connected peers. To learn more about following & replication, see
-[How it Works][un].
+**Following** tab. Replicating a project also makes it available to all of your
+connected peers. To learn more about following & replication, see [How it
+Works][un].
 
 ![Project Found][pf]
 

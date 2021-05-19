@@ -20,7 +20,7 @@ machine first:
   - [Rust toolchain][ru], you'll need Rust **nightly**, easiest way to set it
     up is via [rustup][rp]
   - [yarn][ya]
-  
+
   *Make sure to restart terminal after installation*
 
 Next, clone and set up the `radicle-bins` repository:

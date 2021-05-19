@@ -10,8 +10,8 @@
       "using-radicle/sharing-projects",
       "using-radicle/pushing-changes",
       "using-radicle/tracking-and-viewing",
-      "using-radicle/contributing",
-      "using-radicle/fetching-and-merging",
+      "using-radicle/creating-patches",
+      "using-radicle/viewing-and-merging-patches",
       "using-radicle/adding-a-seed-node",
       "using-radicle/running-a-seed-node"
     ],
