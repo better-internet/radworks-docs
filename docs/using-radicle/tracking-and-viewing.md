@@ -17,11 +17,9 @@ in the peer selector on your project page. From there, you can add their Device
 ID. This is also where you can switch between the different views of peers to
 see their changes before fetching them locally.
 
-<!-- TODO: REPLACE WITH PATCHES SCREENSHOT -->
-
 <video style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
   playsinline autoplay muted loop>
-  <source src="/img/add-remote.mp4" type="video/mp4">
+  <source src="/img/add-remote.webm" type="video/webm">
 </video>
 
 Adding a peer as a remote automatically tracks their view of your project,
@@ -31,8 +29,6 @@ instantly appear. We rely on the connectedness of the network to ensure you see
 the changes from a contributor.
 
 If you are having trouble adding peer as a remote, see our [FAQ][fq].
-
-<!-- TODO: Should we add a section here about viewing patches or is this in the next section? -->
 
 [fq]: understanding-radicle/faq.md/#i-cant-find-a-project-on-the-network-or-see-a-peers-changes-what-should-i-do
 [id]: /img/radicle-id-seed-node.png
