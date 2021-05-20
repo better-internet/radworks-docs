@@ -17,8 +17,6 @@ and can't see their changes, head over to our [FAQ][fq] section.
 Now that you're tracking the contributor, you can navigate to the `Patches` tab
 on your project and see any patches that contributor has created.
 
-<!-- TODO: replace with final image -->
-
 ![Patches][pa]
 
 You can then click on the patch that you're interested in and get a detailed
@@ -26,7 +24,6 @@ view. You'll see the title, description, commits, and the branches it's
 comparing. If you're the maintainer, you'll also see two buttons: `Checkout` and
 `Merge`.
 
-<!-- TODO: replace with final image -->
 
 ![PatchDetail][pd]
 
@@ -35,21 +32,16 @@ comparing. If you're the maintainer, you'll also see two buttons: `Checkout` and
  If you're the maintainer, you can easily checkout a patch by clicking
  `Checkout` and copying the command:
 
-`git fetch rad
-tags/radicle-patch/<patch-name>:tags/radicle-patch/<peer-name>/<patch-name>`
+`git fetch rad remotes/hynadcs...s3gxjw/tags/radicle-patch/change-styles:tags/radicle-patch/coolprogrammer9000/change-styles`
 
-<!-- TODO: replace with final image -->
 
 ![PatchDetailCheckout][pdc]
 
 If you like the patch, you can merge it by running the command in the modal that
 appears after pressing `Merge`.
-<!-- TODD: replace with actual merge command -->
 
-`git fetch rad
-tags/radicle-patch/<patch-name>:tags/radicle-patch/<peer-name>/<patch-name>`
+`git pull rad remotes/hynadc...s3gxjw/tags/radicle-patch/change-styles`
 
-<!-- TODO: replace with final image -->
 
 ![PatchDetailMerge][pdm]
 
@@ -60,11 +52,8 @@ with `git push rad` you'll have merged and closed the patch.
 
 [tv]: using-radicle/tracking-and-viewing.md
 [fq]: understanding-radicle/faq.md/#i-cant-find-a-project-on-the-network-or-see-a-peers-changes-what-should-i-do
-
-<!-- TODO: REPLACE LINKS TO PROPER IMAGES -->
-
-[pa]: /img/fork-project.png
-[pd]: /img/fork-project.png
-[pdc]: /img/fork-project.png
-[pdm]: /img/fork-project.png
-[pc]: /img/fork-project.png
+[pa]: /img/patches.png
+[pd]: /img/patch-detail.png
+[pdc]: /img/patch-checkout.png
+[pdm]: /img/patch-merge.png
+[pc]: /img/patch-closed.png

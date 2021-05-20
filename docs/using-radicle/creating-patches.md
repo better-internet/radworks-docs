@@ -25,8 +25,6 @@ To create your own view of a project, you can use the **Fork** option within the
 Upstream client. This will clone the project to a specified location on your
 local machine and publish your version to the Radicle network as a new project.
 
-<!-- TODO: Update screenshot to have patches -->
-
 ![Fork Project][fo]
 
 Forking a project will move it from the **Following** tab to the **Projects**
@@ -42,14 +40,12 @@ can start creating a patch. In your view of the project you'll see a **Patches**
 tab next to **Files** and **Commits**. There you see a **New patch** button
 which will guide you through the steps.
 
-<!-- TODO: Replace with new screenshot -->
-
 ![New Patch][np]
 
 First, make your changes and commit them locally. Next, package them as a patch
 by creating an annotated git tag:
 
-`git tag--annotate radicle-patch/<name>`
+`git tag --annotate radicle-patch/<name>`
 
 Be sure to replace `<name>` with the name of your patch.
 
@@ -57,8 +53,6 @@ Next git will open your editor and allow you to add a title and description (the
 first line is the title, the second line is the description). Be sure to add
 those to make it easy for the maintainer to understand the changes you're
 proposing. Just so you know, you can't edit these later.
-
-<!-- TODO: Replace with screenshot showing the tag message thing -->
 
 ![Tag Message][tm]
 
@@ -82,8 +76,5 @@ Your `README.md` might be a good place for this.
 [sb]: /img/search-bar.png
 [fp]: /img/project-found.png
 [fo]: /img/fork-project.png
-
-<!-- TODO: REPLACE LINKS TO PROPER IMAGES -->
-
-[np]: /img/fork-project.png
-[tm]: /img/fork-project.png
+[np]: /img/new-patch.png
+[tm]: /img/tag-message.png
