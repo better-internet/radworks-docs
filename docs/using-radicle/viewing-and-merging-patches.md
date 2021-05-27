@@ -14,14 +14,14 @@ and can't see their changes, head over to our [FAQ][fq] section to troubleshoot.
 
 ## Viewing patches
 
-Once you've added a contributor as a remote, you can view any patches they've published by navigating to the `Patches` tab in your project page.
+Once you've added a contributor as a remote, you can view any patches they've published by navigating to the **Patches** tab in your project page.
 
 ![Patches][pa]
 
 Clicking on the patch will provide a detailed
 view inclunding the patch title, description, commits, and the branches it's
-comparing. If you're the maintainer, you'll also see two buttons: `Checkout` and
-`Merge`.
+comparing. If you're the maintainer, you'll also see two buttons: **Checkout** and
+**Merge**.
 
 
 ![PatchDetail][pd]
@@ -29,17 +29,22 @@ comparing. If you're the maintainer, you'll also see two buttons: `Checkout` and
 ## Checking out & merging a patch
 
  If you're the maintainer, you can easily checkout a patch by clicking
- `Checkout` and copying the following command:
+ **Checkout** and copying the following command:
 
-`git fetch rad remotes/<Device ID>/tags/radicle-patch/change-styles:tags/radicle-patch/<branch_name>`
+```
+git fetch rad remotes/<Device ID>/tags/radicle-patch/change-styles:tags/radicle-patch/<branch_name>
+git checkout tags/radicle-patch/coolprogrammer9000/change-styles
+```
 
 
 ![PatchDetailCheckout][pdc]
 
 Once checked out, you can compare and evaluate the changes locally. If you'd like to include the submitted changes, you can merge the patch by running the command in the modal that
-appears after pressing `Merge`.
+appears after pressing **Merge**.
 
-`git pull rad remotes/hynadc...s3gxjw/tags/radicle-patch/change-styles`
+```
+git pull rad remotes/<Device ID>/tags/radicle-patch/change-styles
+```
 
 
 ![PatchDetailMerge][pdm]
