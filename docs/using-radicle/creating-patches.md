@@ -61,8 +61,8 @@ to your patch like this:
 ```
 My patch Title
 
-some more information
-on multiple lines.
+And add an optional description
+on multiple lines
 ```
 
  Be sure to add these to make it easy for the maintainer to understand the
