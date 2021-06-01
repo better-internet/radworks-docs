@@ -21,7 +21,7 @@ any information on the project until it is verified by the protocol.
 
 ### Forking projects
 
-To contribute to another user's project you have to fork it forst.Using the
+To contribute to another user's project you have to fork it first. Using the
 **Fork** option in the Upstream client will clone the project to a specified
 location on your local machine and publish your version to the Radicle network
 as a new project.
