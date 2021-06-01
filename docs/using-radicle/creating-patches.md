@@ -29,7 +29,7 @@ as a new project.
 ![Fork Project][fo]
 
  Forking a project will move it from your **Following** tab to your **Projects**
-tab. This is because once you fork a project, you create your own view of it
+tab. This is because once you fork a project, you create your own copy of it
 that is unique to your Device ID. You can [push changes][pc] to this view via
 the `rad` remote and broadcast them to your network of peers. You can clone your
 project with the **Checkout** option on your project page.
