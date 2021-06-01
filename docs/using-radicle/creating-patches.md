@@ -48,7 +48,7 @@ following steps:
 
 ![New Patch][np]
 
-First, make your changes and commit them locally. Next, package them as a patch
+First, make your changes and commit them locally to a branch. Next, mark them as a patch
 by creating an annotated git tag:
 
 `git tag --annotate radicle-patch/<name>`
