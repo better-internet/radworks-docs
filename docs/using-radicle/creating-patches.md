@@ -48,8 +48,8 @@ following steps:
 
 ![New Patch][np]
 
-First, make your changes and commit them locally to a branch. Next, mark them as a patch
-by creating an annotated git tag:
+First, make your changes and commit them locally to a branch. Next, mark them as
+a patch by creating an annotated git tag:
 
 `git tag --annotate radicle-patch/<name>`
 
@@ -84,6 +84,15 @@ remote to their project (See [tracking and viewing contributions][tv]).
 If you are a maintainer, we suggest providing a way for your contributors
 contact you with their Device IDs to easily submit patches. Your `README.md`
 might be a good place for this.
+
+### Updating a patch
+
+If you want to make some changes to a patch, updating them is really simple:
+1. First make the changes to your local branch
+2. Re-tag the changes by running: `git tag --annotate --force
+   radicle-patch/<name>`
+3. And push again `git push rad --tags --force`.
+
 
 [pc]: pushing-changes.md
 [tv]: tracking-and-viewing.md
