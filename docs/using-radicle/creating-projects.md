@@ -5,8 +5,8 @@ title: Creating projects
 
 Creating a project is as easy as initializing a repository in Git. In the
 Upstream client, you can create a project from scratch or from an existing
-repository. Creating a project on Upstream will publish it to the Radicle network, making
-it available to any of your connected peers.
+repository. Creating a project on Upstream will publish it to the Radicle
+network, making it available to any of your connected peers.
 
 ## Starting a new project
 
@@ -20,19 +20,19 @@ only be created through the Upstream client][fa].
 This will initalize a Git repository (with the name you've given it) in the
 location you choose and publish it to the Radicle network. Note, when a project
 is published to the network, it will be able to be replicated by any connected
-peers. 
+peers.
 
 ## Publishing an existing project
 
-If you have a repository that you'd like to publish to the network,
-choose the `Create from an existing repository` in the **Start a new project**
-modal. This will allow you to choose the repository and its configured default
-branch. All branches present when you add the repository will be published.
+If you have a repository that you'd like to publish to the network, choose the
+`Create from an existing repository` in the **Start a new project** modal. This
+will allow you to choose the repository and its configured default branch. All
+branches present when you add the repository will be published.
 
 ![Start Existing Project][ep]
 
 The name of the project on the network will be taken from the name of the
-repository. 
+repository.
 
 ⚠️ On project creation, **all branches that have a local head will be
 published**. You can see what branches will be published by running `git branch
@@ -54,7 +54,7 @@ available to your network of connected peers.
 
 Projects contain all files of a Git repository and their revision history, but
 they also have associated Radicle-speciifc metadata such as a name and
-description. 
+description.
 
 Each project carries a unique, shareable peer-to-peer identitifer known as a
 **Radicle ID**.

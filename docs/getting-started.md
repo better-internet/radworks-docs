@@ -93,7 +93,7 @@ you can trying [building Radicle Upstream from source][bs].
 To create an identity on the Radicle network, use the Upstream client.
 After choosing a display name and setting a passphrase, it will generate a
 unique identifier — known as a [**Device ID**][di] — that's paired to the
-computer you've installed it on. 
+computer you've installed it on.
 
 For now, this Device ID is the only way other users can find and collaborate
 with you. Later on, you will be able to manage multiple Device IDs under one
@@ -153,7 +153,7 @@ To start using Radicle, continue on to the [Using Radicle][ur] section.
 [rg]: understanding-radicle/faq.md#
 [ri]: understanding-radicle/how-it-works.md/#git-implementation
 [sn]: using-radicle/running-a-seed-node.md
-[cc]: using-radicle/community.md
+[cc]: get-involved/community.md
 
 [id]: /img/identity.png
 

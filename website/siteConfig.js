@@ -21,7 +21,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'docs', // Title for your website.
+  title: 'Radicle docs', // Title for your website.
   tagline: 'A peer-to-peer stack for building software together.',
   url: 'https://docs.radicle.xyz', // Your website URL
   baseUrl: '/', // Base URL for your project */
