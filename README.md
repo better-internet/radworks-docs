@@ -115,7 +115,7 @@ For more information about adding new docs, click [here](https://docusaurus.io/d
 
 ## Contributing
 
-💡 We require all commits to be signed for a branch to be merged into master. Learn more on setting up commit signing.
+💡 We require all commits to be signed for a branch to be merged into master. Learn more on setting up commit signing [here][commit-signing].
 
 Contributions to radicle-docs can be made via pull requests on GitHub or through Radicle. If opening a PR, please tag any associated parties and @abbey-titcomb for visibility. 
 
@@ -134,3 +134,4 @@ Message body:
   *Description of patch and other relevant information*
   ```
 
+[commit-signing]: https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/signing-commits
