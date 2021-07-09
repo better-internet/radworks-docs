@@ -5,7 +5,6 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-
 @import url("https://rsms.me/inter/inter.css");
 
 @font-face {
@@ -99,7 +98,7 @@ h3 {
 blockquote {
   display: block;
   background: #e3e3ff;
-  border-left: .25em solid #5555ff;
+  border-left: 0.25em solid #5555ff;
 }
 
 .fixedHeaderContainer header .headerTitleWithLogo {
@@ -119,6 +118,16 @@ pre code,
   background: var(--color-foreground-level-2);
   color: var(--color-foreground-level-6);
   overflow-x: scroll;
+}
+
+pre code::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+pre code {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 details:hover {

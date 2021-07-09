@@ -54,7 +54,7 @@ For more help on using Radicle, be sure to join our [community channels][cc].
 [3]: using-radicle/sharing-projects.md
 [4]: using-radicle/tracking-and-viewing.md
 [5]: using-radicle/creating-patches.md
-[6]: using-radicle/fetching-and-merging.md
+[6]: using-radicle/viewing-and-merging-patches.md
 
 [cc]: get-involved/community.md
 [dr]: radicle.md/#how-is-radicle-different-from-github
