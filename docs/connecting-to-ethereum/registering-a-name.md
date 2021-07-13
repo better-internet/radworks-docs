@@ -3,60 +3,45 @@ id: registering-a-name
 title: Registering a name
 ---
 
-To collaborate with others on Radicle, you'll need to view and merge
-patches from contributors. To view and merge patches from a contributor, **you
-first need to add them as a remote to your project**. If you haven't done so,
-follow the instructions in [tracking & viewing contributions][tv] section.
+Today's hosted platforms benefit from the network effects that come with centralized server-side data hosting. Peer-to-peer systems lack this global namespace and the discoverability that comes with it. In Radicle, you'll can register a unique ENS name, under the `radicle.eth` domain (e.g. `cloudhead.radicle.eth`) for your profile or org. This will be a name that other users can use to recognize you not only within the Radicle network, but also the global Ethereum network. These names are interoperable and self-sovereign usernames that resolve to an Ethereum address.
 
-If you can see another peer's patches after adding them as a remote, they have been
-successfully replicated to your machine. If you have added a peer as a remote
-and can't see their changes, head over to our [FAQ][fq] section to troubleshoot.
+## How does it work?
 
-## Viewing patches
+The Radicle Registrar is built on the Ethereum Name Service (ENS). ENS is a distributed, open, and extensible naming system based on the Ethereum blockchain. It's job is to map human-readable names like ‘alice.eth’ to machine-readable identifiers such as Ethereum addresses, other cryptocurrency addresses, content hashes, and metadata. ENS also supports ‘reverse resolution’, making it possible to associate metadata such as canonical names or interface descriptions with Ethereum addresses. 
 
-Once you've added a contributor as a remote, you can view any patches they've published by navigating to the **Patches** tab in your project page.
+[Read more about ENS][ens].
 
-![Patches][pa]
+## Claiming a name
 
-Clicking on the patch will provide a detailed
-view inclunding the patch title, description, commits, and the branches it's
-comparing. If you're the maintainer, you'll also see two buttons: **Checkout** and
-**Merge**.
+To register a `radicle.eth` name, navigate to the Radicle web client at [app.radicle.network][app]. Be sure to **Connect your wallet** in the top-right corner.
 
+> While Radicle Upstream is integrated with WalletConnect, the Radicle web client isn't yet. You'll have to use Metamask or another browser-based wallet to connect. 
 
-![PatchDetail][pd]
+![Radicle Web Client][wc] 
 
-## Checking out & merging a patch
+Search for the name you'd like to register to see if it's available. If it is, you'll be given the option to register the name. If it is taken, you'll be able to the address that owns the name. 
 
- If you're the maintainer, you can easily checkout a patch by clicking
- **Checkout** and copying the following command:
+![Register name][rn] 
 
-```
-git fetch rad remotes/<Device ID>/tags/radicle-patch/change-styles:tags/radicle-patch/<branch_name>
-git checkout tags/radicle-patch/coolprogrammer9000/change-styles
-```
+Clicking **Begin Registration** will start the on-chain committal and registration flow to resolve the ENS name to your address. This will open your wallet and ask you to confirm the first of two transactions required for the registration. After confirming this transaction, you'll have to wait a moment before being asked to confirm the second. Once the second transaction has been successfully included, you'll receive a confirmation in the client.
 
+![Registration Success][rs]
 
-![PatchDetailCheckout][pdc]
+You can find and edit this name at any time by navigating to its specific URL at:
 
-Once checked out, you can compare and evaluate the changes locally. If you'd like to include the submitted changes, you can merge the patch by running the command in the modal that
-appears after pressing **Merge**.
+`https://app.radicle.network/registrations/THE_REGISTERED_NAME`
 
-```
-git pull rad remotes/<Device ID>/tags/radicle-patch/change-styles
-```
+## Updating a Registration
 
+Once you've registered a name, you can update its records to link relevant information like a website, avatar, and social handles. To update a registration click **Edit** on the name's registration page and add the information you'd like to link to the name. Updating the records will trigger another transaction in your wallet. Confirm it to update the name. 
 
-![PatchDetailMerge][pdm]
+To set this name to an org, follow the instructions in [Setting up a name][sn].
 
-This command merges the patch into your main branch locally. Publishing the changes via `git push rad` will merge and close the patch.
+[ens]: https://ens.domains/
+[app]: https://app.radicle.network/
+[sn]: connecting-to-ethereum/setting-up-a-name.md
 
-![PatchlistClosed][pc]
+[wc]: /img/web-client.png
+[rn]: /img/register-name.png
+[rs]: /img/registration-success.png
 
-[tv]: using-radicle/tracking-and-viewing.md
-[fq]: understanding-radicle/faq.md/#i-cant-find-a-project-on-the-network-or-see-a-peers-changes-what-should-i-do
-[pa]: /img/patches.png
-[pd]: /img/patch-detail.png
-[pdc]: /img/patch-checkout.png
-[pdm]: /img/patch-merge.png
-[pc]: /img/patch-closed.png
