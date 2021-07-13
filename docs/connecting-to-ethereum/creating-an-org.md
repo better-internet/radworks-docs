@@ -11,9 +11,11 @@ Now that your wallet is connected you'll see the **Create an Org** button in the
 
 ![Create an Org][co]
 
-Once you click the **Create an Org** button, a modal shows up allowing you to choose between starting an single-signer or a multi-signer org. Here we'll focus on the single-signer org, which means you're deploying an org contract with the connected wallet as it's owner.
+Once you click the **Create an Org** button, a modal shows up allowing you to choose between starting an **single-signer** or a **multi-signer** org. 
 
-When selecting single-signer, we'll prefill you're connected wallet as the owner, but you can choose to enter any other valid Ethereum address you control. That could also be an existing multi-sig, but for the sake of this example, we're gonna focus on your own connected wallet.
+A single-signer org means you're deploying an org contract owned by a single Ethereum address. To create a single-signer org, select **Single-Signer** and input the Ethereum address you'd like to control the org. In Upstream, the address of your connected wallet will automatically prefill, but you can choose to enter any valid Ethereum address you control.
+
+A multi-signer org means you're deploying an org contract owned by a multi-signature contract. In Radicle Upstream and on [app.radicle.network][wc], deploying a multi-signature org creates a [Gnosis Safe][gs] and sets the address of the connected wallet as the first member. The Gnosis Safe becomes the owner of the org.
 
 ![Create Org Modal][om]
 
@@ -25,19 +27,23 @@ After you sign the transaction, Upstream will deploy the contract and notify you
 
 ![Deploy Org][do]
 
-Now that your org is created, the sidebar icon is clickable and you have a notification that allows you to navigate to your org.
+Once your org is created, you can navigate to it by clicking the newly generated icon in your sidebar.
 
 ![Org Created][oc]
 
-You can click either the **Go to org** button in the notification or the icon in the sidebar. Both will land you on your new single-signer org. Here you can see the org address and the wallet that owns it bellow.
+Here you can see the org address and its owner's address. To add projects to your org, you can anchor them here. Read more about [Anchoring][an].
 
 ![Org Page][op]
 
-You are now ready to use your org 🌱
+If you've created a multi-signature org, you can also view the members of your org and easily navigate to your the Gnosis Safe interface to manage your org, add/remove members and sign transactions.
 
+![Multi-sig Org Page][mop]
 
 [ad]: using-radicle/adding-a-seed-node.md
 [se]: understanding-radicle/glossary.md/#seed
+[wc]: https://app.radicle.network/
+[gs]: https://gnosis-safe.io/
+[an]: connecting-to-ethereum/anchoring-projects.md
 
 [co]: /img/create-an-org.png
 [om]: /img/create-org-modal.png
@@ -45,6 +51,7 @@ You are now ready to use your org 🌱
 [do]:/img/deploy-org.png
 [oc]: /img/org-created.png
 [op]: /img/org-page.png
+[mop]: /img/multi-sig-page.png
 
 
 
