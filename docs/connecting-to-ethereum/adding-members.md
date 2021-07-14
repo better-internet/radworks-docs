@@ -3,37 +3,35 @@ id: adding-members
 title: Adding members
 ---
 
-## What is a member
-
-A member of an org is an other person who can initiate transactions such as registrations or anchors for your org. You can only add members to multi signature orgs, single signer orgs only have 1 member.
+With multi-signature orgs, you can add multiple **members** who can also initiate transactions such as registrations or anchors in your org. If you created a single-signer org, you can not add more members. Read more about creating an org [here][co].
 
 ## Adding a member
 
-To start with you need to navigate to the **Members** tab in your multi signature org.
+To start, navigate to the **Members** tab in your org page.
 
 ![single member org page][om]
 
-Once you click **Add a member** you'll be informed that adding a member happens in the Gnosis Safe web UI.
+To add members, you must do so in your Gnosis Safe. Clicking **Add a member** will lead you to your Safe. 
 
 ![single member button press][bp]
 
-You'll land on the Gnosis Safe web UI in the settings tab where you can click on the owners tab to manage owners.
+If you haven't already, connect your wallet to the Gnosis Safe UI. Be sure to use the one that is linked to your Radicle identity. Click on the **Settings** tab and navigate to *Owners*.
 
 ![gnosis safe ui owners][gso]
 
-You can follow their flow to add a owner by clicking **Add new owner**. You'll have to decide on the transaction threshold and other things, read more about it in the [Gnosis Safe Docs][gsd]
+Here, you can add additional owners and update your transaction threshold. This is number of owners needed to sign-off on transactions within the Gnosis Safe. This will be the number of people required to sign off on any anchor or other org interaction. Follow the instructions outlined in the [Gnosis Safe docs][gsd] if you need help.
 
 ![gnosis safe add owners][gsa]
 
-After you've done that, you should see the new safe owner (or org member) in the Gnosis Safe UI.
+If done successfully, you should see the new owner in the Gnosis Safe UI.
 
 ![gnosis safe add owners][gsm]
 
-And when you go back to Upstream, you'll see the member there as well.
+Back in Radicle Upstream or the [Radicle web client][wc], you'll see the new member added to your org.
 
 ![gnosis safe add owners][ums]
 
-This member can now do everything the original member could do and depending on the quorum (or transaction threshold), they'll need be able to execute it alone or just be the first signer of the transaction.
+This member can now add new members, anchor projects, and manage the org as the other members do (depending on the quorum required).
 
 
 [om]: /img/org-member-1member@2x.png
@@ -43,3 +41,5 @@ This member can now do everything the original member could do and depending on 
 [gsa]: /img/org-member-gnosis-add@2x.png
 [gsm]: /img/org-member-gnosis-added@2x.png
 [ums]: /img/org-member-2members@2x.png
+[wc]: https://app.radicle.network/
+[co]: connecting-to-ethereum/creating-an-org.md
