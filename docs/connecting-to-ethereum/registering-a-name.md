@@ -3,7 +3,7 @@ id: registering-a-name
 title: Registering a name
 ---
 
-Today's hosted platforms benefit from the network effects that come with centralized server-side data hosting. Peer-to-peer systems lack this global namespace and the discoverability that comes with it. In Radicle, you'll can register a unique ENS name, under the `radicle.eth` domain (e.g. `cloudhead.radicle.eth`) for your profile or org. This will be a name that other users can use to recognize you not only within the Radicle network, but also the global Ethereum network. These names are interoperable and self-sovereign usernames that resolve to an Ethereum address.
+Today's hosted platforms benefit from the network effects that come with centralized server-side data hosting. Peer-to-peer systems lack this global namespace and the discoverability that comes with it. In Radicle, you can register a unique ENS name, under the `radicle.eth` domain (e.g. `cloudhead.radicle.eth`) for your profile or org. This will be a name that other users can use to recognize you not only within the Radicle network, but also the global Ethereum network. These names are interoperable and self-sovereign usernames that resolve to an Ethereum address.
 
 ## How does it work?
 
@@ -44,4 +44,3 @@ To set this name to an org, follow the instructions in [Setting up a name][sn].
 [wc]: /img/web-client.png
 [rn]: /img/register-name.png
 [rs]: /img/registration-success.png
-
