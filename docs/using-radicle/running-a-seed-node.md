@@ -93,7 +93,7 @@ in the seed address as `<SEED-ID>@<PUBLIC-ADDR>:<PORT>`.
     Nov 12 10:48:03.760  INFO radicle_seed_node::frontend: Listening(0.0.0.0:12345)
 </details>
 
-Now point your browser to the address you set instead of ht<span>tp:</span>//seed.example.com. This is the seed node dashboard.
+Now point your browser to the address you set instead of `http://seed.example.com`. This is the seed node dashboard.
 
 ![Seed node UI][sn]
 
