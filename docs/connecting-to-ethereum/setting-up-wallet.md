@@ -4,9 +4,6 @@ title: Setting up your wallet
 ---
 
 <!-- TODO: Add intro on wallets -->
-
-## Connecting your wallet
-
 To connect your wallet, just head to the wallet tab in the sidebar of your Radicle Upstream client and click connect.
 
 ![Wallet][cw]
@@ -23,7 +20,7 @@ Your wallet is now connected. The next step is to link your Radicle ID to your E
 
 ## Linking your Radicle ID
 
-ow that your wallet is connected, the next step is to link your Radicle ID to your Ethereum address. This will mean that we can find your Ethereum address based on your Radicle ID and vice versa.
+Now that your wallet is connected, the next step is to link your Radicle ID to your Ethereum address. This will mean that we can find your Ethereum address based on your Radicle ID and vice versa.
 
 Start by clicking **Link your ID**.
 
