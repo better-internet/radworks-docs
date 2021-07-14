@@ -19,7 +19,7 @@ To register a `radicle.eth` name, navigate to the Radicle web client at [app.rad
 
 ![Radicle Web Client][wc] 
 
-Search for the name you'd like to register to see if it's available. If it is, you'll be given the option to register the name. If it is taken, you'll be able to the address that owns the name. 
+Search for the name you'd like to register to see if it's available. If it is, you'll be given the option to register the name. 
 
 ![Register name][rn] 
 
