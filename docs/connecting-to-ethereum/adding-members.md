@@ -3,37 +3,43 @@ id: adding-members
 title: Adding members
 ---
 
-On Radicle, peers track projects they are interested in. If a peer wants to
-contribute to a project, they fork it, create their own view of the project that
-they publish changes to and then package those changes as a patch.
+## What is a member
 
-Therefore, to view someone else's patch to your project, you first need to add
-them as a remote to track their view of your project.
+A member of an org is an other person who can initiate transactions such as registrations or anchors for your org. You can only add members to multi signature orgs, single signer orgs only have 1 member.
 
-### Adding remotes
-To add a peer as a remote, you must add their **Device ID** to the list of
-remotes that you follow. You can do so by clicking the _Manage Remotes_ option
-in the peer selector on your project page. From there, you can add their Device
-ID. This is also where you can switch between the different views of peers to
-see their changes before fetching them locally.
+## Adding a member
 
-<video style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
-  playsinline autoplay muted loop>
-  <source src="/img/add-remote.webm" type="video/webm">
-</video>
+To start with you need to navigate to the **Members** tab in your multi signature org.
 
-Adding a peer as a remote automatically tracks their view of your project,
-subscribing you to any updates they push to their branches as well as any
-patches they might have. It's important to note that these changes may not
-instantly appear. We rely on the connectedness of the network to ensure you see
-the changes from a contributor.
+![single member org page][om]
 
-If you are having trouble adding peer as a remote, see our [FAQ][fq].
+Once you click **Add a member** you'll be informed that adding a member happens in the Gnosis Safe web UI.
 
-[fq]: understanding-radicle/faq.md/#i-cant-find-a-project-on-the-network-or-see-a-peers-changes-what-should-i-do
-[id]: /img/radicle-id-seed-node.png
-[ps]: /img/peer-switcher.png
-[sb]: /img/search-bar.png
+![single member button press][bp]
 
-[rd]: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
-[sn]: http://sprout.radicle.xyz/
+You'll land on the Gnosis Safe web UI in the settings tab where you can click on the owners tab to manage owners.
+
+![gnosis safe ui owners][gso]
+
+You can follow their flow to add a owner by clicking **Add new owner**. You'll have to decide on the transaction threshold and other things, read more about it in the [Gnosis Safe Docs][gsd]
+
+![gnosis safe add owners][gsa]
+
+After you've done that, you should see the new safe owner (or org member) in the Gnosis Safe UI.
+
+![gnosis safe add owners][gsm]
+
+And when you go back to Upstream, you'll see the member there as well.
+
+![gnosis safe add owners][ums]
+
+This member can now do everything the original member could do and depending on the quorum (or transaction threshold), they'll need be able to execute it alone or just be the first signer of the transaction.
+
+
+[om]: /img/org-member-1member@2x.png
+[bp]: /img/org-member-button@2x.png
+[gso]: /img/org-member-gnosis-member@2x.png
+[gsd]: https://help.gnosis-safe.io/en/articles/3950657-add-owners
+[gsa]: /img/org-member-gnosis-add@2x.png
+[gsm]: /img/org-member-gnosis-added@2x.png
+[ums]: /img/org-member-2members@2x.png
