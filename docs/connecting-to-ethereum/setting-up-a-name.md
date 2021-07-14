@@ -3,48 +3,40 @@ id: setting-up-a-name
 title: Setting up a name
 ---
 
-To push code to Radicle, you first need to add the Radicle remote helper to your
-shell configuration. If you haven't done so, follow the instructions in the
-[Getting Started][gs] section.
+Setting a name for your org is an easy way to make it more discoverable and human-readable. You can set a name via the Radicle web client, [app.radicle.network][wc].
 
-After the remote helper is configured, navigate to the working copy of
-your project. You can see the branches of your project with `git branch -a` or
-the remotes with `git remote show`. 
+First, navigate to your org's page. If you are a member/owner of the org, you should should see a button next to the Name field that says **Set**. 
 
-After changes are made and commited to a branch, they need to be published to
-the network so they can be found and replicated by peers. To do so,
-changes need to be pushed to the `rad` remote — similar to what you would do
-with any other Git code hosting platform. The `rad` remote points to your
-monorepo where all Radicle data is stored.
+![Org Profile Page][sn1] 
 
-To push changes to the `rad` remote run:
+Once you click set, you can input the name that you'd like to set to this org.
 
-`git push rad <branch name>`
+![Setting a name][sn2] 
 
-To set up branch tracking, run:
+To set a name, you must update the name registration to resolve to the address of the org. To do so, copy the address of the org, and navigate to the name registration page. Update the registration record by adding the org address to the **Address** field. 
 
-`git push -u rad <branch_name>` or `git push --set-upstream rad <branch_name>`
+![Set address][sn3] 
 
-For help using Git, please refer to the [relevant documentation][rd].
+If you haven't done this, you will come across this error:
 
-<blockquote>
-It's important to note that once changes are pushed to the Radicle remote, they
-are published to the network and will be publicly available to anybody
-you are connected with. While you can push to the Radicle remote while offline,
-updates are only published to the network if the Upstream client is running.
-</blockquote>
+![Error page][sn4] 
 
-[br]: understanding-radicle/glossary.md/#branch
-[ch]: understanding-radicle/glossary.md/#checkout
-[fo]: understanding-radicle/how-it-works.md/#following
-[go]: understanding-radicle/how-it-works.md/#gossip
-[gs]: getting-started.md/#configuring-your-system
-[pn]: understanding-radicle/glossary.md/#project-name
-[ri]: understanding-radicle/glossary.md/#project-id
-[re]: understanding-radicle/glossary.md/#remote
+If correctly configured, setting the name will submit a transaction to your wallet (and Gnosis Safe its a multi-signature org). 
 
-[id]: /img/radicle-id-seed-node.png
-[ps]: /img/peer-switcher.png
-[sb]: /img/search-bar.png
+![Proposal Page][sn5] 
 
-[rd]: https://git-scm.com/doc
+Once the transaction succeeds, the data associated with the name registration will populate in your org page. This may take a view moments. 
+
+![Org Page][sn6] 
+
+Once it does, you're all set! Anchor some projects and share your org with the world!
+
+[wc]: https://app.radicle.network/
+
+[sn1]: /img/org-web-page.png
+[sn2]: /img/set-a-name.png
+[sn3]: /img/set-address.png
+[sn4]: /img/setting-name-error.png
+[sn5]: /img/proposal.png
+[sn6]: /img/finished-org-page.png
+

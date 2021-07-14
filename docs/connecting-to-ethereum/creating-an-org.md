@@ -1,6 +1,6 @@
 ---
 id: creating-an-org
-title: Creating an Org
+title: Creating an org
 ---
 
 <!-- TODO: What's an Org-->
