@@ -67,13 +67,13 @@ this point in time, the person who creates the project in Radicle is considered
 its sole maintainer, but multiple maintainers will be able to be added in the
 future.
 
-To read more about how projects are designed are replicated across the Radicle
+To read more about how projects are replicated across the Radicle
 network, head to our [How it Works][hw] section.
 
 [fa]: understanding-radicle/faq.md/#when-will-cli-tooling-be-available
 [ma]: understanding-radicle/glossary.md/#maintainer
 [pr]: understanding-radicle/glossary.md/#project
-[hw]: understanding-radicle/how-it-works.md/#git-implementation
+[hw]: understanding-radicle/how-it-works.md/#peer-discovery--replication
 
 [ri]: /img/radicle-id.png
 [ss]: /img/seed-dashboard-search.png
