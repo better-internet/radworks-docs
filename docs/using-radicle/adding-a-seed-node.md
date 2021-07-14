@@ -33,7 +33,7 @@ custom seed address, you can do so by following these steps:
    sidebar.
 
 Recent seed node activity and connected peers can be viewed on the added seed
-node's dashboard (e.g. ht<span>tp:</span>//seed.my.org). The default seed dashboard for
+node's dashboard (e.g. `http://seed.my.org`). The default seed dashboard for
 Upstream can be viewed at http://sprout.radicle.xyz/.
 
 [^1]: Seed nodes can be configured to either track and share all data across the
@@ -46,4 +46,3 @@ Upstream can be viewed at http://sprout.radicle.xyz/.
 [sd]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
 [lp]: https://radicle.community/t/list-of-public-seeds/1155
 [st]: /img/settings.png
-
