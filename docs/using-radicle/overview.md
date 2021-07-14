@@ -13,7 +13,7 @@ other.
 Within the same project, two people will have subjective (and often diverging
 views), but *your* view of the project becomes the sum of all other views of the
 project. Conceptually, the project becomes decentralized among the many views of
-it's maintainers and contributors, instead of being confined to the control of a
+its maintainers and contributors, instead of being confined to the control of a
 small group of people with read/write access.
 
 In practice, this means that to fetch and receive changes from contributors, you
