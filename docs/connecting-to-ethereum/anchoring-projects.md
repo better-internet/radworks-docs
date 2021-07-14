@@ -3,9 +3,7 @@ id: anchoring-projects
 title: Anchoring projects
 ---
 
-## What's an anchor?
-
-An anchor is basically an on-chain agreement between the owners of an org about the state of a project's source code. Anchors are comprised of the org address under which the project lives, the Radicle ID of the project, and the project's latest commit hash.
+An **anchor** is an on-chain agreement between the owners of an org about the state of a project's source code. Anchors are comprised of the org address under which the project lives, the Radicle ID of the project, and the project's latest commit hash.
 
 Anchors are a secure and verifiable way to present the canonical state of a repository that doesn't rely on a centralized admin or third-party. Use them to push releases, make important upgrades, or just collectively maintain codebases transparently.
 

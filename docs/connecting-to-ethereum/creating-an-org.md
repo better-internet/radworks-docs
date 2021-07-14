@@ -3,7 +3,11 @@ id: creating-an-org
 title: Creating an org
 ---
 
-<!-- TODO: What's an Org-->
+Radicle Orgs are a decentralized, platform-agnostic, and secure alternative to orgs on centralized forges (i.e. GitHub, Gitlab). They are on-chain entities that can be managed by one or many maintainers via a multi-sig. With Radicle Orgs, projects can maintain an auditable and transparent history of project state that is anchored and secured on Ethereum. 
+
+Interactions with Radicle Orgs can be programmed to trigger workflows like the distribution of developer rewards, software releases, or any important upgrades. With the Gnosis Safe integration, teams can experiment with decentralized admin control and collectively govern codebases.
+
+## Creating an org
 
 If you want to create an org, you have to make sure you have a wallet connected and your Radicle ID is attested to that wallet.
 
@@ -39,11 +43,23 @@ If you've created a multi-signature org, you can also view the members of your o
 
 ![Multi-sig Org Page][mop]
 
-[ad]: using-radicle/adding-a-seed-node.md
-[se]: understanding-radicle/glossary.md/#seed
+## Sharing your org
+
+After creating an org, you can view and share it with others via the Radicle web client, [app.radicle.network][wc]. You can either search for it via the search bar on the homepage, or click **View in the browser** on your org page.
+
+![View in browser][vib]
+
+All orgs can be shared via their unique URL with the following structure:
+
+`https://app.radicle.network/orgs/YOUR_ORG_ADDRESS`
+
+To add a name, social handles, and avatar to your org page, be sure to [register and set a name][rn]!
+
+
 [wc]: https://app.radicle.network/
 [gs]: https://gnosis-safe.io/
 [an]: connecting-to-ethereum/anchoring-projects.md
+[rn]: connecting-to-ethereum/registering-a-name.md
 
 [co]: /img/create-an-org.png
 [om]: /img/create-org-modal.png
@@ -52,6 +68,7 @@ If you've created a multi-signature org, you can also view the members of your o
 [oc]: /img/org-created.png
 [op]: /img/org-page.png
 [mop]: /img/multi-sig-page.png
+[vib]: /img/view-in-browser.png
 
 
 
