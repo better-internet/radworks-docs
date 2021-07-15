@@ -3,7 +3,9 @@ id: adding-members
 title: Adding members
 ---
 
-With multi-signature orgs, you can add multiple **members** who can also initiate transactions such as registrations or anchors in your org. If you created a single-signer org, you can not add more members. Read more about creating an org [here][co].
+With multi-signature orgs, you can add multiple **members** who can also initiate transactions such as registrations or anchors in your org.  Read more about creating an org [here][co].
+
+> Note: If you created a single-signer org, you can not add more members.
 
 ## Adding a member
 
