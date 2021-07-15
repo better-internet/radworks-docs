@@ -12,7 +12,7 @@ When clicking **Connect your wallet** you'll be prompted to connect using a [Wal
 
 ![Wallet Connect][qr]
 
-When scanning the QR code you'll be prompted in your wallet to "Connect to Radicle Upstream". Once you've done that, the Upstream app ui will update to show the balance of your connected wallet.
+When scanning the QR code you'll be prompted in your wallet to "Connect to Radicle Upstream". Once you've done that, Upstream will update to show the balance of your connected wallet.
 
 ![Wallet Page][wp]
 
