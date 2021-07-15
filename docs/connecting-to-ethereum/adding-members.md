@@ -9,7 +9,7 @@ With multi-signature orgs, you can add multiple **members** who can also initiat
 
 ## Adding a member
 
-To start, navigate to the **Members** tab in your org page.
+After creating a multi-signer org, navigate to the **Members** tab in your org page.
 
 ![single member org page][om]
 
