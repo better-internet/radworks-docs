@@ -22,7 +22,7 @@ Your wallet is now connected. The next step is to link your Radicle ID to your E
 
 ## Linking your Radicle ID
 
-Now that your wallet is connected, the next step is to link your Radicle ID to your Ethereum address. This will mean that we can find your Ethereum address based on your Radicle ID and vice versa.
+Now that your wallet is connected, the next step is to link your Radicle ID to your Ethereum address. This means that your Ethereum address can be found based on your Radicle ID and vice versa.
 
 Start by clicking **Link your ID**.
 
