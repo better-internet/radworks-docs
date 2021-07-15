@@ -51,7 +51,7 @@ After creating an org, you can view and share it with others via the Radicle web
 
 All orgs can be shared via their unique URL with the following structure:
 
-`https://app.radicle.network/orgs/YOUR_ORG_ID`
+`https://app.radicle.network/orgs/<YOUR_ORG_ID>`
 
 To add a name, social handles, and avatar to your org page, be sure to [register and set a name][rn]!
 

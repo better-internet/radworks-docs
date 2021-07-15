@@ -3,7 +3,7 @@ id: registering-a-name
 title: Registering a name
 ---
 
-Today's hosted platforms benefit from the network effects that come with centralized server-side data hosting. Peer-to-peer systems lack this global namespace and the discoverability that comes with it. In Radicle, you can register a unique ENS name, under the `radicle.eth` domain (e.g. `cloudhead.radicle.eth`) for your profile or org. This will be a name that other users can use to recognize you not only within the Radicle network, but also the global Ethereum network. These names are interoperable and self-sovereign usernames that resolve to an Ethereum address.
+Today's hosted platforms benefit from the network effects that come with centralized server-side data hosting. Peer-to-peer systems lack this global namespace and the discoverability that comes with it. In Radicle, you can register a unique ENS name, under the `radicle.eth` domain (e.g. `cloudhead.radicle.eth`) for your profile or org. This will be a name that other users can use to recognize you not only within the Radicle network, but also the global Ethereum network.
 
 ## How does it work?
 
@@ -29,11 +29,13 @@ Clicking **Begin registration** will start the on-chain flow to register the ENS
 
 You can find and edit this name at any time by navigating to its specific URL at:
 
-`https://app.radicle.network/registrations/THE_REGISTERED_NAME`
+`https://app.radicle.network/registrations/<THE_REGISTERED_NAME>`
 
 ## Updating a Registration
 
-Once you've registered a name, you can update its records to link relevant information like a website, avatar, and social handles. To update a registration click **Edit** on the name's registration page and add the information you'd like to link to the name. Updating the records will trigger another transaction in your wallet. Confirm it to update the name. 
+Once you've registered a name, you can update its records to link relevant information like a website, avatar, and social handles. To update a registration click **Edit** on the name's registration page and add the information you'd like to link to the name. Clicking **Save** will trigger another transaction in your wallet. Confirm it to update the registration records. 
+
+![Update Registration][ur]
 
 To set this name to an org, follow the instructions in [Setting up a name][sn].
 
@@ -44,3 +46,4 @@ To set this name to an org, follow the instructions in [Setting up a name][sn].
 [wc]: /img/web-client.png
 [rn]: /img/register-name.png
 [rs]: /img/registration-success.png
+[ur]: /img/update-registration.png

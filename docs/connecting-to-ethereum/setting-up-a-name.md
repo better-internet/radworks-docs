@@ -5,7 +5,11 @@ title: Setting up a name
 
 Setting a name for your org is an easy way to make it more discoverable and human-readable. You can set a name via the Radicle web client, [app.radicle.network][wc].
 
-First, navigate to your org's page. If you are a member/owner of the org, you should should see a button next to the Name field that says **Set**. 
+First, navigate to your org's page. You can do so by searching for the org address on [app.radicle.network][wc] or going to the custom org URL:
+
+`https://app.radicle.network/registrations/<ORG_ID>`
+
+If you are a member/owner of the org, you should should see a button next to the Name field that says **Set**. 
 
 ![Org Profile Page][sn1] 
 
@@ -13,7 +17,11 @@ Once you click set, you can input the name that you'd like to set to this org.
 
 ![Setting a name][sn2] 
 
-To set a name, you must update the name registration to resolve to the address of the org. To do so, copy the address of the org, and navigate to the name registration page. Update the registration record by adding the org address to the **Address** field. 
+To set a name, you must update the name registration to resolve to the address of the org. To do so, copy the address of the org, and navigate to the name registration page. You can find this page by searching for the name on [app.radicle.network][wc] or going to the custom name URL:
+
+`https://app.radicle.network/registrations/<THE_REGISTERED_NAME>`
+
+Update the registration record by adding the org address to the **Address** field. 
 
 ![Set address][sn3] 
 

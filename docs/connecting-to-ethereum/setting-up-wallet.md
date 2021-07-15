@@ -3,7 +3,6 @@ id: setting-up-wallet
 title: Setting up your wallet
 ---
 
-<!-- TODO: Add intro on wallets -->
 ## Connecting your wallet
 
 To connect your wallet, just head to the wallet tab in the sidebar of your Radicle Upstream client and click **Connect your wallet**.
