@@ -23,7 +23,7 @@ Search for the name you'd like to register to see if it's available. If it is, y
 
 ![Register name][rn] 
 
-Clicking **Begin Registration** will start the on-chain flow to register the ENS name to your address. This will open your wallet and ask you to confirm the first of two transactions required for the registration. After confirming this transaction, you'll have to wait a moment before being asked to confirm the second. Once the second transaction has been successfully included, you'll receive a confirmation in the client.
+Clicking **Begin registration** will start the on-chain flow to register the ENS name to your address. This will open your wallet and ask you to confirm the first of two transactions required for the registration. After confirming this transaction, you'll have to wait a moment before being asked to confirm the second. Once the second transaction has been successfully included, you'll receive a confirmation in the client.
 
 ![Registration Success][rs]
 
