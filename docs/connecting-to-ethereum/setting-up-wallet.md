@@ -10,7 +10,7 @@ To connect your wallet, just head to the wallet tab in the sidebar of your Radic
 
 ![Wallet][cw]
 
-When clicking **Connect your wallet** you'll be prompted to connect using a [WalletConnect supported wallet][wc].
+After clicking **Connect your wallet** you'll be prompted to connect using a [WalletConnect supported wallet][wc].
 
 ![Wallet Connect][qr]
 
