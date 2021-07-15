@@ -19,9 +19,9 @@ The encoding of a [peer][pr]'s public key tied to their device. Right now, there
 can only be one Device ID per user (See [Data Model][hiw-dm])
 
 ## display name
-A changeable and non-unique human-readable name chosen by an Upstream
-[user][us]. Like a "nickname" for someone's [Radicle ID][ri]. This will be
-possible to change in the future. 
+A non-unique human-readable name chosen by an Upstream [user][us]. Like a
+"nickname" for someone's [Radicle ID][ri]. This will be possible to change in
+the future.
 
 ## follow
 Following a [project][pr] replicates it to your machine. This allows the
@@ -62,7 +62,7 @@ one node running per device.
 ## passphrase
 A sequence of characters used to encrypt a peer's private key (See
 [Identities][hiw-id]) to enable access to the Radicle network. It's also needed
-to fetch and push changesets to the Radicle network. 
+to fetch and push changesets to the Radicle network.
 
 ## peer
 A device running the Radicle Link protocol.
