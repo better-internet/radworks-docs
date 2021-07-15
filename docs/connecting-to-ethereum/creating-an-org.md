@@ -45,7 +45,7 @@ If you've created a multi-signature org, you can also view the members of your o
 
 ## Sharing your org
 
-After creating an org, you can view and share it with others via the Radicle web client, [app.radicle.network][wc]. You can either search for it via the search bar on the homepage, or click **View in the browser** on your org page.
+After creating an org, you can view and share it with others via the Radicle web client, [app.radicle.network][wc]. You can either search for it via the search bar on the homepage, or click **View in the browser** from your org page.
 
 ![View in browser][vib]
 
