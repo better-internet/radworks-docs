@@ -11,7 +11,6 @@ Anchors are a secure and verifiable way to keep track of the canonical state of 
 
 To anchor a project to your org, you must first have it published to the Radicle network. If you haven't done so, follow the steps to [Create
 a Project][cp]. Once you have a Radicle project you'd like to anchor, navigate to your org and click **Anchor a project**.
-from the project page.
 
 ![Anchor a project][ap]
 
