@@ -18,7 +18,7 @@ From here, you'll be asked to select the project you'd like to anchor. You can c
 
 ![Choose a peer and branch][ap1]
 
-Once the transaction is included, you'll be able to view your anchored project in your org page. Hovering over the anchor icon will show the transaction hash as well as the commit hash. Clicking on the commit hash will bring you to the project.
+Once the transaction is confirmed, you'll be able to view your anchored project in your org page. Hovering over the anchor icon will show the transaction hash as well as the commit hash. Clicking on the commit hash will bring you to the project.
 
 ![Anchor hash][ap2]
 
