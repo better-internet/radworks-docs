@@ -15,7 +15,7 @@ Now that your wallet is connected you'll see the **Create an org** button in the
 
 ![Create an Org][co]
 
-Once you click the **Create an Org** button, a modal shows up allowing you to choose between starting an **single-signer** or a **multi-signer** org. 
+Once you click the **Create an org** button, a modal appears allowing you to choose between creating a **Single-signer** or a **Multi-signer** org. 
 
 A single-signer org means you're deploying an org contract owned by a single Ethereum address. To create a single-signer org, select **Single-Signer** and input the Ethereum address you'd like to control the org. In Upstream, the address of your connected wallet will automatically prefill, but you can choose to enter any valid Ethereum address you control.
 
