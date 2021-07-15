@@ -69,4 +69,4 @@ To add a name, social handles, and avatar to your org page, be sure to [register
 [op]: /img/org-page.png
 [mop]: /img/multi-sig-page.png
 [vib]: /img/view-in-browser.png
-
+[suyw]: connecting-to-ethereum/setting-up-wallet.md
