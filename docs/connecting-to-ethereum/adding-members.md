@@ -17,7 +17,7 @@ To add members, you must do so in your Gnosis Safe. Clicking **Add a member** wi
 
 ![single member button press][bp]
 
-If you haven't already, connect your wallet to the Gnosis Safe UI. Be sure to use the one that is linked to your Radicle identity. Click on the **Settings** tab and navigate to *Owners*.
+If you haven't already, connect your wallet to the Gnosis Safe UI. Be sure to use the one that is linked to your Radicle identity. Click on the **Settings** tab and navigate to **Owners**.
 
 ![gnosis safe ui owners][gso]
 
