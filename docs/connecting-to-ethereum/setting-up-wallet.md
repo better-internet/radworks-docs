@@ -28,7 +28,7 @@ Start by clicking **Link your ID**.
 
 ![Link ID][li]
 
-This will open the transaction modal, where you can see what ID it will link to your connected Ethereum address.
+This opens the transaction modal, where you can see what Radicle ID it will link to your connected Ethereum address.
 
 ![Link ID Modal][lm]
 
