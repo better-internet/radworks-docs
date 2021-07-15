@@ -22,7 +22,7 @@ Once the transaction is confirmed, you'll be able to view your anchored project 
 
 ![Anchor hash][ap2]
 
-[cp]: using-radicle/creating-projects
+[cp]: ../using-radicle/creating-projects
 
 [ap]: /img/anchor-a-project.png
 [ap1]: /img/select-a-branch.png
