@@ -3,7 +3,7 @@ id: creating-an-org
 title: Creating an org
 ---
 
-Radicle Orgs are a decentralized, platform-agnostic, and secure alternative to orgs on centralized forges (i.e. GitHub, Gitlab). They are on-chain entities that can be managed by one or many maintainers via a multi-sig. With Radicle Orgs, projects can maintain an auditable and transparent history of project state that is anchored and secured on Ethereum. 
+Radicle Orgs are a decentralized, platform-agnostic, and secure alternative to orgs on centralized forges (i.e. GitHub, Gitlab). They are on-chain entities that can be managed by one or many maintainers via a multi-sig wallet. With Radicle Orgs, projects can maintain an auditable and transparent history of project state that is anchored and secured on Ethereum. 
 
 Interactions with Radicle Orgs can be programmed to trigger workflows like the distribution of developer rewards, software releases, or any important upgrades. With the Gnosis Safe integration, teams can experiment with decentralized admin control and collectively govern codebases.
 
@@ -69,6 +69,5 @@ To add a name, social handles, and avatar to your org page, be sure to [register
 [op]: /img/org-page.png
 [mop]: /img/multi-sig-page.png
 [vib]: /img/view-in-browser.png
-
 
 
