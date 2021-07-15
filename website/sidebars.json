@@ -15,6 +15,15 @@
       "using-radicle/adding-a-seed-node",
       "using-radicle/running-a-seed-node"
     ],
+    "Connecting to Ethereum": [
+      "connecting-to-ethereum/overview",
+      "connecting-to-ethereum/setting-up-wallet",
+      "connecting-to-ethereum/creating-an-org",
+      "connecting-to-ethereum/anchoring-projects",
+      "connecting-to-ethereum/adding-members",
+      "connecting-to-ethereum/registering-a-name",
+      "connecting-to-ethereum/setting-up-a-name"
+    ],
     "Understanding Radicle": [
       "understanding-radicle/why-radicle",
       "understanding-radicle/how-it-works",
