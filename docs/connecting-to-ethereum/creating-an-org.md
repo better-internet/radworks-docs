@@ -39,7 +39,7 @@ Here you can see the org address and its owner's address. To add projects to you
 
 ![Org Page][op]
 
-If you've created a multi-signature org, you can also view the members of your org and easily navigate to your the Gnosis Safe interface to manage your org, add/remove members and sign transactions.
+If you've created a multi-signature org, you can also view the members of your org and easily navigate to your Gnosis Safe interface to manage your org, add/remove members, and sign transactions.
 
 ![Multi-sig Org Page][mop]
 
