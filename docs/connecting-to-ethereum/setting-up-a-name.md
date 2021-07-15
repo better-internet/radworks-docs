@@ -21,7 +21,7 @@ If you haven't done this, you will come across this error:
 
 ![Error page][sn4] 
 
-If correctly configured, setting the name will submit a transaction to your wallet (and Gnosis Safe its a multi-signature org). 
+If correctly configured, setting the name will submit a transaction to your wallet (and Gnosis Safe if it's a multi-signature org). 
 
 ![Proposal Page][sn5] 
 
@@ -39,4 +39,3 @@ Once it does, you're all set! Anchor some projects and share your org with the w
 [sn4]: /img/setting-name-error.png
 [sn5]: /img/proposal.png
 [sn6]: /img/finished-org-page.png
-
