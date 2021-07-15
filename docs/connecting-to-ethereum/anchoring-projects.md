@@ -10,8 +10,7 @@ Anchors are a secure and verifiable way to keep track of the canonical state of 
 ## Creating an anchor
 
 To anchor a project to your org, you must first have it published to the Radicle network. If you haven't done so, follow the steps to [Create
-a Project][cp]. Once you have a Radicle project you'd like to anchor, navigate to your org and click **Anchor a project**.
-from the project page.
+a Project][cp]. Once you have a Radicle project you'd like to anchor, navigate to your org and click **Anchor project**.
 
 ![Anchor a project][ap]
 
@@ -19,7 +18,7 @@ From here, you'll be asked to select the project you'd like to anchor. You can c
 
 ![Choose a peer and branch][ap1]
 
-Once the transaction is included, you'll be able to view your anchored project in your org page. Hovering over the anchor icon will show the transaction hash as well as the commit hash. Clicking on the commit hash will bring you to the project.
+Once the transaction is confirmed, you'll be able to view your anchored project in your org page. Hovering over the anchor icon will show the transaction hash as well as the commit hash. Clicking on the commit hash will bring you to the project.
 
 ![Anchor hash][ap2]
 

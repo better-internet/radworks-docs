@@ -3,11 +3,13 @@ id: adding-members
 title: Adding members
 ---
 
-With multi-signature orgs, you can add multiple **members** who can also initiate transactions such as registrations or anchors in your org. If you created a single-signer org, you can not add more members. Read more about creating an org [here][co].
+With multi-signature orgs, you can add multiple **members** who can also initiate transactions such as registrations or anchors in your org.  Read more about creating an org [here][co].
+
+> Note: If you created a single-signer org, you can not add more members.
 
 ## Adding a member
 
-To start, navigate to the **Members** tab in your org page.
+After creating a multi-signer org, navigate to the **Members** tab in your org page.
 
 ![single member org page][om]
 
@@ -15,11 +17,11 @@ To add members, you must do so in your Gnosis Safe. Clicking **Add a member** wi
 
 ![single member button press][bp]
 
-If you haven't already, connect your wallet to the Gnosis Safe UI. Be sure to use the one that is linked to your Radicle identity. Click on the **Settings** tab and navigate to *Owners*.
+If you haven't already, connect your wallet to the Gnosis Safe UI. Be sure to use the one that is linked to your Radicle identity. Click on the **Settings** tab and navigate to **Owners**.
 
 ![gnosis safe ui owners][gso]
 
-Here, you can add additional owners and update your transaction threshold. This is number of owners needed to sign-off on transactions within the Gnosis Safe. This will be the number of people required to sign off on any anchor or other org interaction. Follow the instructions outlined in the [Gnosis Safe docs][gsd] if you need help.
+Here, you can add additional owners and update your quorum threshold. This is number of owners needed to sign-off on transactions within the Gnosis Safe. This will be the number of people required to sign off on any anchor or other org interaction. Follow the instructions outlined in the [Gnosis Safe docs][gsd] if you need help.
 
 ![gnosis safe add owners][gsa]
 
