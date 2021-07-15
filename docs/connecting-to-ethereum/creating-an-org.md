@@ -11,7 +11,7 @@ Interactions with Radicle Orgs can be programmed to trigger workflows like the d
 
 If you want to create an org, you must first connect a wallet and Link your Radicle ID to that wallet's Ethereum address. [Learn how here][suyw]
 
-Now that your wallet is connected you'll see the **Create an Org** button in the sidebar.
+Now that your wallet is connected you'll see the **Create an org** button in the sidebar.
 
 ![Create an Org][co]
 
