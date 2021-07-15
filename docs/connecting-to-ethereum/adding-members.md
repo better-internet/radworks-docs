@@ -21,7 +21,7 @@ If you haven't already, connect your wallet to the Gnosis Safe UI. Be sure to us
 
 ![gnosis safe ui owners][gso]
 
-Here, you can add additional owners and update your transaction threshold. This is number of owners needed to sign-off on transactions within the Gnosis Safe. This will be the number of people required to sign off on any anchor or other org interaction. Follow the instructions outlined in the [Gnosis Safe docs][gsd] if you need help.
+Here, you can add additional owners and update your quorum threshold. This is number of owners needed to sign-off on transactions within the Gnosis Safe. This will be the number of people required to sign off on any anchor or other org interaction. Follow the instructions outlined in the [Gnosis Safe docs][gsd] if you need help.
 
 ![gnosis safe add owners][gsa]
 
