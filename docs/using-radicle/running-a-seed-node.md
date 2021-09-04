@@ -108,6 +108,41 @@ example the address is:
 Have a look at the [Adding a custom seed node][ad] section for more information
 on how to set up the new seed in Upstream.
 
+### Requirements for running a seed node
+
+The requirements for the seed server are minimal. You should be able to run it
+with just 1GB of RAM and a single core server.
+
+The two main resources to watch out for are the storage and network quotas/cost.
+The storage scales directly with the amount of code in all projects stored. As
+of mid-2021 you won't need more than 10G of storage, but better plan for quick
+expansion.
+
+The network should sustain 300kbps and your monthly transfer quotas should be
+able to cover that.
+
+### Common questions
+
+1. Why is my node is not connecting to others or cloning any projects?
+
+By default your node will not automatically join any network, however it will
+learn about other accessible nodes from connected clients. To initiate the
+connection automatically, you can start the node with the `--bootstrap` option
+and a list of seed node addresses.
+
+2. Are there any rewards for running the seed node?
+
+Not at the moment. This is technically hard to implement fairly, but you're
+welcome to discuss ideas for it on the forum.
+
+3. Why is the seed host running out of resources?
+
+There are still issues to solve in the code. In order to keep your host
+responsive and handle temporary problems and traffic spikes, it's best to limit
+the resources available to it. On Linux this can be done with cgroups. Limiting
+available memory to below 1GB and maximum CPU usage to 80% will allow you to
+gracefully restart the service if needed.
+
 ### Upgrading a seed node from v0.1.x to v0.2.x
 
 1. Get the latest changes on `radicle-bins`:
