@@ -12,6 +12,7 @@ Follow these guides below to get started with Radicle on Ethereum.
 * [Anchor a project][3]
 * [Register a name][4]
 * [Set up your name][5]
+* [Obtaining RAD token][6]
 
 For more help on using Radicle, be sure to join our [community channels][cc].
 
@@ -20,6 +21,7 @@ For more help on using Radicle, be sure to join our [community channels][cc].
 [3]: connecting-to-ethereum/anchoring-projects.md
 [4]: connecting-to-ethereum/registering-a-name.md
 [5]: connecting-to-ethereum/setting-up-a-name.md
+[6]: connecting-to-ethereum/obtaining-rad.md
 
 [cc]: get-involved/community.md
 
