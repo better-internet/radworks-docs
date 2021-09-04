@@ -17,6 +17,13 @@ the following places. None of these sources are endorsed by the Radicle project.
 - [Houbi][houbi]
 - [MEXC][mexc]
 
+### When will Rad be listed on my preferred exchange?
+
+For legal reasons Radicle team cannot apply for / encourage listings. If you're
+interested in a listing on a specific exchange, you can ask the exchange
+yourself. Trading on other exchanges also increases the overall order volume and
+makes the token listing more likely in new places.
+
 
 [uniswap]: https://info.uniswap.org/#/pools/0x7c8dbf6e88f52cb56dd30190558cb982f62fc660
 [gateio]: https://www.gate.io/en/trade/RAD_ETH
