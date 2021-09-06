@@ -7,22 +7,22 @@ Radicle's opt-in Ethereum integration is a set of open protocols that enable uni
 
 Follow these guides below to get started with Radicle on Ethereum.
 
-* [Set up your wallet][1]
-* [Create an org][2]
-* [Anchor a project][3]
-* [Register a name][4]
-* [Set up your name][5]
-* [Obtaining RAD token][6]
+* [Set up your wallet][sw]
+* [Obtaining RAD token][or]
+* [Create an org][co]
+* [Anchor a project][ap]
+* [Add a member][aa]
+* [Register a name][rn]
+* [Set up your name][su]
 
 For more help on using Radicle, be sure to join our [community channels][cc].
 
-[1]: connecting-to-ethereum/setting-up-wallet.md
-[2]: connecting-to-ethereum/creating-an-org.md
-[3]: connecting-to-ethereum/anchoring-projects.md
-[4]: connecting-to-ethereum/registering-a-name.md
-[5]: connecting-to-ethereum/setting-up-a-name.md
-[6]: connecting-to-ethereum/obtaining-rad.md
+[aa]: connecting-to-ethereum/adding-members.md
+[ap]: connecting-to-ethereum/anchoring-projects.md
+[co]: connecting-to-ethereum/creating-an-org.md
+[or]: connecting-to-ethereum/obtaining-rad.md
+[rn]: connecting-to-ethereum/registering-a-name.md
+[su]: connecting-to-ethereum/setting-up-a-name.md
+[sw]: connecting-to-ethereum/setting-up-wallet.md
 
 [cc]: get-involved/community.md
-
-
