@@ -162,7 +162,7 @@ To start using Radicle, continue on to the [Using Radicle][ur] section.
 [ur]: using-radicle/overview.md
 [di]: understanding-radicle/glossary.md/#device-id
 [pc]: using-radicle/pushing-changes
-[fc]: using-radicle/fetching-and-merging
+[fc]: using-radicle/viewing-and-merging-patches
 [rg]: understanding-radicle/faq.md#
 [ri]: understanding-radicle/how-it-works.md/#git-implementation
 [sn]: using-radicle/running-a-seed-node.md
