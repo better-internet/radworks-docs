@@ -60,5 +60,5 @@ For more help on using Radicle, be sure to join our [community channels][cc].
 [dr]: radicle.md/#how-is-radicle-different-from-github
 [gi]: understanding-radicle/how-it-works.md
 [rl]: https://github.com/radicle-dev/radicle-link
-[arm]: https://docs.radicle.xyz/docs/using-radicle/tracking-and-viewing#adding-remotes
+[ar]: using-radicle/tracking-and-viewing#adding-remotes
 
