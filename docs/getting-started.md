@@ -72,22 +72,35 @@ this:
   <source src="/img/macOS-install.mp4" type="video/mp4">
 </video>
 
+Radicle Upstream packages are only compatible with macOS versions 10.14 and newer. 
+The client can run on older versions (i.e. High Sierra) by building the app from [source][bs]. 
+
 If you are installing on a [Mac computer with Apple Silicon ][as] please note
 that you may experience issues as Radicle Upstream has not been tested on the
 Apple Silicon platform.
 
-<blockquote>
-While we are participating in the Apple Developer Program to ensure
-accessibility to our macOS users, we do not agree with Apple's financial
-gatekeeping and increasing control over application distribution on their
-platform. Forcing developers to "pay-to-play" under the guise of a security
-solution is an extractive form of vendor lock-in that inhibits the growth and
-accessibility of open software.
-</blockquote>
+<details>
+  <summary><b>A Note on the Apple Developer Program</b></summary>
+  <br />
+  <em>
+    <p>
+    While we are participating in the Apple Developer Program to ensure
+    accessibility to our macOS users, we do not agree with Apple's financial
+    gatekeeping and increasing control over application distribution on their
+    platform. Forcing developers to "pay-to-play" under the guise of a security
+    solution is an extractive form of vendor lock-in that inhibits the growth and
+    accessibility of open software.
+    </p>
+  </em>
+</details>
 
-If you are running a different operating system (e.g. NixOS or an older macOS)
-you can trying [building Radicle Upstream from source][bs].
 
+#### On NixOS:
+
+`radicle-upstream` is available on the `unstable` channel and it can be 
+installed by running `nix-env -iA nixos.radicle-upstream`.
+
+<em>Please note that this is a third-party package.</em>
 
 ## Creating an identity
 To create an identity on the Radicle network, use the Upstream client.
@@ -165,3 +178,4 @@ To start using Radicle, continue on to the [Using Radicle][ur] section.
 [sd]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
 [te]: https://radicle.xyz/terms.html
 [mc]: https://matrix.radicle.community
+[sc]: https://github.com/radicle-dev/radicle-upstream

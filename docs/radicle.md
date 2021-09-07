@@ -4,12 +4,12 @@ title: What is Radicle?
 sidebar_label: What is Radicle?
 ---
 
+
 Radicle is a decentralized code collaboration network built on open protocols 🌱. It enables developers
 to collaborate on code without relying on trusted intermediaries. Radicle was designed
 to provide similar functionality to centralized code collaboration platforms — or "forges" —
 while retaining Git’s peer-to-peer nature, building on what made distributed
 version control so powerful in the first place.
-
 
 > Read more about our vision for decentralized code collaboration <a href="https://radicle.xyz/blog/towards-decentralized-code-collaboration.html">here</a>.
 
@@ -65,7 +65,6 @@ projects that can be fetched and merged by other peers via patches.
 
 > For more on the Radicle's social model, check out <a href="https://radicle.xyz/blog/collaborating-on-radicle.html">Collaborating on Radicle</a>. 
 
-
 ## How do I use Radicle?
 
 The easiest way to use Radicle is with **Upstream**, a desktop client developed by
@@ -78,3 +77,4 @@ and become a part of the network.
 
 [gs]: getting-started.md
 [wh]: https://radicle.xyz/blog/towards-decentralized-code-collaboration.html
+
