@@ -57,7 +57,7 @@ While not strictly necessary, it's nice to have a domain name set up for the
 public IP address as well. For this example, we'll use this record:
 `seed.example.com. A 1.2.3.4`.
 
-Now you're ready to start the seed node. Let's configure it to listen on ports
+Now you're ready to start the seed node. Let's return to the radicle-bins folder `cd ~/radicle-bins` and configure it to listen on ports
 12345 and 80 on all interfaces, the private key is supplied via `STDIN`:
 
     cargo run -p radicle-seed-node --release -- \
