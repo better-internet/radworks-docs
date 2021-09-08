@@ -17,7 +17,7 @@ its maintainers and contributors, instead of being confined to the control of a
 small group of people with read/write access.
 
 In practice, this means that to fetch and receive changes from contributors, you
-have to [add other people as remotes to your project][arm]. Adding someone as a
+have to [add other people as remotes to your project][ar]. Adding someone as a
 remote automatically tracks them, giving you a way to continuously subscribe to
 the updates they make to your project (i.e. new commits).
 
