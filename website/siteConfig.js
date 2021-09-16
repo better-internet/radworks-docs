@@ -37,9 +37,7 @@ const siteConfig = {
   //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
-  headerLinks: [
-    { href: 'https://radicle.xyz', label: 'Back to radicle.xyz' },
-  ],
+  headerLinks: [],
 
   // If you have users set above, you add it here:
   users,
@@ -69,7 +67,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  // copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.

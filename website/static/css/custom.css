@@ -215,10 +215,6 @@ details:hover {
   background: var(--color-foreground-level-6);
 }
 
-.nav-site {
-  display: none !important;
-}
-
 .algolia-docsearch-suggestion--category-header {
   background: var(--color-foreground-level-2) !important;
   color: var(--color-foreground) !important;
@@ -242,12 +238,29 @@ details:hover {
   background: var(--color-background) !important;
   border: none !important;
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 1rem !important;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.algolia-docsearch-footer {
+  display: none;
 }
 
 @media only screen and (max-width: 1024px) {
   .reactNavSearchWrapper input#search_input_react:focus,
   .reactNavSearchWrapper input#search_input_react:active {
   }
+}
+
+@media only screen and (max-width: 1024px) {
+  .reactNavSearchWrapper input#search_input_react:focus,
+  .reactNavSearchWrapper input#search_input_react:active {
+    background: var(--color-background);
+    color: var(--color-foreground);
+  }
+}
+
+.docsNavContainer .toc .navBreadcrumb {
+  background-color: var(--color-foreground-level-1);
+  color: var(--color-foreground-level-6);
 }
