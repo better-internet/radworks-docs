@@ -52,25 +52,23 @@ our issues.
 1. Make sure all the dependencies for the website are installed:
 
 ```sh
-# Install dependencies
-$ cd website
-$ yarn
+cd website
+yarn
 ```
 
 2. Run your dev server:
 
 ```sh
-# Start the site
-$ yarn start
+yarn start
 ```
 
 3. Publish to GH Pages
 
 ```sh
-$ GIT_USER=<ENTER_YOUR_GITHUB-USER_HERE> \
-  CURRENT_BRANCH=master \
-  USE_SSH=true \
-  yarn deploy
+GIT_USER=<ENTER_YOUR_GITHUB-USER_HERE> \
+CURRENT_BRANCH=master \
+USE_SSH=true \
+yarn deploy
 ```
 
 ## Editing Content
