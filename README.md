@@ -52,7 +52,6 @@ our issues.
 1. Make sure all the dependencies for the website are installed:
 
 ```sh
-cd website
 yarn
 ```
 
