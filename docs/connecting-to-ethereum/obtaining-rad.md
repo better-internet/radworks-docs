@@ -16,6 +16,7 @@ the following places. None of these sources are endorsed by the Radicle project.
 - [Coinbase][coinbase]
 - [Houbi][houbi]
 - [MEXC][mexc]
+- [Binance][binance]
 
 ### When will Rad be listed on my preferred exchange?
 
@@ -30,3 +31,4 @@ makes the token listing more likely in new places.
 [coinbase]: https://www.coinbase.com/price/radicle
 [houbi]: https://www.huobi.com/en-us/exchange/rad_usdt
 [mexc]: https://www.mexc.com/exchange/RAD_USDT
+[binance]: https://www.binance.com/en/my/wallet/exchange/deposit/crypto/RAD
