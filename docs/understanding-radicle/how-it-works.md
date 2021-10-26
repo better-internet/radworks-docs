@@ -253,17 +253,15 @@ There are four levels of validity:
 
 4. **Verified**
 
-    The identity carrier passes **3.**, and: * The document does not refer to a
-        previous revision, and no previous revision is known * Or, the set of
-        signatures forms a quorum of the [delegations][dl] of the previous
-        revision.
+    The identity carrier passes **3.**, and: 
+     * The document does not refer to a previous revision, and no previous revision is known 
+     * Or, the set of signatures forms a quorum of the [delegations][dl] of the previous revision.
 
-    It is an error if: * No previous revision is given, but a parent in the
-        identity attestation chain is found * A previous revision is given, but
-        the identity attestation chain does not yield a parent * A previous
-        revision is given, but it is not the same the parent attestation refers
-        to * The current and parent attestations refer to different roots
-
+    It is an error if: 
+     * No previous revision is given, but a parent in the identity attestation chain is found
+     * A previous revision is given, but the identity attestation chain does not yield a parent
+     * A previous revision is given, but it is not the same the parent attestation refers to
+     * The current and parent attestations refer to different roots
 
 ## Git Implementation
 
