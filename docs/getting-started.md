@@ -171,7 +171,7 @@ To start using Radicle, continue on to the [Using Radicle][ur] section.
 [id]: /img/identity.png
 
 [as]: https://support.apple.com/en-us/HT211814
-[bs]: https://github.com/radicle-dev/radicle-upstream/blob/master/DEVELOPMENT.md
+[bs]: https://github.com/radicle-dev/radicle-upstream/blob/main/docs/development.md
 [co]: https://radicle.community
 [do]: https://radicle.xyz/downloads.html
 [gd]: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
