@@ -44,7 +44,7 @@ Then, you'll have to generate a private key:
     cargo run -p radicle-keyutil -- --filename ~/.radicle-seed/secret.key
 
 In order for people to connect to the seed node from the internet, you'll have
-to allow incomming connections for the following ports:
+to allow incoming connections for the following ports:
 
   - `UDP:12345`  - for peer data exchange
   - `TCP:80`     - for the seed node UI
