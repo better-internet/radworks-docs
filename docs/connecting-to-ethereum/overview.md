@@ -15,6 +15,8 @@ Follow these guides below to get started with Radicle on Ethereum.
 
 For more help on using Radicle, be sure to join our [community channels][cc].
 
+Radicle's opt-in Ethereum integration is a set of open protocols that enable unique global names, decentralized organizations, and experiences that help maintainers sustain their open-source work. With these protocols, Radicle users can harness the power of Ethereum and DeFi in their day-to-day collaboration. There are various ways to interact with Radicle’s Ethereum integration, such as those interfaces and access points [linked here][ti].
+
 [1]: connecting-to-ethereum/setting-up-wallet.md
 [2]: connecting-to-ethereum/creating-an-org.md
 [3]: connecting-to-ethereum/anchoring-projects.md
@@ -22,5 +24,6 @@ For more help on using Radicle, be sure to join our [community channels][cc].
 [5]: connecting-to-ethereum/setting-up-a-name.md
 
 [cc]: get-involved/community.md
+[ti]: https://radicle.xyz/tryit.html
 
 
