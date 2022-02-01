@@ -67,9 +67,7 @@ projects that can be fetched and merged by other peers via patches.
 
 ## How do I use Radicle?
 
-The easiest way to use Radicle is with **Upstream**, a desktop client developed by
-the founding team of the Radicle project. With Upstream, you can create an
-identity, host your code, and collaborate with others on the Radicle network.
+The easiest way to use Radicle-Link is with [Upstream][ti] (a desktop client) and the [web client][wc]. With Upstream and the web client, you can create an identity, host your code, and collaborate with others on the Radicle network. There are various ways to interact with Radicle’s Ethereum integration, such as those interfaces and access points [linked here][ti].
 
 Head over to [Getting Started][gs] for a walkthrough on how to download Upstream
 and become a part of the network.
@@ -77,4 +75,7 @@ and become a part of the network.
 
 [gs]: getting-started.md
 [wh]: https://radicle.xyz/blog/towards-decentralized-code-collaboration.html
+
+[ti]: https://radicle.xyz/tryit.html
+[wc]: https://app.radicle.network/
 
