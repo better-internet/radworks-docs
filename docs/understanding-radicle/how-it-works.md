@@ -253,17 +253,15 @@ There are four levels of validity:
 
 4. **Verified**
 
-    The identity carrier passes **3.**, and: * The document does not refer to a
-        previous revision, and no previous revision is known * Or, the set of
-        signatures forms a quorum of the [delegations][dl] of the previous
-        revision.
+    The identity carrier passes **3.**, and: 
+     * The document does not refer to a previous revision, and no previous revision is known 
+     * Or, the set of signatures forms a quorum of the [delegations][dl] of the previous revision.
 
-    It is an error if: * No previous revision is given, but a parent in the
-        identity attestation chain is found * A previous revision is given, but
-        the identity attestation chain does not yield a parent * A previous
-        revision is given, but it is not the same the parent attestation refers
-        to * The current and parent attestations refer to different roots
-
+    It is an error if: 
+     * No previous revision is given, but a parent in the identity attestation chain is found
+     * A previous revision is given, but the identity attestation chain does not yield a parent
+     * A previous revision is given, but it is not the same the parent attestation refers to
+     * The current and parent attestations refer to different roots
 
 ## Git Implementation
 
@@ -481,7 +479,7 @@ context of a project, the maintainer of a repository may choose to track the
 repositories of other peers (this is called a remote in git terminology: a named
 reference to a remote repository). If the remote repository is found to track
 other remotes, the tracking repository will also transitively track those, up to
-n-degrees out.
+n hops out.
 
 Therefore, a project on Radicle preserves the transitivity information of its
 remotes (i.e. via which tracked PeerID another PeerID is tracked).
@@ -572,7 +570,7 @@ project as it's gossiped across the network.
 This also means that for a single `PEER_ID`, we have a sub-graph that consists
 of more `PEER_ID`s — whether they be the maintainers of the project or other
 tracked peers. Any time a peer is replicated, a portion of their sub-graph is
-replicated as well, up to 2 degrees out.
+replicated as well, up to 2 hops out.
 
 This means that everytime you track a peer, you are not only adding them as a
 remote, but also their remotes, and the remotes of their remotes. This ensures
@@ -652,7 +650,7 @@ In the context of a project, maintainers of a repository may choose to track the
 views of other owners (this is called a remote in Git terminology: a named
 reference to a remote repository). If the remote repository is found to track
 other remotes, the tracking repository shall also transitively track those, up
-to a configurable N-degrees out (currently in the works).
+to a configurable N hops out (currently in the works).
 
 - **Spam and content moderation is naturally handled by the peer's social
   graph**
@@ -676,7 +674,7 @@ subjective (and often diverging) views.
 At minimum, your view of a project becomes the sum of the views of the people
 you follow, plus the views of the maintainers of the project. In addition, you
 can expand your perspective by configuring your replication settings to also
-transitively track other remotes N-degrees out from the peers you follow (i.e.
+transitively track other remotes N hops out from the peers you follow (i.e.
 peers of your peers / remotes of your remotes).
 
 This design also addresses a significant problem with decentralized systems

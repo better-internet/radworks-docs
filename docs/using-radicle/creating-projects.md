@@ -17,7 +17,7 @@ only be created through the Upstream client][fa].
 
 ![Start New Project][np]
 
-This will initalize a Git repository (with the name you've given it) in the
+This will initialize a Git repository (with the name you've given it) in the
 location you choose and publish it to the Radicle network. Note, when a project
 is published to the network, it will be able to be replicated by any connected
 peers.
@@ -53,10 +53,10 @@ Upstream) then publishes changes to your monorepo to Radicle, making it
 available to your network of connected peers.
 
 Projects contain all files of a Git repository and their revision history, but
-they also have associated Radicle-speciifc metadata such as a name and
+they also have associated Radicle-specific metadata such as a name and
 description.
 
-Each project carries a unique, shareable peer-to-peer identitifer known as a
+Each project carries a unique, shareable peer-to-peer identifier known as a
 **Radicle ID**.
 
 ![Radicle ID][ri]

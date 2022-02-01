@@ -39,7 +39,7 @@ project with the **Checkout** option on your project page.
 Once you've checked out your fork of the project you'd like to contribute to,
 you can **create a patch**. A patch is a set of proposed changes to the source
 code of a project. Patches can be accepted & merged or rejected by a project's
-maintainers. Similar to pull requests and merge requests, patches are used to
+maintainer. Similar to pull requests and merge requests, patches are used to
 manage contributions to code repositories.
 
 When viewing your fork of a project, you'll see a **Patches** tab next to
