@@ -179,3 +179,8 @@ To start using Radicle, continue on to the [Using Radicle][ur] section.
 [te]: https://radicle.xyz/terms.html
 [mc]: https://matrix.radicle.community
 [sc]: https://github.com/radicle-dev/radicle-upstream
+
+
+
+
+You can also explore the Radicle network using our [web client](wa).
