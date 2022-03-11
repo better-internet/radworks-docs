@@ -4,27 +4,6 @@
       "what-is-radicle",
       "getting-started"
     ],
-    "Using Radicle": [
-      "using-radicle/overview",
-      "using-radicle/creating-projects",
-      "using-radicle/sharing-projects",
-      "using-radicle/pushing-changes",
-      "using-radicle/tracking-and-viewing",
-      "using-radicle/creating-patches",
-      "using-radicle/viewing-and-merging-patches",
-      "using-radicle/adding-a-seed-node",
-      "using-radicle/running-a-seed-node"
-    ],
-    "Connecting to Ethereum": [
-      "connecting-to-ethereum/overview",
-      "connecting-to-ethereum/setting-up-wallet",
-      "connecting-to-ethereum/obtaining-rad",
-      "connecting-to-ethereum/creating-an-org",
-      "connecting-to-ethereum/anchoring-projects",
-      "connecting-to-ethereum/adding-members",
-      "connecting-to-ethereum/registering-a-name",
-      "connecting-to-ethereum/setting-up-a-name"
-    ],
     "Understanding Radicle": [
       "understanding-radicle/why-radicle",
       "understanding-radicle/how-it-works",
