@@ -70,7 +70,7 @@ projects that can be fetched and merged by other peers via patches.
 The best way to start hosting code on the Radicle network is to use the [Radicle CLI][wc], which helps you create a
 identity, initialize a repository, host your code on a [seed node][sn], and share your project with others.
 
-Check out our [Getting Started][gs] guide for details.
+[Get started][gs] in just a few steps.
 
 > Additional discovery and collaboration features, like pulling patches for review, are planned and under active
 > development.
