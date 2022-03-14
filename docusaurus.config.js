@@ -15,14 +15,13 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'radicle-dev', // Usually your GitHub org/user name.
   projectName: 'radicle-docs', // Usually your repo name.
-
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.json'),
+          sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/radicle-dev/radicle-docs/',
         },
         // theme: {
@@ -36,35 +35,48 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: '',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Radicle',
+          src: 'img/radicle.svg',
+          href: '/docs/what-is-radicle',
+          target: '_self',
+          width: 128,
+          height: 87
         },
         items: [
+          // {
+          //   type: 'doc',
+          //   docId: 'what-is-radicle',
+          //   position: 'left',
+          //   label: 'What is Radicle?',
+          // },
+          // {
+          //   type: 'doc',
+          //   docId: 'getting-started',
+          //   position: 'left',
+          //   label: 'Getting started',
+          // },
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/radicle-dev/',
             label: 'GitHub',
             position: 'right',
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'What is Radicle?',
+                to: '/docs/what-is-radicle',
+              },
+              {
+                label: 'Getting started',
+                to: '/docs/getting-started'
               },
             ],
           },
@@ -72,16 +84,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
+                label: 'Discord',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Forum',
+                href: 'https://radicle.community/',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/radicle',
               },
             ],
           },
@@ -89,17 +101,13 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/radicle-dev/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} The Radicle Team <dev@radicle.xyz> and contributors.`,
       },
       prism: {
         theme: lightCodeTheme,
