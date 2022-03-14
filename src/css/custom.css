@@ -1,0 +1,18 @@
+@import url("https://rsms.me/inter/inter.css");
+
+@font-face {
+  font-family: "Inter";
+  src: url("https://rsms.me/inter/inter.css");
+}
+
+:root {
+  --ifm-color-primary: #5555ff;
+  --ifm-color-primary-dark: #3333ff;
+  --ifm-color-primary-darker: #2222ff;
+  --ifm-color-primary-darkest: #0000ee;
+  --ifm-color-primary-light: #7777ff;
+  --ifm-color-primary-lighter: #8888ff;
+  --ifm-color-primary-lightest: #bbbbff;
+
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}

@@ -24,9 +24,9 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/radicle-dev/radicle-docs/',
         },
-        // theme: {
-        //   customCss: require.resolve('./src/css/custom.css'),
-        // },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
       }),
     ],
   ],
