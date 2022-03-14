@@ -187,14 +187,15 @@ After you've pushed your project to the Radicle network, it's available for view
 client](https://app.radicle.network).
 
 To view your project, paste the URL after `(web)` into your browser of choice. You can use this interface to browse your
-code, view individual files, explore your commit history, and more.
+code, view individual files, explore your commit history, and more. You can share this URL with others, which allows
+them to view your code on the web client, clone your code into a new project.
 
 ![The Radicle web client for viewing a published
 project](https://user-images.githubusercontent.com/1153921/157982795-0bfcaa58-ec9d-44f2-8da3-ad0900172e0e.png)
 
-You can also use this web client to view other projects hosted on the Radicle network. The web client organizes projects
-by either the seed node they're synced with or the organization they are published under, such as Radicle's own
-[alt-clients](https://app.radicle.network/alt-clients.radicle.eth) organization.
+The Radicle [web client](https://app.radicle.network) also helps you discover new projects hosted on the network,
+organized by either the seed node they're synced with or the organization they are published under, such as Radicle's
+own [alt-clients](https://app.radicle.network/alt-clients.radicle.eth) organization.
 
 ## What's next?
 
@@ -205,4 +206,9 @@ See information about your Radicle ID with `rad self`, and view a list of your s
 need help with using the Radicle CLI, run `rad help` to see additional options, or `rad [command] --help`, like `rad
 auth --help`.
 
+Now that you've started hosting your code on the Radicle network, others can clone your project, make changes, and push
+them to a sub-tree of your project, organized by their Peer ID. You can then pull their contribution locally, view the
+changes, merge them, and push them back to your canonical source tree.
 
+For now, read more about Radicle's current contribution flows in the [`rad` manual
+page](https://github.com/radicle-dev/radicle-cli/blob/f7a9314b5ff176a6836923c0424157070f995533/rad.1.adoc#contributing-to-a-radicle-project).
