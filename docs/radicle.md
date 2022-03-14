@@ -62,11 +62,11 @@ projects that can be fetched and merged by other peers via patches.
 
 ## How do I use Radicle?
 
-The best way to start hosting code on the Radicle network is to use the [Radicle CLI][https://radicle.network/], which
+The best way to start hosting code on the Radicle network is to use the [Radicle CLI](https://radicle.network/), which
 helps you create a identity, initialize a repository, host your code on a [seed
-node][understanding-radicle/glossary/#seed], and share your project with others.
+node](understanding-radicle/glossary/#seed), and share your project with others.
 
-[Get started][getting-started.md] in just a few steps.
+[Get started](getting-started.md) in just a few steps.
 
 > Additional discovery and collaboration features, like pulling patches for review, are planned and under active
 > development.
