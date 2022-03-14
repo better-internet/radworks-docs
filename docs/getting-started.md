@@ -8,10 +8,12 @@ The easiest way to access the Radicle network for hosting code or managing and p
 [Radicle CLI][cl].
 
 In this getting started guide, you'll install Radicle CLI, create a Radicle identity, initialize an existing repository,
-push your code to the Radicle network, and view your project with the Radicle [web interface][wi].
+push your code to the Radicle network, and view your project with the Radicle [web
+client][https://app.radicle.network/].
 
-Radicle development is public by default and completely open source. [Join our community][jc] to learn more about the
-future of Radicle or contribute code, documentation, or design.
+Radicle development is public by default and completely open source. [Join our
+community][get-involved/join-the-community] to learn more about the future of Radicle or contribute code, documentation,
+or design.
 
 <details>
   <summary><b>DISCLAIMER 🌱</b></summary>
@@ -48,25 +50,31 @@ future of Radicle or contribute code, documentation, or design.
   </em>
 </details>
 
-## Installation
+## Install the Radicle CLI
 
-The Radicle CLI installs on Linux or macOS-based systems, either by compiling from source or via Homebrew, to supply the
-`rad` command for initializing new repositories and interacting with the Radicle network.
+The Radicle CLI installs on Linux, macOS, Windows-based systems, either by compiling from source or via Homebrew, to
+supply the `rad` command for initializing new repositories and interacting with the Radicle network.
 
-### Linux from source
+Requirements:
+- A recent version of Git (2.34.0 or later)
+- `ssh-agent`
+- OpenSSH (8.0 or later)
 
-Installation from source requires a [working installation of Rust][rt]. 
+### From source
 
-Run the following:
+Installation from source requires a [working installation of Rust][https://www.rust-lang.org/tools/install] and any
+additional development tooling for your operating system.
+
+Run the following to build and install the Radicle CLI directly from our seed node.
 
 ```
 cargo install --force --locked --git https://seed.alt-clients.radicle.xyz/radicle-cli.git radicle-cli
 ```
 
-### macOS with Homebrew
+### With Homebrew on x86_64/Intel macOS
 
-If your system is**Intel/x64-based**, install Radicle CLI directly from the Radicle [seed node][sn] using
-[Homebrew][hb].
+If your macOS system is **x86_64/Intel-based**, install Radicle CLI directly from the Radicle [seed
+node][understanding-radicle/glossary/#seed] using [Homebrew][https://brew.sh/].
 
 ```
 brew tap radicle/cli https://seed.alt-clients.radicle.xyz/radicle-cli-homebrew.git
@@ -74,14 +82,15 @@ brew install radicle/cli/core
 ```
 
 > **M1/arm64 users**: We're still working on an ideal installation method for running Radicle CLI on your
-> machine&mdash;see this [GitHub Gist][gg] for our latest progress until we're ready to publish an official method.
+> machine&mdash;see this [GitHub Gist][https://gist.github.com/sebastinez/d8f2d4979cad0d9f23c162702cdd4735] for our
+> latest progress until we're ready to publish an official method.
 
 ## Create your Radicle identity
 
 To interact with the Radicle network, you need an **identity**, which you generate with `rad auth`.
 
 After choosing a display name and setting a passphrase, the Radicle CLI generates two unique identifiers, your **Peer
-ID** and **personal 🌱 URN**, which respectively identify your device and identify you across devices, along with a
+ID** and **personal 🌱 URN**, which identify your device and identify you across devices, respectively, along with a
 Ed25519 keypair for securing your identity.
 
 ```
@@ -104,20 +113,16 @@ Your personal 🌱 URN is rad:git:hnrkmx6trm4bu19bwa4apbxj8ftw8f7amfdyy. This id
 
 You can use `rad auth` to create and manage multiple Radicle identities, but we'll stick with one for now.
 
-## Initialize a Radicle project
+## Create your Radicle project from a Git repository
 
-Let's initialize a project 
+`rad init` creates a unique identity for your repository and associates your Peer ID with it for sharing on the Radicle
+network.
 
-Create an empty repository, `cd` into it, initialize a Git repository, and then initialize a Radicle project.
-
-```
-mkdir acme
-cd acme
-git init
-rad init
-```
+Navigate to an existing Git repository, run `rad init`, enter a description, and specify the name of your default branch
+(typically `master` or `main`).
 
 ```
+$ rad init
 Initializing local 🌱 project acme
 
 ok Description · The Acme Corporation is an ironic name for the fictional corporation
@@ -128,26 +133,80 @@ ok Project initialized: rad:git:hnrkqi6ohci9m59i54ppiy3fqkedkjt98ymdo
 => To publish, run `rad push`.
 ```
 
-## Push code to the Radicle network
+## Publish your code on the Radicle network
 
+The first time you push code using `rad push`, it asks select a seed node to sync with. Radicle offers three default
+seed nodes — [pine.radicle.garden](https://app.radicle.network/seeds/pine.radicle.garden), [willow.radicle.garden](https://app.radicle.network/seeds/willow.radicle.garden), and [maple.radicle.garden](https://app.radicle.network/seeds/maple.radicle.garden) — with identical
+functionality.
 
+```
+$ rad push
+Pushing 🌱 to remote `rad`
+Everything up-to-date
+
+Git version 2.35.1
+Select a seed node to sync with...
+* pine.radicle.garden
+* willow.radicle.garden
+* maple.radicle.garden
+```
+
+> To push to your own seed node, or to multiple seed nodes from the same project, specify its address with the `--seed`
+> option: `rad push --seed seed.example.com`.
+
+Once your project finishes syncing for the first time, you'll find important information about where your project lives
+on the Radicle Network.
+
+```
+Git signing key ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL460KIEccS4881p7PPpiiQBsxF+H5tgC6De6crw9rbU
+
+Syncing 🌱 project rad:git:hnrkqi6ohci9m59i54ppiy3fqkedkjt98ymdo to https://willow.radicle.garden
+
+ok Syncing delegate identity hnrkqdpm9ub19oc8dccx44echy76hzfsezyio...
+ok Syncing project identity...
+ok Syncing project refs...
+ok Fetching remotes (*)...
+ok Project synced.
+
+🌱 Your project is synced and available at:
+
+    (web) https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkqi6ohci9m59i54ppiy3fqkedkjt98ymdo/
+    (git) https://willow.radicle.garden/hnrkqi6ohci9m59i54ppiy3fqkedkjt98ymdo.git
+```
+
+Note the `(web)` and `(git)` URLs, which you'll use in the next step.
 
 ## View your project and share with others
 
+After you've pushed your project to the Radicle network, it's available for viewing on the Radicle [web
+client](https://app.radicle.network).
 
-You can also explore the Radicle network using our [web client](wa).
+To view your project, paste the URL after `(web)` into your browser of choice. You can use this interface to browse your
+code, view individual files, explore your commit history, and more.
 
+![The Radicle web client for viewing a published
+project](https://user-images.githubusercontent.com/1153921/157982795-0bfcaa58-ec9d-44f2-8da3-ad0900172e0e.png)
+
+You can also use this web client to other projects hosted on the Radicle network organized either by the seed node
+they're synced with or the organization they are published under, such as Radicle's own
+[alt-clients](https://app.radicle.network/alt-clients.radicle.eth) organization.
 
 ## What's next?
 
+The `rad` CLI tool comes with a number of useful commands for recalling details about your Radicle ID or the
+repositories you've already synced with the Radicle network.
+
+See information about your Radicle ID with `rad self`, and view a list of your synced repositories with `rad ls`.
+
+If you need help with using the Radicle CLI, run `rad help` to see additional options, or `rad [command] --help`, like
+`rad auth --help`.
 
 
 
-[cl]: https://app.radicle.network/alt-clients.radicle.eth/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao/tree/f7a9314b5ff176a6836923c0424157070f995533
-[wi]: https://app.radicle.network/
-[jc]: get-involved/join-the-community
-[rt]: https://www.rust-lang.org/tools/install
-[sn]: understanding-radicle/glossary/#seed
-[hb]: https://brew.sh/
-[gg]: https://gist.github.com/sebastinez/d8f2d4979cad0d9f23c162702cdd4735
-[di]: understanding-radicle/glossary.md/#device-id
+[cl]: 
+[wi]: 
+[jc]: 
+[rt]: 
+[sn]: 
+[hb]: 
+[gg]: 
