@@ -36,7 +36,7 @@ of upstreams exchanging patches via remotes.
 
 <details>
   <summary><b>DISCLAIMER 🌱</b></summary>
-  <br>
+  <br />
   <p>
     <em>
       While this documentation reflects the specification of the Radicle Link
