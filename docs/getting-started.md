@@ -1,16 +1,20 @@
 ---
 id: getting-started
-title: Getting Started
-sidebar_label: Getting Started
+title: Getting started
+sidebar_label: Getting started
 ---
 
-## Download & Installation
+The [Radicle
+CLI](https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao/tree/b1eda227c0ceaa5b15622905161ad8dcd92a3c04)
+is the easiest way to access the Radicle network for hosting code or managing and publishing projects.
 
-The Radicle network can be accessed via **Radicle Upstream**, an open-source
-desktop client.
+In this getting started guide, you'll install Radicle CLI, create a Radicle identity, initialize an existing repository,
+push your code to the Radicle network, and view your project with the Radicle [web
+client](https://app.radicle.network/).
 
-Radicle development is public by default and completely open-source. See
-[Join our Community][cc] for information on our community channels.
+Radicle development is public by default and completely open source. [Join our
+community](get-involved/join-the-community) to learn more about the future of Radicle or contribute code, documentation,
+or design.
 
 <details>
   <summary><b>DISCLAIMER 🌱</b></summary>
@@ -47,135 +51,164 @@ Radicle development is public by default and completely open-source. See
   </em>
 </details>
 
-### Supported Platforms
+## Install the Radicle CLI
 
-Radicle Upstream is available for Linux and macOS (version 10.14 and
-newer).
+The Radicle CLI installs on Linux and macOS-based systems by compiling from source or with Homebrew.
 
-**→ [You can download it here][do]**
+When finished, you'll be able to use the `rad` command for managing projects and interacting with the Radicle network.
 
-Once you've downloaded the binary for your respective platform, start it like
-this:
+Requirements:
+- A recent version of Git (2.34.0 or later)
+- `ssh-agent`
+- OpenSSH (8.0 or later)
 
-#### On Linux:
+### From source
 
-1. Make the package executable with: `chmod +x radicle-upstream-X.X.X.AppImage`
-2. Start the app: `./radicle-upstream-X.X.X.AppImage`
+Installation from source requires a [working installation of Rust](https://www.rust-lang.org/tools/install) and any
+additional development tooling for your operating system.
 
-#### On macOS:
-
-1. Open the `radicle-upstream-x.x.x.dmg` package and install Upstream by
-   dragging the `Radicle Upstream` binary to the `/Applications` folder.
-
-<video style="border-radius: 16px; margin: 16px 0; width: 100%; height: 100%;"
-  playsinline autoplay muted loop>
-  <source src="/img/macOS-install.mp4" type="video/mp4">
-</video>
-
-Radicle Upstream packages are only compatible with macOS versions 10.14 and newer. 
-The client can run on older versions (i.e. High Sierra) by building the app from [source][bs]. 
-
-If you are installing on a [Mac computer with Apple Silicon ][as] please note
-that you may experience issues as Radicle Upstream has not been tested on the
-Apple Silicon platform.
-
-<details>
-  <summary><b>A Note on the Apple Developer Program</b></summary>
-  <br />
-  <em>
-    <p>
-    While we are participating in the Apple Developer Program to ensure
-    accessibility to our macOS users, we do not agree with Apple's financial
-    gatekeeping and increasing control over application distribution on their
-    platform. Forcing developers to "pay-to-play" under the guise of a security
-    solution is an extractive form of vendor lock-in that inhibits the growth and
-    accessibility of open software.
-    </p>
-  </em>
-</details>
-
-
-#### On NixOS:
-
-`radicle-upstream` is available on the `unstable` channel and it can be 
-installed by running `nix-env -iA nixos.radicle-upstream`.
-
-<em>Please note that this is a third-party package.</em>
-
-## Creating an identity
-To create an identity on the Radicle network, use the Upstream client.
-After choosing a display name and setting a passphrase, it will generate a
-unique identifier — known as a [**Device ID**][di] — that's paired to the
-computer you've installed it on.
-
-For now, this Device ID is the only way other users can find and collaborate
-with you. Later on, you will be able to manage multiple Device IDs under one
-user handle, enabling support and consistency across multiple devices.
-
-![Identity][id]
-
-### Setting a passphrase
-The client will also prompt you to create a passphrase. This passphrase *isn't* a
-private key — it is a password that decrypts your keypair to access and publish
-to the network. You will also be prompted for this passphrase when
-pushing and fetching code from your local machine to Radicle via
-your command line.
-
-<blockquote>
-There is no way to recover this passphrase yet, so be sure to keep it in a very
-safe place!
-</blockquote>
-
-## Configuring your system
-
-### Setting up Git
-To create and publish projects to the network, you must make sure your
-commits are associated with a username in Git.
-
-You can do so by running the following command:
+Run the following to build and install the Radicle CLI directly from our seed node.
 
 ```
-git config --global user.name "YOUR NAME"
-```
-For more help, refer to the relevant [Git documentation][gd].
-
-### Adding the remote helper
-To publish code to the network via the Upstream client, you first have
-to add the Radicle gitremote-helper to your shell configuration.
-
-- Add `export PATH="$HOME/.radicle/bin:$PATH"` to your shell configuration
-- Restart your shell
-- Check that the remote helper is available in your path by running:
-
-```
-$ which git-remote-rad
-<home path>/.radicle/bin/git-remote-rad
+cargo install --force --locked --git https://seed.alt-clients.radicle.xyz/radicle-cli.git radicle-cli
 ```
 
-With the remote helper installed, you will be able to [push changes][pc] from
-your working copies to your Radicle [monorepo][ri] or [fetch changes][fc] from
-other peers via the `rad` remote. The Upstream client then publishes
-these changes to the network.
+### With Homebrew on x86_64/Intel macOS
 
-To start using Radicle, continue on to the [Using Radicle][ur] section.
+If your macOS system is **x86_64/Intel-based**, install Radicle CLI directly from the Radicle [seed
+node](understanding-radicle/glossary/#seed) using [Homebrew](https://brew.sh/).
 
-[ur]: using-radicle/overview.md
-[di]: understanding-radicle/glossary.md/#device-id
-[pc]: using-radicle/pushing-changes
-[fc]: using-radicle/viewing-and-merging-patches
-[rg]: understanding-radicle/faq.md#
-[ri]: understanding-radicle/how-it-works.md/#git-implementation
-[sn]: using-radicle/running-a-seed-node.md
-[cc]: get-involved/community.md
+```
+brew tap radicle/cli https://seed.alt-clients.radicle.xyz/radicle-cli-homebrew.git
+brew install radicle/cli/core
+```
 
-[id]: /img/identity.png
+> **M1/arm64 users**: We're still working on an ideal installation method for running Radicle CLI on your
+> machine&mdash;see this [GitHub Gist](https://gist.github.com/sebastinez/d8f2d4979cad0d9f23c162702cdd4735) for our
+> latest progress until we're ready to publish an official method.
 
-[as]: https://support.apple.com/en-us/HT211814
-[bs]: https://github.com/radicle-dev/radicle-upstream/blob/main/docs/development.md
-[co]: https://radicle.community
-[do]: https://radicle.xyz/downloads.html
-[gd]: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
-[sd]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
-[te]: https://radicle.xyz/terms.html
-[mc]: https://matrix.radicle.community
-[sc]: https://github.com/radicle-dev/radicle-upstream
+## Create your Radicle identity
+
+To interact with the Radicle network, you need an **identity**, which you generate with `rad auth`.
+
+After choosing a display name and setting a passphrase, the Radicle CLI generates two unique identifiers, your **Peer
+ID** and **personal 🌱 URN**, which identify your device and identify you across devices, respectively, along with an
+Ed25519 keypair for securing your identity.
+
+```
+$ rad auth
+Initializing your 🌱 profile and identity
+
+ok Username · 
+ok Passphrase · ********
+ok Creating your 🌱 Ed25519 keypair...
+ok Adding to ssh-agent...
+ok Profile 3ae66df3-6ac7-4466-9013-83839749ed05 created.
+
+Your radicle Peer ID is hyncoz7x4s8x9447g6yogy4iy41q8i4juy5uhou57w1ga7obt644wo. This identifies your device.
+Your personal 🌱 URN is rad:git:hnrkmx6trm4bu19bwa4apbxj8ftw8f7amfdyy. This identifies you across devices.
+
+=> To create a radicle project, run `rad init` from a git repository.
+```
+
+> There is currently no way to retrieve a lost or forgotten passphrase, so please store it safely!
+
+You can use `rad auth` to create and manage multiple Radicle identities, but we'll stick with one for now.
+
+## Create your Radicle project from a Git repository
+
+`rad init` creates a unique identity for your repository and associates your Peer ID with it for sharing on the Radicle
+network.
+
+Navigate to an existing Git repository, run `rad init`, enter a description, and specify the name of your default branch
+(typically `master` or `main`).
+
+```
+$ rad init
+Initializing local 🌱 project acme
+
+ok Description · The Acme Corporation is an ironic name for the fictional corporation
+ok Default branch · main
+ok Initializing new project...
+ok Project initialized: rad:git:hnrkqi6ohci9m59i54ppiy3fqkedkjt98ymdo
+
+=> To publish, run `rad push`.
+```
+
+## Publish your code on the Radicle network
+
+The first time you push code using `rad push`, it asks you to select a seed node to sync with. 
+
+Radicle seeds are peer-to-peer nodes, functioning as replicas for Radicle project data, that are accessible on the
+public internet. Radicle offers three default seed nodes: [pine.radicle.garden](https://app.radicle.network/seeds/pine.radicle.garden),
+[willow.radicle.garden](https://app.radicle.network/seeds/willow.radicle.garden), and
+[maple.radicle.garden](https://app.radicle.network/seeds/maple.radicle.garden).
+
+> To push to your own seed node, or to multiple seed nodes from the same project, specify its address with the `--seed`
+> option: `rad push --seed seed.example.com`.
+
+```
+$ rad push
+Pushing 🌱 to remote `rad`
+Everything up-to-date
+
+Git version 2.35.1
+Select a seed node to sync with...
+* pine.radicle.garden
+* willow.radicle.garden
+* maple.radicle.garden
+```
+
+Once your project finishes syncing for the first time, you'll find important information about where your project lives
+on the Radicle Network.
+
+```
+Git signing key ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL460KIEccS4881p7PPpiiQBsxF+H5tgC6De6crw9rbU
+
+Syncing 🌱 project rad:git:hnrkqi6ohci9m59i54ppiy3fqkedkjt98ymdo to https://willow.radicle.garden
+
+ok Syncing delegate identity hnrkqdpm9ub19oc8dccx44echy76hzfsezyio...
+ok Syncing project identity...
+ok Syncing project refs...
+ok Fetching remotes (*)...
+ok Project synced.
+
+🌱 Your project is synced and available at:
+
+    (web) https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkqi6ohci9m59i54ppiy3fqkedkjt98ymdo/
+    (git) https://willow.radicle.garden/hnrkqi6ohci9m59i54ppiy3fqkedkjt98ymdo.git
+```
+
+Note the `(web)` and `(git)` URLs, which you'll use in the next step.
+
+## View your project and share with others
+
+After you've pushed your project to the Radicle network, it's available for viewing on the Radicle [web
+client](https://app.radicle.network).
+
+To view your project, paste the URL after `(web)` into your browser of choice. You can use this interface to browse your
+code, view individual files, explore your commit history, and more. You can share this URL with others, which allows
+them to view your code on the web client, clone your code into a new project.
+
+![The Radicle web client for viewing a published
+project](/img/radicle-web-client.png)
+
+The Radicle [web client](https://app.radicle.network) also helps you discover new projects hosted on the network,
+organized by either the seed node they're synced with or the organization they are published under, such as Radicle's
+own [alt-clients](https://app.radicle.network/alt-clients.radicle.eth) organization.
+
+## What's next?
+
+The `rad` CLI tool comes with a number of useful commands for recalling details about your Radicle ID or the
+repositories you've already synced with the Radicle network.
+
+See information about your Radicle ID with `rad self`, and view a list of your synced repositories with `rad ls`. If you
+need help with using the Radicle CLI, run `rad help` to see additional options, or `rad [command] --help`, like `rad
+auth --help`.
+
+Now that you've started hosting your code on the Radicle network, others can clone your project, make changes, and push
+them to a sub-tree of your project, organized by their Peer ID. You can then pull their contribution locally, view the
+changes, merge them, and push them back to your canonical source tree.
+
+For now, read more about Radicle's current contribution flows in the [`rad` manual
+page](https://github.com/radicle-dev/radicle-cli/blob/f7a9314b5ff176a6836923c0424157070f995533/rad.1.adoc#contributing-to-a-radicle-project).
