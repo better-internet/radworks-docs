@@ -53,7 +53,7 @@ or design.
 
 ## Install the Radicle CLI
 
-The Radicle CLI installs on Linux, macOS, Windows-based systems by compiling from source or with Homebrew.
+The Radicle CLI installs on Linux and macOS-based systems by compiling from source or with Homebrew.
 
 When finished, you'll be able to use the `rad` command for managing projects and interacting with the Radicle network.
 
