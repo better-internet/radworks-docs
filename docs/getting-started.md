@@ -191,7 +191,7 @@ code, view individual files, explore your commit history, and more. You can shar
 them to view your code on the web client, clone your code into a new project.
 
 ![The Radicle web client for viewing a published
-project](https://user-images.githubusercontent.com/1153921/157982795-0bfcaa58-ec9d-44f2-8da3-ad0900172e0e.png)
+project](/img/radicle-web-client.png)
 
 The Radicle [web client](https://app.radicle.network) also helps you discover new projects hosted on the network,
 organized by either the seed node they're synced with or the organization they are published under, such as Radicle's
