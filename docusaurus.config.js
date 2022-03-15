@@ -21,9 +21,13 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          // We'll use this eventually to remove the `/docs/` part of the path
+          // for every document, but only when we're ready for some redirects.
+          // routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/radicle-dev/radicle-docs/',
         },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -40,7 +44,7 @@ const config = {
           alt: 'Radicle',
           src: 'img/radicle-logo.svg',
           srcDark: 'img/radicle-logo-dark.svg',
-          href: '/docs/what-is-radicle',
+          href: '/docs/',
           target: '_self',
           width: 128,
           height: 87
@@ -55,47 +59,6 @@ const config = {
       },
       footer: {
         style: 'light',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'What is Radicle?',
-                to: '/docs/what-is-radicle',
-              },
-              {
-                label: 'Getting started',
-                to: '/docs/getting-started'
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Discord',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Forum',
-                href: 'https://radicle.community/',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/radicle',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/radicle-dev/',
-              },
-            ],
-          },
-        ],
         copyright: `Copyright © ${new Date().getFullYear()} The Radicle Team <dev@radicle.xyz> and contributors.`,
       },
       algolia: {
