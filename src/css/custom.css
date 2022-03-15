@@ -6,6 +6,10 @@
 }
 
 :root {
+  /* Fonts */
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  /* Colors */
   --ifm-color-primary: #5555ff;
   --ifm-color-primary-dark: #3333ff;
   --ifm-color-primary-darker: #2222ff;
@@ -14,5 +18,13 @@
   --ifm-color-primary-lighter: #8888ff;
   --ifm-color-primary-lightest: #bbbbff;
 
-  --ifm-font-family-base: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --ifm-background-color: #FFF; 
+  --ifm-navbar-background-color: #F8F8F8;
+  --ifm-footer-background-color: #F8F8F8;
+}
+
+html[data-theme='dark'] {
+  --ifm-background-color: #0E171F;
+  --ifm-navbar-background-color: #162029; 
+  --ifm-footer-background-color: #162029;
 }

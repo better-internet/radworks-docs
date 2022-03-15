@@ -38,25 +38,14 @@ const config = {
         title: '',
         logo: {
           alt: 'Radicle',
-          src: 'img/radicle.svg',
+          src: 'img/radicle-logo.svg',
+          srcDark: 'img/radicle-logo-dark.svg',
           href: '/docs/what-is-radicle',
           target: '_self',
           width: 128,
           height: 87
         },
         items: [
-          // {
-          //   type: 'doc',
-          //   docId: 'what-is-radicle',
-          //   position: 'left',
-          //   label: 'What is Radicle?',
-          // },
-          // {
-          //   type: 'doc',
-          //   docId: 'getting-started',
-          //   position: 'left',
-          //   label: 'Getting started',
-          // },
           {
             href: 'https://github.com/radicle-dev/',
             label: 'GitHub',
