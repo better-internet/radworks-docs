@@ -91,9 +91,10 @@ brew install radicle/cli/core
 
 To interact with the Radicle network, you need an **identity**, which you generate with `rad auth`.
 
-After choosing a display name and setting a passphrase, the Radicle CLI generates two unique identifiers, your **Peer
-ID** and **personal 🌱 URN**, which identify your device and identify you across devices, respectively, along with an
-Ed25519 keypair for securing your identity.
+After choosing a display name and setting a passphrase, the Radicle CLI generates two unique identifiers.
+
+First is your **Peer ID**, which identifies your device and the code you publish on the Radicle network, and is secured
+with an Ed25519 keypair. Second is your **personal 🌱 URN**, which identifies your project on the Radicle network.
 
 ```
 $ rad auth

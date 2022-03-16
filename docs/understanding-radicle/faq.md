@@ -3,8 +3,9 @@ id: faq
 title: FAQ
 ---
 ## How do I get started?
-Head over to the [Getting Started][gs] section for instructions on how to
-download and install the Radicle Upstream client.
+Head over to [getting started](getting-started.md) section for instructions on how to download and 
+install the Radicle CLI, which helps you host code on the Radicle network and
+collaborate on projects.
 
 ## How is collaborating on Radicle different than GitHub?
 In contrast to centralized code collaboration platforms, Radicle is designed for
@@ -14,8 +15,7 @@ of their social interactions as they self-host their own content and the content
 of any peers they are interested in. This also means that within projects, there
 isn't a single `master` branch that contributors merge into. Each peer maintains
 a view of a project with their changesets and branches. These views are gossiped
-around to other peers that are interested in those changes. Read more about the
-implications and approach to this design [here][ov].
+around to other peers that are interested in those changes.
 
 ## How is Radicle more secure than centralized platforms?
 The Radicle network is peer-to-peer and built on public key cryptography. To
@@ -28,10 +28,13 @@ interface components and key oracles to signal trust from user to user, Radicle
 has designed trust into the core of the protocol.
 
 ## How does Radicle interact with Git?
-Radicle Link — the protocol that powers the Radicle network is built on Git. All
-Radicle data is stored in a single Git monorepo on your machine that is read
-from and written to via the Upstream client. To read more
-about Radicle's Git Implementation, see [How it Works][hw].
+
+The Radicle CLI uses a push-pull transport mechanism that's built on top of Git. When you run `rad init` in a Git
+repository for the first time, it adds a `rad` remote that points to the project's local state, which you then push to a
+seed node when you run `rad push`.
+
+The Radicle CLI also uses the identity portion of [Radicle Link](https://github.com/radicle-dev/radicle-link)) to create
+unique Peer IDs and personal URNs, which identify your devices and your identity across devices, respectively.
 
 ## How is Radicle licensed?
 Radicle is completely free and open-source. It's licensed under version 3 of the
@@ -46,14 +49,17 @@ issues, PRs, and discussions will be more secure, available offline, and stored
 on your machine as git objects — not on a central server!
 
 ## When will CLI tooling be available?
-We're working on it! 🤞 We will introduce CLI tooling alongside of Upstream
-development.
+
+The [Radicle CLI](https://github.com/radicle-dev/radicle-cli/) is available now, and is currently the best way to [get
+started](getting-started.md) with hosting code on the Radicle network.
 
 ## Can I backup a GitHub project on Radicle?
+
 Yes! Publishing a codebase to Radicle is a great way to create a peer-to-peer
 backup of your repositories. Maintaining a mirror of a project on Radicle is as
-simple as pushing to another remote. Read more about [creating
-projects][cp].
+simple as pushing to another remote. 
+
+To create a mirror, follow the [getting started](getting-started.md) guide using your existing repository, which will initiatize your project and push the code to the Radicle network. To synchronize state between your GitHub and Radicle versions, run `rad push` on the `main`/`master` branch after every change.
 
 ## Can I replace GitHub with Radicle?
 If you want! While our Beta release will have only the basic collaboration features
@@ -64,17 +70,27 @@ discussions.
 
 That being said, while we believe that reducing one's reliance on
 centrally-hosted platforms is generally a good idea, we also believe that code
-collaboration solutions serve different purposes for different people. Radicle
-Upstream *will* support social collaboration, but it's priority will be
+collaboration solutions serve different purposes for different people. Radicle *will* support social collaboration through one or more projects, but our priority will be
 delivering secure, local-first, peer-to-peer code collaboration — not an exact
 GitHub replica.
 
 ## Where is my data stored?
-On the Radicle network, content is distributed peer-to-peer via a process called
-gossip. This means that peers self-host their own content — and the content of
+
+There are currently two methods of transporting data on the Radicle network.
+
+The original method is through a distributed peer-to-peer via a process called
+**gossip**. This means that peers self-host their own content — and the content of
 any peers they are interested in — locally on their machine in a [Git monorepo][hw].
 It also means that whenever your data is published to the network, it can be
 replicated and stored on another peer's machine.
+
+The newer method is a **push-pull** method that uses `git push` to send changes to seed nodes and `git pull` to fetch
+updates. With this method, your data is only stored on the seed node you chose to sync your project with when you [ran
+`rad init`](getting-started.md#create-your-radicle-project-from-a-git-directory), and with anyone who uses `rad clone`
+to create a copy of the project.
+
+Currently, only the push-pull method is utilized by the [CLI tooling](https://github.com/radicle-dev/radicle-cli/), but
+there are plans to re-introduce the P2P gossip method, and potentially allow users to choose which method they prefer.
 
 ## Can I create private repositories on Radicle?
 No, not yet - but in the future! Private projects with end-to-end encryption are
@@ -88,63 +104,42 @@ their remotes to be able to fetch changes from them. You can manage remotes
 on your project page (See [Adding Remotes][ar]). For more on how remote
 repositories work, see the [Git documentation][mr].
 
-## What's a Radicle ID?
-A Radicle ID is a unique way of identifying projects in the Radicle Network.
-You can find it on a project's page or on the [seed node dashboard][sn]. You
-use a project's Radicle ID to find it via Radicle Upstream.
+## What's a Peer ID?
 
-## What's a Device ID?
-A Device ID is the encoding of a peer's public key that is tied to a specific device.
-People will be able to manage multiple Device IDs in the future, but for now you can
-only have one Device ID per identity.
+A Peer ID identifies your device and the code you publish on the Radicle network, and is secured with an
+Ed25519 keypair.
 
-To be [added as a remote][ar] to a project, you need to share your Device ID.
+You can create multiple identities using `rad auth`.
 
-## What does following mean in Radicle?
-Following a project replicates its data to your machine by tracking it. This
-allows the follower to subscribe to updates from the project's maintainer(s) or
-other remotes. It is also a way to signal interest in the project or peer by
-further replicating the data across their network, making it available to other
-people on the network. See [Tracking][tr].
+## What's a personal URN?
+
+A **personal URN** which identifies your project on the Radicle network. You can use these URNs to find a project on the
+Radicle [web client](https://app.radicle.network/) or clone a project with `rad clone`.
+
+If you want to share your project with a collaborator, make sure you share its URN.
 
 ## Can I use Radicle with multiple devices?
-Yes and no. While there isn't multi-device support yet, you can still create
-accounts on different devices, they just won't be linked under one Upstream user
-account.
+
+Yes and no. 
+
+There is no explicit support, but if you got started with the Radicle network using the CLI tooling, you can, in theory,
+use the same keyfile (`librad.key`) to authenticate the same Peer ID on multiple devices, which would allow you to
+push/pull code to the same project without having to manage multiple identities.
 
 ## How do I make sure nobody else has my display name?
 You can't.... yet. We will be introducing unique names soon 👍
 
-(P.S. While your display name isn't unique, your emoji avatar is!)
-
 ## What happens if I forget my passphrase?
-Without your passphrase, there is no way to grant the Upstream client access to
-your secret key. This means that without your passphrase, there is no way to
-access or publish data to the Radicle network - so make sure you keep it safe!
+
+Without your passphrase, Radicle tools can't use the secret keypair that validates your Peer ID on the network, which means you've lost access to push to existing projects on the Radicle network. Make sure you keep it safe!
 
 ## Can I change my passphrase?
 Not yet — so make sure to keep it in a safe place!
 
-## Why do I have to enter my passphrase everytime?
-Interactions through Git and the remote helper are ad-hoc and don't have the
-benefit of a long-running daemon - i.e. Upstream client. That means for now the
-passphrase has to be provided every time you interact with Radicle outside of
-a client.
+## Why do I have to enter my passphrase every time ?
 
-## I can't find a project on the network or see a peer's changes. What should I do?
-First, check to see if you are connected to the seed node by hovering over the
-Connection Status icon in your toolbar. If you are connected to one or more
-peer, navigate to the seed node dashboard (e.g. sprout.radicle.xyz) to see if
-you can find your Device ID.
-
-![Seed Dashboard Search][sd]
-
-If you are connected to the seed node and can find yourself on the dashboard,
-try restarting the app. On restart, if there is still outstanding data to be
-found, try refreshing the app. Wait one minute before restarting the app again.
-
-If you are still running into problems, please submit a request in our [#support
-channel][sc].
+You shouldn't need to enter your passphrase every time you interact with the Radicle network. Depending on your setup,
+you may need to enter it once after login using `rad auth`.
 
 ## Can I delete a project?
 Currently, this feature is not supported but it is on the roadmap and will be
@@ -152,12 +147,6 @@ included in an upcoming release. Until then, you can only remove your
 project from your local machine, thus limiting the number of peers who can find
 and replicate your project. You can not delete a project from another peer's
 local machine, as they retain control over their local data.
-
-## Why am I only connected to one peer?
-By default, the Upstream client is conecting to a seed node operated by Radicle.
-While we support [epidemic broadcast][eb] to find and connect to other peers, we
-don't have support for [hole punching][hp] just yet, which will prevent a stable conenction
-between two computers.
 
 ## I ran into a issue, where can I report it?
 Please reach out to us in our [#support channel][sc], or submit an issue on our
@@ -178,56 +167,6 @@ To join our Matrix chat, follow these steps:
 To join our Matrix chat with an account from another Matrix server, you can use
 this [direct invite link][mc] to join #general. For more information on our
 community channels see [Join our Community][cc].
-
-## Can I run Radicle as a daemon?
-While technically possible, we haven't bundled it yet in a convenient package
-for anyone to run in the background. We are working hard to change that so we can
-help people operate Radicle nodes in many different ways. Should you be keen to
-have it as a daemon right now, check out how the [seed][si] is implemented, and
-try to run your own.
-
-## Is it possible to launch Upstream via links on the web?
-Yes, as of Upstream v0.2.1 we support opening links to Radicle projects in
-Upstream. Clicking the following link will launch Upstream and navigate to the
-specified project:
-
-  radicle://link/v0/rad:git:hnrkmzko1nps1pjogxadcmqipfxpeqn6xbeto
-
-The custom protocol is registered automatically when installing Upstream on
-macOS.
-
-On Linux you'll have to either manually register the custom protocol or
-integrate Upstream into your system with `AppImageLauncher` or `appimaged` as
-described [here][ai].
-
-Assuming you have downloaded the latest Upstream in
-`$HOME/Downloads/radicle-upstream-0.2.1.AppImage`, you can register the
-protocol by running the following commands:
-
-```sh
-chmod +x $HOME/Downloads/radicle-upstream-0.2.1.AppImage
-
-cat > $HOME/.local/share/applications/radicle-upstream.desktop <<EOF
-[Desktop Entry]
-Exec=$HOME/Downloads/radicle-upstream-0.2.1.AppImage %U
-Terminal=false
-Type=Application
-MimeType=x-scheme-handler/radicle;
-EOF
-
-update-desktop-database ~/.local/share/applications
-```
-
-**Note**: It's advisable to move the Upstream binary to a stable location
-before registering the custom protocol, otherwise the custom protocol
-handling will break if the binary is renamed or moved to another location.
-
-On Linux you can verify whether the custom protocol is working like this:
-```sh
-xdg-open "radicle://link/v0/rad:git:hnrkmzko1nps1pjogxadcmqipfxpeqn6xbeto"
-```
-
-Read more about the custom Radicle client URI scheme [here][cu].
 
 
 [ai]: https://docs.appimage.org/user-guide/run-appimages.html#integrating-appimages-into-the-desktop
