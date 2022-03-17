@@ -3,16 +3,15 @@ id: troubleshooting
 title: Troubleshooting
 ---
 
-As the developers of Upstream we want you, the user, to have the best experience
-possible. Also, as the developers of Upstream, we know that there will be bugs
-and errors in our Beta release. To help consolidate these diametrically opposed
-pieces of knowledge, we will try and document any of the errors that we are
-aware of and provide some troubleshooting advice.
+As the team behind the various protocols and projects that utilize the Radicle network, we want you, the user, to have
+the best experience possible. Also, as the developers, we know that there will be bugs and errors. To help consolidate
+these diametrically opposed pieces of knowledge, we will try and document any of the errors that we are aware of and
+provide some troubleshooting advice.
 
-In the event that this information doesn't resolve your issue, we encourage you
-to submit a formal request through our [#support channel][sc] on our Matrix
-server, in the [Support category][rc] of our radicle.community forum, or [open
-an issue][gi] on GitHub.
+In the event that this information doesn't resolve your issue, we encourage you to submit a formal request through the
+**#support** channel on our [Discord server](https://discord.gg/j2HZCBDUvF) or in the **Support** category of our
+[forum](https://radicle.community). If you know which Radicle project is most relevant to your issue, you can also
+create an issue in the appropriate [repository on GitHub](https://github.com/radicle-dev).
 
 If you're having issues using Git, see the [Working with Git][wg] category of this section.
 
