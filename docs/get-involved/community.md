@@ -5,7 +5,7 @@ title: Join the Community
 
 To get involved with the Radicle project, start by joining our community channels:
 
-### [Discord](https://discord.gg/j2HZCBDUvF)
+## [Discord](https://discord.gg/j2HZCBDUvF)
 
 Most conversations in the community are happening here. The core team is very active and typically responds to questions
 in real time.

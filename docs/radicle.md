@@ -4,8 +4,6 @@ title: What is Radicle?
 sidebar_label: What is Radicle?
 ---
 
-> **To start hosting code the Radicle network, see our [getting started guide](getting-started.md).**
-
 Radicle is a decentralized code collaboration network built on open protocols 🌱. It enables developers
 to collaborate on code without relying on trusted intermediaries. Radicle was designed
 to provide similar functionality to centralized code collaboration platforms — or "forges" —
@@ -15,8 +13,18 @@ version control so powerful in the first place.
 Read more about our [vision for decentralized code
 collaboration](https://radicle.xyz/blog/towards-decentralized-code-collaboration.html).
 
-Radicle also features an [*opt-in* Ethereum integration][https://radicle.xyz/blog/integrating-with-ethereum.html] for
+Radicle also features an [*opt-in* Ethereum integration](https://radicle.xyz/blog/integrating-with-ethereum.html) for
 unique global names, decentralized organizations, and protocols that help maintainers sustain their open-source work.
+
+## How do I use Radicle?
+
+The best way to start hosting code on the Radicle network is to use the [Radicle CLI](https://radicle.network/), which
+helps you create a identity, initialize a repository, host your code on a [seed
+node](understanding-radicle/glossary/#seed), and share your project with others.
+
+> **To start hosting code the Radicle network, see our [getting started guide](getting-started.md).**
+
+Additional discovery and collaboration features are planned and under active development.
 
 ## How Radicle works
 
@@ -59,14 +67,3 @@ projects that can be fetched and merged by other peers via patches.
 
 > Read more about [collaborating on Radicle](https://radicle.xyz/blog/collaborating-on-radicle.html) and our social
 > model.
-
-## How do I use Radicle?
-
-The best way to start hosting code on the Radicle network is to use the [Radicle CLI](https://radicle.network/), which
-helps you create a identity, initialize a repository, host your code on a [seed
-node](understanding-radicle/glossary/#seed), and share your project with others.
-
-[Get started](getting-started.md) in just a few steps.
-
-> Additional discovery and collaboration features, like pulling patches for review, are planned and under active
-> development.

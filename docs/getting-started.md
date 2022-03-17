@@ -83,9 +83,10 @@ brew tap radicle/cli https://seed.alt-clients.radicle.xyz/radicle-cli-homebrew.g
 brew install radicle/cli/core
 ```
 
-> **M1/arm64 users**: We're still working on an ideal installation method for running Radicle CLI on your
-> machine&mdash;see this [GitHub Gist](https://gist.github.com/sebastinez/d8f2d4979cad0d9f23c162702cdd4735) for our
-> latest progress until we're ready to publish an official method.
+> **M1/Apple Silicon users**: We're still working on an ideal installation method for running Radicle CLI on your
+> machine&mdash;see [our M1 troubleshooting
+> section](understanding-radicle/troubleshooting.md##install-radicle-cli-on-apple-silicon) for our latest progress
+> until we're ready to publish an official method.
 
 ## Create your Radicle identity
 
