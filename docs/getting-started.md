@@ -46,7 +46,7 @@ or design.
       of Content.
     </p>
     <p>
-      Read the rest of our Terms of Use [here][te].
+      Read the rest of our Terms of Use [here](https://radicle.xyz/terms.html).
     </p>
   </em>
 </details>
