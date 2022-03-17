@@ -192,9 +192,7 @@ rules as per [RFC8141][r8] apply.
 An example of a Radicle URN:
 `rad:git:hnrkmzko1nps1pjogxadcmqipfxpeqn6xbeto`.
 
-In the Upstream client, Radicle URNs are called [**Radicle IDs**][ri].
-
-Read more [here][ur]
+<!-- In the Upstream client, Radicle URNs are called [**Radicle IDs**][ri]. -->
 
 
 ### Delegations
@@ -268,7 +266,7 @@ There are four levels of validity:
 ### Overview
 
 Radicle basically uses Git as a database. This means everything is stored in a
-single Git monorepo that is read and written from via the Upstream client. Our
+single Git monorepo that is read and written from via a Radicle client, like the CLI. Our
 Git implementation was devised to create an incentive for the seeder to provide
 all data necessary to resolve and verify a repository, while reducing latency by
 eliminating gossip queries and git fetches as much as possible.
@@ -435,8 +433,7 @@ call this `checking out`.
 ```
 In addition to this, we can see the branches of tracked peers by running `git
 branch`. To provide a human-readable view of a project's remotes, when fetching
-we inspect the `rad/self` identity metadata in order to find nicknames
-(designated via Upstream client). This is managed entired by `librad`, which
+we inspect the `rad/self` identity metadata in order to find nicknames. This is managed entirely by `librad`, which
 reduces to the following in the working copy's config:
 
 ```rust
@@ -474,7 +471,7 @@ The unit of replication is a repository, identified by a `PeerID` in the context
 of a project document (See [Data Model][dm]). The holder of the corresponding
 `DeviceKey` is referred to as the **maintainer** of the repository. Repositories
 belonging to the same project are represented locally as a single repository,
-identified by a Radicle URN (or [Radicle ID][ru] in the Upstream client). In the
+identified by a Radicle URN. In the
 context of a project, the maintainer of a repository may choose to track the
 repositories of other peers (this is called a remote in git terminology: a named
 reference to a remote repository). If the remote repository is found to track
@@ -487,8 +484,7 @@ remotes (i.e. via which tracked PeerID another PeerID is tracked).
 ### Tracking
 Tracking is the backbone of collaboration as it drives the exchange of projects
 and their artifacts. In Radicle, peers track other peers and projects that they
-are interested in. This happens when a peer clones another peer's project or
-tracks a peer directly by adding them as a remote to their project via Upstream.
+are interested in. This happens when a peer clones another peer's project.
 
 Since peers represent seperate devices in the network, they each have their own
 view of the network. Each peer tracks this view of projects, identities, and
@@ -555,9 +551,6 @@ monorepo to track a specific `PEER_ID`. Using the `track` function with
 updates from the tracked peer can be similarly fetched and applied the tracking
 peer's monorepo.
 
-The [`Manage Remotes`][mr] feature in Upstream uses the `track` function to add
-peers as remotes directly to the project.
-
 #### The Social Graph
 
 In the case of multiple peer replications, any peer that tracks a project will
@@ -610,11 +603,11 @@ paths leading back to them, such that contributions can flow back up even if
 they come from participants not within the set of tracked repositories of a
 maintainer.
 
-Upstream is preconfigured with an official Radicle seed node to bootstrap your
+<!-- Upstream is preconfigured with an official Radicle seed node to bootstrap your
 connectivity. If you have removed the default seed node, you can always re-add
 it later by following the steps in [Adding a seed node][gs].
 
-If you're interested in running a seed node, see [Running a seed node][rs].
+If you're interested in running a seed node, see [Running a seed node][rs]. -->
 
 
 ## Collaboration Model
@@ -625,9 +618,9 @@ means that the respective delegates' histories may diverge in their _commit_
 histories, but still converge to an agreement on the validity of the attested
 document revision.
 
-This means that there isn't a single canonical branch (or `master`) in Upstream,
+This means that there isn't a single canonical branch (or `master`),
 as peers are all maintaining their own upstreams of the same project. However,
-due to the data model of Radicle idenities, there will always be a 'canonical'
+due to the data model of Radicle identities, there will always be a 'canonical'
 view of a project associated with its **maintainers**. Maintainers can follow a
 leader-based workflow in which they are converging histories of contributing
 peers into their main branch. Since their view is verifiable and implicitly

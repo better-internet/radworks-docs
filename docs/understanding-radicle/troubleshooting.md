@@ -13,7 +13,7 @@ In the event that this information doesn't resolve your issue, we encourage you 
 [forum](https://radicle.community). If you know which Radicle project is most relevant to your issue, you can also
 create an issue in the appropriate [repository on GitHub](https://github.com/radicle-dev).
 
-If you're having issues using Git, see the [Working with Git][wg] category of this section.
+<!-- If you're having issues using Git, see the [Working with Git][wg] category of this section.
 
 For our known failures, we categorise them with a PascalCase code word that
 gives a high level idea of what went wrong. When you encounter one of these
@@ -177,10 +177,6 @@ case.
 Please report these errors to [GitHub][gi] with as much detail as possible —
 checking first that it's not already reported by another user.
 
-<!--
-TODO(finto): Link to our monorepo explanation
--->
-
 # Working with Git
 
 This section will try to resolve common errors you may run into while trying to
@@ -236,7 +232,7 @@ directory it needs to access for your identity specific data.
 The `active_profile` file can be found under
 `$XDG_CONFIG_HOME/radicle-link/active_profile`.
 Stop the app _before_ removing the file. When you start it up again, the app
-should automatically begin with the onboarding screen to create a new identity.
+should automatically begin with the onboarding screen to create a new identity. -->
 
 [di]: glossary#device-id
 [gs]: getting-started.md
