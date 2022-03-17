@@ -97,26 +97,24 @@ No, not yet - but in the future! Private projects with end-to-end encryption are
 on our roadmap. In the meantime, be sure to note that everything you put on
 Radicle will be publicly available.
 
-## What is a remote?
+## What's a remote?
 A remote refers to a version of your project that is maintained by another
 person. To collaborate with others on Radicle, you have to add and follow other
 their remotes to be able to fetch changes from them. You can manage remotes
 on your project page (See [Adding Remotes][ar]). For more on how remote
 repositories work, see the [Git documentation][mr].
 
-## What's a Peer ID?
+## What's the difference between a Peer ID, a personal URN, and a project URN?
 
-A Peer ID identifies your device and the code you publish on the Radicle network, and is secured with an
-Ed25519 keypair.
+In short, a [Peer ID](understanding-radicle/glossary.md#peer-id) identifies your device, a [personal
+URN](understanding-radicle/glossary.md#personal-urn) identifies you across devices, and a [project
+URN](understanding-radicle/glossary.md#project-urn) identifies individual repositories of code.
 
-You can create multiple identities using `rad auth`.
+You can always find your Peer ID and personal URN with `rad self`, or create multiple identities with `rad auth --init`
+and switch between them using `rad auth`.
 
-## What's a personal URN?
-
-A **personal URN** which identifies your project on the Radicle network. You can use these URNs to find a project on the
-Radicle [web client](https://app.radicle.network/) or clone a project with `rad clone`.
-
-If you want to share your project with a collaborator, make sure you share its URN.
+If you're sharing a project with a collaborator, all you need is the project URN, which helps others find your project
+on the Radicle [web client](https://app.radicle.network/) or to clone it with `rad clone`. To find your project URN, use `rad ls` or `cd` into the repository and run `rad .`
 
 ## Can I use Radicle with multiple devices?
 
