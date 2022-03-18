@@ -203,8 +203,6 @@ is <a href="http://philzimmermann.com/docs/human-oriented-base-32-encoding.txt">
 rules as per <a href="https://tools.ietf.org/html/rfc8141">RFC8141</a> apply.</p>
 <p>An example of a Radicle URN:
 <code>rad:git:hnrkmzko1nps1pjogxadcmqipfxpeqn6xbeto</code>.</p>
-<p>In the Upstream client, Radicle URNs are called <a href="/docs/understanding-radicle/glossary/#radicle-id"><strong>Radicle IDs</strong></a>.</p>
-<p>Read more <a href="https://github.com/radicle-dev/radicle-link/blob/master/docs/spec/identities.md#radicle-urns">here</a></p>
 <h3><a class="anchor" aria-hidden="true" id="delegations"></a><a href="#delegations" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Delegations</h3>
 <p>As described in <a href="#data-model">Data Model</a> Radicle Link distinguishes two types of
 identities: personal and project. The first describes a person (usually denoted
@@ -260,7 +258,7 @@ specified in the delegations of the document (<code>Q &gt; D/2</code>).</p></li>
 <h2><a class="anchor" aria-hidden="true" id="git-implementation"></a><a href="#git-implementation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Git Implementation</h2>
 <h3><a class="anchor" aria-hidden="true" id="overview-2"></a><a href="#overview-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Overview</h3>
 <p>Radicle basically uses Git as a database. This means everything is stored in a
-single Git monorepo that is read and written from via the Upstream client. Our
+single Git monorepo that is read and written from via a Radicle client, like the CLI. Our
 Git implementation was devised to create an incentive for the seeder to provide
 all data necessary to resolve and verify a repository, while reducing latency by
 eliminating gossip queries and git fetches as much as possible.</p>
@@ -400,8 +398,7 @@ call this <code>checking out</code>.</p>
     fetch = +refs/namespaces/$IDENTITY/refs/heads<span class="hljs-comment">/*:refs/remotes/rad/refs/heads<span class="hljs-comment">/*
 </span></span></code></pre>
 <p>In addition to this, we can see the branches of tracked peers by running <code>git branch</code>. To provide a human-readable view of a project's remotes, when fetching
-we inspect the <code>rad/self</code> identity metadata in order to find nicknames
-(designated via Upstream client). This is managed entired by <code>librad</code>, which
+we inspect the <code>rad/self</code> identity metadata in order to find nicknames. This is managed entirely by <code>librad</code>, which
 reduces to the following in the working copy's config:</p>
 <pre><code class="hljs css language-rust">[include]
     path = /path/to/managed.inc
@@ -431,7 +428,7 @@ as well as any related links.</p>
 of a project document (See <a href="#data-model">Data Model</a>). The holder of the corresponding
 <code>DeviceKey</code> is referred to as the <strong>maintainer</strong> of the repository. Repositories
 belonging to the same project are represented locally as a single repository,
-identified by a Radicle URN (or <a href="#radicle-urns">Radicle ID</a> in the Upstream client). In the
+identified by a Radicle URN. In the
 context of a project, the maintainer of a repository may choose to track the
 repositories of other peers (this is called a remote in git terminology: a named
 reference to a remote repository). If the remote repository is found to track
@@ -442,8 +439,7 @@ remotes (i.e. via which tracked PeerID another PeerID is tracked).</p>
 <h3><a class="anchor" aria-hidden="true" id="tracking"></a><a href="#tracking" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tracking</h3>
 <p>Tracking is the backbone of collaboration as it drives the exchange of projects
 and their artifacts. In Radicle, peers track other peers and projects that they
-are interested in. This happens when a peer clones another peer's project or
-tracks a peer directly by adding them as a remote to their project via Upstream.</p>
+are interested in. This happens when a peer clones another peer's project.</p>
 <p>Since peers represent seperate devices in the network, they each have their own
 view of the network. Each peer tracks this view of projects, identities, and
 data from connected peers in its own monorepo (See <a href="#git-implementation">Git Implementation</a>).</p>
@@ -502,8 +498,6 @@ monorepo to track a specific <code>PEER_ID</code>. Using the <code>track</code> 
 <code>PEER_ID</code> of interest, the monorepo creates a new entry in the git config. Any
 updates from the tracked peer can be similarly fetched and applied the tracking
 peer's monorepo.</p>
-<p>The <a href="/docs/using-radicle/tracking-and-viewing"><code>Manage Remotes</code></a> feature in Upstream uses the <code>track</code> function to add
-peers as remotes directly to the project.</p>
 <h4><a class="anchor" aria-hidden="true" id="the-social-graph"></a><a href="#the-social-graph" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The Social Graph</h4>
 <p>In the case of multiple peer replications, any peer that tracks a project will
 implicitly track it's maintainers as well. This means that when any peer on the
@@ -546,19 +540,15 @@ note that, by tracking a seed, upstream maintainers can increase the number of
 paths leading back to them, such that contributions can flow back up even if
 they come from participants not within the set of tracked repositories of a
 maintainer.</p>
-<p>Upstream is preconfigured with an official Radicle seed node to bootstrap your
-connectivity. If you have removed the default seed node, you can always re-add
-it later by following the steps in <a href="/docs/using-radicle/adding-a-seed-node">Adding a seed node</a>.</p>
-<p>If you're interested in running a seed node, see <a href="/docs/using-radicle/running-a-seed-node">Running a seed node</a>.</p>
 <h2><a class="anchor" aria-hidden="true" id="collaboration-model"></a><a href="#collaboration-model" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Collaboration Model</h2>
 <p>Our construction of the <code>Identity</code> from a git commit allows for multiple <code>id</code>s
 to describe the same revision of the document (and thus be equally valid). This
 means that the respective delegates' histories may diverge in their <em>commit</em>
 histories, but still converge to an agreement on the validity of the attested
 document revision.</p>
-<p>This means that there isn't a single canonical branch (or <code>master</code>) in Upstream,
+<p>This means that there isn't a single canonical branch (or <code>master</code>),
 as peers are all maintaining their own upstreams of the same project. However,
-due to the data model of Radicle idenities, there will always be a 'canonical'
+due to the data model of Radicle identities, there will always be a 'canonical'
 view of a project associated with its <strong>maintainers</strong>. Maintainers can follow a
 leader-based workflow in which they are converging histories of contributing
 peers into their main branch. Since their view is verifiable and implicitly

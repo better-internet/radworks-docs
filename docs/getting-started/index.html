@@ -93,7 +93,7 @@ responsible and liable under any circumstance for any loss or corruption
 of Content.
 </p>
 <p>
-Read the rest of our Terms of Use [here][te].
+Read the rest of our Terms of Use <a href="https://radicle.xyz/terms.html">here</a>.
 </p>
 </em>
 </details></p>
@@ -119,15 +119,16 @@ node</a> using <a href="https://brew.sh/">Homebrew</a>.</p>
 brew install radicle/<span class="hljs-keyword">cli</span>/core
 </code></pre>
 <blockquote>
-<p><strong>M1/arm64 users</strong>: We're still working on an ideal installation method for running Radicle CLI on your
-machine—see this <a href="https://gist.github.com/sebastinez/d8f2d4979cad0d9f23c162702cdd4735">GitHub Gist</a> for our
-latest progress until we're ready to publish an official method.</p>
+<p><strong>M1/Apple Silicon users</strong>: We're still working on an ideal installation method for running Radicle CLI on your
+machine—see <a href="/docs/understanding-radicle/troubleshooting##install-radicle-cli-on-apple-silicon">our M1 troubleshooting
+section</a> for our latest progress
+until we're ready to publish an official method.</p>
 </blockquote>
 <h2><a class="anchor" aria-hidden="true" id="create-your-radicle-identity"></a><a href="#create-your-radicle-identity" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create your Radicle identity</h2>
 <p>To interact with the Radicle network, you need an <strong>identity</strong>, which you generate with <code>rad auth</code>.</p>
-<p>After choosing a display name and setting a passphrase, the Radicle CLI generates two unique identifiers, your <strong>Peer
-ID</strong> and <strong>personal 🌱 URN</strong>, which identify your device and identify you across devices, respectively, along with an
-Ed25519 keypair for securing your identity.</p>
+<p>After choosing a display name and setting a passphrase, the Radicle CLI generates two unique identifiers.</p>
+<p>First is your <strong>Peer ID</strong>, which identifies your device and the code you publish on the Radicle network, and is secured
+with an Ed25519 keypair. Second is your <strong>personal 🌱 URN</strong>, which identifies you across devices.</p>
 <pre><code class="hljs">$ rad auth
 Initializing your 🌱<span class="hljs-built_in"> profile </span><span class="hljs-keyword">and</span><span class="hljs-built_in"> identity
 </span>
@@ -147,19 +148,24 @@ Your personal 🌱 URN is rad:git:hnrkmx6trm4bu19bwa4apbxj8ftw8f7amfdyy. This id
 </blockquote>
 <p>You can use <code>rad auth</code> to create and manage multiple Radicle identities, but we'll stick with one for now.</p>
 <h2><a class="anchor" aria-hidden="true" id="create-your-radicle-project-from-a-git-repository"></a><a href="#create-your-radicle-project-from-a-git-repository" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create your Radicle project from a Git repository</h2>
-<p><code>rad init</code> creates a unique identity for your repository and associates your Peer ID with it for sharing on the Radicle
+<p><code>rad init</code> creates a <strong>project URN</strong> for your repository and associates your Peer ID with it for sharing on the Radicle
 network.</p>
 <p>Navigate to an existing Git repository, run <code>rad init</code>, enter a description, and specify the name of your default branch
 (typically <code>master</code> or <code>main</code>).</p>
-<pre><code class="hljs">$ rad init
-Initializing local 🌱 project acme
+<pre><code class="hljs">Initializing local 🌱 project <span class="hljs-keyword">in</span> .
 
+ok Name · acme
 ok Description · The Acme Corporation is an ironic name <span class="hljs-keyword">for</span> the fictional corporation
 ok<span class="hljs-built_in"> Default </span>branch · main
-ok Initializing new project<span class="hljs-built_in">..</span>.
-ok Project initialized: rad:git:hnrkqi6ohci9m59i54ppiy3fqkedkjt98ymdo
+ok Initializing<span class="hljs-built_in">..</span>.
+ok Created .gitsigners file
+ok Signing key configured
 
-=&gt; <span class="hljs-keyword">To</span> publish, <span class="hljs-builtin-name">run</span> `rad push`.
+Your project id is rad:git:hnrknpgjwt6uiyx13as9hfrx994nxc6zdei1y. You can show it any time by running:
+   rad .
+
+<span class="hljs-keyword">To</span> publish your project <span class="hljs-keyword">to</span> the network, run:
+   rad push
 </code></pre>
 <h2><a class="anchor" aria-hidden="true" id="publish-your-code-on-the-radicle-network"></a><a href="#publish-your-code-on-the-radicle-network" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Publish your code on the Radicle network</h2>
 <p>The first time you push code using <code>rad push</code>, it asks you to select a seed node to sync with.</p>
@@ -171,32 +177,35 @@ public internet. Radicle offers three default seed nodes: <a href="https://app.r
 <p>To push to your own seed node, or to multiple seed nodes from the same project, specify its address with the <code>--seed</code>
 option: <code>rad push --seed seed.example.com</code>.</p>
 </blockquote>
-<pre><code class="hljs">$ rad push
-Pushing 🌱 <span class="hljs-built_in">to</span> remote `rad`
-Everything up-<span class="hljs-built_in">to</span>-<span class="hljs-built_in">date</span>
+<pre><code class="hljs"><span class="hljs-symbol">$</span> rad push
+Pushing 🌱 to remote `rad`
+<span class="hljs-symbol">$</span> git push rad
+Everything up-to-date
 
-Git <span class="hljs-built_in">version</span> <span class="hljs-number">2.35</span><span class="hljs-number">.1</span>
-Select <span class="hljs-keyword">a</span> seed node <span class="hljs-built_in">to</span> sync <span class="hljs-keyword">with</span>...
-* pine.radicle.garden
-* willow.radicle.garden
-* maple.radicle.garden
+Git version <span class="hljs-number">2.35</span><span class="hljs-number">.1</span>
+<span class="hljs-function"><span class="hljs-title">Select</span></span> a seed node to sync with...
+
+<span class="hljs-comment">* pine.radicle.garden</span>
+<span class="hljs-comment">* willow.radicle.garden</span>
+<span class="hljs-comment">* maple.radicle.garden</span>
 </code></pre>
 <p>Once your project finishes syncing for the first time, you'll find important information about where your project lives
-on the Radicle Network.</p>
-<pre><code class="hljs">Git signing key ssh-ed<span class="hljs-number">25519</span> AAAAC<span class="hljs-number">3</span>NzaC<span class="hljs-number">1</span>lZDI<span class="hljs-number">1</span>NTE<span class="hljs-number">5</span>AAAAIL<span class="hljs-number">460</span>KIEccS<span class="hljs-number">4881</span>p<span class="hljs-number">7</span>PPpiiQBsxF+H<span class="hljs-number">5</span>tgC<span class="hljs-number">6</span>De<span class="hljs-number">6</span>crw<span class="hljs-number">9</span>rbU
+on the Radicle network.</p>
+<pre><code class="hljs">Radicle signing key ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBndIloOmjGvHkqgfJ9sEkaZb1iBG9lrfjODqG5uoqjV
 
-Syncing 🌱 project rad:git:hnrkq<span class="hljs-keyword">i6</span>ohc<span class="hljs-keyword">i9</span>m<span class="hljs-number">59</span><span class="hljs-keyword">i54</span>ppiy<span class="hljs-number">3</span>fqkedkjt<span class="hljs-number">98</span>ymdo <span class="hljs-keyword">to</span> https://willow.radicle.garden
+Syncing 🌱 project <span class="hljs-symbol">rad:</span><span class="hljs-symbol">git:</span>hnrknpgjwt6uiyx13as9hfrx994nxc6zdei1y to <span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/willow.radicle.garden/</span>
 
-ok Syncing delegate identity hnrkqdpm<span class="hljs-number">9</span>ub<span class="hljs-number">19</span>oc<span class="hljs-number">8</span>dccx<span class="hljs-number">44</span>echy<span class="hljs-number">76</span>hzfsezyio...
-ok Syncing project identity...
-ok Syncing project refs...
-ok Fetching remotes (*)...
 ok Project synced.
 
-🌱 Your project is synced <span class="hljs-keyword">and</span> available at:
+🍃 Your project is available <span class="hljs-symbol">at:</span>
 
-    (web) https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkq<span class="hljs-keyword">i6</span>ohc<span class="hljs-keyword">i9</span>m<span class="hljs-number">59</span><span class="hljs-keyword">i54</span>ppiy<span class="hljs-number">3</span>fqkedkjt<span class="hljs-number">98</span>ymdo/
-    (git) https://willow.radicle.garden/hnrkq<span class="hljs-keyword">i6</span>ohc<span class="hljs-keyword">i9</span>m<span class="hljs-number">59</span><span class="hljs-keyword">i54</span>ppiy<span class="hljs-number">3</span>fqkedkjt<span class="hljs-number">98</span>ymdo.git
+   (web) <span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/app.radicle.network/seeds</span><span class="hljs-regexp">/willow.radicle.garden/rad</span><span class="hljs-symbol">:git</span><span class="hljs-symbol">:hnrknpgjwt6uiyx13as9hfrx994nxc6zdei1y</span>
+   (web) <span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/app.radicle.network/seeds</span><span class="hljs-regexp">/willow.radicle.garden/rad</span><span class="hljs-symbol">:git</span><span class="hljs-symbol">:hnrknpgjwt6uiyx13as9hfrx994nxc6zdei1y/remotes/hyyc74e14b4pddma6jko8385cnjdj154aorp71456gqb4o5uqwkwpk</span>
+   (git) <span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/willow.radicle.garden/hnrknpgjwt</span>6uiyx13as9hfrx994nxc6zdei1y.git
+
+ok Saving seed configuration to local git config...
+=&gt; To override the seed, pass the <span class="hljs-string">'--seed'</span> flag to <span class="hljs-string">`rad sync`</span> or <span class="hljs-string">`rad push`</span>.
+=&gt; To change the configured seed, run <span class="hljs-string">`git config rad.seed &lt;url&gt;`</span> with a seed URL.
 </code></pre>
 <p>Note the <code>(web)</code> and <code>(git)</code> URLs, which you'll use in the next step.</p>
 <h2><a class="anchor" aria-hidden="true" id="view-your-project-and-share-with-others"></a><a href="#view-your-project-and-share-with-others" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>View your project and share with others</h2>
