@@ -192,9 +192,6 @@ rules as per [RFC8141][r8] apply.
 An example of a Radicle URN:
 `rad:git:hnrkmzko1nps1pjogxadcmqipfxpeqn6xbeto`.
 
-<!-- In the Upstream client, Radicle URNs are called [**Radicle IDs**][ri]. -->
-
-
 ### Delegations
 
 As described in [Data Model][dm] Radicle Link distinguishes two types of
@@ -602,13 +599,6 @@ note that, by tracking a seed, upstream maintainers can increase the number of
 paths leading back to them, such that contributions can flow back up even if
 they come from participants not within the set of tracked repositories of a
 maintainer.
-
-<!-- Upstream is preconfigured with an official Radicle seed node to bootstrap your
-connectivity. If you have removed the default seed node, you can always re-add
-it later by following the steps in [Adding a seed node][gs].
-
-If you're interested in running a seed node, see [Running a seed node][rs]. -->
-
 
 ## Collaboration Model
 

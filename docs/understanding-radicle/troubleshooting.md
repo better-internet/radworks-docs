@@ -8,10 +8,23 @@ the best experience possible. Also, as the developers, we know that there will b
 these diametrically opposed pieces of knowledge, we will try and document any of the errors that we are aware of and
 provide some troubleshooting advice.
 
-In the event that this information doesn't resolve your issue, we encourage you to submit a formal request through the
-**#support** channel on our [Discord server](https://discord.gg/j2HZCBDUvF) or in the **Support** category of our
-[forum](https://radicle.community). If you know which Radicle project is most relevant to your issue, you can also
-create an issue in the appropriate [repository on GitHub](https://github.com/radicle-dev).
+## I ran into a issue — where can I report it?
+
+We suggest you send your report through the **#support** channel on our [Discord server](https://discord.gg/j2HZCBDUvF)
+or in the **Support** category of our [forum](https://radicle.community). A member of the Radicle team will try resolve
+your issue right away, and if they can't, work with you on creating a formal issue/request.
+
+If you know which Radicle project is most relevant to your issue, you can also create an issue in the appropriate
+[repository on GitHub](https://github.com/radicle-dev).
+
+## I need some help — where do I reach out?
+
+You will get the fastest response in the **#support** channel on our [Discord server](https://discord.gg/j2HZCBDUvF).
+
+## How do I join your Matrix channel?
+
+Head over to [matrix.radicle.community](https://matrix.radicle.community/) and create an account. Our Matrix rooms are
+synced with our #general and #support channels on Discord, so you'll always see the same information.
 
 ## Install Radicle CLI on Apple Silicon
 

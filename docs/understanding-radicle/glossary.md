@@ -14,13 +14,9 @@ spread information between each other via [gossip][gp].
 ## contributor
 A [peer][pe] who has pushed code to a [project][pr].
 
-<!-- ## Device ID
-The encoding of a [peer][pr]'s public key tied to their device. Right now, there
-can only be one Device ID per user (See [Data Model][hiw-dm]) -->
-
 ## display name
-A non-unique human-readable name chosen by an Radicle [user][us]. Like a
-"nickname" for someone's [Radicle ID][ri]. This will be possible to change in
+A non-unique human-readable name chosen by a Radicle [user][us]. Like a
+"nickname" for someone's [Peer ID](#peer-id). This will be possible to change in
 the future.
 
 ## follow
@@ -79,7 +75,7 @@ A unique identifier that allows you to register a permanent name with our opt-in
 
 ## project
 A [project][pr] consists of source code, issues, and proposed changesets. It
-carries a unique, shareable [Radicle ID][ri]. A [project][pr] also includes the
+carries a unique, shareable [project URN](#project-urn). A [project][pr] also includes the
 identities of all its [maintainers][ma]. The entirety of the [project][pr] data
 and metadata, including social artifacts such as comments, are stored within the
 [project][pr]'s repository on the user's machine. [Project][pr]s are the
@@ -97,10 +93,6 @@ with `user-name/project-name`. Required for sharing a project with collaborators
 ## publish
 To make data public to the network. Once something is published, it may be
 fetched and replicated by connected peers.
-
-<!-- ## Radicle ID
-A unique shareable identifier for projects in the Radicle Network. Radicle IDs
-are usually shared as URNs. -->
 
 ## Radicle Link
 A peer-to-peer replication protocol built on Git. See [How it Works][hiw].

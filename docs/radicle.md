@@ -8,13 +8,14 @@ Radicle is a decentralized code collaboration network built on open protocols �
 to collaborate on code without relying on trusted intermediaries. Radicle was designed
 to provide similar functionality to centralized code collaboration platforms — or "forges" —
 while retaining Git’s peer-to-peer nature, building on what made distributed
-version control so powerful in the first place.
+version control so powerful in the first place. 
 
 Read more about our [vision for decentralized code
 collaboration](https://radicle.xyz/blog/towards-decentralized-code-collaboration.html).
 
-Radicle also features an [*opt-in* Ethereum integration](https://radicle.xyz/blog/integrating-with-ethereum.html) for
-unique global names, decentralized organizations, and protocols that help maintainers sustain their open-source work.
+Radicle is also [Drips](https://www.drips.network/), an Ethereum protocol for generating recurring income with
+subscriptions and NFT memberships. Drips helps you create a circular funding network by dripping funds to your favorite
+creators and dedicating a percentage of your incoming drips to others.
 
 ## How do I use Radicle?
 
