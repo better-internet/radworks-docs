@@ -46,7 +46,7 @@ or design.
       of Content.
     </p>
     <p>
-      Read the rest of our Terms of Use [here][te].
+      Read the rest of our Terms of Use [here](https://radicle.xyz/terms.html).
     </p>
   </em>
 </details>
@@ -83,17 +83,19 @@ brew tap radicle/cli https://seed.alt-clients.radicle.xyz/radicle-cli-homebrew.g
 brew install radicle/cli/core
 ```
 
-> **M1/arm64 users**: We're still working on an ideal installation method for running Radicle CLI on your
-> machine&mdash;see this [GitHub Gist](https://gist.github.com/sebastinez/d8f2d4979cad0d9f23c162702cdd4735) for our
-> latest progress until we're ready to publish an official method.
+> **M1/Apple Silicon users**: We're still working on an ideal installation method for running Radicle CLI on your
+> machine&mdash;see [our M1 troubleshooting
+> section](understanding-radicle/troubleshooting.md##install-radicle-cli-on-apple-silicon) for our latest progress
+> until we're ready to publish an official method.
 
 ## Create your Radicle identity
 
 To interact with the Radicle network, you need an **identity**, which you generate with `rad auth`.
 
-After choosing a display name and setting a passphrase, the Radicle CLI generates two unique identifiers, your **Peer
-ID** and **personal 🌱 URN**, which identify your device and identify you across devices, respectively, along with an
-Ed25519 keypair for securing your identity.
+After choosing a display name and setting a passphrase, the Radicle CLI generates two unique identifiers.
+
+First is your **Peer ID**, which identifies your device and the code you publish on the Radicle network, and is secured
+with an Ed25519 keypair. Second is your **personal 🌱 URN**, which identifies you across devices.
 
 ```
 $ rad auth
@@ -117,22 +119,27 @@ You can use `rad auth` to create and manage multiple Radicle identities, but we'
 
 ## Create your Radicle project from a Git repository
 
-`rad init` creates a unique identity for your repository and associates your Peer ID with it for sharing on the Radicle
+`rad init` creates a **project URN** for your repository and associates your Peer ID with it for sharing on the Radicle
 network.
 
 Navigate to an existing Git repository, run `rad init`, enter a description, and specify the name of your default branch
 (typically `master` or `main`).
 
 ```
-$ rad init
-Initializing local 🌱 project acme
+Initializing local 🌱 project in .
 
+ok Name · acme
 ok Description · The Acme Corporation is an ironic name for the fictional corporation
 ok Default branch · main
-ok Initializing new project...
-ok Project initialized: rad:git:hnrkqi6ohci9m59i54ppiy3fqkedkjt98ymdo
+ok Initializing...
+ok Created .gitsigners file
+ok Signing key configured
 
-=> To publish, run `rad push`.
+Your project id is rad:git:hnrknpgjwt6uiyx13as9hfrx994nxc6zdei1y. You can show it any time by running:
+   rad .
+
+To publish your project to the network, run:
+   rad push
 ```
 
 ## Publish your code on the Radicle network
@@ -150,33 +157,36 @@ public internet. Radicle offers three default seed nodes: [pine.radicle.garden](
 ```
 $ rad push
 Pushing 🌱 to remote `rad`
+$ git push rad
 Everything up-to-date
 
 Git version 2.35.1
 Select a seed node to sync with...
+
 * pine.radicle.garden
 * willow.radicle.garden
 * maple.radicle.garden
 ```
 
 Once your project finishes syncing for the first time, you'll find important information about where your project lives
-on the Radicle Network.
+on the Radicle network.
 
 ```
-Git signing key ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL460KIEccS4881p7PPpiiQBsxF+H5tgC6De6crw9rbU
+Radicle signing key ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBndIloOmjGvHkqgfJ9sEkaZb1iBG9lrfjODqG5uoqjV
 
-Syncing 🌱 project rad:git:hnrkqi6ohci9m59i54ppiy3fqkedkjt98ymdo to https://willow.radicle.garden
+Syncing 🌱 project rad:git:hnrknpgjwt6uiyx13as9hfrx994nxc6zdei1y to https://willow.radicle.garden/
 
-ok Syncing delegate identity hnrkqdpm9ub19oc8dccx44echy76hzfsezyio...
-ok Syncing project identity...
-ok Syncing project refs...
-ok Fetching remotes (*)...
 ok Project synced.
 
-🌱 Your project is synced and available at:
+🍃 Your project is available at:
 
-    (web) https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkqi6ohci9m59i54ppiy3fqkedkjt98ymdo/
-    (git) https://willow.radicle.garden/hnrkqi6ohci9m59i54ppiy3fqkedkjt98ymdo.git
+   (web) https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrknpgjwt6uiyx13as9hfrx994nxc6zdei1y
+   (web) https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrknpgjwt6uiyx13as9hfrx994nxc6zdei1y/remotes/hyyc74e14b4pddma6jko8385cnjdj154aorp71456gqb4o5uqwkwpk
+   (git) https://willow.radicle.garden/hnrknpgjwt6uiyx13as9hfrx994nxc6zdei1y.git
+
+ok Saving seed configuration to local git config...
+=> To override the seed, pass the '--seed' flag to `rad sync` or `rad push`.
+=> To change the configured seed, run `git config rad.seed <url>` with a seed URL.
 ```
 
 Note the `(web)` and `(git)` URLs, which you'll use in the next step.
