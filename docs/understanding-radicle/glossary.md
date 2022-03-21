@@ -14,6 +14,14 @@ spread information between each other via [gossip][gp].
 ## contributor
 A [peer][pe] who has pushed code to a [project][pr].
 
+## delegate
+
+A [peer](#peer) who can sign on behalf of the project, which means their state is trusted within the context of the
+project. For example, `cloudhead` (with a Peer ID of `hyn9diwfnytahjq8u3iw63h9jte1ydcatxax3saymwdxqu1zo645pe`) is the
+delegate of the
+[radicle-cli](https://app.radicle.network/alt-clients.radicle.eth/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao/tree/f7a9314b5ff176a6836923c0424157070f995533)
+project, which means their `master` branch is the de facto standard.
+
 ## display name
 A non-unique human-readable name chosen by a Radicle [user][us]. Like a
 "nickname" for someone's [Peer ID](#peer-id). This will be possible to change in

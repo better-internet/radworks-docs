@@ -7,8 +7,9 @@
     ],
     "Collaborate on projects": [
       "using-radicle/collaboration",
-      "using-radicle/discover-project-urn",
-      "using-radicle/clone"
+      "using-radicle/discover-project",
+      "using-radicle/contribute-project",
+      "using-radicle/track-merge"
     ],
     "Understanding Radicle": [
       "understanding-radicle/why-radicle",
