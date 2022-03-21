@@ -1,7 +1,10 @@
 ---
 id: clone
-title: Clone a Radicle project
+title: Clone a project
 ---
+
+Make sure you have the [project URN and seed node](using-radicle/discover-project-urn.md) of the project you want to
+close before you get started.
 
 
 

@@ -2,7 +2,13 @@
   "docs": {
     "Introduction": [
       "what-is-radicle",
-      "getting-started"
+      "getting-started",
+      "using-radicle/using-overview"
+    ],
+    "Collaborate on projects": [
+      "using-radicle/collaboration",
+      "using-radicle/discover-project-urn",
+      "using-radicle/clone"
     ],
     "Understanding Radicle": [
       "understanding-radicle/why-radicle",
