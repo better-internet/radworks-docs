@@ -128,14 +128,17 @@ Navigate to an existing Git repository, run `rad init`, enter a description, and
 ```
 Initializing local 🌱 project in .
 
-ok Name · acme
-ok Description · The Acme Corporation is an ironic name for the fictional corporation
+ok Name · radicle-docs-example
+ok Description · An example project for showcasing workflows in Radicle docs
 ok Default branch · main
 ok Initializing...
+
+Configuring 🌱 signing key SHA256:CjJzVNGaKhBjFu9BZTjyXTKmNEvgkU710ELXpxFFxco...
+
 ok Created .gitsigners file
 ok Signing key configured
 
-Your project id is rad:git:hnrknpgjwt6uiyx13as9hfrx994nxc6zdei1y. You can show it any time by running:
+Your project id is rad:git:hnrkkpbaoz3r4x3aj4zqkgryidc4qq61yceto. You can show it any time by running:
    rad .
 
 To publish your project to the network, run:

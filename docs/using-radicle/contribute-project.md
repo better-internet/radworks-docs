@@ -3,15 +3,15 @@ id: contribute-project
 title: Contribute to a project
 ---
 
-To contribute to any project hosted on the Radicle network, you 
-
-## Clone a project
-
-Make sure you have the [project URN and seed node](using-radicle/discover-project.md) of the project you want to
-close before you get started.
+To contribute to any project hosted on the Radicle network, you need the [project URN and seed
+node](discover-project.md) of the project you want to close before you get started.
 
 The syntax for the cloning URL is `rad://<seed-host>/<project-urn>`, without the `rad:git:` portion for the project URN.
 Or, click on the **Clone** button on any project in the Radicle web client to copy the entire command directly.
+
+## Clone a project
+
+
 
 Then use `rad clone` to fetch a copy of the project from the seed node.
 
@@ -46,17 +46,9 @@ project.
 
 ## Make changes and push your contribution
 
-Once you've [cloned](using-radicle/contribute-project.md) a Radicle project to your local system and made your changes, apply them using `git add` and `git commit`, then use 
-
-
-, you can make changes, apply them
-using `git` as you would with other code collaboration tools, and then push those changes back to the Radicle network
-using `rad push`.
-
-Once you've made your changes, use `git add` and `git commit` as you normally would to update your local state.
-
-Then, use `rad push` to push your changes to a want to push your code back to your secondary source tree within the
-project.
+Once you've [cloned](using-radicle/contribute-project.md) a Radicle project to your local system and made your changes,
+apply them using `git add` and `git commit`, then use `rad push` to synchronzize them with your secondary source tree
+within the project.
 
 To help a maintainer see your contribution, so that they can [track, review, and merge](using-radicle/track-review-merge.md)
 your changes, share your [Peer ID](understanding-radicle/glossary.md#peer-id) (which you can find with `rad self`).

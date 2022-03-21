@@ -3,16 +3,18 @@ id: track-review-merge
 title: Track, review, and merge contributions
 ---
 
-As a maintainer of a project, which means you're almost certainly a
-[delegate](understanding-radicle/glossary.md#delegate) you can review and merge changes from any contributor back into the canonical branch (typically `main` or `master`) of the project.
+As a maintainer of a project, which typically means you're also a
+[delegate](understanding-radicle/glossary.md#delegate), you can review and merge changes from any contributor back into
+the canonical branch (typically `main` or `master`) of the project.
 
-This is where Radicle's workflow for collaboration diverges most from what you might be familiar with from centralized
-platforms like GitHub or GitLab. Currently, Radicle doesn't have any built-in pull request/patch support, which means
-the exact process you use for reviewing and discussing changes with collaborators is up to you.
+This is where Radicle's current workflow for collaboration diverges most from centralized forgets like GitHub or GitLab.
+Currently, Radicle doesn't have any built-in pull request/patch support, which means the exact process you use for
+reviewing and discussing changes with collaborators is up to you.
 
 ## Track contributions
 
-
+To review and merge any code, you first need to find any additional versions of your project subject on a Radicle seed
+node. `rad track` shows you 
 
 ```
 $ rad track --seed willow.radicle.garden
@@ -34,11 +36,13 @@ is any code published on the seed node that you may be interested in. To do
 this, you can use *rad-track(1)* without specifying a peer. This will query
 the seed node and return the list of contributors and branches:
 
-  $ rad track --seed willow.radicle.garden
+```
+$ rad track
 
-  hybgwwnx3x94rk6afxygj35jh3fktnwirs44a1t5emdh4uxmiku18q bob
-  └── master 26fc90625774bc6e219bb15b51f5f9f51d26248b Update README.md
-  ...
+hybgwwnx3x94rk6afxygj35jh3fktnwirs44a1t5emdh4uxmiku18q bob
+└── master 26fc90625774bc6e219bb15b51f5f9f51d26248b Update README.md
+...
+```
 
 You may omit the __--seed__ argument if it is the default seed for this project,
 but you must then pass the __--remote__ flag to indicate that you'd like to
