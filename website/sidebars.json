@@ -2,14 +2,19 @@
   "docs": {
     "Introduction": [
       "what-is-radicle",
-      "getting-started",
-      "using-radicle/using-overview"
+      "getting-started"
     ],
-    "Collaborate on projects": [
-      "using-radicle/collaboration",
-      "using-radicle/discover-project",
-      "using-radicle/contribute-project",
-      "using-radicle/track-review-merge"
+    "Using Radicle": [
+      {
+        "type": "subcategory",
+        "label": "Collaborate on projects",
+        "ids": [
+          "using-radicle/collaboration",
+          "using-radicle/discover-project",
+          "using-radicle/contribute-project",
+          "using-radicle/track-review-merge"
+        ]
+      }
     ],
     "Understanding Radicle": [
       "understanding-radicle/why-radicle",

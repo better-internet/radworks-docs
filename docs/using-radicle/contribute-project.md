@@ -3,8 +3,14 @@ id: contribute-project
 title: Contribute to a project
 ---
 
-To contribute to any project hosted on the Radicle network, you need the [project URN and seed
-node](discover-project.md) of the project you want to close before you get started.
+Radicle's current [contribution flow]()
+
+Contributors use `rad clone` to [clone](using-radicle/contribute-project.md) the canonical branch of an existing project
+on the Radicle network to their local state, make changes, and use `rad push` to synchronize those changes with a second
+source tree within the project.
+
+To contribute to any project hosted on the Radicle network, you need its [project URN and seed
+node](discover-project.md).
 
 The syntax for the cloning URL is `rad://<seed-host>/<project-urn>`, without the `rad:git:` portion for the project URN.
 Or, click on the **Clone** button on any project in the Radicle web client to copy the entire command directly.
