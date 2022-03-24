@@ -11,7 +11,7 @@
         "ids": [
           "using-radicle/collaboration",
           "using-radicle/discover-project",
-          "using-radicle/collaborate-project",
+          "using-radicle/clone-push",
           "using-radicle/track-review-merge"
         ]
       }

@@ -126,23 +126,23 @@ Navigate to an existing Git repository, run `rad init`, enter a description, and
 (typically `master` or `main`).
 
 ```
+$ rad init
 Initializing local 🌱 project in .
 
-ok Name · radicle-docs-example
-ok Description · An example project for showcasing workflows in Radicle docs
+ok Name · radicle-example
+ok Description · An example project for documentation purposes!
 ok Default branch · main
 ok Initializing...
-
-Configuring 🌱 signing key SHA256:CjJzVNGaKhBjFu9BZTjyXTKmNEvgkU710ELXpxFFxco...
-
+ ⤷ Configure 🌱 signing key SHA256:5uI9GGFkdKgvC66yt5USJWTTZZEcvKm1/f/ZwX51+vk in local checkout? [Y ⤷ Configure 🌱 signing key SHA256:5uI9GGFkdKgvC66yt5USJWTTZZEcvKm1/f/ZwX51+vk in local checkout? yes
 ok Created .gitsigners file
-ok Signing key configured
+ok Signing configured in .git/config
 
-Your project id is rad:git:hnrkkpbaoz3r4x3aj4zqkgryidc4qq61yceto. You can show it any time by running:
+Your project id is rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy. You can show it any time by running:
    rad .
 
 To publish your project to the network, run:
    rad push
+
 ```
 
 ## Publish your code on the Radicle network
@@ -177,15 +177,15 @@ on the Radicle network.
 ```
 Radicle signing key ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBndIloOmjGvHkqgfJ9sEkaZb1iBG9lrfjODqG5uoqjV
 
-Syncing 🌱 project rad:git:hnrknpgjwt6uiyx13as9hfrx994nxc6zdei1y to https://willow.radicle.garden/
+Syncing 🌱 project rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy to https://willow.radicle.garden/
 
 ok Project synced.
 
 🍃 Your project is available at:
 
-   (web) https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrknpgjwt6uiyx13as9hfrx994nxc6zdei1y
-   (web) https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrknpgjwt6uiyx13as9hfrx994nxc6zdei1y/remotes/hyyc74e14b4pddma6jko8385cnjdj154aorp71456gqb4o5uqwkwpk
-   (git) https://willow.radicle.garden/hnrknpgjwt6uiyx13as9hfrx994nxc6zdei1y.git
+   (web) https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy
+   (web) https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy/remotes/hyyc74e14b4pddma6jko8385cnjdj154aorp71456gqb4o5uqwkwpk
+   (git) https://willow.radicle.garden/hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy.git
 
 ok Saving seed configuration to local git config...
 => To override the seed, pass the '--seed' flag to `rad sync` or `rad push`.
