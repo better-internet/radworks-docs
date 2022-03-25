@@ -21,8 +21,8 @@ primary README, commit history, contributors, and more.
 
 ### View folders and files
 
-The project view includes a tree of files and folders. Click on folders to expand them, or on individual files to show
-their syntax-highlighted content and the latest relevant commit.
+The project view includes a tree of files and folders. Click on folders to expand them or individual files to show their
+syntax-highlighted content and the latest relevant commit.
 
 ![Viewing a project's files](/img/web-interface_files.png)
 
@@ -42,9 +42,8 @@ history.
 
 ### Find the project URN
 
-The project URN is a unique identifier that starts with `rad:git:...`. Think of it like the way GitHub identifies
-projects with `github.com/<user-name>/<project-name>`. You'll need this URN to [share](#share-a-project) with
-collaborators.
+The project URN is a unique identifier that starts with `rad:git:...`. Think of it like how GitHub identifies projects
+with `github.com/<user-name>/<project-name>`. You'll need this URN to [share](#share-a-project) with collaborators.
 
 Look beneath a project's its title for its URN:
 
@@ -64,17 +63,16 @@ The easiest way to share a project is the full URL of its page on the web interf
 at `https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy`.
 
 But you can share any project as long as you know its seed node and project URN. The process for finding these via the
-web interface is detailed above, but you can also use `rad` to find this information for any project on your local
-system.
+web interface is detailed above, but you can also find this information for any project on your local system.
 
-View your local Git configuration with `git config --local rad.seed` to find the seed node:
+Find the seed node by view your local Git configuration with `git config --local rad.seed`:
 
 ```
 $ git config --local rad.seed
 https://willow.radicle.garden/
 ```
 
-And `rad .` (or `rad inspect`) for the project URN:
+Find the project URN with `rad .` (or `rad inspect`):
 
 ```
 $ rad .
@@ -82,4 +80,4 @@ rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy
 ```
 
 Whether you share the project via the web interface or just the seed node/project URN, your collaborator now has all the
-information they need to [clone the project](clone.md) and make their changes.
+information they need to [clone the project](clone.md) and [push](push.md) their changes.

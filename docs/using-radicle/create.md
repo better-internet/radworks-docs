@@ -17,9 +17,9 @@ URN](understanding-radicle/glossary.md#project-urn).
 
 Navigate to an existing Git repository on your local system.
 
-Run `rad init`, enter a enter a description, specify the name of your default branch (typically `master` or `main`), and
-hit `Enter`. You'll be asked whether you want to associate the key for your Radicle identity with this project — hit `Y`
-to accept.
+Run `rad init`, enter a description, specify the name of your default branch (typically `main` or `master`), and hit
+`Enter`. You'll be asked whether you want to associate the key for your Radicle identity with this project — hit `Y` to
+accept.
 
 ```
 $ rad init
@@ -69,8 +69,8 @@ Select a seed node to sync with...
 * maple.radicle.garden
 ```
 
-After syncing your project with the Radicle network for the first time, the CLI outputs important information about how
-to find and share your project for sharing, cloning, and collaboration.
+After syncing your project with the Radicle network for the first time, the CLI outputs information about how to find
+and share your project for [sharing](view-share.md), [cloning](clone.md), and collaboration.
 
 ```
 Radicle signing key ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBndIloOmjGvHkqgfJ9sEkaZb1iBG9lrfjODqG5uoqjV

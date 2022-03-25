@@ -11,8 +11,8 @@ When using the Radicle [web interface](view-share.md), click on the **Clone** bu
 ![Finding the clone command via the web interface](/img/web-interface_clone.png)
 
 If you choose not to use the web interface, you can also build the clone URL with the syntax
-`rad://<seed-id>/<project-urn>`, with the `rad:git:` portion of the URN removed. If you don't have either of these
-identifiers, ask the project's maintainer.
+`rad://<seed-id>/<project-urn>`, with the `rad:git:` portion of the URN removed. Ask the project's maintainer if you
+don't have either of these identifiers.
 
 Use `rad clone` to fetch a copy of the project and check out the canonical branch on your local system.
 
@@ -24,8 +24,8 @@ Syncing 🌱 project rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy from https://
 ...
 ```
 
-You'll be asked to verify whether you want to associate your the key for your Radicle identity with this project — hit
-`Y` to accept. Once the clone is finished, you can double-check the project URN and seed node.
+You'll be asked to verify whether you want to associate the key for your Radicle identity with this project — hit `Y` to
+accept. Once the clone is finished, you can double-check the project URN and seed node.
 
 ```
 $ git config --local rad.seed

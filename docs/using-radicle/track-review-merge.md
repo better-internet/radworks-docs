@@ -1,6 +1,6 @@
 ---
 id: track-review-merge
-title: View and merge patches
+title: Review and merge patches
 ---
 
 As a project's maintainer, which typically means you're also a [delegate](understanding-radicle/glossary.md#delegate),
@@ -61,7 +61,7 @@ directly or view a patch using the web interface.
 
 ### On your local system with `git`
 
-Compare the tracking branch against your the local state of your canonical branch with `git diff`.
+Compare the tracking branch against the local state of your canonical branch with `git diff`.
 
 ```
 $ git diff main..peer/docs-tester/main
