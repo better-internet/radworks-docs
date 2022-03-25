@@ -9,8 +9,16 @@ on code without relying on trusted intermediaries. Radicle was designed to provi
 code collaboration platforms — or "forges" — while retaining Git’s peer-to-peer nature, building on what made
 distributed version control so powerful in the first place. 
 
-Read more about our [vision for decentralized code
-collaboration](https://radicle.xyz/blog/towards-decentralized-code-collaboration.html).
+- Instead of user accounts and logins, Radicle uses public key cryptography to identify projects and their
+  collaborators.
+- Instead of issue trackers hosted and owned by a corporation, Radicle uses seed nodes. The Radicle Foundation sponsors
+  some, but you can always host a seed node of your own, and use all the same collaboration tools/processes, using
+  [open-source code](https://github.com/radicle-dev/radicle-client-services).
+- Instead of dictating your process for collaboration, Radicle lets anyone build new tools or design new workflows
+  around completely open protocols.
+
+You get recognizable collaboration flows from centralized code hosting platforms — the "forges" like GitHub and GitLab —
+while also eliminating the reliance and risk on these corporate platforms.
 
 Radicle is also [Drips](https://www.drips.network/), an Ethereum protocol for generating recurring income with
 subscriptions and NFT memberships. Drips helps you create a circular funding network by dripping funds to your favorite
@@ -21,11 +29,7 @@ creators and dedicating a percentage of your incoming drips to others.
 Because Radicle is built on open protocols, there will never be *one true way* to do something on the Radicle network.
 
 Instead, this documentation offers an *opinionated* way to take common actions around hosting code on the Radicle
-network and collaborating with others using Radicle-developed projects.
-
-The best way to start hosting code on the Radicle network is to use the [Radicle CLI](https://radicle.network/), which
-helps you create a identity, initialize a repository, host your code on a [seed
-node](understanding-radicle/glossary/#seed), and share your project with others.
+network and collaborating with others using Radicle-developed clients and interfaces.
 
 > **To start hosting and collaborating on code in the Radicle network, see our [getting started
 > guide](getting-started.md).**
@@ -34,28 +38,23 @@ Additional discovery and collaboration features are planned and under active dev
 
 For more help on using Radicle, be sure to join our [community channels](get-involved/community.md).
 
-## How is Radicle different from GitHub?
+## Radicle's collaboration workflow
 
-Collaborating on Radicle is slightly different than collaborating on centralized code collaboration platforms like GitHub and GitLab. 
+> Note: This is a practical overview of the current collaboration workflow using Radicle-built projects. This will
+> change as both the protocols and projects change and add new functionality in the future.
 
-1. The Radicle stack is open-source from top to bottom. There are no "closed" components.
-Every component of the Radicle stack is auditable, modifiable, and extendable.
+Maintainers (also known as delegates) use `rad init` and `rad push` to create a project and synchronize project data
+between their local state and a canonical branch (usually `main` or `master`) on the configured seed node. This makes
+the project discoverable on the Radicle [web interface](https://app.radicle.network) and clone-able using `rad clone` if
+collaborators know the [project URN and seed node](using-radicle/view-share.md).
 
-2. Radicle is built *entirely* on open protocols. There are no "special servers", privileged
-users or companies in control of your collaboration.
+Collaborators use `rad clone` to [clone](using-radicle/clone.md) the canonical branch of an existing
+project on the Radicle network to their local state, make changes, and use `rad push` to synchronize those changes with
+a second source tree within the project.
 
-3. Radicle is based on a peer-to-peer architecture instead of a client-server model.
+Maintainers then use `rad track` to find collaborations to their project and view the remote peer from their working
+copy. They then use `git diff` to see the proposed changes, `git merge` to merge them, and `rad push` to publish the new
+state of the canonical branch.
 
-4. Radicle is **not** global by default. Instead, the social graph of peers and projects you 
-track determines what content you see, interact with, and replicate.
-
-5. Radicle is designed for bazaar-style development. This means that within projects, there isn't 
-a single master branch that contributors merge into. Instead, peers maintain their own views of 
-projects that can be fetched and merged by other peers via patches.
-
-6. Radicle replaces the Org functionality of centralized forges and their hierarchical admin models with decentralized organizations on Ethereum.
-
-7. Radicle is a self-sustained and community-owned network — not a corporation. It's governance is organized by a token called RAD that lives on Ethereum.
-
-> Read more about [collaborating on Radicle](https://radicle.xyz/blog/collaborating-on-radicle.html) and our social
-> model.
+**There is currently no pull request or patch functionality built into Radicle.** Our teams are working hard to improve
+the underlying Radicle Link protocol and Upstream desktop application to provide richer collaboration experiences!

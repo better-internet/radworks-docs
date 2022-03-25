@@ -5,16 +5,11 @@
       "getting-started"
     ],
     "Using Radicle": [
-      {
-        "type": "subcategory",
-        "label": "Collaborate on projects",
-        "ids": [
-          "using-radicle/collaboration",
-          "using-radicle/discover-project",
-          "using-radicle/clone-push",
-          "using-radicle/track-review-merge"
-        ]
-      }
+      "using-radicle/create",
+      "using-radicle/view-share",
+      "using-radicle/clone",
+      "using-radicle/push",
+      "using-radicle/track-review-merge"
     ],
     "Understanding Radicle": [
       "understanding-radicle/why-radicle",

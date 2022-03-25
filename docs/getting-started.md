@@ -115,113 +115,14 @@ Your personal 🌱 URN is rad:git:hnrkmx6trm4bu19bwa4apbxj8ftw8f7amfdyy. This id
 
 > There is currently no way to retrieve a lost or forgotten passphrase, so please store it safely!
 
-You can use `rad auth` to create and manage multiple Radicle identities, but we'll stick with one for now.
+You can use `rad auth` to create and manage multiple Radicle identities via profiles, but we'll stick with one for now.
 
-## Create your Radicle project from a Git repository
+## Further `rad` usage
 
-`rad init` creates a **project URN** for your repository and associates your Peer ID with it for sharing on the Radicle
-network.
+The `rad` CLI tool comes with a number of useful commands for recalling details about your identity or the projects
+you've already synced with the Radicle network.
 
-Navigate to an existing Git repository, run `rad init`, enter a description, and specify the name of your default branch
-(typically `master` or `main`).
-
-```
-$ rad init
-Initializing local 🌱 project in .
-
-ok Name · radicle-example
-ok Description · An example project for documentation purposes!
-ok Default branch · main
-ok Initializing...
- ⤷ Configure 🌱 signing key SHA256:5uI9GGFkdKgvC66yt5USJWTTZZEcvKm1/f/ZwX51+vk in local checkout? [Y ⤷ Configure 🌱 signing key SHA256:5uI9GGFkdKgvC66yt5USJWTTZZEcvKm1/f/ZwX51+vk in local checkout? yes
-ok Created .gitsigners file
-ok Signing configured in .git/config
-
-Your project id is rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy. You can show it any time by running:
-   rad .
-
-To publish your project to the network, run:
-   rad push
-
-```
-
-## Publish your code on the Radicle network
-
-The first time you push code using `rad push`, it asks you to select a seed node to sync with. 
-
-Radicle seeds are peer-to-peer nodes, functioning as replicas for Radicle project data, that are accessible on the
-public internet. Radicle offers three default seed nodes: [pine.radicle.garden](https://app.radicle.network/seeds/pine.radicle.garden),
-[willow.radicle.garden](https://app.radicle.network/seeds/willow.radicle.garden), and
-[maple.radicle.garden](https://app.radicle.network/seeds/maple.radicle.garden).
-
-> To push to your own seed node, or to multiple seed nodes from the same project, specify its address with the `--seed`
-> option: `rad push --seed seed.example.com`.
-
-```
-$ rad push
-Pushing 🌱 to remote `rad`
-$ git push rad
-Everything up-to-date
-
-Git version 2.35.1
-Select a seed node to sync with...
-
-* pine.radicle.garden
-* willow.radicle.garden
-* maple.radicle.garden
-```
-
-Once your project finishes syncing for the first time, you'll find important information about where your project lives
-on the Radicle network.
-
-```
-Radicle signing key ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBndIloOmjGvHkqgfJ9sEkaZb1iBG9lrfjODqG5uoqjV
-
-Syncing 🌱 project rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy to https://willow.radicle.garden/
-
-ok Project synced.
-
-🍃 Your project is available at:
-
-   (web) https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy
-   (web) https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy/remotes/hyyc74e14b4pddma6jko8385cnjdj154aorp71456gqb4o5uqwkwpk
-   (git) https://willow.radicle.garden/hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy.git
-
-ok Saving seed configuration to local git config...
-=> To override the seed, pass the '--seed' flag to `rad sync` or `rad push`.
-=> To change the configured seed, run `git config rad.seed <url>` with a seed URL.
-```
-
-Note the `(web)` and `(git)` URLs, which you'll use in the next step.
-
-## View your project and share with others
-
-After you've pushed your project to the Radicle network, it's available for viewing on the Radicle [web
-client](https://app.radicle.network).
-
-To view your project, paste the URL after `(web)` into your browser of choice. You can use this interface to browse your
-code, view individual files, explore your commit history, and more. You can share this URL with others, which allows
-them to view your code on the web client, clone your code into a new project.
-
-![The Radicle web client for viewing a published
-project](/img/radicle-web-client.png)
-
-The Radicle [web client](https://app.radicle.network) also helps you discover new projects hosted on the network,
-organized by either the seed node they're synced with or the organization they are published under, such as Radicle's
-own [alt-clients](https://app.radicle.network/alt-clients.radicle.eth) organization.
-
-## What's next?
-
-The `rad` CLI tool comes with a number of useful commands for recalling details about your Radicle ID or the
-repositories you've already synced with the Radicle network.
-
-See information about your Radicle ID with `rad self`, and view a list of your synced repositories with `rad ls`. If you
-need help with using the Radicle CLI, run `rad help` to see additional options, or `rad [command] --help`, like `rad
-auth --help`.
-
-Now that you've started hosting your code on the Radicle network, others can clone your project, make changes, and push
-them to a sub-tree of your project, organized by their Peer ID. You can then pull their contribution locally, view the
-changes, merge them, and push them back to your canonical source tree.
-
-For now, read more about Radicle's current contribution flows in the [`rad` manual
-page](https://github.com/radicle-dev/radicle-cli/blob/f7a9314b5ff176a6836923c0424157070f995533/rad.1.adoc#contributing-to-a-radicle-project).
+- `rad help`: See all the commands provided by `rad`.
+- `rad self`: See information about your current profile and display name, URN, Peer ID, and keys.
+- `rad ls`: View a list of your synced Radicle projects.
+- `rad [command] --help`: See additional options for an individual command.
