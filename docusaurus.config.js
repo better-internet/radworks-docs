@@ -10,11 +10,20 @@ const config = {
   tagline: 'A peer-to-peer stack for building software together.',
   url: 'https://docs.radicle.xyz',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  // `onBrokenLinks` should be 'throw'
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'radicle-dev', // Usually your GitHub org/user name.
   projectName: 'radicle-docs', // Usually your repo name.
+  plugins: [
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        indexBlog: false,
+      },
+    ],
+  ],
   presets: [
     [
       'classic',
@@ -34,7 +43,6 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
