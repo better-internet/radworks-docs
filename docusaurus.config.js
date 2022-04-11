@@ -34,7 +34,7 @@ const config = {
           // for every document, but only when we're ready for some redirects.
           // routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/radicle-dev/radicle-docs/',
+          editUrl: 'https://github.com/radicle-dev/radicle-docs/blob/master/',
         },
         blog: false,
         theme: {
@@ -69,29 +69,6 @@ const config = {
         style: 'light',
         copyright: `Copyright © ${new Date().getFullYear()} The Radicle Team <dev@radicle.xyz> and contributors.`,
       },
-      algolia: {
-        // The application ID provided by Algolia
-        appId: 'YOUR_APP_ID',
-
-        // Public API key: it is safe to commit it
-        apiKey: '8bd6e28f1096b67612c18dbc3ba55438',
-
-        indexName: 'radicle',
-
-        // Optional: see doc section below
-        contextualSearch: true,
-
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        externalUrlRegex: 'external\\.com|domain\\.com',
-
-        // Optional: Algolia search parameters
-        searchParameters: {},
-
-        // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: 'search',
-
-        //... other Algolia params
-      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
@@ -100,33 +77,3 @@ const config = {
 };
 
 module.exports = config;
-
-
-// module.exports = {
-//   // ...
-//   presets: [
-//     [
-//       '@docusaurus/preset-classic',
-//       {
-//         docs: {
-//           // Docs folder path relative to website dir.
-//           path: '../docs',
-//           // Sidebars file relative to website dir.
-//           sidebarPath: require.resolve('./sidebars.json'),
-//         },
-//         // ...
-//       },
-//     ],
-//   ],
-//   themeConfig: {
-//     navbar: {
-//       title: 'Docusaurus',
-//       logo: {
-//         alt: 'Radicle',
-//         src: 'img/radicle.svg',
-//       },
-//       items: [],
-//     },
-//     // ...
-//   },
-// };
