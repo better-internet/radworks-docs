@@ -6,8 +6,8 @@ title: Create a project
 You can create a Radicle project from any existing Git repository and publish it on the Radicle network using two CLI commands — `rad init` and `rad push`.
 
 Projects contain all files of a Git repository and their revision history, but they also have associated
-Radicle-specific metadata such as a name, description, and information about the
-[delegate](understanding-radicle/glossary.md#delegate), which is the identity with write access to the project's
+Radicle-specific metadata such as a name, description, and information about
+[delegates](understanding-radicle/glossary.md#delegate), which are the identities with write access to the project's
 canonical branch.
 
 Each project carries a unique, shareable peer-to-peer identifier known as a [project

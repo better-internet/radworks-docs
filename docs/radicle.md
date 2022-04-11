@@ -48,9 +48,9 @@ between their local state and a canonical branch (usually `main` or `master`) on
 the project discoverable on the Radicle [web interface](https://app.radicle.network) and clone-able using `rad clone` if
 collaborators know the [project URN and seed node](using-radicle/view-share.md).
 
-Collaborators use `rad clone` to [clone](using-radicle/clone.md) the canonical branch of an existing
-project on the Radicle network to their local state, make changes, and use `rad push` to synchronize those changes with
-a second source tree within the project.
+Collaborators use `rad clone` to [clone](using-radicle/clone.md) the canonical branch of an existing project on the
+Radicle network to their local state, make changes, and use `rad push` to synchronize those changes with your own or a
+hosted seed node.
 
 Maintainers then use `rad track` to find collaborations to their project and view the remote peer from their working
 copy. They then use `git diff` to see the proposed changes, `git merge` to merge them, and `rad push` to publish the new

@@ -41,5 +41,5 @@ $ rad remote
 joelhans hyyc74e14b4pddma6jko8385cnjdj154aorp71456gqb4o5uqwkwpk delegate
 ```
 
-The output will show one or more collaborators, one of which is the project's
+The output will show one or more collaborators, some of which may also be a
 [delegate](understanding-radicle/glossary.md#delegate), along with the display name and Peer ID for each.

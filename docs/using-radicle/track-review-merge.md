@@ -33,8 +33,8 @@ radicle-example rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy (willow.radicle.ga
     └── main e2cc2f98df61de3503edfcf6904993add918cda6 Add example folder and files
 ```
 
-In the example above, you can see the canonical `main` branch, managed by the project's delegate, in addition to two
-additional source trees from collaborators.
+In the example above, you can see the canonical `main` branch, managed by the project's single delegate, in addition to
+two additional source trees from collaborators.
 
 Let's say you want to track the patch from the `docs-tester` user. Use `rad track <peer-id>` to track the remote peer
 from your working copy.
