@@ -101,7 +101,7 @@ Radicle will be publicly available.
 A remote refers to a version of your project that is maintained by another
 person. To collaborate with others on Radicle, you have to add and follow other
 their remotes to be able to fetch changes from them. You can manage remotes
-on your project page (See [Adding Remotes][ar]). For more on how remote
+on your project page. For more on how remote
 repositories work, see the [Git documentation][mr].
 
 ## What's the difference between a Peer ID, a personal URN, and a project URN?
@@ -168,10 +168,7 @@ community channels see [Join our Community][cc].
 
 
 [ai]: https://docs.appimage.org/user-guide/run-appimages.html#integrating-appimages-into-the-desktop
-[ar]: using-radicle/tracking-and-viewing.md
-[cp]: using-radicle/creating-projects.md
 [cu]: https://github.com/radicle-dev/radicle-decisions/blob/master/proposals/0004.md
-[ov]: using-radicle/overview.md
 [gs]: getting-started.md
 [hw]: how-it-works.md/#git-implementation
 [tr]: how-it-works.md/#tracking
