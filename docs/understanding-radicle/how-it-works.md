@@ -676,12 +676,9 @@ Read more about the [Radicle collaboration model][rc].
 [dp]: #doc-payload
 [fe]: #fetching
 [gi]: #git-implementation
-[gs]: using-radicle/adding-a-seed-node.md
 [ka]: #key-architecture
 [na]: #namespacing
-[mr]: using-radicle/tracking-and-viewing.md
 [ri]: glossary.md/#radicle-id
-[rs]: using-radicle/running-a-seed-node.md
 [ru]: #radicle-urns
 [se]: #serialisation
 [vr]: #verification

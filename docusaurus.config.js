@@ -9,13 +9,16 @@ const config = {
   title: 'Radicle Docs',
   tagline: 'A peer-to-peer stack for building software together.',
   url: 'https://docs.radicle.xyz',
-  baseUrl: '/',
-  // `onBrokenLinks` should be 'throw'
-  onBrokenLinks: 'warn',
+  // In the future, we'll change `baseUrl` to `/`, along with enabling
+  // `routBasePath`, to resolve `docs.radicle.xyz` instead of
+  // `docs.radicle.xyz/docs/`. We'll also need to enable some redirects at the
+  // same time.
+  baseUrl: '/docs/',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'radicle-dev', // Usually your GitHub org/user name.
-  projectName: 'radicle-docs', // Usually your repo name.
+  organizationName: 'radicle-dev',
+  projectName: 'radicle-docs',
   plugins: [
     [
       require.resolve("@cmfcmf/docusaurus-search-local"),
@@ -30,8 +33,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          // We'll use this eventually to remove the `/docs/` part of the path
-          // for every document, but only when we're ready for some redirects.
+          // We'll use `routeBasePath` eventually to remove the `/docs/` part of
+          // the path for every document, but only when we're ready for some
+          // redirects. 
           // routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/radicle-dev/radicle-docs/blob/master/',
