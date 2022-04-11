@@ -36,7 +36,7 @@ const config = {
           // We'll use `routeBasePath` eventually to remove the `/docs/` part of
           // the path for every document, but only when we're ready for some
           // redirects. 
-          // routeBasePath: '/',
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/radicle-dev/radicle-docs/blob/master/',
         },
