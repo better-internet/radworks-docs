@@ -51,6 +51,9 @@ trees. At creation, the creator of the [project][pr] is the sole maintainer.
 ## main
 How Radicle Upstream refers to the default development branch of a project.
 
+## monorepo
+Radicle uses Git as a database. This means everything is stored in a single Git monorepo. Please see [here][hiw-mr] for more details. 
+
 ## node
 A [peer][pr] running an instance of the Radicle Link protocol. There can only be
 one node running per device.
@@ -147,3 +150,4 @@ Upstream client.
 [hiw-se]: how-it-works.md/#seeding
 [hiw-tr]: how-it-works.md/#tracking
 [hiw-wc]: how-it-works.md/#working-copies
+[hiw-mr]: how-it-works.md/#overview-2
