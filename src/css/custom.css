@@ -28,3 +28,7 @@ html[data-theme='dark'] {
   --ifm-navbar-background-color: #162029; 
   --ifm-footer-background-color: #162029;
 }
+
+.dsla-search-field {
+  min-width: 150px;
+}

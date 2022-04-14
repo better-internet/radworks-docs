@@ -12,6 +12,12 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Using Radicle',
+      collapsed: false,
+      items: ['using-radicle/create', 'using-radicle/view-share', 'using-radicle/clone', 'using-radicle/push', 'using-radicle/track-review-merge']
+    },
+    {
+      type: 'category',
       label: 'Understanding Radicle',
       collapsed: false,
       items: ['understanding-radicle/why-radicle', 'understanding-radicle/how-it-works', 'understanding-radicle/troubleshooting', 'understanding-radicle/glossary', 'understanding-radicle/faq']
