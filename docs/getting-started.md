@@ -4,17 +4,12 @@ title: Getting started
 sidebar_label: Getting started
 ---
 
-The [Radicle
-CLI](https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao/tree/b1eda227c0ceaa5b15622905161ad8dcd92a3c04)
-is the easiest way to access the Radicle network for hosting code or managing and publishing projects.
+Hosting and collaboration on code in Radicle relies on two clients: the Radicle CLI and Radicle Upstream. The Radicle
+CLI handles identity and interacting with Git to push code to the network, while Upstream provides a visual layer for
+collaborating on patches to your projects.
 
-In this getting started guide, you'll install Radicle CLI, create a Radicle identity, initialize an existing repository,
-push your code to the Radicle network, and view your project with the Radicle [web
-client](https://app.radicle.network/).
-
-Radicle development is public by default and completely open source. [Join our
-community](get-involved/join-the-community) to learn more about the future of Radicle or contribute code, documentation,
-or design.
+In this getting started guide, you'll Radicle CLI and create a Radicle identity, which are the first two steps in
+accessing the Radicle network.
 
 <details>
   <summary><b>DISCLAIMER 🌱</b></summary>
@@ -53,40 +48,25 @@ or design.
 
 ## Install the Radicle CLI
 
-The Radicle CLI installs on Linux and macOS-based systems by compiling from source or with Homebrew.
+The easiest way to install the Radicle CLI on **Linux** and **x86_64 macOS** systems is compiling from the source code
+stored on a Radicle seed node. Make sure you have
+[Cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html) and [CMake](https://cmake.org/) installed,
+then run:
+
+```
+$ cargo install --force --locked --git https://seed.alt-clients.radicle.xyz/radicle-cli.git radicle-cli
+```
 
 When finished, you'll be able to use the `rad` command for managing projects and interacting with the Radicle network.
 
-Requirements:
-- A recent version of Git (2.34.0 or later)
-- `ssh-agent`
-- OpenSSH (8.0 or later)
-
-### From source
-
-Installation from source requires a [working installation of Rust](https://www.rust-lang.org/tools/install) and any
-additional development tooling for your operating system.
-
-Run the following to build and install the Radicle CLI directly from our seed node.
-
-```
-cargo install --force --locked --git https://seed.alt-clients.radicle.xyz/radicle-cli.git radicle-cli
-```
-
-### With Homebrew on x86_64/Intel macOS
-
-If your macOS system is **x86_64/Intel-based**, install Radicle CLI directly from the Radicle [seed
-node](understanding-radicle/glossary/#seed) using [Homebrew](https://brew.sh/).
-
-```
-brew tap radicle/cli https://seed.alt-clients.radicle.xyz/radicle-cli-homebrew.git
-brew install radicle/cli/core
-```
+> See the [radicle-cli
+> repository](https://app.radicle.network/alt-clients.radicle.eth/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao/) for
+> other installation methods and instructions.
 
 > **M1/Apple Silicon users**: We're still working on an ideal installation method for running Radicle CLI on your
 > machine&mdash;see [our M1 troubleshooting
-> section](understanding-radicle/troubleshooting.md##install-radicle-cli-on-apple-silicon) for our latest progress
-> until we're ready to publish an official method.
+> section](understanding-radicle/troubleshooting.md#install-radicle-cli-on-apple-silicon) for our latest progress until
+> we're ready to publish an official method.
 
 ## Create your Radicle identity
 
@@ -126,3 +106,22 @@ you've already synced with the Radicle network.
 - `rad self`: See information about your current profile and display name, URN, Peer ID, and keys.
 - `rad ls`: View a list of your synced Radicle projects.
 - `rad [command] --help`: See additional options for an individual command.
+
+## What's next?
+
+The next best steps depends mostly on how you're most likely to interact with projects hosted on the Radicle network.
+
+If you're a maintainer (delegate) of a project:
+
+- [View and share projects](using-radicle/view-share.md)
+- [Review and merge patches](using-radicle/track-review-merge.md)
+
+If you're a collaborator:
+
+- [View and share projects](using-radicle/view-share.md)
+- [Clone a project](using-radicle/clone.md)
+- [Push changes](using-radicle/push.md)
+
+> Radicle development is public by default and completely open source. [Join our
+> community](get-involved/join-the-community) to learn more about the future of Radicle or contribute code,
+> documentation, or design.
