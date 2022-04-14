@@ -57,7 +57,7 @@ const config = {
           alt: 'Radicle',
           src: 'img/radicle-logo.svg',
           srcDark: 'img/radicle-logo-dark.svg',
-          href: '/docs/',
+          href: '/',
           target: '_self',
           width: 128,
           height: 87
