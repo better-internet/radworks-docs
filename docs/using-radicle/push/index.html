@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Push changes · Radicle docs</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="How you make changes to your local working copy of a Radicle project is entirely up to you. Once you&#x27;re finished, add"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Push changes · Radicle docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.radicle.xyz/"/><meta property="og:description" content="How you make changes to your local working copy of a Radicle project is entirely up to you. Once you&#x27;re finished, add"/><meta property="og:image" content="https://docs.radicle.xyz/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.radicle.xyz/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/radicle.svg" alt="Radicle docs"/><h2 class="headerTitleWithLogo">Radicle docs</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher singleRowMobileNav"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Using Radicle</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/what-is-radicle">What is Radicle?</a></li><li class="navListItem"><a class="navItem" href="/docs/getting-started">Getting started</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Using Radicle</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/using-radicle/create">Create a project</a></li><li class="navListItem"><a class="navItem" href="/docs/using-radicle/view-share">View and share projects</a></li><li class="navListItem"><a class="navItem" href="/docs/using-radicle/clone">Clone a project</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/using-radicle/push">Push changes</a></li><li class="navListItem"><a class="navItem" href="/docs/using-radicle/track-review-merge">Review and merge patches</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Understanding Radicle</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/understanding-radicle/why-radicle">Why Radicle?</a></li><li class="navListItem"><a class="navItem" href="/docs/understanding-radicle/how-it-works">How it Works</a></li><li class="navListItem"><a class="navItem" href="/docs/understanding-radicle/troubleshooting">Troubleshooting</a></li><li class="navListItem"><a class="navItem" href="/docs/understanding-radicle/glossary">Glossary</a></li><li class="navListItem"><a class="navItem" href="/docs/understanding-radicle/faq">FAQ</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Get Involved</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/get-involved/join-the-community">Join the Community</a></li><li class="navListItem"><a class="navItem" href="/docs/get-involved/radicle-garden">Radicle Garden 🌞</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Push changes</h1></header><article><div><span><p>How you make changes to your local working copy of a Radicle project is entirely up to you. Once you're finished, add
+and commit your changes with <code>git add</code> and <code>git commit</code> just as you would when collaborating on any other Git-based
+forge like GitHub or GitLab.</p>
+<p>Use <code>rad push</code> to synchronize your changes with a secondary source tree within the project.</p>
+<pre><code class="hljs">$ rad push
+Pushing 🌱 to remote `rad`
+$ git push rad
+To <span class="hljs-string">rad:</span><span class="hljs-comment">//hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy.git</span>
+   e2cc2f9.<span class="hljs-number">.5198e4</span>c  main -&gt; main
+
+Git version <span class="hljs-number">2.35</span><span class="hljs-number">.1</span>
+Radicle signing key ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILnTPdmcmdNPtJtBT/<span class="hljs-number">1</span>S9G+<span class="hljs-number">4</span>jOL0V0GD9pPYWgvXmxxQ
+
+Syncing 🌱 project <span class="hljs-string">rad:</span><span class="hljs-string">git:</span>hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy to <span class="hljs-string">https:</span><span class="hljs-comment">//willow.radicle.garden/</span>
+
+ok Project synced.
+
+🍃 Your project is available <span class="hljs-string">at:</span>
+
+   (web) <span class="hljs-string">https:</span><span class="hljs-comment">//app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy/remotes/hynh7gxq3u1c7gu7wupyw99k16tz5td8n6tmwdy9s1xcfwn6zucqfy</span>
+   (git) <span class="hljs-string">https:</span><span class="hljs-comment">//willow.radicle.garden/hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy.git</span>
+</code></pre>
+<p>Click on the <code>(web)</code> link to visit <em>your</em> source tree within the project using the web interface, which you can also navigate to using the tree selector.</p>
+<p><img src="/img/web-interface_trees.png" alt="Selecting a tree to view"></p>
+<p>To help a maintainer see your changes so that they can <a href="/docs/using-radicle/track-review-merge">track, review, and merge</a> them, you might
+want to contact them to share your <a href="/docs/understanding-radicle/glossary#peer-id">Peer ID</a> (which you can find with <code>rad self</code>).</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/using-radicle/clone"><span class="arrow-prev">← </span><span>Clone a project</span></a><a class="docs-next button" href="/docs/using-radicle/track-review-merge"><span>Review and merge patches</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '8bd6e28f1096b67612c18dbc3ba55438',
+                indexName: 'radicle',
+                inputSelector: '#search_input_react'
+              });
+            </script></body></html>
