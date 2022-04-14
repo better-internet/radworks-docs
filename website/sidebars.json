@@ -4,6 +4,13 @@
       "what-is-radicle",
       "getting-started"
     ],
+    "Using Radicle": [
+      "using-radicle/create",
+      "using-radicle/view-share",
+      "using-radicle/clone",
+      "using-radicle/push",
+      "using-radicle/track-review-merge"
+    ],
     "Understanding Radicle": [
       "understanding-radicle/why-radicle",
       "understanding-radicle/how-it-works",

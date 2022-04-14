@@ -61,6 +61,10 @@ p.small {
   font-size: 0.75rem;
 }
 
+a:hover {
+  color: #f5f;
+}
+
 strong {
   font-weight: 600;
 }
@@ -159,6 +163,10 @@ details:hover {
 
 .wrapper {
   padding: 0 32px;
+}
+
+.mainContainer .wrapper .post .postHeaderTitle {
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
