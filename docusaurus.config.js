@@ -13,12 +13,13 @@ const config = {
   // `routBasePath`, to resolve `docs.radicle.xyz` instead of
   // `docs.radicle.xyz/docs/`. We'll also need to enable some redirects at the
   // same time.
-  baseUrl: '/docs/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'radicle-dev',
   projectName: 'radicle-docs',
+  trailingSlash: false,
   plugins: [
     [
       require.resolve("@cmfcmf/docusaurus-search-local"),
