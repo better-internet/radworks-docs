@@ -2,6 +2,7 @@
 id: what-is-radicle
 title: What is Radicle?
 sidebar_label: What is Radicle?
+slug: /
 ---
 
 Radicle is a decentralized code collaboration network built on open protocols 🌱. It enables developers to collaborate

@@ -41,7 +41,7 @@ accessing the Radicle network.
       of Content.
     </p>
     <p>
-      Read the rest of our Terms of Use [here](https://radicle.xyz/terms.html).
+      Read the rest of our Terms of Use <a href="https://radicle.xyz/terms.html">here</a>.
     </p>
   </em>
 </details>
