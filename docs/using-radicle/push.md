@@ -1,6 +1,6 @@
 ---
 id: push
-title: Push changes
+title: Push your changes
 ---
 
 How you make changes to your local working copy of a Radicle project is entirely up to you. Once you're finished, add
@@ -29,10 +29,10 @@ ok Project synced.
    (git) https://willow.radicle.garden/hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy.git
 ```
 
-Click on the `(web)` link to visit *your* source tree within the project using the web interface, which you can also navigate to using the tree selector.
+Click on the `(web)` link to visit *your* source tree within the project using the web interface, which you can also
+navigate to using the tree selector.
 
 ![Selecting a tree to view](/img/web-interface_trees.png)
 
-To help a maintainer see your changes so that they can [track, review, and merge](track-review-merge.md) them, you might
-want to contact them to share your [Peer ID](understanding-radicle/glossary.md#peer-id) (which you can find with `rad
-self`).
+Now that you've pushed changes to your version of the project, you can [create a patch](create-submit-patch.md) in Upstream to
+start the process of collaborating on and merging your contribution.

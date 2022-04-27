@@ -21,6 +21,15 @@ distributed version control so powerful in the first place.
 You get recognizable collaboration flows from centralized code hosting platforms — the "forges" like GitHub and GitLab —
 while also eliminating the reliance and risk on these corporate platforms.
 
+Three interlacing clients create this experience.
+
+1. [Radicle
+   CLI](https://app.radicle.network/alt-clients.radicle.eth/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao/tree):
+   Command-line tooling for creating a Radicle identity, initiating projects, and pushing code.
+2. [Radicle Upstream](https://github.com/radicle-dev/radicle-upstream): A desktop application for collaborating on code
+   with your peers.
+3. The [web interface](https://app.radicle.network): A web interface for viewing code on the Radicle network.
+
 Radicle is also [Drips](https://www.drips.network/), an Ethereum protocol for generating recurring income with
 subscriptions and NFT memberships. Drips helps you create a circular funding network by dripping funds to your favorite
 creators and dedicating a percentage of your incoming drips to others.
@@ -30,7 +39,7 @@ creators and dedicating a percentage of your incoming drips to others.
 Because Radicle is built on open protocols, there will never be *one true way* to do something on the Radicle network.
 
 Instead, this documentation offers an *opinionated* way to take common actions around hosting code on the Radicle
-network and collaborating with others using Radicle-developed clients and interfaces.
+network and collaborating with others using Radicle-developed projects and interfaces.
 
 > **To start hosting and collaborating on code in the Radicle network, see our [getting started
 > guide](getting-started.md).**
@@ -46,16 +55,15 @@ For more help on using Radicle, be sure to join our [community channels](get-inv
 
 Maintainers (also known as delegates) use `rad init` and `rad push` to create a project and synchronize project data
 between their local state and a canonical branch (usually `main` or `master`) on the configured seed node. This makes
-the project discoverable on the Radicle [web interface](https://app.radicle.network) and clone-able using `rad clone` if
-collaborators know the [project URN and seed node](using-radicle/view-share.md).
+the project discoverable on the Radicle web interface or in Upstream if collaborators know the [project URN and seed
+node](using-radicle/view-share.md).
 
 Collaborators use `rad clone` to [clone](using-radicle/clone.md) the canonical branch of an existing project on the
-Radicle network to their local state, make changes, and use `rad push` to synchronize those changes with your own or a
-hosted seed node.
+Radicle network to their local state, make changes, and [use `rad push`](using-radicle/push.md) to synchronize those
+changes with a seed node.
 
-Maintainers then use `rad track` to find collaborations to their project and view the remote peer from their working
-copy. They then use `git diff` to see the proposed changes, `git merge` to merge them, and `rad push` to publish the new
-state of the canonical branch.
-
-**There is currently no pull request or patch functionality built into Radicle.** Our teams are working hard to improve
-the underlying Radicle Link protocol and Upstream desktop application to provide richer collaboration experiences!
+Maintainers can either use the CLI or Upstream to [find](using-radicle/view-share.md) and
+[review/merge](using-radicle/track-review-merge.md) collaborations to their project. With the CLI, they use `rad track`
+to view the remote peer from their working copy. With Upstream, they can view the changes in the desktop app directly.
+Either way, they then use `git diff` to see the proposed changes, `git merge` to merge them, and `rad push` to publish
+the new state of the canonical branch.
