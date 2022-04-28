@@ -31,9 +31,8 @@ Verify that the patch shows up in Upstream by navigating to the project’s **Pa
 First, you'll need to share your Peer ID with the delegate so that they can [track](track-review-merge.md) your patch in
 Upstream.
 
-You can find your Peer ID on the Upstream client's homepage, under your name. Click on the text to copy your Device ID
-to your system clipboard. Your Peer ID should look something like:
-`hynsqc3d693bfidom5docik9oj5hy1kciw7dz3j8pwpcnsa9cftbzk`.
+You can find your Peer ID on your profile page in Upstream. Click on the text to copy your Device ID to your system
+clipboard. Your Peer ID should look something like: `hynsqc3d693bfidom5docik9oj5hy1kciw7dz3j8pwpcnsa9cftbzk`.
         
 ![Finding your Peer ID in Upstream](/img/upstream_peer-id.png)
     

@@ -35,8 +35,10 @@ primary README, commit history, contributors, and more.
 Both interfaces let you explore files and the commit history. Click on folders to expand them or individual files to
 show their syntax-highlighted content and the latest relevant commit.
 
-The **X commit(s)** button displays the project's commit history, including the commit message, the committer's name,
-and the time/date of the commit. Click on any commit to view changes, such as additions and deletions, as a diff.
+Click **X commit(s)** to view project's commit history, including the commit message, the committer's name, and the
+time/date of the commit. Click on any commit to view changes, such as additions and deletions, as a diff.
+
+In Upstream, click **Patches** to view open, closed, or all the project's patches.
 
 In the web interface, click the **< >** icon to explore the state of the project at that commit.
 

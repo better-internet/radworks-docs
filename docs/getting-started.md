@@ -119,17 +119,15 @@ The first step is to [download and install the Upstream client](https://radicle.
 
 > ⚠️ Please note: We currently only support MacOS and Linux. Windows is coming soon!
 
-On initial launch, the Upstream client copies the `radicle-cli` tool to your `$HOME` directory then runs a few system
-checks to ensure that everything has been set up properly.
+On initial launch, the Upstream client copies the `upstream` binary and `git-remote-rad` to `$HOME/.radicle/bin` and
+checks whether you:
 
-Specifically, it will check:
+- [Installed the Radicle CLI](#install-the-radicle-cli)
+- [Created a Radicle identity](#create-your-radicle-identity)
+- Have an up-to-date Git version installed
 
-- You [installed the Radicle CLI](#install-the-radicle-cli)
-- You [created a Radicle identity](#create-your-radicle-identity)
-- You have an up-to-date Git version installed
-
-After Upstream passes the system check, you'll see your Upstream homepage. Unless you skipped ahead and [pushed
-code](using-radicle/push.md), the homepage will be empty at that this point.
+After Upstream passes the system check, you'll see your profile page. Unless you skipped ahead and [pushed
+code](using-radicle/push.md), your profile will be empty at that this point.
 
 ![The Upstream homepage](/img/upstream_homepage.png)
 
