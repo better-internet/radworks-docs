@@ -9,10 +9,6 @@ const config = {
   title: 'Radicle Docs',
   tagline: 'A peer-to-peer stack for building software together.',
   url: 'https://docs.radicle.xyz',
-  // In the future, we'll change `baseUrl` to `/`, along with enabling
-  // `routBasePath`, to resolve `docs.radicle.xyz` instead of
-  // `docs.radicle.xyz/docs/`. We'll also need to enable some redirects at the
-  // same time.
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -34,9 +30,6 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          // We'll use `routeBasePath` eventually to remove the `/docs/` part of
-          // the path for every document, but only when we're ready for some
-          // redirects. 
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/radicle-dev/radicle-docs/blob/master/',

@@ -114,7 +114,7 @@ You can always find your Peer ID and personal URN with `rad self`, or create mul
 and switch between them using `rad auth`.
 
 If you're sharing a project with a collaborator, all you need is the project URN, which helps others find your project
-on the Radicle [web client](https://app.radicle.network/) or to clone it with `rad clone`. To find your project URN, use `rad ls` or `cd` into the repository and run `rad .`
+on the Radicle [web interface](https://app.radicle.network/) or to clone it with `rad clone`. To find your project URN, use `rad ls` or `cd` into the repository and run `rad .`
 
 ## Can I use Radicle with multiple devices?
 

@@ -97,7 +97,7 @@ Your personal 🌱 URN is rad:git:hnrkmx6trm4bu19bwa4apbxj8ftw8f7amfdyy. This id
 
 You can use `rad auth` to create and manage multiple Radicle identities via profiles, but we'll stick with one for now.
 
-## Further `rad` usage
+### Further `rad` usage
 
 The `rad` CLI tool comes with a number of useful commands for recalling details about your identity or the projects
 you've already synced with the Radicle network.
@@ -107,16 +107,65 @@ you've already synced with the Radicle network.
 - `rad ls`: View a list of your synced Radicle projects.
 - `rad [command] --help`: See additional options for an individual command.
 
+Read more about CLI workflows in the [`rad` man
+page](https://github.com/radicle-dev/radicle-cli/blob/master/rad.1.adoc).
+
+## Install Radicle Upstream
+
+Now that your project has been successfully pushed to the Radicle network, you can also use the
+[Upstream](https://radicle.xyz) desktop application to view and manage your project.
+
+The first step is to [download and install the Upstream client](https://radicle.xyz/tryit) for your operating system.
+
+> ⚠️ Please note: We currently only support MacOS and Linux. Windows is coming soon!
+
+On initial launch, the Upstream client copies the `upstream` binary and `git-remote-rad` to `$HOME/.radicle/bin` and
+checks whether you:
+
+- [Installed the Radicle CLI](#install-the-radicle-cli)
+- [Created a Radicle identity](#create-your-radicle-identity)
+- Have an up-to-date Git version installed
+
+After Upstream passes the system check, you'll see your profile page. Unless you skipped ahead and [pushed
+code](using-radicle/push.md), your profile will be empty at that this point.
+
+![The Upstream homepage](/img/upstream_homepage.png)
+
+### Make Upstream available in your terminal
+
+Upstream provides the `upstream` CLI command for certain code collaboration workflows, but needs to be enabled to work in your terminal.
+
+1. Add this line to your terminal configuration (`~/.profile`, `~/.zshrc`, etc) file: 
+
+    ```
+    export PATH="$HOME/.radicle/bin:$PATH"`
+    ```
+
+2. Restart your terminal.
+3. Verify that the terminal integration was successful by running these commands and comparing the output:
+    
+    ```
+    which upstream
+    /Users/rudolfs/.radicle/bin/upstream
+    
+    which git-remote-rad
+    /Users/rudolfs/.radicle/bin/git-remote-rad
+    ```
+
+> ⚠️ The paths may differ depending on your OS, the important thing is that the files are found. If the output mentions
+> `upstream not found` or `git-remote-rad not found`, the terminal integration didn't work and needs further
+> troubleshooting.
+
 ## What's next?
 
 The next best steps depends mostly on how you're most likely to interact with projects hosted on the Radicle network.
 
-If you're a maintainer (delegate) of a project:
+**If you're a maintainer (delegate) of a project:**
 
 - [View and share projects](using-radicle/view-share.md)
 - [Review and merge patches](using-radicle/track-review-merge.md)
 
-If you're a collaborator:
+**If you're a collaborator:**
 
 - [View and share projects](using-radicle/view-share.md)
 - [Clone a project](using-radicle/clone.md)
