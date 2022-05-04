@@ -4,7 +4,7 @@ title: Create and submit a patch
 ---
 
 In Radicle, patches are like GitHub's pull requests. If you have a fix or enhancement you’d like to contribute to a
-project, you can do so by **submitting a patch** in Upstream. If you don't yet have Upstream, see the [get started guide](/docs/getting-started.md).
+project, you can do so by **submitting a patch** in Upstream. If you don't yet have Upstream, see the [get started guide](../getting-started.md).
 
 First, navigate to your project's working copy with `cd`. Create and checkout a new branch that will contain the changes for your patch. The branch name should be short and descriptive – it will be used to identify the patch.
 
