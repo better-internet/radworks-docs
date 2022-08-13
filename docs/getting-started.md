@@ -57,10 +57,6 @@ then run:
 $ cargo install radicle-cli --force --locked --git https://seed.alt-clients.radicle.xyz/radicle-cli.git
 ```
 
-For the other possible ways to install, including building the docker container see the [radicle-cli] repository.
-
-[radicle-cli]: https://github.com/radicle-dev/radicle-cli
-
 When finished, you'll be able to use the `rad` command for managing projects and interacting with the Radicle network.
 
 > See the [radicle-cli
