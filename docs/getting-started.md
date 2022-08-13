@@ -54,7 +54,7 @@ stored on a Radicle seed node. Make sure you have
 then run:
 
 ```
-$ cargo install --force --locked --git https://seed.alt-clients.radicle.xyz/radicle-cli.git radicle-cli
+$ cargo install radicle-cli --force --locked --git https://seed.alt-clients.radicle.xyz/radicle-cli.git
 ```
 
 When finished, you'll be able to use the `rad` command for managing projects and interacting with the Radicle network.
