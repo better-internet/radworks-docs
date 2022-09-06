@@ -4,98 +4,24 @@ title: Getting started
 sidebar_label: Getting started
 ---
 
-Hosting and collaboration on code in Radicle relies on two clients: the Radicle CLI and Radicle Upstream. The Radicle
-CLI handles identity and interacting with Git to push code to the network, while Upstream provides a visual layer for
-collaborating on patches to your projects.
+Hosting and collaborating on code in Radicle relies on our CLI tooling and your identity. 
 
-In this getting started guide, you'll Radicle CLI and create a Radicle identity, which are the first two steps in
-accessing the Radicle network.
+The CLI tooling is your bridge between Git and the Radicle network, while your identity allows you to host and
+collaborate on projects with your unique identifiers.
 
-<details>
-  <summary><b>DISCLAIMER 🌱</b></summary>
-  <br />
-  <em>
-    <p>
-      As the Software is of experimental nature and deployed for testing
-      purposes in a testnet environment only, you acknowledge that this Beta
-      Version of the Software is likely to contain bugs, defects, or errors
-      (including any bug, defect, or error relating to or resulting from the
-      display, manipulation, processing, storage, transmission, or use of data)
-      that may materially and adversely affect the use, functionality, or
-      performance of Radicle or any product or system containing or used in
-      conjunction with Radicle.
-    </p>
-    <p>
-      You are aware and acknowledge that your processing, development,
-      exchange, storage sharing, provision of, collaboration to or other
-      involvement in Content on or via Radicle takes place in a testnet
-      environment for testing purposes only. You acknowledge and agree that you
-      have no claim to integrity and consistency regarding any Content
-      whatsoever. You acknowledge and agree to the risk of total and
-      irretrievable loss of Content throughout and after the Beta phase. You
-      acknowledge and agree that any Content will most likely and without prior
-      notice be irretrievably deleted upon completion of the testing phase. You
-      acknowledge and agree that you are solely responsible for secure storage
-      (e.g. backup copies) of Content and that the Foundation shall not be
-      responsible and liable under any circumstance for any loss or corruption
-      of Content.
-    </p>
-    <p>
-      Read the rest of our Terms of Use <a href="https://radicle.xyz/terms.html">here</a>.
-    </p>
-  </em>
-</details>
+**See our [get started with Radicle](https://radicle.xyz/get-started.html) guide** for the most up-to-date CLI
+installation instructions on macOS and Linux, including the process for creating your Radicle identity.
 
-## Install the Radicle CLI
+> You can also find additional instructions in the [`radicle-cli`
+> repository](https://app.radicle.network/alt-clients.radicle.eth/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao).
 
-The easiest way to install the Radicle CLI on **Linux** and **x86_64 macOS** systems is compiling from the source code
-stored on a Radicle seed node. Make sure you have
-[Cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html) and [CMake](https://cmake.org/) installed,
-then run:
-
-```
-$ cargo install radicle-cli --force --locked --git https://github.com/radicle-dev/radicle-cli.git --tag v0.6.1
-```
-
-When finished, you'll be able to use the `rad` command for managing projects and interacting with the Radicle network.
-
-> See the [radicle-cli
-> repository](https://app.radicle.network/alt-clients.radicle.eth/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao/) for
-> other installation methods and instructions.
-
-> **M1/Apple Silicon users**: We're still working on an ideal installation method for running Radicle CLI on your
-> machine&mdash;see [our M1 troubleshooting
-> section](understanding-radicle/troubleshooting.md#install-radicle-cli-on-apple-silicon) for our latest progress until
-> we're ready to publish an official method.
-
-## Create your Radicle identity
-
-To interact with the Radicle network, you need an **identity**, which you generate with `rad auth`.
-
-After choosing a display name and setting a passphrase, the Radicle CLI generates two unique identifiers.
-
-First is your **Peer ID**, which identifies your device and the code you publish on the Radicle network, and is secured
-with an Ed25519 keypair. Second is your **personal 🌱 URN**, which identifies you across devices.
-
-```
-$ rad auth
-Initializing your 🌱 profile and identity
-
-ok Username · 
-ok Passphrase · ********
-ok Creating your 🌱 Ed25519 keypair...
-ok Adding to ssh-agent...
-ok Profile 3ae66df3-6ac7-4466-9013-83839749ed05 created.
-
-Your radicle Peer ID is hyncoz7x4s8x9447g6yogy4iy41q8i4juy5uhou57w1ga7obt644wo. This identifies your device.
-Your personal 🌱 URN is rad:git:hnrkmx6trm4bu19bwa4apbxj8ftw8f7amfdyy. This identifies you across devices.
-
-=> To create a radicle project, run `rad init` from a git repository.
-```
+When you create an identity with `rad auth`, you get your **Peer ID**, which identifies your device and the code you
+publish on the Radicle network with a secure Ed25519 keypair, and a **personal 🌱 URN**, which identifies you across
+devices.
 
 > There is currently no way to retrieve a lost or forgotten passphrase, so please store it safely!
 
-You can use `rad auth` to create and manage multiple Radicle identities via profiles, but we'll stick with one for now.
+You can use `rad auth` to create and manage multiple Radicle identities with profiles.
 
 ### Further `rad` usage
 
@@ -109,52 +35,6 @@ you've already synced with the Radicle network.
 
 Read more about CLI workflows in the [`rad` man
 page](https://github.com/radicle-dev/radicle-cli/blob/master/rad.1.adoc).
-
-## Install Radicle Upstream
-
-Now that your project has been successfully pushed to the Radicle network, you can also use the
-[Upstream](https://radicle.xyz) desktop application to view and manage your project.
-
-The first step is to [download and install the Upstream client](https://radicle.xyz/tryit) for your operating system.
-
-> ⚠️ Please note: We currently only support MacOS and Linux. Windows is coming soon!
-
-On initial launch, the Upstream client copies the `upstream` binary and `git-remote-rad` to `$HOME/.radicle/bin` and
-checks whether you:
-
-- [Installed the Radicle CLI](#install-the-radicle-cli)
-- [Created a Radicle identity](#create-your-radicle-identity)
-- Have an up-to-date Git version installed
-
-After Upstream passes the system check, you'll see your profile page. Unless you skipped ahead and [pushed
-code](using-radicle/push.md), your profile will be empty at that this point.
-
-![The Upstream homepage](/img/upstream_homepage.png)
-
-### Make Upstream available in your terminal
-
-Upstream provides the `upstream` CLI command for certain code collaboration workflows, but needs to be enabled to work in your terminal.
-
-1. Add this line to your terminal configuration (`~/.profile`, `~/.zshrc`, etc) file: 
-
-    ```
-    export PATH="$HOME/.radicle/bin:$PATH"`
-    ```
-
-2. Restart your terminal.
-3. Verify that the terminal integration was successful by running these commands and comparing the output:
-    
-    ```
-    which upstream
-    /Users/rudolfs/.radicle/bin/upstream
-    
-    which git-remote-rad
-    /Users/rudolfs/.radicle/bin/git-remote-rad
-    ```
-
-> ⚠️ The paths may differ depending on your OS, the important thing is that the files are found. If the output mentions
-> `upstream not found` or `git-remote-rad not found`, the terminal integration didn't work and needs further
-> troubleshooting.
 
 ## What's next?
 
