@@ -26,7 +26,7 @@ const sidebars = {
       type: 'category',
       label: 'Get involved',
       collapsed: false,
-      items: ['get-involved/join-the-community', 'get-involved/radicle-garden']
+      items: ['get-involved/join-the-community', 'get-involved/obtain-rad', 'get-involved/radicle-garden']
     }
   ],
 };
