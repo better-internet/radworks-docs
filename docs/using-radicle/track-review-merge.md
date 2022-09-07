@@ -96,25 +96,13 @@ Compare the tracking branch against the local state of your canonical branch wit
 $ git diff main..peer/docs-tester/main
 ```
 
-<!-- ### Review On the web interface
-
-Another option is to use the [web interface](https://app.radicle.network). Navigate to your project's page and select
-which peer's branch you want to review.
-
-![Selecting a tree to view](/img/web-interface_trees.png)
-
-Click on the **X commit(s)** button to show the [commit history](view-share.md#view-the-commit-history), and then click
-on an individual commit to see a diff of the additions and deletions.
-
-![Reviewing a patch in the web interface](/img/web-interface_review.png) -->
-
 ## Collaborate on changes
 
 There currently is no code review or commenting features built into Radicle. All this communication happens outside of
-Radicle tooling, and the processes are entirely up to your discretion. As you work through the review process with your
-collaborator, they will need to [run `upstream patch
-update`](create-submit-patch.md#address-requested-changes-if-needed) to ensure you're seeing the most up-to-date
-changes.
+Radicle tooling, and the processes are entirely up to your discretion. 
+
+As you work through the review process with your collaborator, they will need to run `rad push` on occasion to make sure
+you're looking at the same state of the code.
 
 ## Merge the patch
 

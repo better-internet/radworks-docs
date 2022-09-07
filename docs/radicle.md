@@ -21,14 +21,17 @@ distributed version control so powerful in the first place.
 You get recognizable collaboration flows from centralized code hosting platforms — the "forges" like GitHub and GitLab —
 while also eliminating the reliance and risk on these corporate platforms.
 
-Three interlacing clients create this experience.
+Two interlacing clients create this experience.
 
-1. [Radicle
-   CLI](https://app.radicle.network/alt-clients.radicle.eth/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao/tree):
-   Command-line tooling for creating a Radicle identity, initiating projects, and pushing code.
-2. The [web interface](https://app.radicle.network): A web interface for viewing code on the Radicle network.
+1. The **[`rad` command-line
+   tool](https://app.radicle.network/alt-clients.radicle.eth/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao/tree)**, which interacts with Git and the Radicle network to help you host code or collaborate on projects.
+2. The **[web app](https://app.radicle.network)**, which provides a visual interface for discovering projects, viewing
+   code, and viewing patches from collaborators.
 
-Apart from **code collaboration**, Radicle also tries to address the issue of **open source funding** through [Drips](https://www.drips.network/), an Ethereum protocol for generating recurring income with subscriptions and NFT memberships. Drips helps you create a circular funding network by dripping funds to your favorite creators and dedicating a percentage of your incoming drips to others.
+Apart from **code collaboration**, Radicle also tries to address the issue of **open source funding** through
+[Drips](https://www.drips.network/), an Ethereum protocol for generating recurring income with subscriptions and NFT
+memberships. Drips helps you create a circular funding network by dripping funds to your favorite creators and
+dedicating a percentage of your incoming drips to others.
 
 ## How do I use Radicle?
 
@@ -60,6 +63,5 @@ changes with a seed node.
 
 Maintainers can use the CLI to [find](using-radicle/view-share.md) and
 [review/merge](using-radicle/track-review-merge.md) collaborations to their project. With the CLI, they use `rad track`
-to view the remote peer from their working copy. With Upstream, they can view the changes in the desktop app directly.
-Either way, they then use `git diff` to see the proposed changes, `git merge` to merge them, and `rad push` to publish
-the new state of the canonical branch.
+to view the remote peer from their working copy, `git diff` to see the proposed changes, `git merge` to merge them, and
+`rad push` to publish the new state of the canonical branch.

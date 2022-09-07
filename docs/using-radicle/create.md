@@ -90,7 +90,7 @@ ok Saving seed configuration to local git config...
 => To change the configured seed, run `git config rad.seed <url>` with a seed URL.
 ```
 
-The two `(web)` URLs lead to your project's presence on the [web interface](view-share.md). The first points to the
-delegate's canonical branch, and the second points to your remote, which may or may not be different.
+The two `(web)` URLs lead to your project's presence on the [web app](view-share.md). The first points to the delegate's
+canonical branch, and the second points to your remote, which may or may not be different.
 
 You can append the `(git)` URL to `rad clone` to [clone](clone.md) the project elsewhere.

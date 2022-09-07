@@ -57,7 +57,7 @@ but there may be multiple maintainers of a project, all maintaining their own
 trees. At creation, the creator of the [project][pr] is the sole maintainer.
 
 ## main
-How Radicle Upstream refers to the default development branch of a project.
+How Radicle refers to the default development branch of a project.
 
 ## monorepo
 Radicle uses Git as a database. This means everything is stored in a single Git monorepo. Please see [here][hiw-mr] for more details. 
@@ -111,11 +111,6 @@ A peer-to-peer replication protocol built on Git. See [How it Works][hiw].
 ## Radicle network
 The network of peers that replicate and gossip data with Radicle Link.
 
-## Radicle Upstream
-An open-source desktop application (graphic [user][us] interface, GUI) built to
-interact with and enable access to the Radicle network. However, in the future, it will be one of
-many potential clients that [user][us]s can use to access the Radicle network.
-
 ## remote
 Another peer's view of a project. Remotes can be pulled/fetched from.
 Maintainers of a project may choose to track other peer's views of their project
@@ -138,8 +133,7 @@ original maintainer or creator. For everyone but the creator of this
 [repository][re], upstream will be a remote [repository][re].
 
 ## user
-Any individual who has created a Radicle ID on the Radicle network via the
-Upstream client.
+Any individual who has created a Radicle ID on the Radicle network.
 
 
 [br]: #branch

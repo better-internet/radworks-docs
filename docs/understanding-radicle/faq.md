@@ -177,7 +177,6 @@ community channels see [Join our Community][cc].
 [sd]: /img/seed-dashboard-search.png
 
 [eb]: https://en.wikipedia.org/wiki/Gossip_protocol
-[gh]: https://github.com/radicle-dev/radicle-upstream/issues
 [hp]: https://en.wikipedia.org/wiki/Hole_punching_(networking)
 [ls]: https://radicle.community/t/radicle-licensing-model/282/8
 [mc]: https://matrix.to/#/#general:radicle.community
@@ -185,4 +184,3 @@ community channels see [Join our Community][cc].
 [sc]: https://matrix.to/#/#support:radicle.community
 [si]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
 [sm]: https://radicle.community/
-[sn]: http://sprout.radicle.xyz/

@@ -29,10 +29,7 @@ ok Project synced.
    (git) https://willow.radicle.garden/hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy.git
 ```
 
-Click on the `(web)` link to visit *your* source tree within the project using the web interface, which you can also
-navigate to using the tree selector.
+Click on the `(web)` link to visit *your* source tree within the project using the web app, which you can also navigate
+to using the tree selector.
 
 ![Selecting a tree to view](/img/web-interface_trees.png)
-
-Now that you've pushed changes to your version of the project, you can [create a patch](create-submit-patch.md) in Upstream to
-start the process of collaborating on and merging your contribution.
