@@ -8,7 +8,7 @@ All projects [published](create.md) to the Radicle network are accessible via th
 When you create a project or use `rad push` or `rad sync`, `rad` outputs the URL for accessing your project on the web
 app, which looks something like this:
 
-`(web) https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy`
+`(web) https://app.radicle.xyz/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy`
 
 You can always run `rad push` or `rad sync` again to find this URL if you don't have it handy. If you're in the middle of ongoing work and can't push/sync, you can build URL with information about the seed node you're synced with and your project URN. The URLs follow this format:
 
@@ -51,8 +51,8 @@ find the project, explore it, and [clone](clone.md) it.
 Generally speaking, the collaborator needs to know the project URN and the seed node.
 
 The easiest way to share a project is the full URL of its page on the web interface, like
-[radicle-example](https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy)
-at `https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy`. Here,
+[radicle-example](https://app.radicle.xyz/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy)
+at `https://app.radicle.xyz/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy`. Here,
 they'll be able to find all the information they need to [clone](clone.md) your project and start collaborating.
 
 You can also share only the seed node and project URN, discoverable using the commands listed above, and let them use

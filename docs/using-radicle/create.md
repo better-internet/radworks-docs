@@ -47,11 +47,11 @@ Radicle network.
 
 The Radicle CLI works with peer-to-peer [seed nodes](understanding-radicle/glossary.md#seed), which function as replicas
 for Radicle project data and are are accessible on the public internet and through the [web
-interface](https://app.radicle.network). Radicle offers three default seed nodes with identical functionality:
+interface](https://app.radicle.xyz). Radicle offers three default seed nodes with identical functionality:
 
-- [pine.radicle.garden](https://app.radicle.network/seeds/pine.radicle.garden)
-- [willow.radicle.garden](https://app.radicle.network/seeds/willow.radicle.garden)
-- [maple.radicle.garden](https://app.radicle.network/seeds/maple.radicle.garden)
+- [pine.radicle.garden](https://app.radicle.xyz/seeds/pine.radicle.garden)
+- [willow.radicle.garden](https://app.radicle.xyz/seeds/willow.radicle.garden)
+- [maple.radicle.garden](https://app.radicle.xyz/seeds/maple.radicle.garden)
 
 When you run `rad push` for the first time in a new project, the CLI asks you which seed node to sync with.
 
@@ -81,8 +81,8 @@ ok Project synced.
 
 🍃 Your project is available at:
 
-   (web) https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy
-   (web) https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy/remotes/hyyc74e14b4pddma6jko8385cnjdj154aorp71456gqb4o5uqwkwpk
+   (web) https://app.radicle.xyz/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy
+   (web) https://app.radicle.xyz/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy/remotes/hyyc74e14b4pddma6jko8385cnjdj154aorp71456gqb4o5uqwkwpk
    (git) https://willow.radicle.garden/hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy.git
 
 ok Saving seed configuration to local git config...

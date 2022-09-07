@@ -19,7 +19,7 @@ A [peer][pe] who has pushed code to a [project][pr].
 Any [peer](#peer) who can sign on behalf of the project, which means their state is trusted within the context of the
 project. There can be one or more delegates of a given project. For example, `cloudhead` (with a Peer ID of
 `hyn9diwfnytahjq8u3iw63h9jte1ydcatxax3saymwdxqu1zo645pe`) is the delegate of the
-[radicle-cli](https://app.radicle.network/alt-clients.radicle.eth/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao/tree/f7a9314b5ff176a6836923c0424157070f995533)
+[radicle-cli](https://app.radicle.xyz/alt-clients.radicle.eth/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao/tree/f7a9314b5ff176a6836923c0424157070f995533)
 project, which means their `master` branch is the de facto standard. There can be multiple delegates for a given project
 
 ## display name

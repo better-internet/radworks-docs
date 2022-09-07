@@ -18,7 +18,7 @@ collaborate on projects with your unique identifiers.
 </Highlight>
 
 > You can also find additional instructions, such as installing from source, in the [`radicle-cli`
-> repository](https://app.radicle.network/alt-clients.radicle.eth/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao).
+> repository](https://app.radicle.xyz/alt-clients.radicle.eth/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao).
 
 When you create an identity with `rad auth`, you get your **Peer ID**, which identifies your device and the code you
 publish on the Radicle network with a secure Ed25519 keypair, and a **personal 🌱 URN**, which identifies you across
@@ -30,8 +30,6 @@ There is currently no way to retrieve a lost or forgotten passphrase, so please 
 
 :::
 
-You can use `rad auth` to create and manage multiple Radicle identities with profiles.
-
 ### Further `rad` usage
 
 The `rad` CLI tool comes with a number of useful commands for recalling details about your identity or the projects
@@ -40,6 +38,7 @@ you've already synced with the Radicle network.
 - `rad help`: See all the commands provided by `rad`.
 - `rad self`: See information about your current profile and display name, URN, Peer ID, and keys.
 - `rad ls`: View a list of your synced Radicle projects.
+- `rad auth`: Create and manage multiple Radicle identities with profiles.
 - `rad [command] --help`: See additional options for an individual command.
 
 Read more about CLI workflows in the [`rad` man
