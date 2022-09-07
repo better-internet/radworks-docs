@@ -1,25 +1,34 @@
 ---
-id: getting-started
-title: Getting started
-sidebar_label: Getting started
+id: get-started
+title: Get started
+sidebar_label: Get started
 ---
 
-Hosting and collaborating on code in Radicle relies on our CLI tooling and your identity. 
+import Highlight from '@site/src/components/Highlight'
+
+Hosting and collaborating on code in Radicle relies on our CLI tooling and your identity.
 
 The CLI tooling is your bridge between Git and the Radicle network, while your identity allows you to host and
 collaborate on projects with your unique identifiers.
 
-**See our [get started with Radicle](https://radicle.xyz/get-started.html) guide** for the most up-to-date CLI
-installation instructions on macOS and Linux, including the process for creating your Radicle identity.
+<Highlight>
 
-> You can also find additional instructions in the [`radicle-cli`
+  See the **[Radicle website](https://radicle.xyz/get-started.html)** for the most up to date installation instructions for macOS and Linux, including the process for creating your Radicle identity.
+
+</Highlight>
+
+> You can also find additional instructions, such as installing from source, in the [`radicle-cli`
 > repository](https://app.radicle.network/alt-clients.radicle.eth/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao).
 
 When you create an identity with `rad auth`, you get your **Peer ID**, which identifies your device and the code you
 publish on the Radicle network with a secure Ed25519 keypair, and a **personal 🌱 URN**, which identifies you across
 devices.
 
-> There is currently no way to retrieve a lost or forgotten passphrase, so please store it safely!
+:::caution
+
+There is currently no way to retrieve a lost or forgotten passphrase, so please store it safely!
+
+:::
 
 You can use `rad auth` to create and manage multiple Radicle identities with profiles.
 

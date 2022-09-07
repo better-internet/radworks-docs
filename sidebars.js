@@ -8,7 +8,7 @@ const sidebars = {
       type: 'category',
       label: 'Introduction',
       collapsed: false,
-      items: ['what-is-radicle', 'getting-started'],
+      items: ['what-is-radicle', 'get-started'],
     },
     {
       type: 'category',

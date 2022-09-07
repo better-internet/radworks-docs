@@ -5,11 +5,12 @@ title: View and share projects
 
 All projects [published](create.md) to the Radicle network are accessible via the web app at `https://app.radicle.xyz`.
 
-When you created your project or most recently pushed to it, `rad` pushed 
+When you create a project or use `rad push` or `rad sync`, `rad` outputs the URL for accessing your project on the web
+app, which looks something like this:
 
 `(web) https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy`
 
-If you can't access that URL, you can also create the URL with information about the seed node you're synced with and your project URN.
+You can always run `rad push` or `rad sync` again to find this URL if you don't have it handy. If you're in the middle of ongoing work and can't push/sync, you can build URL with information about the seed node you're synced with and your project URN. The URLs follow this format:
 
 - `https://app.radicle.xyz/seeds/` + `YOUR-SEED/` + `YOUR-PROJECT-URN/`
 
@@ -39,8 +40,8 @@ Click on folders to expand them or individual files to show their syntax-highlig
 commit.
 
 Click **X commit(s)** to view project's commit history, including the commit message, the committer's name, and the
-time/date of the commit. Click on any commit to view changes, such as additions and deletions, as a diff. Click the **<
->** icon to explore the state of the project at that commit.
+time/date of the commit. Click on any commit to view changes, such as additions and deletions, as a diff. Click the
+`<>` icon to explore the state of the project at that commit.
 
 ## Share a project
 
