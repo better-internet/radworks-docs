@@ -5,12 +5,12 @@ title: Clone a project
 
 To start collaborating on a project, you first need to clone the project's to your local system.
 
-When using the Radicle [web interface](view-share.md), click on the **Clone** button to display a dropdown with the full
+When using the Radicle [web app](view-share.md), click on the **Clone** button to display a dropdown with the full
 `rad clone...` command, which you can paste into your terminal.
 
-![Finding the clone command via the web interface](/img/web-interface_clone.png)
+![Finding the clone command via the web app](/img/web-interface_clone.png)
 
-If you choose not to use the web interface, you can also build the clone URL with the syntax
+If you choose not to use the web app, you can also build the clone URL with the syntax
 `rad://<seed-id>/<project-urn>`, with the `rad:git:` portion of the URN removed. Ask the project's maintainer if you
 don't have either of these identifiers.
 

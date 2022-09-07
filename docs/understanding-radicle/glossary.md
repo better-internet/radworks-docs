@@ -19,7 +19,7 @@ A [peer][pe] who has pushed code to a [project][pr].
 Any [peer](#peer) who can sign on behalf of the project, which means their state is trusted within the context of the
 project. There can be one or more delegates of a given project. For example, `cloudhead` (with a Peer ID of
 `hyn9diwfnytahjq8u3iw63h9jte1ydcatxax3saymwdxqu1zo645pe`) is the delegate of the
-[radicle-cli](https://app.radicle.network/alt-clients.radicle.eth/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao/tree/f7a9314b5ff176a6836923c0424157070f995533)
+[radicle-cli](https://app.radicle.xyz/alt-clients.radicle.eth/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao/tree/f7a9314b5ff176a6836923c0424157070f995533)
 project, which means their `master` branch is the de facto standard. There can be multiple delegates for a given project
 
 ## display name
@@ -57,7 +57,7 @@ but there may be multiple maintainers of a project, all maintaining their own
 trees. At creation, the creator of the [project][pr] is the sole maintainer.
 
 ## main
-How Radicle Upstream refers to the default development branch of a project.
+How Radicle refers to the default development branch of a project.
 
 ## monorepo
 Radicle uses Git as a database. This means everything is stored in a single Git monorepo. Please see [here][hiw-mr] for more details. 
@@ -111,11 +111,6 @@ A peer-to-peer replication protocol built on Git. See [How it Works][hiw].
 ## Radicle network
 The network of peers that replicate and gossip data with Radicle Link.
 
-## Radicle Upstream
-An open-source desktop application (graphic [user][us] interface, GUI) built to
-interact with and enable access to the Radicle network. However, in the future, it will be one of
-many potential clients that [user][us]s can use to access the Radicle network.
-
 ## remote
 Another peer's view of a project. Remotes can be pulled/fetched from.
 Maintainers of a project may choose to track other peer's views of their project
@@ -138,8 +133,7 @@ original maintainer or creator. For everyone but the creator of this
 [repository][re], upstream will be a remote [repository][re].
 
 ## user
-Any individual who has created a Radicle ID on the Radicle network via the
-Upstream client.
+Any individual who has created a Radicle ID on the Radicle network.
 
 
 [br]: #branch

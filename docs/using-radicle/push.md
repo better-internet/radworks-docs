@@ -25,14 +25,11 @@ ok Project synced.
 
 🍃 Your project is available at:
 
-   (web) https://app.radicle.network/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy/remotes/hynh7gxq3u1c7gu7wupyw99k16tz5td8n6tmwdy9s1xcfwn6zucqfy
+   (web) https://app.radicle.xyz/seeds/willow.radicle.garden/rad:git:hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy/remotes/hynh7gxq3u1c7gu7wupyw99k16tz5td8n6tmwdy9s1xcfwn6zucqfy
    (git) https://willow.radicle.garden/hnrkmkfqk1yadewcgasm1s6mp5pn1hc5ch6wy.git
 ```
 
-Click on the `(web)` link to visit *your* source tree within the project using the web interface, which you can also
-navigate to using the tree selector.
+Click on the `(web)` link to visit *your* source tree within the project using the web app, which you can also navigate
+to using the tree selector.
 
 ![Selecting a tree to view](/img/web-interface_trees.png)
-
-Now that you've pushed changes to your version of the project, you can [create a patch](create-submit-patch.md) in Upstream to
-start the process of collaborating on and merging your contribution.
