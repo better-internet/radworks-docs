@@ -16,9 +16,10 @@ are endorsed by the Radicle Foundation, Treasury, or DAO.
 
 ## Centralised exchanges
 
-- [Gate.io](https://www.gate.io/en/trade/RAD_ETH)
-- [Coinbase](https://www.coinbase.com/price/radicle)
+- [Binance](https://www.binance.com/en/trade/RAD_USDT)
 - [Houbi](https://www.huobi.com/en-us/exchange/rad_usdt)
+- [Coinbase](https://www.coinbase.com/price/radicle)
+- [Gate.io](https://www.gate.io/en/trade/RAD_ETH)
 - [MEXC](https://www.mexc.com/exchange/RAD_USDT)
 
 ## When will Rad be listed on my preferred exchange?
