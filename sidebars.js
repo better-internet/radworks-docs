@@ -14,7 +14,14 @@ const sidebars = {
       type: 'category',
       label: 'Using Radicle',
       collapsed: false,
-      items: ['using-radicle/create', 'using-radicle/view-share', 'using-radicle/push', 'using-radicle/clone', 'using-radicle/track-review-merge']
+      items: [
+        'using-radicle/create',
+        'using-radicle/view-share',
+        'using-radicle/push',
+        'using-radicle/clone',
+        'using-radicle/track-review-merge',
+        'using-radicle/identity',
+      ]
     },
     {
       type: 'category',
