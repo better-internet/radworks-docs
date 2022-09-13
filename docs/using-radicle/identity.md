@@ -8,7 +8,19 @@ entity. You can manage multiple identities, creating/delete them at will, and ev
 
 Many of the actions below require your personal URN, which you can find using `rad self`.
 
-## 
+## Create a new identity
+
+TK
+
+```
+rad auth --init
+```
+
+## Switch between identities
+
+```
+rad auth
+```
 
 ## Edit your display name
 
