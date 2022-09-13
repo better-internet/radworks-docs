@@ -1,0 +1,139 @@
+---
+id: migrate-github-radicle
+title: Migrate from GitHub to Radicle
+sidebar_label: Migrate from GitHub to Radicle
+---
+
+import Installation from '@site/src/components/Installation'
+
+Welcome to Radicle&mdash;software that enables developers to securely collaborate on software over a peer-to-peer
+network built on Git. Check out our homepage if you haven't already seen our comparison between [Radicle and
+alternatives like GitHub or GitLab](https://radicle.xyz/).
+
+Assuming you're already onboard Radicle's vision of sovereign code infrastructure, let's talk about what we'll cover.
+With this guide, you'll:
+
+- Create a Radicle identity.
+- Migrate your code hosting to Radicle's network.
+- Continue pushing changes to Radicle alone, or mirror changes in both Radicle and GitHub.
+
+:::info
+
+Radicle doesn't yet have feature parity with GitHub&mdash;we're still working on visual code reviews, an issue board,
+and CI/CD pipelines. Even you _need_ these features, stopping you from migrating in full, we still encourage you to
+migrate your project to Radicle and mirror your changes so that you can quickly make the switch when the time is right!
+
+:::
+
+## Install the Radicle CLI
+
+To migrate from GitHub to Radicle, you first need to install the Radicle CLI and create a Radicle identity, which is
+like creating an account on GitHub. It's how your projects are identified on the Radicle network, and it's your key to
+hosting code and collaborating with others on your project.
+
+<Installation />
+
+Once you're done with the first two steps&mdash;**Install the Radicle `rad` CLI.** and **Run rad auth to create your
+Radicle identity.**&mdash;you can return here for the rest of the instructions.
+
+## Initialize your project on Radicle
+
+Radicle wraps around the `git` binary and processes you already use to manage your project's data and history. This
+rapper lets you push your code to the sovereign Radicle network and collaborate with others.
+
+Because you already have a project you've pushed to GitHub, you already initialized the Git repository with `git init`,
+which created the `.git` directory to store objects, heads, refs, and more.
+
+Initializing a project on Radicle is as simple as setting up Git for the first time:
+
+```
+cd your-project-directory/
+rad init
+```
+
+Add a description and choose your default branch, which is typically either `main` or `master`.
+
+Running `rad init` does two things:
+
+- Creates a unique peer-to-peer identity&mdash;a project URN&mdash;for your project.
+- Adds a new `remote` to your project's existing configuration using that new identity, for pushing code to a unique
+  address on the Radicle network.
+
+You'll also see a line similar to `ok Project initialized: rad:git:hnrkqi6ohci9m59i54ppiy3fqkedkjt98ymdo`. The text
+after `rad:git:` is your project's URN.
+
+You can always find your project's URN by running `rad .` from the project's directory.
+
+## Push to the Radicle network
+
+You can push to the network now that you've initialized your project on Radicle. Assuming you have no unstaged changes
+in your repository, you're ready to push.
+
+```
+rad push
+```
+
+Since this is your first push to Radicle, the CLI asks which seed node you want to sync with. Radicle provides three
+seed nodes with _identical_ functionality&mdash;`pine`, `willow`, and `maple`.
+
+Choose wisely!
+
+:::tip
+
+You can also sync to multiple Radicle-hosted seed nodes, or [host your own seed
+node](https://github.com/radicle-dev/radicle-client-services), if you'd like additional resiliency or security.
+
+:::
+
+Once `rad` pushes your project to the Radicle network, it outputs details on where you can find your project on the
+[Radicle web app](https://app.radicle.xyz).
+
+```
+🌱 Your project is synced and available at:
+
+    (web) https://app.radicle.xyz/seeds/willow.radicle.garden/rad:git:hnrkqi6ohci9m59i54ppiy3fqkedkjt98ymdo/
+    (git) https://willow.radicle.garden/hnrkqi6ohci9m59i54ppiy3fqkedkjt98ymdo.git
+```
+
+### Push to both Radicle and GitHub simultaneously (mirror)
+
+If you're not ready to migrate away from GitHub completely, you can mirror your project in both places.
+
+```
+git add .
+git commit -m "Your commit message here"
+rad push
+git push
+```
+
+If you don't like running two commands, you could also create an alias in Zsh or Bash to automate the process. Edit your
+`~/.zshrc` or `~/.bash_profile` file and add the following line, which first pushes to your existing remote on GitHub
+and Radicle in sequence when you run `gp`.
+
+```
+alias gp="rad push && git push"
+```
+
+## Code collaboration on Radicle (issues and patches/PRs)
+
+Certain features, like visual code reviews and issue discussion boards, aren't yet live on Radicle.
+
+We're prioritizing must-have features like issues and patches, with more information coming soon.
+
+For now, the best way to collaborate is to have each contributor [clone](using-radicle/clone.md) the project, [push
+changes](using-radicle/push.md) to their remotes, and have a single maintainer responsible for [tracking, reviewing, and
+merging](using-radicle/track-review-merge.md) changes to keep the project and contributors in sync.
+
+## What's next?
+
+If you're having trouble with any part of the migration process, check out our [troubleshooting
+guide](understanding-radicle/troubleshooting.md), or head over to the [**#support** channel on
+Discord](https://discord.gg/j2HZCBDUvF), where a member of the Radicle team will help you out.
+
+The next best thing you can do is [share your project](using-radicle/view-share.md) with collaborators so they can
+[clone](using-radicle/clone.md) it and push their changes, completing your migration away from not just GitHub, but all
+centralized, online-first, and censorship-prone code hosting platforms.
+
+Now that you're on the Radicle network, hop into our [Discord server](https://discord.gg/j2HZCBDUvF), where our core
+team and collaborators actively chat about the future of sovereign code infrastructure, what we're working on next, and
+ways to get involved.

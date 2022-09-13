@@ -8,7 +8,7 @@ const sidebars = {
       type: 'category',
       label: 'Introduction',
       collapsed: false,
-      items: ['what-is-radicle', 'get-started', 'troubleshooting'],
+      items: ['what-is-radicle', 'get-started', 'migrate-github-radicle', 'troubleshooting'],
     },
     {
       type: 'category',
