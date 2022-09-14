@@ -8,9 +8,20 @@ entity. You can manage multiple identities, creating/delete them at will, and ev
 
 Many of the actions below require your personal URN, which you can find using `rad self`.
 
+## View your active identity
+
+Run `rad self` to see details on how you're identified on the Radicle network, including your:
+
+- Active [display name](#edit-your-display-name)
+- Personal URN
+- Peer ID
+- Hashed and full encryption keys
+- File locations of your Git monorepo and encryption keys
+
 ## Create a new identity
 
-TK
+Add new identities at any time. For example, use different identities for the personal projects you host on Radicle
+versus your professional work for a company or DAO.
 
 ```
 rad auth --init
@@ -18,9 +29,9 @@ rad auth --init
 
 ## Switch between identities
 
-```
-rad auth
-```
+If you have multiple identities, switch between them with `rad auth`.
+
+Choose the identity you want active, enter your passphrase, and hit **Enter**.
 
 ## Edit your display name
 
@@ -31,7 +42,7 @@ personal URN!):
 rad edit
 ```
 
-In the file that appears, change the `"name"` value to your new display name.
+Change the `"name"` value to your new display name in the file that appears.
 
 ```
 {
@@ -41,10 +52,14 @@ In the file that appears, change the `"name"` value to your new display name.
 }
 ```
 
-Run `rad self` again to see that your **Name** changed, but your personal URN and Peer ID stayed the same.
+Re-run `rad self` to see that your **Name** changed, but your personal URN and Peer ID stayed the same.
 
 ## Delete your identity
+
+Delete any identity on your local machine with the following:
 
 ```
 rad rm YOUR-PERSONAL-URN
 ```
+
+Your identity will remain associated with any projects you have pushed/synced to the Radicle network.
