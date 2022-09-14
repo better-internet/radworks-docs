@@ -54,3 +54,44 @@ As of September 2022, you can install Radicle using our formulae repository whet
 Intel-based system. If you're on Apple Silicon, `rad` will not run natively, but it will work!
 
 See our [installation instructions](https://radicle.xyz/get-started.html) for the Homebrew method.
+
+## Install Radicle on Windows with WSL
+
+This installation method isn't officially supported by the Radicle team, but you can try it at your own risk! 
+
+:::note
+
+Our thanks go to the folks behind [radicle-jetbrains-plugin](https://github.com/cytechmobile/radicle-jetbrains-plugin/),
+who first discovered this [method](https://github.com/cytechmobile/radicle-jetbrains-plugin/blob/main/README.md) of
+installing `rad` on WSL and Windows.
+
+:::
+
+Assuming you already have [WSL installed](https://docs.microsoft.com/en-us/windows/wsl/install), follow the
+**Debian/Ubuntu** instructions on our [get started guide](https://radicle.xyz/get-started.html).
+
+Check what version of Git your WSL installation has with `git --version`. If it's lower than `2.34.0`, you need to
+update, and if you're using the WSL default &mdash; Ubuntu 20.04 &mdash; you can add the [`git-core`
+PPA](https://launchpad.net/~git-core/+archive/ubuntu/ppa) to your system to supply a newer version of Git.
+
+```
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt update
+sudo apt install git
+```
+
+With the appropriate version of Git installed, run `rad auth` to create your identity.
+
+But to properly load and manage your identity's keys, you need an SSH agent. Install
+[keychain](https://manpages.ubuntu.com/manpages/xenial/man1/keychain.1.html) with `sudo apt install keychain`, then open
+your `~/.bashrc` file. Add the following two lines:
+    
+```
+eval `keychain --quiet --eval --agents ssh`;
+export WSLENV=$WSLENV:SSH_AGENT_PID:SSH_AUTH_SOCK;
+```
+
+Save the file, exit WSL, and relaunch.
+
+You can now navigate to an existing Git repository and run `rad init` to create a new Radicle project, or
+[clone](using-radicle/clone.md) an existing project with `rad clone`.
