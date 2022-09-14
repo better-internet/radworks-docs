@@ -1,6 +1,6 @@
 ---
 id: issues
-title: Create and view issues
+title: Create, view, and comment on issues
 ---
 
 :::caution
