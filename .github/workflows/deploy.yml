@@ -2,6 +2,7 @@
 name: Build and Deploy
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -24,4 +25,4 @@ jobs:
         with:
           folder: ./build/ # The folder the action should deploy.
           force: false
-          clean-exclude: pr-preview/
+          clean-exclude: ./pr-preview/
