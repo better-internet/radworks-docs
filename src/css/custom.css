@@ -104,7 +104,6 @@ html[data-theme='dark'] .markdown code {
 
 .markdown pre {
   background-color: #e3e3f3 !important;
-  color: var(--prism-color) !important;
 }
 
 html[data-theme='dark'] .markdown pre {
