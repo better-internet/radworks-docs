@@ -58,6 +58,11 @@ const config = {
         },
         items: [
           {
+            href: 'https://radicle.xyz',
+            label: 'Radicle',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/radicle-dev/',
             label: 'GitHub',
             position: 'right',
