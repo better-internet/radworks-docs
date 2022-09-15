@@ -49,8 +49,8 @@ example, `peer/docs-tester/main`, which you can see in the last line of the abov
 
 Compare the tracking branch against the local state of your canonical branch with `git diff`.
 
-```
-$ git diff main..peer/docs-tester/main
+```bash
+git diff main..peer/docs-tester/main
 ```
 
 ## Collaborate on changes
@@ -66,7 +66,7 @@ you're looking at the same state of the code.
 Once you're happy with the changes, merge them into your local copy and push everything to your project, updating the
 primary branch.
 
-```
-$ git merge peer/docs-tester/main
-$ rad push
+```bash
+git merge peer/docs-tester/main
+rad push
 ```

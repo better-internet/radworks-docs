@@ -9,6 +9,19 @@
   /* Fonts */
   --ifm-font-family-base: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
+  /* Links */
+  --ifm-link-color: var(--ifm-font-color-base);
+
+  /* Code blocks */
+  --ifm-code-font-size: 100%;
+  --prism-color: #2e2e6b;
+  --prism-background-color: #e3e3f3;
+  --ifm-pre-background: var(--prism-background-color);
+  --ifm-code-background: var(--prism-background-color);
+  --ifm-code-border-radius: 0.3rem;
+  --ifm-code-padding-vertical: 0.2rem;
+  --ifm-code-padding-horizontal: 0.5rem;
+
   /* Colors */
   --ifm-color-primary: #5555ff;
   --ifm-color-primary-dark: #3333ff;
@@ -18,17 +31,82 @@
   --ifm-color-primary-lighter: #8888ff;
   --ifm-color-primary-lightest: #bbbbff;
 
-  --ifm-background-color: #FFF; 
+  --ifm-background-color: #f3f6fd; 
   --ifm-navbar-background-color: #F8F8F8;
   --ifm-footer-background-color: #F8F8F8;
+
+  --ifm-menu-color: #2e2e6b;
+  --ifm-menu-color-active: #1a1a2c;
+  --ifm-menu-color-background-active: #ebecf8;
+
 }
 
 html[data-theme='dark'] {
-  --ifm-background-color: #0E171F;
+
+  /* Code blocks */
+  --prism-color: #ccf;
+  --prism-background-color: #181f28;
+  --ifm-code-background: var(--prism-background-color);
+
+  /* Colors */
+  --ifm-background-color: #0b131a;
   --ifm-navbar-background-color: #162029; 
   --ifm-footer-background-color: #162029;
+
+  --ifm-menu-color: #ccf;
+  --ifm-menu-color-active: #fff;
+  --ifm-menu-color-background-active: #121a21;
+}
+
+/* Navbar */
+
+.navbar {
+  background: linear-gradient( 180deg, #dfe2fd 0%, #f3f6fd 100%);
+  border-bottom: 0px;
+}
+
+html[data-theme='dark'] .navbar {
+  background: linear-gradient( 180deg, #141b38 0%, #0b131a 100% )
 }
 
 .dsla-search-field {
   min-width: 150px;
+  background: transparent;
+}
+
+.dsla-search-field button {
+  background: transparent;
+  border: 1px dashed var(--ifm-color-primary);
+  border-radius: 10rem;
+  color: var(--ifm-color-primary);
+}
+
+/* Navigation menu */
+
+.menu {
+  font-weight: var(--ifm-font-weight-regular);
+}
+
+/* Markdown content */
+
+.markdown a {
+  border-bottom: 1px solid #c2c3d4;
+}
+
+.markdown code {
+  border: 0;
+  color: var(--prism-color);
+}
+
+html[data-theme='dark'] .markdown code {
+  color: var(--prism-color);
+}
+
+.markdown pre {
+  background-color: #e3e3f3 !important;
+  color: var(--prism-color) !important;
+}
+
+html[data-theme='dark'] .markdown pre {
+  background-color: #181f28 !important;
 }
