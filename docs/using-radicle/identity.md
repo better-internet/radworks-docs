@@ -54,12 +54,27 @@ Change the `"name"` value to your new display name in the file that appears.
 
 Re-run `rad self` to see that your **Name** changed, but your personal URN and Peer ID stayed the same.
 
-## Delete your identity
+## Remove an identity
 
-Delete any identity on your local machine with the following:
+Remove any identity from your local machine with the following:
 
 ```
 rad rm YOUR-PERSONAL-URN
 ```
 
 Your identity will remain associated with any projects you have pushed/synced to the Radicle network.
+
+### Manual deletion
+
+If you forgot your identity's passphrase, or want to make changes yourself, you can delete the folders that contain
+Radicle identities you no longer want to use.
+
+To find where `rad` stores your identities, run `rad self` and look at the last two lines.
+
+```
+├── Storage (git)  <your-git-storage-folder>
+└── Storage (keys) <your-key-storage-folder>
+```
+
+You can now navigate to these locations and delete any folders with personal URNs that match the identities you want to
+remove.
