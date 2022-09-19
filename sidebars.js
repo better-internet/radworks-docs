@@ -33,7 +33,12 @@ const sidebars = {
       type: 'category',
       label: 'Understanding Radicle',
       collapsed: false,
-      items: ['understanding-radicle/why-radicle', 'understanding-radicle/how-it-works', 'understanding-radicle/glossary', 'understanding-radicle/faq']
+      items: [
+        'understanding-radicle/how-radicle-works',
+        'understanding-radicle/troubleshooting',
+        'understanding-radicle/glossary',
+        'understanding-radicle/faq'
+      ]
     },
     {
       type: 'category',
