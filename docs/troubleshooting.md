@@ -46,6 +46,38 @@ fatal: bad config variable 'gpg.format' in file '.git/config' at line 20
 See our [prerequisites](#installation-prerequisites-for-rad) for the minimum Git version number you need to run `rad`
 and access the Radicle network.
 
+## `error: Load key...`
+
+The following error is likely caused by a non-functioning `ssh-agent`, with `rad` not having proper access to your keys:
+
+```
+error: Load key "/tmp/.git_signing_key_tmp....": Invalid format
+```
+
+The solution is to run `rad auth` again, choose your profile (if you have multiple), and enter your passphrase. When a key loads successfully, `rad` outputs the following:
+
+```
+ok Unlocking...
+ok Radicle key added to ssh-agent
+ok Signing key configured in git
+```
+
+## SLOP failure
+
+When Git pushes a signed commit to a remote repository, it sends a nonce &mdash; an arbitrary number only used once &mdash; based on your system time as a security measure. If that nonce doesn't match with what the remote system expects, Git outputs this warning:
+
+```
+remote: Running pre-receive hook...        
+remote: Verifying certificate...        
+remote: Received `SLOP` certificate status, please re-submit signed push to request new certificate        
+remote: Error: failed certification verification
+```
+
+There are two solutions:
+
+1. Push your code again using `rad push`.
+2. Check your system time for discrepancies.
+
 ## Install Radicle CLI on Apple Silicon
 
 Previously, installing `rad` on M1/M2-based systems required you to install the x86_64 version of Homebrew.
