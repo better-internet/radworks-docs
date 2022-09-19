@@ -49,12 +49,12 @@ const config = {
         title: '',
         logo: {
           alt: 'Radicle',
-          src: 'img/radicle-logo.svg',
-          srcDark: 'img/radicle-logo-dark.svg',
+          src: 'img/favicon.svg',
+          srcDark: 'img/favicon.svg',
           href: '/',
           target: '_self',
-          width: 128,
-          height: 87
+          width: 56,
+          height: 48
         },
         items: [
           {
