@@ -56,18 +56,8 @@ Re-run `rad self` to see that your **Name** changed, but your personal URN and P
 
 ## Remove an identity
 
-Remove any identity from your local machine with the following:
-
-```
-rad rm <YOUR-PERSONAL-URN>
-```
-
-Your identity will remain associated with any projects you have pushed/synced to the Radicle network.
-
-### Manual deletion
-
-If you forgot your identity's passphrase, or want to make changes yourself, you can delete the folders that contain
-Radicle identities you no longer want to use.
+If you forgot your identity's passphrase or don't need a certain profile any longer, you can delete the folders that
+contain Radicle identities you no longer want to use.
 
 To find where `rad` stores your identities, run `rad self` and look at the last two lines.
 
