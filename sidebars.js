@@ -12,12 +12,18 @@ const sidebars = {
       label: 'Code hosting',
       collapsed: false,
       items: [
+<<<<<<< HEAD
         'using-radicle/create',
         'using-radicle/view-share',
         'using-radicle/push',
         'using-radicle/clone',
         'using-radicle/identity',
       ]
+=======
+        'what-is-radicle',
+        'get-started',
+      ],
+>>>>>>> fd71261 (Finish draft)
     },
     {
       type: 'category',
@@ -33,7 +39,13 @@ const sidebars = {
       type: 'category',
       label: 'Understanding Radicle',
       collapsed: false,
-      items: ['understanding-radicle/why-radicle', 'understanding-radicle/how-it-works', 'understanding-radicle/glossary', 'understanding-radicle/faq']
+      items: [
+        'understanding-radicle/why-radicle',
+        'understanding-radicle/how-it-works',
+        'understanding-radicle/radicle-versus-github-gitlab',
+        'understanding-radicle/glossary',
+        'understanding-radicle/faq',
+      ]
     },
     {
       type: 'category',
