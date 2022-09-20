@@ -39,7 +39,7 @@ Change your _display name_, which is how you're identified on the Radicle web ap
 personal URN!):
 
 ```
-rad edit
+rad edit <YOUR-PERSONAL-URN>
 ```
 
 Change the `"name"` value to your new display name in the file that appears.
@@ -59,7 +59,7 @@ Re-run `rad self` to see that your **Name** changed, but your personal URN and P
 Remove any identity from your local machine with the following:
 
 ```
-rad rm YOUR-PERSONAL-URN
+rad rm <YOUR-PERSONAL-URN>
 ```
 
 Your identity will remain associated with any projects you have pushed/synced to the Radicle network.
