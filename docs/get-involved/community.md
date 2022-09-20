@@ -1,6 +1,6 @@
 ---
 id: join-the-community
-title: Join the Community
+title: Join the community
 ---
 
 To get involved with the Radicle project, start by joining our community channels:
