@@ -34,9 +34,13 @@ As far as a roadmap goes, we're currently in **Phase 0** of achieving our vision
 - **Phase 2**: Any user can host their content locally and have it discovered by the Radicle network. At this stage, the
   network has become fully self-sovereign.
 
-## How is Radicle funded?
+## How is Radicle funded and licensed?
 
 TK
+
+Radicle is completely free and open-source, licensed under version 3 of the GNU General Public License (GPLv3) with the
+Radicle Linking Exception. You can read more about [how this license was
+chosen](https://radicle.community/t/radicle-licensing-model/282/8).
 
 ## Why is Radicle a hosted service?
 
@@ -71,44 +75,23 @@ in a Git repository for the first time, it adds a `rad` remote that points to th
 push to a seed node when you run `rad push`.
 
 `rad` also creates and manages your identity &mdash; a unique Peer ID and personal URN &mdash; and cryptographically
-secures them with 
-
-uses the identity portion of [Radicle Link](https://github.com/radicle-dev/radicle-link)) to create unique
-Peer IDs and personal URNs, which identify your devices and your identity across devices, respectively.
-
-## How is Radicle licensed?
-
-Radicle is completely free and open-source. It's licensed under version 3 of the GNU General Public License (GPLv3) with
-the Radicle Linking Exception. You can read more about [how this license was
-chosen](https://radicle.community/t/radicle-licensing-model/282/8).
+secures them with an Ed25519 keypair to identify you across the Radicle network.
 
 ## How will issues and patches (PRs) work?
-
-Radicle currently supports 
-
 Social collaboration features (i.e. bug reports, patches, discussions etc...)
 are all on the Radicle roadmap. They will work very similarly to the experiences
 we have now, but will be local-first and cryptographically signed. This means
 issues, PRs, and discussions will be more secure, available offline, and stored
 on your machine as git objects — not on a central server!
 
-## When will CLI tooling be available?
-
-The [Radicle CLI](https://github.com/radicle-dev/radicle-cli/) is available now, and is currently the best way to [get
-started](/) with hosting code on the Radicle network.
-
 ## Can I back up or mirror a GitHub project on Radicle?
 
 Yes! Publishing a codebase to Radicle is a great way to create a peer-to-peer backup of your repositories. Maintaining a
 mirror of a project on Radicle is as simple as pushing to another remote. 
 
-<<<<<<< HEAD
-To create a mirror, follow the [GitHub migration guide](migrate-github-radicle.mdx) using your existing repository, which will initialize your project and push the code to the Radicle network. To synchronize state between your GitHub and Radicle versions, run `rad push` on the `main`/`master` branch after every change.
-=======
 To create a mirror, follow the [getting started](getting-started.md) guide using your existing repository, which
 initializes your project, and push the code to the Radicle network with `rad push`. To synchronize state between your
 GitHub and Radicle versions, run `rad push` on the `main`/`master` branch after every change.
->>>>>>> 543d7b0 (Complete first pass on FAQ)
 
 ## Can I replace GitHub with Radicle?
 If you want! While our Beta release will have only the basic collaboration features
@@ -137,28 +120,13 @@ We're currently working
 No, not yet &mdash; but private projects with end-to-end encryption are on our roadmap! In the meantime, please note
 that everything you put on Radicle will be publicly available.
 
-## What's a remote?
-A remote refers to a version of your project that is maintained by another
-person. To collaborate with others on Radicle, you have to add and follow 
-their remotes to be able to fetch changes from them. You can manage remotes
-on your project page. For more on how remote
-repositories work, see the [Git documentation][mr].
+## What's a remote, peer ID, personal URN, project URN, and so on?
 
-## What's the difference between a Peer ID, a personal URN, and a project URN?
-
-In short, a [Peer ID](understanding-radicle/glossary.md#peer-id) identifies your device, a [personal
-URN](understanding-radicle/glossary.md#personal-urn) identifies you across devices, and a [project
-URN](understanding-radicle/glossary.md#project-urn) identifies individual repositories of code.
-
-You can always find your Peer ID and personal URN with `rad self`, or create multiple identities with `rad auth --init`
-and switch between them using `rad auth`.
-
-If you're sharing a project with a collaborator, all you need is the project URN, which helps others find your project
-on the Radicle [web interface](https://app.radicle.xyz/) or to clone it with `rad clone`. To find your project URN, use `rad ls` or `cd` into the repository and run `rad .`
+Please see our [glossary](glossary.md) for definitions of various terms in a Radicle context.
 
 ## Can I use Radicle with multiple devices?
 
-Yes and no. 
+Yes and no.
 
 There is no explicit support, but if you got started with the Radicle network using the CLI tooling, you can, in theory,
 use the same keyfile (`librad.key`) to authenticate the same Peer ID on multiple devices, which would allow you to
@@ -199,19 +167,3 @@ question there, join our [#support channel on Discord](https://discord.gg/j2HZCB
 
 Head over to matrix.radicle.community and create an account. Our Matrix rooms are synced with our #general and #support
 channels on Discord, so you'll always see the same information.
-
-
-[ai]: https://docs.appimage.org/user-guide/run-appimages.html#integrating-appimages-into-the-desktop
-[cu]: https://github.com/radicle-dev/radicle-decisions/blob/master/proposals/0004.md
-[cc]: get-involved/community.md
-
-[sd]: /img/seed-dashboard-search.png
-
-[eb]: https://en.wikipedia.org/wiki/Gossip_protocol
-[hp]: https://en.wikipedia.org/wiki/Hole_punching_(networking)
-[ls]: https://radicle.community/t/radicle-licensing-model/282/8
-[mc]: https://matrix.to/#/#general:radicle.community
-[mr]: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
-[sc]: https://matrix.to/#/#support:radicle.community
-[si]: https://github.com/radicle-dev/radicle-bins/tree/master/seed
-[sm]: https://radicle.community/

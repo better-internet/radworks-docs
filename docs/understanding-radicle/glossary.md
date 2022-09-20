@@ -27,9 +27,12 @@ A non-unique human-readable name chosen by a Radicle [user][us]. Like a
 "nickname" for someone's [Peer ID](#peer-id). This will be possible to change in
 the future.
 
-## fork
-Forking a project in Radicle clones a working copy to your machine and publishes
-it as a project to the network.
+## follow
+Following a [project][pr] replicates it to your machine. This allows the
+follower to subscribe to updates from the project's [maintainer(s)][ma] or other
+remotes. It is also a way to signal interest in the project or peer by further
+replicating the data across their network, making it available to other people
+on the network. See [Tracking][hiw-tr].
 
 ## git
 A free and open source distributed version control system.
@@ -64,14 +67,13 @@ to fetch and push changesets to the Radicle network.
 A device running the Radicle Link protocol.
 
 ## peer ID
-
-Part of your identity on the Radicle network. It identifies your device, a non-unique [display
-name](#display-name) and the code you publish on the Radicle network, and is secured with an
-Ed25519 keypair.
+One half of your Radicle identity, along with your [personal URN](#personal-urn). This unique identifier, secured with
+an Ed25519 keypair, identifies your device, non-unique [display name](#display-name), and code you publish on the
+Radicle network. Find your peer ID with `rad self`.
 
 ## personal URN
-
-A unique identifier that allows you to register a permanent name with our opt-in integration with the Ethereum network.
+The other half of your Radicle identity, along with your [Peer ID](#peer-id). This unique identifier, also secured with
+an Ed25519 keypair, identifies you across devices. Find your personal URN with `rad self`.
 
 ## project
 A [project][pr] consists of source code, issues, and proposed changesets. It
@@ -86,25 +88,23 @@ A human-readable name that is chosen for a [project][pe]. It is not guaranteed
 to be unique.
 
 ## project URN
-
 A unique identifier for a specific project on the Radicle network, roughly akin to the way GitHub identifies projects
-with `user-name/project-name`. Required for sharing a project with collaborators and cloning.
+with `user-name/project-name`. Required for sharing a project with collaborators and cloning. Find it by navigating to a
+Radicle project on your system and running `rad .`.
 
 ## publish
 To make data public to the network. Once something is published, it may be
 fetched and replicated by connected peers.
 
 ## Radicle network
-The network of peers that replicate and gossip data with Radicle Link.
+The network of seed nodes that store project and identity data and make it available to access or view via `rad` or the
+web app.
 
 ## remote
-Another peer's view of a project. Remotes can be pulled/fetched from.
-Maintainers of a project may choose to track other peer's views of their project
-by adding them as a remote. In the context of a project, maintainers of a
-repository may choose to track the views of other owners by adding them as a
-remote to the project. If the remote repository is found to track other remotes,
-the tracking repository shall also transitively track those, up to a
-configurable N degrees out.
+A version of your project managed by another person. To collaborate with others by viewing, approving, and merging their
+patches, you must track other remotes. View your project's current remotes with `rad track --remote` and add new ones
+with `rad track <REMOTE-URN>`. For more on how remote repositories work, see the [Git
+documentation](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes).
 
 ## seed
 An always-on node that automatically tracks discovered projects and serves data
@@ -130,6 +130,9 @@ original maintainer or creator. For everyone but the creator of this
 
 ## user
 Any individual who has created a Radicle ID on the Radicle network.
+
+## web app
+The [Radicle web app](https://app.radicle.xyz) for viewing project data in a browser.
 
 
 [br]: #branch
