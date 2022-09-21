@@ -81,6 +81,16 @@ const config = {
         },
         items: [
           {
+            href: '/what-is-radicle',
+            label: 'User Hub',
+            position: 'left',
+          },
+          {
+            href: '/community',
+            label: 'Community Hub',
+            position: 'left',
+          },
+          {
             href: 'https://radicle.xyz',
             label: 'Home',
             position: 'right',

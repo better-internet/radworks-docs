@@ -47,6 +47,9 @@ const sidebars = {
       items: ['get-involved/join-the-community', 'get-involved/obtain-rad']
     }
   ],
+  governanceSidebar: [
+    'community/community'
+  ]
 };
 
 module.exports = sidebars;
