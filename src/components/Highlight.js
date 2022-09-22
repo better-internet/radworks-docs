@@ -4,8 +4,7 @@ export default function Highlight ({ children }) {
   return (
     <div
       style={{
-        backgroundColor: 'rgb(241, 244, 247)',
-        borderColor: '#242e38',
+        border: '1px solid rgba(85, 85, 255, 0.7)',
         borderRadius: '0.5rem',
         marginBottom: '20px',
         padding: '2rem 2rem',
