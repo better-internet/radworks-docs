@@ -160,8 +160,8 @@ our [GitHub repositories](https://github.com/radicle-dev/).
 
 ## I need some help, where do I reach out?
 
-Check out our [troubleshooting](understanding-radicle/troubleshooting.md) doc. If you don't find an answer to your
-question there, join our [#support channel on Discord](https://discord.gg/j2HZCBDUvF) and ask away.
+Check out our [troubleshooting](troubleshooting.md) doc. If you don't find an answer to your question there, join our
+[#support channel on Discord](https://discord.gg/j2HZCBDUvF) and ask away.
 
 ## How do I join your Matrix channel?
 
