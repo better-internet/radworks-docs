@@ -22,8 +22,9 @@ This guide also works if you're currently using GitLab, Gitea, or any other Git-
 :::info
 
 Radicle doesn't yet have feature parity with GitHub&mdash;we're still working on visual code reviews, an issue board,
-and CI/CD pipelines. Even you _need_ these features, stopping you from migrating in full, we still encourage you to
-migrate your project to Radicle and mirror your changes so that you can quickly make the switch when the time is right!
+and CI/CD pipelines. Even if the lack of these features is stopping you from migrating in full, we still encourage you
+to migrate your project to Radicle and mirror your changes so that you can quickly make the switch when the time is
+right!
 
 :::
 
@@ -35,13 +36,13 @@ hosting code and collaborating with others on your project.
 
 <Installation />
 
-Once you're done with the first two steps&mdash;**Install the Radicle `rad` CLI.** and **Run rad auth to create your
+Once you're done with the first two steps&mdash;**Install the Radicle `rad` CLI.** and **Run `rad auth` to create your
 Radicle identity.**&mdash;you can return here for the rest of the instructions.
 
 ## Initialize your project on Radicle
 
 Radicle wraps around the `git` binary and processes you already use to manage your project's data and history. This
-rapper lets you push your code to the sovereign Radicle network and collaborate with others.
+wrapper lets you push your code to the sovereign Radicle network and collaborate with others.
 
 Because you already have a project you've pushed to GitHub, you already initialized the Git repository with `git init`,
 which created the `.git` directory to store objects, heads, refs, and more.
@@ -68,8 +69,7 @@ You can always find your project's URN by running `rad .` from the project's dir
 
 ## Push to the Radicle network
 
-You can push to the network now that you've initialized your project on Radicle. Assuming you have no unstaged changes
-in your repository, you're ready to push.
+You can push to the network now that you've initialized your project on Radicle.
 
 ```
 rad push
@@ -83,7 +83,9 @@ Choose wisely!
 :::tip
 
 You can also sync to multiple Radicle-hosted seed nodes, or [host your own seed
-node](https://github.com/radicle-dev/radicle-client-services), if you'd like additional resiliency or security.
+node](https://github.com/radicle-dev/radicle-client-services), if you'd like additional resiliency or security. `rad
+push` syncs with your default seed node, which you can find with `git config --local rad.seed`, but you'll need to run
+`rad push --seed <your-seed-node-url>` for each additional seed node you want to sync with.
 
 :::
 
