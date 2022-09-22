@@ -19,24 +19,49 @@ links.
 
 ## What is 'sovereign code infrastructure'?
 
-TK
+We believe that decentralized code collaboration &mdash; free, open-source, local-first, and censorship-resistant
+&mdash; is only possible if we replace the tools created by centralized services, owned by corporations, with
+alternatives built on open protocols and open-source code.
+
+In Radicle, _sovereignty_ means you truly own all aspects of your user identity and project (meta)data. _Code
+infrastructure_ refers to our growing network of [seed nodes](glossary.md#seed-node), which is open-source software
+anyone can self-host.
+
+For more about the Radicle vision, see [_Towards decentralized code
+collaboration_](https://radicle.mirror.xyz/Qz4Rr0R54KLPurqqswsQ2tfRtBs9MOYpw3dlY9VjyQ8).
 
 ## What is the state of the Radicle ecosystem?
 
-TK
+Radicle is being actively developed by a handful of [core
+teams](https://forest-text-046.notion.site/Core-Teams-8faf6989047a40dab77959469b456f90): Clients, Funding, Community
+&amp; Governance, Growth, Marketing, and more.
 
-As far as a roadmap goes, we're currently in **Phase 0** of achieving our vision of sovereign code infrastructure.
+The Radicle Foundation, which has previously managed and funded all aspects of Radicle core development, is currently
+[transitioning into the
+RadicleDAO](https://forest-text-046.notion.site/Radicle-Governance-Hub-01b9f8e757cc4426ab64d2146071f46b#ee45f5993b2e4ff2bc95bfa3536c6450).
+
+We're currently in **Phase 0** of achieving our vision of sovereign code infrastructure.
 
 - **Phase 0** (active): Users can self-host or publish repositories to a network of hosted seed nodes. The network is
   still in the process of decentralizing and is prone to change.
-- **Phase 1**: With gossip activated, user-deployed seed nodes can find each other and share their data without relying
-  on an intermediary. The network is resilient and censorship-resistant.
-- **Phase 2**: Any user can host their content locally and have it discovered by the Radicle network. At this stage, the
+- Phase 1: With gossip activated, user-deployed seed nodes can find each other and share their data without relying on
+  an intermediary. The network is resilient and censorship-resistant.
+- Phase 2: Any user can host their content locally and have it discovered by the Radicle network. At this stage, the
   network has become fully self-sovereign.
 
 ## How is Radicle funded and licensed?
 
-TK
+Radicle is currently funded through the Treasury of the Radicle Foundation, although we're currently transitioning that
+responsibility to the
+[RadicleDAO](https://forest-text-046.notion.site/Radicle-Governance-Hub-01b9f8e757cc4426ab64d2146071f46b#ee45f5993b2e4ff2bc95bfa3536c6450).
+The [Treasury](https://etherscan.io/address/0x8da8f82d2bbdd896822de723f55d6edf416130ba#tokentxns) is a community-owned
+and governed pool of capital for developing and growing the Radicle network and community. Those who own RAD tokens can
+propose, vote on, and implement new initiatives, which are funded through the Treasury's combination of RAD token and
+USDC.
+
+See the [Radicle Governance
+Hub](https://forest-text-046.notion.site/Radicle-Governance-Hub-01b9f8e757cc4426ab64d2146071f46b) for details on
+Radicle's current governance and plans for the future of RadicleDAO.
 
 Radicle is completely free and open-source, licensed under version 3 of the GNU General Public License (GPLv3) with the
 Radicle Linking Exception. You can read more about [how this license was
@@ -44,29 +69,35 @@ chosen](https://radicle.community/t/radicle-licensing-model/282/8).
 
 ## Why is Radicle a hosted service?
 
-TK
+Radicle currently hosts three seed nodes to provide data availability for the Radicle network. These seed nodes provide
+a data availability layer for the Radicle network, storing your identity and project data, but not your private keys,
+which means they can't take action, like altering your project's code or metadata, on your behalf.
 
-## How is collaborating on Radicle different than GitHub?
+If you don't want to use a seed node hosted by Radicle, you can
+[self-host](https://github.com/radicle-dev/radicle-client-services) a seed node using hardware or a cloud instance you
+own.
 
-In contrast to centralized code collaboration platforms, Radicle is designed for
-bazaar-style collaboration. On the Radicle network, content is distributed
-peer-to-peer via a process called gossip. This means that peers are in control
-of their social interactions as they self-host their own content and the content
-of any peers they are interested in. This also means that within projects, there
-isn't a single `master` branch that contributors merge into. Each peer maintains
-a view of a project with their changesets and branches. These views are gossiped
-around to other peers that are interested in those changes.
+In the future, we'll deploy a new peer-to-peer (P2P) network that allows data to flow directly between users rather than
+only through seed nodes.
 
 ## How is Radicle more secure than centralized platforms?
 
-The Radicle network is peer-to-peer and built on public key cryptography. To
-start, this means that there is no need to rely on third parties to access or
-use the Radicle network. It is harder to take down because there is no central
-point of failure, and is resistant to corporate and state capture and censorship. In
-addition, all data on the Radicle network is cryptographically signed & verified
-as it's gossiped between peers. While centralized platforms rely on user
-interface components and key oracles to signal trust from user to user, Radicle
-has designed trust into the core of the protocol.
+The Radicle network is built on public key cryptography. All data related to identity and project data &mdash; not just
+commits, but also issues, comments, and patches &mdash; is cryptographically signed and verified using an Ed25519
+keypair. Trust is designed into the core of our protocols, and you own all aspects of your user identity and project
+(meta)data.
+
+The protocols and tools for centralized platforms are generally closed-source or use APIs that you can't access as an
+individual. Because Radicle's protocols are all open-source, you're never locked into a single tool or client. Radicle
+develops the [`rad` CLI tool](https://github.com/radicle-dev/radicle-cli) and [web
+app](https://github.com/radicle-dev/radicle-interface), but anyone can build alternative clients or tools for accessing
+Radicle-hosted projects.
+
+Because seed nodes are [open-source](https://github.com/radicle-dev/radicle-client-services) and can be self-hosted,
+there is no central point of failure, making the Radicle network resistant to corporate and state capture and
+censorship.
+
+These security measures will be enhanced when we deploy the newest iteration of our P2P network.
 
 ## How does Radicle interact with Git?
 
@@ -78,11 +109,18 @@ push to a seed node when you run `rad push`.
 secures them with an Ed25519 keypair to identify you across the Radicle network.
 
 ## How will issues and patches (PRs) work?
-Social collaboration features (i.e. bug reports, patches, discussions etc...)
-are all on the Radicle roadmap. They will work very similarly to the experiences
-we have now, but will be local-first and cryptographically signed. This means
-issues, PRs, and discussions will be more secure, available offline, and stored
-on your machine as git objects — not on a central server!
+
+Social collaboration features &mdash; such as issues and patches &mdash; are being actively developed. They will work
+very similarly to the experiences you're used to, but Radicle's are stored local-first, not on a centralized server,
+making them available offline. They're also cryptographically-signed for security and trust.
+
+## How is collaborating on Radicle different than GitHub?
+
+In contrast to centralized code collaboration platforms, Radicle is designed for bazaar-style collaboration. Within
+projects, there isn't a single `master` branch that contributors merge into. Each peer maintains a view of a project
+with their changesets and branches, and all those who participate in a project must collaborate on how they decide upon,
+and merge into, a "canonical" version of their project. Unlike GitHub, Radicle doesn't force projects into the
+["cathedral model"](https://radicle.mirror.xyz/Qz4Rr0R54KLPurqqswsQ2tfRtBs9MOYpw3dlY9VjyQ8).
 
 ## Can I back up or mirror a GitHub project on Radicle?
 
@@ -94,17 +132,15 @@ initializes your project, and push the code to the Radicle network with `rad pus
 GitHub and Radicle versions, run `rad push` on the `main`/`master` branch after every change.
 
 ## Can I replace GitHub with Radicle?
-If you want! While our Beta release will have only the basic collaboration features
-(i.e. code hosting, sharing, checking out, and pushing/pulling), we plan to
-introduce features that could support a similar day-to-day code collaboration
-experience to GitHub. They will include bug reporting, patches, code review, and
-discussions.
 
-That being said, while we believe that reducing one's reliance on
-centrally-hosted platforms is generally a good idea, we also believe that code
-collaboration solutions serve different purposes for different people. Radicle *will* support social collaboration through one or more projects, but our priority will be
-delivering secure, local-first, peer-to-peer code collaboration — not an exact
-GitHub replica.
+Absolutely! While we're still working on in-depth collaboration features like issues and patches, you can already
+[create a Radicle project](using-radicle/create.md) a Radicle project from an existing GitHub-hosted repository and
+start pushing your changes with `rad push`.
+
+While we believe that reducing one's reliance on centrally-hosted platforms is generally a good idea, we also believe
+that code collaboration solutions serve different purposes for different people. Radicle *will* support social
+collaboration through one or more projects, but our priority will be delivering secure, local-first, peer-to-peer code
+collaboration &mdash; not an exact GitHub replica.
 
 ## Where is my data stored?
 
@@ -117,8 +153,7 @@ We're currently working
 
 ## Can I create private repositories on Radicle?
 
-No, not yet &mdash; but private projects with end-to-end encryption are on our roadmap! In the meantime, please note
-that everything you put on Radicle will be publicly available.
+No, not yet! In the meantime, please note that everything you put on Radicle will be publicly available.
 
 ## What's a remote, peer ID, personal URN, project URN, and so on?
 
