@@ -15,25 +15,25 @@ Any [peer](#peer) who can sign on behalf of the project, which means their state
 project. There can be one or more delegates of a given project.
 
 ## display name
-A non-unique human-readable name chosen by a Radicle [user](#user), like a "nickname" for someone's [Peer ID](#peer-id).
+A non-unique, human-readable name chosen by a Radicle [user](#user) to associate with their [Peer ID](#peer-id).
 
 ## git
 A free and open source distributed version control system.
 
 ## gossip
-A means of peer-to-peer communication that relies on the interactions of peers to disseminate information. Participants
-share and spread data by keeping redundant copies of projects locally and sharing updates with peers. This allows data
-to be disseminated according to use and value: the more peers who are interested in certain data the more available it
-is made to the network.
+A means of [peer-to-peer](#peer-to-peer-p2p) communication that relies on the interactions of peers to disseminate
+information. Participants share and spread data by keeping redundant copies of projects locally and sharing updates with
+peers. This allows data to be disseminated according to use and value: the more peers who are interested in certain data
+the more available it is made to the network.
 
 ## identity
-A cryptographically-signed (with a Ed25519 keypair) JSON document that identifies a device or a project, stored
+A cryptographicaly signed (with a Ed25519 keypair) JSON document that identifies a device or a project, stored
 alongside standard Git data when hosted, cloned, and replicated.
 
 ## maintainer
 A [user](#user) who manages and pushes updates to the canonical view of a project. A maintainer is explicitly associated
 with the [project](#project) at the time of creation or later as a [delegate](#delegate), but there may be multiple
-maintainers of a project, all maintaining their own remotes.
+project maintainers, all editing their own remotes.
 
 ## main
 How Radicle refers to the default development branch of a project.
@@ -42,7 +42,7 @@ How Radicle refers to the default development branch of a project.
 Radicle uses Git as a database, with project data, remotes, and identities stored in a single Git monorepo.
 
 ## network
-The people who use Radicle tooling and the projects they collaborate on, supported by seed nodes, which provide a data
+The people who use Radicle tooling and their projects collaborate, supported by seed nodes, which provide a data
 availability layer for projects and identities.
 
 ## passphrase
@@ -51,6 +51,10 @@ Radicle network. It's also needed to fetch and push changesets to the Radicle ne
 
 ## peer
 A device using `rad` or another client to push/pull/sync data from the Radicle network.
+
+## peer-to-peer (P2P)
+A network where every [peer](#peer) can serve Radicle data to any other peer without the need for hosted (or
+self-hosted) seed nodes.
 
 ## peer ID
 One half of your Radicle [identity](#identity), which identifies your device, non-unique [display name](#display-name),
