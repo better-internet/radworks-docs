@@ -24,18 +24,17 @@ possible.
 
 - [**Identity**](#radicle-identity): A cryptographically-signed JSON document that identifies a device or a project,
   stored alongside standard Git data when hosted, cloned, and replicated.
-- [**Network**](#radicle-network): The people who use Radicle tooling and the projects they collaborate on,
-  which is supported by seed nodes, which provide a data availability layer through a monorepo of projects and
-  identities.
+- [**Network**](#radicle-network): The people who use Radicle tooling and the projects they collaborate on, supported by
+  seed nodes, which provide a data availability layer for projects and identities.
 - [**Peer-to-peer protocol**](#peer-to-peer-protocol): The protocol for disseminating Git repositories via gossip-based
   replication, enabling the hosting and sharing of projects without knowing where it's physically stored within the
   Radicle network.
 - [**Command-line tooling (`rad`)**](#command-line-tooling-rad): The core tool for managing your code, project, and
   identity.
 - [**Web app**](#web-app): The web-based interface for discovering, viewing, and sharing Radicle projects.
-- [**Open-source funding (Drips)**](#open-source-funding-drips): An Ethereum protocol for continuously stream funds to
-  others, which will be integrated into the [web app](#web-app) as new value flows for developers to sustain their FOSS
-  work.
+- [**Open-source funding (Drips)**](#open-source-funding-drips): An Ethereum protocol for continuously streaming funds
+  to others, which will be integrated into the [web app](#web-app) as new value flows for developers to sustain their
+  FOSS work.
 
 ## Radicle identity
 
@@ -86,14 +85,16 @@ project A and project B are meant to converge someday. Are their histories and `
 All this uncertainty happens because source code is *portable*—it can be cloned, edited, and hosted somewhere else
 without the project's maintainer knowing about it.
 
-Centralized code collaboration platforms like GitHub and GitLab create also create identities for the projects they
-host. If you create two identical repositories on these platforms, their identities are `github.com/bob/project` and
+Centralized code collaboration platforms like GitHub and GitLab also create identities for the projects they host. If
+you create two identical repositories on these platforms, their identities are `github.com/bob/project` and
 `gitlab.com/bob/project`. You might know they're the same, but to someone else, there's no guarantee that the projects
 are the same despite seemingly sharing a `bob/project` identity.
 
 With centralized platforms, the code remains portable, but the *identity is non-portable*.
 
-A portable Radicle identity solves this problem because you always own your Radicle identity. Your identity might be replicated across the Radicle network, but because your key signs it, it's always yours. Your project may be replicated across the Radicle network, but because your identity is a delegate, only you can change the canonical remote/branch.
+A portable Radicle identity solves this problem because you always own your Radicle identity. Your identity might be
+replicated across the Radicle network, but because your key signs it, it's always yours. Your project may be replicated
+across the Radicle network, but because your identity is a delegate, only you can change your own remote/branch.
 
 Radicle identities are perfect for a peer-to-peer protocol because *the data is shipped with the source code, but not in
 the source code*.
@@ -105,8 +106,25 @@ Aside from is portable identity, the most important part of a project is the del
 When you create a project, you add your identity as a delegate. Every time you push new changes to the project, they're
 signed with your Radicle identity and your key.
 
-When a project has multiple contributors, all of whom may be pushing code and patches to their individual remotes, the
-delegate's remote is considered the "canonical" version of the project's code base.
+Those involved in a Radicle project can choose to manage delegates and decide on canonical versions however they'd like.
+If you're the only contributor to a project, and you're the delegate, then you'd likely consider the tip of your
+`main`/`master` branch to be the canonical version.
+
+When a project has multiple contributors and/or delegates, their remotes diverge as they individually add and push code
+to Radicle. In this case, they need to agree on a mechanism, like a quorum on the most recent commit, to determine the canonical state.
+
+For example, let's use an example of a project with two delegates and their respective default branches `main` (commits
+from bottom to top, top being the newest):
+
+```
+commit 3                 commit 5
+commit 2                 commit 2
+commit 1                 commit 1
+delegate A `main` |  delegate B `main`
+```
+
+The quorum is at commit `2` making that the latest canonical version. But, this is just one example of how delegates
+might manage their projects.
 
 ## Radicle network
 
@@ -122,18 +140,18 @@ Seed nodes are the data availability layer for the Radicle network, designed to 
 peer-to-peer network is offline, you can always retrieve Radicle project data from a seed node. Seed nodes store your
 identity, but not your private keys, which means they can't take action on your behalf.
 
-Seed nodes are based on fully [open-source
-code](https://app.radicle.network/alt-clients.radicle.eth/rad:git:hnrkk9c4zt9thuxhwi1ukxqcrs5tmhbtcsony/tree/a19cdcb846a8360d8f55c10aac8175368881a6ee),
-and Radicle currently maintains three seed nodes &mdash; willow.radicle.garden, pine.radicle.garden, and
-maple.radicle.garden &mdash; with identical functionality.
+Seed nodes are based on fully [open-source code](https://github.com/radicle-dev/radicle-client-services), and Radicle
+currently maintains three seed nodes &mdash;
+[willow.radicle.garden](https://app.radicle.xyz/seeds/willow.radicle.garden),
+[pine.radicle.garden](https://app.radicle.xyz/seeds/pine.radicle.garden), and
+[maple.radicle.garden](https://app.radicle.xyz/seeds/maple.radicle.garden) &mdash; with identical functionality.
 
-Like each person using Radicle, seed nodes store data in a monorepo, which organizes Radicle identities, project
-metadata, and multiple remotes from anyone who has collaborated on a specific project. The data looks a little bit like
-this:
+Like each person using Radicle, seed nodes store identities, project metadata, and project data using Git, in a format
+that looks a like this:
 
 ```jsx
-namespaces/
-  refs/
+refs/
+  namespaces/
     <project-one>/
       refs/
         heads/
@@ -151,10 +169,10 @@ namespaces/
     ...
 ```
 
-Seed nodes have three primary components.
+Seed nodes have two primary components.
 
-- The **HTTP API** (`radicle-http-api`), which allows for browsing Radicle projects on the web. It's the foundation of
-  the [Radicle web app](https://app.radicle.xyz/), but the API is entirely [open
+- The **HTTP API** (`radicle-http-api`), which allows for browsing Radicle projects on the web. It's the backend of the
+  [Radicle web app](https://app.radicle.xyz/), but the API is entirely [open
   source](https://github.com/radicle-dev/radicle-interface) for anyone else to develop additional clients.
 - The **Git server** (`radicle-git-server`), which acts as a bridge between the seed node's Git server and those who use
   it, replicating Git data and Radicle identities.
@@ -169,7 +187,7 @@ collaboration.
 
 But, the push-pull relationship between a local machine, seed node, and collaborators means that the project's
 location—which seed node contains the most up-to-date state—is a prominent part of the user experience. You *have* to
-know and remember which seed note you're working with.
+know and remember which seed node you're working with.
 
 Radicle's peer-to-peer protocol will solve this problem.
 
@@ -243,8 +261,8 @@ The Radicle command-line tooling, available with the `rad` command, allow develo
 code securely](https://radicle.xyz/) on the Radicle network.
 
 `rad` is responsible for creating and managing your [identity](#radicle-identity), including your secret keys and Git
-monorepo. You also use it to initialize new Radicle projects, push your project to the [network](#radicle-network),
-create and manage issues, collaborate with patches, and much more.
+data. You also use it to initialize new Radicle projects, push your project to the [network](#radicle-network), create
+and manage issues, collaborate with patches, and much more.
 
 If you're hoping to get started with Radicle for the first time, installing `rad` is your first step.
 
