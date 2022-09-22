@@ -17,7 +17,8 @@ collaborate on projects with your unique identifiers.
 
 </Highlight>
 
-> You can also find additional instructions, such as installing from source, in the [`radicle-cli`
+> If you have trouble with installation, check out our [troubleshooting guide](troubleshooting.md). You can also find
+> additional instructions, such as installing from source, in the [`radicle-cli`
 > repository](https://app.radicle.xyz/alt-clients.radicle.eth/rad:git:hnrkmg77m8tfzj4gi4pa4mbhgysfgzwntjpao).
 
 When you create an identity with `rad auth`, you get your **Peer ID**, which identifies your device and the code you
@@ -26,7 +27,7 @@ devices.
 
 :::caution
 
-There is currently no way to retrieve a lost or forgotten passphrase, so please store it safely!
+There is no way to retrieve a lost or forgotten passphrase, so please store it safely!
 
 :::
 
