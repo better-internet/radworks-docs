@@ -28,7 +28,7 @@ Two interlacing clients create this experience.
 2. The **[web app](https://app.radicle.xyz)**, which provides a visual interface for discovering projects, viewing
    code, and viewing patches from collaborators.
 
-Apart from **code collaboration**, Radicle also tries to address the issue of **open source funding** through
+Apart from **code collaboration**, Radicle also addresses **open source funding** through
 [Drips](https://www.drips.network/), an Ethereum protocol for generating recurring income with subscriptions and NFT
 memberships. Drips helps you create a circular funding network by dripping funds to your favorite creators and
 dedicating a percentage of your incoming drips to others.
