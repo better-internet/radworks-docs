@@ -20,7 +20,7 @@ const sidebars = {
         'using-radicle/push',
         'using-radicle/clone',
         'using-radicle/issues',
-        'using-radicle/track-review-merge'
+        'using-radicle/track-review-merge',
         'using-radicle/identity',
       ]
     },
