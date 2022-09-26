@@ -5,6 +5,11 @@
   src: url("https://rsms.me/inter/inter.css");
 }
 
+@font-face {
+	font-family: "Flexa";
+	src: url(/static/assets/flexa-mono.woff2) format("woff2");
+}
+
 :root {
   /* Fonts */
   --ifm-font-family-base: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -39,11 +44,15 @@
 
   --ifm-background-color: #f3f6fd; 
   --ifm-navbar-background-color: #F8F8F8;
-  --ifm-footer-background-color: #F8F8F8;
+  --ifm-footer-background-color: #e3e3f3;
 
   --ifm-menu-color: #2e2e6b;
   --ifm-menu-color-active: #1a1a2c;
   --ifm-menu-color-background-active: #ebecf8;
+
+  /* Navbar */
+  --ifm-navbar-height: 88px;
+  --ifm-navbar-padding-vertical: 1rem;
 
 }
 
@@ -73,6 +82,11 @@ html[data-theme='dark'] {
 
 html[data-theme='dark'] .navbar {
   background: linear-gradient( 180deg, #141b38 0%, #0b131a 100% )
+}
+
+.navbar__inner {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .dsla-search-field {

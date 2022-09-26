@@ -6,37 +6,24 @@ export default function Index() {
   return (
     <Layout title="Radicle Documentation" description="Hello React Page">
       <header className={styles.header}>
-        <h1 
-          style={{
-            fontSize: '5.7vw',
-            textAlign: 'center',
-            color: 'transparent',
-            backgroundClip: 'text',
-            backgroundImage: 'linear-gradient( 180deg, rgb(255, 85, 255) 0%, rgb(85, 85, 255) 100% )',
-          }}>
-          Radicle
-          <span 
-            style={{
-              display: 'block',
-              letterSpacing: '-0.2vw',
-              lineHeight: '1.1',
-            }}>Documentation</span>
+        <h1 className={styles.hero}>
+          Radicle Documentation
         </h1>
-        <p className={styles.subhead}>Some subhead text should go here.</p>
+        <p className={styles.subhead}>User documentation, onboarding guides, frequently asked questions, and governance for the future of sovereign code infrastructure.</p>
       </header>
       <main className={styles.section}>
         <div className={styles.grid}>
             <a href="/what-is-radicle" className={styles.itemA}>
               <h2>User Hub</h2>
-              <p>This is where some text goes about what readers will find in the user hub.</p>
-              <span>
+              <p>Learn how to securely collaborate on software over a peer-to-peer network built on Git.</p>
+              <span className={styles.button}>
                 Go &rarr;
               </span>
             </a>
-            <a href="community" className={styles.item}>
+            <a href="/community" className={styles.item}>
               <h2>Community Hub</h2>
               <p>This is where some text goes about what readers will find in the community &amp; governance hub.</p>
-              <span>
+              <span className={styles.button}>
                 Go &rarr;
               </span>
             </a>
