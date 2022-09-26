@@ -19,7 +19,8 @@ const sidebars = {
         'using-radicle/view-share',
         'using-radicle/push',
         'using-radicle/clone',
-        'using-radicle/track-review-merge',
+        'using-radicle/issues',
+        'using-radicle/track-review-merge'
         'using-radicle/identity',
       ]
     },
