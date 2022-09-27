@@ -4,18 +4,14 @@ title: Get started
 sidebar_label: Get started
 ---
 
-import Highlight from '@site/src/components/Highlight'
+import Installation from '@site/src/components/Installation'
 
 Hosting and collaborating on code in Radicle relies on our CLI tooling and your identity.
 
 The CLI tooling is your bridge between Git and the Radicle network, while your identity allows you to host and
 collaborate on projects with your unique identifiers.
 
-<Highlight>
-
-  See the **[Radicle website](https://radicle.xyz/get-started.html)** for the most up to date installation instructions for macOS and Linux, including the process for creating your Radicle identity.
-
-</Highlight>
+<Installation />
 
 > If you have trouble with installation, check out our [troubleshooting guide](troubleshooting.md). You can also find
 > additional instructions, such as installing from source, in the [`radicle-cli`

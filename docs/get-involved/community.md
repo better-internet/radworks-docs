@@ -21,17 +21,16 @@ announcements, releases, feature updates, and more.
 
 ## [Twitter](https://twitter.com/radicle)
 
-We use Twitter to share announcements & project-wide updates, as well as amplify Radicle-aligned messaging from
+We use Twitter to share announcements and project-wide updates, as well as amplify Radicle-aligned messaging from
 partnerships and the greater ecosystem. We don't offer support here.
 
 [@radicle](https://twitter.com/radicle)
 
 ## [GitHub](https://github.com/radicle-dev)
 
-GitHub
-
-All Radicle development is open-source and public by default. The radicle-dev GitHub account is consistently active and
-is the best place to see what the team is working on.
+All Radicle development is open-source and public by default. The `radicle-dev` GitHub account is consistently active
+and is the best place to see what the team is working on until Radicle itself has features like issues, patches, and
+CI/CD.
 
 [github.com/radicle-dev](https://github.com/radicle-dev)
 
