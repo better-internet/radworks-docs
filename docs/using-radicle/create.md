@@ -70,7 +70,8 @@ Select a seed node to sync with...
 ```
 
 After syncing your project with the Radicle network for the first time, the CLI outputs information about how to find
-and share your project for [sharing](view-share.md), [cloning](clone.md), and collaboration.
+and share your project for [sharing](view-share.md), [cloning](clone.md), and
+[collaboration](using-radicle/collaboration.md).
 
 ```
 Radicle signing key ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBndIloOmjGvHkqgfJ9sEkaZb1iBG9lrfjODqG5uoqjV

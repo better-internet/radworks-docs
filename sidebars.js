@@ -5,7 +5,6 @@ const sidebars = {
   // But you can create a sidebar manually
   docsSidebar: [
     'what-is-radicle',
-    'get-started',
     'migrate-github-radicle',
     'troubleshooting',
     {

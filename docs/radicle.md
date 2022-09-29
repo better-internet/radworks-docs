@@ -1,7 +1,7 @@
 ---
 id: what-is-radicle
-title: What is Radicle?
-sidebar_label: What is Radicle?
+title: Get started with Radicle
+sidebar_label: Get started
 slug: /
 ---
 
@@ -32,7 +32,11 @@ Radicle also addresses **open source funding** through [Drips](https://www.drips
 generating recurring income with subscriptions and NFT memberships. Drips helps you create a circular funding network by
 dripping funds to your favorite creators and dedicating a percentage of your incoming drips to others.
 
-## How do I get started with Radicle?
+## How do I get started?
+
+Hosting and collaborating on code in Radicle relies on our CLI tooling &mdash; the bridge between Git and the Radicle
+network &mdash; and your identity, which is a **Peer ID** and **personal URN**, which cryptographically verify you and
+your devices with a secure Ed25519 keypair.
 
 <Installation />
 
@@ -44,11 +48,53 @@ dripping funds to your favorite creators and dedicating a percentage of your inc
   </div>
   <div>
     <a href="/using-radicle/collaboration">
-      Learn about Radicle's code collaboration workflows using issues and patches.
+      Learn about Radicle's code collaboration workflows using CLI-based issues and patches.
     </a>
   </div>
 </Grid>
 
-If you need help using Radicle, check out our [troubleshooting](troubleshooting.md) guide,
+:::tip
+
+If you need help installing or using Radicle, check out our [troubleshooting](troubleshooting.md) guide,
 [FAQ](understanding-radicle/faq.md), or join a [community channel](get-involved/community.md) where our core teams hang
 out.
+
+:::
+
+## What's next?
+
+Now that you've installed `rad` and created your Radicle identity, it's time to securely collaborate on a sovereign code
+infrastructure.
+
+### Learn the basics of `rad`
+
+- `rad help`: See all the commands provided by `rad`.
+- `rad self`: See information about your current identity and display name, URN, Peer ID, and more.
+- `rad ls`: View a list of projects you've synced with the Radicle network.
+- `rad auth`: Create and manage multiple Radicle [identities](using-radicle/identity.md).
+- `rad [command] --help`: See additional options for an individual command.
+
+### Start hosting and collaborating on code
+
+<Grid>
+  <div>
+    <a href="/using-radicle/create">
+      Create a new Radicle project
+    </a>
+  </div>
+  <div>
+    <a href="/using-radicle/clone">
+      Clone an existing project
+    </a>
+  </div>
+  <div>
+    <a href="/using-radicle/issues">
+      Create or view issues
+    </a>
+  </div>
+  <div>
+    <a href="/using-radicle/track-review-merge">
+      Collaborate with patches
+    </a>
+  </div>
+</Grid>

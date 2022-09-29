@@ -7,7 +7,7 @@ export default function Installation () {
     <Grid>
       <div className={styles.install}>
         <a className={styles.link} href="https://radicle.xyz/get-started.html">
-          See the Radicle website for the most up-to-date installation instructions for macOS and Linux, including the process for creating your Radicle identity.
+          See the Radicle website for the most up-to-date CLI tooling installation instructions for macOS and Linux and the process for creating your Radicle identity.
         </a>
       </div>
     </Grid>

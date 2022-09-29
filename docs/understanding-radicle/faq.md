@@ -3,7 +3,7 @@ id: faq
 title: FAQ
 ---
 ## How do I get started?
-Head over to [getting started](getting-started.md) section for instructions on how to download and 
+Head over to [user hub](/) section for instructions on how to download and 
 install the Radicle CLI, which helps you host code on the Radicle network and
 collaborate on projects.
 
@@ -51,7 +51,7 @@ on your machine as git objects — not on a central server!
 ## When will CLI tooling be available?
 
 The [Radicle CLI](https://github.com/radicle-dev/radicle-cli/) is available now, and is currently the best way to [get
-started](getting-started.md) with hosting code on the Radicle network.
+started](/) with hosting code on the Radicle network.
 
 ## Can I backup a GitHub project on Radicle?
 
@@ -59,7 +59,7 @@ Yes! Publishing a codebase to Radicle is a great way to create a peer-to-peer
 backup of your repositories. Maintaining a mirror of a project on Radicle is as
 simple as pushing to another remote. 
 
-To create a mirror, follow the [getting started](getting-started.md) guide using your existing repository, which will initiatize your project and push the code to the Radicle network. To synchronize state between your GitHub and Radicle versions, run `rad push` on the `main`/`master` branch after every change.
+To create a mirror, follow the [GitHub migration guide](migrate-github-radicle.mdx) using your existing repository, which will initialize your project and push the code to the Radicle network. To synchronize state between your GitHub and Radicle versions, run `rad push` on the `main`/`master` branch after every change.
 
 ## Can I replace GitHub with Radicle?
 If you want! While our Beta release will have only the basic collaboration features
@@ -86,7 +86,7 @@ replicated and stored on another peer's machine.
 
 The newer method is a **push-pull** method that uses `git push` to send changes to seed nodes and `git pull` to fetch
 updates. With this method, your data is only stored on the seed node you chose to sync your project with when you [ran
-`rad init`](getting-started.md#create-your-radicle-project-from-a-git-directory), and with anyone who uses `rad clone`
+`rad init`](using-radicle/create.md), and with anyone who uses `rad clone`
 to create a copy of the project.
 
 Currently, only the push-pull method is utilized by the [CLI tooling](https://github.com/radicle-dev/radicle-cli/), but
@@ -169,7 +169,6 @@ community channels see [Join our Community][cc].
 
 [ai]: https://docs.appimage.org/user-guide/run-appimages.html#integrating-appimages-into-the-desktop
 [cu]: https://github.com/radicle-dev/radicle-decisions/blob/master/proposals/0004.md
-[gs]: getting-started.md
 [hw]: how-it-works.md/#git-implementation
 [tr]: how-it-works.md/#tracking
 [cc]: get-involved/community.md
