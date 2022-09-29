@@ -31,8 +31,14 @@ Contributors can now synchronize the state of their remote with the maintainer's
 cycle once more.
 
 <Grid>
-
-  <div>Issues</div>
-  <div>Patches</div>
-
+  <div>
+    <a href="/using-radicle/issues">
+      Create or view issues
+    </a>
+  </div>
+  <div>
+    <a href="/using-radicle/track-review-merge">
+      Collaborate with patches
+    </a>
+  </div>
 </Grid>
