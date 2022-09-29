@@ -1,0 +1,12 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.grid > div {
+  border: 1px solid hsla(240, 100%, 66.7%, 0.7);
+  border-radius: 0.5rem;
+  margin-bottom: 20px;
+  padding: 1rem;
+}

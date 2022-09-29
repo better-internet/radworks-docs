@@ -4,29 +4,30 @@ const sidebars = {
 
   // But you can create a sidebar manually
   docsSidebar: [
+    'what-is-radicle',
+    'get-started',
+    'migrate-github-radicle',
+    'troubleshooting',
     {
       type: 'category',
-      label: 'Introduction',
-      collapsed: false,
-      items: [
-        'what-is-radicle',
-        'get-started',
-        'migrate-github-radicle',
-        'troubleshooting'
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Using Radicle',
+      label: 'Code hosting',
       collapsed: false,
       items: [
         'using-radicle/create',
         'using-radicle/view-share',
         'using-radicle/push',
         'using-radicle/clone',
+        'using-radicle/identity',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Code collaboration',
+      collapsed: false,
+      items: [
+        'using-radicle/collaboration',
         'using-radicle/issues',
         'using-radicle/track-review-merge',
-        'using-radicle/identity',
       ]
     },
     {

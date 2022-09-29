@@ -5,6 +5,8 @@ sidebar_label: What is Radicle?
 slug: /
 ---
 
+import Installation from '@site/src/components/Installation'
+
 Radicle is a decentralized code collaboration network built on open protocols 🌱. It enables developers to collaborate
 on code without relying on trusted intermediaries. Radicle was designed to provide similar functionality to centralized
 code collaboration platforms — or "forges" — while retaining Git’s peer-to-peer nature, building on what made
@@ -29,28 +31,10 @@ Radicle also addresses **open source funding** through [Drips](https://www.drips
 generating recurring income with subscriptions and NFT memberships. Drips helps you create a circular funding network by
 dripping funds to your favorite creators and dedicating a percentage of your incoming drips to others.
 
-## How do I use Radicle?
+## How do I get started with Radicle?
 
-> **To start hosting and collaborating on code in the Radicle network, see our [getting started
-> guide](getting-started.md).**
+<Installation />
 
-For more help on using Radicle, be sure to join our [community channels](get-involved/community.md).
-
-## Radicle's collaboration workflow
-
-> Note: This is a practical overview of the current collaboration workflow using Radicle-built projects. This will
-> change as both the protocols and projects change and add new functionality in the future.
-
-Maintainers (also known as delegates) use `rad init` and `rad push` to create a project and synchronize project data
-between their local state and a canonical branch (usually `main` or `master`) on the configured seed node. This makes
-the project discoverable on the Radicle web interface if collaborators know the [project URN and seed
-node](using-radicle/view-share.md).
-
-Collaborators use `rad clone` to [clone](using-radicle/clone.md) the canonical branch of an existing project on the
-Radicle network to their local state, make changes, and [use `rad push`](using-radicle/push.md) to synchronize those
-changes with a seed node.
-
-Maintainers can use the CLI to [find](using-radicle/view-share.md) and
-[review/merge](using-radicle/track-review-merge.md) collaborations to their project. With the CLI, they use `rad track`
-to view the remote peer from their working copy, `git diff` to see the proposed changes, `git merge` to merge them, and
-`rad push` to publish the new state of the canonical branch.
+If you need help using Radicle, check out our [troubleshooting](troubleshooting.md) guide,
+[FAQ](understanding-radicle/faq.md), or join a [community channel](get-involved/community.md) where our core teams hang
+out.
