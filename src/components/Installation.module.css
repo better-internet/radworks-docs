@@ -1,0 +1,9 @@
+.install {
+  grid-column: 1 / span 2;
+}
+
+.link {
+  font-size: 1.3rem;
+  text-decoration: none;
+  border: 0 !important;
+}

@@ -6,6 +6,7 @@ slug: /
 ---
 
 import Installation from '@site/src/components/Installation'
+import Grid from '@site/src/components/Grid'
 
 Radicle is a decentralized code collaboration network built on open protocols 🌱. It enables developers to collaborate
 on code without relying on trusted intermediaries. Radicle was designed to provide similar functionality to centralized
@@ -34,6 +35,19 @@ dripping funds to your favorite creators and dedicating a percentage of your inc
 ## How do I get started with Radicle?
 
 <Installation />
+
+<Grid>
+  <div>
+    <a href="/migrate-github-radicle">
+      Leaving GitHub in favor of Radicle's sovereign code infrastructure? Check out our migration guide!
+    </a>
+  </div>
+  <div>
+    <a href="/using-radicle/collaboration">
+      Learn about Radicle's code collaboration workflows using issues and patches.
+    </a>
+  </div>
+</Grid>
 
 If you need help using Radicle, check out our [troubleshooting](troubleshooting.md) guide,
 [FAQ](understanding-radicle/faq.md), or join a [community channel](get-involved/community.md) where our core teams hang
