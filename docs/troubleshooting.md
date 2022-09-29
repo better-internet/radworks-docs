@@ -3,6 +3,9 @@ id: troubleshooting
 title: Troubleshooting
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 As the team behind the various protocols and projects that utilize the Radicle network, we want you, the user, to have
 the best experience possible. Also, as the developers, we know that there will be bugs and errors. 
 
@@ -26,41 +29,59 @@ installed the correct versions of the following:
 - Git: `2.34.0` or later
 - OpenSSH: `8.0` or later
 
-## `Fatal: the key for ... is not in the ssh-agent`
+## Issues with `ssh-agent`
 
-This error occurs when your system isn't running `ssh-agent`, which `rad` uses to store and use the cryptographic keys
-associated with your Radicle identity.
-
-In the error message, `rad` offers one method of starting `ssh-agent`, but if you're on Linux, you'll need to try
-another method, like `eval "$(ssh-agent -s)"`.
-
-## `error: unsupported value for gpg.format`
-
-If you see the following error when using `git` after initializing a project, you're most likely running a version of Git that's incompatible with `rad`.
+The following two errors are related to your cryptographic keys, which Radicle uses to authenticate your identity, not
+being properly managed by `ssh-agent`.
 
 ```
-error: unsupported value for gpg.format: ssh
-fatal: bad config variable 'gpg.format' in file '.git/config' at line 20
+Fatal: the key is not in the ssh-agent, consider adding it via lnk profile ssh add
 ```
-
-See our [prerequisites](#installation-prerequisites-for-rad) for the minimum Git version number you need to run `rad`
-and access the Radicle network.
-
-## `error: Load key...`
-
-The following error is likely caused by a non-functioning `ssh-agent`, with `rad` not having proper access to your keys:
 
 ```
 error: Load key "/tmp/.git_signing_key_tmp....": Invalid format
 ```
 
-The solution is to run `rad auth` again, choose your profile (if you have multiple), and enter your passphrase. When a key loads successfully, `rad` outputs the following:
+The most likely issue is that your system isn't running `ssh-agent`. After you get `ssh-agent` running using one of the two methods below, based on your OS, run `rad auth` once more to ensure your keys are properly added.
+
+<Tabs>
+<TabItem value="macos" label="macOS">
+
+```bash
+lnk profile ssh add
+rad auth
+```
+
+</TabItem>
+<TabItem value="linux" label="Linux">
+
+```bash
+eval "$(ssh-agent -s)"
+rad auth
+```
+
+</TabItem>
+</Tabs>
+
+When `rad` successfully loads a key into `ssh-agent`, it outputs the following:
 
 ```
 ok Unlocking...
 ok Radicle key added to ssh-agent
 ok Signing key configured in git
 ```
+
+## Unsupported Git version
+
+If you see the below error when using `git` after initializing a project, you're most likely running a version of Git
+that's incompatible with `rad`.
+
+```
+error: unsupported value for gpg.format
+```
+
+See our [prerequisites](#installation-prerequisites-for-rad) for the minimum Git version number you need to run `rad`
+and access the Radicle network. 
 
 ## SLOP failure
 
