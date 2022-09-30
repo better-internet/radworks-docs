@@ -1,9 +1,12 @@
 ---
 id: what-is-radicle
-title: What is Radicle?
-sidebar_label: What is Radicle?
+title: Get started with Radicle
+sidebar_label: Get started
 slug: /
 ---
+
+import Installation from '@site/src/components/Installation'
+import Grid from '@site/src/components/Grid'
 
 Radicle is a decentralized code collaboration network built on open protocols 🌱. It enables developers to collaborate
 on code without relying on trusted intermediaries. Radicle was designed to provide similar functionality to centralized
@@ -29,28 +32,69 @@ Radicle also addresses **open source funding** through [Drips](https://www.drips
 generating recurring income with subscriptions and NFT memberships. Drips helps you create a circular funding network by
 dripping funds to your favorite creators and dedicating a percentage of your incoming drips to others.
 
-## How do I use Radicle?
+## How do I get started?
 
-> **To start hosting and collaborating on code in the Radicle network, see our [getting started
-> guide](getting-started.md).**
+Hosting and collaborating on code in Radicle relies on our CLI tooling &mdash; the bridge between Git and the Radicle
+network &mdash; and your identity, which is a **Peer ID** and **personal URN**, which cryptographically verify you and
+your devices with a secure Ed25519 keypair.
 
-For more help on using Radicle, be sure to join our [community channels](get-involved/community.md).
+<Installation />
 
-## Radicle's collaboration workflow
+<Grid>
+  <div>
+    <a href="/migrate-github-radicle">
+      Leaving GitHub in favor of Radicle's sovereign code infrastructure? Check out our migration guide!
+    </a>
+  </div>
+  <div>
+    <a href="/using-radicle/collaboration">
+      Learn about Radicle's code collaboration workflows using CLI-based issues and patches.
+    </a>
+  </div>
+</Grid>
 
-> Note: This is a practical overview of the current collaboration workflow using Radicle-built projects. This will
-> change as both the protocols and projects change and add new functionality in the future.
+:::tip
 
-Maintainers (also known as delegates) use `rad init` and `rad push` to create a project and synchronize project data
-between their local state and a canonical branch (usually `main` or `master`) on the configured seed node. This makes
-the project discoverable on the Radicle web interface if collaborators know the [project URN and seed
-node](using-radicle/view-share.md).
+If you need help installing or using Radicle, check out our [troubleshooting](troubleshooting.md) guide,
+[FAQ](understanding-radicle/faq.md), or join a [community channel](get-involved/community.md) where our core teams hang
+out.
 
-Collaborators use `rad clone` to [clone](using-radicle/clone.md) the canonical branch of an existing project on the
-Radicle network to their local state, make changes, and [use `rad push`](using-radicle/push.md) to synchronize those
-changes with a seed node.
+:::
 
-Maintainers can use the CLI to [find](using-radicle/view-share.md) and
-[review/merge](using-radicle/track-review-merge.md) collaborations to their project. With the CLI, they use `rad track`
-to view the remote peer from their working copy, `git diff` to see the proposed changes, `git merge` to merge them, and
-`rad push` to publish the new state of the canonical branch.
+## What's next?
+
+Now that you've installed `rad` and created your Radicle identity, it's time to securely collaborate on a sovereign code
+infrastructure.
+
+### Learn the basics of `rad`
+
+- `rad help`: See all the commands provided by `rad`.
+- `rad self`: See information about your current identity and display name, URN, Peer ID, and more.
+- `rad ls`: View a list of projects you've synced with the Radicle network.
+- `rad auth`: Create and manage multiple Radicle [identities](using-radicle/identity.md).
+- `rad [command] --help`: See additional options for an individual command.
+
+### Start hosting and collaborating on code
+
+<Grid>
+  <div>
+    <a href="/using-radicle/create">
+      Create a new Radicle project
+    </a>
+  </div>
+  <div>
+    <a href="/using-radicle/clone">
+      Clone an existing project
+    </a>
+  </div>
+  <div>
+    <a href="/using-radicle/issues">
+      Create or view issues
+    </a>
+  </div>
+  <div>
+    <a href="/using-radicle/track-review-merge">
+      Collaborate with patches
+    </a>
+  </div>
+</Grid>
