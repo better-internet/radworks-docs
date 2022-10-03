@@ -54,4 +54,4 @@ with your comment.
 
 ## Delete issues
 
-Run `rad issue delete <id>` to remote an issue from your Radicle project.
+Run `rad issue delete <id>` to remove an issue from your Radicle project.
