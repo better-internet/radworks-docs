@@ -82,12 +82,17 @@ const config = {
         items: [
           {
             href: '/get-started',
-            label: 'User Hub',
+            label: 'Users',
             position: 'left',
           },
           {
             href: '/community',
-            label: 'Community Hub',
+            label: 'Community',
+            position: 'left',
+          },
+          {
+            href: '/governance',
+            label: 'Governance',
             position: 'left',
           },
           {

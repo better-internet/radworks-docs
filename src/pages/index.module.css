@@ -34,7 +34,8 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
   gap: 1.5rem;
   margin-bottom: 10rem;
 }
@@ -46,6 +47,7 @@
 }
 
 .item {
+  grid-column: span 4;
   border: 1px solid hsla(240, 100%, 66.7%, 0.7);
   border-radius: 0.5rem;
   padding: 1rem;
@@ -57,16 +59,21 @@
   text-decoration: none;
 }
 
-.itemA {
+/* .itemA {
   composes: item;
-  grid-column-start: 2;
-}
+  grid-column: col-start / span 4;
+} */
 
 @media screen and (max-width: 996px) {
   .itemA {
     grid-column-start: 1;
   }
 }
+
+/* .itemGov {
+  composes: item;
+  grid-column: col-start 6 / span 4;
+} */
 
 .button {
   padding: 0.5rem;

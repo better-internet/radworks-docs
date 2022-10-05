@@ -47,19 +47,14 @@ const sidebars = {
       items: ['get-involved/join-the-community', 'get-involved/obtain-rad']
     }
   ],
-  governanceSidebar: [
+  communitySidebar: [
     'community/community',
-    {
-      type: 'category',
-      label: 'Governance',
-      collapsed: false,
-      items: [
-        'community/governance/README',
-        'community/governance/transition-dao',
-        'community/governance/how-governance-works',
-      ]
-    }
-  ]
+  ],
+  governanceSidebar: [
+    'governance/README',
+    'governance/transition-dao',
+    'governance/how-governance-works',
+  ],
 };
 
 module.exports = sidebars;

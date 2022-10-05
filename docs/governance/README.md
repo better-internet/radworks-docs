@@ -15,7 +15,7 @@ Radicle is the most resilient open source code collaboration infrastructure to d
       fontSize: '1.2rem',
     }}
   >
-    <a href="/community/governance/transition-dao">
+    <a href="/governance/transition-dao">
       See the latest on our transition to fund all project development via the Treasury of the RadicleDAO!
     </a>
   </div>
