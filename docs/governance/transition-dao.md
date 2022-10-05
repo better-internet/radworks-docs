@@ -2,7 +2,7 @@
 title: Transition to the DAO 🔜
 ---
 
-![Screenshot 2022-09-14 at 11.49.26.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4f13c476-14da-4e19-8101-ae548fa86456/Screenshot_2022-09-14_at_11.49.26.png)
+![Transition to the DAO](/img/transition-dao.png)
 
 The Foundation currently funds and manages most core Radicle development, but the ultimate goal has always been to ultimately fund all project development via the Treasury of the RadicleDAO. As outlined in the [Next Phase of RadicleDAO](https://radicle.community/t/the-next-phase-of-the-radicledao/2776), we’d like to have the scaffolding in place to transition Core Teams to the DAO by November 2022 and initial teams transitioned by **February 2023.** 
 

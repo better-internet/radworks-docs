@@ -26,6 +26,6 @@ Below is a roadmap of the proposal process. Proposals should include executable 
 
 :::tip
 
-🔎 [Click here](https://docs.radicle.xyz/get-involved/obtain-rad) to find out where to obtain RAD tokens.
+🔎 [Click here](/governance/obtain-rad) to find out where to obtain RAD tokens.
 
 :::

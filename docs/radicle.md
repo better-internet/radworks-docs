@@ -59,8 +59,7 @@ your devices with a secure Ed25519 keypair.
 :::tip
 
 If you need help installing or using Radicle, check out our [troubleshooting](troubleshooting.md) guide,
-[FAQ](understanding-radicle/faq.md), or join a [community channel](get-involved/community.md) where our core teams hang
-out.
+[FAQ](understanding-radicle/faq.md), or join a [community channel](/community/README.md) where our core teams hang out.
 
 :::
 

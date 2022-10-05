@@ -40,12 +40,6 @@ const sidebars = {
         'understanding-radicle/faq',
       ]
     },
-    {
-      type: 'category',
-      label: 'Get involved',
-      collapsed: false,
-      items: ['get-involved/join-the-community', 'get-involved/obtain-rad']
-    }
   ],
   communitySidebar: [
     'community/community',
@@ -54,6 +48,7 @@ const sidebars = {
     'governance/README',
     'governance/transition-dao',
     'governance/how-governance-works',
+    'governance/obtain-rad',
   ],
 };
 
