@@ -26,6 +26,10 @@ Below is a roadmap of the proposal process. Proposals should include executable 
 
 :::tip
 
-🔎 [Click here](/governance/obtain-rad) to find out where to obtain RAD tokens.
+🔎 Want to become a RAD holder and active voter? Start by [obtaining RAD tokens](/governance/obtain-rad)
 
 :::
+
+## What proposals are active right now?
+
+Check out our [Active Proposal Tracker](https://forest-text-046.notion.site/dbc74d3069cb4b4dbe937396fffed226?v=a9bc2f48859f407884381d4ba6a4186f) for details on programs currently in the pipeline.

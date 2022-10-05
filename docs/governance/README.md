@@ -20,3 +20,21 @@ Radicle is the most resilient open source code collaboration infrastructure to d
     </a>
   </div>
 </Grid>
+
+<Grid>
+  <div>
+    <a href="/governance/how-governance-works">
+      Peek into how Radicle's governance works today
+    </a>
+  </div>
+  <div>
+    <a href="/governance/treasury">
+      Learn about the Treasury that supports Radicle development
+    </a>
+  </div>
+  <div>
+    <a href="/governance/how-governance-works">
+      Obtain RAD tokens to become an active voter
+    </a>
+  </div>
+</Grid>
