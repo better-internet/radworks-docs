@@ -1,8 +1,8 @@
 ---
-id: what-is-radicle
+id: get-started
 title: Get started with Radicle
 sidebar_label: Get started
-slug: /
+slug: /get-started
 ---
 
 import Installation from '@site/src/components/Installation'

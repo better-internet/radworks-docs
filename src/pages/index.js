@@ -13,7 +13,7 @@ export default function Index() {
       </header>
       <main className={styles.section}>
         <div className={styles.grid}>
-            <a href="/what-is-radicle" className={styles.itemA}>
+            <a href="/get-started" className={styles.itemA}>
               <h2>User Hub</h2>
               <p>Learn how to securely collaborate on software over a peer-to-peer network built on Git.</p>
               <span className={styles.button}>
