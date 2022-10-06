@@ -1,6 +1,6 @@
 ---
 id: obtain-rad
-title: How to obtain RAD tokens
+title: Obtain RAD tokens
 ---
 
 RAD is the native governance token for Radicle, making it the first open-source, community-led, and self-sustaining

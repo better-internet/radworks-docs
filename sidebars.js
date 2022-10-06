@@ -46,11 +46,26 @@ const sidebars = {
   ],
   governanceSidebar: [
     'governance/README',
-    'governance/transition-dao',
-    'governance/how-governance-works',
-    'governance/treasury',
-    'governance/get-started',
-    'governance/obtain-rad',
+    {
+      type: 'category',
+      label: 'Get involved',
+      collapsed: false,
+      items: [
+        'governance/get-started',
+        'governance/obtain-rad',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Learn more',
+      collapsed: false,
+      items: [
+        'governance/transition-dao',
+        'governance/how-governance-works',
+        'governance/treasury',
+        'governance/delegation-faq',
+      ]
+    },
   ],
 };
 

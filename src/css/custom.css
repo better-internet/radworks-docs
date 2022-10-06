@@ -129,3 +129,7 @@ html[data-theme='dark'] .markdown code {
 html[data-theme='dark'] .markdown pre {
   background-color: #181f28 !important;
 }
+
+summary p {
+  margin-bottom: 0;
+}
