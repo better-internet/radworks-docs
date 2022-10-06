@@ -35,7 +35,6 @@ const sidebars = {
       collapsed: false,
       items: [
         'understanding-radicle/how-radicle-works',
-        'understanding-radicle/troubleshooting',
         'understanding-radicle/glossary',
         'understanding-radicle/faq'
       ]
