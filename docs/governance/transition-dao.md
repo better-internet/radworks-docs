@@ -1,5 +1,5 @@
 ---
-title: Transition to the DAO 🔜
+title: Transition to the DAO
 ---
 
 ![Transition to the DAO](/img/transition-dao.png)

@@ -1,5 +1,5 @@
 ---
-title: Radicle Governance 👋
+title: Radicle Governance
 ---
 
 import Grid from '@site/src/components/Grid'
@@ -39,6 +39,8 @@ Radicle is the most resilient open source code collaboration infrastructure to d
 Governance is an open forum: anyone can contribute feedback, ideas, or suggestions on new initiatives. We’re interested
 to hear your feedback on the proposed ideas, and on any other suggestions or best practices for the treasury, or
 governance more broadly.
+
+> Visit the **[➡️ Radicle Governance Portal](https://boardroom.io/radicle/overview)**!
 
 <details>
   <summary>

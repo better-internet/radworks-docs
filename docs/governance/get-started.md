@@ -1,5 +1,5 @@
 ---
-title: Get started with governance 📌
+title: Get started with governance
 ---
 
 ## Proposing 💍

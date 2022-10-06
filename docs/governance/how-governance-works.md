@@ -1,5 +1,5 @@
 ---
-title: How does Radicle governance work? ⚖️
+title: How does Radicle governance work?
 ---
 
 :::note

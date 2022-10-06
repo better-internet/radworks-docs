@@ -1,5 +1,5 @@
 ---
-title: What is the Radicle Treasury? 💰
+title: What is the Radicle Treasury?
 ---
 
 Governance is also employed to manage the [Radicle

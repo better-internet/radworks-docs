@@ -15,21 +15,21 @@ export default function Index() {
         <div className={styles.grid}>
             <a href="/get-started" className={styles.item}>
               <h2>Users</h2>
-              <p>Learn how to securely collaborate on software over a peer-to-peer network built on Git.</p>
+              <p>Learn how to securely host and collaborate on software over a peer-to-peer network built on Git.</p>
               <span className={styles.button}>
                 Go &rarr;
               </span>
             </a>
             <a href="/community" className={styles.item}>
               <h2>Community</h2>
-              <p>This is where some text goes about what readers will find in the community &amp; governance hub.</p>
+              <p>Discover where the Radicle community hangs out and plans for the future of sovereign code infrastructure.</p>
               <span className={styles.button}>
                 Go &rarr;
               </span>
             </a>
             <a href="/governance" className={styles.item}>
               <h2>Governance</h2>
-              <p>This is where some text goes about what readers will find in the community &amp; governance hub.</p>
+              <p>Participate in the decentralized community driving project development and our essential transition to the DAO.</p>
               <span className={styles.button}>
                 Go &rarr;
               </span>
