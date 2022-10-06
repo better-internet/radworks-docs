@@ -45,15 +45,12 @@ network.
 ## maintainer
 A [user][us] who manages and pushes updates to the canonical view of a project.
 A maintainer is explicitly associated with the [project][pr] at the time of
-creation or later, via the [project][pr] metadata ,
+creation or later, via the [project][pr] metadata,
 but there may be multiple maintainers of a project, all maintaining their own
 trees. At creation, the creator of the [project][pr] is the sole maintainer.
 
 ## main
 How Radicle refers to the default development branch of a project.
-
-## monorepo
-Radicle uses Git as a database. This means everything is stored in a single Git monorepo.
 
 ## node
 A [peer][pr] running an instance of the Radicle Link protocol. There can only be
@@ -113,6 +110,16 @@ configurable N degrees out.
 An always-on node that automatically tracks discovered projects and serves data
 to their connected peers, thereby increasing the availability of these projects
 on the network. More on the [role and impacts of seeds](how-radicle-works.md#seed-nodes).
+
+## storage
+
+Radicle is moving toward a local storage mechanism where multiple projects are stored under a single root directory.
+
+```
+storage/          # root
+  <project>/...   # a git directory for a single project
+  <project>/...   # another git directory for another project
+```
 
 ## upstream
 The [repository][re] in which code contributions for a [project][pr] are
