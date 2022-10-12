@@ -169,7 +169,6 @@ community channels see [Join our Community][cc].
 
 [ai]: https://docs.appimage.org/user-guide/run-appimages.html#integrating-appimages-into-the-desktop
 [cu]: https://github.com/radicle-dev/radicle-decisions/blob/master/proposals/0004.md
-[gs]: getting-started.md
 [cc]: get-involved/community.md
 
 [sd]: /img/seed-dashboard-search.png

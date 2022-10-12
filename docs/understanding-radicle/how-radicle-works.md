@@ -5,8 +5,11 @@ title: How Radicle works
 
 import Highlight from '@site/src/components/Highlight'
 
-At its most global, Radicle is a decentralized autonomous organization (DAO) solving challenges around sovereign code
-infrastructure and incentives for open-source work.
+At its most global, Radicle is a software stack of applications and protocols to help developers host and collaborate on
+code using a sovereign infrastructure. This also includes creating new opportunities and incentives for open-source
+work.
+
+Development of these applications and protocols is handled by the RadicleDAO, a decentralized autonomous organization.
 
 If you're curious about that global vision, we recommend reading [_Towards decentralized code
 collaboration_](https://radicle.mirror.xyz/Qz4Rr0R54KLPurqqswsQ2tfRtBs9MOYpw3dlY9VjyQ8) and [_Introducing
@@ -22,10 +25,10 @@ There are a few important open-source protocols, concepts, projects, and assets 
 vision](https://radicle.mirror.xyz/Qz4Rr0R54KLPurqqswsQ2tfRtBs9MOYpw3dlY9VjyQ8) for decentralized code collaboration
 possible.
 
-- [**Identity**](#radicle-identity): A cryptographically-signed JSON document that identifies a device or a project,
+- [**Identity**](#radicle-identity): A cryptographically-signed JSON document that identifies a person or a project,
   stored alongside standard Git data when hosted, cloned, and replicated.
 - [**Network**](#radicle-network): The people who use Radicle tooling and the projects they collaborate on, supported by
-  seed nodes, which provide a data availability layer for projects and identities.
+  seed nodes, which provide a data availability layer for code hosting and collaboration.
 - [**Peer-to-peer protocol**](#peer-to-peer-protocol): The protocol for disseminating Git repositories via gossip-based
   replication, enabling the hosting and sharing of projects without knowing where it's physically stored within the
   Radicle network.
@@ -41,9 +44,11 @@ possible.
 Everything Radicle is trying to build around decentralized code collaboration starts with the concept of identity. In
 Radicle, your identity is a *portable* JSON document that defines a user or a project on the Radicle network.
 
-The most important part is the hashed content identifier—the **peer ID**—which identifies it uniquely wherever it's
-stored or discovered on the Radicle network. Each Radicle identity also has a few required metadata fields, which
-determine whether it's a user or project identity:
+Your **Peer ID** is a hashed Ed25519 public key that cryptographically identifies your _device_, which proves your
+identity when you're taking actions on the Radicle network, like pushing commits, commenting on
+[issues](using-radicle/issues.md), or working with patches. Others can then verify those actions via your public key.
+
+Each Radicle identity also has a few required metadata fields, which determine whether it's a user or project identity:
 
 ```rust
 struct User {
@@ -71,7 +76,7 @@ it.
 When you create a user identity, it's signed with an Ed25519 keypair that ensures only you can change the identity and
 push changes to the Radicle network on behalf of your peer ID.
 
-When you create a project, your identity is added as a **delegate**—more on those in a moment.
+When you create a project, your identity is added as a **delegate** &mdash; more on those in a moment.
 
 ### Why Radicle starts with identity
 
@@ -79,16 +84,17 @@ At their core, Git repositories are just commit histories. Eventually, these com
 of folders, files, and code.
 
 But if you take two Git repositories at face value, there's no genuine way of comparing them. You can look at the commit
-logs and diff individual files, but there's no way of knowing, just through the data that is stored in Git, whether
-project A and project B are meant to converge someday. Are their histories and `HEAD` meant to be the same? Can you tell which repository is meant to be canonical?
+logs and diff individual files, but there's no way of knowing, just through the data stored in Git, whether project A
+and project B are meant to converge someday. Are their histories and `HEAD` meant to be the same? Can you tell which
+repository is meant to be canonical?
 
-All this uncertainty happens because source code is *portable*—it can be cloned, edited, and hosted somewhere else
-without the project's maintainer knowing about it.
+All this uncertainty happens because source code is *portable* &mdash; it can be cloned, edited, and hosted somewhere
+else without the project's maintainer knowing about it.
 
 Centralized code collaboration platforms like GitHub and GitLab also create identities for the projects they host. If
-you create two identical repositories on these platforms, their identities are `github.com/bob/project` and
-`gitlab.com/bob/project`. You might know they're the same, but to someone else, there's no guarantee that the projects
-are the same despite seemingly sharing a `bob/project` identity.
+you have a project on GitHub with the identity of `github.com/bob/project`, someone else could create a completely
+separate project at `gitlab.com/bob/project`. Because identity (`bob/project`, in this case) on these platforms is
+portable, and not shared, it creates confusion around what's canonical and what's to be trusted.
 
 With centralized platforms, the code remains portable, but the *identity is non-portable*.
 
@@ -101,8 +107,6 @@ the source code*.
 
 ### Delegates
 
-Aside from is portable identity, the most important part of a project is the delegates.
-
 When you create a project, you add your identity as a delegate. Every time you push new changes to the project, they're
 signed with your Radicle identity and your key.
 
@@ -110,8 +114,9 @@ Those involved in a Radicle project can choose to manage delegates and decide on
 If you're the only contributor to a project, and you're the delegate, then you'd likely consider the tip of your
 `main`/`master` branch to be the canonical version.
 
-When a project has multiple contributors and/or delegates, their remotes diverge as they individually add and push code
-to Radicle. In this case, they need to agree on a mechanism, like a quorum on the most recent commit, to determine the canonical state.
+<!-- When a project has multiple contributors and/or delegates, their remotes diverge as they individually add and push code
+to Radicle. In this case, they need to agree on a mechanism, like a quorum on the most recent commit, to determine the
+canonical state.
 
 For example, let's use an example of a project with two delegates and their respective default branches `main` (commits
 from bottom to top, top being the newest):
@@ -124,7 +129,7 @@ delegate A `main` |  delegate B `main`
 ```
 
 The quorum is at commit `2` making that the latest canonical version. But, this is just one example of how delegates
-might manage their projects.
+might manage their projects. -->
 
 ## Radicle network
 
@@ -200,8 +205,8 @@ The open-source code behind Radicle's seed nodes is maintained by the clients te
 
 ## Peer-to-peer protocol
 
-Radicle's vision for sovereign code collaboration has always been a peer-to-peer protocol that uses gossiping and
-replication to decentralize data stored by Git.
+Radicle's vision for sovereign code collaboration has always been a peer-to-peer protocol for decentralizing data stored
+by Git.
 
 With a P2P protocol:
 
