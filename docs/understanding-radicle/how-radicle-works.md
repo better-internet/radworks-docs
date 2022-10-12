@@ -48,6 +48,8 @@ Your **Peer ID** is a hashed Ed25519 public key that cryptographically identifie
 identity when you're taking actions on the Radicle network, like pushing commits, commenting on
 [issues](using-radicle/issues.md), or working with patches. Others can then verify those actions via your public key.
 
+Your identity also includes a **personal URN**, which identifies you across devices.
+
 Each Radicle identity also has a few required metadata fields, which determine whether it's a user or project identity:
 
 ```rust
@@ -72,11 +74,6 @@ struct Project {
 
 An identity can also be extended with additional metadata as needed by the client or interface that's interacting with
 it.
-
-When you create a user identity, it's signed with an Ed25519 keypair that ensures only you can change the identity and
-push changes to the Radicle network on behalf of your peer ID.
-
-When you create a project, your identity is added as a **delegate** &mdash; more on those in a moment.
 
 ### Why Radicle starts with identity
 
