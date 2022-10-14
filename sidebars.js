@@ -63,7 +63,9 @@ const sidebars = {
         'governance/transition-dao',
         'governance/how-governance-works',
         'governance/treasury',
+        'governance/delegate-standards',
         'governance/delegation-faq',
+        'governance/call-notes-recordings',
       ]
     },
   ],
