@@ -29,7 +29,7 @@ possible.
   stored alongside standard Git data when hosted, cloned, and replicated.
 - [**Network**](#radicle-network): The people who use Radicle tooling and the projects they collaborate on, supported by
   seed nodes, which provide a data availability layer for code hosting and collaboration.
-- [**Peer-to-peer protocol**](#peer-to-peer-protocol): The protocol for disseminating Git repositories via gossip-based
+- [**Peer-to-peer (P2P) protocol**](#peer-to-peer-protocol): The protocol for disseminating Git repositories via gossip-based
   replication, enabling the hosting and sharing of projects without knowing where it's physically stored within the
   Radicle network.
 - [**Command-line tooling (`rad`)**](#command-line-tooling-rad): The core tool for managing your code, project, and
@@ -47,8 +47,9 @@ Radicle, an identity is a *portable* JSON document that defines a `Person` or a 
 There are a few key benefits of integrating identity into Radicle's protocols and clients from the beginning.
 
 - Your identity is local-first, stored and shipped within the Git data for your projects.
-- You maintain ownership of your identity
-- All actions your or others take within a Radicle project ar cryptographically verified by default.
+- You maintain ownership of your identity no matter where it might be stored on the Radicle network, like seed nodes or,
+  in the future, across the P2P network.
+- All actions your or others take within a Radicle project are cryptographically verified by default.
 
 As a user, your identity includes a **Peer ID**, a hashed Ed25519 public key that cryptographically identifies a
 _device_, which proves your identity when you're taking actions on the Radicle network, like pushing commits, commenting
