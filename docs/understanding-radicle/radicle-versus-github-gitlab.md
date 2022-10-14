@@ -22,8 +22,9 @@ components. Every component of the Radicle stack is auditable, modifiable, and e
 
 ### Authorship
 
-**Radicle** automatically verifies all user artifacts, like comments, issues, and code reviews, through cryptographic
-keys, ensuring you know who you're collaborating with even if you don't know their "true" identity.
+**Radicle** automatically verifies all user artifacts, like [issues](using-radicle/issues.md) and [code
+reviews](using-radicle/track-review-merge.md), through cryptographic keys, ensuring you know who you're collaborating
+with even if you don't know their "true" identity.
 
 **GitHub** and **GitLab** support signing code commits with GPG, but not issues, comments, or pull requests.
 
@@ -77,8 +78,9 @@ to use other multiple clients for the best experience for you.
 
 ### Code collaboration
 
-**Radicle** offers CLI-based code collaboration through multiple remotes (similar to forks), issues, and patches (our
-version of pull requests), with support for viewing issues and patches on the web app coming soon.
+**Radicle** offers CLI-based code collaboration through multiple remotes (similar to forks),
+[issues](using-radicle/issues.md), and patches (our version of pull requests), with support for viewing issues and
+patches on the web app coming soon.
 
 **GitHub** and **GitLab** web-based management of forks/branches, pull requests, interactive code reviews, and more.
 

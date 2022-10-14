@@ -12,18 +12,12 @@ const sidebars = {
       label: 'Code hosting',
       collapsed: false,
       items: [
-<<<<<<< HEAD
         'using-radicle/create',
         'using-radicle/view-share',
         'using-radicle/push',
         'using-radicle/clone',
         'using-radicle/identity',
       ]
-=======
-        'what-is-radicle',
-        'get-started',
-      ],
->>>>>>> fd71261 (Finish draft)
     },
     {
       type: 'category',
