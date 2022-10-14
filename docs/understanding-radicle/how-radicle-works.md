@@ -42,15 +42,23 @@ possible.
 ## Radicle identity
 
 Everything Radicle is trying to build around decentralized code collaboration starts with the concept of identity. In
-Radicle, your identity is a *portable* JSON document that defines a user or a project on the Radicle network.
+Radicle, an identity is a *portable* JSON document that defines a `Person` or a `Project` on the Radicle network.
 
-Your **Peer ID** is a hashed Ed25519 public key that cryptographically identifies your _device_, which proves your
-identity when you're taking actions on the Radicle network, like pushing commits, commenting on
-[issues](using-radicle/issues.md), or working with patches. Others can then verify those actions via your public key.
+There are a few key benefits of integrating identity into Radicle's protocols and clients from the beginning.
 
-Your identity also includes a **personal URN**, which identifies you across devices.
+- Your identity is local-first, stored and shipped within the Git data for your projects.
+- You maintain ownership of your identity
+- All actions your or others take within a Radicle project ar cryptographically verified by default.
 
-Each Radicle identity also has a few required metadata fields, which determine whether it's a user or project identity:
+As a user, your identity includes a **Peer ID**, a hashed Ed25519 public key that cryptographically identifies a
+_device_, which proves your identity when you're taking actions on the Radicle network, like pushing commits, commenting
+on [issues](using-radicle/issues.md), or working with patches. Others can then verify those actions via your public key.
+The **personal URN**, on the other hand, identifies you across devices.
+
+A project identity is similar, except that it includes a 
+
+Each Radicle identity also has a few required metadata fields, which determine whether it's a `Person` or `Project`
+identity:
 
 ```rust
 struct User {
@@ -73,34 +81,8 @@ struct Project {
 ```
 
 An identity can also be extended with additional metadata as needed by the client or interface that's interacting with
-it.
-
-### Why Radicle starts with identity
-
-At their core, Git repositories are just commit histories. Eventually, these commit histories develop into complex trees
-of folders, files, and code.
-
-But if you take two Git repositories at face value, there's no genuine way of comparing them. You can look at the commit
-logs and diff individual files, but there's no way of knowing, just through the data stored in Git, whether project A
-and project B are meant to converge someday. Are their histories and `HEAD` meant to be the same? Can you tell which
-repository is meant to be canonical?
-
-All this uncertainty happens because source code is *portable* &mdash; it can be cloned, edited, and hosted somewhere
-else without the project's maintainer knowing about it.
-
-Centralized code collaboration platforms like GitHub and GitLab also create identities for the projects they host. If
-you have a project on GitHub with the identity of `github.com/bob/project`, someone else could create a completely
-separate project at `gitlab.com/bob/project`. Because identity (`bob/project`, in this case) on these platforms is
-portable, and not shared, it creates confusion around what's canonical and what's to be trusted.
-
-With centralized platforms, the code remains portable, but the *identity is non-portable*.
-
-A portable Radicle identity solves this problem because you always own your Radicle identity. Your identity might be
-replicated across the Radicle network, but because your key signs it, it's always yours. Your project may be replicated
-across the Radicle network, but because your identity is a delegate, only you can change your own remote/branch.
-
-Radicle identities are perfect for a peer-to-peer protocol because *the data is shipped with the source code, but not in
-the source code*.
+it, which would let developers extend Radicle's core functionality. There are many future practical uses for metadata,
+but for now, they include adding an Ethereum address or using project [issues](using-radicle/issues.md).
 
 ### Delegates
 
@@ -221,11 +203,11 @@ thanks to the [Radicle identity](#radicle-identity) system, you don't care wheth
 from a seed node or another Radicle user. You can always verify the integrity of the project and the identity of the
 person who authored it, making it truly trustless.
 
-### The `radicle-node` project
+### The `heartwood` project
 
 As of [August 2022](https://radicle.community/t/alt-clients-community-update-august-2022/3024), Radicle sunset the
-long-running [Radicle Link](https://github.com/radicle-dev/radicle-link) project in favor of the [`radicle-node`
-protocol](https://github.com/radicle-dev/radicle-node).
+long-running [Radicle Link](https://github.com/radicle-dev/radicle-link) project in favor of the [`heartwood`
+protocol](https://github.com/radicle-dev/heartwood).
 
 The primary function of the P2P protocol is to locate repositories on the network, and serve them to users, all in a
 timely, and resource-efficient manner. Thus, the protocol needs to:
