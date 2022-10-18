@@ -14,8 +14,7 @@ import Highlight from '@site/src/components/Highlight'
 
 </Highlight>
 
-Our [get started guide](getting-started.md) has a little more information about using `rad`, along with some helpful
-links.
+Our [user hub home](/) has a little more information about using `rad`, along with some helpful links.
 
 ## What is 'sovereign code infrastructure'?
 
@@ -126,11 +125,11 @@ and merge into, a "canonical" version of their project. Unlike GitHub, Radicle d
 ## Can I back up or mirror a GitHub project on Radicle?
 
 Yes! Publishing a codebase to Radicle is a great way to create a backup of your repositories. Maintaining a
-mirror of a project on Radicle is as simple as pushing to multiple remotes. 
+mirror of a project on Radicle is as simple as pushing to multiple remotes.
 
-To create a mirror, follow the [getting started](getting-started.md) guide using your existing repository, which
-initializes your project, and push the code to the Radicle network with `rad push`. To synchronize your GitHub and
-Radicle versions, run `rad push` on the `main`/`master` branch after every change.
+To create a mirror, follow our [migrate from GitHub to Radicle](migrate-github-radicle.mdx) guide using your existing
+repository, which helps you initialize your project and push the code to the Radicle network with `rad push`. To
+synchronize your GitHub and Radicle versions, run `rad push` on your current branch after every committed change.
 
 ## Can I replace GitHub with Radicle?
 
@@ -147,10 +146,7 @@ not an exact GitHub replica.
 
 Radicle currently uses seed nodes and a **push-pull** protocol that uses `git push` to send changes to seed nodes and
 `git pull` to fetch updates. With this method, your data is only stored on the seed node you chose to sync your project
-with when you [ran `rad init`](getting-started.md#create-your-radicle-project-from-a-git-directory), and with anyone who
-uses `rad clone` to create a copy of the project.
-
-We're currently working 
+with when you ran `rad init`, and with anyone who uses `rad clone` to create a copy of the project.
 
 ## Can I create private repositories on Radicle?
 
