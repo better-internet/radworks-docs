@@ -27,13 +27,6 @@ A non-unique human-readable name chosen by a Radicle [user][us]. Like a
 "nickname" for someone's [Peer ID](#peer-id). This will be possible to change in
 the future.
 
-## follow
-Following a [project][pr] replicates it to your machine. This allows the
-follower to subscribe to updates from the project's [maintainer(s)][ma] or other
-remotes. It is also a way to signal interest in the project or peer by further
-replicating the data across their network, making it available to other people
-on the network. See [Tracking][hiw-tr].
-
 ## fork
 Forking a project in Radicle clones a working copy to your machine and publishes
 it as a project to the network.
@@ -47,28 +40,24 @@ to disseminate information. Participants in the Radicle network share and spread
 data by keeping redundant copies of projects locally and sharing updates with
 peers. This allows data to be disseminated according to use and value: the more
 peers who are interested in certain data the more available it is made to the
-network. See [Gossip][hiw-rm].
+network.
 
 ## maintainer
 A [user][us] who manages and pushes updates to the canonical view of a project.
 A maintainer is explicitly associated with the [project][pr] at the time of
-creation or later, via the [project][pr] metadata (see [Data Model][hiw-dm]),
+creation or later, via the [project][pr] metadata,
 but there may be multiple maintainers of a project, all maintaining their own
 trees. At creation, the creator of the [project][pr] is the sole maintainer.
 
 ## main
 How Radicle refers to the default development branch of a project.
 
-## monorepo
-Radicle uses Git as a database. This means everything is stored in a single Git monorepo. Please see [here][hiw-mr] for more details. 
-
 ## node
 A [peer][pr] running an instance of the Radicle Link protocol. There can only be
 one node running per device.
 
 ## passphrase
-A sequence of characters used to encrypt a peer's private key (See
-[Identities][hiw-id]) to enable access to the Radicle network. It's also needed
+A sequence of characters used to encrypt a peer's private key to enable access to the Radicle network. It's also needed
 to fetch and push changesets to the Radicle network.
 
 ## peer
@@ -105,9 +94,6 @@ with `user-name/project-name`. Required for sharing a project with collaborators
 To make data public to the network. Once something is published, it may be
 fetched and replicated by connected peers.
 
-## Radicle Link
-A peer-to-peer replication protocol built on Git. See [How it Works][hiw].
-
 ## Radicle network
 The network of peers that replicate and gossip data with Radicle Link.
 
@@ -123,7 +109,17 @@ configurable N degrees out.
 ## seed
 An always-on node that automatically tracks discovered projects and serves data
 to their connected peers, thereby increasing the availability of these projects
-on the network. More on the [role and impacts of seeds][hiw-se].
+on the network. More on the [role and impacts of seeds](how-radicle-works.md#seed-nodes).
+
+## storage
+
+Radicle is moving toward a local storage mechanism where multiple projects are stored under a single root directory.
+
+```
+storage/          # root
+  <project>/...   # a git directory for a single project
+  <project>/...   # another git directory for another project
+```
 
 ## upstream
 The [repository][re] in which code contributions for a [project][pr] are
@@ -144,12 +140,3 @@ Any individual who has created a Radicle ID on the Radicle network.
 [re]: #repository
 [ri]: #radicle-id
 [us]: #user
-
-[hiw]: how-it-works.md
-[hiw-dm]: how-it-works.md/#data-model
-[hiw-id]: how-it-works.md/#identities
-[hiw-rm]: how-it-works.md/#replication-model
-[hiw-se]: how-it-works.md/#seeding
-[hiw-tr]: how-it-works.md/#tracking
-[hiw-wc]: how-it-works.md/#working-copies
-[hiw-mr]: how-it-works.md/#overview-2
