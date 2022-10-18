@@ -35,8 +35,9 @@ const sidebars = {
       collapsed: false,
       items: [
         'understanding-radicle/how-radicle-works',
+        'understanding-radicle/radicle-versus-github-gitlab',
         'understanding-radicle/glossary',
-        'understanding-radicle/faq'
+        'understanding-radicle/faq',
       ]
     },
     {

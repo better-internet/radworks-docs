@@ -99,7 +99,7 @@ Radicle will be publicly available.
 
 ## What's a remote?
 A remote refers to a version of your project that is maintained by another
-person. To collaborate with others on Radicle, you have to add and follow other
+person. To collaborate with others on Radicle, you have to add and follow 
 their remotes to be able to fetch changes from them. You can manage remotes
 on your project page. For more on how remote
 repositories work, see the [Git documentation][mr].
@@ -134,7 +134,7 @@ Without your passphrase, Radicle tools can't use the secret keypair that validat
 ## Can I change my passphrase?
 Not yet — so make sure to keep it in a safe place!
 
-## Why do I have to enter my passphrase every time ?
+## Why do I have to enter my passphrase every time?
 
 You shouldn't need to enter your passphrase every time you interact with the Radicle network. Depending on your setup,
 you may need to enter it once after login using `rad auth`.
@@ -146,7 +146,7 @@ project from your local machine, thus limiting the number of peers who can find
 and replicate your project. You can not delete a project from another peer's
 local machine, as they retain control over their local data.
 
-## I ran into a issue, where can I report it?
+## I ran into an issue, where can I report it?
 Please reach out to us in our [#support channel][sc], or submit an issue on our
 [GitHub repository][gh].
 
