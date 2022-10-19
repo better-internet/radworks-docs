@@ -3,16 +3,11 @@ id: faq
 title: FAQ
 ---
 
-import Highlight from '@site/src/components/Highlight'
+import Installation from '@site/src/components/Installation'
 
 ## How do I get started with Radicle?
 
-<Highlight>
-
-  See the **[Radicle website](https://radicle.xyz/get-started.html)** for the most up to date installation instructions
-  for macOS and Linux, including the process for creating your Radicle identity.
-
-</Highlight>
+<Installation />
 
 Our [user hub home](/) has a little more information about using `rad`, along with some helpful links.
 
