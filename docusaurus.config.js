@@ -23,6 +23,29 @@ const config = {
         indexBlog: false,
       },
     ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/understanding-radicle/how-radicle-works',
+            from: '/docs/what-is-radicle.html'
+          },
+          {
+            to: '/understanding-radicle/how-radicle-works',
+            from: '/understanding-radicle/what-is-radicle'
+          },
+          {
+            to: '/understanding-radicle/how-radicle-works',
+            from: '/understanding-radicle/why-radicle'
+          },
+          {
+            to: '/troubleshooting',
+            from: '/understanding-radicle/troubleshooting'
+          }
+        ]
+      }
+    ]
   ],
   presets: [
     [
