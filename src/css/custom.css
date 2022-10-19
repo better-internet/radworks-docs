@@ -12,6 +12,12 @@
   /* Links */
   --ifm-link-color: var(--ifm-font-color-base);
 
+  /* Navbar */
+  --ifm-navbar-height: 88px;
+
+  /* Spacing */
+  --ifm-spacing-horizontal: 2rem;
+
   /* Code blocks */
   --ifm-code-font-size: 100%;
   --prism-color: #2e2e6b;
@@ -62,7 +68,7 @@ html[data-theme='dark'] {
 
 .navbar {
   background: linear-gradient( 180deg, #dfe2fd 0%, #f3f6fd 100%);
-  border-bottom: 0px;
+  box-shadow: none;
 }
 
 html[data-theme='dark'] .navbar {

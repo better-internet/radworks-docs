@@ -59,12 +59,12 @@ const config = {
         items: [
           {
             href: 'https://radicle.xyz',
-            label: 'Radicle',
+            label: 'Home',
             position: 'right',
           },
           {
-            href: 'https://github.com/radicle-dev/',
-            label: 'GitHub',
+            href: 'https://app.radicle.xyz',
+            label: 'Browse Radicle',
             position: 'right',
           },
         ],

@@ -1,19 +1,19 @@
 import React from 'react'
+import Grid from '@site/src/components/Grid'
+import styles from './Highlight.module.css';
 
 export default function Highlight ({ children }) {
   return (
-    <div
-      style={{
-        border: '1px solid rgba(85, 85, 255, 0.7)',
-        borderRadius: '0.5rem',
-        marginBottom: '20px',
-        padding: '2rem 2rem',
-        fontSize: '20px',
-        '& p': {
-          margin: '0 0 0',
-        }
-      }}>
-      {children}
-    </div>
+    <Grid>
+      <div
+        className={styles.highlight}
+        style={{
+          marginBottom: '20px',
+          padding: '2rem 2rem',
+          fontSize: '20px',
+        }}>
+        {children}
+      </div>
+    </Grid>
   );
 }

@@ -1,0 +1,10 @@
+.highlight {
+  border: 1px solid rgba(85, 85, 255, 0.7);
+  border-radius: 0.5rem;
+  grid-column: 1 / span 2;
+  margin: 0 0 var(--ifm-paragraph-margin-bottom);
+}
+
+.highlight p {
+  margin: 0;
+}

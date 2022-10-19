@@ -28,6 +28,9 @@ Two interlacing clients create this experience:
 2. The **[web app](https://app.radicle.xyz)**, which provides a visual interface for discovering projects, viewing
    code, and viewing patches from collaborators.
 
+Curious about the ideas and protocols that make these clients possible? Read about [how Radicle
+works](understanding-radicle/how-radicle-works.md).
+
 Radicle also addresses **open source funding** through [Drips](https://www.drips.network/), an Ethereum protocol for
 generating recurring income with subscriptions and NFT memberships. Drips helps you create a circular funding network by
 dripping funds to your favorite creators and dedicating a percentage of your incoming drips to others.
@@ -95,6 +98,21 @@ infrastructure.
   <div>
     <a href="/using-radicle/track-review-merge">
       Collaborate with patches
+    </a>
+  </div>
+</Grid>
+
+### Learn more about how Radicle works
+
+<Grid>
+  <div>
+    <a href="/understanding-radicle/how-radicle-works">
+      Peek into the ideas, protocols, networks, and clients that create the Radicle experience.
+    </a>
+  </div>
+  <div>
+    <a href="/understanding-radicle/faq">
+      Learn about sovereign code infrastructure, the state of the Radicle ecosystem, and more.
     </a>
   </div>
 </Grid>
