@@ -49,14 +49,14 @@ There are a few key benefits of integrating identity into Radicle's protocols an
 - Your identity is local-first, stored and shipped within the Git data for your projects.
 - You maintain ownership of your identity no matter where it might be stored on the Radicle network, like seed nodes or,
   in the future, across the P2P network.
-- All actions your or others take within a Radicle project are cryptographically verified by default.
+- All actions you or others take within a Radicle project are cryptographically verified by default.
 
 As a user, your identity includes a **Peer ID**, a hashed Ed25519 public key that cryptographically identifies a
 _device_, which proves your identity when you're taking actions on the Radicle network, like pushing commits, commenting
 on [issues](using-radicle/issues.md), or working with patches. Others can then verify those actions via your public key.
 The **personal URN**, on the other hand, identifies you across devices.
 
-A project identity is similar, except that it includes a 
+A project identity is similar, except that it includes two additional fields, description and the default branch.
 
 Each Radicle identity also has a few required metadata fields, which determine whether it's a `Person` or `Project`
 identity:
