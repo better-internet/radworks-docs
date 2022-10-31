@@ -1,7 +1,8 @@
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1.5rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 1.5rem;
   margin: 0 0 var(--ifm-paragraph-margin-bottom);
 }
 
@@ -28,4 +29,26 @@
 .grid > div > a:hover {
   border: 0 !important;
   text-decoration: none;
+}
+
+.button {
+  grid-column: span 4;
+  border: 1px solid hsla(240, 100%, 66.7%, 0.7);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.button:hover {
+  border-color: hsl(240, 100%, 66.7%);
+  background-color: hsla(240, 100%, 66.7%, 0.1);
+  text-decoration: none;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border-radius: 0.2rem;
+  margin-bottom: 0;
 }

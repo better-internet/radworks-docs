@@ -8,3 +8,13 @@ export default function Grid ({ children }) {
     </div>
   );
 }
+
+export function Button ({ children, href, title, cta }) {
+  return (
+    <a href={href} className={styles.button}>
+      <h3>{title}</h3>
+      <p>{children}</p>
+      <p className={styles.cta}>{cta}</p>
+    </a>
+  );
+}
