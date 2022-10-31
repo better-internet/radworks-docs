@@ -78,9 +78,11 @@ If you are interested in joining any of the workstreams below, send us a note on
   </summary>
   <div>
 
-The Radicle Governance Working Group is a community initiative devoted to activating and coordinating Radilce Governance. These monthly calls on Discord allow an opportunity to discuss new proposals, communicate ideas or concerns, and receive updates within the broader Radicle community. 
+The Radicle Governance Working Group is a community initiative devoted to activating and coordinating Radicle
+Governance. These monthly calls on Discord allow an opportunity to discuss new proposals, communicate ideas or concerns,
+and receive updates within the broader Radicle community. 
     
-[Monthly Radicle Governance Calls: Notes & Recordings](https://www.notion.so/Monthly-Radicle-Governance-Calls-Notes-Recordings-643bc0e48361486a866a114ead555cdd)
+[Monthly Radicle Governance calls](/governance/calls-notes-recordings.md)
 
 🗓️ [Radicle Community Calendar](https://bit.ly/radicle-calendar) (subscribe to stay up to date on upcoming calls!)
 

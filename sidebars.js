@@ -63,6 +63,7 @@ const sidebars = {
       items: [
         'governance/transition-dao',
         'governance/treasury',
+        'governance/calls-notes-recordings',
       ]
     },
   ],

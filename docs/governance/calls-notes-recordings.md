@@ -1,11 +1,21 @@
 ---
-title: 'Monthly Radicle Governance Calls: Notes & Recordings'
+title: 'Monthly Radicle Governance calls'
 ---
+
+The governance team hosts monthly governance calls on [Discord](https://discord.gg/j2HZCBDUvF) to provide an opportunity
+to discuss new proposals, communicate ideas or concerns, and receive updates within the broader Radicle community.
+
+To figure out when the next call is happening and RSVP on Discord, check out the
+[governance/#general](https://discord.com/channels/841318878125490186/841346086740164659) channel for updates. You can
+also subscribe to the [Radicle community calendar](https://bit.ly/radicle-calendar) to see all governance-related events
+in your calendar of choice.
 
 [Recordings of all previous Governance Working Group can be found
 here!](https://www.youtube.com/playlist?list=PLUUjDC9sOrpktWjO7jNFwsisK0vi5d_Tx)
 
-## 2021
+## Recordings and notes
+
+### 2021
 
 [**Monthly Governance Call #1 (11 Aug.
 2021)**](https://www.notion.so/Monthly-Governance-Call-1-11-Aug-2021-ab9681da882a49ce9ea760b456ce2bc4)
@@ -22,9 +32,7 @@ here!](https://www.youtube.com/playlist?list=PLUUjDC9sOrpktWjO7jNFwsisK0vi5d_Tx)
 [**Monthly Governance Call #5 (8 Dec.
 2021)**](https://www.notion.so/Monthly-Governance-Call-5-8-Dec-2021-9654bab20d124e66890298b8af569515)
 
-## 2022
-
-🪴 **2022**
+### 2022
 
 [**Monthly Governance Call #6 (12 Jan.
 2022)**](https://www.notion.so/Monthly-Governance-Call-6-12-Jan-2022-16297fa7f64c4dc199b6bdc604a11b79)
