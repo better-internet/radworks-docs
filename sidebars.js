@@ -48,9 +48,10 @@ const sidebars = {
     'governance/README',
     {
       type: 'category',
-      label: 'Get involved',
+      label: 'Getting started',
       collapsed: false,
       items: [
+        'governance/how-governance-works',
         'governance/get-started',
         'governance/obtain-rad',
       ]
@@ -61,11 +62,7 @@ const sidebars = {
       collapsed: false,
       items: [
         'governance/transition-dao',
-        'governance/how-governance-works',
         'governance/treasury',
-        'governance/delegate-standards',
-        'governance/delegation-faq',
-        'governance/call-notes-recordings',
       ]
     },
   ],

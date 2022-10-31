@@ -59,7 +59,7 @@ Any delegation on Sybil for on-chain votes will be mirrored to Snapshot for off-
 
 :::
 
-Learn more on the [Radicle Governance Delegation FAQ](delegation-faq.md)
+Learn more on the [Radicle Governance Delegation FAQ](https://forest-text-046.notion.site/dcdbafa580ba4b77ac3e665139cbad1f)
 
 ### Delegate types 👥
 
@@ -93,7 +93,7 @@ In addition to the Code of Conduct, Radicle Delegates are expected to adhere to 
 requirements for ensuring healthy & safe community governance. Please review the standards before announcing yourself as
 a delegate 👇
 
-[Delegate Standards](governance/delegate-standards.md)
+[Delegate Standards](https://forest-text-046.notion.site/Delegate-Standards-63d1cbbab92440bca07d1c2eec420a2b)
 
 :::
 

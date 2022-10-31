@@ -1,5 +1,6 @@
 ---
 title: How does Radicle governance work?
+sidebar_label: Radicle governance process
 ---
 
 :::note
