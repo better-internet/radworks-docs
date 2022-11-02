@@ -9,12 +9,12 @@ export default function Grid ({ children }) {
   );
 }
 
-export function Button ({ children, href, title, cta }) {
+export function Button ({ children, style = {}, href, title, cta }) {
   return (
-    <a href={href} className={styles.button}>
+    <a href={href} className={styles.button} style={style}>
       <h3>{title}</h3>
       <p>{children}</p>
-      <p className={styles.cta}>{cta}</p>
+      <p className={styles.cta}>{cta} &rarr;</p>
     </a>
   );
 }

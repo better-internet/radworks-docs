@@ -32,8 +32,8 @@
 }
 
 .button {
-  grid-column: span 4;
-  border: 1px solid hsla(240, 100%, 66.7%, 0.7);
+  grid-column: span 6;
+  border: 1px solid hsla(240, 100%, 66.7%, 0.7) !important;
   border-radius: 0.5rem;
   padding: 1rem;
 }
@@ -42,6 +42,10 @@
   border-color: hsl(240, 100%, 66.7%);
   background-color: hsla(240, 100%, 66.7%, 0.1);
   text-decoration: none;
+}
+
+.button h3 {
+  font-size: 1.6rem;
 }
 
 .cta {
