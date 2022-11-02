@@ -43,6 +43,7 @@ const sidebars = {
   ],
   communitySidebar: [
     'community/community',
+    'community/code-of-conduct',
   ],
   governanceSidebar: [
     'governance/README',
