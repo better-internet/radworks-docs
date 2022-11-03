@@ -13,11 +13,9 @@ export default function Grid ({ children }) {
 export function Button ({ children, style = {}, href, title, cta }) {
   return (
     <Link to={href} className={styles.button} style={style}>
-      <h3>{title}</h3>
-      <p>{children}</p>
-      {cta &&
-        <p className={styles.cta}>{cta} &rarr;</p>
-      }
+      {title && <h3>{title}</h3>}
+      {children && <p>{children}</p>}
+      {cta && <p className={styles.cta}>{cta} &rarr;</p>}
     </Link>
   );
 }
