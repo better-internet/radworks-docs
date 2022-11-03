@@ -48,6 +48,10 @@
   font-size: 1.6rem;
 }
 
+.button p:last-of-type {
+  margin-bottom: 0;
+}
+
 .cta {
   display: inline-block;
   padding: 0.5rem;

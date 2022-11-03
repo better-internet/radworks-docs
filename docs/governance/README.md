@@ -2,7 +2,7 @@
 title: Radicle Governance
 ---
 
-import Grid from '@site/src/components/Grid'
+import Grid, { Button } from '@site/src/components/Grid'
 
 Welcome to the Radicle Governance Hub! This page acts as comprehensive source of information and resources that lays out
 the Radicle Governance governance process and how to participate in it.
@@ -13,29 +13,20 @@ at the core of our tech foundation, but it is what drives project development vi
 If you want to build the future of decentralized code collaboration with us, read on!
 
 <Grid>
-  <div 
-    style={{
-      gridColumn: '1 / span 2',
-      fontSize: '1.2rem',
-    }}
+  <Button
+    style={{gridColumn: '1 / span 12'}}
+    href="/governance/get-started"
+    title="Get started with governance"
   >
-    <a href="/governance/get-started">
-      Learn how to make new proposals, vote on existing ideas, and act as or find a delegate for your votes.
-    </a>
-  </div>
-</Grid>
-
-<Grid>
-  <div 
-    style={{
-      gridColumn: '1 / span 2',
-      fontSize: '1.2rem',
-    }}
+    Learn how to make new proposals, vote on existing ideas, and act as or find a delegate for your votes.
+  </Button>
+  <Button
+    style={{gridColumn: '1 / span 12'}}
+    href="/governance/transition-dao"
+    title="Learn about the DAO"
   >
-    <a href="/governance/transition-dao">
-      See the latest on our transition to fund all project development via the Treasury of the RadicleDAO!
-    </a>
-  </div>
+    See the latest on our transition to fund all project development via the Treasury of the RadicleDAO!
+  </Button>
 </Grid>
 
 ## How to get involved

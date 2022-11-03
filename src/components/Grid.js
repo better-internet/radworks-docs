@@ -14,7 +14,9 @@ export function Button ({ children, style = {}, href, title, cta }) {
     <a href={href} className={styles.button} style={style}>
       <h3>{title}</h3>
       <p>{children}</p>
-      <p className={styles.cta}>{cta} &rarr;</p>
+      {cta &&
+        <p className={styles.cta}>{cta} &rarr;</p>
+      }
     </a>
   );
 }
