@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from '@docusaurus/Link';
 import styles from './Grid.module.css';
 
 export default function Grid ({ children }) {
@@ -11,12 +12,12 @@ export default function Grid ({ children }) {
 
 export function Button ({ children, style = {}, href, title, cta }) {
   return (
-    <a href={href} className={styles.button} style={style}>
+    <Link to={href} className={styles.button} style={style}>
       <h3>{title}</h3>
       <p>{children}</p>
       {cta &&
         <p className={styles.cta}>{cta} &rarr;</p>
       }
-    </a>
+    </Link>
   );
 }
