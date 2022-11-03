@@ -4,9 +4,13 @@ title: Radicle Governance
 
 import Grid from '@site/src/components/Grid'
 
-Welcome to the Radicle Governance Hub! This page acts as comprehensive source of information and resources that lays out the Radicle Governance governance process and how to participate in it.
+Welcome to the Radicle Governance Hub! This page acts as comprehensive source of information and resources that lays out
+the Radicle Governance governance process and how to participate in it.
 
-Radicle is the most resilient open source code collaboration infrastructure to date. [Decentralization](https://radicle.community/t/the-path-to-increasing-decentralization-within-radicle/2417) is not only at the core of our tech foundation, but it is what drives project development via community governance and coordination. If you want to build the future of decentralized code collaboration with us, read on!
+Radicle is the most resilient open source code collaboration infrastructure to date.
+[Decentralization](https://radicle.community/t/the-path-to-increasing-decentralization-within-radicle/2417) is not only
+at the core of our tech foundation, but it is what drives project development via community governance and coordination.
+If you want to build the future of decentralized code collaboration with us, read on!
 
 <Grid>
   <div 

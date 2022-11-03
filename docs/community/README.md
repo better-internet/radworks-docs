@@ -5,6 +5,18 @@ title: Community Hub
 
 import Grid, { Button } from '@site/src/components/Grid'
 
+Welcome to the Radicle Community Hub! This is where you'll find project-wide resources, guidelines, and docs relevant
+for anyone who wants to participate in the Radicle community, whether that's [joining
+development](https://github.com/radicle-dev), [watching Community Calls](community/calls.md), or [joining a community
+channel](#join-the-discussion). This hub is currently maintained by the Community & Governance team.
+
+:::note
+
+We're currently working on migrating and organizing community-related information from many disparate sources. 🚧 Please
+excuse the dust. 🚧
+
+:::
+
 ## Join the project
 
 <Grid>

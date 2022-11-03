@@ -3,6 +3,11 @@
   border-radius: 0.5rem;
   padding: 1rem;
   margin-bottom: var(--ifm-paragraph-margin-bottom);
+  transition: 0.3s ease-in-out all;
+}
+
+.details:hover {
+  cursor: pointer;
 }
 
 .summaryBold {
