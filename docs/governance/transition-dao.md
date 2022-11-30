@@ -2,28 +2,49 @@
 title: Transition to the DAO
 ---
 
-![Transition to the DAO](/img/transition-dao.png)
+## Decentralization of the Radicle Project
 
-The Foundation currently funds and manages most core Radicle development, but the ultimate goal has always been to ultimately fund all project development via the Treasury of the RadicleDAO. As outlined in the [Next Phase of RadicleDAO](https://radicle.community/t/the-next-phase-of-the-radicledao/2776), we’d like to have the scaffolding in place to transition Core Teams to the DAO by November 2022 and initial teams transitioned by **February 2023.** 
+From its inception, Radicle was envisioned as a new kind of open-source project — one built, governed, and financed on
+the internet. Over the past few years, the team has been deploying the technical, economic, and social foundations
+necessary to achieve [this
+vision](https://radicle.community/t/the-path-to-increasing-decentralization-within-radicle/2417). 
 
-To formulate and execute these goals, we have created four *workstreams* focusing on different aspects of the transition. All posts and updates for each workstream can be found under the [Transition to the DAO](https://radicle.community/c/governance/dao-transition/34) section on radicle.community. You can also follow updates from the workstreams on Discord in the coresponding channels under *Governance.* If you would like to get involved with any of the workstreams, please respond to the corresponding post.
+This started with the creation of the Radicle Foundation and deployment of the RAD governance token in early 2021. This
+was the first step towards the creation of the DAO and handing over POWER to contributors to the project. The Foundation
+funded and managed most core Radicle development and their core teams. The RAD token ensured a health treasury to start
+funding development and initiatives from. An initial governance process was announced in February 2021 and has seen
+various proposals pass through its process.
 
-### **Recent Workstream Updates** 🛠️
+## Radicle Foundation -> Radicle DAO
 
-👉  Org Design
+Throughout the past year, [furthering
+decentralization](https://radicle.community/t/the-next-phase-of-the-radicledao/2776) of the project has been a priority.
+A large part of this work entails transitioning core team funding and coordination responsibilities of the Foundation
+over to the DAO.  Four “worksreams” were formed to explore important aspects of the transition in detail. These included
+*Org Design, DAO Tooling, Distribution of Ownership* and *Distribution of Influence.* All posts and updates for each
+workstream can be found under the [Transition to the
+DAO](https://radicle.community/c/governance/dao-transition/34) section on radicle.community. As outlined in the [Next
+Phase of RadicleDAO](https://radicle.community/t/the-next-phase-of-the-radicledao/2776/16), we’ll be putting scaffolding
+in place to transition Core Teams to the DAO over the next year.
 
-- [[Org Design] Next Steps: Introducing the Core Development Org](https://radicle.community/t/org-design-next-steps-introducing-the-core-development-org/3039)
-- [[Org Design] Funding Core Teams: Principles & Criteria [v2]](https://radicle.community/t/org-design-funding-core-teams-principles-criteria-v2/3040)
+The other main Orgs (sub-DAOs) of the Radicle DAO ecosystem will include the Radicle Grants Org, the Radicle Institute
+Org and the Radicle Foundation Org. Radicle Grants will be responsible for funding technical proposals that support open
+source initiatives that help grow the Radicle product, community, and the greater Free and Open Source Software (FOSS)
+and Web3 community at large. The Radicle Institute (formerly EFG) aims to fund initiatives that drive awareness,
+engagement, and adoption of the Radicle stack. The Radicle Foundation will remain at a very limited capacity as an
+entity that safeguards Radicle trademarks and can be funded by the DAO (like any other contributor) to accomplish any
+offline activities and anything the DAO can’t do. 
 
-👉  DAO Tooling 
+## Path Forward
 
-- [DAO Tooling Workstream: Mapping, Timeline & Further Discussion](https://radicle.community/t/dao-tooling-workstream-mapping-timeline-further-discussion/2920)
-- [DAO Tooling Archive](https://www.notion.so/f520a066f3264d988840f87f460d0467)
+The for the remainder of 2022, the Core Development Org Working Group will work together with core development teams to
+scope the shifting types of roles and responsibilities and assess where what different types of decisions will need to
+be made where. These changes will also require a discussion on *how* these decisions will be made within and between the
+Core Development Org and teams. The consideration of changing governance needs also extends to the coordination across
+the entire DAO, including figuring out how different Orgs within the DAO can coordinate with and influence each other.
+This will require us to consider governance mechanisms that go beyond token governance, such as non-tokenized options,
+to effectively and efficiently be able to function as a DAO. 
 
-👉 Distribution of Ownership
-
-- [Introduction to the Distribution of Ownership](https://radicle.community/t/distribution-of-ownership-workstream/2886/2)
-
-👉  Distribution of Influence
-
-- [Distribution of Influence Kick-off](https://www.notion.so/f7f215c5998943d3ab3692da2cb80602)
+The definition of this emerging process has only been possible through the participation and contributions of Radicle’s
+contributors. Navigating such a big change has been no small task and if we are going to truly create a sustainable and
+prosperous future for the project it needed to receive input from as many perspectives as possible.
