@@ -48,16 +48,9 @@ const sidebars = {
   ],
   governanceSidebar: [
     'governance/README',
-    {
-      type: 'category',
-      label: 'Getting started',
-      collapsed: false,
-      items: [
-        'governance/get-started',
-        'governance/how-governance-works',
-        'governance/obtain-rad',
-      ]
-    },
+    'governance/get-started',
+    'governance/how-governance-works',
+    'governance/obtain-rad',
     {
       type: 'category',
       label: 'Learn more',
