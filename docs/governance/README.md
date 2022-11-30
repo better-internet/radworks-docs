@@ -4,133 +4,60 @@ title: Governance Overview
 
 import Grid, { Button } from '@site/src/components/Grid'
 
-Welcome to the Radicle Governance Hub! This page acts as comprehensive source of information and resources that lays out
-the Radicle Governance governance process and how to participate in it.
+Welcome to Radicle’s version-controlled governance documentation! These docs consist of carefully curated information
+and resources that lay out the Radicle’s token voting governance process and how to participate in it.
 
-Radicle is the most resilient open source code collaboration infrastructure to date.
-[Decentralization](https://radicle.community/t/the-path-to-increasing-decentralization-within-radicle/2417) is not only
-at the core of our tech foundation, but it is what drives project development via community governance and coordination.
-If you want to build the future of decentralized code collaboration with us, read on!
+Radicle is the most resilient open source code collaboration infrastructure to
+date. [Decentralization](https://radicle.community/t/the-path-to-increasing-decentralization-within-radicle/2417) is not
+only at the core of our tech foundation, but it is what drives project development via community governance and
+coordination. If you want to build the future of decentralized code collaboration with us, read on!
 
 <Grid>
   <Button
     style={{gridColumn: '1 / span 12'}}
     href="/governance/get-started"
-    title="Get started with governance"
+    title="Get started"
   >
-    Learn how to make new proposals, vote on existing ideas, and act as or find a delegate for your votes.
+    Learn how to create proposals, vote on them, and become a delegate.
   </Button>
   <Button
     style={{gridColumn: '1 / span 12'}}
     href="/governance/transition-dao"
-    title="Learn about the DAO"
+    title="Learn about the RadicleDAO"
   >
-    See the latest on our transition to fund all project development via the Treasury of the RadicleDAO!
+    Read more about our vision for decentralized governance, the project’s ‘Transition to the DAO’, and where to stay up to date.
+  </Button>
+  <Button
+    style={{gridColumn: '1 / span 12'}}
+    href="https://boardroom.io/radicle/"
+    title="View our voting portal"
+  >
+    Our Boardroom instances lists active/pending proposals, a history of previous votes, and details about our voters and delegates.
   </Button>
 </Grid>
 
-## How to get involved
+## Radicle Governance Team
 
-Governance is an open forum: anyone can contribute feedback, ideas, or suggestions on new initiatives. We’re interested
-to hear your feedback on the proposed ideas, and on any other suggestions or best practices for the treasury, or
-governance more broadly.
+Interesting in governance at Radicle? Join the Radicle [Discord](https://discord.gg/dZK4TxaU2v) community and slide into
+the (`governance`) [#discussion](https://discord.com/channels/841318878125490186/841346086740164659) and
+[#governance-updates](https://discord.com/channels/841318878125490186/841408472447844352) channels to stay up to date on
+all things Radicle governance.
 
-> Visit the **[➡️ Radicle Governance Portal](https://boardroom.io/radicle/overview)**!
+There are currently several areas of focus within the governance team. If you are interested in joining any of the
+initiatives below, send us a note on Discord! 
 
-<details>
-  <summary>
+**Steward Governance**
 
-🛠️ **Radicle Governance Core Team**
+Facilitate the coordination around governance proposals, maintain relevant governance resources and documentation,
+communicate governance updates to the broader community, and actively develop tooling & process improvements.
 
-  </summary>
-  <div>
+T**ransition to the DAO**
 
-Join the party, the fun has just begun! Join the Radicle [Discord](http://discord.gg/HRdnwAwGbG) community and slide
-into the GOVERNANCE [#discussion](https://discord.gg/dcpajWZR) and [#working-group](https://discord.gg/AaUFBUKf)
-channels to stay up to date on all things Radicle governance and treasury management.
+Conceptualize changing governance needs and possible improvements that will be needed to effectively and efficiently
+function as a DAO. This includes strategizing how we can better distribute influence and ownership of the project within
+the project. 
 
-There are currently several workstreams within the working group being formed. Each workstream has a lead or co-leads
-who are responsible for taking ownership of the workstream and championing it forward.
+**Treasury Management**
 
-If you are interested in joining any of the workstreams below, send us a note on Discord!
-
-- **Treasury Management.** The Treasury Management workstream is led by Derek and Larry from Reverie. The goal for this
-  workstream is to discuss how to manage Radicle’s treasury and establish formal processes for doing so.
-- **Grants.** The Grants workstream is co-led by Abbey, [Jenny 1](https://twitter.com/Jenny_Pollack), Derek, and Larry.
-  The goal of the Grants workstream is to design and form the Radicle Grants Program.
-- **Growth.** The Growth workstream is co-led by Abbey, Jenny, Derek, and Larry. The goal of the Growth workstream is to
-  design and implement initiatives that grow usage of Radicle.
-
-
-  </div>
-</details>
-
-<details>
-  <summary>
-
-🤳 **Monthly Governance Calls**
-
-  </summary>
-  <div>
-
-The Radicle Governance Working Group is a community initiative devoted to activating and coordinating Radicle
-Governance. These monthly calls on Discord allow an opportunity to discuss new proposals, communicate ideas or concerns,
-and receive updates within the broader Radicle community. 
-    
-[Monthly Radicle Governance calls](/governance/calls-notes-recordings.md)
-
-🗓️ [Radicle Community Calendar](https://bit.ly/radicle-calendar) (subscribe to stay up to date on upcoming calls!)
-
-  </div>
-</details>
-
-<details>
-  <summary>
-
-📋 **Community Forum**
-
-  </summary>
-  <div>
-
-For juicer discussions on governance and Radicle development, join our [community forum](https://radicle.community/) and
-check out the Governance category. This is also where [Temperature Checks] and [Proposals] will be posted and discussed.
-
-  </div>
-</details>
-
-<details>
-  <summary>
-
-💻 **Radicle Mirror Blog**
-
-  </summary>
-  <div>
-
-Radicle’s community team believes anyone should be able to contribute to blog posts, ob-boarding guides and other
-content. Have something to add to the discourse? Share your thoughts and ideas on the [Radicle Community
-Blog](https://radicle.mirror.xyz/) hosted on Mirror.
-
-  </div>
-</details>
-
-<details>
-  <summary>
-
-🛸 **Twitter & Telegram**
-
-  </summary>
-  <div>
-
-Follow [Radicle Governance](https://twitter.com/rad_gov) on Twitter for important updates and reminders for governance
-proposals.
-
-For general Radicle updates & discussion, follow [Radicle](https://twitter.com/radicle) on Twitter and join our Telegram
-channel ([@radicleworld](https://t.me/radicleworld)).
-
-  </div>
-</details>
-
-## Questions?
-
-Feel free to reach out in the #❓help channel under [Governance on
-Discord](https://discord.com/channels/841318878125490186/843873418205331506) with any questions or comments.
+Develop a coordinated, value-aligned treasury management mission and initiate the creation of a Treasury Management
+Working Group to help create and maintain a mission-focused treasury strategy.
