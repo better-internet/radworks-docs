@@ -51,7 +51,7 @@ initiatives below, send us a note on Discord!
 Facilitate the coordination around governance proposals, maintain relevant governance resources and documentation,
 communicate governance updates to the broader community, and actively develop tooling & process improvements.
 
-T**ransition to the DAO**
+**Transition to the DAO**
 
 Conceptualize changing governance needs and possible improvements that will be needed to effectively and efficiently
 function as a DAO. This includes strategizing how we can better distribute influence and ownership of the project within
