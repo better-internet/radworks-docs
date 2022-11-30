@@ -40,7 +40,7 @@ coordination. If you want to build the future of decentralized code collaboratio
 
 Interesting in governance at Radicle? Join the Radicle [Discord](https://discord.gg/dZK4TxaU2v) community and slide into
 the (`governance`) [#discussion](https://discord.com/channels/841318878125490186/841346086740164659) and
-[#governance-updates](https://discord.com/channels/841318878125490186/841408472447844352) channels to stay up to date on
+[#governance-updates](https://discord.com/channels/841318878125490186/955793826264514560) channels to stay up to date on
 all things Radicle governance.
 
 There are currently several areas of focus within the governance team. If you are interested in joining any of the

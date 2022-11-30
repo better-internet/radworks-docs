@@ -27,6 +27,6 @@ Below is a roadmap of the proposal process. Proposals should include executable 
 
 :::tip
 
-🔎 Want to become a $RAD holder and active voter? Start by [obtaining $RAD tokens](/governance/obtain-rad)
+🔎 Want to become a $RAD holder and active voter? Start by [obtaining $RAD](/governance/obtain-rad)
 
 :::
