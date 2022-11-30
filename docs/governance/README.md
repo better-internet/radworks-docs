@@ -1,5 +1,5 @@
 ---
-title: Radicle Governance
+title: Governance Overview
 ---
 
 import Grid, { Button } from '@site/src/components/Grid'
@@ -124,7 +124,7 @@ Blog](https://radicle.mirror.xyz/) hosted on Mirror.
 Follow [Radicle Governance](https://twitter.com/rad_gov) on Twitter for important updates and reminders for governance
 proposals.
 
-For general RAD updates & discussion, follow [Radicle](https://twitter.com/radicle) on Twitter and join our Telegram
+For general Radicle updates & discussion, follow [Radicle](https://twitter.com/radicle) on Twitter and join our Telegram
 channel ([@radicleworld](https://t.me/radicleworld)).
 
   </div>

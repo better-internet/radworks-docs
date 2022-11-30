@@ -1,5 +1,5 @@
 ---
-title: Get started with governance
+title: Get Started with Governance
 ---
 
 ## Proposing 💍
@@ -31,8 +31,8 @@ changes needs to be communicated in the proposal.
 
 ## Voting 🗳️
 
-Voting requires Radicle (RAD) tokens, which you can [obtain here](governance/obtain-rad.md). One RAD token is equal to
-one vote and all voting rounds require a minimum participation threshold of 4M RAD (4% of total RAD supply). Proposals
+Voting requires Radicle ($RAD) tokens, which you can [obtain here](governance/obtain-rad.md). One $RAD token is equal to
+one vote and all voting rounds require a minimum participation threshold of 4M $RAD (4% of total $RAD supply). Proposals
 are passed by obtaining a majority "in-favor" votes.
 
 **Voting takes place both on- and off-chain.**
@@ -51,11 +51,11 @@ On-chain voting is enabled by delegating voting rights to the address (or addres
 - Another user's wallet, if they would like the other user to vote on their behalf.
 - No wallet, if they don't want to vote.
 
-Delegation takes place on [Sybil](https://gov.radicle.network/#/delegates/radicle). After connecting a wallet holding RAD, you are then able to delegate to either yourself or others. If you are delegating to yourself, after the delegation process is complete you are able to participate in on-chain voting. If you are delegating to others, they will received the amount you delegate as voting power to participate in on-chain voting.
+Delegation takes place on [Sybil](https://gov.radicle.network/#/delegates/radicle). After connecting a wallet holding $RAD, you are then able to delegate to either yourself or others. If you are delegating to yourself, after the delegation process is complete you are able to participate in on-chain voting. If you are delegating to others, they will received the amount you delegate as voting power to participate in on-chain voting.
 
 :::note
 
-Any delegation on Sybil for on-chain votes will be mirrored to Snapshot for off-chain votes - i.e. any RAD that is delegated to your wallet on Sybil will be able to be able to be used to vote in off-chain Snapshot polls. 
+Any delegation on Sybil for on-chain votes will be mirrored to Snapshot for off-chain votes - i.e. any $RAD that is delegated to your wallet on Sybil will be able to be able to be used to vote in off-chain Snapshot polls. 
 
 :::
 

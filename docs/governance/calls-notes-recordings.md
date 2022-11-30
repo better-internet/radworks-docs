@@ -1,5 +1,5 @@
 ---
-title: 'Monthly Radicle Governance calls'
+title: Monthly Radicle Governance Calls
 ---
 
 The governance team hosts monthly governance calls on [Discord](https://discord.gg/j2HZCBDUvF) to provide an opportunity

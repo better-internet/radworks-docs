@@ -85,6 +85,6 @@ excuse the dust. 🚧
     title="Radicle Governance Updates"
     cta="Subscribe"
   >
-    Get updates on the latest <a href="/governance">governance</a> news for RAD holders and delegates, including links to active proposals, governance team updates, and highlights exciting activity to keep an eye out for in coming weeks. 
+    Get updates on the latest <a href="/governance">governance</a> news for $RAD holders and delegates, including links to active proposals, governance team updates, and highlights exciting activity to keep an eye out for in coming weeks. 
   </Button>
 </Grid>

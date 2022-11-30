@@ -1,13 +1,13 @@
 ---
 id: obtain-rad
-title: Obtain RAD tokens
+title: Obtain $RAD Tokens
 ---
 
-RAD is the native governance token for Radicle, making it the first open-source, community-led, and self-sustaining
-network for software collaboration. Read more about RAD in our [introductory blog
+$RAD is the native governance token for Radicle, making it the first open-source, community-led, and self-sustaining
+network for software collaboration. Read more about $RAD in our [introductory blog
 post](https://radicle.mirror.xyz/CgcHpSXUlPvwMVaUVVaJ7r8bIJI2BOKOytaI9-nO9oY).
 
-You can obtain RAD from a number of sources, including but not limited to the following places. None of these sources
+You can obtain $RAD from a number of sources, including but not limited to the following places. None of these sources
 are endorsed by the Radicle Foundation, Treasury, or DAO.
 
 ## Distributed exchanges

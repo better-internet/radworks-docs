@@ -1,6 +1,6 @@
 ---
 title: How does Radicle governance work?
-sidebar_label: Radicle governance process
+sidebar_label: Radicle Governance Process
 ---
 
 :::note
@@ -9,9 +9,9 @@ The information below outlines Radicle’s current governance process. As Radicl
 
 :::
 
-Radicle operates via tokenized governance, where the Radicle token (RAD) is the designated governance token. RAD holders can influence decisions concerning the project by proposing changes and voting on new proposals. Each [Radicle token](https://radicle.xyz/blog/introducing-rad.html) is equal to one vote. You can find more details on proposing and voting below. 
+Radicle operates via tokenized governance, where the Radicle token ($RAD) is the designated governance token. RAD holders can influence decisions concerning the project by proposing changes and voting on new proposals. Each [Radicle token](https://radicle.xyz/blog/introducing-rad.html) is equal to one vote. You can find more details on proposing and voting below. 
 
-Below is a roadmap of the proposal process. Proposals should include executable code and can be proposed by anyone who has 1% RAD delegated to their address. Once a proposal is implemented, the code that is part of the proposal is executed. These posts can be found at [radicle.community](http://radicle.community) under the *Governance* section.
+Below is a roadmap of the proposal process. Proposals should include executable code and can be proposed by anyone who has 1% $RAD delegated to their address. Once a proposal is implemented, the code that is part of the proposal is executed. These posts can be found at [radicle.community](http://radicle.community) under the *Governance* section.
 
 | 🌡                     | 🍿                                       | 🎙                 | 🚀                       |
 |-----------------------|-----------------------------------------|-------------------|-------------------------|
@@ -27,7 +27,7 @@ Below is a roadmap of the proposal process. Proposals should include executable 
 
 :::tip
 
-🔎 Want to become a RAD holder and active voter? Start by [obtaining RAD tokens](/governance/obtain-rad)
+🔎 Want to become a $RAD holder and active voter? Start by [obtaining $RAD tokens](/governance/obtain-rad)
 
 :::
 
