@@ -30,9 +30,9 @@ coordination. If you want to build the future of decentralized code collaboratio
   <Button
     style={{gridColumn: '1 / span 12'}}
     href="https://boardroom.io/radicle/"
-    title="View our voting portal"
+    title="View the Radicle Governance Portal"
   >
-    Our Boardroom instances lists active/pending proposals, a history of previous votes, and details about our voters and delegates.
+    Vote on active proposals or view the history of previous votes on our Boardroom instance.
   </Button>
 </Grid>
 

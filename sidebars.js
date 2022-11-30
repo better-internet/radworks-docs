@@ -53,8 +53,8 @@ const sidebars = {
       label: 'Getting started',
       collapsed: false,
       items: [
-        'governance/how-governance-works',
         'governance/get-started',
+        'governance/how-governance-works',
         'governance/obtain-rad',
       ]
     },

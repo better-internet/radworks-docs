@@ -1,24 +1,13 @@
 ---
-title: Get Started with Governance
+title: Getting Started
 ---
 
-## Proposing 💍
+Here’s a quickstart guide on how to participate in Radicle governance.
 
-Anybody with 1M RAD (1% of total RAD supply) delegated to their address can propose a Governance Proposal.
+## Creating a proposal
 
-1. Submit a **Temperature Check** for a proposal to the governance forum. Please follow the formal below:
-   - **Summary** - A brief description of the proposal and its end goal.
-   - **Motivation** - An overview of the motivation behind the proposal, including the context and other helpful details.
-   - **Specification** - List any technical specifications to the proposal as well as any foreseeable pros/cons.
-2. Use feedback from the Temperature Check to draft a proposal that meets the criteria set in this document and start a
-   **Structured Discussion** *(t/r 5 days)*
-3. Use feedback from the Temperature Check to draft a proposal that meets the criteria set in this document and start a
-   Structured Discussion (t/r 5 days)
-   - 🚨 Voting for Snapshot polls should start on a **Monday, at 5pm CET** and end on the **following Monday, at 5pm CET**
-4. If passed, deploy a Governance Proposal via [rad gov](https://github.com/radicle-dev/radgov). *(t/r 3 days)*
-
-See a full description of the [stages of proposal
-implementation](https://radicle.community/t/readme-radicle-governance-process/526).
+To propose a Governance Proposal to the DAO, it must make its way through the public community review process. Please
+refer to the **Governance Manual** for a full description of how to get started with creating a proposal.
 
 :::note
 
@@ -29,21 +18,22 @@ changes needs to be communicated in the proposal.
 
 :::
 
-## Voting 🗳️
+## Voting on existing proposals
 
-Voting requires Radicle ($RAD) tokens, which you can [obtain here](governance/obtain-rad.md). One $RAD token is equal to
-one vote and all voting rounds require a minimum participation threshold of 4M $RAD (4% of total $RAD supply). Proposals
-are passed by obtaining a majority "in-favor" votes.
+Voting in on-chain token governance requires $RAD, the project’s native governance token. To obtain $RAD, you can follow
+these steps [LINK]. One $RAD token is equal to one vote and all voting rounds require a minimum participation threshold
+of 4M RAD (4% of total circulating supply). If participation thresholds are met, proposals are passed by obtaining a
+majority “in-favor” votes.
 
-**Voting takes place both on- and off-chain.**
+Voting takes place both on- and off-chain:
 
-- Snapshot Votes: Off-chain consensus check via [Snapshot polls](https://snapshot.org/#/gov.radicle.eth) for Temperature Checks that are under Formal Review.
-- Governance Proposal Votes: On-chain voting for Governance Proposals take place on [gov.radicle.network](https://gov.radicle.network/#/delegates/radicle).
+- Formal Reviews: Off-chain consensus checks are done via Snapshot polls.
+- Governance Proposals: Token voting for on-chain proposals take place on the Radicle Governance Portal.
 
 **You can keep track of all open proposals and vote directly on the [Radicle Governance
 Portal](https://boardroom.io/radicle/overview). 🌱 🏛️**
 
-## Delegation ⚡
+## On-chain voting with delegation
 
 On-chain voting is enabled by delegating voting rights to the address (or addresses) of the token holder's choice:
 
@@ -51,17 +41,20 @@ On-chain voting is enabled by delegating voting rights to the address (or addres
 - Another user's wallet, if they would like the other user to vote on their behalf.
 - No wallet, if they don't want to vote.
 
-Delegation takes place on [Sybil](https://gov.radicle.network/#/delegates/radicle). After connecting a wallet holding $RAD, you are then able to delegate to either yourself or others. If you are delegating to yourself, after the delegation process is complete you are able to participate in on-chain voting. If you are delegating to others, they will received the amount you delegate as voting power to participate in on-chain voting.
+Delegation takes place on [Sybil](https://sybil.org/#/delegates/radicle). After connecting a wallet holding $RAD, you
+are then able to delegate to either yourself or others. If you are delegating to yourself, after the delegation process
+is complete you are able to participate in on-chain voting. If you are delegating to others, they will received the
+amount you delegate as voting power to participate in on-chain voting.
 
 :::note
 
-Any delegation on Sybil for on-chain votes will be mirrored to Snapshot for off-chain votes - i.e. any $RAD that is delegated to your wallet on Sybil will be able to be able to be used to vote in off-chain Snapshot polls. 
+Any delegation on Sybil for on-chain votes will be mirrored to Snapshot for off-chain votes - i.e. any $RAD that is delegated to your wallet on Sybil will be able to be able to be used to vote in off-chain Snapshot polls.
 
 :::
 
 Learn more on the [Radicle Governance Delegation FAQ](https://forest-text-046.notion.site/dcdbafa580ba4b77ac3e665139cbad1f)
 
-### Delegate types 👥
+### Delegate types
 
 There are two types of delegates in the Radicle governance process - a regular delegate and an “Active Delegate”. The main difference between the two is the Active Delegates have shared a more detailed profile of their expertise, governance values and conflicts of interest on the Active Delegate Platform and have committed to share their thoughts on each proposal so token holders are better able to assess  who they would like to delegate to. 
 
@@ -87,7 +80,7 @@ find a list of active community delegates!
 
 :::
 
-:::warning
+:::caution
 
 In addition to the Code of Conduct, Radicle Delegates are expected to adhere to our Delegate Standards, a set of
 requirements for ensuring healthy & safe community governance. Please review the standards before announcing yourself as
@@ -100,10 +93,27 @@ a delegate 👇
 ## Never miss a vote!
 
 The best way to get live governance updates is by following the Radicle Governance Twitter
-([@rad_gov](https://twitter.com/rad_gov)) or follow the 🏛️governance-updates channel on Discord. These accounts act as
+([@rad_gov](https://twitter.com/rad_gov)) or follow the [🏛️governance-updates channel](https://discord.com/channels/841318878125490186/841408472447844352) on Discord. These accounts act as
 governance “ticker” accounts and include all of the information and links needed to participate in voting. You can also
 set up [email notifications](https://app.tango.us/app/workflow/Email-Notifications-ac8d8e2eff5746f48ebd17e1f6b2b6ff) directly from the the calendar on our [Boardroom governance portal](https://boardroom.io/radicle/overview). 
 
 The *Radicle Governance Updates* newsletter is a bi-weekly newsletter that provides updates on recent proposals, what
 the governance team is focusing on, as well as event and other reminders. You can [subscribe
 here](https://bit.ly/3trPqXA).
+
+## What proposals are active right now?
+
+Check out our [Active Proposal
+Tracker](https://forest-text-046.notion.site/dbc74d3069cb4b4dbe937396fffed226?v=a9bc2f48859f407884381d4ba6a4186f) for
+details on programs currently in the pipeline.
+
+## Tooling Glossary
+
+Here's a quick breakdown of the tools Radicle uses for governance:
+
+- [Boardroom](https://boardroom.io/radicle/): Our primary portal for decentralized governance, including on-chain
+  voting.
+- [Snapshot](https://snapshot.org/#/gov.radicle.eth): Used for off-chain consensus checks on proposals working through
+  the governance process.
+- [Sybil](https://sybil.org/#/delegates/radicle): A platform for delegating votes to yourself or another active Radicle
+  delegate.
