@@ -7,14 +7,13 @@ Here’s a quickstart guide on how to participate in Radicle governance.
 ## Creating a proposal
 
 To propose a Governance Proposal to the DAO, it must make its way through the public community review process. Please
-refer to the **Governance Manual** for a full description of how to get started with creating a proposal.
+refer to the [**Governance Manual**](manual.md) for a full description of how to get started with creating a proposal.
 
 :::note
 
-Community “Champions” (the individual(s) who created a proposal) are expected to escalate proposals from phase to phase,
-with guidance from community moderators. This also means they are responsible for creating forum posts for each stage.
-If the original Champion can’t move a Proposal forward, they are responsible for finding someone to replace them. Any
-changes needs to be communicated in the proposal.
+The individual(s) who create a proposal are known as the proposal “Champions.” They are expected to escalate proposals
+from phase to phase, with guidance from community moderators. This also means they are responsible for creating forum
+posts for each stage.
 
 :::
 
@@ -22,8 +21,8 @@ changes needs to be communicated in the proposal.
 
 Voting in on-chain token governance requires $RAD, the project’s native governance token. To obtain $RAD, you can follow
 these steps [LINK]. One $RAD token is equal to one vote and all voting rounds require a minimum participation threshold
-of 4M RAD (4% of total circulating supply). If participation thresholds are met, proposals are passed by obtaining a
-majority “in-favor” votes.
+of 4M RAD (4% of total $RAD supply). If participation thresholds are met, proposals are passed by obtaining a majority
+“in-favor” votes.
 
 Voting takes place both on- and off-chain:
 
@@ -33,7 +32,7 @@ Voting takes place both on- and off-chain:
 **You can keep track of all open proposals and vote directly on the [Radicle Governance
 Portal](https://boardroom.io/radicle/overview). 🌱 🏛️**
 
-## On-chain voting with delegation
+## Delegation
 
 On-chain voting is enabled by delegating voting rights to the address (or addresses) of the token holder's choice:
 
@@ -41,24 +40,30 @@ On-chain voting is enabled by delegating voting rights to the address (or addres
 - Another user's wallet, if they would like the other user to vote on their behalf.
 - No wallet, if they don't want to vote.
 
-Delegation takes place on [Sybil](https://sybil.org/#/delegates/radicle). After connecting a wallet holding $RAD, you
-are then able to delegate to either yourself or others. If you are delegating to yourself, after the delegation process
-is complete you are able to participate in on-chain voting. If you are delegating to others, they will received the
-amount you delegate as voting power to participate in on-chain voting.
+Delegation takes place on-chain (e.g. via Boardroom or Tally). After connecting a wallet holding $RAD, you are then able
+to delegate to either yourself or others. If you are delegating to yourself, after the delegation process is complete
+you are able to participate in on-chain voting. If you are delegating to others, they will received the amount you
+delegate as voting power to participate in on-chain voting.
 
 :::note
 
-Any delegation on Sybil for on-chain votes will be mirrored to Snapshot for off-chain votes - i.e. any $RAD that is delegated to your wallet on Sybil will be able to be able to be used to vote in off-chain Snapshot polls.
+Any delegation made on-chain will be mirrored to Snapshot for off-chain votes - i.e. any $RAD that is delegated to your
+wallet on-chain will be able to be able to be used to vote in off-chain Snapshot polls.
 
 :::
 
 Learn more on the [Radicle Governance Delegation FAQ](https://forest-text-046.notion.site/dcdbafa580ba4b77ac3e665139cbad1f)
 
-### Delegate types
+### Delegate Types
 
-There are two types of delegates in the Radicle governance process - a regular delegate and an “Active Delegate”. The main difference between the two is the Active Delegates have shared a more detailed profile of their expertise, governance values and conflicts of interest on the Active Delegate Platform and have committed to share their thoughts on each proposal so token holders are better able to assess  who they would like to delegate to. 
+There are two types of delegates in the Radicle governance process - a regular delegate and an “Active Delegate”. The
+main difference between the two is the Active Delegates have shared a more detailed profile of their expertise,
+governance values and conflicts of interest on the Active Delegate Platform and have committed to share their thoughts
+on each proposal so token holders are better able to assess  who they would like to delegate to. 
 
-You **DO NOT** have to announce yourself as an active delegate for someone to delegate to your address on Sybil. The Active Delegate Platform is meant to provide an opportunity for motivated community members to make themselves known to the broader Radicle community to let token holders know they are happy to vote on their behalf.
+You **DO NOT** have to announce yourself as an Active Delegate for someone to delegate to your address. The Active
+Delegate Platform is meant to provide an opportunity for motivated community members to make themselves known to the
+broader Radicle community to let token holders know they are happy to vote on their behalf.
 
 **How to become a Delegate:**
 
@@ -101,12 +106,6 @@ The *Radicle Governance Updates* newsletter is a bi-weekly newsletter that provi
 the governance team is focusing on, as well as event and other reminders. You can [subscribe
 here](https://bit.ly/3trPqXA).
 
-## What proposals are active right now?
-
-Check out our [Active Proposal
-Tracker](https://forest-text-046.notion.site/dbc74d3069cb4b4dbe937396fffed226?v=a9bc2f48859f407884381d4ba6a4186f) for
-details on programs currently in the pipeline.
-
 ## Tooling Glossary
 
 Here's a quick breakdown of the tools Radicle uses for governance:
@@ -115,5 +114,5 @@ Here's a quick breakdown of the tools Radicle uses for governance:
   voting.
 - [Snapshot](https://snapshot.org/#/gov.radicle.eth): Used for off-chain consensus checks on proposals working through
   the governance process.
-- [Sybil](https://sybil.org/#/delegates/radicle): A platform for delegating votes to yourself or another active Radicle
-  delegate.
+- [Tally](https://www.tally.xyz/gov/eip155:1:0x690e775361AD66D1c4A25d89da9fCd639F5198eD): An alternative proposal
+  creation and voting platform, which pulls from same contracts as Boardroom.

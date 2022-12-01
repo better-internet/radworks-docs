@@ -17,10 +17,12 @@ various proposals pass through its process.
 
 ## Radicle Foundation -> Radicle DAO
 
+![A diagram showing the transition from Monadic GmbH in 2017, to Radicle Foundation in 2021, and to Radicle DAO in 2022.](/img/radicle-dao.png)
+
 Throughout the past year, [furthering
 decentralization](https://radicle.community/t/the-next-phase-of-the-radicledao/2776) of the project has been a priority.
 A large part of this work entails transitioning core team funding and coordination responsibilities of the Foundation
-over to the DAO.  Four “worksreams” were formed to explore important aspects of the transition in detail. These included
+over to the DAO.  Four “workstreams” were formed to explore important aspects of the transition in detail. These included
 *Org Design, DAO Tooling, Distribution of Ownership* and *Distribution of Influence.* All posts and updates for each
 workstream can be found under the [Transition to the
 DAO](https://radicle.community/c/governance/dao-transition/34) section on radicle.community. As outlined in the [Next
@@ -37,13 +39,16 @@ offline activities and anything the DAO can’t do.
 
 ## Path Forward
 
-The for the remainder of 2022, the Core Development Org Working Group will work together with core development teams to
-scope the shifting types of roles and responsibilities and assess where what different types of decisions will need to
-be made where. These changes will also require a discussion on *how* these decisions will be made within and between the
-Core Development Org and teams. The consideration of changing governance needs also extends to the coordination across
-the entire DAO, including figuring out how different Orgs within the DAO can coordinate with and influence each other.
-This will require us to consider governance mechanisms that go beyond token governance, such as non-tokenized options,
-to effectively and efficiently be able to function as a DAO. 
+![A diagram showing the relationship between RadicleDAO, RGP, EGF, Radicle Foundation, and Core Dev Org.](/img/radicle-dao-path.png)
+
+For the remainder of 2022, the [Core Development Org Working
+Group](https://radicle.community/t/open-call-core-development-org-design-working-group/3042) will collaborate with core
+development teams to scope the shifting types of roles and responsibilities and assess where what different types of
+decisions will need to be made where. These changes will also require a discussion on *how* these decisions will be made
+within and between the Core Development Org and teams. The consideration of changing governance needs also extends to
+the coordination across the entire DAO, including figuring out how different Orgs within the DAO can coordinate with and
+influence each other. This will require us to consider governance mechanisms that go beyond token governance, such as
+non-tokenized options, to effectively and efficiently be able to function as a DAO. 
 
 The definition of this emerging process has only been possible through the participation and contributions of Radicle’s
 contributors. Navigating such a big change has been no small task and if we are going to truly create a sustainable and

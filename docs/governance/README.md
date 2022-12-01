@@ -32,13 +32,13 @@ coordination. If you want to build the future of decentralized code collaboratio
     href="https://boardroom.io/radicle/"
     title="View the Radicle Governance Portal"
   >
-    Vote on active proposals or view the history of previous votes on our Boardroom instance.
+    Vote on active proposals or view the history of previous votes on our Boardroom interface.
   </Button>
 </Grid>
 
 ## Radicle Governance Team
 
-Interesting in governance at Radicle? Join the Radicle [Discord](https://discord.gg/dZK4TxaU2v) community and slide into
+Interested in governance at Radicle? Join the Radicle [Discord](https://discord.gg/dZK4TxaU2v) community and slide into
 the (`governance`) [#discussion](https://discord.com/channels/841318878125490186/841346086740164659) and
 [#governance-updates](https://discord.com/channels/841318878125490186/955793826264514560) channels to stay up to date on
 all things Radicle governance.
