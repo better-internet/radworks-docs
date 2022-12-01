@@ -20,9 +20,9 @@ posts for each stage.
 ## Voting on existing proposals
 
 Voting in on-chain token governance requires $RAD, the project’s native governance token. To obtain $RAD, you can follow
-these steps [LINK]. One $RAD token is equal to one vote and all voting rounds require a minimum participation threshold
-of 4M RAD (4% of total $RAD supply). If participation thresholds are met, proposals are passed by obtaining a majority
-“in-favor” votes.
+[these steps](obtain-rad.md). One $RAD token is equal to one vote and all voting rounds require a minimum participation
+threshold of 4M RAD (4% of total $RAD supply). If participation thresholds are met, proposals are passed by obtaining a
+majority “in-favor” votes.
 
 Voting takes place both on- and off-chain:
 
