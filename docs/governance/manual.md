@@ -29,11 +29,11 @@ creating on-chain governance proposals composed of executable actions. Currently
 - Upgrades to the on-chain governance system
 - Changes to parameters of Treasury-governed contracts (e.g. Drips)
 
-Proposals can be proposed on-chain by anyone who has an amount of $RAD greater than or equal to 1% of total circulating
-supply delegated to their address. Once proposed, $RAD-holding participants can vote for/against the proposal on-chain.
-Voting must meet a participation threshold of 4% of total circulating supply to pass. The proposal only passes if the
-participation threshold is met and votes are a majority “in-favor”. Once passed, the actions outlined in the proposal
-are executed. To learn more about token governance and how the RadicleDAO’s on-chain governance system works, [see
+Proposals can be proposed on-chain by anyone who has an amount of $RAD greater than or equal to 1% of total total supply
+delegated to their address. Once proposed, $RAD-holding participants can vote for/against the proposal on-chain. Voting
+must meet a participation threshold of 4% of total supply to pass. The proposal only passes if the participation
+threshold is met and votes are a majority “in-favor”. Once passed, the actions outlined in the proposal are executed. To
+learn more about token governance and how the RadicleDAO’s on-chain governance system works, [see
 here](https://wiki.tally.xyz/docs/compound-governor).
 
 ## Proposal Process
