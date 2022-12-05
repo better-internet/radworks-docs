@@ -49,7 +49,7 @@ const sidebars = {
   governanceSidebar: [
     'governance/README',
     'governance/get-started',
-    'governance/manual',
+    'governance/manual-overview',
     'governance/obtain-rad',
     {
       type: 'category',
