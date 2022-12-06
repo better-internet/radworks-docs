@@ -12,7 +12,7 @@ contracts](https://radicle.xyz/blog/integrating-with-ethereum.html)._
 > :exclamation: The Radicle governance process is meant to be owned and developed by the Radicle community, therefore
 > this process should be considered an active work in progress and is subject to change.
 
-TL:DR;
+## TL:DR;
 
 Radicle’s governance process is structured around an expectation of self-direction. Community “champions” (the
 individual(s) who created a proposal) are expected to escalate proposals from phase to phase, with guidance from
@@ -23,10 +23,10 @@ Proposal, a proposal has to go through all four stages.
 Temperature Check → Discussion → Formal Review → Governance Proposal
 ```
 
-1. Create a Temperature Check to initiate an informal discussion around a proposed idea and/or change.
+1. Create a **Temperature Check** to initiate an informal discussion around a proposed idea and/or change.
 2. Use feedback from the Temperature Check to draft a proposal that meets the criteria set in this document and start a
-   Discussion (t/r 5 days)
-3. Submit the draft proposal for Formal Review by creating a [Snapshot poll](https://snapshot.page/#/gov.radicle.eth)
+   **Discussion** (t/r 5 days)
+3. Submit the draft proposal for **Formal Review** by creating a [Snapshot poll](https://snapshot.page/#/gov.radicle.eth)
    (t/r 5 days)
 4. If passed, deploy a Governance Proposal via [rad gov](https://github.com/radicle-dev/radgov). (t/r 3 days)
 
