@@ -1,14 +1,36 @@
 # RadicleDAO Governance Process
 
-## Proposal Process
+Radicle’s Ethereum integration is maintained and upgraded through a community governance system in which RAD
+token-holders and their delegates debate, propose, and vote on all changes to the network’s Ethereum-based protocols. To
+propose changes, community members must create a Governance Proposal, executable code that outlines a proposed set of
+simple or complex actions and is subject to on-chain voting. Anybody with 1% of RAD delegated to their address can
+propose a Governance Proposal.
 
-To submit a governance proposal on-chain, it must first complete an off-chain review process. Having a public off-chain
-community review process allows for proposals to be reviewed, discussed, and improved by the Radicle community before
-reaching an on-chain vote. It also provides on-chain voters with more context on community sentiment and proposal
-development which ideally leads to more informed and less contentious decisions. Ultimately, involving the community in
-the public review and development of the proposal is also a way to protect the RadicleDAO, ensuring that what makes its
-way to an on-chain vote has already been vetted and reviewed in a transparent manner. The timeline of this off-chain
-process can be seen below.
+_NOTE: Radicle governance only relates to its [Ethereum smart
+contracts](https://radicle.xyz/blog/integrating-with-ethereum.html)._
+
+> :exclamation: The Radicle governance process is meant to be owned and developed by the Radicle community, therefore
+> this process should be considered an active work in progress and is subject to change.
+
+TL:DR;
+
+Radicle’s governance process is structured around an expectation of self-direction. Community “champions” (the
+individual(s) who created a proposal) are expected to escalate proposals from phase to phase, with guidance from
+community moderators. There are **four stages** in the governance process. To be considered an official Governance
+Proposal, a proposal has to go through all four stages.
+
+```
+Temperature Check → Discussion → Formal Review → Governance Proposal
+```
+
+1. Create a Temperature Check to initiate an informal discussion around a proposed idea and/or change.
+2. Use feedback from the Temperature Check to draft a proposal that meets the criteria set in this document and start a
+   Discussion (t/r 5 days)
+3. Submit the draft proposal for Formal Review by creating a [Snapshot poll](https://snapshot.page/#/gov.radicle.eth)
+   (t/r 5 days)
+4. If passed, deploy a Governance Proposal via [rad gov](https://github.com/radicle-dev/radgov). (t/r 3 days)
+
+Please refer to the rest of the document for details on how to navigate each phase.
 
 ## Overview of Stages
 
@@ -28,12 +50,8 @@ To start a **Temperature Check**:
 - Add any additional information to contextualize the question for the greater community.
 - Collect feedback and engage in discussion for 3-5 days.
 
-:::note
-
-It’s important to remain as objective as a view as possible. Present developed arguments and the “full picture” — not
-just your opinion!
-
-:::
+> It’s important to remain as objective as a view as possible. Present developed arguments and the “full picture” — not
+> just your opinion!
 
 ### Phase 2: Discussion :seedling: - Discourse
 

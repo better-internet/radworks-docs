@@ -4,6 +4,11 @@ title: Governance Manual
 
 import Grid, { Button } from '@site/src/components/Grid'
 
+The Governance Manual is a living document that outlines Radicle's governance processes. It is version-controlled and
+maintained by the Governance team. The latest version of the Governance Manual can always be found here. To propose
+changes to the Manual, please see the documentation's
+[README.md](https://github.com/radicle-dev/radicle-docs#how-to-contribute).
+
 <Grid>
   <Button
     style={{gridColumn: '1 / span 12'}}
@@ -12,13 +17,6 @@ import Grid, { Button } from '@site/src/components/Grid'
   >
   </Button>
 </Grid>
-
-The Governance Manual is a living document that outlines Radicle's governance processes. It is version-controlled and
-maintained by the Governance team. The latest version of the Governance Manual can always be found here. To propose
-changes to the Manual, please see the documentation's
-[README.md](https://github.com/radicle-dev/radicle-docs#how-to-contribute).
-
----
 
 The RadicleDAO’s Treasury is controlled by a tokenized governance mechanism
 ([Compound-Governor](https://wiki.tally.xyz/docs/compound-governor)) via the project’s native governance token ($RAD).
@@ -35,3 +33,14 @@ must meet a participation threshold of 4% of total supply to pass. The proposal 
 threshold is met and votes are a majority “in-favor”. Once passed, the actions outlined in the proposal are executed. To
 learn more about token governance and how the RadicleDAO’s on-chain governance system works, [see
 here](https://wiki.tally.xyz/docs/compound-governor).
+
+## Proposal Process
+
+To submit a governance proposal on-chain, it must first complete an off-chain review process. Having a public off-chain
+community review process allows for proposals to be reviewed, discussed, and improved by the Radicle community before
+reaching an on-chain vote. It also provides on-chain voters with more context on community sentiment and proposal
+development which ideally leads to more informed and less contentious decisions. Ultimately, involving the community in
+the public review and development of the proposal is also a way to protect the RadicleDAO, ensuring that what makes its
+way to an on-chain vote has already been vetted and reviewed in a transparent manner. The timeline of this off-chain
+process can be seen in the [Governance
+Manual](https://github.com/radicle-dev/radicle-docs/blob/master/docs/governance/manual.md) on GitHub.
