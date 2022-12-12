@@ -22,8 +22,13 @@
   letter-spacing: -0.2vw;
   text-align: center;
   color: transparent;
+  hyphens: auto;
   background-clip: text;
   background-image: linear-gradient( 180deg, rgb(255, 85, 255) 0%, rgb(85, 85, 255) 100% );
+}
+
+.docs {
+  display: block;
 }
 
 .subhead {
@@ -59,25 +64,53 @@
   text-decoration: none;
 }
 
-/* .itemA {
-  composes: item;
-  grid-column: col-start / span 4;
-} */
-
 @media screen and (max-width: 996px) {
   .itemA {
     grid-column-start: 1;
   }
 }
 
-/* .itemGov {
-  composes: item;
-  grid-column: col-start 6 / span 4;
-} */
-
 .button {
   padding: 0.5rem;
   background-color: var(--ifm-color-primary);
   color: white;
   border-radius: 0.2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .hero {
+    font-size: 3.5rem;
+  }
+
+  .docs {
+    text-indent: -9999px;
+    line-height: 0; /* Collapse the original line */
+  }
+
+  .docs::after {
+    content: "Docs";
+    text-indent: 0;
+    display: block;
+    line-height: initial;
+  }
+
+  .subhead {
+    font-size: 1.2rem;
+    margin: 1rem auto;
+  }
+
+  .header {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .grid {
+    margin-bottom: 4rem;
+  }
 }

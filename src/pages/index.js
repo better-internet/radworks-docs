@@ -8,7 +8,10 @@ export default function Index() {
     <Layout title="Radicle Documentation" description="User documentation, onboarding guides, frequently asked questions, and governance for the future of sovereign code infrastructure.">
       <header className={styles.header}>
         <h1 className={styles.hero}>
-          Radicle Documentation
+          Radicle{' '}
+          <span className={styles.docs}>
+            Documentation
+          </span>
         </h1>
         <p className={styles.subhead}>User documentation, onboarding guides, frequently asked questions, and governance for the future of sovereign code infrastructure.</p>
       </header>
