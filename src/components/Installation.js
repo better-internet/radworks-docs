@@ -7,8 +7,7 @@ export default function Installation () {
     <Grid>
       <Button
         style={{
-          gridColumn: '1 / span 12',
-          fontSize: '1.1rem',
+          gridColumn: '1 / span 12'
         }}
         href="https://radicle.xyz/get-started.html"
         title="Install Radicle"
