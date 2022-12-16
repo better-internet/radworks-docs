@@ -26,9 +26,10 @@ Temperature Check → Discussion → Formal Review → Governance Proposal
 1. Create a **Temperature Check** to initiate an informal discussion around a proposed idea and/or change.
 2. Use feedback from the Temperature Check to draft a proposal that meets the criteria set in this document and start a
    **Discussion** (t/r 5 days)
-3. Submit the draft proposal for **Formal Review** by creating a [Snapshot poll](https://snapshot.page/#/gov.radicle.eth)
+3. Submit the draft proposal for **Formal Review** by creating a [Snapshot poll](https://snapshot.org/#/gov.radicle.eth)
    (t/r 5 days)
-4. If passed, deploy a Governance Proposal via [rad gov](https://github.com/radicle-dev/radgov). (t/r 3 days)
+4. "If passed, deploy a Governance Proposal via [Boardroom](https://boardroom.io/radicle/proposals) or
+   [Tally](https://www.tally.xyz/gov/eip155:1:0x690e775361AD66D1c4A25d89da9fCd639F5198eD). (t/r 3 days)
 
 Please refer to the rest of the document for details on how to navigate each phase.
 
