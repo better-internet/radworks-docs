@@ -6,13 +6,14 @@ import Grid, { Button } from '@site/src/components/Grid'
 
 The Governance Manual is a living document that outlines Radicle's governance processes. It is version-controlled and
 maintained by the Governance team. The latest version of the Governance Manual can always be found here. To propose
-changes to the Manual, please see the documentation's
-[README.md](https://github.com/radicle-dev/radicle-docs#how-to-contribute).
+changes to the Manual, please see the READMEs for
+[documentation](https://github.com/radicle-dev/radicle-docs#how-to-contribute) or
+[governance](https://github.com/radicle-dev/radicle-governance/).
 
 <Grid>
   <Button
     style={{gridColumn: '1 / span 12'}}
-    href="https://github.com/radicle-dev/radicle-docs/blob/master/docs/governance/manual.md"
+    href="https://github.com/radicle-dev/radicle-governance/blob/main/manual.md"
     title="Read the Governance Manual on GitHub"
   >
   </Button>
@@ -43,4 +44,4 @@ development which ideally leads to more informed and less contentious decisions.
 the public review and development of the proposal is also a way to protect the RadicleDAO, ensuring that what makes its
 way to an on-chain vote has already been vetted and reviewed in a transparent manner. The timeline of this off-chain
 process can be seen in the [Governance
-Manual](https://github.com/radicle-dev/radicle-docs/blob/master/docs/governance/manual.md) on GitHub.
+Manual](https://github.com/radicle-dev/radicle-governance/blob/main/manual.md) on GitHub.
