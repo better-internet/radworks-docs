@@ -7,7 +7,8 @@ Here’s a quickstart guide on how to participate in Radicle governance.
 ## Creating a proposal
 
 To propose a Governance Proposal to the DAO, it must make its way through the public community review process. Please
-refer to the [**Governance Manual**](manual.md) for a full description of how to get started with creating a proposal.
+refer to the [**Governance Manual**](manual-overview.md) for a full description of how to get started with creating a
+proposal.
 
 :::note
 
