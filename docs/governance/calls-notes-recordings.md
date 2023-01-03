@@ -11,8 +11,6 @@ These calls tend to take place on the second Wednesday of every month. To figure
 check our **Events** section on Discord. We also post reminders for these calls in
 the [#governance-updates](https://discord.com/channels/841318878125490186/955793826264514560) channel.
 
-## 2022
-
 | Date                           | Notes                                                                                                                     | Recording                                                                                                  |
 | :----------------------------- | :------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------- |
 | December 17, 2022 @ 17:00 CET  | [link](https://forest-text-046.notion.site/Monthly-Governance-Call-17-December-2022-2b8f9e2da25b4ec7b5283470db11eebc)     | [video](https://youtu.be/7lI-wbXQbAc)                                                                      |
