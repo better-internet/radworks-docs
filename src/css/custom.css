@@ -1,13 +1,24 @@
-@import url("https://rsms.me/inter/inter.css");
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("../../static/Inter-roman.var.woff2?v=3.19") format("woff2");
+}
 
 @font-face {
-  font-family: "Inter";
-  src: url("https://rsms.me/inter/inter.css");
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url("../../static/Inter-italic.var.woff2?v=3.19") format("woff2");
 }
 
 :root {
   /* Fonts */
-  --ifm-font-family-base: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --ifm-font-family-base: 'Inter var', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
   /* Links */
   --ifm-link-color: var(--ifm-font-color-base);
@@ -44,7 +55,6 @@
   --ifm-menu-color: #2e2e6b;
   --ifm-menu-color-active: #1a1a2c;
   --ifm-menu-color-background-active: #ebecf8;
-
 }
 
 html[data-theme='dark'] {
@@ -85,6 +95,11 @@ html[data-theme='dark'] .navbar {
   border: 1px dashed var(--ifm-color-primary);
   border-radius: 10rem;
   color: var(--ifm-color-primary);
+  height: 44px;
+}
+
+.aa-Input {
+  height: 44px !important;
 }
 
 /* Navigation menu */
