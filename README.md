@@ -1,53 +1,39 @@
-# Welcome to Radicle Docs 👋
+# Welcome to Radicle's docs! 👋
 
-This is the repository for the Radicle documentation site
-[docs.radicle.xyz][wi]. radicle-docs accepts contributions via Radicle patches
-and GitHub pull requests. This document outlines some contributing guidelines,
-contact points, and other resources to make it easier to contribute to
-radicle-docs.
+This is the repository for the Radicle documentation site at [`docs.radicle.xyz`](https://docs.radicle.xyz), which
+includes user-, community-, and governance-focused documentation.
 
-[docs.radicle.xyz][wi] was created with [Docusaurus][do]. Full Docusaurus
-documentation can be found on their [website][do].
+This document outlines some contributing guidelines, contact points, and other resources to make it easier to contribute
+to Radicle's documentation.
 
-If you've run into a problem or have a suggestion, browse the open [issues][is]
-before opening a new one. We use the following [label system][la] to organize
-our issues.
+[`docs.radicle.xyz`](https://docs.radicle.xyz) was created with [Docusaurus](https://docusaurus.io/).
 
-- ![][cr] for typos, broken links, and other quick fixes
-- ![][tr] for additions to the FAQ and Troubleshooting sections
-- ![][im] for revisions, rewrites, and larger improvements
-- ![][fe] for feedback on structure & content
-- ![][qu] for questions that can't be answered via documentation
-- ![][fi] for improvements and fixups related to the look and feel of the docs
-  site
+If you've run into a problem or have a suggestion, browse the open
+[issues](https://github.com/radicle-dev/radicle-docs/issues) before opening a new one. We use the following [label
+system](https://github.com/radicle-dev/radicle-docs/labels)) to organize our issues.
 
-### Best practices for managing contributions
+- ![](https://img.shields.io/badge/-fixup-critical) for typos, broken links, and other quick fixes
+- ![](https://img.shields.io/badge/-troubleshooting-%23FBCA04) for additions to the FAQ and Troubleshooting sections
+- ![](https://img.shields.io/badge/-improvement-blueviolet) for revisions, rewrites, and larger improvements
+- ![](https://img.shields.io/badge/-feedback-%23DD0BE1) for feedback on structure & content
+- ![](https://img.shields.io/badge/-question-C0EE59) for questions that can't be answered via documentation
+- ![](https://img.shields.io/badge/-ui-1d76db) for improvements and fixups related to the look and feel of the docs site
 
-- If a question is asked more than twice in a support channel, it should be
-  added as an outstanding ![][tr] issue. If a resolution is found, it should be
-  captured in the issue before it's closed or in a following pull request.
-  Those involved in the support process should contribute to the documentation
-  (i.e. if you answered the question, be sure to capture the outcome in the
-  relevant documentation).
+## Best practices for managing contributions
 
-- If a piece of unaddressed feedback is given more than three times, a ![][fe]
-  issue should be created and added to the [Feedback Hub][fh] to be prioritized
-  in the following weekly sync.
+- If a question is asked more than twice in a support channel, it should be added as an outstanding
+  ![](https://img.shields.io/badge/-troubleshooting-%23FBCA04) issue. If a resolution is found, it should be captured in
+  the issue before it's closed or in a following pull request. Those involved in the support process should contribute
+  to the documentation (i.e. if you answered the question, be sure to capture the outcome in the relevant
+  documentation).
 
-- ![][im] issues should be created to capture upcoming documentation work
-  related to new features or releases.
+- If a piece of unaddressed feedback is given more than three times, a
+  ![](https://img.shields.io/badge/-feedback-%23DD0BE1) issue should be created.
 
-- Issues will be reviewed on a rolling basis and triaged weekly by
-  @abbey-titcomb.
+- ![](https://img.shields.io/badge/-improvement-blueviolet) issues should be created to capture upcoming documentation
+  work related to new features or releases.
 
-# How to Contribute
-
-- [Get Started](#get-started)
-- [Editing Content](#editing-content)
-- [Adding Content](#adding-content)
-- [Contributing](#contributing)
-
-## Get Started
+## How to contribute
 
 1. Make sure all the dependencies for the website are installed:
 
@@ -70,9 +56,7 @@ USE_SSH=true \
 yarn deploy
 ```
 
-## Editing Content
-
-### Editing an existing docs page
+### Edit an existing docs page
 
 Edit docs by navigating to `docs/` and editing the corresponding document:
 
@@ -89,12 +73,10 @@ Edit me...
 
 For more information about docs, click [here][na]
 
-## Adding Content
-
-### Adding a new docs page to an existing sidebar
+### Add a new docs page to an existing sidebar
 
 1. Create the doc as a new markdown file in `/docs`, example
-   `docs/newly-created-doc.md`:
+   `docs/newly-created-doc.md`x:
 
 ```md
 ---
@@ -121,43 +103,10 @@ My new content here..
 }
 ```
 
-For more information about adding new docs, click [here][na]
+For more information about adding new docs to the sidebar, see the [Docusaurus
+docs](https://docusaurus.io/docs/en/navigation).
 
-## Contributing
+### Commit signing
 
-💡 We require all commits to be signed for a branch to be merged into master.
-Learn more on setting up commit signing [here][cs].
-
-Contributions to radicle-docs can be made via pull requests on GitHub or
-through Radicle. If opening a PR, please tag any associated parties and
-@abbey-titcomb for visibility.
-
-If contributing via Radicle, submit your patch for review by sending an email
-to abbey@monadic.xyz in the following format:
-
-```
-Subject line:
-
-  *[PATCH] Description of patch*
-
-Message body:
-
-  *[Device ID]*
-  *[Display name]*
-
-  *Description of patch and other relevant information*
-```
-
-[cr]: https://img.shields.io/badge/-fixup-critical
-[cs]: https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/signing-commits
-[do]: https://docusaurus.io
-[fe]: https://img.shields.io/badge/-feedback-%23DD0BE1
-[fh]: https://github.com/orgs/radicle-dev/projects/19
-[fi]: https://img.shields.io/badge/-ui-1d76db
-[im]: https://img.shields.io/badge/-improvement-blueviolet
-[is]: https://github.com/radicle-dev/radicle-docs/issues
-[la]: https://github.com/radicle-dev/radicle-docs/labels
-[na]: https://docusaurus.io/docs/en/navigation
-[qu]: https://img.shields.io/badge/-question-C0EE59
-[tr]: https://img.shields.io/badge/-troubleshooting-%23FBCA04
-[wi]: https://docs.radicle.xyz/docs/what-is-radicle.html
+We require all commits to be signed for a branch to be merged into master. Learn more on setting up commit signing
+[here](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/signing-commits).
