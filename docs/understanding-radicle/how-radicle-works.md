@@ -204,23 +204,19 @@ thanks to the [Radicle identity](#radicle-identity) system, you don't care wheth
 from a seed node or another Radicle user. You can always verify the integrity of the project and the identity of the
 person who authored it, making it truly trustless.
 
-### The `heartwood` project
+### The `Heartwood` project
 
 As of [August 2022](https://radicle.community/t/alt-clients-community-update-august-2022/3024), Radicle sunset the
-long-running [Radicle Link](https://github.com/radicle-dev/radicle-link) project in favor of the [`heartwood`
-protocol](https://github.com/radicle-dev/heartwood).
+long-running [Radicle Link](https://github.com/radicle-dev/radicle-link) project in favor of the [`Heartwood` protocol
+and stack](https://github.com/radicle-dev/heartwood).
 
-The primary function of the P2P protocol is to locate repositories on the network, and serve them to users, all in a
-timely, and resource-efficient manner. Thus, the protocol needs to:
+The primary function of the P2P protocol is to locate repositories on the network and serve them to users in a timely
+and resource-efficient manner. Thus, the protocol needs to:
 
 - Locate repositories by finding which nodes host it.
 - Replicate a given repository between two nodes.
 - Verify the authenticity of all data retrieved from the network so that any node can serve any data without needing
   centralized notions of "trust."
-
-The `radicle-node` project is under active development, with a Radicle Improvement Proposal (RIP) for the [Base
-Protocol](https://app.radicle.xyz/seeds/seed.cloudhead.io/rad:git:hnrkx7ruakgb9ozzi7atwb1rh6moq8pjonp6o/remotes/hyn9diwfnytahjq8u3iw63h9jte1ydcatxax3saymwdxqu1zo645pe/tree/cloudhead/drafts/0001-base-protocol.md),
-which serves as a foundation for future RIPs.
 
 Some of [projects and challenges](https://radicle.community/t/alt-clients-community-update-august-2022/3024/2) ahead for
 the team include:
@@ -230,13 +226,14 @@ the team include:
 - **Implementing Git replication between nodes.**
 - **Implementing a simpler and more user-friendly identity system.**
 
-We highly recommend reading
-[RIP-1](https://app.radicle.xyz/seeds/seed.cloudhead.io/rad:git:hnrkx7ruakgb9ozzi7atwb1rh6moq8pjonp6o/remotes/hyn9diwfnytahjq8u3iw63h9jte1ydcatxax3saymwdxqu1zo645pe/tree/cloudhead/drafts/0001-base-protocol.md)
-to understand the future and state of Radicle's P2P network.
+The `heartwood` project is under active development and not yet ready for use. We highly recommend reading the [Radicle
+Improvement Proposals
+(RIPs)](https://app.radicle.xyz/seeds/clients.radicle.xyz/rad:git:hnrkx7ruakgb9ozzi7atwb1rh6moq8pjonp6o/tree) current
+state and future of Radicle's P2P network.
 
 :::info
 
-The P2P protocol is maintained by the *Clients team* at [`radicle-node`](https://github.com/radicle-dev/radicle-node).
+The P2P protocol is maintained by the *Clients team* at [`heartwood`](https://github.com/radicle-dev/heartwood).
 
 :::
 
