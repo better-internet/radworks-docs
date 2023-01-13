@@ -204,10 +204,10 @@ thanks to the [Radicle identity](#radicle-identity) system, you don't care wheth
 from a seed node or another Radicle user. You can always verify the integrity of the project and the identity of the
 person who authored it, making it truly trustless.
 
-### The `Heartwood` project
+### The Heartwood project
 
 As of [August 2022](https://radicle.community/t/alt-clients-community-update-august-2022/3024), Radicle sunset the
-long-running [Radicle Link](https://github.com/radicle-dev/radicle-link) project in favor of the [`Heartwood` protocol
+long-running [Radicle Link](https://github.com/radicle-dev/radicle-link) project in favor of the [**Heartwood** protocol
 and stack](https://github.com/radicle-dev/heartwood).
 
 The primary function of the P2P protocol is to locate repositories on the network and serve them to users in a timely
@@ -226,7 +226,7 @@ the team include:
 - **Implementing Git replication between nodes.**
 - **Implementing a simpler and more user-friendly identity system.**
 
-The `heartwood` project is under active development and not yet ready for use. We highly recommend reading the [Radicle
+The Heartwood project is under active development and not yet ready for use. We highly recommend reading the [Radicle
 Improvement Proposals
 (RIPs)](https://app.radicle.xyz/seeds/clients.radicle.xyz/rad:git:hnrkx7ruakgb9ozzi7atwb1rh6moq8pjonp6o/tree) current
 state and future of Radicle's P2P network.
