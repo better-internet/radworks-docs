@@ -81,6 +81,21 @@ const config = {
         },
         items: [
           {
+            href: '/get-started',
+            label: 'Users',
+            position: 'left',
+          },
+          {
+            href: '/community',
+            label: 'Community',
+            position: 'left',
+          },
+          {
+            href: '/governance',
+            label: 'Governance',
+            position: 'left',
+          },
+          {
             href: 'https://radicle.xyz',
             label: 'Home',
             position: 'right',

@@ -59,7 +59,7 @@ as already-pulled issues and patches &mdash; stored locally.
 **Radicle** users can't be barred from using Radicle tools, and can't have their projects, code, or accounts deleted at
 a platform level, because one can always [self-host](https://github.com/radicle-dev/radicle-client-services) an
 open-source seed node. In addition, Radicle is a self-sustained and community-owned network &mdash; not a corporation
-&mdash; with governance organized by a token called RAD that lives on Ethereum.
+&mdash; with governance organized by a token called $RAD that lives on Ethereum.
 
 **GitHub, Inc.** has been a subsidiary of Microsoft since 2018. **GitLab Inc.** is a publicly-traded corporation. Both
 companies have a verified history of removing repositories, and entire user accounts, in response to DMC takedown

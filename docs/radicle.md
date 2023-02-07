@@ -1,12 +1,12 @@
 ---
-id: what-is-radicle
+id: get-started
 title: Get started with Radicle
 sidebar_label: Get started
-slug: /
+slug: /get-started
 ---
 
 import Installation from '@site/src/components/Installation'
-import Grid from '@site/src/components/Grid'
+import Grid, { Button } from '@site/src/components/Grid'
 
 Radicle is a decentralized code collaboration network built on open protocols 🌱. It enables developers to collaborate
 on code without relying on trusted intermediaries. Radicle was designed to provide similar functionality to centralized
@@ -44,23 +44,24 @@ your devices with a secure Ed25519 keypair.
 <Installation />
 
 <Grid>
-  <div>
-    <a href="/migrate-github-radicle">
-      Leaving GitHub in favor of Radicle's sovereign code infrastructure? Check out our migration guide!
-    </a>
-  </div>
-  <div>
-    <a href="/using-radicle/collaboration">
-      Learn about Radicle's code collaboration workflows using CLI-based issues and patches.
-    </a>
-  </div>
+  <Button
+    href="/migrate-github-radicle"
+    title="Migrate from GitHub to Radicle"
+  >
+    Leaving GitHub in favor of Radicle's sovereign code infrastructure? Check out our migration guide!
+  </Button>
+  <Button
+    href="/using-radicle/collaboration"
+    title="Radicle's collaboration workflow"
+  >
+    Learn about Radicle's code collaboration workflows using CLI-based issues and patches.
+  </Button>
 </Grid>
 
 :::tip
 
 If you need help installing or using Radicle, check out our [troubleshooting](troubleshooting.md) guide,
-[FAQ](understanding-radicle/faq.md), or join a [community channel](get-involved/community.md) where our core teams hang
-out.
+[FAQ](understanding-radicle/faq.md), or join a [community channel](/community/README.md) where our core teams hang out.
 
 :::
 
@@ -80,39 +81,37 @@ infrastructure.
 ### Start hosting and collaborating on code
 
 <Grid>
-  <div>
-    <a href="/using-radicle/create">
-      Create a new Radicle project
-    </a>
-  </div>
-  <div>
-    <a href="/using-radicle/clone">
-      Clone an existing project
-    </a>
-  </div>
-  <div>
-    <a href="/using-radicle/issues">
-      Create or view issues
-    </a>
-  </div>
-  <div>
-    <a href="/using-radicle/track-review-merge">
-      Collaborate with patches
-    </a>
-  </div>
+  <Button
+    href="/using-radicle/create"
+    title="Create a new Radicle project"
+  />
+  <Button
+    href="/using-radicle/clone"
+    title="Clone an existing project"
+  />
+  <Button
+    href="/using-radicle/issues"
+    title="Create or view issues"
+  />
+  <Button
+    href="/using-radicle/track-review-merge"
+    title="Collaborate with patches" 
+  />
 </Grid>
 
 ### Learn more about how Radicle works
 
 <Grid>
-  <div>
-    <a href="/understanding-radicle/how-radicle-works">
-      Peek into the ideas, protocols, networks, and clients that create the Radicle experience.
-    </a>
-  </div>
-  <div>
-    <a href="/understanding-radicle/faq">
-      Learn about sovereign code infrastructure, the state of the Radicle ecosystem, and more.
-    </a>
-  </div>
+  <Button
+    href="/understanding-radicle/how-radicle-works"
+    title="How Radicle works"
+  >
+     Peek into the ideas, protocols, networks, and clients that create the Radicle experience.
+  </Button>
+  <Button
+    href="/understanding-radicle/faq"
+    title="FAQ"
+  >
+    Learn about sovereign code infrastructure, the state of the Radicle ecosystem, and more.
+  </Button>
 </Grid>

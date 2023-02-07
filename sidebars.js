@@ -4,7 +4,7 @@ const sidebars = {
 
   // But you can create a sidebar manually
   docsSidebar: [
-    'what-is-radicle',
+    'get-started',
     'migrate-github-radicle',
     'troubleshooting',
     {
@@ -40,12 +40,27 @@ const sidebars = {
         'understanding-radicle/faq',
       ]
     },
+  ],
+  communitySidebar: [
+    'community/community',
+    'community/calls',
+    'community/code-of-conduct',
+  ],
+  governanceSidebar: [
+    'governance/README',
+    'governance/get-started',
+    'governance/manual-overview',
+    'governance/obtain-rad',
     {
       type: 'category',
-      label: 'Get involved',
+      label: 'Learn more',
       collapsed: false,
-      items: ['get-involved/join-the-community', 'get-involved/obtain-rad']
-    }
+      items: [
+        'governance/transition-dao',
+        'governance/treasury',
+        'governance/calls-notes-recordings',
+      ]
+    },
   ],
 };
 

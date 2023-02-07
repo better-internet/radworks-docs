@@ -50,8 +50,8 @@ Radicle is funded through the Treasury of the Radicle Foundation, although we're
 the
 [RadicleDAO](https://forest-text-046.notion.site/Radicle-Governance-Hub-01b9f8e757cc4426ab64d2146071f46b#ee45f5993b2e4ff2bc95bfa3536c6450).
 The [Treasury](https://etherscan.io/address/0x8da8f82d2bbdd896822de723f55d6edf416130ba#tokentxns) is a community-owned
-and governed pool of capital for developing and growing the Radicle network and community. Those who own RAD tokens can
-propose, vote on, and implement new initiatives, which are funded through the Treasury's combination of RAD token and
+and governed pool of capital for developing and growing the Radicle network and community. Those who own $RAD tokens can
+propose, vote on, and implement new initiatives, which are funded through the Treasury's combination of $RAD token and
 USDC.
 
 See the [Radicle Governance

@@ -1,15 +1,20 @@
 import React from 'react'
-import Grid from '@site/src/components/Grid'
-import styles from './Installation.module.css';
+import Grid, { Button } from '@site/src/components/Grid'
+import styles from './Installation.module.css'
 
 export default function Installation () {
   return (
     <Grid>
-      <div className={styles.install}>
-        <a className={styles.link} href="https://radicle.xyz/get-started.html">
-          See the Radicle website for the most up-to-date CLI tooling installation instructions for macOS and Linux and the process for creating your Radicle identity.
-        </a>
-      </div>
+      <Button
+        style={{
+          gridColumn: '1 / span 12'
+        }}
+        href="https://radicle.xyz/get-started.html"
+        title="Install Radicle"
+        cta="radicle.xyz"
+      >
+        See the Radicle website for the most up-to-date CLI tooling installation instructions for macOS and Linux and the process for creating your Radicle identity.
+      </Button>
     </Grid>
   );
 }
