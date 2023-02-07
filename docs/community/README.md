@@ -74,7 +74,7 @@ excuse the dust. 🚧
     See the latest updates and announcements, including snapshot polls and voting reminders, as we transition to the RadicleDAO.
   </Button>
   <Button
-    href="https://www.getrevue.co/profile/radicle"
+    href="https://radicle.beehiiv.com/"
     title="Radicle Digest"
     cta="Subscribe"
   >
