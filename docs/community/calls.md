@@ -307,7 +307,7 @@ Yorgos is looking for “IntelliJ/PhpStorm/PyCharm/Rider/GoLand/RubyMine/WebStor
 
 What’s required to participate:
 
-- (optional - if you don't know about Radicle) Read through some introduction material to help you understand more about it and help you decide if you’re interested. You can try the [Official FAQ](https://docs.radicle.xyz/understanding-radicle/faq), or this [tweetstorm](https://twitter.com/odyslam_/status/1499340092564918275).
+- (optional - if you don't know about Radicle) Read through some introduction material to help you understand more about it and help you decide if you’re interested. You can try the [Official FAQ](https://docs.radicle.community/understanding-radicle/faq), or this [tweetstorm](https://twitter.com/odyslam_/status/1499340092564918275).
 - If you’re still interested, fill in an (anonymous) questionnaire [here](https://research.typeform.com/to/cjE4J0rc).
 - If you’re still interested, you can book a (30min) slot at the final step of the questionnaire above.
 

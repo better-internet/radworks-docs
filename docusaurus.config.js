@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Radicle Docs',
   tagline: 'A peer-to-peer stack for building software together.',
-  url: 'https://docs.radicle.xyz',
+  url: 'https://docs.radicle.community',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

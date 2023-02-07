@@ -4,7 +4,7 @@
 const siteConfig = {
   title: "Radicle docs",
   tagline: "A peer-to-peer stack for building software together.",
-  url: "https://docs.radicle.xyz",
+  url: "https://docs.radicle.community",
   baseUrl: "/",
   projectName: "radicle-docs",
   organizationName: "radicle-dev",

@@ -1,12 +1,12 @@
 # Welcome to Radicle's docs! 👋
 
-This is the repository for the Radicle documentation site at [`docs.radicle.xyz`](https://docs.radicle.xyz), which
-includes user-, community-, and governance-focused documentation.
+This is the repository for the Radicle documentation site at [`docs.radicle.community`](https://docs.radicle.community),
+which includes user-, community-, and governance-focused documentation.
 
 This document outlines some contributing guidelines, contact points, and other resources to make it easier to contribute
 to Radicle's documentation.
 
-[`docs.radicle.xyz`](https://docs.radicle.xyz) was created with [Docusaurus](https://docusaurus.io/).
+[`docs.radicle.community`](https://docs.radicle.community) was created with [Docusaurus](https://docusaurus.io/).
 
 If you run into a problem or have a suggestion, browse the open
 [issues](https://github.com/radicle-dev/radicle-docs/issues) before opening a new one. We use the following [label
