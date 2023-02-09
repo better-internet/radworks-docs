@@ -3,7 +3,7 @@ id: collaboration
 title: Radicle's collaboration workflow
 ---
 
-import Grid from '@site/src/components/Grid'
+import Grid, { Button } from '@site/src/components/Grid'
 
 :::note
 
@@ -31,14 +31,10 @@ Contributors can now synchronize the state of their remote with the maintainer's
 cycle once more.
 
 <Grid>
-  <div>
-    <a href="/using-radicle/issues">
-      Create or view issues
-    </a>
-  </div>
-  <div>
-    <a href="/using-radicle/track-review-merge">
-      Collaborate with patches
-    </a>
-  </div>
+  <Button
+    href="/using-radicle/issues"
+    title="Create or view issues" />
+  <Button
+    href="/using-radicle/track-review-merge"
+    title="Collaborate with patches" />
 </Grid>

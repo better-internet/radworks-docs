@@ -3,7 +3,7 @@ id: how-radicle-works
 title: How Radicle works
 ---
 
-import Highlight from '@site/src/components/Highlight'
+import Grid, { Button } from '@site/src/components/Grid'
 
 At its most global, Radicle is a software stack of applications and protocols to help developers host and collaborate on
 code using a sovereign infrastructure. This also includes creating new opportunities and incentives for open-source
@@ -248,11 +248,16 @@ and manage issues, collaborate with patches, and much more.
 
 If you're hoping to get started with Radicle for the first time, installing `rad` is your first step.
 
-<Highlight>
-
-  See the **[Radicle website](https://radicle.xyz/get-started.html)** for the most up to date installation instructions for macOS and Linux, including the process for creating your Radicle identity.
-
-</Highlight>
+<Grid>
+  <Button
+    style={{gridColumn: '1 / span 12'}}
+    href="https://radicle.xyz/get-started.html"
+    title="Install the Radicle CLI"
+    cta="radicle.xyz"
+  >
+    See the Radicle website for the most up to date installation instructions for macOS and Linux, including the process for creating your Radicle identity.
+  </Button>
+</Grid>
 
 :::info
 
