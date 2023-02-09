@@ -12,134 +12,26 @@ for our community to see what's happening within the project.
 
 This is a collection of all monthly Community Call notes that are currently being curated by our Governance Facilitator,
 Shelby. These notes can be posted with each video and should include timestamps to relevant sections of the video. Links
-to all recordings are included under each month. A full collection of our Community Calls can be found
-[here](https://www.youtube.com/playlist?list=PLUUjDC9sOrplFcqQxhgQGKRXKMSqJ_wOZ).
+to all recordings are included under each month. A full collection video recordings of our Community Calls can be found
+on our [YouTube](https://www.youtube.com/playlist?list=PLUUjDC9sOrplFcqQxhgQGKRXKMSqJ_wOZ) playlist.
 
-### 2021
+### 2023
 
-<Collapse title="September Community Call" date="29 September 2021">
+<Collapse title="January Community Call" date="25 January 2023">
 
-📹 [LINK TO CALL RECORDING](https://www.youtube.com/watch?v=sTp9BxCr8uQ)
-  
-🔗 **Radicle Link Team**
+📹 Link to call recording coming soon!
 
-- Went over details of the mail-oriented collaboration they have been experimenting with and gave progress updates to CLIs and upcoming cycle tags. You can join the mailing list [here](https://lists.sr.ht/~radicle-link/dev)!
+Thanks for joining this month’s community call! Below is a collection of all written updates from each core team shared in the call. 
 
-🌈 **Upstream** (0:05:26)
+🪄 Clients Update (coming soon)
 
-- Discussed improvements to org reliability, concurrency issues and UX, including cleaning up profiles and adding anchors to project screens. Currently accepting design contributions! Learn more [here](https://github.com/radicle-dev/radicle-upstream/blob/master/docs/contributing.md#contributing-to-the-design).
+☔ [Funding & Drips Community Update](https://radicle.community/t/drips-team-community-update-january-2023/3196)
 
-🪄 **Alt-clients** (0:08:25)
+🎺 [Marketing Update](https://radicle.community/t/marketing-team-community-update-january-2023/3207)
 
-- Demonstrated cloning capabilities without having Radicle desktop client installed and updates to ENS-based workflow command.
+🤝 [Community & Governance Update](https://radicle.community/t/community-governance-update-january-2023/3204)
 
-💧 **Community Tokens** (0:16:59)
-
-- Discussed MVP implementation of community tokens. Demoed updates to fundraising workflow for projects and new features like methods of fundraising (subscription-based vs one-off sales) and Drips. Still working on Javascript & HTML front end and deploying subgraphs to The Graph. Learn more [here](https://radicle.community/t/feedback-on-nft-community-tokens/2455).
-
-🤝 **Community** (0:30:37)
-
-- Introduced [Nassar](https://twitter.com/nassarhayat?lang=en) (0:35:10) to Radicle team who is focusing on adoption partnerships and growth . Announced launch of [new community blog](https://app.radicle.network/orgs/community.radicle.eth/projects/rad:git:hnrkxcktftwxbk9yshjgspqqyxnye1phzjz7y/4328ca273b1c94f4620ac7f4e38c2d22597054ee) (submissions welcome!) and reminder to keep an eye out for Radicle projects coming out of [ETHOnline](https://online.ethglobal.com/) hackathon coming up mid-October.
-
-🏛️ **Governance Updates**
-
-- Closed applications for program lead of grants program. Choice will be announced at the next Radicle Governance Call in 2 weeks!
-
-💻 **Demo: Creating Org Nodes** (0:38:43)
-
-- Tutorial for org creation is also in the works and will be coming soon and will be posted on the mirror community blog!
-
-</Collapse>
-
-<Collapse title="October Community Call" date="27 October 2021">
-
-📹 [LINK TO CALL RECORDING](https://www.youtube.com/watch?v=Ok-35W-Q2zM)
-
-🔗 **Radicle Link Team** (02:56)
-
-Fintan ran through updates to their release cycles from the last month. They included updates to protocol usability, CLI improvements, and changes to the contributions and collaborative objects. You can join the mailing list for updates [here](https://lists.sr.ht/~radicle-link/dev)!
-
-🌈 **Upstream** (7:56)
-
-The Upstream team will be shifting their focus towards code collaboration. Thomas explained how they are still working through replication issues and announced that the migration to Radicle link architecture is going to take a back seat. For more detail & other cool updates from Upstream check out [this post](https://radicle.community/t/upstream-october-2021-community-update/2544).
-
-💧**Community Tokens/Funding** (16:10)
-
-The funding team has been working hard making improvements and testing new features to the Community Token MVP. Some highlights Andrew mentioned include gas optimization, maintainer and supporter community token benefits, custom SVG token graphics and sharing funding via “drips” - a way to help fund other projects or contributors who have helped develop your project. He also demoed creating a new project from start to finish. Learn more [here](https://radicle.community/t/feedback-on-nft-community-tokens/2455).
-
-🪄 **Alt-clients** (34:13)
-
-Sebastian presented new features they want to add to commit verification and code contribution rewards and demoed what they could look like. These updates make it easier to track and reward contributors. Shipping of these features still tbd.
-
-🤝 **Community & Governance** (50:25)
-
-Abbey introduced two new members to the Governance Working Group, Shelby & bordumb. Shelby is joining as a Governance Facilitator and bordumb will be leading the [Radicle Grants Program](https://radicle.community/t/discussion-radicle-grants-program/2531/2).
-
-She also provided updates on recent and upcoming hackathons Radicle is involved with and [partnership proposal from Akash](https://github.com/slowriot/anubis). Next focus will be ramping up Orgs with Nassar and building out the marketing team for better visibility and accessibility.
-
-</Collapse>
-
-<Collapse title="November Community Call" date="24 November 2021">
-
-📹 [LINK TO CALL RECORDING](https://www.youtube.com/watch?v=5AjpFVvm9Po)
-
-🔗 **Radicle Link Team** (0:56)**:**
-
-Fintan announced updates regarding Collaborative objects, CLI ([see new README](https://github.com/radicle-dev/radicle-link/blob/master/bins/rad/README.md)) and replication. Upcoming focus areas for the Link Team include Replication V3, tracking storage and resurrecting linked node. You can find the full list of their updates [here](https://radicle.community/t/link-november-2021-community-update/2591)! You can subscribe to their “Announcements” mailing list [here](https://lists.sr.ht/~radicle-link/announce).
-
-🌈 **Upstream** (09:27)**:**
-
-Julian highlighted updates to the org explore page, improvements to the debug window and integration for ENS metadata. He ran through how they are working on improvements for replication and are hosting an internal networking party to test a few features out. You can find more updates for the Upstream team [here](https://radicle.community/t/upstream-november-2021-community-update/2594).
-
-🪄 **Alt-Clients** (16:28)**:**
-
-Alexis welcomed Ryan and Dave to the Upstream team. Ryan is helping work on the org node/git bridge and Dave is focusing on a new cloud offering project. The team has been focusing efforts on p2p infrastructure, improving web features for org treasuries & memberships, signed git push support and more! His Jamboard overview will also rock your world!
-
-💧 **Funding -> Now Drips!** (30:31)
-
-Andrew announced that the funding team will now become Drips (see Discord channel). They have been working hard on the MVP and hope to launch as early as Dec. 2! Skip to this section of the video to hear more behind the reason for the rebrand, further Drip updates and to see an awesome demo of the latest version of the app!
-
-🤝 **Community & Governance:** (48:10)
-
-Abbey [introduced Thom](https://radicle.community/t/marketing-at-radicle/2589) who is joining the Radicle team to focus on marketing. She also reminded everyone of the [Berlin Radicle Contributor Get Together](https://radicle.community/t/berlin-radicle-contributors-get-together/2586/7)! We may have to postpone depending on Covid circumstances.
-
-Nassar has been focused on developing & testing use cases for DevDAOs to test with market/guide outreach, providing product input value add on contribution features and has been onboarding a bunch of cool teams like Polygon and Textile! He noted there are still many challenges to on-boarding and that they are still working on solutions. Next steps include onboarding partners to Drips and continue to help with user testing.
-
-Shelby reminded everyone of the open Snapshot poll for the
-
-[Radicle Grants Program](https://radicle.community/t/formal-review-radicle-grants-program-v1/2548/). Keep your eyes out for the
-
-[Removing Name Registration Fee](https://radicle.community/t/discussion-remove-name-registration-fee/2583/2) proposal moving into the Formal Review stage this week. She also reminded everyone to follow the [Radicle Governance Twitter](https://twitter.com/rad_gov) page which will be used to post important updates and reminders surrounding Radicle governance!
-
-</Collapse>
-
-<Collapse title="December Community Call" date="5 January 2022">
-
-📹 [LINK TO CALL RECORDING](https://www.youtube.com/watch?v=lMTHUPsNv10)
-
-🔗 **Radicle Link Team:** (0:57)
-
-Replication V3 has been merged! Fintan shared the Link team’s roadmap proposal (found here) which includes playing with new features and improvements to existing infrastructure & tooling. The main goal is to move towards hosting Radicle Link on Radicle Link. You can find the full update [here](https://radicle.community/t/link-january-2022-community-update/2634).
-
-🌈 **Upstream:** (05:10)
-
-Rudolfs announced updates for replication for upstream and improvements for orgs. The team is going to focus on finalizing their roadmap for 2022, which will aim to have Upstream developed on Upstream (notice the dog-fooding pattern here? 😁). They are also looking for a product owner for the team! See details on how to apply [here](https://radicle.community/t/upstream-looking-for-product-owner/2638).
-
-🪄 **Alt-Clients:** (09:48)
-
-Alexis presented the latest for the Radicle interface, CLI updates, Radicle client services and Radicle Cloud. Special shout out to “push quorums” - which are off-chain alternatives to anchoring.
-
-💧 **Drips:** (18:16)
-
-The Drips MVP is live on Ethereum Mainnet ([see here](https://drips.radicle.network/)). You can find detailed documentation for Drips [here](https://gallant-shaw-eaf02b.netlify.app/docs/whats-a-drip.html). The team is planning a more public announcement next week so keep an eye out! They are also already looking at features for Drips V2 which include better ENS and Radicle Orgs integration and exploring layer 2 capabilities for lower transaction fees.
-
-🤝 **Community & Governance:** (32:12)
-
-Abbey announced that there will be some restructuring of the community and governance teams but there are still a few details that need to be smoothed out. The rough picture at the moment will have Nassar focusing on growth, Abbey & Shelby focusing on governance and Tom focusing on marketing.
-
-Joint reminder from Abbey, Shelby and bordumb of the upcoming on-chain vote for the Radicle Grants Program that is going live this week! The repo docs can be found [here](https://github.com/radicle-dev/radicle-grants).
-
-Shelby discussed the recognized [delegation platform discussion](https://radicle.community/t/delegation-in-the-radicle-ecosystem/2623) that her and Abbey published before the holidays. They will continue with getting this set up in January. Also keep an eye out for a governance newsletter that you can subscribe to get email updates for all important Radicle governance items!
+💸 [Radicle Grants Program Update](https://radicle.community/t/grants-community-update-january-2022/3205)
 
 </Collapse>
 
@@ -470,5 +362,171 @@ Thanks for joining this month’s community call! Below is a collection of all w
 🤝 [Community & Governance Update](https://radicle.community/t/community-governance-update-october-2022/3098)
 
 💸 [Radicle Grants Program Update](https://radicle.community/t/grants-community-update-september-2022/3096)
+
+</Collapse>
+
+<Collapse title="November Community Call" date="30 November 2022">
+
+📹 [Link to call recording](https://youtu.be/8Jj65PBV5K4)
+
+Thanks for joining this month’s community call! Below is a collection of all written updates from each core team shared in the call. 
+
+🪄 [Clients Update](https://radicle.community/t/clients-community-update-november-2022/3141)
+
+☔ [Funding & Drips Community Update](https://radicle.community/t/funding-drips-community-update-november-2022/3134)
+
+🚀 Growth Update (coming soon) - [EGF Retrospective](https://radicle.community/t/ecosystem-growth-fund-retrospective/3131/4)
+
+🤝 [Community & Governance Update](https://radicle.community/t/community-governance-update-november-2022/3137)
+
+💸 [Radicle Grants Program Update](https://radicle.community/t/grants-community-update-november-2022/3138)
+
+</Collapse>
+
+<Collapse title="December Community Call" date="4 January 2023">
+
+📹 [Link to call recording](https://www.youtube.com/watch?v=gME0CNpmEec&list=PLUUjDC9sOrplFcqQxhgQGKRXKMSqJ_wOZ&index=15&t=2s)!
+
+Thanks for joining this month’s community call! Below is a collection of all written updates from each core team shared in the call. 
+
+🪄 Clients Update (coming soon)
+
+☔ [Funding & Drips Community Update](https://radicle.community/t/drips-community-update-december-2022/3172)
+
+🎺 [Marketing Update](https://radicle.community/t/marketing-team-december-2022-community-update/3173/2)
+
+🤝 [Community & Governance Update](https://radicle.community/t/community-governance-update-december-2022/3174)
+
+💸 [Radicle Grants Program Update](https://radicle.community/t/grants-community-update-december-2022/3175)
+
+[Link to Discord thread](https://discord.com/channels/841318878125490186/1034856602399932496) on the future of Community Calls
+
+</Collapse>
+
+### 2021
+
+<Collapse title="September Community Call" date="29 September 2021">
+
+📹 [LINK TO CALL RECORDING](https://www.youtube.com/watch?v=sTp9BxCr8uQ)
+  
+🔗 **Radicle Link Team**
+
+- Went over details of the mail-oriented collaboration they have been experimenting with and gave progress updates to CLIs and upcoming cycle tags. You can join the mailing list [here](https://lists.sr.ht/~radicle-link/dev)!
+
+🌈 **Upstream** (0:05:26)
+
+- Discussed improvements to org reliability, concurrency issues and UX, including cleaning up profiles and adding anchors to project screens. Currently accepting design contributions! Learn more [here](https://github.com/radicle-dev/radicle-upstream/blob/master/docs/contributing.md#contributing-to-the-design).
+
+🪄 **Alt-clients** (0:08:25)
+
+- Demonstrated cloning capabilities without having Radicle desktop client installed and updates to ENS-based workflow command.
+
+💧 **Community Tokens** (0:16:59)
+
+- Discussed MVP implementation of community tokens. Demoed updates to fundraising workflow for projects and new features like methods of fundraising (subscription-based vs one-off sales) and Drips. Still working on Javascript & HTML front end and deploying subgraphs to The Graph. Learn more [here](https://radicle.community/t/feedback-on-nft-community-tokens/2455).
+
+🤝 **Community** (0:30:37)
+
+- Introduced [Nassar](https://twitter.com/nassarhayat?lang=en) (0:35:10) to Radicle team who is focusing on adoption partnerships and growth . Announced launch of [new community blog](https://app.radicle.network/orgs/community.radicle.eth/projects/rad:git:hnrkxcktftwxbk9yshjgspqqyxnye1phzjz7y/4328ca273b1c94f4620ac7f4e38c2d22597054ee) (submissions welcome!) and reminder to keep an eye out for Radicle projects coming out of [ETHOnline](https://online.ethglobal.com/) hackathon coming up mid-October.
+
+🏛️ **Governance Updates**
+
+- Closed applications for program lead of grants program. Choice will be announced at the next Radicle Governance Call in 2 weeks!
+
+💻 **Demo: Creating Org Nodes** (0:38:43)
+
+- Tutorial for org creation is also in the works and will be coming soon and will be posted on the mirror community blog!
+
+</Collapse>
+
+<Collapse title="October Community Call" date="27 October 2021">
+
+📹 [LINK TO CALL RECORDING](https://www.youtube.com/watch?v=Ok-35W-Q2zM)
+
+🔗 **Radicle Link Team** (02:56)
+
+Fintan ran through updates to their release cycles from the last month. They included updates to protocol usability, CLI improvements, and changes to the contributions and collaborative objects. You can join the mailing list for updates [here](https://lists.sr.ht/~radicle-link/dev)!
+
+🌈 **Upstream** (7:56)
+
+The Upstream team will be shifting their focus towards code collaboration. Thomas explained how they are still working through replication issues and announced that the migration to Radicle link architecture is going to take a back seat. For more detail & other cool updates from Upstream check out [this post](https://radicle.community/t/upstream-october-2021-community-update/2544).
+
+💧**Community Tokens/Funding** (16:10)
+
+The funding team has been working hard making improvements and testing new features to the Community Token MVP. Some highlights Andrew mentioned include gas optimization, maintainer and supporter community token benefits, custom SVG token graphics and sharing funding via “drips” - a way to help fund other projects or contributors who have helped develop your project. He also demoed creating a new project from start to finish. Learn more [here](https://radicle.community/t/feedback-on-nft-community-tokens/2455).
+
+🪄 **Alt-clients** (34:13)
+
+Sebastian presented new features they want to add to commit verification and code contribution rewards and demoed what they could look like. These updates make it easier to track and reward contributors. Shipping of these features still tbd.
+
+🤝 **Community & Governance** (50:25)
+
+Abbey introduced two new members to the Governance Working Group, Shelby & bordumb. Shelby is joining as a Governance Facilitator and bordumb will be leading the [Radicle Grants Program](https://radicle.community/t/discussion-radicle-grants-program/2531/2).
+
+She also provided updates on recent and upcoming hackathons Radicle is involved with and [partnership proposal from Akash](https://github.com/slowriot/anubis). Next focus will be ramping up Orgs with Nassar and building out the marketing team for better visibility and accessibility.
+
+</Collapse>
+
+<Collapse title="November Community Call" date="24 November 2021">
+
+📹 [LINK TO CALL RECORDING](https://www.youtube.com/watch?v=5AjpFVvm9Po)
+
+🔗 **Radicle Link Team** (0:56)**:**
+
+Fintan announced updates regarding Collaborative objects, CLI ([see new README](https://github.com/radicle-dev/radicle-link/blob/master/bins/rad/README.md)) and replication. Upcoming focus areas for the Link Team include Replication V3, tracking storage and resurrecting linked node. You can find the full list of their updates [here](https://radicle.community/t/link-november-2021-community-update/2591)! You can subscribe to their “Announcements” mailing list [here](https://lists.sr.ht/~radicle-link/announce).
+
+🌈 **Upstream** (09:27)**:**
+
+Julian highlighted updates to the org explore page, improvements to the debug window and integration for ENS metadata. He ran through how they are working on improvements for replication and are hosting an internal networking party to test a few features out. You can find more updates for the Upstream team [here](https://radicle.community/t/upstream-november-2021-community-update/2594).
+
+🪄 **Alt-Clients** (16:28)**:**
+
+Alexis welcomed Ryan and Dave to the Upstream team. Ryan is helping work on the org node/git bridge and Dave is focusing on a new cloud offering project. The team has been focusing efforts on p2p infrastructure, improving web features for org treasuries & memberships, signed git push support and more! His Jamboard overview will also rock your world!
+
+💧 **Funding -> Now Drips!** (30:31)
+
+Andrew announced that the funding team will now become Drips (see Discord channel). They have been working hard on the MVP and hope to launch as early as Dec. 2! Skip to this section of the video to hear more behind the reason for the rebrand, further Drip updates and to see an awesome demo of the latest version of the app!
+
+🤝 **Community & Governance:** (48:10)
+
+Abbey [introduced Thom](https://radicle.community/t/marketing-at-radicle/2589) who is joining the Radicle team to focus on marketing. She also reminded everyone of the [Berlin Radicle Contributor Get Together](https://radicle.community/t/berlin-radicle-contributors-get-together/2586/7)! We may have to postpone depending on Covid circumstances.
+
+Nassar has been focused on developing & testing use cases for DevDAOs to test with market/guide outreach, providing product input value add on contribution features and has been onboarding a bunch of cool teams like Polygon and Textile! He noted there are still many challenges to on-boarding and that they are still working on solutions. Next steps include onboarding partners to Drips and continue to help with user testing.
+
+Shelby reminded everyone of the open Snapshot poll for the
+
+[Radicle Grants Program](https://radicle.community/t/formal-review-radicle-grants-program-v1/2548/). Keep your eyes out for the
+
+[Removing Name Registration Fee](https://radicle.community/t/discussion-remove-name-registration-fee/2583/2) proposal moving into the Formal Review stage this week. She also reminded everyone to follow the [Radicle Governance Twitter](https://twitter.com/rad_gov) page which will be used to post important updates and reminders surrounding Radicle governance!
+
+</Collapse>
+
+<Collapse title="December Community Call" date="5 January 2022">
+
+📹 [LINK TO CALL RECORDING](https://www.youtube.com/watch?v=lMTHUPsNv10)
+
+🔗 **Radicle Link Team:** (0:57)
+
+Replication V3 has been merged! Fintan shared the Link team’s roadmap proposal (found here) which includes playing with new features and improvements to existing infrastructure & tooling. The main goal is to move towards hosting Radicle Link on Radicle Link. You can find the full update [here](https://radicle.community/t/link-january-2022-community-update/2634).
+
+🌈 **Upstream:** (05:10)
+
+Rudolfs announced updates for replication for upstream and improvements for orgs. The team is going to focus on finalizing their roadmap for 2022, which will aim to have Upstream developed on Upstream (notice the dog-fooding pattern here? 😁). They are also looking for a product owner for the team! See details on how to apply [here](https://radicle.community/t/upstream-looking-for-product-owner/2638).
+
+🪄 **Alt-Clients:** (09:48)
+
+Alexis presented the latest for the Radicle interface, CLI updates, Radicle client services and Radicle Cloud. Special shout out to “push quorums” - which are off-chain alternatives to anchoring.
+
+💧 **Drips:** (18:16)
+
+The Drips MVP is live on Ethereum Mainnet ([see here](https://drips.radicle.network/)). You can find detailed documentation for Drips [here](https://gallant-shaw-eaf02b.netlify.app/docs/whats-a-drip.html). The team is planning a more public announcement next week so keep an eye out! They are also already looking at features for Drips V2 which include better ENS and Radicle Orgs integration and exploring layer 2 capabilities for lower transaction fees.
+
+🤝 **Community & Governance:** (32:12)
+
+Abbey announced that there will be some restructuring of the community and governance teams but there are still a few details that need to be smoothed out. The rough picture at the moment will have Nassar focusing on growth, Abbey & Shelby focusing on governance and Tom focusing on marketing.
+
+Joint reminder from Abbey, Shelby and bordumb of the upcoming on-chain vote for the Radicle Grants Program that is going live this week! The repo docs can be found [here](https://github.com/radicle-dev/radicle-grants).
+
+Shelby discussed the recognized [delegation platform discussion](https://radicle.community/t/delegation-in-the-radicle-ecosystem/2623) that her and Abbey published before the holidays. They will continue with getting this set up in January. Also keep an eye out for a governance newsletter that you can subscribe to get email updates for all important Radicle governance items!
 
 </Collapse>
