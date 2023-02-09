@@ -12,8 +12,8 @@ for our community to see what's happening within the project.
 
 This is a collection of all monthly Community Call notes that are currently being curated by our Governance Facilitator,
 Shelby. These notes can be posted with each video and should include timestamps to relevant sections of the video. Links
-to all recordings are included under each month. A full collection of our Community Calls can be found
-[here](https://www.youtube.com/playlist?list=PLUUjDC9sOrplFcqQxhgQGKRXKMSqJ_wOZ).
+to all recordings are included under each month. A full collection video recordings of our Community Calls can be found
+on our [YouTube](https://www.youtube.com/playlist?list=PLUUjDC9sOrplFcqQxhgQGKRXKMSqJ_wOZ) playlist.
 
 ### 2023
 
