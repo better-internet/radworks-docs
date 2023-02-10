@@ -5,10 +5,10 @@ title: Community Hub
 
 import Grid, { Button } from '@site/src/components/Grid'
 
-Welcome to the Radicle Community Hub! This is where you'll find project-wide resources, guidelines, and docs relevant
-for anyone who wants to participate in the Radicle community, whether that's [joining
-development](https://github.com/radicle-dev), [watching Community Calls](community/calls.md), or [joining a community
-channel](#join-the-discussion). This hub is currently maintained by the Community & Governance team.
+Welcome to the RadicleDAO community hub! Here you'll find ecosystem-wide resources, guidelines, and docs relevant for
+anyone who wants to participate in our community, whether that's [joining development](https://github.com/radicle-dev),
+[watching Community Calls](community/calls.md), or [joining a community channel](#join-the-discussion). This hub is
+currently maintained by the Community & Governance team.
 
 :::note
 
