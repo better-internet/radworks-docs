@@ -90,16 +90,6 @@ const config = {
             label: 'Governance',
             position: 'left',
           },
-          {
-            href: 'https://radicle.xyz',
-            label: 'Home',
-            position: 'right',
-          },
-          {
-            href: 'https://app.radicle.xyz',
-            label: 'Browse Radicle',
-            position: 'right',
-          },
         ],
       },
       footer: {
