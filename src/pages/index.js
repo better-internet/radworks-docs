@@ -13,30 +13,17 @@ export default function Index() {
             Documentation
           </span>
         </h1>
-        <p className={styles.subhead}>User documentation, onboarding guides, frequently asked questions, and governance for the future of sovereign code infrastructure.</p>
+        <p className={styles.subhead}>Welcome to the documentation for the RadicleDAO ecosystem, which is building sovereign code infrastructure, crowdfunding for the open web, and beyond.</p>
       </header>
       <main className={styles.section}>
         <div className={styles.grid}>
-            <Link to="/get-started" className={styles.item}>
-              <h2>Users</h2>
-              <p>Learn how to securely host and collaborate on software over a peer-to-peer network built on Git.</p>
-              <span className={styles.button}>
-                Go &rarr;
-              </span>
-            </Link>
             <Link to="/community" className={styles.item}>
               <h2>Community</h2>
-              <p>Discover where the Radicle community hangs out and plans for the future of sovereign code infrastructure.</p>
-              <span className={styles.button}>
-                Go &rarr;
-              </span>
+              <p>Discover where our core development teams and contributors hang out and plan product development for Radicle (code collaboration) and Drips (funding).</p>
             </Link>
             <Link to="/governance" className={styles.item}>
               <h2>Governance</h2>
-              <p>Participate in the decentralized community driving project development and our essential transition to the DAO.</p>
-              <span className={styles.button}>
-                Go &rarr;
-              </span>
+              <p>Participate in the decentralized community driving product development and our essential transition to the DAO.</p>
             </Link>
         </div>
       </main>

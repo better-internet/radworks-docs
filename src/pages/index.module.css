@@ -52,10 +52,14 @@
 }
 
 .item {
-  grid-column: span 4;
+  grid-column: span 6;
   border: 1px solid hsla(240, 100%, 66.7%, 0.7);
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 2rem;
+}
+
+.item p {
+  margin-bottom: 0;
 }
 
 .item:hover {
