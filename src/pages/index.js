@@ -5,10 +5,10 @@ import styles from './index.module.css';
 
 export default function Index() {
   return (
-    <Layout title="Radicle Documentation" description="User documentation, onboarding guides, frequently asked questions, and governance for the future of sovereign code infrastructure.">
+    <Layout title="RadicleDAO Documentation" description="User documentation, onboarding guides, frequently asked questions, and governance for the future of sovereign code infrastructure.">
       <header className={styles.header}>
         <h1 className={styles.hero}>
-          Radicle{' '}
+          RadicleDAO{' '}
           <span className={styles.docs}>
             Documentation
           </span>
