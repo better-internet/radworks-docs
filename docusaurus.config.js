@@ -81,11 +81,6 @@ const config = {
         },
         items: [
           {
-            href: '/get-started',
-            label: 'Users',
-            position: 'left',
-          },
-          {
             href: '/community',
             label: 'Community',
             position: 'left',
