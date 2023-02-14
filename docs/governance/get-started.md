@@ -68,7 +68,7 @@ broader Radicle community to let token holders know they are happy to vote on th
 
 **How to become a Delegate:**
 
-- Verify and announce your delegate address via [Boardroom](https://boardroom.io/radicle/proposals) or [Tally](https://www.tally.xyz/gov/radicle).
+- Verify and announce your delegate address via [Tally](https://www.tally.xyz/gov/radicle) or [Boardroom](https://boardroom.io/radicle/proposals).
 
 **How to become an Active Delegate:**
 
