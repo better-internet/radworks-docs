@@ -4,7 +4,7 @@ title: Governance Overview
 
 import Grid, { Button } from '@site/src/components/Grid'
 
-Welcome to Radicle’s version-controlled governance documentation! These docs consist of carefully curated information
+Welcome to RadicleDAO's version-controlled governance documentation! These docs consist of carefully curated information
 and resources that lay out the Radicle’s token voting governance process and how to participate in it.
 
 Radicle is the most resilient open source code collaboration infrastructure to
@@ -16,7 +16,7 @@ coordination. If you want to build the future of decentralized code collaboratio
   <Button
     style={{gridColumn: '1 / span 12'}}
     href="/governance/get-started"
-    title="Get started"
+    title="Get Started"
   >
     Learn how to create proposals, vote on them, and become a delegate.
   </Button>
@@ -30,18 +30,18 @@ coordination. If you want to build the future of decentralized code collaboratio
   <Button
     style={{gridColumn: '1 / span 12'}}
     href="https://boardroom.io/radicle/"
-    title="View the Radicle Governance Portal"
+    title="View the RadicleDAO Governance Portal"
   >
     Vote on active proposals or view the history of previous votes on our Boardroom interface.
   </Button>
 </Grid>
 
-## Radicle Governance Team
+## RadicleDAO Governance Team
 
-Interested in governance at Radicle? Join the Radicle [Discord](https://discord.gg/dZK4TxaU2v) community and slide into
-the (`governance`) [#discussion](https://discord.com/channels/841318878125490186/841346086740164659) and
+Interested in governance at RadicleDAO? Join the [Discord](https://discord.gg/dZK4TxaU2v) community and slide into the
+(`governance`) [#discussion](https://discord.com/channels/841318878125490186/841346086740164659) and
 [#governance-updates](https://discord.com/channels/841318878125490186/955793826264514560) channels to stay up to date on
-all things Radicle governance.
+all things RadicleDAO governance.
 
 There are currently several areas of focus within the governance team. If you are interested in joining any of the
 initiatives below, send us a note on Discord! 
