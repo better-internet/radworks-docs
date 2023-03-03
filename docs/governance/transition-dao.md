@@ -17,7 +17,7 @@ various proposals pass through its process.
 
 ## Radicle Foundation -> Radicle DAO
 
-![A diagram showing the transition from Monadic GmbH in 2017, to Radicle Foundation in 2021, and to Radicle DAO in 2023](/img/transition-dao.png)
+![A diagram showing the transition from Monadic GmbH in 2017, to Radicle Foundation in 2021, and to Radicle DAO in 2023.](/img/transition-dao.png)
 
 Throughout the past year, [furthering
 decentralization](https://radicle.community/t/the-next-phase-of-the-radicledao/2776) of the project has been a priority.
