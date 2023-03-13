@@ -1,10 +1,10 @@
-# Welcome to Radicle's docs! 👋
+# Welcome to RadicleDAO's docs! 👋
 
-This is the repository for the Radicle documentation site at [`docs.radicle.community`](https://docs.radicle.community),
-which includes user-, community-, and governance-focused documentation.
+This is the repository for the RadicleDAO documentation site at [`docs.radicle.community`](https://docs.radicle.community),
+which includes community-, and governance-focused documentation.
 
 This document outlines some contributing guidelines, contact points, and other resources to make it easier to contribute
-to Radicle's documentation.
+to RadicleDAO's documentation.
 
 [`docs.radicle.community`](https://docs.radicle.community) was created with [Docusaurus](https://docusaurus.io/).
 
@@ -91,7 +91,7 @@ docs](https://docusaurus.io/docs/en/navigation).
 
 ### Governance docs
 
-We house many explanatory docs for how RadicleDAO governance works in this repository, with a few exceptions &mdash;
+We house many explanatory docs for how governance works in this repository, with a few exceptions &mdash;
 notably the **Governance Manual**, which which describes the current governance processes of the RadicleDAO and can only
 be updated via off-chain approval.
 
