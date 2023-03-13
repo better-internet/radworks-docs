@@ -10,14 +10,14 @@
   flex-flow: column;
   justify-content: center;
   text-align: center;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .hero {
-  font-family: 'Flexa', sans-serif;
-  font-size: 8rem;
-  font-weight: normal;
+  font-family: 'Inter var', sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
   line-height: 1.1;
   letter-spacing: -0.2vw;
   text-align: center;
@@ -32,9 +32,9 @@
 }
 
 .subhead {
-  margin: 2rem auto;
+  margin: 2rem auto 1rem;
   max-width: 1000px;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .grid {
