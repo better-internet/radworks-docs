@@ -17,7 +17,7 @@ various proposals pass through its process.
 
 ## Radicle Foundation -> Radicle DAO
 
-![A diagram showing the transition from Monadic GmbH in 2017, to Radicle Foundation in 2021, and to Radicle DAO in 2022.](/img/radicle-dao.png)
+![A diagram showing the transition from Monadic GmbH in 2017, to Radicle Foundation in 2021, and to Radicle DAO in 2023.](/img/transition-dao.png)
 
 Throughout the past year, [furthering
 decentralization](https://radicle.community/t/the-next-phase-of-the-radicledao/2776) of the project has been a priority.
@@ -39,7 +39,7 @@ offline activities and anything the DAO can’t do.
 
 ## Path Forward
 
-![A diagram showing the relationship between RadicleDAO, RGP, EGF, Radicle Foundation, and Core Dev Org.](/img/radicle-dao-path.png)
+![A diagram showing the relationship between RadicleDAO encompassing multiple orgs, which have multiple teams and contributors, some of whom work on multiple teams.](/img/radicle-dao.png)
 
 For the remainder of 2022, the [Core Development Org Working
 Group](https://radicle.community/t/open-call-core-development-org-design-working-group/3042) will collaborate with core
