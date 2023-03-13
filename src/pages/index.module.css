@@ -1,6 +1,11 @@
+.center {
+  position: relative;
+  
+}
+
 .section {
   max-width: 1600px;
-  margin: 0 auto;
+  margin: 0 auto auto;
   padding: 0 5vw;
 }
 
@@ -10,13 +15,13 @@
   flex-flow: column;
   justify-content: center;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: auto;
   margin-bottom: 3rem;
 }
 
 .hero {
   font-family: 'Inter var', sans-serif;
-  font-size: 5rem;
+  font-size: 7rem;
   font-weight: bold;
   line-height: 1.1;
   letter-spacing: -0.2vw;
@@ -42,7 +47,7 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   gap: 1.5rem;
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
 }
 
 @media screen and (max-width: 996px) {
