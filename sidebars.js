@@ -43,24 +43,20 @@ const sidebars = {
   // ],
   communitySidebar: [
     'community/community',
-    'community/calls',
-    'community/code-of-conduct',
-  ],
-  governanceSidebar: [
-    'governance/README',
-    'governance/get-started',
-    'governance/manual-overview',
-    'governance/obtain-rad',
+    'community/ecosystem',
+    'community/our-story',
     {
       type: 'category',
-      label: 'Learn more',
+      label: 'Governance',
       collapsed: false,
       items: [
-        'governance/transition-dao',
-        'governance/treasury',
-        'governance/calls-notes-recordings',
+        'community/governance-overview',
+        'community/manual',
+        'community/stay-up-to-date',
       ]
     },
+    'community/contributor-directory',
+    'community/code-of-conduct',
   ],
 };
 

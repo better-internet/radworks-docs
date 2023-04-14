@@ -1,4 +1,5 @@
 ---
+id: stay-up-to-date
 title: Radicle Governance Calls
 ---
 

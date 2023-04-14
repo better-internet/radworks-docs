@@ -1,5 +1,6 @@
 ---
-title: Code of Conduct
+id: our-story
+title: Our Story
 ---
 
 :::note

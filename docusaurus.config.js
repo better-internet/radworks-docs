@@ -80,16 +80,7 @@ const config = {
           height: 48
         },
         items: [
-          {
-            href: '/community',
-            label: 'Community',
-            position: 'left',
-          },
-          {
-            href: '/governance',
-            label: 'Governance',
-            position: 'left',
-          },
+          
         ],
       },
       footer: {
