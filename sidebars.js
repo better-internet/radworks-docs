@@ -51,8 +51,13 @@ const sidebars = {
       collapsed: false,
       items: [
         'community/governance-overview',
-        'community/manual',
+        {
+          type: 'link',
+          label: 'Governance Manual', // The link label
+          href: 'https://github.com/radicle-dev/radicle-governance/blob/main/manual.md', // The external URL
+        },
         'community/stay-up-to-date',
+        
       ]
     },
     'community/contributor-directory',

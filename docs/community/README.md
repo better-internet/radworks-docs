@@ -26,6 +26,7 @@ RADWorks currently funds the development of the following technologies:
     Radicle is building sovereign code collaboration infrastructure.
   </Button>
   <Button
+    style={{gridColumn: '1 / span 12'}}
     href="https://drips.network"
     title="Drips"
     cta="drips.network"
