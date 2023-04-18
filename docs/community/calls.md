@@ -19,7 +19,7 @@ on our [YouTube](https://www.youtube.com/playlist?list=PLUUjDC9sOrplFcqQxhgQGKRX
 
 <Collapse title="January Community Call" date="25 January 2023">
 
-📹 Link to call recording coming soon!
+📹 [Link to call recording](https://youtu.be/lsm8JLaGJUM)!
 
 Thanks for joining this month’s community call! Below is a collection of all written updates from each core team shared in the call. 
 
@@ -32,6 +32,97 @@ Thanks for joining this month’s community call! Below is a collection of all w
 🤝 [Community & Governance Update](https://radicle.community/t/community-governance-update-january-2023/3204)
 
 💸 [Radicle Grants Program Update](https://radicle.community/t/grants-community-update-january-2022/3205)
+    
+<Collapse title="February Community Call" date="1 March 2023">
+
+📹 [Link to call recording](https://youtu.be/WcZbqph_WA4)!
+
+Thanks for joining this month’s community call! Below is a collection of all written updates from each core team shared in the call. 
+
+ℹ️ If you have not let, please read these two important community-wide updates: 
+[An Evolution of Radicle’s Brand(s)](https://radicle.community/t/an-evolution-of-radicle-s-brand-s/3224)
+[An Evolution of Radicle’s Orgs](https://radicle.community/t/org-design-update-an-evolution-of-radicle-s-org-s/3248)
+
+**Community Call Update**
+
+We will transition to a quarterly **DAO Community Call**, that features updates from all Orgs. The goal of this quarterly call is to be a checkpoint between the DAO and its Orgs, while giving the RadicleDAO community a look into what’s happening in the ecosystem. Orgs can choose to host their own monthly community calls moving forward.
+
+This call will happen at the end of every quarter (last week of March, June, September, and December [before holidays]). The first quarterly call will be held on **March 29th, in replacement of our monthly community call.**
+
+**Team Updates**
+
+🪄 [Clients Update](https://radicle.community/t/clients-community-update-february-2023/3264) 
+
+- [Radicle Interface](https://github.com/radicle-dev/radicle-interface/#deployments)
+
+☔ [Drips Update](https://radicle.community/t/drips-team-community-update-february-2023/3262)
+
+🎺 Marketing Update - see [Evolution of Radicle’s Brand(s)](https://radicle.community/t/an-evolution-of-radicle-s-brand-s/3224) post
+
+🤝 [Community & Governance Update](https://radicle.community/t/community-governance-update-february-2023/3263/2)
+
+💸 [Radicle Grants Program Update](https://radicle.community/t/grants-community-update-february-2023/3261)
+    
+<Collapse title="Q2 2023 Community Call" date="5 April 2023">
+
+ℹ️ This is a collection of brief notes & important links that were shared during the Q2 2023 Community Call. The long-term structure and record keeping format of this call is still TBD. The Governance Committee has taken care of notes for this call.
+
+📹 [Call recording](https://youtu.be/zFRkqmo7t2o)
+
+### **Monthly Calls > Quarterly Calls** (01:00)
+
+We  have transitioned from monthly Community Calls to a quarterly cadence. The purpose of Quarterly Calls is to give Orgs a touchpoint with each other and give the DAO a touchpoint with its Orgs. These calls will be an opportunity to sync and share important ecosystem-wide updates and provide higher-level announcements & demos. 
+
+The exact format for these calls going forward still TBD, but all Orgs & Org Committees will have a chance to present updates. We are planning to continue requiring a written update from each Org to post to the forum for a written record of quarterly updates.
+
+### **DAO Transition & Org Shift Review** (05:20)
+
+- [DAO Shift — Tenerife Offsite 2023](https://docs.google.com/presentation/d/1xukbLOIgy_5D0XOAe3-8piRl6nV5a252K36Af2tRh-k/edit?usp=sharing)
+- [A Path to Increasing Decentralization within Radicle](https://radicle.community/t/the-path-to-increasing-decentralization-within-radicle/2417)
+- [The Next Phase of the RadicleDAO](https://radicle.community/t/the-next-phase-of-the-radicledao/2776)
+- [An Evolution of Radicle’s Orgs](https://radicle.community/t/org-design-update-an-evolution-of-radicle-s-org-s/3248/9)
+- [[Formal Review] Start the Foundation Org Proposal](https://radicle.community/t/formal-review-start-the-foundation-org/3280/7)
+
+### **Org Presentations**
+
+ℹ️ Each Org presented their proposals to establish their Orgs as independent projects within the DAO. These proposals include key insights into the purpose of each Org, their annual strategy & quarterly objectives, the structure of their Org, communication channels and budget. 
+
+The notes include below are only a few callouts of important mentions or questions asked. Please see the proposals for full detail.
+
+**Radicle Org** (10:55)
+
+- [Radicle Org Proposal](https://radicle.community/t/discussion-radicle-org-proposal-2023/3288)
+- [Heartwood Radicle repo](https://app.radicle.xyz/seeds/seed.radicle.xyz/rad:z3gqcJUoA1n9HaHKufZs5FCSGazv5)
+- (24:23) Currently Hiring: 2 engineers (probably 1 on front end & 1 on protocol) & 1 designer (either UX or visual).
+- Radicle Calls: Planning on doing monthly calls open to the public. Details coming soon.
+- (25:24) Reporting on Success Metrics: Planning to track monthly/quarterly metrics to monitor growth while providing analysis and context around growth or lack there of of these metrics. These will be shared publicly, but still TBD as to where and how - probably during Quarterly Community Calls.
+- Planning to create a corporate entity based in Switzerland
+
+**Drips Org** (29:11)
+
+- [Drips Org Proposal](https://radicle.community/t/discussion-drips-org-proposal-2023/3289)
+- V2 contracts soft launch on mainnet - bigger public announcement coming Q2!
+- Not planning to grow team this year. Believe in current team to execute on initiatives.
+- (49:00) Drips Calls: Host weekly calls on Discord that anyone can join. They will also probably continue writing monthly updates on the forum.
+- (47:10) Reporting on Success Metrics: Planning to create a public dashboard where most metrics can be viewable in real time. Where this will be shared still TBD. Any service reviews will be reported during the Quarterly Community Calls
+- Establishing a non-for-profit association in CH, where all core contributors can become members
+
+**Grants Org** (51:42)
+
+- [Grants Org Proposal](https://radicle.community/t/discussion-grants-org-proposal-2023/3290)
+- (1:01:02) This Org does not have a monthly budget like other Orgs as they don’t have a regular cadence of grants.
+- Currently not planning to create an entity
+
+**Foundation Org** (1:02:46) ****
+
+- [Foundation Org Proposal](https://radicle.community/t/formal-review-start-the-foundation-org/3280/7) - This proposal has already been submitted to governance and has been approved. See final voting results [here](https://boardroom.io/radicle/proposal/cHJvcG9zYWw6cmFkaWNsZTpvbmNoYWluOjEz).
+- Home of three committees (Governance, Marketing & Operations) that service the DAO & its Orgs
+- Will use existing Swiss Foundation entity as entity structure
+
+### Other Announcements
+
+- A [monthly voting cycle](https://github.com/radicle-dev/radicle-governance/blob/main/manual.md#proposal-cycles) has been initiated as of April 1. The open Org proposals will be the first to go through this new voting cycle, meaning they will move to Formal Review on the 3rd Monday of this month (17th) and be submitted to governance on the 4th Monday (24th).
+- Proposal Reviews: These Proposal Review calls will replace the monthly governance calls and will take place on the 2nd Wednesday of each month. These calls will solely focus on discussing open proposals in that cycle and will be a time for proposal authors to answer questions from the community. The first Proposal Review call will be held on **April 12th** - [join here](https://discord.gg/pPtCn8ZY?event=1092407140897001482)!
 
 </Collapse>
 
