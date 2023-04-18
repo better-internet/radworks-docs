@@ -126,7 +126,7 @@ The notes include below are only a few callouts of important mentions or questio
 
 </Collapse>
 
-### 🪴 2022
+### 2022
 
 <Collapse title="January Community Call" date="26 January 2022">
 
