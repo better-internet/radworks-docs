@@ -69,7 +69,7 @@ This call will happen at the end of every quarter (last week of March, June, Sep
 
 📹 [Call recording](https://youtu.be/zFRkqmo7t2o)
 
-### **Monthly Calls > Quarterly Calls** (01:00)
+### **Monthly Calls to Quarterly Calls** (01:00)
 
 We  have transitioned from monthly Community Calls to a quarterly cadence. The purpose of Quarterly Calls is to give Orgs a touchpoint with each other and give the DAO a touchpoint with its Orgs. These calls will be an opportunity to sync and share important ecosystem-wide updates and provide higher-level announcements & demos. 
 
