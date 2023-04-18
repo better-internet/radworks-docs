@@ -33,6 +33,8 @@ Thanks for joining this month’s community call! Below is a collection of all w
 
 💸 [Radicle Grants Program Update](https://radicle.community/t/grants-community-update-january-2022/3205)
     
+</Collapse>
+    
 <Collapse title="February Community Call" date="1 March 2023">
 
 📹 [Link to call recording](https://youtu.be/WcZbqph_WA4)!
@@ -62,6 +64,8 @@ This call will happen at the end of every quarter (last week of March, June, Sep
 🤝 [Community & Governance Update](https://radicle.community/t/community-governance-update-february-2023/3263/2)
 
 💸 [Radicle Grants Program Update](https://radicle.community/t/grants-community-update-february-2023/3261)
+    
+</Collapse>
     
 <Collapse title="Q2 2023 Community Call" date="5 April 2023">
 
