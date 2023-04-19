@@ -55,7 +55,8 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/radicle-dev/radicle-docs/blob/master/',
+          editUrl: 'https://github.com/radicle-dev/radicle-docs/blob/main/',
+          showLastUpdateTime: true,
         },
         blog: false,
         theme: {
