@@ -1,12 +1,16 @@
 import React from 'react';
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import {ThemeClassNames} from '@docusaurus/theme-common';
 import {useDoc} from '@docusaurus/theme-common/internal';
 import LastUpdated from '@theme/LastUpdated';
 import EditThisPage from '@theme/EditThisPage';
 import TagsListInline from '@theme/TagsListInline';
 import styles from './styles.module.css';
+
+// BEGIN MODIFICATIONS
+import Link from '@docusaurus/Link';
+// END MODIFICATIONS
+
 function TagsRow(props) {
   return (
     <div
@@ -55,6 +59,7 @@ export default function DocItemFooter() {
   return (
     <footer
       className={clsx(ThemeClassNames.docs.docFooter, 'docusaurus-mt-lg')}>
+      {/* BEGIN MODIFICATIONS */}
       <div className={styles.infoBox}>
         <div className="row">
           <div className="col">
@@ -95,7 +100,6 @@ export default function DocItemFooter() {
             </p>
           </div>
         </div>
-        
       </div>
       {/* {canDisplayTagsRow && <TagsRow tags={tags} />}
       {canDisplayEditMetaRow && (
@@ -106,6 +110,7 @@ export default function DocItemFooter() {
           formattedLastUpdatedAt={formattedLastUpdatedAt}
         />
       )} */}
+      {/* END MODIFICATIONS */}
     </footer>
   );
 }

@@ -10,6 +10,8 @@
   }
 }
 
+/* BEGIN MODIFICATIONS */
+
 .infoBox {
   background: #5555FF;
   border-radius: 0.75rem;
@@ -36,6 +38,7 @@ p.infoBoxHeader {
 }
 
 .infoBoxIcon {
-  /* font-size: 1.4rem; */
   margin-right: 0.4rem;
 }
+
+/* END MODIFICATIONS */
