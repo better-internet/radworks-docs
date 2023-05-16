@@ -57,6 +57,7 @@ const sidebars = {
           href: 'https://github.com/radicle-dev/radicle-governance/blob/main/manual.md', // The external URL
         },
         'community/stay-up-to-date',
+        'community/faq',
         
       ]
     },

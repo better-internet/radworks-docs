@@ -15,12 +15,12 @@ Changes to parameters of Treasury-governed contracts (e.g. Drips)
 
 There are a total of 100M $RAD tokens. Proposals can be proposed on-chain by anyone who has an amount of $RAD greater than or equal to 1% of the total token supply delegated to their address. Once proposed, $RAD-holding participants can vote for/against the proposal on-chain. Voting must meet a participation threshold of 4% of total supply to pass. The proposal only passes if the participation threshold is met and votes are a majority “in-favor”. Once passed, the actions outlined in the proposal are executed. To learn more about token governance and how the RadicleDAO’s on-chain governance system works, see here.
 
-Contracts
-Registrar: [0x37723287Ae6F34866d82EE623401f92Ec9013154](https://etherscan.io/address/0x37723287Ae6F34866d82EE623401f92Ec9013154)
-Governance: [0x690e775361AD66D1c4A25d89da9fCd639F5198eD](https://etherscan.io/address/0x690e775361AD66D1c4A25d89da9fCd639F5198eD)
-Timelock: [0x8dA8f82d2BbDd896822de723F55D6EdF416130ba](https://etherscan.io/address/0x8dA8f82d2BbDd896822de723F55D6EdF416130ba)
-Genesis: [0x6838f63899728816f602B3e9bF73952e2bD6dc35](https://etherscan.io/address/0x6838f63899728816f602B3e9bF73952e2bD6dc35)
-Registrar: [0x37723287Ae6F34866d82EE623401f92Ec9013154](https://etherscan.io/address/0x37723287Ae6F34866d82EE623401f92Ec9013154)
+#### Contracts
+* Registrar: [0x37723287Ae6F34866d82EE623401f92Ec9013154](https://etherscan.io/address/0x37723287Ae6F34866d82EE623401f92Ec9013154)
+* Governance: [0x690e775361AD66D1c4A25d89da9fCd639F5198eD](https://etherscan.io/address/0x690e775361AD66D1c4A25d89da9fCd639F5198eD)
+* Timelock: [0x8dA8f82d2BbDd896822de723F55D6EdF416130ba](https://etherscan.io/address/0x8dA8f82d2BbDd896822de723F55D6EdF416130ba)
+* Genesis: [0x6838f63899728816f602B3e9bF73952e2bD6dc35](https://etherscan.io/address/0x6838f63899728816f602B3e9bF73952e2bD6dc35)
+* Registrar: [0x37723287Ae6F34866d82EE623401f92Ec9013154](https://etherscan.io/address/0x37723287Ae6F34866d82EE623401f92Ec9013154 )
 
 
 ### Obtaining $RAD
