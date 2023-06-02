@@ -29,26 +29,24 @@ DAO](https://radicle.community/c/governance/dao-transition/34) section on radic
 Phase of RadicleDAO](https://radicle.community/t/the-next-phase-of-the-radicledao/2776/16), we’ll be putting scaffolding
 in place to transition Core Teams to the DAO over the next year.
 
-The other main Orgs (sub-DAOs) of the Radicle DAO ecosystem will include the Radicle Grants Org, the Radicle Institute
-Org and the Radicle Foundation Org. Radicle Grants will be responsible for funding technical proposals that support open
-source initiatives that help grow the Radicle product, community, and the greater Free and Open Source Software (FOSS)
-and Web3 community at large. The Radicle Institute (formerly EFG) aims to fund initiatives that drive awareness,
-engagement, and adoption of the Radicle stack. The Radicle Foundation will remain at a very limited capacity as an
-entity that safeguards Radicle trademarks and can be funded by the DAO (like any other contributor) to accomplish any
-offline activities and anything the DAO can’t do. 
+The Orgs (or sub-DAOs) of the Radicle DAO ecosystem will include the Radicle Grants Org, Radicle Org, Drips Org, Governance Org and the Radicle Foundation
+Org. Radicle Grants will be responsible for funding technical proposals that support open source initiatives that help grow the Radicle product, community,
+and the greater Free and Open Source Software (FOSS) and Web3 community at large. The Radicle Org will continue to develop a decentralized code
+collaboration network built on open protocols. The Drips Org will continue developing a circular and sustainable social funding network built on Ethereum.
+The Governance Org will steward governance of the RadicleDAO and support community-led initiatives related to treasury management, project
+decentralization, and governance design. The Radicle Foundation will remain at a very limited capacity as an entity that safeguards Radicle trademarks and
+can be funded by the DAO (like any other contributor) to accomplish any offline activities and anything the DAO can’t do.
 
 ## Path Forward
 
 ![A diagram showing the relationship between RadicleDAO encompassing multiple orgs, which have multiple teams and contributors, some of whom work on multiple teams.](/img/radicle-dao.png)
 
-For the remainder of 2022, the [Core Development Org Working
-Group](https://radicle.community/t/open-call-core-development-org-design-working-group/3042) will collaborate with core
-development teams to scope the shifting types of roles and responsibilities and assess where what different types of
-decisions will need to be made where. These changes will also require a discussion on *how* these decisions will be made
-within and between the Core Development Org and teams. The consideration of changing governance needs also extends to
-the coordination across the entire DAO, including figuring out how different Orgs within the DAO can coordinate with and
-influence each other. This will require us to consider governance mechanisms that go beyond token governance, such as
-non-tokenized options, to effectively and efficiently be able to function as a DAO. 
+The [Core Development Org Working
+Group](https://radicle.community/t/open-call-core-development-org-design-working-group/3042) has been collaborating with core teams to scope the shifting
+types of roles and responsibilities that come with the DAO transition. These changes sparks discussions around how decisions will be made within and
+between the Orgs. The consideration of changing governance needs also extends to the coordination across the entire DAO, requiring us to consider
+governance mechanisms that go beyond token governance, such as non-tokenized options, to effectively and efficiently be able to function as a DAO. The goal
+is to have these new Orgs and necessary governance upgrades in place by the end of Q1 2023.
 
 The definition of this emerging process has only been possible through the participation and contributions of Radicle’s
 contributors. Navigating such a big change has been no small task and if we are going to truly create a sustainable and
