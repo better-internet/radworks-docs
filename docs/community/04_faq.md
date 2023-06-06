@@ -5,7 +5,11 @@ title: FAQ
 
 import Grid, { Button } from '@site/src/components/Grid'
 
-> ⚠️ Please note that we are not recommending any of theses third party tools over the other. This document is meant to provide some basic descriptions, examples and instructions to help make onboarding to voting and proposal creation flows in governance more approachable for our community members. Each individual is **strongly encouraged** to perform their own due diligence before trusting third-party services listed below.
+:::note
+
+ We are not recommending any of theses third party tools over the other. This document is meant to provide some basic descriptions, examples and instructions to help make onboarding to voting and proposal creation flows in governance more approachable for our community members. Each individual is **strongly encouraged** to perform their own due diligence before trusting third-party services listed below.
+
+:::
 
 # Wallet Basics & Safety
 Most wallet providers have great documentation and safety tips on their websites. Here are a few examples:
@@ -53,7 +57,10 @@ Proposal creation is also possible on Boardroom and Tally. They make it easy for
 # Voting Tips & Trouble-shooting
 
 ### What do I need to know before voting?
-#### ⚠️ IMPORTANT NOTES ON DELEGATION
+
+:::note
+
+**⚠️ IMPORTANT NOTES ON DELEGATION**
 * No matter what wallet or voting platform you use, to participate in off-chain and on-chain voting you have to first delegate the voting power of your RAD to yourself or another address. If you do not delegate to yourself or another address before voting, the transaction will go through but the vote will show having 0 RAD voting power.
 
 * Any delegation made on-chain will be mirrored to Snapshot for off-chain votes - i.e. any $RAD that is delegated to your wallet on-chain will be able to be able to be used to vote in off-chain Snapshot polls.
@@ -61,6 +68,8 @@ Proposal creation is also possible on Boardroom and Tally. They make it easy for
 * In order to utilize delegated voting power in a vote, delegation needs to take place before the vote goes live.
 
 * Delegation only needs to be set up once. The only time you need to redelegate is to change or remove the address you are delegating to, otherwise delegation will continue to the assigned address.
+
+::: 
 
 ### What are some troubleshooting steps I can try if I am having  trouble connecting a wallet or voting?
 * If you are having troubles on one platform (Boardroom, Tally), try using the other.
@@ -88,16 +97,21 @@ Proposal creation is also possible on Boardroom and Tally. They make it easy for
 * The other address is ready to vote on proposals on- and off-chain with the newly delegated voting power
 
 ### How do I connect a hardware wallet to vote?
-> Hardware wallets supported on Boardroom include:
->   * Ledger: connect via Ledger Live.
->   * KeepKey, Trezor and others: connect via WalletConnect
->
-> Hardware wallets supported by Tally include:
->   * Ledger, Gridplus and Lattice - all which can be connected via Wallet Connect
 
-* Connect your hardware wallet to the platform. If you are having troubles, reach out to the platform’s support teams ([Tally](https://discord.gg/63Pj2mR8), [Boardroom](https://discord.gg/yRXgGNQn))
-* Delegate to yourself or another address and confirm the transaction as prompted
-* That address is ready to vote on proposals on- and off-chain with the newly delegated voting power
+:::note 
+
+**Boardroom:** supported hardware wallets include:
+  * *Ledger:* connect via Ledger Live.
+  * *KeepKey, Trezor and others:* connect via WalletConnect
+
+**Tally:** supported hardware wallets include:
+  * *Ledger, Gridplus and Lattice* connect via WalletConnect
+
+:::
+
+1. Connect your hardware wallet to the platform. If you are having troubles, reach out to the platform’s support teams ([Tally](https://discord.gg/63Pj2mR8), [Boardroom](https://discord.gg/yRXgGNQn))
+2. Delegate to yourself or another address and confirm the transaction as prompted
+3. That address is ready to vote on proposals on- and off-chain with the newly delegated voting power
 
 ### How do I connect a multisig to vote?
 #### On Tally
@@ -122,15 +136,19 @@ You need at least 1M $RAD (1% of total $RAD supply) delegated to your address to
 * The platform will confirm if the wallet you have connected meets all of the requirements to post a proposal. If you do not meet the requirements, follow the instructions on the screen. If you do, continue to the proposal page
 * Fill in the necessary information as prompted and publish the proposal
 
-### How do I create a proposal with a Ledger?
-> Hardware wallets supported on Boardroom include:
->   * Ledger: connect via Ledger Live.
->   * KeepKey, Trezor and others: connect via WalletConnect
->
-> Hardware wallets supported by Tally include:
->   * Ledger, Gridplus and Lattice - all which can be connected via Wallet Connect
+### How do I create a proposal with a hardware wallet?
+:::note 
 
-* Connect your Ledger via Ledger Live connection option on Boardroom
+**Boardroom:** supported hardware wallets include:
+  * *Ledger:* connect via Ledger Live.
+  * *KeepKey, Trezor and others:* connect via WalletConnect
+
+**Tally:** supported hardware wallets include:
+  * *Ledger, Gridplus and Lattice* connect via WalletConnect
+
+:::
+
+* Connect your hardware wallet via the appropriate  connection option on Boardroom
 * Follow the steps on the Ledger to connect
 * Select “Create a new proposal” or “Add a new proposal”
 * Boardroom will confirm if the wallet you have connected meets all of the requirements to post a proposal. If you do not meet the requirements, follow the instructions on the screen. If you do, continue to the proposal page

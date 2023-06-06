@@ -3,6 +3,8 @@ id: stay-up-to-date
 title: Stay up to date
 ---
 
+### [BROWSE COMMUNITY CHANNELS & FORUMS](https://radworks.org)
+
 The governance team hosts monthly governance calls on [Discord](https://discord.gg/j2HZCBDUvF) to provide an opportunity
 to discuss current governance proposals, share updates from the governance team, and highlight important discussion
 around the transition to the DAO. This is also a great opportunity to ask questions and communicate ideas or concerns

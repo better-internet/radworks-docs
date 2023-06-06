@@ -20,7 +20,8 @@ A language developed to be the basis of [open source coin](https://web.archive.o
 ### February, 2019: Radicle (code collab) [launches in alpha](https://web.archive.org/web/20190314142514/http://www.radicle.xyz/)
 The initial version of the code collaboration platform that was built on IPFS.
 
-### March, 2019: Oscoin whitepaper is released
+### March, 2019: [Oscoin whitepaper](https://github.com/oscoin/whitepaper) is released
+The whitepaper formally defined the oscoin protocol and network.
 
 ### June, 2020: Radicle Foundation is established
 A Swiss Foundation that acts as Radworks’ trusted real-world entity that stewards the progressively decentralization of the project.
@@ -53,13 +54,13 @@ The Radicle Ecosystem Growth Fund (EGF) was set up to fund initiatives that driv
 A coordinated effort defined by four workstreams to transition funding & coordination of core development from the Radicle Foundation to the community. 
 
 ### July, 2022: Radicle Upstream is [deprecated](https://radicle.community/t/upstream-july-2022-community-update/2962), Radicle team starts building new [Heartwood protocol](https://github.com/radicle-dev/heartwood)
-Upstream was sunsetted to shift focus to the web client. The Radicle team starts re-architecting the third iteration of the Radicle Protocol, Heartwood.
+Upstream is sunset to shift focus to the web client. The Radicle team starts re-architecting the third iteration of the Radicle Protocol, Heartwood.
 
-### September, 2022: [Radicle Foundation becomes DAO-funded](https://radicle.community/t/11-phase-0-transition-to-the-dao/3026)
-The Foundation, which was independently funding and coordinating core development work of the Radicle project, becomes fully funded via the DAO’s treasury. This marks the first phase of the [project’s “transition to the DAO”](https://radicle.community/t/the-next-phase-of-the-radicledao/2776). 
+### September, 2022: [Radicle Foundation becomes fully DAO-funded](https://radicle.community/t/11-phase-0-transition-to-the-dao/3026)
+The Foundation — which was funding & coordinating core development work of the Radicle project independently from the DAO — comes under the purview of DAO governance. This completes the first phase of the [project’s “transition to the DAO”](https://radicle.community/t/the-next-phase-of-the-radicledao/2776). 
 
 ### November, 2022: [Wrapping up of the Ecosystem Growth Fund](https://radicle.community/t/ecosystem-growth-fund-retrospective/3131)
-Sunsetted until a clearer path towards PMF for development teams is feasible.
+The EGF is sunset until a clearer path towards PMF for development teams is apparent.
 
 ### April, 2023:  Heartwood launches
 The [Heartwood protocol](https://app.radicle.xyz/seeds/seed.radicle.xyz/rad:z3gqcJUoA1n9HaHKufZs5FCSGazv5) [launches in April 2023](https://twitter.com/radicle/status/1648336183468933122?s=20) and addresses usability and performance concerns we faced during the previous iterations of the protocol, while doubling down on Radicle's secure and resilient primitives.

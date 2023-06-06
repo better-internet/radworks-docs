@@ -62,7 +62,6 @@ const sidebars = {
         
       ]
     },
-    'community/contributor-directory',
     'community/code-of-conduct',
   ],
 };

@@ -13,10 +13,9 @@ Radwork’s treasury is controlled by an on-chain governance mechanism ([Compoun
 * Upgrades to the on-chain governance system
 * Changes to parameters of Treasury-governed contracts (e.g. Drips)
 
-[CREATE A PROPOSAL]
-[VOTE ON PROPOSALS]
-[DELEGATE VOTES]
-
+### [CREATE A PROPOSAL](https://github.com/radicle-dev/radicle-governance/blob/main/manual.md#proposal-types)
+### [VOTE ON PROPOSALS](https://github.com/radicle-dev/radicle-governance/blob/main/manual.md#voting)
+### [DELEGATE VOTES](https://github.com/radicle-dev/radicle-governance/blob/main/manual.md#delegating)
 
 #### Contracts
 * Registrar: [0x37723287Ae6F34866d82EE623401f92Ec9013154](https://etherscan.io/address/0x37723287Ae6F34866d82EE623401f92Ec9013154)
