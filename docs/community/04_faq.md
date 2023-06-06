@@ -37,7 +37,7 @@ These can be hardware or hot wallets. These wallets don’t require you to trust
 *Examples of self-hosted or non-custodial wallets:* MetaMask, Rainbow, any hardware wallet
 
 #### Hosted
-These wallets are considered to be less secure than a non-custodial wallet, but many still be preferred as they don’t require as much responsibility and are usually more user friendly. As these wallets are hosted by centralized entities that are privy to regulation, there is a risk of losing access to these wallets by the company running into issues. Please note that we have experienced issues voting with hosted wallets such as Coinbase wallets in the past.
+These wallets require more  trust in an intermediary to host your wallet than a non-custodial wallet, but many still be preferred as they don’t require as much responsibility and are usually more user friendly. As these wallets are hosted by centralized entities that are privy to regulation, there is a risk of losing access to these wallets by the company running into issues. Please note that community members have experienced issues voting with hosted wallets  in the past. Please see our troubleshooting section below if you experience issues.
 
 *Examples of hosted or custodial wallets:* Coinbase, Binance
 
@@ -58,9 +58,6 @@ Proposal creation is also possible on Boardroom and Tally. They make it easy for
 
 ### What do I need to know before voting?
 
-:::note
-
-**⚠️ IMPORTANT NOTES ON DELEGATION**
 * No matter what wallet or voting platform you use, to participate in off-chain and on-chain voting you have to first delegate the voting power of your RAD to yourself or another address. If you do not delegate to yourself or another address before voting, the transaction will go through but the vote will show having 0 RAD voting power.
 
 * Any delegation made on-chain will be mirrored to Snapshot for off-chain votes - i.e. any $RAD that is delegated to your wallet on-chain will be able to be able to be used to vote in off-chain Snapshot polls.
@@ -69,8 +66,6 @@ Proposal creation is also possible on Boardroom and Tally. They make it easy for
 
 * Delegation only needs to be set up once. The only time you need to redelegate is to change or remove the address you are delegating to, otherwise delegation will continue to the assigned address.
 
-::: 
-
 ### What are some troubleshooting steps I can try if I am having  trouble connecting a wallet or voting?
 * If you are having troubles on one platform (Boardroom, Tally), try using the other.
 * If you are having troubles in one browser, try using another.
@@ -78,23 +73,27 @@ Proposal creation is also possible on Boardroom and Tally. They make it easy for
 * Reach out in the [#help](https://discord.gg/radicle) channel on Discord for help
 
 ### How do I connect a hot wallet to vote?
-#### Self-delegation
+#### Delegating to yourself
 * Connect your wallet to an on-chain voting platform (Boardroom, Tally)
 * Delegate your votes by selecting “Delegate Vote” on Tally or “Set up delegation” on Boardroom in the top right part of the screen
 * Select “Delegate to myself”
-* Confirm the transaction as prompted. This have a gas fee. Note: It may take a few minutes for the transaction to go through and reflect on the on-chain platform and Snapshot
+* Confirm the transaction as prompted (this will have a gas fee)
 * Select the proposal you would like to vote on
 * Review the options available to vote - “For” or “Against” or “Abstain”
 * Select the option you would like to vote for and select “Vote”
   * *Optional:* You can leave a comment on why you are voting on way or another before confirming the vote
-* Confirm the transaction as prompted. This have a gas fee. *Note: It may take a few minutes for the transaction to go through and reflect on the on-chain platform and Snapshot*
+* Confirm the transaction as prompted (this will have a gas fee)
 
 #### Delegating to another address
 * Connect your wallet to an on-chain voting platform (Boardroom, Tally)
 * Delegate your votes by selecting “Delegate Vote” on Tally or “Set up delegation” on Boardroom in the top right part of the screen
 * Select “Delegate to another address”
-* Confirm the transaction as prompted. This will have a gas fee. *Note: It may take a few minutes for the transaction to go through and reflect on the on-chain platform and Snapshot*
+* Confirm the transaction as prompted (this will have a gas fee)
 * The other address is ready to vote on proposals on- and off-chain with the newly delegated voting power
+
+:::note
+It may take a few minutes for transactions to go through and be shown on governance interfaces.*
+:::
 
 ### How do I connect a hardware wallet to vote?
 
@@ -126,7 +125,7 @@ Proposal creation is also possible on Boardroom and Tally. They make it easy for
 # On-chain Proposal Creation Tips & Trouble-shooting
 
 ### What do I need to know before creating a proposal?
-You need at least 1M $RAD (1% of total $RAD supply) delegated to your address to post an on-chain proposal. You need at least 1K $RAD delegated to your wallet to post an off-chain Snapshot poll. Please make sure delegation is set up to the correct wallet before trying to post a proposal.
+You need at least 1M $RAD (1% of total $RAD supply) delegated to your address to post an on-chain proposal. You need at least 1K $RAD delegated to your wallet to post an off-chain Snapshot poll. Make sure that delegation is set up to the correct wallet before trying to post a proposal.
 
 *The following instructions are for on-chain proposal creation. [Follow these instructions](https://docs.snapshot.org/user-guides/proposals/create) to post an off-chain proposal on Snapshot.*
 
@@ -149,7 +148,7 @@ You need at least 1M $RAD (1% of total $RAD supply) delegated to your address to
 :::
 
 * Connect your hardware wallet via the appropriate  connection option on Boardroom
-* Follow the steps on the Ledger to connect
+* Follow the steps on your device to connect
 * Select “Create a new proposal” or “Add a new proposal”
 * Boardroom will confirm if the wallet you have connected meets all of the requirements to post a proposal. If you do not meet the requirements, follow the instructions on the screen. If you do, continue to the proposal page
 * Fill in the necessary information as prompted and publish the proposal
@@ -159,9 +158,9 @@ You need at least 1M $RAD (1% of total $RAD supply) delegated to your address to
 * Login with an [Externally Owned Account (EOA)](https://ethereum.org/en/whitepaper/#ethereum-accounts)
 * Create a draft of the proposal
 * Logout
-* Use Wallet Connect to connect as the multisig wallet
+* Use WalletConnect to connect as the multisig wallet
 * Follow remaining steps to publish the proposal
 
 #### On Boardroom
-* Use Wallet Connect to connect as the multisig wallet directly
+* Use WalletConnect to connect as the multisig wallet directly
 * Follow the regular steps to publish the proposal
