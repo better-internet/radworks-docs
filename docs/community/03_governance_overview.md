@@ -8,12 +8,15 @@ import Grid, { Button } from '@site/src/components/Grid'
 Welcome to RadicleDAO's version-controlled governance documentation! These docs consist of carefully curated information
 and resources that lay out the Radicle’s token voting governance process and how to participate in it.
 
-The RadicleDAO’s Treasury is controlled by a tokenized governance mechanism (Compound-Governor) via the project’s native governance token ($RAD). With token governance, holders of $RAD holders can participate in the decision-making around the treasury by voting and creating on-chain governance proposals composed of executable actions. Currently, these actions include:
-Treasury distributions of RAD, ETH, and USDC
-Upgrades to the on-chain governance system
-Changes to parameters of Treasury-governed contracts (e.g. Drips)
+Radwork’s treasury is controlled by an on-chain governance mechanism ([Compound-Governor](https://wiki.tally.xyz/docs/compound-governor)) via the project’s native governance token ($RAD). Holders of this token can participate in the decision-making around the treasury by voting and creating on-chain governance proposals composed of executable actions. Currently, these actions include:
+* Treasury distributions of RAD, ETH, and USDC
+* Upgrades to the on-chain governance system
+* Changes to parameters of Treasury-governed contracts (e.g. Drips)
 
-There are a total of 100M $RAD tokens. Proposals can be proposed on-chain by anyone who has an amount of $RAD greater than or equal to 1% of the total token supply delegated to their address. Once proposed, $RAD-holding participants can vote for/against the proposal on-chain. Voting must meet a participation threshold of 4% of total supply to pass. The proposal only passes if the participation threshold is met and votes are a majority “in-favor”. Once passed, the actions outlined in the proposal are executed. To learn more about token governance and how the RadicleDAO’s on-chain governance system works, see here.
+[CREATE A PROPOSAL]
+[VOTE ON PROPOSALS]
+[DELEGATE VOTES]
+
 
 #### Contracts
 * Registrar: [0x37723287Ae6F34866d82EE623401f92Ec9013154](https://etherscan.io/address/0x37723287Ae6F34866d82EE623401f92Ec9013154)
