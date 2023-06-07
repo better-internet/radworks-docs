@@ -38,32 +38,22 @@ This docs hub is designed to be a resource people can use to familiarize themsel
 
 <Grid>
   <Button
-    style={{gridColumn: '1 / span 12'}}
     href="/community/ecosystem"
     title="Our Ecosystem"
   >
     Learn more about what RADWorks is.
   </Button>
   <Button
-    style={{gridColumn: '1 / span 12'}}
     href="/community/our-story"
     title="Our Story"
   >
     Read more about our vision for decentralized governance, the evolution of the project, and where we're looking next.
   </Button>
   <Button
-    style={{gridColumn: '1 / span 12'}}
     href="/community/governance-overview"
     title="Governance Overview"
   >
     Learn more about how RADWorks functions.
-  </Button>
-  <Button
-    style={{gridColumn: '1 / span 12'}}
-    href="/community/contributor-directory"
-    title="Who We Are"
-  >
-    Find contributors and see who's working on
   </Button>
 </Grid>
 
