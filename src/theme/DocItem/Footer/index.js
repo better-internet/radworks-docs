@@ -79,7 +79,7 @@ export default function DocItemFooter() {
             <p>{editUrl && <EditThisPage editUrl={editUrl} />}</p>
             <p>
               <span className={styles.infoBoxIcon}>🤝</span> 
-              <Link to={'#'}>
+              <Link to={'/community/stay-up-to-date'}>
                 Stay up to date
               </Link>
             </p>
@@ -88,16 +88,16 @@ export default function DocItemFooter() {
             <p className={styles.infoBoxHeader}>Need help?</p>
             <p>
               <span className={styles.infoBoxIcon}>💬</span> 
-              <Link to={'#'}>
+              <Link to={'https://discord.gg/radicle'}>
                 Find us on Discord
               </Link>
             </p>
-            <p>
+            {/* <p>
               <span className={styles.infoBoxIcon}>🧭</span> 
               <Link to={'#'}>
                 Another link
               </Link>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
