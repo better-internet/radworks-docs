@@ -72,11 +72,11 @@ const config = {
         title: '',
         logo: {
           alt: 'Radicle',
-          src: 'img/favicon.svg',
-          srcDark: 'img/favicon.svg',
+          src: 'img/radworks-logo.png',
+          srcDark: 'img/radworks-logo.png',
           href: '/',
           target: '_self',
-          width: 56,
+          width: 48,
           height: 48
         },
         items: [
