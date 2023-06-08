@@ -8,8 +8,6 @@ title: Stay up to date
 ### Community Calls
 Community Calls are held on a quarterly basis. Each Org is responsible for sending one team member to present a progress update on what they are working on and what they have planned for the coming quarter. This is an opportunity for Orgs to touch base with each other and for our community to see what's happening within the project.
 
-More detailed and frequent updates from each of the Orgs can be found **TBD**.
-
 #### Archive
 In the past, Community Calls happened on a monthly basis. Each core team presented updates and notes, relevant links and the recordings were curated by the Community & Governance team. A full collection of video recordings of our past and current Community Calls can be found on our [YouTube channel](https://www.youtube.com/playlist?list=PLUUjDC9sOrplFcqQxhgQGKRXKMSqJ_wOZ).
 
@@ -25,7 +23,7 @@ Governance calls in the past went into a lot more detail of on-going governance 
 You can subscribe to our [community calendar](https://bit.ly/radicledao-calendar) that includes Quarterly Community Calls, monthly Proposal Review calls and each week of the monthly governance cycle.
 
 ### Twitter
-Check out the Radworks twitter page (@radworks) for important DAO-wide announcements & governance updates. 
+Check out the [Radworks Twitter page](https://twitter.com/radworks_) (@radworks_) for important DAO-wide announcements & governance updates. 
 
 ### YouTube
 Our [YouTube channel](https://www.youtube.com/@radicle6485) has all recordings of past Community Calls and Proposal Reviews. We also have folders for all talks and events our contributors have hosted or spoken at. 

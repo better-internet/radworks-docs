@@ -13,6 +13,7 @@ Radwork’s treasury is controlled by an on-chain governance mechanism ([Compoun
 * Upgrades to the on-chain governance system
 * Changes to parameters of Treasury-governed contracts (e.g. Drips)
 
+### [OBTAIN $RAD](/community/05_obtaining_rad.md)
 ### [CREATE A PROPOSAL](https://github.com/radicle-dev/radicle-governance/blob/main/manual.md#proposal-types)
 ### [VOTE ON PROPOSALS](https://github.com/radicle-dev/radicle-governance/blob/main/manual.md#voting)
 ### [DELEGATE VOTES](https://github.com/radicle-dev/radicle-governance/blob/main/manual.md#delegating)
@@ -23,22 +24,3 @@ Radwork’s treasury is controlled by an on-chain governance mechanism ([Compoun
 * Timelock: [0x8dA8f82d2BbDd896822de723F55D6EdF416130ba](https://etherscan.io/address/0x8dA8f82d2BbDd896822de723F55D6EdF416130ba)
 * Genesis: [0x6838f63899728816f602B3e9bF73952e2bD6dc35](https://etherscan.io/address/0x6838f63899728816f602B3e9bF73952e2bD6dc35)
 * Registrar: [0x37723287Ae6F34866d82EE623401f92Ec9013154](https://etherscan.io/address/0x37723287Ae6F34866d82EE623401f92Ec9013154 )
-
-
-### Obtaining $RAD
-
-$RAD is the native governance token for Radicle, making it the first open-source, community-led, and self-sustaining
-network for software collaboration. Read more about $RAD in our [introductory blog
-post](https://radicle.mirror.xyz/CgcHpSXUlPvwMVaUVVaJ7r8bIJI2BOKOytaI9-nO9oY).
-
-You can obtain $RAD from a number of sources, including decentralized exchanges (e.g.
-[Uniswap](https://info.uniswap.org/#/pools/0x7c8dbf6e88f52cb56dd30190558cb982f62fc660)) and various centralized
-exchanges (e.g. Coinbase).
-
-:::note
-
-For legal reasons, Radicle team cannot apply for or encourage listings. If you're interested in a listing on a specific
-exchange, you can ask the exchange yourself. Trading on other exchanges also increases the overall order volume and
-makes the token listing more likely in new places.
-
-:::

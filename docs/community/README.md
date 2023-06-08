@@ -5,7 +5,7 @@ title: Our Purpose
 
 import Grid, { Button } from '@site/src/components/Grid'
 
-# What is RADWorks?
+# What is Radworks?
 
 Radworks funds new, resilient, permissionless technologies to cultivate internet freedom. We focus on funding and supporting the creation of censorship-resistant and decentralized technologies that empower builders and creators to collaborate. We strive to endorse and provide resources to builders of these technologies.
 
