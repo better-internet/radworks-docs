@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'RadicleDAO Documentation',
-  tagline: 'A peer-to-peer stack for building software together.',
+  title: 'Radworks Documentation',
+  tagline: 'Learn more about how Radworks funds new, resilient, permissionless technologies to cultivate internet freedom.',
   url: 'https://docs.radicle.community',
   baseUrl: '/',
   onBrokenLinks: 'throw',
