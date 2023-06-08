@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
-  gap: 1.5rem;
+  gap: 3rem;
   margin: 0 0 var(--ifm-paragraph-margin-bottom);
 }
 
@@ -34,19 +34,21 @@
 .button {
   position: relative;
   grid-column: span 6;
-  border: 1px solid hsla(240, 100%, 66.7%, 0.7) !important;
-  border-radius: 0.5rem;
+  background: white;
+  box-shadow: 24px 20px 68px 0px rgba(0, 0, 0, .25);
+  /* border: 1px solid hsla(240, 100%, 66.7%, 0.7) !important; */
+  border-radius: 4px 4px 32px 32px;
   padding: 2rem;
 }
 
 .button:hover {
-  border-color: hsl(240, 100%, 66.7%);
-  background-color: hsla(240, 100%, 66.7%, 0.1);
+  /* border-color: hsl(240, 100%, 66.7%); */
+  /* background-color: hsla(240, 100%, 66.7%, 0.1); */
   text-decoration: none;
 }
 
 .button h3 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-bottom: 0;
 }
 
@@ -72,10 +74,13 @@
 
 .cta {
   display: inline-block;
-  padding: 0.5rem;
-  background-color: var(--ifm-color-primary);
-  color: white;
-  border-radius: 0.2rem;
+  padding: 8px 12px;
+  background-color: var(--ifm-color-secondary);
+  color: var(--ifm-font-color-base);
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.5rem;
+  line-height: 1;
+  border-radius: 8px;
   margin-bottom: 0;
 }
 
