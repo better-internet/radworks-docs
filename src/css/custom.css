@@ -102,6 +102,10 @@ html[data-theme='dark'] {
 
 /* Navbar */
 
+.navbar__logo {
+  height: auto;
+}
+
 .dsla-search-field {
   min-width: 150px;
   background: transparent;

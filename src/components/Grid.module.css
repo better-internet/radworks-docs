@@ -3,32 +3,7 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   gap: 3rem;
-  margin: 0 0 var(--ifm-paragraph-margin-bottom);
-}
-
-.grid > div {
-  border: 1px solid hsla(240, 100%, 66.7%, 0.7);
-  border-radius: 0.5rem;
-}
-
-.grid > div:hover {
-  border-color: hsl(240, 100%, 66.7%);
-  background-color: hsla(240, 100%, 66.7%, 0.1);
-}
-
-.grid > div > a {
-  display: block;
-  padding: 1rem;
-  border: 0 !important;
-}
-
-.grid > div > a:after {
-  content: ' \2192';
-}
-
-.grid > div > a:hover {
-  border: 0 !important;
-  text-decoration: none;
+  margin: 0 0 4rem;
 }
 
 .button {
@@ -36,14 +11,11 @@
   grid-column: span 6;
   background: white;
   box-shadow: 24px 20px 68px 0px rgba(0, 0, 0, .25);
-  /* border: 1px solid hsla(240, 100%, 66.7%, 0.7) !important; */
   border-radius: 4px 4px 32px 32px;
   padding: 2rem;
 }
 
 .button:hover {
-  /* border-color: hsl(240, 100%, 66.7%); */
-  /* background-color: hsla(240, 100%, 66.7%, 0.1); */
   text-decoration: none;
 }
 
@@ -54,10 +26,6 @@
 
 .button p:first-of-type {
   margin-top: var(--ifm-heading-margin-bottom);
-}
-
-.button p:last-of-type {
-  margin-bottom: 0;
 }
 
 .ext {
@@ -74,7 +42,7 @@
 
 .cta {
   display: inline-block;
-  padding: 8px 12px;
+  position: relative;
   background-color: var(--ifm-color-secondary);
   color: var(--ifm-font-color-base);
   font-family: var(--ifm-heading-font-family);
@@ -82,10 +50,26 @@
   line-height: 1;
   border-radius: 8px;
   margin-bottom: 0;
+  transition: transform .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.cta a {
+  display: block;
+  border: none !important;
+  padding: 8px 12px;
+}
+
+.cta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 0 #569656;
+  
+}
+
+.cta a:hover {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 996px) {
-
   .button {
     grid-column: span 12;
   }

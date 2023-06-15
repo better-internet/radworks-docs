@@ -40,18 +40,21 @@ This docs hub is designed to be a resource people can use to familiarize themsel
   <Button
     href="/community/ecosystem"
     title="Our Ecosystem"
+    cta="Explore Radworks"
   >
     Learn more about what Radworks is.
   </Button>
   <Button
     href="/community/our-story"
     title="Our Story"
+    cta="Read more"
   >
     Read more about our vision for decentralized governance, the evolution of the project, and where we're looking next.
   </Button>
   <Button
     href="/community/governance-overview"
     title="Governance Overview"
+    cta="Learn more"
   >
     Learn more about how Radworks functions.
   </Button>
