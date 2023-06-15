@@ -67,7 +67,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/radicle_meta.png',
+      image: 'img/radworks_meta.png',
       navbar: {
         title: '',
         logo: {
