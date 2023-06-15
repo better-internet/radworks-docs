@@ -41,7 +41,7 @@ This docs hub is designed to be a resource people can use to familiarize themsel
     href="/community/ecosystem"
     title="Our Ecosystem"
   >
-    Learn more about what RADWorks is.
+    Learn more about what Radworks is.
   </Button>
   <Button
     href="/community/our-story"
@@ -53,7 +53,7 @@ This docs hub is designed to be a resource people can use to familiarize themsel
     href="/community/governance-overview"
     title="Governance Overview"
   >
-    Learn more about how RADWorks functions.
+    Learn more about how Radworks functions.
   </Button>
 </Grid>
 

@@ -23,8 +23,8 @@ for developers in order to receive funds from their users and supporters.
 ## Radicle Foundation Org
 
 The Radicle Foundation provides operations, marketing, and governance support to Radworks and its Orgs. It also fulfills
-roles that are better suited to a legal entity, such as the maintenance of RadicleDAO’s intellectual property and
-initiation of RadicleDAO’s legal analysis and action.
+roles that are better suited to a legal entity, such as the maintenance of Radworks' intellectual property and
+initiation of Radworks' legal analysis and action.
 
 ## Grants Org
 

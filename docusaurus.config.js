@@ -85,7 +85,7 @@ const config = {
       },
       footer: {
         style: 'light',
-        copyright: `Copyright © ${new Date().getFullYear()} The Radicle Team <dev@radicle.xyz> and contributors.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Radworks <dev@radicle.xyz> and contributors.`,
       },
       prism: {
         theme: lightCodeTheme,

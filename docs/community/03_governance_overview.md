@@ -5,10 +5,10 @@ title: Overview
 
 import Grid, { Button } from '@site/src/components/Grid'
 
-Welcome to RadicleDAO's version-controlled governance documentation! These docs consist of carefully curated information
+Welcome to Radworks' version-controlled governance documentation! These docs consist of carefully curated information
 and resources that lay out the Radicle’s token voting governance process and how to participate in it.
 
-Radwork’s treasury is controlled by an on-chain governance mechanism ([Compound-Governor](https://wiki.tally.xyz/docs/compound-governor)) via the project’s native governance token ($RAD). Holders of this token can participate in the decision-making around the treasury by voting and creating on-chain governance proposals composed of executable actions. Currently, these actions include:
+Radworks' treasury is controlled by an on-chain governance mechanism ([Compound-Governor](https://wiki.tally.xyz/docs/compound-governor)) via the project’s native governance token ($RAD). Holders of this token can participate in the decision-making around the treasury by voting and creating on-chain governance proposals composed of executable actions. Currently, these actions include:
 * Treasury distributions of RAD, ETH, and USDC
 * Upgrades to the on-chain governance system
 * Changes to parameters of Treasury-governed contracts (e.g. Drips)
