@@ -20,10 +20,10 @@
 }
 
 .hero {
-  font-family: 'Inter var', sans-serif;
-  font-size: 7rem;
+  /* font-family: 'Inter var', sans-serif; */
+  font-size: 8rem;
   font-weight: bold;
-  line-height: 1.1;
+  line-height: 1;
   letter-spacing: -0.2vw;
   text-align: center;
   color: transparent;
