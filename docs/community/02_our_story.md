@@ -19,7 +19,7 @@ The Foundation funded and coordinated all core development of the Radicle projec
 split into two products: Radicle (code-collaboration) and Drips (drip-down funding). Both products were successfully
 spun out into their own, autonomous entities - known as "Orgs" - which are directly supported by the DAO - now known as
 Radworks. Today, the community continues to collectively govern the Radworks treasury, funding Orgs that do work in line
-with the Radworks purpose. 
+with the Radworks purpose.
 
 ## A History of Radworks
 
@@ -102,3 +102,5 @@ The [Heartwood protocol](https://app.radicle.xyz/seeds/seed.radicle.xyz/rad:z3gq
 ### May 2023: All core work is transitioned to the DAO, [sunsetting of DAO transition work](https://radicle.community/t/wrapping-up-the-org-design-wg/3320/3)
 
 [Radicle](https://boardroom.io/radicle/proposal/cHJvcG9zYWw6cmFkaWNsZTpvbmNoYWluOjE0) and [Drips](https://boardroom.io/radicle/proposal/cHJvcG9zYWw6cmFkaWNsZTpvbmNoYWluOjE1) and [Grants](https://radicle.community/t/formal-review-rgp-13-start-the-grants-org/3305/4) became independent, DAO-funded Orgs within the DAO and the [Org Design Working Group](https://radicle.community/t/open-call-core-development-org-design-working-group/3042/3), which led the charge of DAO transition design & research, was sunset. 
+
+!["Diagram of the evolution of Radworks from 2017 to present"](/img/radworks_org-evolution.png)
