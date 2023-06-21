@@ -1,0 +1,39 @@
+.center {
+  position: relative;
+}
+
+.section {
+  max-width: 1600px;
+  margin: 0 auto auto;
+  padding: 0 5vw;
+}
+
+.header {
+  composes: section;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 3rem;
+}
+
+.hero {
+  font-size: 8.5rem;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -0.2vw;
+  text-align: center;
+  color: #28333d;
+  hyphens: auto;
+}
+
+.docs {
+  display: block;
+}
+
+.subhead {
+  margin: 2rem auto 1rem;
+  max-width: 1000px;
+  font-size: 1.3rem;
+}
