@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Radworks Documentation',
   tagline: 'Learn more about how Radworks funds new, resilient, permissionless technologies to cultivate internet freedom.',
-  url: 'https://docs.radicle.community',
+  url: 'https://docs.radworks.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -72,8 +72,8 @@ const config = {
         title: '',
         logo: {
           alt: 'Radicle',
-          src: 'img/radworks-logo.png',
-          srcDark: 'img/radworks-logo.png',
+          src: 'img/radworks_logo.png',
+          srcDark: 'img/radworks_logo.png',
           href: '/',
           target: '_self',
           width: 48,
