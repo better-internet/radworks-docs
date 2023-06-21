@@ -1,6 +1,7 @@
 ---
 id: community
 title: Our Purpose
+slug: /
 ---
 
 import Grid, { Button } from '@site/src/components/Grid'
