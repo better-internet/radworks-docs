@@ -63,7 +63,7 @@ export default function DocItemFooter() {
       <div className={styles.infoBox}>
         <div className="row">
           <div className="col">
-            <p className={styles.infoBoxHeader}>About this doc</p>
+            <h3>About this doc</h3>
             <p>
               {(lastUpdatedAt || lastUpdatedBy) && (
                 <LastUpdated
@@ -75,23 +75,25 @@ export default function DocItemFooter() {
             </p>
           </div>
           <div className="col">
-            <p className={styles.infoBoxHeader}>Contribute</p>
-            <p>{editUrl && <EditThisPage editUrl={editUrl} />}</p>
-            <p>
-              <span className={styles.infoBoxIcon}>🤝</span> 
+            <h3>Contribute</h3>
+            <div className={styles.infoBoxLink}>
+              {editUrl && <EditThisPage editUrl={editUrl} />}
+            </div>
+            <div className={styles.infoBoxLink}>
+              {/* <span className={styles.infoBoxIcon}>🤝</span>  */}
               <Link to={'/community/stay-up-to-date'}>
                 Stay up to date
               </Link>
-            </p>
+            </div>
           </div>
           <div className="col">
-            <p className={styles.infoBoxHeader}>Need help?</p>
-            <p>
-              <span className={styles.infoBoxIcon}>💬</span> 
+            <h3>Need help?</h3>
+            <div className={styles.infoBoxLink}>
+              {/* <span className={styles.infoBoxIcon}>💬</span>  */}
               <Link to={'https://discord.gg/radicle'}>
                 Find us on Discord
               </Link>
-            </p>
+            </div>
             {/* <p>
               <span className={styles.infoBoxIcon}>🧭</span> 
               <Link to={'#'}>

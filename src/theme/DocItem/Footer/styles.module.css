@@ -13,28 +13,47 @@
 /* BEGIN MODIFICATIONS */
 
 .infoBox {
-  background: #5555FF;
-  border-radius: 0.75rem;
-  padding: 2rem 3rem;
+  background: #fff;
+  box-shadow: 24px 20px 68px 0px rgba(0, 0, 0, .25);
+  border-radius: 4px 4px 32px 32px;
+  padding: 2rem;
   margin: 5rem 0;
-  box-shadow: 0px 27px 58px rgba(0, 0, 0, 0.07), 0px 12.4829px 26.8152px rgba(0, 0, 0, 0.0519173), 0px 7.14244px 15.343px rgba(0, 0, 0, 0.0438747), 0px 4.33541px 9.3131px rgba(0, 0, 0, 0.0377964), 0px 2.61228px 5.61156px rgba(0, 0, 0, 0.0322036), 0px 1.45468px 3.12488px rgba(0, 0, 0, 0.0261253), 0px 0.62565px 1.34399px rgba(0, 0, 0, 0.0180827);
 }
 
 .infoBox p {
-  color: white;
+  color: var(--ifm-font-color-base);
   margin-bottom: 0.6rem;
   vertical-align: middle;
 }
 
 .infoBox p a {
-  color: white;
+  color: var(--ifm-font-color-base);
   font-weight: 500;
 }
 
-p.infoBoxHeader {
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-bottom: 1.2rem;
+.infoBoxLink {
+  display: inline-block;
+  position: relative;
+  background-color: var(--ifm-color-secondary);
+  color: var(--ifm-font-color-base);
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.5rem;
+  line-height: 1;
+  border: none !important;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 0.6rem;
+  transition: transform .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.infoBoxLink:last-of-type {
+  margin-bottom: 0;
+}
+
+.infoBoxLink:hover  {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 0 #569656;
+  text-decoration: none;
 }
 
 .infoBoxIcon {
