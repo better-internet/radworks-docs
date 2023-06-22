@@ -16,6 +16,9 @@ Radworks is committed to transparency, inclusivity, and decentralized decision-m
 say in the direction of our efforts and the projects we support. Together, we can build a more decentralized and
 equitable future for software development.
 
+This documentation hub is designed to be a resource people can use to familiarize themselves with Radworks and the
+projects it funds.
+
 ## Our Work
 
 Radworks currently supports the development of the following technologies:
@@ -36,29 +39,5 @@ Radworks currently supports the development of the following technologies:
     cta="drips.network"
   >
     Drips is building crowdfunding tools for the open Internet.
-  </Button>
-</Grid>
-
-This docs hub is designed to be a resource people can use to familiarize themselves with Radworks and the projects it
-funds.
-
-<Grid>
-  <Button
-    href="/community/ecosystem"
-    title="Our Ecosystem"
-  >
-    Learn more about what Radworks is.
-  </Button>
-  <Button
-    href="/community/our-story"
-    title="Our Story"
-  >
-    Read more about our vision for decentralized governance, the evolution of the project, and where we're looking next.
-  </Button>
-  <Button
-    href="/community/governance-overview"
-    title="Governance Overview"
-  >
-    Learn more about how Radworks functions.
   </Button>
 </Grid>
