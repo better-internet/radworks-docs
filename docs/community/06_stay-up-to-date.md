@@ -3,7 +3,16 @@ id: stay-up-to-date
 title: Stay up to date
 ---
 
-## [BROWSE COMMUNITY CHANNELS & FORUMS](https://radworks.org)
+import Grid, { Button } from '@site/src/components/Grid'
+
+<Grid>
+  <Button
+    style={{gridColumn: '1 / span 12'}}
+    href="https://radworks.org"
+    title="Browse community channels and forums"
+    cta="radworks.org"
+  />
+</Grid>
 
 ### Community Calls
 Community Calls are held on a quarterly basis. Each Org is responsible for sending one team member to present a progress update on what they are working on and what they have planned for the coming quarter. This is an opportunity for Orgs to touch base with each other and for our community to see what's happening within the project.
