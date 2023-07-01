@@ -7,7 +7,7 @@ import Grid, { Button } from '@site/src/components/Grid'
 
 :::note
 
- We are not recommending any of theses third party tools over the other. This document is meant to provide some basic descriptions, examples and instructions to help make onboarding to voting and proposal creation flows in governance more approachable for our community members. Each individual is **strongly encouraged** to perform their own due diligence before trusting third-party services listed below.
+ Please note that we are not recommending any of these third party tools over the other. This document is meant to provide some basic descriptions, examples and instructions to help make onboarding to voting and proposal creation flows in governance more approachable for our community members. Each individual is **strongly encouraged** to perform their own due diligence before trusting third-party services listed below.
 
 :::
 
