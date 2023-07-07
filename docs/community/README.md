@@ -44,5 +44,3 @@ Our purpose lives [here](https://app.radicle.xyz/seeds/seed.radworks.org/rad:zPU
 
 This documentation hub is designed to be a resource people can use to familiarize themselves with Radworks and the
 projects it funds.
-
-

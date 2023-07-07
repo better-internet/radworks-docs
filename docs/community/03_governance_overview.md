@@ -9,9 +9,9 @@ Welcome to Radworks' version-controlled governance documentation! These docs con
 and resources that lay out the Radicle’s token voting governance process and how to participate in it.
 
 Radworks’ treasury is controlled by an on-chain governance mechanism ([Compound-Governor](https://wiki.tally.xyz/docs/compound-governor)) via the project’s native governance token ($RAD). Holders of this token can participate in the decision-making around the treasury by voting and creating on-chain governance proposals composed of executable actions. Currently, these actions include:
-Treasury distributions of RAD, ETH, and USDC
-Upgrades to the on-chain governance system
-Changes to parameters of Treasury-governed contracts (e.g. Drips)
+* Treasury distributions of RAD, ETH, and USDC
+* Upgrades to the on-chain governance system
+* Changes to parameters of Treasury-governed contracts (e.g. Drips)
 
 <Grid>
   <Button
@@ -33,7 +33,7 @@ Changes to parameters of Treasury-governed contracts (e.g. Drips)
     title="Delegate votes"
     cta="Learn how to delegate votes."
   >
-    Start in off- and on-chain voting by delegating the voting weight of your $RAD to yourself or another user's wallet.
+    Start in off- and on-chain voting by delegating the voting weight of your $RAD to yourself or another user's wallet.  
   </Button>
 </Grid>
 
@@ -42,4 +42,3 @@ Changes to parameters of Treasury-governed contracts (e.g. Drips)
 * Governance: [0x690e775361AD66D1c4A25d89da9fCd639F5198eD](https://etherscan.io/address/0x690e775361AD66D1c4A25d89da9fCd639F5198eD)
 * Timelock: [0x8dA8f82d2BbDd896822de723F55D6EdF416130ba](https://etherscan.io/address/0x8dA8f82d2BbDd896822de723F55D6EdF416130ba)
 * Genesis: [0x6838f63899728816f602B3e9bF73952e2bD6dc35](https://etherscan.io/address/0x6838f63899728816f602B3e9bF73952e2bD6dc35)
-
