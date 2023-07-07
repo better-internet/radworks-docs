@@ -1,9 +1,11 @@
 ---
 id: ecosystem
-title: Our Ecosystem
+title: Ecosystem
 ---
 
-Radworks is composed of **Orgs**. Orgs represent different groups of contributors serving the Radworks purpose and are funded from its treasury. To obtain funding, Orgs must pass annual budget proposals through Radworks governance.
+Radworks is composed of **Orgs**. Orgs represent different groups of contributors that are funded from its treasury. To obtain funding, Orgs must pass annual budget proposals through Radworks governance. Orgs serve the Radworks purpose by building technologies for developers that cultivate internet freedom. 
+
+All Orgs have the autonomy to choose their own governance models, manage their own funds and run their own organizations. Each Org is required to participate in quarterly community calls and report to the community on their progress on the objectives  outlined in their annual funding proposals.
 
 !["Diagram of the Radworks ecosystem, with Radworks encompassing multiple Orgs, each of which have one or more Teams consisting of one or more Contributors"](/img/radworks_ecosystem-overview.png)
 

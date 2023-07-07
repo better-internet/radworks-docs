@@ -1,25 +1,12 @@
 ---
 id: our-story
-title: Our Story
+title: History
 ---
-In 2017, a group of technologists set out to re-imagine free and open source software collaboration with protocols, not
-platforms. They started [Monadic](https://web.archive.org/web/20210316075436/http://monadic.xyz/), a Berlin-based
-software company with a home base in the heart of Kreuzberg. Monadic spawned the open source projects
-[Radicle](https://web.archive.org/web/20191220202701/http://www.radicle.xyz/) and [oscoin](http://oscoin.io/) that from
-inception, were both meant to become a new kind of open-source project — built, governed, and financed on the internet.
-Over the next couple of years, the projects merged, and became known as solely the Radicle project. 
+In 2017, a group of technologists set out to re-imagine free and open source software collaboration with protocols, not platforms. They started [Monadic](https://web.archive.org/web/20210316075436/http://monadic.xyz/), a Berlin-based software company with a home base in the heart of Kreuzberg. Monadic spawned the open source projects [Radicle](https://web.archive.org/web/20191220202701/http://www.radicle.xyz/) and [oscoin](http://oscoin.io/) that from inception, were both meant to become a new kind of open-source project — built, governed, and financed on the internet. Over the next couple of years, the projects merged, and became known as solely the Radicle project.
 
-In 2021, the team began the decentralization of the project with the initialization of the network’s native governance
-token ($RAD). With this, the RadicleDAO was formed, granting the community of $RAD holders the ability to make decisions
-on how to govern the project’s Treasury and smart contracts. All Monadic contributors transitioned to the Radicle
-Foundation, a Swiss entity formed in 2020 to support the development of resilient and humane software infrastructures,
-such as Radicle.
+In 2021, the team began the decentralization of the project with the initialization of the network’s native governance token ($RAD). With this, the RadicleDAO was formed, granting the community of $RAD holders the ability to make decisions on how to govern the project’s Treasury and smart contracts. All Monadic contributors transitioned to the Radicle Foundation, a Swiss entity formed in 2020 to support the development of resilient and humane software infrastructures, such as Radicle. 
 
-The Foundation funded and coordinated all core development of the Radicle project up until May 2023, when the project
-split into two products: Radicle (code-collaboration) and Drips (drip-down funding). Both products were successfully
-spun out into their own, autonomous entities - known as "Orgs" - which are directly supported by the DAO - now known as
-Radworks. Today, the community continues to collectively govern the Radworks treasury, funding Orgs that do work in line
-with the Radworks purpose.
+The Foundation funded and coordinated all core development of the Radicle project up until May 2023, when the project split into two products: Radicle (code-collaboration) and Drips (drip-down funding). Both products were successfully spun out into their own, autonomous entities - known as "Orgs" - which are directly supported by the DAO - now known as Radworks. Today, the community continues to collectively govern the Radworks treasury, funding Orgs that do work in line with the Radworks purpose.
 
 ## A History of Radworks
 
