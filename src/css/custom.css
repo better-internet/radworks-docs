@@ -106,6 +106,10 @@ html[data-theme='dark'] {
   height: auto;
 }
 
+.navbar__logo {
+  height: auto;
+}
+
 .dsla-search-field {
   min-width: 150px;
   background: transparent;
