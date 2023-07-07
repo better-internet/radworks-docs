@@ -35,6 +35,18 @@
   height: 20px;
 }
 
+.ext {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: hsl(240, 100%, 66.7%);
+}
+
+.ext svg {
+  width: 20px;
+  height: 20px;
+}
+
 .cta {
   display: inline-block;
   position: relative;
