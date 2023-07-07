@@ -43,24 +43,26 @@ const sidebars = {
   // ],
   communitySidebar: [
     'community/community',
-    'community/calls',
-    'community/code-of-conduct',
-  ],
-  governanceSidebar: [
-    'governance/README',
-    'governance/get-started',
-    'governance/manual-overview',
-    'governance/obtain-rad',
+    'community/ecosystem',
+    'community/our-story',
     {
       type: 'category',
-      label: 'Learn more',
+      label: 'Governance',
       collapsed: false,
       items: [
-        'governance/transition-dao',
-        'governance/treasury',
-        'governance/calls-notes-recordings',
+        'community/governance-overview',
+        {
+          type: 'link',
+          label: 'Governance Manual', // The link label
+          href: 'https://github.com/radicle-dev/radicle-governance/blob/main/manual.md', // The external URL
+        },
+        'community/obtaining-rad',
+        'community/stay-up-to-date',
+        'community/faq',
+        
       ]
     },
+    'community/code-of-conduct',
   ],
 };
 

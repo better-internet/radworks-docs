@@ -16,9 +16,24 @@
   src: url("../../static/Inter-italic.var.woff2?v=3.19") format("woff2");
 }
 
+@font-face {
+  font-family: 'terminal_grotesque';
+  src: url('../../static/terminal-grotesque-webfont.eot');
+  src: url('../../static/terminal-grotesque-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../../static/terminal-grotesque-webfont.woff2') format('woff2'),
+       url('../../static/terminal-grotesque-webfont.woff') format('woff'),
+       url('../../static/terminal-grotesque-webfont.ttf') format('truetype'),
+       url('../../static/terminal-grotesque-webfont.svg#terminal_grotesqueregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   /* Fonts */
   --ifm-font-family-base: 'Inter var', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --ifm-heading-font-family: 'terminal_grotesque', 'Inter var', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  /* --ifm-font-color-base: #28333d; */
 
   /* Links */
   --ifm-link-color: var(--ifm-font-color-base);
@@ -40,7 +55,7 @@
   --ifm-code-padding-horizontal: 0.5rem;
 
   /* Colors */
-  --ifm-color-primary: #5555ff;
+  --ifm-color-primary: #55f;
   --ifm-color-primary-dark: #3333ff;
   --ifm-color-primary-darker: #2222ff;
   --ifm-color-primary-darkest: #0000ee;
@@ -50,13 +65,16 @@
 
   --ifm-color-secondary: #53DB53;
 
-  --ifm-background-color: #f3f6fd; 
-  --ifm-navbar-background-color: #F8F8F8;
-  --ifm-footer-background-color: #e3e3f3;
+  --ifm-background-color: #EBEFF3; 
+  --ifm-navbar-background-color: #EBEFF3;
+  --ifm-footer-background-color: #EBEFF3;
 
   --ifm-menu-color: #2e2e6b;
   --ifm-menu-color-active: #1a1a2c;
   --ifm-menu-color-background-active: #ebecf8;
+
+  /* Fonts */
+  --ifm-h1-font-size: 4rem;
 
   /* Navbar */
   --ifm-navbar-height: 88px;
@@ -64,6 +82,8 @@
 }
 
 html[data-theme='dark'] {
+  
+  --ifm-color-content: #e3e3e3;
 
   /* Code blocks */
   --prism-color: #ccf;
@@ -82,13 +102,8 @@ html[data-theme='dark'] {
 
 /* Navbar */
 
-.navbar {
-  background: linear-gradient( 180deg, #dfe2fd 0%, #f3f6fd 100%);
-  box-shadow: none;
-}
-
-html[data-theme='dark'] .navbar {
-  background: linear-gradient( 180deg, #141b38 0%, #0b131a 100% )
+.navbar__logo {
+  height: auto;
 }
 
 .dsla-search-field {
@@ -97,8 +112,8 @@ html[data-theme='dark'] .navbar {
 }
 
 .dsla-search-field button {
-  background: transparent;
-  border: 1px dashed var(--ifm-color-primary);
+  background: white;
+  /* border: 1px dashed var(--ifm-color-primary); */
   border-radius: 10rem;
   color: var(--ifm-color-primary);
   height: 44px;

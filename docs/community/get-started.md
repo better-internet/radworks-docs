@@ -21,7 +21,7 @@ posts for each stage.
 ## Voting on existing proposals
 
 Voting in on-chain token governance requires $RAD, the project’s native governance token. To obtain $RAD, you can follow
-[these steps](obtain-rad.md). One $RAD token is equal to one vote and all voting rounds require a minimum participation
+[these steps](05_obtaining_rad.md). One $RAD token is equal to one vote and all voting rounds require a minimum participation
 threshold of 4M RAD (4% of total $RAD supply). If participation thresholds are met, proposals are passed by obtaining a
 majority “in-favor” votes.
 
@@ -57,7 +57,7 @@ Learn more on the [Radicle Governance Delegation FAQ](https://forest-text-046.no
 
 ### Delegate Types
 
-There are two types of delegates in the RadicleDAO governance process - a regular delegate and an “Active Delegate”. The
+There are two types of delegates in the Radworks governance process - a regular delegate and an “Active Delegate”. The
 main difference between the two is the Active Delegates have shared a more detailed profile of their expertise,
 governance values and conflicts of interest on the Active Delegate Platform and have committed to share their thoughts
 on each proposal so token holders are better able to assess  who they would like to delegate to. 
@@ -98,8 +98,8 @@ a delegate 👇
 
 ## Never miss a vote!
 
-The best way to get live governance updates is by following the RadicleDAO Governance Twitter
-([@rad_gov](https://twitter.com/rad_gov)) or follow the [🏛️governance-updates channel](https://discord.com/channels/841318878125490186/955793826264514560) on Discord. These accounts act as
+The best way to get live governance updates is by following the Radworks Twitter
+([@radworks_](https://twitter.com/radworks_)) or follow the [🏛️governance-updates channel](https://discord.com/channels/841318878125490186/955793826264514560) on Discord. These accounts act as
 governance “ticker” accounts and include all of the information and links needed to participate in voting. You can also
 set up [email notifications](https://app.tango.us/app/workflow/Email-Notifications-ac8d8e2eff5746f48ebd17e1f6b2b6ff) directly from the the calendar on our [Boardroom governance portal](https://boardroom.io/radicle/overview). 
 

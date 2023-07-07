@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'RadicleDAO Documentation',
-  tagline: 'A peer-to-peer stack for building software together.',
-  url: 'https://docs.radicle.community',
+  title: 'Radworks Documentation',
+  tagline: 'Learn more about how Radworks funds new, resilient, permissionless technologies to cultivate internet freedom.',
+  url: 'https://docs.radworks.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -68,34 +68,25 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/radicle_meta.png',
+      image: 'img/radworks_meta.png',
       navbar: {
         title: '',
         logo: {
           alt: 'Radicle',
-          src: 'img/favicon.svg',
-          srcDark: 'img/favicon.svg',
+          src: 'img/radworks_logo.png',
+          srcDark: 'img/radworks_logo.png',
           href: '/',
           target: '_self',
-          width: 56,
+          width: 48,
           height: 48
         },
         items: [
-          {
-            href: '/community',
-            label: 'Community',
-            position: 'left',
-          },
-          {
-            href: '/governance',
-            label: 'Governance',
-            position: 'left',
-          },
+          
         ],
       },
       footer: {
         style: 'light',
-        copyright: `Copyright © ${new Date().getFullYear()} The Radicle Team <dev@radicle.xyz> and contributors.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Radworks <dev@radicle.xyz> and contributors.`,
       },
       prism: {
         theme: lightCodeTheme,
