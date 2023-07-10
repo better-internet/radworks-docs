@@ -74,7 +74,10 @@
   --ifm-menu-color-background-active: #ebecf8;
 
   /* Fonts */
-  --ifm-h1-font-size: 4rem;
+  --ifm-h1-font-size: 5rem;
+  --ifm-h2-font-size: 2.4rem;
+  --ifm-h3-font-size: 1.8rem;
+  --ifm-h4-font-size: 1.4rem;
 
   /* Navbar */
   --ifm-navbar-height: 88px;
@@ -138,6 +141,14 @@ html[data-theme='dark'] {
 }
 
 /* Markdown content */
+
+.markdown h1:first-child {
+  --ifm-h1-font-size: 4rem;
+}
+
+.markdown > h2 { --ifm-h2-font-size: 2.4rem; }
+.markdown > h3 { --ifm-h3-font-size: 1.8rem; }
+.markdown > h4 { --ifm-h4-font-size: 1.4rem; }
 
 .markdown a {
   border-bottom: 1px solid #c2c3d4;

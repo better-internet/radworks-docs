@@ -11,7 +11,7 @@ import Grid, { Button } from '@site/src/components/Grid'
 
 :::
 
-# Wallet Basics & Safety
+## Wallet Basics & Safety
 Most wallet providers have great documentation and safety tips on their websites. Here are a few examples:
 * [Basic Safety & Security Tips for MetaMask](https://support.metamask.io/hc/en-us/articles/360015489591-Basic-Safety-and-Security-Tips-for-Metamask)
 * [Rainbow: Protect your wallet](https://learn.rainbow.me/protect-your-wallet)
@@ -41,7 +41,7 @@ These wallets require more  trust in an intermediary to host your wallet than a 
 
 *Examples of hosted or custodial wallets:* Coinbase, Binance
 
-# Governance Tools
+## Governance Tools
 
 ### What platform should I use to vote on off-chain Formal Reviews?
 Snapshot is the voting platform used off-chain consensus. Check out the [Radworks Snapshot space](https://snapshot.org/#/gov.radicle.eth).
@@ -54,7 +54,7 @@ See the ‘Voting Tips & Troubleshooting’ section below for more details on ho
 ### What platform should I use to create new on-chain proposals?
 Proposal creation is also possible on Boardroom and Tally. They make it easy for anyone to confirm they are eligible to create a proposal and to create the proposal itself. See the ‘On-chain Proposal Creation Tips & Trouble-shooting’ section below for more details on how to create a proposal on these platforms.
 
-# Voting Tips & Trouble-shooting
+## Voting Tips & Troubleshooting
 
 ### What do I need to know before voting?
 
@@ -122,7 +122,7 @@ It may take a few minutes for transactions to go through and be shown on governa
 * Delegate and vote as usual
 * Follow the rest of the steps to publish the proposal
 
-# On-chain Proposal Creation Tips & Trouble-shooting
+## On-chain Proposal Creation Tips & Trouble-shooting
 
 ### What do I need to know before creating a proposal?
 You need at least 1M $RAD (1% of total $RAD supply) delegated to your address to post an on-chain proposal. You need at least 1K $RAD delegated to your wallet to post an off-chain Snapshot poll. Make sure that delegation is set up to the correct wallet before trying to post a proposal.
