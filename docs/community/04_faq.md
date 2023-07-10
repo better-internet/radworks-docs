@@ -92,7 +92,7 @@ Proposal creation is also possible on Boardroom and Tally. They make it easy for
 * The other address is ready to vote on proposals on- and off-chain with the newly delegated voting power
 
 :::note
-It may take a few minutes for transactions to go through and be shown on governance interfaces.*
+It may take a few minutes for transactions to go through and be shown on governance interfaces.
 :::
 
 ### How do I connect a hardware wallet to vote?
