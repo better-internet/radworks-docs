@@ -122,7 +122,7 @@ It may take a few minutes for transactions to go through and be shown on governa
 * Delegate and vote as usual
 * Follow the rest of the steps to publish the proposal
 
-# On-chain Proposal Creation Tips & Trouble-shooting
+## On-chain Proposal Creation Tips & Trouble-shooting
 
 ### What do I need to know before creating a proposal?
 You need at least 1M $RAD (1% of total $RAD supply) delegated to your address to post an on-chain proposal. You need at least 1K $RAD delegated to your wallet to post an off-chain Snapshot poll. Make sure that delegation is set up to the correct wallet before trying to post a proposal.
