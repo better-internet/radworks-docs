@@ -88,14 +88,11 @@
 }
 
 @media screen and (max-width: 996px) {
+  .grid {
+    gap: 2rem 0;
+  }
+
   .button {
     grid-column: span 12;
   }
-
-  .button h3 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-bottom: 0;
-  }
-
 }
