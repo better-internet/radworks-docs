@@ -17,27 +17,24 @@ Radworks’ treasury is controlled by an on-chain governance mechanism ([Compoun
   <Button
     href="https://github.com/radicle-foundation/radworks-governance/blob/main/manual.md#proposal-process"
     title="Create a proposal"
-    cta="Learn more about the Radworks Improvements Proposal process."
+    cta="Learn more about the RGP process"
   >
-    Any holder of the $RAD native governance token can participate in proposals and decisions.
   </Button>
   <Button
     href="https://github.com/radicle-foundation/radworks-governance/blob/main/manual.md#voting"
     title="Vote on proposals"
-    cta="Learn how to vote on-chain and off-chain."
+    cta="Learn how to vote on-chain and off-chain"
   >
-    Learn more about the three main categories of RAD Governance Proposals (RGPs) and the monthly cycles for discussion and review.
   </Button>
   <Button
     href="https://github.com/radicle-dev/radicle-governance/blob/main/manual.md#delegating"
     title="Delegate votes"
-    cta="Learn how to delegate votes."
+    cta="Learn how to delegate"
   >
-    Start in off- and on-chain voting by delegating the voting weight of your $RAD to yourself or another user's wallet.  
   </Button>
 </Grid>
 
-#### Contracts
+### Contracts
 
 * Governance: [0x690e775361AD66D1c4A25d89da9fCd639F5198eD](https://etherscan.io/address/0x690e775361AD66D1c4A25d89da9fCd639F5198eD)
 * Timelock: [0x8dA8f82d2BbDd896822de723F55D6EdF416130ba](https://etherscan.io/address/0x8dA8f82d2BbDd896822de723F55D6EdF416130ba)

@@ -90,7 +90,7 @@ export default function DocItemFooter() {
             <h3>Need help?</h3>
             <div className={styles.infoBoxLink}>
               {/* <span className={styles.infoBoxIcon}>💬</span>  */}
-              <Link to={'https://discord.gg/radicle'}>
+              <Link to={'https://discord.gg/radworks'}>
                 Find us on Discord
               </Link>
             </div>

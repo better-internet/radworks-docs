@@ -2,6 +2,7 @@
 id: our-story
 title: History
 ---
+# Our Story
 In 2017, a group of technologists set out to re-imagine free and open source software collaboration with protocols, not platforms. They started [Monadic](https://web.archive.org/web/20210316075436/http://monadic.xyz/), a Berlin-based software company with a home base in the heart of Kreuzberg. Monadic spawned the open source projects [Radicle](https://web.archive.org/web/20191220202701/http://www.radicle.xyz/) and [oscoin](http://oscoin.io/) that from inception, were both meant to become a new kind of open-source project — built, governed, and financed on the internet. Over the next couple of years, the projects merged, and became known as solely the Radicle project.
 
 In 2021, the team began the decentralization of the project with the initialization of the network’s native governance token ($RAD). With this, the RadicleDAO was formed, granting the community of $RAD holders the ability to make decisions on how to govern the project’s Treasury and smart contracts. All Monadic contributors transitioned to the Radicle Foundation, a Swiss entity formed in 2020 to support the development of resilient and humane software infrastructures, such as Radicle. 
@@ -90,4 +91,4 @@ The [Heartwood protocol](https://app.radicle.xyz/seeds/seed.radicle.xyz/rad:z3gq
 
 [Radicle](https://boardroom.io/radicle/proposal/cHJvcG9zYWw6cmFkaWNsZTpvbmNoYWluOjE0) and [Drips](https://boardroom.io/radicle/proposal/cHJvcG9zYWw6cmFkaWNsZTpvbmNoYWluOjE1) and [Grants](https://radicle.community/t/formal-review-rgp-13-start-the-grants-org/3305/4) became independent, DAO-funded Orgs within the DAO and the [Org Design Working Group](https://radicle.community/t/open-call-core-development-org-design-working-group/3042/3), which led the charge of DAO transition design & research, was sunset. 
 
-!["Diagram of the evolution of Radworks from 2017 to present"](/img/radworks_org-evolution.png)
+
