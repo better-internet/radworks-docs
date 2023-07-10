@@ -3,7 +3,7 @@ id: obtaining-rad
 title: Obtaining RAD
 ---
 
-$RAD is the native governance token for Radicle. It can be obtained from a number of sources, including decentralized exchanges (e.g. Uniswap) and various centralized exchanges (e.g. Coinbase).
+$RAD is the native governance token for Radworks. It can be obtained from a number of sources, including decentralized exchanges (e.g. Uniswap) and various centralized exchanges (e.g. Coinbase).
 
 :::note
 
