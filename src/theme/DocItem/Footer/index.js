@@ -62,7 +62,7 @@ export default function DocItemFooter() {
       {/* BEGIN MODIFICATIONS */}
       <div className={styles.infoBox}>
         <div className="row">
-          <div className="col">
+          <div className={clsx(styles.infoBoxCol, 'col')}>
             <h3>About this doc</h3>
             <p>
               {(lastUpdatedAt || lastUpdatedBy) && (
@@ -74,7 +74,7 @@ export default function DocItemFooter() {
               )}
             </p>
           </div>
-          <div className="col">
+          <div className={clsx(styles.infoBoxCol, 'col')}>
             <h3>Contribute</h3>
             <div className={styles.infoBoxLink}>
               {editUrl && <EditThisPage editUrl={editUrl} />}
@@ -86,7 +86,7 @@ export default function DocItemFooter() {
               </Link>
             </div>
           </div>
-          <div className="col">
+          <div className={clsx(styles.infoBoxCol, 'col')}>
             <h3>Need help?</h3>
             <div className={styles.infoBoxLink}>
               {/* <span className={styles.infoBoxIcon}>💬</span>  */}
