@@ -54,7 +54,7 @@ See the ‘Voting Tips & Troubleshooting’ section below for more details on ho
 ### What platform should I use to create new on-chain proposals?
 Proposal creation is also possible on Boardroom and Tally. They make it easy for anyone to confirm they are eligible to create a proposal and to create the proposal itself. See the ‘On-chain Proposal Creation Tips & Trouble-shooting’ section below for more details on how to create a proposal on these platforms.
 
-## Voting Tips & Troubleshooting
+## Voting Tips & Trouble-shooting
 
 ### What do I need to know before voting?
 
