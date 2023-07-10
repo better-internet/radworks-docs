@@ -10,7 +10,7 @@ import Grid, { Button } from '@site/src/components/Grid'
 
 Radworks is a community dedicated to **cultivating internet freedom**. In a world that almost entirely relies on software, maintaining the resilience and health of the free and open source ecosystem is more important than ever. We strive to demonstrate the viability — in cost, labor, quality, and resiliency — of open-source software and its development.
 
-Join us on our quest to create a better and free-er internet together! 
+Join us on our quest to create a better and freer internet together! 
 
 ## Our Purpose
 
