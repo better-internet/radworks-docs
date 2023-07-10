@@ -9,7 +9,7 @@ Radworks is composed of **Orgs**. Orgs represent different groups of contributor
 
 All Orgs have the autonomy to choose their own governance models, manage their own funds and run their own organizations. Each Org is required to participate in quarterly community calls and report to the community on their progress on the objectives  outlined in their annual funding proposals.
 
-!["Diagram of the Radworks ecosystem, with Radworks encompassing multiple Orgs, each of which have one or more Teams consisting of one or more Contributors"](/img/radworks_ecosystem-overview.png)
+!["Diagram of the Radworks ecosystem, with Radworks encompassing multiple Orgs, each of which have one or more Teams consisting of one or more Contributors"](/img/radworks_ecosystem-overview-transparent.png)
 
 Currently, Radworks funds four separate Orgs:
 
@@ -38,4 +38,4 @@ The [Radworks Grants](https://github.com/radicle-dev/radicle-grants) Org finds, 
 development of any FOSS projects that fall outside the purview of currently funded product/engineering orgs (e.g.
 Radicle, Drips).
 
-!["Diagram of the current Radworks design, with the Radworks DAO encompassing the Radicle, Drips, and Grants Orgs, plus the Foundation Org, which has Operations, Finance, and Marketing Teams"](/img/radworks_org-design.png)
+!["Diagram of the current Radworks design, with the Radworks DAO encompassing the Radicle, Drips, and Grants Orgs, plus the Foundation Org, which has Operations, Finance, and Marketing Teams"](/img/radworks_org-design-transparent.png)
