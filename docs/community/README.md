@@ -39,6 +39,6 @@ Radworks currently supports the development of the following technologies:
     title="Drips"
     cta="drips.network"
   >
-    Drips is a peer-to-peer fund sharing and splitting solution, built on Ethereum.
+    Drips is a toolkit for automatic, recurring payments, built on Ethereum.
   </Button>
 </Grid>
