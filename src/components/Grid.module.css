@@ -15,6 +15,10 @@
   padding: 2rem;
 }
 
+[data-theme='dark'] .button {
+  background: #162029;
+}
+
 .button:hover {
   text-decoration: none;
 }
@@ -66,10 +70,17 @@
   padding: 8px 12px;
 }
 
+[data-theme='dark'] .cta a {
+  color: #28333d;
+}
+
 .cta:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 0 #569656;
-  
+}
+
+[data-theme='dark'] .cta:hover {
+  box-shadow: 0 4px 0 #e3ffe3;
 }
 
 .cta a:hover {
