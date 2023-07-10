@@ -27,10 +27,10 @@ More detailed updates to governance work being done can be found in the monthly 
 Past governance call notes & recordings can be found [here](https://forest-text-046.notion.site/Monthly-RadicleDAO-Governance-Calls-Notes-Recordings-643bc0e48361486a866a114ead555cdd).
 
 ## Community Calendar
-You can subscribe to our [community calendar](https://bit.ly/radicledao-calendar) that includes Quarterly Community Calls, monthly Proposal Review calls and each week of the monthly governance cycle.
+You can subscribe to our [community calendar](https://bit.ly/radworks-calendar) that includes Quarterly Community Calls, monthly Proposal Review calls and each week of the monthly governance cycle.
 
 ## Twitter
 Check out the [Radworks Twitter page](https://twitter.com/radworks_) (@radworks_) for important DAO-wide announcements & governance updates. 
 
 ## YouTube
-Our [YouTube channel](https://www.youtube.com/@radicle6485) has all recordings of past Community Calls and Proposal Reviews. We also have folders for all talks and events our contributors have hosted or spoken at. 
+Our [YouTube channel](https://www.youtube.com/@radworks_) has all recordings of past Community Calls and Proposal Reviews. We also have folders for all talks and events our contributors have hosted or spoken at. 
