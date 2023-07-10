@@ -47,7 +47,7 @@ These wallets require more  trust in an intermediary to host your wallet than a 
 Snapshot is the voting platform used off-chain consensus. Check out the [Radworks Snapshot space](https://snapshot.org/#/gov.radicle.eth).
 
 ### What platform should I use to vote for on-chain proposals?
-On-chain voting can take place on any on-chain governance interface. We primarily use [Boardroom](https://boardroom.io/radicle/proposals#) and [Tally](https://www.tally.xyz/gov/radicle) as they are actively curated and updated projects in trusted platforms in the broader DAO ecosystem. 
+On-chain voting can take place on any on-chain governance interface. We primarily use [Boardroom](https://boardroom.io/radworks/proposals#) and [Tally](https://www.tally.xyz/gov/radworks) as they are actively curated and updated projects in trusted platforms in the broader DAO ecosystem. 
 
 See the ‘Voting Tips & Troubleshooting’ section below for more details on how to vote on these platforms.
 
@@ -70,7 +70,7 @@ Proposal creation is also possible on Boardroom and Tally. They make it easy for
 * If you are having troubles on one platform (Boardroom, Tally), try using the other.
 * If you are having troubles in one browser, try using another.
 * If you are having troubles on desktop, try using mobile and vice versa.
-* Reach out in the [#help](https://discord.gg/radicle) channel on Discord for help
+* Reach out in the [#faq-support](https://discord.gg/radworks) channel on Discord for help
 
 ### How do I connect a hot wallet to vote?
 #### Delegating to yourself
