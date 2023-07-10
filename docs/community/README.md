@@ -32,13 +32,13 @@ Radworks currently supports the development of the following technologies:
     title="Radicle"
     cta="radicle.xyz"
   >
-    Radicle is a sovereign peer-to-peer network for code collaboration, built on top of Git.
+    Radicle is a peer-to-peer network for code collaboration
   </Button>
   <Button
     href="https://drips.network"
     title="Drips"
     cta="drips.network"
   >
-    Drips is a toolkit for automatic, recurring payments, built on Ethereum.
+    Drips is a peer-to-peer fund sharing & splitting solution
   </Button>
 </Grid>
