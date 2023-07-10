@@ -83,7 +83,7 @@ The Foundation funded and coordinated all core development of the Radicle projec
 <Timeline
   date="January, 2022"
   title="The DAO funds the [Radicle Grants Program](https://github.com/radicle-dev/radicle-grants)"
-  desc="With the passing of the [Radicle Grants Wave 1 proposal](https://boardroom.io/radicle/proposal/cHJvcG9zYWw6cmFkaWNsZTpvbmNoYWluOjU=), the Grants Program started to find, fund, and guide research and development of any projects within the Radicle ecosystem."
+  desc="With the passing of the [Radicle Grants Wave 1 proposal](https://boardroom.io/radworks/proposal/cHJvcG9zYWw6cmFkaWNsZTpvbmNoYWluOjU=), the Grants Program started to find, fund, and guide research and development of any projects within the Radicle ecosystem."
 />
 
 <Timeline
@@ -94,31 +94,31 @@ The Foundation funded and coordinated all core development of the Radicle projec
 
 <Timeline
   date="March, 2022"
-  title="[Ecosystem Growth Fund](https://boardroom.io/radicle/proposal/cHJvcG9zYWw6cmFkaWNsZTpvbmNoYWluOjc=) proposal passes"
+  title="[Ecosystem Growth Fund](https://boardroom.io/radworks/proposal/cHJvcG9zYWw6cmFkaWNsZTpvbmNoYWluOjc=) proposal passes"
   desc="The Radicle Ecosystem Growth Fund (EGF) was set up to fund initiatives that drive awareness, engagement, and adoption of the Radicle stack."
 />
 
 <Timeline
   date="April, 2022"
-  title="The project begins its [“transition to the DAO”](https://radicle.community/t/the-next-phase-of-the-radicledao/2776)"
+  title="The project begins its [“transition to the DAO”](https://community.radworks.org/t/the-next-phase-of-the-radicledao/2776)"
   desc="A coordinated effort defined by four workstreams to transition funding & coordination of core development from the Radicle Foundation to the community."
 />
 
 <Timeline
   date="July, 2022"
-  title="Radicle Upstream is [deprecated](https://radicle.community/t/upstream-july-2022-community-update/2962), Radicle team starts building new [Heartwood protocol](https://github.com/radicle-dev/heartwood)"
+  title="Radicle Upstream is [deprecated](https://community.radworks.org/t/upstream-july-2022-community-update/2962), Radicle team starts building new [Heartwood protocol](https://github.com/radicle-dev/heartwood)"
   desc="Upstream is sunset to shift focus to the web client. The Radicle team starts re-architecting the third iteration of the Radicle Protocol: Heartwood."
 />
 
 <Timeline
   date="September, 2022"
-  title="[Radicle Foundation becomes fully DAO-funded](https://radicle.community/t/11-phase-0-transition-to-the-dao/3026)"
-  desc="The Foundation — which was funding & coordinating core development work of the Radicle project independently from the DAO — comes under the purview of DAO governance. This completes the first phase of the [project’s “transition to the DAO”](https://radicle.community/t/the-next-phase-of-the-radicledao/2776)."
+  title="[Radicle Foundation becomes fully DAO-funded](https://community.radworks.org/t/11-phase-0-transition-to-the-dao/3026)"
+  desc="The Foundation — which was funding & coordinating core development work of the Radicle project independently from the DAO — comes under the purview of DAO governance. This completes the first phase of the [project’s “transition to the DAO”](https://community.radwoorks.org/t/the-next-phase-of-the-radicledao/2776)."
 />
 
 <Timeline
   date="November, 2022"
-  title="[Wrapping up of the Ecosystem Growth Fund](https://radicle.community/t/ecosystem-growth-fund-retrospective/3131)"
+  title="[Wrapping up of the Ecosystem Growth Fund](https://community.radworks.org/t/ecosystem-growth-fund-retrospective/3131)"
   desc="The EGF is sunset until a clearer path towards PMF for development teams is apparent."
 />
 
@@ -130,8 +130,8 @@ The Foundation funded and coordinated all core development of the Radicle projec
 
 <Timeline
   date="May 2023"
-  title="All core work is transitioned to the DAO, [sunsetting of DAO transition work](https://radicle.community/t/wrapping-up-the-org-design-wg/3320/3)"
-  desc="[Radicle](https://boardroom.io/radicle/proposal/cHJvcG9zYWw6cmFkaWNsZTpvbmNoYWluOjE0) and [Drips](https://boardroom.io/radicle/proposal/cHJvcG9zYWw6cmFkaWNsZTpvbmNoYWluOjE1) and [Grants](https://radicle.community/t/formal-review-rgp-13-start-the-grants-org/3305/4) became independent, DAO-funded Orgs within the DAO and the [Org Design Working Group](https://radicle.community/t/open-call-core-development-org-design-working-group/3042/3), which led the charge of DAO transition design & research, was sunset."
+  title="All core work is transitioned to the DAO, [sunsetting of DAO transition work](https://community.radworks.org/t/wrapping-up-the-org-design-wg/3320/3)"
+  desc="[Radicle](https://boardroom.io/radworks/proposal/cHJvcG9zYWw6cmFkaWNsZTpvbmNoYWluOjE0) and [Drips](https://boardroom.io/radworks/proposal/cHJvcG9zYWw6cmFkaWNsZTpvbmNoYWluOjE1) and [Grants](https://boardroom.io/radworks/proposal/cHJvcG9zYWw6cmFkaWNsZTpzbmFwc2hvdDoweDgwYTFmOTJmOTVmMzQ4ZDYwZWVhYzE2MjcyYmFlOTQwY2ExYjkwNDc4ZjcwYTcyY2YzNDI2M2Y1Y2Y0OGMyYmI=) became independent, DAO-funded Orgs within the DAO and the [Org Design Working Group](https://community.radworks.org/t/open-call-core-development-org-design-working-group/3042/3), which led the charge of DAO transition design & research, was sunset."
 />
 
 
