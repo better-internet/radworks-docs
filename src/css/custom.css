@@ -74,14 +74,10 @@
   --ifm-menu-color-background-active: #ebecf8;
 
   /* Fonts */
-<<<<<<< HEAD
-  --ifm-h1-font-size: 4rem;
-=======
   --ifm-h1-font-size: 5rem;
   --ifm-h2-font-size: 2.4rem;
   --ifm-h3-font-size: 1.8rem;
   --ifm-h4-font-size: 1.4rem;
->>>>>>> main
 
   /* Navbar */
   --ifm-navbar-height: 88px;
@@ -111,8 +107,6 @@ html[data-theme='dark'] {
 
 .navbar__logo {
   height: auto;
-<<<<<<< HEAD
-=======
 }
 
 .navbar__logo {
@@ -121,7 +115,6 @@ html[data-theme='dark'] {
 
 .navbar__logo {
   height: auto;
->>>>>>> main
 }
 
 .dsla-search-field {
