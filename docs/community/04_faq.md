@@ -7,11 +7,11 @@ import Grid, { Button } from '@site/src/components/Grid'
 
 :::note
 
- We are not recommending any of theses third party tools over the other. This document is meant to provide some basic descriptions, examples and instructions to help make onboarding to voting and proposal creation flows in governance more approachable for our community members. Each individual is **strongly encouraged** to perform their own due diligence before trusting third-party services listed below.
+ Please note that we are not recommending any of these third party tools over the other. This document is meant to provide some basic descriptions, examples and instructions to help make onboarding to voting and proposal creation flows in governance more approachable for our community members. Each individual is **strongly encouraged** to perform their own due diligence before trusting third-party services listed below.
 
 :::
 
-# Wallet Basics & Safety
+## Wallet Basics & Safety
 Most wallet providers have great documentation and safety tips on their websites. Here are a few examples:
 * [Basic Safety & Security Tips for MetaMask](https://support.metamask.io/hc/en-us/articles/360015489591-Basic-Safety-and-Security-Tips-for-Metamask)
 * [Rainbow: Protect your wallet](https://learn.rainbow.me/protect-your-wallet)
@@ -41,20 +41,20 @@ These wallets require more  trust in an intermediary to host your wallet than a 
 
 *Examples of hosted or custodial wallets:* Coinbase, Binance
 
-# Governance Tools
+## Governance Tools
 
 ### What platform should I use to vote on off-chain Formal Reviews?
 Snapshot is the voting platform used off-chain consensus. Check out the [Radworks Snapshot space](https://snapshot.org/#/gov.radicle.eth).
 
 ### What platform should I use to vote for on-chain proposals?
-On-chain voting can take place on any on-chain governance interface. We primarily use [Boardroom](https://boardroom.io/radicle/proposals#) and [Tally](https://www.tally.xyz/gov/radicle) as they are actively curated and updated projects in trusted platforms in the broader DAO ecosystem. 
+On-chain voting can take place on any on-chain governance interface. We primarily use [Boardroom](https://boardroom.io/radworks/proposals#) and [Tally](https://www.tally.xyz/gov/radworks) as they are actively curated and updated projects in trusted platforms in the broader DAO ecosystem. 
 
 See the ‘Voting Tips & Troubleshooting’ section below for more details on how to vote on these platforms.
 
 ### What platform should I use to create new on-chain proposals?
 Proposal creation is also possible on Boardroom and Tally. They make it easy for anyone to confirm they are eligible to create a proposal and to create the proposal itself. See the ‘On-chain Proposal Creation Tips & Trouble-shooting’ section below for more details on how to create a proposal on these platforms.
 
-# Voting Tips & Trouble-shooting
+## Voting Tips & Trouble-shooting
 
 ### What do I need to know before voting?
 
@@ -70,7 +70,7 @@ Proposal creation is also possible on Boardroom and Tally. They make it easy for
 * If you are having troubles on one platform (Boardroom, Tally), try using the other.
 * If you are having troubles in one browser, try using another.
 * If you are having troubles on desktop, try using mobile and vice versa.
-* Reach out in the [#help](https://discord.gg/radicle) channel on Discord for help
+* Reach out in the [#faq-support](https://discord.gg/radworks) channel on Discord for help
 
 ### How do I connect a hot wallet to vote?
 #### Delegating to yourself
@@ -92,7 +92,7 @@ Proposal creation is also possible on Boardroom and Tally. They make it easy for
 * The other address is ready to vote on proposals on- and off-chain with the newly delegated voting power
 
 :::note
-It may take a few minutes for transactions to go through and be shown on governance interfaces.*
+It may take a few minutes for transactions to go through and be shown on governance interfaces.
 :::
 
 ### How do I connect a hardware wallet to vote?
@@ -122,7 +122,7 @@ It may take a few minutes for transactions to go through and be shown on governa
 * Delegate and vote as usual
 * Follow the rest of the steps to publish the proposal
 
-# On-chain Proposal Creation Tips & Trouble-shooting
+## On-chain Proposal Creation Tips & Trouble-shooting
 
 ### What do I need to know before creating a proposal?
 You need at least 1M $RAD (1% of total $RAD supply) delegated to your address to post an on-chain proposal. You need at least 1K $RAD delegated to your wallet to post an off-chain Snapshot poll. Make sure that delegation is set up to the correct wallet before trying to post a proposal.

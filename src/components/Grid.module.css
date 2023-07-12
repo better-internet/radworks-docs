@@ -13,6 +13,13 @@
   box-shadow: 24px 20px 68px 0px rgba(0, 0, 0, .25);
   border-radius: 4px 4px 32px 32px;
   padding: 2rem;
+<<<<<<< HEAD
+=======
+}
+
+[data-theme='dark'] .button {
+  background: #162029;
+>>>>>>> main
 }
 
 .button:hover {
@@ -33,6 +40,21 @@
 .ext svg {
   width: 20px;
   height: 20px;
+<<<<<<< HEAD
+=======
+}
+
+.ext {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: hsl(240, 100%, 66.7%);
+}
+
+.ext svg {
+  width: 20px;
+  height: 20px;
+>>>>>>> main
 }
 
 .cta {
@@ -54,10 +76,24 @@
   padding: 8px 12px;
 }
 
+<<<<<<< HEAD
 .cta:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 0 #569656;
   
+=======
+[data-theme='dark'] .cta a {
+  color: #28333d;
+}
+
+.cta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 0 #569656;
+}
+
+[data-theme='dark'] .cta:hover {
+  box-shadow: 0 4px 0 #e3ffe3;
+>>>>>>> main
 }
 
 .cta a:hover {
@@ -65,14 +101,14 @@
 }
 
 @media screen and (max-width: 996px) {
+<<<<<<< HEAD
+=======
+  .grid {
+    gap: 2rem 0;
+  }
+
+>>>>>>> main
   .button {
     grid-column: span 12;
   }
-
-  .button h3 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-bottom: 0;
-  }
-
 }

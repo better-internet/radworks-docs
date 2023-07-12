@@ -1,16 +1,16 @@
-# Welcome to RadicleDAO's docs! 👋
+# Welcome to Radworks' docs! 👋
 
-This is the repository for the RadicleDAO documentation site at [`docs.radicle.community`](https://docs.radicle.community),
-which includes community-, and governance-focused documentation.
+This is the repository for the Radworks documentation site at [`docs.radworks.org`](https://docs.radworks.org), which
+includes community-, and governance-focused documentation.
 
 This document outlines some contributing guidelines, contact points, and other resources to make it easier to contribute
-to RadicleDAO's documentation.
+to Radworks' documentation.
 
-[`docs.radicle.community`](https://docs.radicle.community) was created with [Docusaurus](https://docusaurus.io/).
+[`docs.radworks.org`](https://docs.radworks.org) was created with [Docusaurus](https://docusaurus.io/).
 
 If you run into a problem or have a suggestion, browse the open
-[issues](https://github.com/radicle-dev/radicle-docs/issues) before opening a new one. We use the following [label
-system](https://github.com/radicle-dev/radicle-docs/labels) to organize our issues.
+[issues](https://github.com/radicle-foundation/radworks-docs/issues) before opening a new one. We use the following
+[label system](https://github.com/radicle-foundation/radworks-docs/labels) to organize our issues.
 
 - ![](https://img.shields.io/badge/-fixup-critical) for typos, broken links, and other quick fixes
 - ![](https://img.shields.io/badge/-troubleshooting-%23FBCA04) for additions to the FAQ and Troubleshooting sections
@@ -21,7 +21,7 @@ system](https://github.com/radicle-dev/radicle-docs/labels) to organize our issu
 
 ## Best practices for managing contributions
 
-- If a question is asked more than twice in a support channel, a Radicle contributor should add as an outstanding
+- If a question is asked more than twice in a support channel, a Radworks contributor should add as an outstanding
   ![](https://img.shields.io/badge/-troubleshooting-%23FBCA04) issue. If a resolution is found, it should be captured in
   the issue before it's closed or in a following pull request. Those involved in the support process should contribute
   to the documentation (i.e. if you answered the question, be sure to capture the outcome in the relevant
@@ -33,11 +33,11 @@ system](https://github.com/radicle-dev/radicle-docs/labels) to organize our issu
 
 ## How to contribute
 
-First, [create a fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of the `radicle-docs` repository
+First, [create a fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of the `radworks-docs` repository
 and clone that to your local system, where you'll make your edits and create Git commits.
 
 ```
-git clone git@github.com:<YOUR-GITHUB-USERNAME>/radicle-docs.git
+git clone git@github.com:<YOUR-GITHUB-USERNAME>/radworks-docs.git
 ```
 
 ### Run the website locally
@@ -45,10 +45,10 @@ git clone git@github.com:<YOUR-GITHUB-USERNAME>/radicle-docs.git
 First, install [NodeJS](https://nodejs.org/en/download/) and
 [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable) on your system. 
 
-Navigate into the `radicle-docs` folder on your local system and install dependencies:
+Navigate into the `radworks-docs` folder on your local system and install dependencies:
 
 ```sh
-cd radicle-docs/
+cd radworks-docs/
 yarn install
 ```
 
@@ -76,7 +76,7 @@ const sidebars = {
       label: 'Example',
       collapsed: false,
       items: [
-        'using-radicle/create',
+        ...
         'your-new-doc',         // A new document with the `id` of `your-new-doc`.
       ]
     },
@@ -92,48 +92,47 @@ docs](https://docusaurus.io/docs/en/navigation).
 ### Governance docs
 
 We house many explanatory docs for how governance works in this repository, with a few exceptions &mdash;
-notably the **Governance Manual**, which which describes the current governance processes of the RadicleDAO and can only
+notably the **Governance Manual**, which which describes the current governance processes of the Radworks and can only
 be updated via off-chain approval.
 
 Changes to the Manual follow a [separate contribution
-process](https://github.com/radicle-dev/radicle-governance/blob/main/contributing.md).
+process](https://github.com/radicle-foundation/radworks-governance/blob/main/contributing.md).
 
 ### Commit signing
 
-We require all commits to be signed for a branch to be merged into `master`. Learn more on setting up commit signing
+We require all commits to be signed for a branch to be merged into `main`. Learn more on setting up commit signing
 [here](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/signing-commits).
 
-### Tips for managing your fork of `radicle-docs`
+### Tips for managing your fork of `radworks-docs`
 
-When you clone your fork of `radicle-docs`, the repository at `YOUR-GITHUB-USERNAME>/radicle-docs` is set as the default
-`origin` remote. If you want to keep your fork up-to-date with the state of the `radicle-dev/radicle-docs` repository,
-you need to occasionally pull new commits into your fork. The best way to do that is to add a new `upstream` remote to your fork and 
-
-On your local system:
-
-```
-cd radicle-docs/
-git remote add upstream https://github.com/radicle-dev/radicle-docs.git
-```
-
-You can now pull changes from `upstream` to synchronize `master` branches across repositories:
+When you clone your fork of `radworks-docs`, the repository at `YOUR-GITHUB-USERNAME>/radworks-docs` is set as the
+default `origin` remote. If you want to keep your fork up-to-date with the state of the
+`radicle-foundation/radworks-docs` repository, you need to occasionally pull new commits into your fork. The best way to
+do that is to add a new `upstream` remote to your fork on your local system:
 
 ```
-git pull upstream master
+cd radworks-docs/
+git remote add upstream https://github.com/radicle-foundation/radworks-docs.git
 ```
 
-If you need to combine the latest changes from `upstream/master` to a branch you're currently working on in your fork,
+You can now pull changes from `upstream` to synchronize `main` branches across repositories:
+
+```
+git pull upstream main
+```
+
+If you need to combine the latest changes from `upstream/main` to a branch you're currently working on in your fork,
 you should perform a [rebase](https://git-scm.com/docs/git-rebase).
 
 ```
-git pull --rebase upstream master
+git pull --rebase upstream main
 ```
 
-If your branch and `upstream/master` have diverged, you'll need to resolve them using a text editor, add the file with
+If your branch and `upstream/main` have diverged, you'll need to resolve them using a text editor, add the file with
 `git add <FILENAME>`, and run `git rebase --continue`.
 
-When the rebase completes, you can push the updated state to `origin/master`:
+When the rebase completes, you can push the updated state to `origin/main`:
 
 ```
-git push --force origin master
+git push --force origin main
 ```
