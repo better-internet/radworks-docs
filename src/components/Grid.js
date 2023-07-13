@@ -16,16 +16,25 @@ export function Button ({ children, style = {}, href, title, cta }) {
   return (
     <>
       <div className={styles.button} style={style}>
-        {!isInternalUrl(href) && (
+        {/* {!isInternalUrl(href) && (
           <div className={styles.ext}>
             <ExternalLink />
           </div>
-        )}
+        )} */}
         {title && <h3>{title}</h3>}
         {children && <p>{children}</p>}
         {cta && 
           <div className={styles.cta}>
-            <Link to={href}>{cta} &rarr;</Link>
+            <Link to={href}>
+              {cta}{' '}
+              {!isInternalUrl(href) ? (
+                <span className={styles.ext}>
+                  <ExternalLink />
+                </span>
+              ) : (
+                <span>&rarr;</span>
+              )}
+            </Link>
           </div>
         }
       </div>
