@@ -76,30 +76,21 @@ export default function DocItemFooter() {
           </div>
           <div className={clsx(styles.infoBoxCol, 'col')}>
             <h3>Contribute</h3>
-            <div className={styles.infoBoxLink}>
+            <Link to={editUrl} className={styles.infoBoxLink}>
               {editUrl && <EditThisPage editUrl={editUrl} />}
-            </div>
-            <div className={styles.infoBoxLink}>
-              {/* <span className={styles.infoBoxIcon}>🤝</span>  */}
-              <Link to={'/community/stay-up-to-date'}>
-                Stay up to date
-              </Link>
-            </div>
+            </Link>
+            <Link to={'/community/stay-up-to-date'} className={styles.infoBoxLink}>
+              Stay up to date
+            </Link>
           </div>
           <div className={clsx(styles.infoBoxCol, 'col')}>
             <h3>Need help?</h3>
-            <div className={styles.infoBoxLink}>
-              {/* <span className={styles.infoBoxIcon}>💬</span>  */}
-              <Link to={'https://discord.gg/radworks'}>
-                Find us on Discord
-              </Link>
-            </div>
-            {/* <p>
-              <span className={styles.infoBoxIcon}>🧭</span> 
-              <Link to={'#'}>
-                Another link
-              </Link>
-            </p> */}
+            <Link to={'https://discord.gg/radworks'} className={styles.infoBoxLink}>
+              Find us on Discord
+            </Link>
+            <Link to={'https://twitter.com/radworks_'} className={styles.infoBoxLink}>
+              Follow us on Twitter
+            </Link>
           </div>
         </div>
       </div>
