@@ -44,7 +44,7 @@ These wallets require more  trust in an intermediary to host your wallet than a 
 ## Governance Tools
 
 ### What platform should I use to vote on off-chain Formal Reviews?
-Snapshot is the voting platform used off-chain consensus. Check out the [Radworks Snapshot space](https://snapshot.org/#/gov.radicle.eth).
+Snapshot is the voting platform used off-chain consensus. Check out the [Radworks Snapshot space](https://snapshot.org/#/gov.radworks.eth).
 
 ### What platform should I use to vote for on-chain proposals?
 On-chain voting can take place on any on-chain governance interface. We primarily use [Boardroom](https://boardroom.io/radworks/proposals#) and [Tally](https://www.tally.xyz/gov/radworks) as they are actively curated and updated projects in trusted platforms in the broader DAO ecosystem. 
