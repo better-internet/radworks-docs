@@ -28,27 +28,12 @@
 }
 
 .ext {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  color: hsl(240, 100%, 66.7%);
+  color: #162029;
 }
 
 .ext svg {
-  width: 20px;
-  height: 20px;
-}
-
-.ext {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  color: hsl(240, 100%, 66.7%);
-}
-
-.ext svg {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 
 .cta {

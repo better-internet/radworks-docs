@@ -80,6 +80,10 @@
   text-decoration: none;
 }
 
+[data-theme='dark'] .infoBoxLink {
+  color: #162029;
+}
+
 [data-theme='dark'] .infoBoxLink:hover {
   box-shadow: 0 4px 0 #e3ffe3;
 }
