@@ -28,20 +28,30 @@ const config = {
       {
         redirects: [
           {
-            to: '/understanding-radicle/how-radicle-works',
-            from: '/docs/what-is-radicle.html'
-          },
-          {
-            to: '/understanding-radicle/how-radicle-works',
-            from: '/understanding-radicle/what-is-radicle'
-          },
-          {
-            to: '/understanding-radicle/how-radicle-works',
-            from: '/understanding-radicle/why-radicle'
-          },
-          {
-            to: '/troubleshooting',
-            from: '/understanding-radicle/troubleshooting'
+            to: '/',
+            from: [
+              '/community/calls',
+              '/community/get-started',
+              '/community/manual-overview',
+              '/community/transition-dao',
+              '/community/treasury',
+              '/get-involved/community',
+              '/migrate-github-radicle',
+              '/get-started',
+              '/troubleshooting',
+              '/understanding-radicle/faq',
+              '/understanding-radicle/glossary',
+              '/understanding-radicle/how-radicle-works',
+              '/understanding-radicle/radicle-versus-github-gitlab',
+              '/using-radicle/clone',
+              '/using-radicle/collaboration',
+              '/using-radicle/create',
+              '/using-radicle/identity',
+              '/using-radicle/issues',
+              '/using-radicle/push',
+              '/using-radicle/track-review-merge',
+              '/using-radicle/view-share',
+            ]
           }
         ]
       }
