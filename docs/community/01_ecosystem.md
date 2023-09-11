@@ -28,9 +28,9 @@ for developers in order to receive funds from their users and supporters.
 
 ## Radicle Foundation Org
 
-The Radicle Foundation provides operations, marketing, and governance support to Radworks and its Orgs. It also fulfills
+The Foundation Org is represented by the Radicle Foundation - a Swiss non-profit entity. The Foundation Org provides operations, marketing, and governance support to Radworks and its Orgs. It also fulfills
 roles that are better suited to a legal entity, such as the maintenance of Radworks' intellectual property and
-initiation of Radworks' legal analysis and action.
+initiation of Radworks' legal analysis and action. All work done by the Foundation Org for Radworks and its other Orgs is funded from the treasury via an annual Org proposal. The Radicle Foundation (a Swiss entity) maintains separate funds to cover costs related to its own operations, which are not used to fund work done for Radworks and its Orgs. The Radicle Foundation does not control treasury funds, nor can it direct the development of the product Orgs (Radicle & Drips).
 
 ## Grants Org
 
