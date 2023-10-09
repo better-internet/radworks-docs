@@ -24,7 +24,7 @@ Proposal Reviews take place every second Wednesday of each month. These calls ar
 
 More detailed updates to governance work being done can be found in the monthly written updates on the forum. The Governance Committee will also present quarterly goals & reflections during the Quarterly Community Calls.
 
-Past governance call notes & recordings can be found [here](https://forest-text-046.notion.site/Monthly-RadicleDAO-Governance-Calls-Notes-Recordings-643bc0e48361486a866a114ead555cdd).
+Past governance call notes & recordings can be found [here](https://www.notion.so/better-internet-foundation/Monthly-RadicleDAO-Governance-Calls-Notes-Recordings-643bc0e48361486a866a114ead555cdd?pvs=4).
 
 ## Community Calendar
 You can subscribe to our [community calendar](https://bit.ly/radworks-calendar) that includes Quarterly Community Calls, monthly Proposal Review calls and each week of the monthly governance cycle.
