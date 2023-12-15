@@ -12,7 +12,7 @@ const sidebars = {
         {
           type: 'link',
           label: 'Governance Manual', // The link label
-          href: 'https://app.radicle.xyz/seeds/seed.radworks.org/rad:zPUsinVa3gP71g6Dt47LP76phAWd/tree/main/manual.md', // The external URL
+          href: 'https://github.com/radicle-foundation/radworks-governance/blob/main/manual.md', // The external URL
         },
         'community/obtaining-rad',
         'community/stay-up-to-date',
