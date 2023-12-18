@@ -6,12 +6,20 @@ title: Overview
 import Grid, { Button } from '@site/src/components/Grid'
 
 Welcome to Radworks' version-controlled governance documentation! These docs consist of carefully curated information
-and resources that lay out the Radicle’s token voting governance process and how to participate in it.
+and resources that lay out the Radworks token voting governance process and how to participate in it.
 
-Radworks’ treasury is controlled by an on-chain governance mechanism ([Compound-Governor](https://wiki.tally.xyz/docs/compound-governor)) via the project’s native governance token ($RAD). Holders of this token can participate in the decision-making around the treasury by voting and creating on-chain governance proposals composed of executable actions. Currently, these actions include:
+The Radworks’ treasury is controlled by an on-chain governance mechanism ([Compound-Governor](https://wiki.tally.xyz/docs/compound-governor)) via the project’s native governance token - $RAD. Holders of $RAD can participate in decision-making by voting on and creating Radworks Governance Proposals (RGPs). Voting power is derived directly from the number of tokens delegated to you.
+
+**Onchain Governance**
+Onchain governance is used to execute proposals that include executable actions. Currently, these actions include:
 * Treasury distributions of RAD, ETH, and USDC
 * Upgrades to the on-chain governance system
 * Changes to parameters of Treasury-governed contracts (e.g. Drips)
+
+**Offchain Governance** 
+Offchain governance is used to gain community consensus. Currently, consensus is needed for:
+*  Confirming a proposal with executable actions is ready to be voted on onchain (also known as Formal Review)
+*  Proposals that do not include an executable action, but still require consensus from the community 
 
 <Grid>
   <Button
@@ -34,7 +42,7 @@ Radworks’ treasury is controlled by an on-chain governance mechanism ([Compoun
   </Button>
 </Grid>
 
-### Contracts
+### Relevant Contracts
 
 * Governance: [0x690e775361AD66D1c4A25d89da9fCd639F5198eD](https://etherscan.io/address/0x690e775361AD66D1c4A25d89da9fCd639F5198eD)
 * Timelock: [0x8dA8f82d2BbDd896822de723F55D6EdF416130ba](https://etherscan.io/address/0x8dA8f82d2BbDd896822de723F55D6EdF416130ba)
