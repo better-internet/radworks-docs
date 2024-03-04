@@ -5,13 +5,13 @@ title: Ecosystem
 
 # How We Work
 
-Radworks is composed of **Orgs**. Orgs represent different groups of contributors that are funded from its treasury. To obtain funding, Orgs must pass annual budget proposals through Radworks governance. Orgs serve the Radworks purpose by building technologies for developers that cultivate internet freedom. 
+Radworks is composed of **Orgs**. Orgs represent different groups of contributors that are funded from its treasury. Orgs serve the Radworks purpose by building technologies for developers that cultivate internet freedom. To obtain funding, Orgs must pass annual budget proposals through Radworks governance.
 
 All Orgs have the autonomy to choose their own governance models, manage their own funds and run their own organizations. Each Org is required to participate in quarterly community calls and report to the community on their progress on the objectives  outlined in their annual funding proposals.
 
 !["Diagram of the Radworks ecosystem, with Radworks encompassing multiple Orgs, each of which have one or more Teams consisting of one or more Contributors"](/img/radworks_ecosystem-overview-transparent.png)
 
-Currently, Radworks funds four separate Orgs:
+Currently, Radworks funds four separate Orgs: Radicle Org, Drips Org, Better Internet Foundation Org and the Grants Org. The Radicle and Drips Orgs are are considered "product Orgs" while Foundation and Grants Orgs are "support Orgs" for the product Orgs. 
 
 ## Radicle Org
 
@@ -30,7 +30,9 @@ for developers in order to receive funds from their users and supporters.
 
 The Foundation Org is represented by the Better Internet Foundation (previously Radicle Foundation) - a Swiss non-profit entity. The Foundation Org provides operations, marketing, and governance support to Radworks and its Orgs. It also fulfills
 roles that are better suited to a legal entity, such as the maintenance of Radworks' intellectual property and
-initiation of Radworks' legal analysis and action. All work done by the Foundation Org for Radworks and its other Orgs is funded from the treasury via an annual Org proposal. The Radicle Foundation (a Swiss entity) maintains separate funds to cover costs related to its own operations, which are not used to fund work done for Radworks and its Orgs. The Better Internet Foundation does not control treasury funds, nor can it direct the development of the product Orgs (Radicle & Drips).
+initiation of Radworks' legal analysis and action. All work done by the Foundation Org for Radworks and its other Orgs is funded from the treasury via an annual Org proposal. The Radicle Foundation (a Swiss entity) maintains separate funds to cover costs related to its own operations, which are not used to fund work done for Radworks and its Orgs. 
+
+> The Better Internet Foundation does not control treasury funds, nor can it direct the development of the product Orgs (Radicle & Drips).
 
 ## Grants Org
 
