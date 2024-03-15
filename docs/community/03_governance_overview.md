@@ -8,7 +8,7 @@ import Grid, { Button } from '@site/src/components/Grid'
 Welcome to Radworks' version-controlled governance documentation! These docs consist of carefully curated information
 and resources that lay out the Radworks token voting governance process and how to participate in it.
 
-The Radworks’ treasury is managed by an on-chain governance mechanism ([Compound-Governor](https://wiki.tally.xyz/docs/compound-governor)) via the project’s native governance token - $RAD. Holders of $RAD can participate in decision-making by voting on and creating Radworks Governance Proposals (RGPs). Voting power is derived directly from the number of tokens delegated to an address (1 token = 1 vote). 
+The Radworks’ treasury is managed by an on-chain governance mechanism ([Compound-Governor](https://wiki.tally.xyz/docs/compound-governor)) via the project’s native governance token - $RAD. Holders of $RAD can participate in decision-making by voting on and creating Radworks Governance Proposals (RGPs). Voting power is derived directly from the number of [tokens delegated](https://github.com/radicle-foundation/radworks-governance/blob/main/manual.md#delegating) to an address (1 token = 1 vote). 
 
 **Onchain Governance**
 Onchain governance is used to manage proposals that include executable code. Currently, this includes:
