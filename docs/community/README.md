@@ -10,7 +10,7 @@ import Grid, { Button } from '@site/src/components/Grid'
 
 Radworks is a community dedicated to **cultivating internet freedom**. In a world that almost entirely relies on software, maintaining the resilience and health of the free and open source ecosystem is more important than ever. We strive to demonstrate the viability — in cost, labor, quality, and resiliency — of open-source software and its development.
 
-Radworks operates as a community-governed network that uses both and off- and on-chain governance mechanism to gain consensus around decisions as a community. See the “Overview” section for more information.
+Radworks operates as a community-governed network that uses both and off- and on-chain governance mechanisms to make decisions as a community. See the “Overview” section for more information.
 
 Join us on our quest to create a better and freer internet together! 
 
