@@ -31,16 +31,16 @@ Radworks currently supports the development of the following technologies:
 <Grid>
   <Button
     href="https://radicle.xyz"
-    title="Radicle"
+    title="Radicle 👾"
     cta="radicle.xyz"
   >
-    Radicle is a peer-to-peer network for code collaboration
+    Radicle is a peer-to-peer code collaboration stack
   </Button>
   <Button
     href="https://drips.network"
-    title="Drips"
+    title="Drips 💧"
     cta="drips.network"
   >
-    Drips is a peer-to-peer fund sharing & splitting solution
+    Drips is a decentralized toolkit for funding critical software dependencies
   </Button>
 </Grid>
