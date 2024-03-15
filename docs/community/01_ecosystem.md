@@ -38,4 +38,4 @@ The [Radworks Grants](https://github.com/radicle-dev/radicle-grants) Org finds, 
 development of any FOSS projects that fall outside the purview of currently funded product/engineering orgs (e.g.
 Radicle, Drips).
 
-!["Diagram of the current Radworks design, with the Radworks DAO encompassing the Radicle, Drips, and Grants Orgs, plus the Foundation Org, which has Operations, Finance, and Marketing Teams"](/img/radworks_org-design-transparent.png)
+!["Diagram of the current Radworks design, with the Radworks DAO encompassing the Radicle, Drips, and Grants Orgs, plus the Foundation Org, which has Operations, Finance, and Marketing Teams"](/img/Updated ecosystem model.png)
