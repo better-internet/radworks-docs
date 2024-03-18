@@ -11,15 +11,15 @@ and resources that lay out the Radworks token voting governance process and how 
 The Radworks’ treasury is managed by an on-chain governance mechanism ([Compound-Governor](https://wiki.tally.xyz/docs/compound-governor)) via the project’s native governance token - $RAD. Holders of $RAD can participate in decision-making by voting on and creating Radworks Governance Proposals (RGPs). Voting power is derived directly from the number of [tokens delegated](https://github.com/radicle-foundation/radworks-governance/blob/main/manual.md#delegating) to an address (1 token = 1 vote). 
 
 **Onchain Governance**
-Onchain governance is used to manage proposals that include executable code. Currently, this includes:
+Onchain governance is used to make decisions on proposals that include executable code. This includes:
 * Treasury distributions of RAD, ETH, and USDC
-* Upgrades to the on-chain governance system (e.g. quorum)
+* Upgrades to the onchain governance system (e.g. quorum)
 * Changes to parameters of Treasury-governed contracts (e.g. Drips)
 
 **Offchain Governance** 
 Offchain governance is used to gain community consensus on decisions. Currently, consensus is needed for:
-*  Confirming a proposal with executable code is ready to be voted on onchain (also known as [Formal Review](https://github.com/radicle-foundation/radworks-governance/blob/main/manual.md#formal-review))
-*  Proposals that do not include executable code, but still require consensus from the community 
+*  Confirming a proposal with executable code is ready to be submitted for onchain voting (also known as [Formal Review](https://github.com/radicle-foundation/radworks-governance/blob/main/manual.md#formal-review))
+*  Proposals that do not include executable code, but still require consensus from the community (e.g. updates to the governance process)
 
 <Grid>
   <Button
