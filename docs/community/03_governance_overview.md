@@ -17,7 +17,7 @@ Onchain governance is used to manage proposals that include executable code. Cur
 * Changes to parameters of Treasury-governed contracts (e.g. Drips)
 
 **Offchain Governance** 
-Offchain governance is used to gain community consensus. Currently, consensus is needed for:
+Offchain governance is used to gain community consensus on decisions. Currently, consensus is needed for:
 *  Confirming a proposal with executable code is ready to be voted on onchain (also known as [Formal Review](https://github.com/radicle-foundation/radworks-governance/blob/main/manual.md#formal-review))
 *  Proposals that do not include executable code, but still require consensus from the community 
 
