@@ -16,7 +16,7 @@ Currently, Radworks funds four separate Orgs: Radicle Org, Drips Org, Better Int
 
 The Radicle Org aims to develop a fully-sovereign code collaboration stack called “Radicle”.
 [Radicle](https://radicle.xyz/) is designed to be a secure, decentralized and powerful alternative to code forges such
-as GitHub and GitLab while preserving user sovereignty and freedom. See the Radicle Org's [community approve strategy for 2024](https://community.radworks.org/t/formal-review-rgp-18-radicle-org-proposal-2024/3421/4).
+as GitHub and GitLab while preserving user sovereignty and freedom. See the Radicle Org's [2024 budget](https://community.radworks.org/t/formal-review-rgp-18-radicle-org-proposal-2024/3421/4).
 
 ## Drips Org
 
