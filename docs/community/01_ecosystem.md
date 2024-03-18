@@ -11,7 +11,8 @@ All Orgs have the autonomy to choose their own governance models, manage their o
 
 !["Diagram of the Radworks ecosystem, with Radworks encompassing multiple Orgs, each of which have one or more Teams consisting of one or more Contributors"](/img/radworks_ecosystem-overview-transparent.png)
 
-Currently, Radworks funds four separate Orgs: Radicle Org, Drips Org, Better Internet Foundation Org and the Grants Org. 
+Currently, Radworks funds four separate Orgs: Radicle, Drips, Better Internet Foundation, and Grants. 
+
 ## Radicle Org
 
 The Radicle Org aims to develop a fully-sovereign code collaboration stack called “Radicle”.
