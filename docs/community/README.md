@@ -8,13 +8,13 @@ import Grid, { Button } from '@site/src/components/Grid'
 
 # What is Radworks?
 
-Radworks is a community dedicated to **cultivating internet freedom**. In a world that almost entirely relies on software, maintaining the resilience and health of the free and open source ecosystem is more important than ever. We strive to demonstrate the viability — in cost, labor, quality, and resiliency — of open-source software and its development.
+In a world that almost entirely relies on software, maintaining the resilience and health of the free and open source ecosystem is more important than ever. We strive to demonstrate the viability — in cost, labor, quality, and resiliency — of open-source software and its development.
 
-Radworks operates as a community-governed network that uses both and off- and on-chain governance mechanisms to make decisions as a community. See the “Overview” section for more information.
+Radworks is building a sovereign developer stack that enables developers to securely host, collaborate, and reward open-source code. It operates as a community-governed network that uses both and off- and on-chain governance mechanisms to make decisions as a community. 
 
-Join us on our quest to create a better and freer internet together! 
+See the “Overview” section for more information on our governance.
 
-## Our Purpose
+## Purpose
 
 > Radworks funds new, resilient, permissionless technologies to cultivate internet freedom. We focus on funding and supporting the creation of censorship-resistant and decentralized technologies that empower builders and creators to collaborate. We strive to endorse and provide resources to builders of these technologies. 
 
@@ -25,7 +25,7 @@ Join us on our quest to create a better and freer internet together!
 
 Radworks is run by a decentralized governance system, powered by its community of users & builders, and represented by the $RAD token. Read more about [Radworks governance](/community/governance-overview). 
 
-## Our Projects
+## Projects
 Radworks currently supports the development of the following technologies:
 
 <Grid>
