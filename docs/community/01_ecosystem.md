@@ -23,7 +23,7 @@ as GitHub and GitLab while preserving user sovereignty and freedom. See the Radi
 The Drips Org’s mission is to enable FOSS developers to financially thrive by taking on the problem of [FOSS
 sustainability](https://fosssustainability.com/) / funding public goods. [Drips](https://www.drips.network/) develops
 novel [protocols](https://github.com/radicle-dev/drips-contracts), tools and applications that enable new value flows
-for developers in order to receive funds from their users and supporters. See the Drips Org's [community approve strategy for 2024](https://community.radworks.org/t/formal-review-rgp-19-drips-org-proposal-2024/3422/2).
+for developers in order to receive funds from their users and supporters. See the Drips Org's [2024 budget](https://community.radworks.org/t/formal-review-rgp-19-drips-org-proposal-2024/3422/2).
 
 ## Better Internet Foundation Org
 
