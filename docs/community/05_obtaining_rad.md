@@ -10,6 +10,9 @@ $RAD is the native token of the Radworks Network, used as the primary means to c
 ## Governance 
 Radworks is a community-run network in which all aspects are governed by RAD holders. RAD holders can vote on Radworks Governance Proposals (RGPs) to distribute funds from the Treasury, improve the network, and manage critical system parameters. [Read more here](https://docs.radworks.org/community/governance-overview).
 
+## Incentivization
+[insert final text]
+
 ## Token Contracts
 
 - Radicle Token: [0x31c8eacbffdd875c74b94b077895bd78cf1e64a3](https://etherscan.io/token/0x31c8eacbffdd875c74b94b077895bd78cf1e64a3)
@@ -32,7 +35,6 @@ $RAD is available on the following exchanges.
 | [Kraken](https://www.kraken.com/) |  |
 | [MEXC](https://www.mexc.com/) |  |
 | [Partibu](https://www.paribu.com/) |  |
-| Upbeat |  |
 | [Bithump](https://www.bithumb.com/react/) |  |
 | [Crypto.com](https://crypto.com/) |  |
 
