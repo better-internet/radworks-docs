@@ -105,4 +105,6 @@ const config = {
     }),
 };
 
-module.exports = config;
+module.exports = {
+  scripts: [{src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'docs.radworks.org'}],
+};
