@@ -2,7 +2,7 @@ const sidebars = {
   communitySidebar: [
     'community/community',
     'community/ecosystem',
-    'community/our-story',
+    'community/rad-token',
     {
       type: 'category',
       label: 'Governance',
@@ -14,12 +14,12 @@ const sidebars = {
           label: 'Governance Manual', // The link label
           href: 'https://github.com/radicle-foundation/radworks-governance/blob/main/manual.md', // The external URL
         },
-        'community/obtaining-rad',
+        
         'community/stay-up-to-date',
         'community/faq',
-        
       ]
     },
+    'community/our-story',
     'community/code-of-conduct',
   ],
 };

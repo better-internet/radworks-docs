@@ -44,10 +44,10 @@ Radworks currently supports the development of the following technologies:
     Drips is a decentralized toolkit for funding critical software dependencies
   </Button>
   <Button
-    href="https://drips.network"
+    href=""
     title="RNS 🌐"
-    cta=""
+    cta="Coming soon!"
   >
-    Coming Soon! The Radworks Seed Network is a decentralized network of seed node operators providing storage and retrieval services for the Radicle network.
+    The Radworks Seed Network is a decentralized network of seed node operators providing storage and retrieval services for the Radicle network.
   </Button>
 </Grid>

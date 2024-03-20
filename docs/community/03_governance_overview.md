@@ -15,19 +15,19 @@ Radworks’ treasury is controlled by an on-chain governance mechanism ([Compoun
 
 <Grid>
   <Button
-    href="https://github.com/radicle-foundation/radworks-governance/blob/main/manual.md#proposal-process"
+    href="https://github.com/betterinternet-foundation/radworks-governance/blob/main/manual.md#proposal-process"
     title="Create a proposal"
     cta="Learn more about the RGP process"
   >
   </Button>
   <Button
-    href="https://github.com/radicle-foundation/radworks-governance/blob/main/manual.md#voting"
+    href="https://github.com/betterinternet-foundation/radworks-governance/blob/main/manual.md#voting"
     title="Vote on proposals"
     cta="Learn how to vote on-chain and off-chain"
   >
   </Button>
   <Button
-    href="https://github.com/radicle-dev/radicle-governance/blob/main/manual.md#delegating"
+    href="https://github.com/betterinternet-foundation/radworks-governance/blob/main/manual.md#delegating"
     title="Delegate votes"
     cta="Learn how to delegate"
   >
