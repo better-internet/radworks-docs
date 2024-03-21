@@ -5,7 +5,7 @@ title: The RAD Token
 
 import Grid, { Button } from '@site/src/components/Grid'
 
-$RAD is the native token of the Radworks Network, used as the primary means to coordinate all actors, govern the treasury, and will reward infrastructure providers on top of the Radicle network.
+$RAD is the native token of the Radworks Network, used as the primary means to coordinate all actors, govern the treasury, and (later this year will) reward infrastructure providers on top of the Radicle network.
 
 ## How it works
 
@@ -22,7 +22,7 @@ $RAD is the native token of the Radworks Network, used as the primary means to c
     title="Incentivization"
     cta="Coming soon!"
   >
-    The Radworks Seed Network (RSN) is a decentralized network of seed node operators providing storage and retrieval services for the Radicle network. The RAD token will be used to reward seed nodes that provide these services to the RSN.                 
+    The Radworks Seed Network (RSN) is building a decentralized network of seed node operators that provide storage and retrieval services for the Radicle network. The RAD token will be used to reward seed nodes that provide these services to the RSN.                 
   </Button>
 </Grid>
 
