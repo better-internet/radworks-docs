@@ -3,6 +3,8 @@ id: ecosystem
 title: Ecosystem
 ---
 
+import EcosystemDiagram from '/static/img/updated-ecosystem-model.png';
+
 # How We Work
 
 Radworks is composed of **Orgs**. Orgs represent different groups of contributors that are funded from its treasury. Orgs serve the Radworks purpose by building technologies for developers that cultivate internet freedom. To obtain funding, Orgs must pass annual budget proposals through Radworks governance (see [Governance Manual](https://github.com/radicle-foundation/radworks-governance/blob/main/manual.md)).
@@ -40,4 +42,5 @@ The [Radworks Grants](https://github.com/radicle-dev/radicle-grants) Org finds, 
 development of any FOSS projects that fall outside the purview of currently funded product/engineering orgs (e.g.
 Radicle, Drips). See the Grants Org's [2024 budget](https://community.radworks.org/t/formal-review-rgp-20-grants-org-proposal-2024-v2/3464).
 
-!["Diagram of the current Radworks design, with the Radworks DAO encompassing the Radicle, Drips, and Grants Orgs, plus the Foundation Org, which has Operations, Finance, and Marketing Teams"](/img/updated_ecosystem-model.png)
+!["Diagram of the current Radworks design, with the Radworks DAO encompassing the Radicle, Drips, and Grants Orgs, plus the Foundation Org, which has Operations, Finance, and Marketing Teams"](/img/updated-ecosystem-model.png)
+
