@@ -42,7 +42,7 @@ Radworks currently supports the development of the following technologies:
   </Button>
   <Button
     href=""
-    title="RNS 🌐"
+    title="RSN 🌐"
     cta="Coming soon!"
   >
     The Radworks Seed Network is a decentralized network of seed node operators providing storage and retrieval services for the Radicle network.
