@@ -16,6 +16,9 @@ const config = {
   organizationName: 'radicle-dev',
   projectName: 'radicle-docs',
   trailingSlash: false,
+  scripts: [
+    {src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'docs.radworks.org'}
+  ],
   plugins: [
     [
       require.resolve("@cmfcmf/docusaurus-search-local"),
