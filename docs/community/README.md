@@ -12,7 +12,7 @@ In a world that almost entirely relies on software, maintaining the resilience a
 
 Radworks is building a sovereign developer stack that enables developers to securely host, collaborate, and reward open-source code. It operates as a community-governed network that uses both and off- and on-chain governance mechanisms to make decisions as a community. 
 
-See the [here](https://docs.radworks.org/community/governance-overview) for more information on our governance.
+See [here](https://docs.radworks.org/community/governance-overview) for more information on our governance.
 
 ## Purpose
 
