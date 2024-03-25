@@ -26,14 +26,14 @@ Offchain governance is used to gain community consensus on decisions. Currently,
 <Grid>
    <Button
     href="https://github.com/better-internet/radworks-governance/blob/main/manual.md#proposal-types"
-    title="Learn about the proposal process"
-    cta="Learn more about the different proposal types and RGP process"
+    title="Understand the proposal process"
+    cta="Learn more about different proposal types and the RGP process"
   >
   </Button>
   <Button
     href="https://github.com/better-internet/radworks-governance/blob/main/manual.md#proposal-cycles"
-    title="Learn about proposal cycles"
-    cta="Learn about the monthly proposal cycles that Radworks governance opperates within"
+    title="View proposal cycle schedule"
+    cta="Learn about the monthly proposal cycles"
   >
   </Button>
   <Button
