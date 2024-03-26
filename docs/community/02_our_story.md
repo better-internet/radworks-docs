@@ -143,7 +143,7 @@ The Foundation funded and coordinated all core development of the Radicle projec
 <Timeline
   date="July, 2023"
   title="[Drips V2 launches](https://x.com/dripsnetwork/status/1684190676332822530?s=20)"
-  desc="Intoduces a new platform, Drips lists, oracle-based identity solution & xxx"
+  desc="Introduces Drips lists, an oracle-based identity solution, and a new app."
 />
 
 <Timeline
