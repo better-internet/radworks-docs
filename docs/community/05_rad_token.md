@@ -53,5 +53,5 @@ $RAD is available on the following exchanges:
 #### Decentralized
 * [Uniswap](https://app.uniswap.org/)
 
-## Roadmap - Coming Soon!
+## Roadmap - [Coming Soon](https://community.radworks.org/t/formal-review-rgp-22-start-the-radworks-seed-network-rsn-org/3487)!
 There is an ongoing effort to bring new token utility to Radworks and the RAD token. Keep up to the date with discussions on [community.radworks.org](http://community.radworks.org)
