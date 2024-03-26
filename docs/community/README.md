@@ -20,7 +20,7 @@ See [here](https://docs.radworks.org/community/governance-overview) for more inf
 
 > Radworks is committed to transparency, inclusivity, and decentralized decision-making, ensuring that the community has a say in the direction of its efforts and the projects it supports. Together, the Radworks community can build a more decentralized and equitable future for software development. 
 
-> The community-madated purpose lives [here](https://app.radicle.xyz/seeds/seed.radworks.org/rad:zPUsinVa3gP71g6Dt47LP76phAWd/tree/main/purpose.md).
+> The community-mandated purpose lives [here](https://app.radicle.xyz/seeds/seed.radworks.org/rad:zPUsinVa3gP71g6Dt47LP76phAWd/tree/main/purpose.md).
 
 ## Projects
 Radworks currently supports the development of the following technologies:
