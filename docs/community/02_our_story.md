@@ -22,14 +22,8 @@ The Foundation funded and coordinated all core development of the Radicle projec
 
 <Timeline
   date="December, 2017"
-  title="Monadic GmbH is born"
+  title="[Monadic GmbH](https://web.archive.org/web/20190719193029/https://monadic.xyz/) is born"
   desc="The Berlin-based, venture-backed entity that supported the early stages of the project."
-/>
-
-<Timeline
-  date="September, 2018"
-  title="[Radicle](https://web.archive.org/web/20180914083434/http://radicle.xyz/), a language for peer-to-peer collaboration, is created"
-  desc="A language developed to be the basis of [open source coin](https://web.archive.org/web/20180914083434/http://oscoin.io/)."
 />
 
 <Timeline
@@ -81,21 +75,9 @@ The Foundation funded and coordinated all core development of the Radicle projec
 />
 
 <Timeline
-  date="January, 2022"
-  title="The DAO funds the [Radicle Grants Program](https://github.com/radicle-dev/radicle-grants)"
-  desc="With the passing of the [Radicle Grants Wave 1 proposal](https://boardroom.io/radworks/proposal/cHJvcG9zYWw6cmFkaWNsZTpvbmNoYWluOjU=), the Grants Program started to find, fund, and guide research and development of any projects within the Radicle ecosystem."
-/>
-
-<Timeline
   date="February, 2022"
   title="Radicle launches [a web client](https://twitter.com/radicle/status/1497209699959250948)"
   desc="The Radicle network moves to the web, with a CLI and complementing web interface."
-/>
-
-<Timeline
-  date="March, 2022"
-  title="[Ecosystem Growth Fund](https://boardroom.io/radworks/proposal/cHJvcG9zYWw6cmFkaWNsZTpvbmNoYWluOjc=) proposal passes"
-  desc="The Radicle Ecosystem Growth Fund (EGF) was set up to fund initiatives that drive awareness, engagement, and adoption of the Radicle stack."
 />
 
 <Timeline
@@ -114,12 +96,6 @@ The Foundation funded and coordinated all core development of the Radicle projec
   date="September, 2022"
   title="[Radicle Foundation becomes fully DAO-funded](https://community.radworks.org/t/11-phase-0-transition-to-the-dao/3026)"
   desc="The Foundation — which was funding & coordinating core development work of the Radicle project independently from the DAO — comes under the purview of DAO governance. This completes the first phase of the [project’s “transition to the DAO”](https://community.radwoorks.org/t/the-next-phase-of-the-radicledao/2776)."
-/>
-
-<Timeline
-  date="November, 2022"
-  title="[Wrapping up of the Ecosystem Growth Fund](https://community.radworks.org/t/ecosystem-growth-fund-retrospective/3131)"
-  desc="The EGF is sunset until a clearer path towards PMF for development teams is apparent."
 />
 
 <Timeline
