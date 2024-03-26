@@ -105,7 +105,7 @@ The Foundation funded and coordinated all core development of the Radicle projec
 />
 
 <Timeline
-  date="May 2023"
+  date="May, 2023"
   title="All core work is transitioned to the DAO, [sunsetting of DAO transition work](https://community.radworks.org/t/wrapping-up-the-org-design-wg/3320/3)"
   desc="[Radicle](https://www.tally.xyz/gov/radworks/proposal/14) and [Drips](https://www.tally.xyz/gov/radworks/proposal/15) and [Grants](https://snapshot.org/#/gov.radworks.eth/proposal/0x80a1f92f95f348d60eeac16272bae940ca1b90478f70a72cf34263f5cf48c2bb) became independent, DAO-funded Orgs within the DAO and the [Org Design Working Group](https://community.radworks.org/t/open-call-core-development-org-design-working-group/3042/3), which led the charge of DAO transition design & research, was sunset."
 />
@@ -123,10 +123,17 @@ The Foundation funded and coordinated all core development of the Radicle projec
 />
 
 <Timeline
-  date="Septmber, 2023"
+  date="August, 2023"
+  title="Radicle Foundation becomes [Better Internet Foundation](https://betterinternet.foundation/)"
+  desc="Since the core work was transitioned to Radicle and Drips Orgs, a new Foundation name was chosen, which better reflects its wider-purpose and the fact that it no longer develops nor directly supports Radicle."
+/>
+
+<Timeline
+  date="September, 2023"
   title="[Radworks funds its critical dependancies via Drips](https://radworks.mirror.xyz/qopF06RBjKSEhi7HKQgYiyGGfidDAadES4bPXc8xTpE)"
   desc="Radworks becomes the first project to utilize Drips to support open source builders at scale - streaming $1 million to 30 critical software dependencies."
 />
+
 <Timeline
   date="March, 2024"
   title="[Radicle 1.0](https://radicle.xyz/) launches"
