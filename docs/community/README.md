@@ -41,7 +41,7 @@ Radworks currently supports the development of the following technologies:
     Drips is a decentralized toolkit for funding critical software dependencies
   </Button>
   <Button
-    href=""
+    href="https://community.radworks.org/t/formal-review-rgp-22-start-the-radworks-seed-network-rsn-org/3487"
     title="RSN 🌐"
     cta="Coming soon!"
   >
