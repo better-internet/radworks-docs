@@ -10,37 +10,55 @@ and resources that lay out the Radworks token voting governance process and how 
 
 The Radworks’ treasury is managed by an on-chain governance mechanism ([Compound-Governor](https://wiki.tally.xyz/docs/compound-governor)) via the project’s native governance token - $RAD. Holders of $RAD can participate in decision-making by voting on and creating Radworks Governance Proposals (RGPs). Voting power is derived directly from the number of [tokens delegated](https://github.com/radicle-foundation/radworks-governance/blob/main/manual.md#delegating) to an address (1 token = 1 vote). 
 
-**Onchain Governance**
+### Onchain Governance
+
 Onchain governance is used to make decisions on proposals that include executable code. This includes:
 * Treasury distributions of RAD, ETH, and USDC
 * Upgrades to the onchain governance system (e.g. quorum)
 * Changes to parameters of Treasury-governed contracts (e.g. Drips)
 
-**Offchain Governance** 
+### Offchain Governance
+
 Offchain governance is used to gain community consensus on decisions. Currently, consensus is needed for:
 *  Confirming a proposal with executable code is ready to be submitted for onchain voting (also known as [Formal Review](https://github.com/radicle-foundation/radworks-governance/blob/main/manual.md#formal-review))
 *  Proposals that do not include executable code, but still require consensus from the community (e.g. updates to the governance process)
 
 <Grid>
-  <Button
-    href="https://github.com/betterinternet-foundation/radworks-governance/blob/main/manual.md#proposal-process"
-    title="Create a proposal"
-    cta="Learn more about the RGP process"
+   <Button
+    href="https://github.com/better-internet/radworks-governance/blob/main/manual.md#proposal-types"
+    title="Understand the proposal process"
+    cta="Learn more about different proposal types and the RGP process"
   >
   </Button>
   <Button
-    href="https://github.com/betterinternet-foundation/radworks-governance/blob/main/manual.md#voting"
+    href="https://github.com/better-internet/radworks-governance/blob/main/manual.md#proposal-cycles"
+    title="View proposal cycle schedule"
+    cta="Learn about the monthly proposal cycles"
+  >
+  </Button>
+  <Button
+    href="https://github.com/better-internet/radworks-governance/blob/main/manual.md#delegating"
+    title="Delegate voting power"
+    cta="Learn how to delegate RAD"
+  >
+  </Button>
+  <Button
+    href="https://github.com/better-internet/radworks-governance/blob/main/manual.md#voting"
     title="Vote on proposals"
-    cta="Learn how to vote on-chain and off-chain"
-  >
-  </Button>
-  <Button
-    href="https://github.com/betterinternet-foundation/radworks-governance/blob/main/manual.md#delegating"
-    title="Delegate votes"
-    cta="Learn how to delegate"
+    cta="Learn how to vote onchain and offchain"
   >
   </Button>
 </Grid>
+
+### Voting Thresholds
+
+An RGP is approved if it satisfies the following minimum vote thresholds:
+
+**Quorum:** The minimum number of RAD votes required to be cast in support of a proposal in order for a quorum to be reached and for a vote to succeed. Quorum is currently measured as a % of the total $RAD supply. The required quorum to pass a proposal is **4% (4M $RAD) of total supply (100M $RAD)**
+
+**Approval Threshold:** If quorum is met, the proposal passes if a majority of the votes are “in-favor”.
+
+_Proposals in the Formal Review and Submission phases are required to meet quorum requirements._
 
 ### Relevant Contracts
 
