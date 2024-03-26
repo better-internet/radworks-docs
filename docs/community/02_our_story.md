@@ -134,4 +134,20 @@ The Foundation funded and coordinated all core development of the Radicle projec
   desc="[Radicle](https://boardroom.io/radworks/proposal/cHJvcG9zYWw6cmFkaWNsZTpvbmNoYWluOjE0) and [Drips](https://boardroom.io/radworks/proposal/cHJvcG9zYWw6cmFkaWNsZTpvbmNoYWluOjE1) and [Grants](https://boardroom.io/radworks/proposal/cHJvcG9zYWw6cmFkaWNsZTpzbmFwc2hvdDoweDgwYTFmOTJmOTVmMzQ4ZDYwZWVhYzE2MjcyYmFlOTQwY2ExYjkwNDc4ZjcwYTcyY2YzNDI2M2Y1Y2Y0OGMyYmI=) became independent, DAO-funded Orgs within the DAO and the [Org Design Working Group](https://community.radworks.org/t/open-call-core-development-org-design-working-group/3042/3), which led the charge of DAO transition design & research, was sunset."
 />
 
+<Timeline
+  date="July, 2023"
+  title="RadicleDAO becomes [Radworks](https://radworks.mirror.xyz/PHFoG1xR98l2eZhkgr4281AaxbXnHD2iVGhip6zbmSw)"
+  desc="The DAO identity shifts to be more inclusive for all technology being supported by this community-governed network."
+/>
 
+<Timeline
+  date="July, 2023"
+  title="[Drips V2 launches](https://x.com/dripsnetwork/status/1684190676332822530?s=20)"
+  desc="Introduces Drips lists, an oracle-based identity solution, and a new app."
+/>
+
+<Timeline
+  date="Septmber, 2023"
+  title="[Radworks funds its critical dependancies via Drips](https://radworks.mirror.xyz/qopF06RBjKSEhi7HKQgYiyGGfidDAadES4bPXc8xTpE)"
+  desc="Radworks becomes the first project to utilize Drips to support open source builders at scale - streaming $1 million to 30 critical software dependencies."
+/>
