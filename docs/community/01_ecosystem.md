@@ -30,9 +30,9 @@ for developers in order to receive funds from their users and supporters. See th
 
 ## Better Internet Foundation Org
 
-The Foundation Org is represented by the [Better Internet Foundation](https://betterinternet.foundation/) (previously Radicle Foundation) - a Swiss non-profit entity. The Foundation Org provides operations, marketing, and governance support to Radworks and its Orgs. It also fulfills
+The Foundation Org is represented by the [Better Internet Foundation](https://betterinternet.foundation/) (previously Radicle Foundation) - a Swiss non-profit entity. The Foundation Org serves the roles of "protector, nurturer, and advocate" of the Radworks ecosystem, by carrying out operations, marketing, and governance-related support. It also fulfills
 roles that are better suited to a legal entity, such as the maintenance of Radworks' intellectual property and
-initiation of Radworks' legal analysis and action. All work done by the Foundation Org for Radworks and its other Orgs is funded from the treasury via an annual Org proposal. The Better Internet Foundation maintains separate funds to cover costs related to its own operations, which are not used to fund work done for Radworks and its Orgs. See the Foundation Org's [community approve strategy for 2024](https://community.radworks.org/t/formal-review-rgp-21-foundation-org-proposal-2024/3420/3).
+initiation of Radworks' legal analysis and action. All work done by the Foundation Org for Radworks is funded by the treasury via an annual Org proposal. See the Foundation Org's [community approved strategy for 2024](https://community.radworks.org/t/formal-review-rgp-21-foundation-org-proposal-2024/3420/3).
 
 > The Better Internet Foundation does not control treasury funds, nor can it direct product development (Radicle & Drips).
 
