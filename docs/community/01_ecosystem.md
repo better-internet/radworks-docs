@@ -19,20 +19,20 @@ Currently, Radworks funds four separate Orgs: Radicle, Drips, Better Internet Fo
 
 The Radicle Org aims to develop a fully-sovereign code collaboration stack called “Radicle”.
 [Radicle](https://radicle.xyz/) is designed to be a secure, decentralized and powerful alternative to code forges such
-as GitHub and GitLab while preserving user sovereignty and freedom. See the Radicle Org's [2024 budget](https://community.radworks.org/t/formal-review-rgp-18-radicle-org-proposal-2024/3421/4).
+as GitHub and GitLab while preserving user sovereignty and freedom. See the Radicle Org's [community approved strategy & budget for 2024](https://community.radworks.org/t/formal-review-rgp-18-radicle-org-proposal-2024/3421/4).
 
 ## Drips Org
 
 The Drips Org’s mission is to enable FOSS developers to financially thrive by taking on the problem of [FOSS
 sustainability](https://fosssustainability.com/) / funding public goods. [Drips](https://www.drips.network/) develops
 novel [protocols](https://github.com/radicle-dev/drips-contracts), tools and applications that enable new value flows
-for developers in order to receive funds from their users and supporters. See the Drips Org's [2024 budget](https://community.radworks.org/t/formal-review-rgp-19-drips-org-proposal-2024/3422/2).
+for developers in order to receive funds from their users and supporters. See the Drips Org's [community approved strategy & budget for 2024](https://community.radworks.org/t/formal-review-rgp-19-drips-org-proposal-2024/3422/2).
 
 ## Better Internet Foundation Org
 
 The Foundation Org is represented by the [Better Internet Foundation](https://betterinternet.foundation/) (previously Radicle Foundation) - a Swiss non-profit entity. The Foundation Org serves the roles of "protector, nurturer, and advocate" of the Radworks ecosystem, by carrying out operations, marketing, and governance-related support. It also fulfills
 roles that are better suited to a legal entity, such as the maintenance of Radworks' intellectual property and
-initiation of Radworks' legal analysis and action. All work done by the Foundation Org for Radworks is funded by the treasury via an annual Org proposal. See the Foundation Org's [community approved strategy for 2024](https://community.radworks.org/t/formal-review-rgp-21-foundation-org-proposal-2024/3420/3).
+initiation of Radworks' legal analysis and action. All work done by the Foundation Org for Radworks is funded by the treasury via an annual Org proposal. See the Foundation Org's [community approved strategy and budget for 2024](https://community.radworks.org/t/formal-review-rgp-21-foundation-org-proposal-2024/3420/3).
 
 > The Better Internet Foundation does not control treasury funds, nor can it direct product development (Radicle & Drips).
 
@@ -40,7 +40,10 @@ initiation of Radworks' legal analysis and action. All work done by the Foundati
 
 The [Radworks Grants](https://github.com/radicle-dev/radicle-grants) Org finds, funds, and guides research and
 development of any FOSS projects that fall outside the purview of currently funded product/engineering orgs (e.g.
-Radicle, Drips). See the Grants Org's [2024 budget](https://community.radworks.org/t/formal-review-rgp-20-grants-org-proposal-2024-v2/3464).
+Radicle, Drips). See the Grants Org's [community approved strategy & budget for 2024](https://community.radworks.org/t/formal-review-rgp-20-grants-org-proposal-2024-v2/3464).
+
+## Radicle Integrations & Tooling Org
+The focus of this Org is to integrate the Radicle Forge with other developer tools. They aim to lower friction for developers who want to migrate to Radicle, by allowing them to keep their existing workflows. These intergations enable smoother user onboarding (i.e. quicker adoption) as well as user retention. See the Radicle Integrations & Tooling Org's [community approved strategy & budget for 2024](https://community.radworks.org/t/formal-review-rgp-23-start-the-radicle-integrations-tooling-org-2024/3508). 
 
 <div class="text--center"> 
   <img src={EcosystemDiagram} style={{width: 500, alignItems: 'center',}}/>
