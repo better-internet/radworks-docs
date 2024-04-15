@@ -10,6 +10,7 @@ and resources that lay out the Radworks token voting governance process and how 
 
 The Radworks’ treasury is managed by an on-chain governance mechanism ([Compound-Governor](https://wiki.tally.xyz/docs/compound-governor)) via the project’s native governance token - $RAD. Holders of $RAD can participate in decision-making by voting on and creating Radworks Governance Proposals (RGPs). Voting power is derived directly from the number of [tokens delegated](https://github.com/radicle-foundation/radworks-governance/blob/main/manual.md#delegating) to an address (1 token = 1 vote). 
 
+# What is governance used for?
 ### Onchain Governance
 
 Onchain governance is used to make decisions on proposals that include executable code. This includes:
@@ -22,6 +23,19 @@ Onchain governance is used to make decisions on proposals that include executabl
 Offchain governance is used to gain community consensus on decisions. Currently, consensus is needed for:
 *  Confirming a proposal with executable code is ready to be submitted for onchain voting (also known as [Formal Review](https://github.com/radicle-foundation/radworks-governance/blob/main/manual.md#formal-review))
 *  Proposals that do not include executable code, but still require consensus from the community (e.g. updates to the governance process)
+
+# Proposal Process
+INSERT IMAGE
+
+# Proposal Types
+All proposals are referred to as RAD Governance Proposals (RGPs). There are two types of RGPs: Executable & Social
+| Type | Description | Process |
+| --- | --- | --- |
+| Executable | On-chain actions such as treasury distributions, updates to contract parameters, and upgrades to governance system. | Request for Comments → Formal Review → Submission |
+| Social | Off-chain changes that can not be enforced by governance on-chain but should have community approval (e.g. updates to the governance process) | Request for Comments → Formal Review  |
+
+# Proposal Cycles
+INSERT IMAGE
 
 <Grid>
    <Button
@@ -36,16 +50,32 @@ Offchain governance is used to gain community consensus on decisions. Currently,
     cta="Learn about the monthly proposal cycles"
   >
   </Button>
+</Grid>
+
+# Participate in Governance
+<Grid>
   <Button
-    href="https://github.com/better-internet/radworks-governance/blob/main/manual.md#delegating"
-    title="Delegate voting power"
-    cta="Learn how to delegate RAD"
+    href="https://community.radworks.org/c/governance/proposals/18"
+    title="Review proposals"
+    cta="Review proposals on the forum & leave feedback for proposal authors"
   >
   </Button>
   <Button
-    href="https://github.com/better-internet/radworks-governance/blob/main/manual.md#voting"
-    title="Vote on proposals"
-    cta="Learn how to vote onchain and offchain"
+    href="https://www.tally.xyz/gov/radworks/delegates"
+    title="Delegate voting power"
+    cta="Find delegates & delegate voting power"
+  >
+  </Button>
+ <Button
+    href="https://snapshot.org/#/gov.radworks.eth"
+    title="Vote offchain"
+    cta="View & vote on active Snapshot polls"
+  >
+  </Button>
+  <Button
+    href="https://www.tally.xyz/gov/radworks"
+    title="Vote onchain"
+    cta="View & vote on active onchain submissions"
   >
   </Button>
 </Grid>
@@ -59,6 +89,10 @@ An RGP is approved if it satisfies the following minimum vote thresholds:
 **Approval Threshold:** If quorum is met, the proposal passes if a majority of the votes are “in-favor”.
 
 _Proposals in the Formal Review and Submission phases are required to meet quorum requirements._
+
+### Delegation
+To participate in off-chain and on-chain voting, $RAD must be delegated to the address that will be used to vote. Delegation can be executed via various governance management platforms (e.g. Tally). [Learn more](https://github.com/better-internet/radworks-governance/blob/main/manual.md#delegating
+) about how to delegate $RAD and begin voting.
 
 ### Relevant Contracts
 
