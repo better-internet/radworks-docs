@@ -53,7 +53,7 @@ INSERT IMAGE
 </Grid>
 
 # Participate in Governance
-</Grid>
+<Grid>
   <Button
     href="https://community.radworks.org/c/governance/proposals/18"
     title="Review proposals"
