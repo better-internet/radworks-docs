@@ -78,7 +78,7 @@ All proposals are referred to as RAD Governance Proposals (RGPs). There are two 
 
 ## Voting Thresholds
 
-An RGP is approved if it satisfies the following minimum vote thresholds:
+A RGP is approved if it satisfies the following minimum vote thresholds:
 
 * **Quorum:** The minimum number of RAD votes required to be cast in support of a proposal in order for a quorum to be reached and for a vote to succeed. Quorum is currently measured as a % of the total $RAD supply. The required quorum to pass a proposal is **4% (4M $RAD) of total supply (100M $RAD)**
 
