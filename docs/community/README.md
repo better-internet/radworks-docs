@@ -42,7 +42,7 @@ Radworks currently supports the development of the following technologies:
   </Button>
    <Button
     href="https://community.radworks.org/t/formal-review-rgp-23-start-the-radicle-integrations-tooling-org-2024/3508"
-    title="Radicle Integrations & Tooling 🤝"
+    title="Radicle Integrations & Tooling 🛠️"
     cta="Coming soon!"
   >
     The Radicle Integrations & Tooling team improves onboarding to Radicle by developing integrations with third-party developer tooling
