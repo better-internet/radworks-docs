@@ -9,7 +9,7 @@ The Radworks Grants program is used to support open source initives that support
 - Additions to core Drips software or components, or compelling adoption of tooling, such as Radicle Drips SDK
 - Initiatives furthering the adoption of Radicle & Drips
 
-Most grants distributed via the Grants program fall between XX-XX USDC/RAD. All grant applications are reviewed by the Grants Committee - a group of trusted ecosystem participants. Grants are distributed using Drips on a milestone-based schedule.
+Most grants distributed via the Grants program fall between 2,000-50,000 USDC/RAD. All grant applications are reviewed by the Grants Committee - a group of trusted ecosystem participants. Grants are distributed using Drips on a milestone-based schedule.
 
 Read more about the Radworks Grants program, the funding principles, and the structure of the Grants Committee [here](https://github.com/better-internet/radworks-grants).
 
