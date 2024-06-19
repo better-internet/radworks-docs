@@ -19,6 +19,7 @@ const sidebars = {
         'community/faq',
       ]
     },
+    'community/grant-program',
     'community/our-story',
     'community/code-of-conduct',
   ],
