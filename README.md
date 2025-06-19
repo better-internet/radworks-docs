@@ -6,7 +6,7 @@ includes community-, and governance-focused documentation.
 This document outlines some contributing guidelines, contact points, and other resources to make it easier to contribute
 to Radworks' documentation.
 
-[`docs.radworks.org`](https://docs.radworks.org) was created with [Docusaurus](https://docusaurus.io/).
+[`docs.radworks.org`](https://docs.radworks.org) is created with [Vocs](https://vocs.dev/).
 
 If you run into a problem or have a suggestion, browse the open
 [issues](https://github.com/radicle-foundation/radworks-docs/issues) before opening a new one. We use the following
@@ -42,52 +42,27 @@ git clone git@github.com:<YOUR-GITHUB-USERNAME>/radworks-docs.git
 
 ### Run the website locally
 
-First, install [NodeJS](https://nodejs.org/en/download/) and
-[Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable) on your system. 
+First, install [NodeJS](https://nodejs.org/en/download/) on your system. 
 
 Navigate into the `radworks-docs` folder on your local system and install dependencies:
 
 ```sh
 cd radworks-docs/
-yarn install
+npm install
 ```
 
-You can then run the dev server and access it at `http://localhost:3000` from your browser of choice.
+You can then run the dev server and access it at `http://localhost:5173` from your browser of choice.
 
 ```sh
-yarn start
+npm run dev
 ```
 
 ### Add a new doc
 
-When you create a new Markdown document in the `docs/` folder &mdash; we very prefer `.mdx` files, by the way! &mdash;
-make sure your frontmatter section includes an `id` that matches the filename and a `title` field, which Docusaurus uses
-on the website directly.
+When you create a new Markdown document in the `docs/pages` folder &mdash; we very prefer `.mdx` files, by the way! &mdash;
 
-You *must* add your new doc to the sidebar, specified in `sidebars.js`. Find the appropriate place in the sidebar for
-your doc, create a newline, and add the `id` of your doc.
-
-```javascript
-const sidebars = {
-  docsSidebar: [
-    ...
-    {
-      type: 'category',
-      label: 'Example',
-      collapsed: false,
-      items: [
-        ...
-        'your-new-doc',         // A new document with the `id` of `your-new-doc`.
-      ]
-    },
-  ...
-  ]
-...
-}
-```
-
-For more information about adding new docs to the sidebar, or configuring the sidebar itself, see the [Docusaurus
-docs](https://docusaurus.io/docs/en/navigation).
+You must add your new doc to the sidebar, specified in `vocs.config.ts`. Find the appropriate place in the sidebar for
+your doc.
 
 ### Governance docs
 
@@ -102,37 +77,3 @@ process](https://github.com/radicle-foundation/radworks-governance/blob/main/con
 
 We require all commits to be signed for a branch to be merged into `main`. Learn more on setting up commit signing
 [here](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/signing-commits).
-
-### Tips for managing your fork of `radworks-docs`
-
-When you clone your fork of `radworks-docs`, the repository at `YOUR-GITHUB-USERNAME>/radworks-docs` is set as the
-default `origin` remote. If you want to keep your fork up-to-date with the state of the
-`radicle-foundation/radworks-docs` repository, you need to occasionally pull new commits into your fork. The best way to
-do that is to add a new `upstream` remote to your fork on your local system:
-
-```
-cd radworks-docs/
-git remote add upstream https://github.com/radicle-foundation/radworks-docs.git
-```
-
-You can now pull changes from `upstream` to synchronize `main` branches across repositories:
-
-```
-git pull upstream main
-```
-
-If you need to combine the latest changes from `upstream/main` to a branch you're currently working on in your fork,
-you should perform a [rebase](https://git-scm.com/docs/git-rebase).
-
-```
-git pull --rebase upstream main
-```
-
-If your branch and `upstream/main` have diverged, you'll need to resolve them using a text editor, add the file with
-`git add <FILENAME>`, and run `git rebase --continue`.
-
-When the rebase completes, you can push the updated state to `origin/main`:
-
-```
-git push --force origin main
-```
